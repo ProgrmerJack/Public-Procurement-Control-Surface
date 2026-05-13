@@ -1,0 +1,860 @@
+{
+  "Argentina": [
+    {
+      "title": "Argentina: Direcci\u00f3n General de Compras y Contrataciones (Ciudad de Buenos Aires)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/17",
+      "csv_links": [
+        "/en/publication/17/download?name=full.csv.tar.gz",
+        "/en/publication/17/download?name=2022.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/17/download?name=full.xlsx",
+        "/en/publication/17/download?name=2022.xlsx"
+      ],
+      "json_links": [
+        "/en/publication/17/download?name=full.jsonl.gz",
+        "/en/publication/17/download?name=2022.jsonl.gz"
+      ],
+      "date_range": "Jan 2022 - Jun 2022"
+    },
+    {
+      "title": "Argentina: Direcci\u00f3n General de Contrataciones y Gesti\u00f3n de Bienes (Provincia de Mendoza)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/137",
+      "csv_links": [
+        "/en/publication/137/download?name=full.csv.tar.gz",
+        "/en/publication/137/download?name=2026.csv.tar.gz",
+        "/en/publication/137/download?name=2025.csv.tar.gz",
+        "/en/publication/137/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/137/download?name=full.xlsx",
+        "/en/publication/137/download?name=2026.xlsx",
+        "/en/publication/137/download?name=2025.xlsx",
+        "/en/publication/137/download?name=2023.xlsx"
+      ],
+      "json_links": [
+        "/en/publication/137/download?name=full.jsonl.gz",
+        "/en/publication/137/download?name=2026.jsonl.gz",
+        "/en/publication/137/download?name=2025.jsonl.gz",
+        "/en/publication/137/download?name=2023.jsonl.gz"
+      ],
+      "date_range": "Oct 2023 - Jan 2026"
+    }
+  ],
+  "Brazil": [
+    {
+      "title": "Brazil: Medicamentos Transparentes",
+      "ocp_url": "https://data.open-contracting.org/en/publication/153",
+      "csv_links": [
+        "/en/publication/153/download?name=full.csv.tar.gz",
+        "/en/publication/153/download?name=2400.csv.tar.gz",
+        "/en/publication/153/download?name=2304.csv.tar.gz",
+        "/en/publication/153/download?name=2026.csv.tar.gz",
+        "/en/publication/153/download?name=2025.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/153/download?name=full.xlsx",
+        "/en/publication/153/download?name=2400.xlsx",
+        "/en/publication/153/download?name=2304.xlsx",
+        "/en/publication/153/download?name=2026.xlsx"
+      ],
+      "json_links": [
+        "/en/publication/153/download?name=full.jsonl.gz",
+        "/en/publication/153/download?name=2400.jsonl.gz",
+        "/en/publication/153/download?name=2304.jsonl.gz",
+        "/en/publication/153/download?name=2026.jsonl.gz",
+        "/en/publication/153/download?name=2025.jsonl.gz"
+      ],
+      "date_range": "Sep 2021 - Jan 2026"
+    }
+  ],
+  "Chile": [
+    {
+      "title": "Chile: Direcci\u00f3n de Compras y Contrataci\u00f3n P\u00fablica - API",
+      "ocp_url": "https://data.open-contracting.org/en/publication/144",
+      "csv_links": [
+        "/en/publication/144/download?name=full.csv.tar.gz",
+        "/en/publication/144/download?name=2029.csv.tar.gz",
+        "/en/publication/144/download?name=2026.csv.tar.gz",
+        "/en/publication/144/download?name=2025.csv.tar.gz",
+        "/en/publication/144/download?name=2024.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/144/download?name=2029.xlsx",
+        "/en/publication/144/download?name=2026.xlsx"
+      ],
+      "json_links": [
+        "https://datos-abiertos.chilecompra.cl/descargas/procesos-ocds",
+        "https://api.mercadopublico.cl/APISOCDS/Utilidades/Politicas/Actualizacion",
+        "https://gitlab.com/dncp-opendata/ocds_planning_items_extension",
+        "https://chilecompracl.visualstudio.com/a6a3f587-5f23-42f6-9255-ac5852fae1e7/_apis/git/repositories/fb91c43b-011b-434b-901d-9d36ec50c586/items?path=%2Fextension.json&amp;versionDescriptor%5BversionOptions%5D=0&amp;versionDescriptor%5BversionType%5D=0&amp;versionDescriptor%5Bversion%5D=master&amp;resolveLfs=true&amp;%24format=octetStream&amp;api-version=5.0",
+        "/en/publication/144/download?name=full.jsonl.gz"
+      ],
+      "date_range": "Jan 2022 - Dec 2025"
+    },
+    {
+      "title": "Chile: Direcci\u00f3n de Compras y Contrataci\u00f3n P\u00fablica - Historical",
+      "ocp_url": "https://data.open-contracting.org/en/publication/10",
+      "csv_links": [
+        "/en/publication/10/download?name=full.csv.tar.gz",
+        "/en/publication/10/download?name=2022.csv.tar.gz",
+        "/en/publication/10/download?name=2021.csv.tar.gz",
+        "/en/publication/10/download?name=2020.csv.tar.gz",
+        "/en/publication/10/download?name=2019.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/10/download?name=2022.xlsx"
+      ],
+      "json_links": [
+        "https://datos-abiertos.chilecompra.cl/descargas/procesos-ocds",
+        "https://api.mercadopublico.cl/APISOCDS/Utilidades/Politicas/Actualizacion",
+        "https://gitlab.com/dncp-opendata/ocds_planning_items_extension",
+        "https://chilecompracl.visualstudio.com/a6a3f587-5f23-42f6-9255-ac5852fae1e7/_apis/git/repositories/fb91c43b-011b-434b-901d-9d36ec50c586/items?path=%2Fextension.json&amp;versionDescriptor%5BversionOptions%5D=0&amp;versionDescriptor%5BversionType%5D=0&amp;versionDescriptor%5Bversion%5D=master&amp;resolveLfs=true&amp;%24format=octetStream&amp;api-version=5.0",
+        "/en/publication/10/download?name=full.jsonl.gz"
+      ],
+      "date_range": "Dec 2018 - Apr 2022"
+    }
+  ],
+  "Colombia": [
+    {
+      "title": "Colombia: Agencia Nacional de Contrataci\u00f3n P\u00fablica (Colombia Compra Eficiente)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/61",
+      "csv_links": [
+        "/en/publication/61/download?name=full.csv.tar.gz",
+        "/en/publication/61/download?name=2022.csv.tar.gz",
+        "/en/publication/61/download?name=2021.csv.tar.gz",
+        "/en/publication/61/download?name=2020.csv.tar.gz",
+        "/en/publication/61/download?name=2019.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/61/download?name=2011.xlsx"
+      ],
+      "json_links": [
+        "http://www.colombiacompra.gov.co/transparencia/api",
+        "/en/publication/61/download?name=full.jsonl.gz",
+        "/en/publication/61/download?name=2022.jsonl.gz",
+        "/en/publication/61/download?name=2021.jsonl.gz",
+        "/en/publication/61/download?name=2020.jsonl.gz"
+      ],
+      "date_range": "Jan 2011 - Apr 2022"
+    },
+    {
+      "title": "Colombia: Agencia Nacional de Infraestructura Colombia (ANI)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/108",
+      "csv_links": [
+        "/en/publication/108/download?name=full.csv.tar.gz",
+        "/en/publication/108/download?name=2021.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/108/download?name=full.xlsx",
+        "/en/publication/108/download?name=2021.xlsx"
+      ],
+      "json_links": [
+        "/en/publication/108/download?name=full.jsonl.gz",
+        "/en/publication/108/download?name=2021.jsonl.gz"
+      ],
+      "date_range": "Sep 2021 - Sep 2021"
+    }
+  ],
+  "Costa Rica": [
+    {
+      "title": "Costa Rica: Poder Judicial",
+      "ocp_url": "https://data.open-contracting.org/en/publication/16",
+      "csv_links": [
+        "/en/publication/16/download?name=full.csv.tar.gz",
+        "/en/publication/16/download?name=2023.csv.tar.gz",
+        "/en/publication/16/download?name=2022.csv.tar.gz",
+        "/en/publication/16/download?name=2021.csv.tar.gz",
+        "/en/publication/16/download?name=2020.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/16/download?name=full.xlsx",
+        "/en/publication/16/download?name=2023.xlsx",
+        "/en/publication/16/download?name=2022.xlsx",
+        "/en/publication/16/download?name=2021.xlsx"
+      ],
+      "json_links": [
+        "https://ckanpj.azurewebsites.net/dataset/estandar-de-datos-de-contrataciones-abiertas-ocds",
+        "/en/publication/16/download?name=full.jsonl.gz",
+        "/en/publication/16/download?name=2023.jsonl.gz",
+        "/en/publication/16/download?name=2022.jsonl.gz",
+        "/en/publication/16/download?name=2021.jsonl.gz"
+      ],
+      "date_range": "Jan 2018 - Dec 2023"
+    }
+  ],
+  "Ecuador": [
+    {
+      "title": "Ecuador: Servicio Nacional de Contrataci\u00f3n P\u00fablica de Ecuador (SERCOP)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/110",
+      "csv_links": [
+        "/en/publication/110/download?name=full.csv.tar.gz",
+        "/en/publication/110/download?name=2026.csv.tar.gz",
+        "/en/publication/110/download?name=2025.csv.tar.gz",
+        "/en/publication/110/download?name=2024.csv.tar.gz",
+        "/en/publication/110/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/110/download?name=2026.xlsx",
+        "/en/publication/110/download?name=2021.xlsx",
+        "/en/publication/110/download?name=2020.xlsx"
+      ],
+      "json_links": [
+        "https://datosabiertos.compraspublicas.gob.ec/PLATAFORMA/documentos/politica-publicacion-SERCOP-OCDS.pdf",
+        "https://github.com/open-contracting-extensions/ocds_competitive_extension",
+        "https://github.com/open-contracting-extensions/ocds_valueBreakdown_extension",
+        "https://gitlab.com/dncp-opendata/ocds_auctions_extension",
+        "https://github.com/SERCOPEC/ocds_sercopEnteredValue_extension"
+      ],
+      "date_range": "Jan 2015 - Mar 2026"
+    }
+  ],
+  "Honduras": [
+    {
+      "title": "Honduras: Instituto de Acceso a la Informaci\u00f3n P\u00fablica (IAIP)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/113",
+      "csv_links": [
+        "/en/publication/113/download?name=full.csv.tar.gz",
+        "/en/publication/113/download?name=2023.csv.tar.gz",
+        "/en/publication/113/download?name=2022.csv.tar.gz",
+        "/en/publication/113/download?name=2021.csv.tar.gz",
+        "/en/publication/113/download?name=2020.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/113/download?name=2023.xlsx",
+        "/en/publication/113/download?name=2022.xlsx",
+        "/en/publication/113/download?name=2021.xlsx",
+        "/en/publication/113/download?name=2020.xlsx"
+      ],
+      "json_links": [
+        "https://portalunico.iaip.gob.hn/datosabierto/docs/Pol%C3%ADtica%20de%20publicaci%C3%B3n%20-%20IAIP%20Datos%20Abiertos%20OCDS.pdf",
+        "https://portalunico.iaip.gob.hn/datosabierto/docs/Pol%C3%ADtica%20de%20publicaci%C3%B3n%20-%20IAIP%20Datos%20Abiertos%20OCDS.pdf",
+        "https://github.com/open-contracting-extensions/ocds_exchangeRate_extension",
+        "https://github.com/portaledcahn/ocds_Links_extension",
+        "/en/publication/113/download?name=full.jsonl.gz"
+      ],
+      "date_range": "Apr 2020 - Mar 2023"
+    },
+    {
+      "title": "Honduras: Oficina Normativa de Contrataci\u00f3n y Adquisiciones del Estado (ONCAE)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/122",
+      "csv_links": [
+        "/en/publication/122/download?name=full.csv.tar.gz",
+        "/en/publication/122/download?name=2026.csv.tar.gz",
+        "/en/publication/122/download?name=2025.csv.tar.gz",
+        "/en/publication/122/download?name=2024.csv.tar.gz",
+        "/en/publication/122/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/122/download?name=2026.xlsx",
+        "/en/publication/122/download?name=2025.xlsx",
+        "/en/publication/122/download?name=2024.xlsx",
+        "/en/publication/122/download?name=2023.xlsx"
+      ],
+      "json_links": [
+        "https://raw.githubusercontent.com/open-contracting/ocds_memberof_extension/master/extension.json",
+        "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_suppliers_extension/master/extension.json",
+        "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_buyer_extension/master/extension.json",
+        "https://raw.githubusercontent.com/open-contracting/ocds_participationFee_extension/v1.1.3/extension.json",
+        "https://raw.githubusercontent.com/INAImexico/ocds_guarantees_extension/master/extension.json"
+      ],
+      "date_range": "Nov 2005 - Mar 2026"
+    }
+  ],
+  "Mexico": [
+    {
+      "title": "Mexico: Comisi\u00f3n de Transparencia y Acceso a la Informaci\u00f3n del Estado de Nuevo Le\u00f3n (COTAI)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/114",
+      "csv_links": [
+        "/en/publication/114/download?name=full.csv.tar.gz",
+        "/en/publication/114/download?name=2024.csv.tar.gz",
+        "/en/publication/114/download?name=2023.csv.tar.gz",
+        "/en/publication/114/download?name=2022.csv.tar.gz",
+        "/en/publication/114/download?name=2021.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/114/download?name=full.xlsx",
+        "/en/publication/114/download?name=2024.xlsx",
+        "/en/publication/114/download?name=2023.xlsx",
+        "/en/publication/114/download?name=2022.xlsx"
+      ],
+      "json_links": [
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_requestForQuotes_extension/master/extension.json",
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_clarificationMeetings_extension/master/extension.json",
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_paymentMethod_extension/master/extension.json",
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_taxes_extension/master/extension.json",
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_publicNotices_extension/master/extension.json"
+      ],
+      "date_range": "Mar 2021 - Aug 2024"
+    },
+    {
+      "title": "Mexico: Comisi\u00f3n Estatal para el Acceso a la Informaci\u00f3n P\u00fablica Sinaloa (CEAIP)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/112",
+      "csv_links": [
+        "/en/publication/112/download?name=full.csv.tar.gz",
+        "/en/publication/112/download?name=2023.csv.tar.gz",
+        "/en/publication/112/download?name=2022.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/112/download?name=full.xlsx",
+        "/en/publication/112/download?name=2023.xlsx",
+        "/en/publication/112/download?name=2022.xlsx"
+      ],
+      "json_links": [
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_requestForQuotes_extension/master/extension.json",
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_clarificationMeetings_extension/master/extension.json",
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_paymentMethod_extension/master/extension.json",
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_taxes_extension/master/extension.json",
+        "https://raw.githubusercontent.com/contratacionesabiertas/ocds_publicNotices_extension/master/extension.json"
+      ],
+      "date_range": "Jul 2022 - Jun 2023"
+    }
+  ],
+  "Paraguay": [
+    {
+      "title": "Paraguay: Direcci\u00f3n Nacional de Contrataciones P\u00fablicas (DNCP)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/63",
+      "csv_links": [
+        "/en/publication/63/download?name=full.csv.tar.gz",
+        "/en/publication/63/download?name=2026.csv.tar.gz",
+        "/en/publication/63/download?name=2025.csv.tar.gz",
+        "/en/publication/63/download?name=2024.csv.tar.gz",
+        "/en/publication/63/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/63/download?name=2026.xlsx",
+        "/en/publication/63/download?name=2021.xlsx",
+        "/en/publication/63/download?name=2020.xlsx",
+        "/en/publication/63/download?name=2018.xlsx"
+      ],
+      "json_links": [
+        "https://contrataciones.gov.py/datos/api/v3/doc/",
+        "https://gitlab.com/dncp-opendata/ocds_complaints_extension",
+        "https://gitlab.com/dncp-opendata/ocds_bid_items_extension",
+        "https://gitlab.com/dncp-opendata/ocds_auctions_extension",
+        "https://gitlab.com/dncp-opendata/ocds_planning_investmentproject_extension"
+      ],
+      "date_range": "Feb 2010 - Feb 2026"
+    },
+    {
+      "title": "Paraguay: Ministerio de Hacienda",
+      "ocp_url": "https://data.open-contracting.org/en/publication/62",
+      "csv_links": [
+        "/en/publication/62/download?name=full.csv.tar.gz",
+        "/en/publication/62/download?name=2022.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3"
+      ],
+      "json_links": [
+        "https://datos.hacienda.gov.py/odmh-api-v1/api-docs/",
+        "https://github.com/gitMHOCDS/transactions",
+        "https://github.com/gitMHOCDS/budget-breakdown",
+        "/en/publication/62/download?name=full.jsonl.gz",
+        "/en/publication/62/download?name=2022.jsonl.gz"
+      ],
+      "date_range": "Dec 2022 - Dec 2022"
+    }
+  ],
+  "Peru": [
+    {
+      "title": "Peru: Central de Compras Per\u00fa Compras",
+      "ocp_url": "https://data.open-contracting.org/en/publication/78",
+      "csv_links": [
+        "/en/publication/78/download?name=full.csv.tar.gz",
+        "/en/publication/78/download?name=2023.csv.tar.gz",
+        "/en/publication/78/download?name=2022.csv.tar.gz",
+        "/en/publication/78/download?name=2021.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/78/download?name=2023.xlsx",
+        "/en/publication/78/download?name=2022.xlsx",
+        "/en/publication/78/download?name=2021.xlsx"
+      ],
+      "json_links": [
+        "https://gitlab.com/dncp-opendata/ocds_statusdetails_extension",
+        "https://github.com/open-contracting-extensions/ocds_valueBreakdown_extension",
+        "/en/publication/78/download?name=full.jsonl.gz",
+        "/en/publication/78/download?name=2023.jsonl.gz",
+        "/en/publication/78/download?name=2022.jsonl.gz"
+      ],
+      "date_range": "Aug 2021 - Nov 2023"
+    },
+    {
+      "title": "Peru: Organismo Especializado para las Contrataciones P\u00fablicas Eficientes (OECE)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/135",
+      "csv_links": [
+        "/en/publication/135/download?name=full.csv.tar.gz",
+        "/en/publication/135/download?name=2026.csv.tar.gz",
+        "/en/publication/135/download?name=2025.csv.tar.gz",
+        "/en/publication/135/download?name=2024.csv.tar.gz",
+        "/en/publication/135/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/135/download?name=2026.xlsx",
+        "/en/publication/135/download?name=2023.xlsx",
+        "/en/publication/135/download?name=2022.xlsx",
+        "/en/publication/135/download?name=2021.xlsx"
+      ],
+      "json_links": [
+        "https://devops11.osce.gob.pe/bitbucket/projects/PROYEC/repos/ocds_currencyname_extension/raw/extension.json",
+        "https://github.com/open-contracting-extensions/ocds_exchangeRate_extension",
+        "https://devops11.osce.gob.pe/bitbucket/projects/PROYEC/repos/ocds_itemtotalvalue_extension/browse",
+        "https://devops11.osce.gob.pe/bitbucket/projects/PROYEC/repos/ocds_department_extension/raw/extension.json",
+        "https://devops11.osce.gob.pe/bitbucket/projects/PROYEC/repos/ocds_tenderinformation_extension/raw/extension.json"
+      ],
+      "date_range": "Jan 2003 - Mar 2026"
+    }
+  ],
+  "Uruguay": [
+    {
+      "title": "Uruguay: Agencia Reguladora de Compras Estatales (ARCE) (API)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/43",
+      "csv_links": [
+        "/en/publication/43/download?name=full.csv.tar.gz",
+        "/en/publication/43/download?name=2026.csv.tar.gz",
+        "/en/publication/43/download?name=2025.csv.tar.gz",
+        "/en/publication/43/download?name=2024.csv.tar.gz",
+        "/en/publication/43/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/43/download?name=2026.xlsx",
+        "/en/publication/43/download?name=2025.xlsx",
+        "/en/publication/43/download?name=2024.xlsx",
+        "/en/publication/43/download?name=2023.xlsx"
+      ],
+      "json_links": [
+        "/en/publication/43/download?name=full.jsonl.gz",
+        "/en/publication/43/download?name=2026.jsonl.gz",
+        "/en/publication/43/download?name=2025.jsonl.gz",
+        "/en/publication/43/download?name=2024.jsonl.gz",
+        "/en/publication/43/download?name=2023.jsonl.gz"
+      ],
+      "date_range": "Nov 2017 - Mar 2026"
+    },
+    {
+      "title": "Uruguay: Agencia Reguladora de Compras Estatales (ARCE) (Historical)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/42",
+      "csv_links": [
+        "/en/publication/42/download?name=full.csv.tar.gz",
+        "/en/publication/42/download?name=2024.csv.tar.gz",
+        "/en/publication/42/download?name=2023.csv.tar.gz",
+        "/en/publication/42/download?name=2022.csv.tar.gz",
+        "/en/publication/42/download?name=2021.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/42/download?name=2024.xlsx",
+        "/en/publication/42/download?name=2023.xlsx",
+        "/en/publication/42/download?name=2022.xlsx",
+        "/en/publication/42/download?name=2021.xlsx"
+      ],
+      "json_links": [
+        "/en/publication/42/download?name=full.jsonl.gz",
+        "/en/publication/42/download?name=2024.jsonl.gz",
+        "/en/publication/42/download?name=2023.jsonl.gz",
+        "/en/publication/42/download?name=2022.jsonl.gz",
+        "/en/publication/42/download?name=2021.jsonl.gz"
+      ],
+      "date_range": "Jan 1970 - Dec 2024"
+    }
+  ],
+  "India": [
+    {
+      "title": "India: Assam State Government Finance Department",
+      "ocp_url": "https://data.open-contracting.org/en/publication/131",
+      "csv_links": [
+        "/en/publication/131/download?name=full.csv.tar.gz",
+        "/en/publication/131/download?name=2022.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/131/download?name=full.xlsx",
+        "/en/publication/131/download?name=2022.xlsx"
+      ],
+      "json_links": [
+        "/en/publication/131/download?name=full.jsonl.gz",
+        "/en/publication/131/download?name=2022.jsonl.gz"
+      ],
+      "date_range": "Sep 2022 - Sep 2022"
+    },
+    {
+      "title": "India: Himachal Pradesh - CivicDataLab",
+      "ocp_url": "https://data.open-contracting.org/en/publication/77",
+      "csv_links": [
+        "/en/publication/77/download?name=full.csv.tar.gz",
+        "/en/publication/77/download?name=2020.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/77/download?name=full.xlsx",
+        "/en/publication/77/download?name=2020.xlsx"
+      ],
+      "json_links": [
+        "https://github.com/CivicDataLab/himachal-pradesh-health-procurement-OCDS/",
+        "/en/publication/77/download?name=full.jsonl.gz",
+        "/en/publication/77/download?name=2020.jsonl.gz"
+      ],
+      "date_range": "Aug 2020 - Aug 2020"
+    }
+  ],
+  "Indonesia": [
+    {
+      "title": "Indonesia: Indonesia Corruption Watch (ICW)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/101",
+      "csv_links": [
+        "/en/publication/101/download?name=full.csv.tar.gz",
+        "/en/publication/101/download?name=2120.csv.tar.gz",
+        "/en/publication/101/download?name=2025.csv.tar.gz",
+        "/en/publication/101/download?name=2024.csv.tar.gz",
+        "/en/publication/101/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/101/download?name=2120.xlsx",
+        "/en/publication/101/download?name=2025.xlsx",
+        "/en/publication/101/download?name=2024.xlsx",
+        "/en/publication/101/download?name=2023.xlsx"
+      ],
+      "json_links": [
+        "https://v3.opentender.net/#/ocds",
+        "/en/publication/101/download?name=full.jsonl.gz",
+        "/en/publication/101/download?name=2120.jsonl.gz",
+        "/en/publication/101/download?name=2025.jsonl.gz",
+        "/en/publication/101/download?name=2024.jsonl.gz"
+      ],
+      "date_range": "Jan 1970 - Jul 2025"
+    }
+  ],
+  "Kenya": [
+    {
+      "title": "Kenya: Makueni County",
+      "ocp_url": "https://data.open-contracting.org/en/publication/13",
+      "csv_links": [
+        "/en/publication/13/download?name=full.csv.tar.gz",
+        "/en/publication/13/download?name=2022.csv.tar.gz",
+        "/en/publication/13/download?name=2021.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/13/download?name=full.xlsx",
+        "/en/publication/13/download?name=2022.xlsx",
+        "/en/publication/13/download?name=2021.xlsx"
+      ],
+      "json_links": [
+        "/en/publication/13/download?name=full.jsonl.gz",
+        "/en/publication/13/download?name=2022.jsonl.gz",
+        "/en/publication/13/download?name=2021.jsonl.gz"
+      ],
+      "date_range": "Apr 2021 - Feb 2022"
+    },
+    {
+      "title": "Kenya: Public Procurement Regulatory Authority (PPRA)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/147",
+      "csv_links": [
+        "/en/publication/147/download?name=full.csv.tar.gz",
+        "/en/publication/147/download?name=2026.csv.tar.gz",
+        "/en/publication/147/download?name=2025.csv.tar.gz",
+        "/en/publication/147/download?name=2024.csv.tar.gz",
+        "/en/publication/147/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/147/download?name=full.xlsx",
+        "/en/publication/147/download?name=2026.xlsx",
+        "/en/publication/147/download?name=2025.xlsx",
+        "/en/publication/147/download?name=2024.xlsx"
+      ],
+      "json_links": [
+        "https://tenders.go.ke/ocds",
+        "https://tenders.go.ke/ocds",
+        "/en/publication/147/download?name=full.jsonl.gz",
+        "/en/publication/147/download?name=2026.jsonl.gz",
+        "/en/publication/147/download?name=2025.jsonl.gz"
+      ],
+      "date_range": "Jul 2018 - Feb 2026"
+    }
+  ],
+  "Nigeria": [
+    {
+      "title": "Nigeria: Anambra State",
+      "ocp_url": "https://data.open-contracting.org/en/publication/127",
+      "csv_links": [
+        "/en/publication/127/download?name=full.csv.tar.gz",
+        "/en/publication/127/download?name=2025.csv.tar.gz",
+        "/en/publication/127/download?name=2024.csv.tar.gz",
+        "/en/publication/127/download?name=2023.csv.tar.gz",
+        "/en/publication/127/download?name=2022.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/127/download?name=full.xlsx",
+        "/en/publication/127/download?name=2025.xlsx",
+        "/en/publication/127/download?name=2024.xlsx",
+        "/en/publication/127/download?name=2023.xlsx"
+      ],
+      "json_links": [
+        "https://eprocure.bpp.an.gov.ng/ocds.php",
+        "/en/publication/127/download?name=full.jsonl.gz",
+        "/en/publication/127/download?name=2025.jsonl.gz",
+        "/en/publication/127/download?name=2024.jsonl.gz",
+        "/en/publication/127/download?name=2023.jsonl.gz"
+      ],
+      "date_range": "Mar 2014 - Feb 2025"
+    }
+  ],
+  "Rwanda": [
+    {
+      "title": "Rwanda: Public Procurement Authority (RPPA)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/145",
+      "csv_links": [
+        "/en/publication/145/download?name=full.csv.tar.gz",
+        "/en/publication/145/download?name=2026.csv.tar.gz",
+        "/en/publication/145/download?name=2025.csv.tar.gz",
+        "/en/publication/145/download?name=2024.csv.tar.gz",
+        "/en/publication/145/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/145/download?name=2026.xlsx",
+        "/en/publication/145/download?name=2023.xlsx",
+        "/en/publication/145/download?name=2022.xlsx",
+        "/en/publication/145/download?name=2021.xlsx"
+      ],
+      "json_links": [
+        "https://ocds.umucyo.gov.rw/",
+        "https://ocds.umucyo.gov.rw/OpenData",
+        "/en/publication/145/download?name=full.jsonl.gz",
+        "/en/publication/145/download?name=2026.jsonl.gz",
+        "/en/publication/145/download?name=2025.jsonl.gz"
+      ],
+      "date_range": "Dec 2013 - Mar 2026"
+    }
+  ],
+  "Ghana": [
+    {
+      "title": "Ghana: Public Procurement Authority (PPA)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/85",
+      "csv_links": [
+        "/en/publication/85/download?name=full.csv.tar.gz",
+        "/en/publication/85/download?name=2026.csv.tar.gz",
+        "/en/publication/85/download?name=2025.csv.tar.gz",
+        "/en/publication/85/download?name=2024.csv.tar.gz",
+        "/en/publication/85/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/85/download?name=full.xlsx",
+        "/en/publication/85/download?name=2026.xlsx",
+        "/en/publication/85/download?name=2025.xlsx",
+        "/en/publication/85/download?name=2024.xlsx"
+      ],
+      "json_links": [
+        "https://www.ghaneps.gov.gh/ocds/report/home.action#/recordPackages",
+        "https://www.ppaghana.org/ocds-license",
+        "https://www.ppaghana.org/ocds-publication-policy",
+        "/en/publication/85/download?name=full.jsonl.gz",
+        "/en/publication/85/download?name=2026.jsonl.gz"
+      ],
+      "date_range": "Aug 2019 - Mar 2026"
+    }
+  ],
+  "Tanzania": [
+    {
+      "title": "Tanzania: Public Procurement Regulatory Authority (PPRA)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/152",
+      "csv_links": [
+        "/en/publication/152/download?name=full.csv.tar.gz",
+        "/en/publication/152/download?name=2026.csv.tar.gz",
+        "/en/publication/152/download?name=2025.csv.tar.gz",
+        "/en/publication/152/download?name=2024.csv.tar.gz",
+        "/en/publication/152/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/152/download?name=2026.xlsx",
+        "/en/publication/152/download?name=2023.xlsx",
+        "/en/publication/152/download?name=2022.xlsx"
+      ],
+      "json_links": [
+        "https://data.nest.go.tz/ocds",
+        "https://data.nest.go.tz/ocds",
+        "/en/publication/152/download?name=full.jsonl.gz",
+        "/en/publication/152/download?name=2026.jsonl.gz",
+        "/en/publication/152/download?name=2025.jsonl.gz"
+      ],
+      "date_range": "Feb 2022 - Feb 2026"
+    }
+  ],
+  "Uganda": [
+    {
+      "title": "Uganda: Public Procurement and Disposal of Public Assets Authority (PPDA)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/130",
+      "csv_links": [
+        "/en/publication/130/download?name=full.csv.tar.gz",
+        "/en/publication/130/download?name=2025.csv.tar.gz",
+        "/en/publication/130/download?name=2024.csv.tar.gz",
+        "/en/publication/130/download?name=2023.csv.tar.gz",
+        "/en/publication/130/download?name=2022.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/130/download?name=full.xlsx",
+        "/en/publication/130/download?name=2025.xlsx",
+        "/en/publication/130/download?name=2024.xlsx",
+        "/en/publication/130/download?name=2023.xlsx"
+      ],
+      "json_links": [
+        "https://gpp.ppda.go.ug/public/open-data/ocds/ocds-datasets",
+        "https://gpp.ppda.go.ug/public/open-data/ocds/ocds-datasets",
+        "/en/publication/130/download?name=full.jsonl.gz",
+        "/en/publication/130/download?name=2025.jsonl.gz",
+        "/en/publication/130/download?name=2024.jsonl.gz"
+      ],
+      "date_range": "Jan 2019 - Jan 2025"
+    }
+  ],
+  "Zambia": [
+    {
+      "title": "Zambia: Public Procurement Authority (ZPPA)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/3",
+      "csv_links": [
+        "/en/publication/3/download?name=full.csv.tar.gz",
+        "/en/publication/3/download?name=2026.csv.tar.gz",
+        "/en/publication/3/download?name=2025.csv.tar.gz",
+        "/en/publication/3/download?name=2024.csv.tar.gz",
+        "/en/publication/3/download?name=2023.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/3/download?name=full.xlsx",
+        "/en/publication/3/download?name=2026.xlsx",
+        "/en/publication/3/download?name=2025.xlsx",
+        "/en/publication/3/download?name=2024.xlsx"
+      ],
+      "json_links": [
+        "https://www.zppa.org.zm/ocds-publication-policy",
+        "/en/publication/3/download?name=full.jsonl.gz",
+        "/en/publication/3/download?name=2026.jsonl.gz",
+        "/en/publication/3/download?name=2025.jsonl.gz",
+        "/en/publication/3/download?name=2024.jsonl.gz"
+      ],
+      "date_range": "Aug 2016 - Feb 2026"
+    }
+  ],
+  "Georgia": [
+    {
+      "title": "Georgia: OpenTender",
+      "ocp_url": "https://data.open-contracting.org/en/publication/52",
+      "csv_links": [
+        "/en/publication/52/download?name=full.csv.tar.gz",
+        "/en/publication/52/download?name=2023.csv.tar.gz",
+        "/en/publication/52/download?name=2022.csv.tar.gz",
+        "/en/publication/52/download?name=2021.csv.tar.gz",
+        "/en/publication/52/download?name=2020.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/52/download?name=2023.xlsx",
+        "/en/publication/52/download?name=2022.xlsx",
+        "/en/publication/52/download?name=2021.xlsx",
+        "/en/publication/52/download?name=2020.xlsx"
+      ],
+      "json_links": [
+        "/en/publication/52/download?name=full.jsonl.gz",
+        "/en/publication/52/download?name=2023.jsonl.gz",
+        "/en/publication/52/download?name=2022.jsonl.gz",
+        "/en/publication/52/download?name=2021.jsonl.gz",
+        "/en/publication/52/download?name=2020.jsonl.gz"
+      ],
+      "date_range": "Dec 2010 - Nov 2023"
+    },
+    {
+      "title": "Georgia: State Procurement Agency (SPA)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/24",
+      "csv_links": [
+        "/en/publication/24/download?name=full.csv.tar.gz",
+        "/en/publication/24/download?name=2019.csv.tar.gz",
+        "/en/publication/24/download?name=2018.csv.tar.gz",
+        "/en/publication/24/download?name=2017.csv.tar.gz",
+        "/en/publication/24/download?name=2016.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/24/download?name=full.xlsx",
+        "/en/publication/24/download?name=2019.xlsx",
+        "/en/publication/24/download?name=2018.xlsx",
+        "/en/publication/24/download?name=2017.xlsx"
+      ],
+      "json_links": [
+        "https://odapi.spa.ge/api/swagger.ui",
+        "https://odapi.spa.ge/api/swagger.ui#/default/get_releases_json",
+        "/en/publication/24/download?name=full.jsonl.gz",
+        "/en/publication/24/download?name=2019.jsonl.gz",
+        "/en/publication/24/download?name=2018.jsonl.gz"
+      ],
+      "date_range": "Dec 2010 - Jun 2019"
+    }
+  ],
+  "Moldova": [
+    {
+      "title": "Moldova: Ministry of Finance",
+      "ocp_url": "https://data.open-contracting.org/en/publication/34",
+      "csv_links": [
+        "/en/publication/34/download?name=full.csv.tar.gz",
+        "/en/publication/34/download?name=2024.csv.tar.gz",
+        "/en/publication/34/download?name=2023.csv.tar.gz",
+        "/en/publication/34/download?name=2022.csv.tar.gz",
+        "/en/publication/34/download?name=2021.csv.tar.gz"
+      ],
+      "excel_links": [
+        "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3",
+        "/en/publication/34/download?name=2024.xlsx",
+        "/en/publication/34/download?name=2020.xlsx",
+        "/en/publication/34/download?name=2019.xlsx",
+        "/en/publication/34/download?name=2018.xlsx"
+      ],
+      "json_links": [
+        "https://github.com/uStudioCompany/ocdsp_addressDetails",
+        "https://github.com/uStudioCompany/ocdsp_conversions",
+        "https://github.com/eOCDS-Extensions/eOCDS-addressDetails",
+        "/en/publication/34/download?name=full.jsonl.gz",
+        "/en/publication/34/download?name=2024.jsonl.gz"
+      ],
+      "date_range": "Oct 2018 - Jan 2024"
+    }
+  ],
+  "Ukraine": [
+    {
+      "title": "Ukraine: Prozorro",
+      "ocp_url": "https://data.open-contracting.org/en/publication/154",
+      "csv_links": [],
+      "excel_links": [],
+      "json_links": [
+        "https://prozorro-api-docs.readthedocs.io/en/latest/index.html",
+        "https://prozorro-api-docs.readthedocs.io",
+        "https://prozorro-api-docs.readthedocs.io/en/latest/standard/index.html",
+        "https://prozorro-api-docs.readthedocs.io",
+        "https://prozorro-api-docs.readthedocs.io/en/master/tendering/basic-actions/tenders.html"
+      ],
+      "date_range": "Feb 2015 - Sep 2025"
+    }
+  ]
+}

@@ -1,0 +1,1160 @@
+{
+  "releases": 3830312,
+  "pages": 383032,
+  "page": "1",
+  "next": "https://contratacionesabiertas.gob.hn/api/v1/release/?page=2&pageSize=100",
+  "previous": null,
+  "releasePackage": {
+    "uri": "https://contratacionesabiertas.gob.hn/api/v1/release/?page=1&pageSize=100",
+    "version": "1.1",
+    "publishedDate": "2026-04-05T12:01:06.025254-06:00",
+    "publisher": {
+      "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+    },
+    "extensions": [
+      "https://raw.githubusercontent.com/open-contracting/ocds_memberof_extension/master/extension.json",
+      "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_suppliers_extension/master/extension.json",
+      "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_buyer_extension/master/extension.json",
+      "https://raw.githubusercontent.com/open-contracting/ocds_participationFee_extension/v1.1.3/extension.json",
+      "https://raw.githubusercontent.com/INAImexico/ocds_guarantees_extension/master/extension.json",
+      "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json",
+      "https://raw.githubusercontent.com/CompraNet/ocds_releasePublisher_extension/master/extension.json",
+      "https://bitbucket.org/ONCAETI/ocds_releasesource_extension/raw/c22448e1789f3e62631a93c1fee228e4ca9ef6e5/extension.json",
+      "https://raw.githubusercontent.com/portaledcahn/ocds_tenderDatePublished_extension/master/extension.json",
+      "https://raw.githubusercontent.com/portaledcahn/ocds_localProcurementCategory_extension/master/extension.json",
+      "https://gitlab.com/dncp-opendata/ocds_statusdetails_extension/raw/master/extension.json",
+      "https://raw.githubusercontent.com/open-contracting-extensions/ocds_legalBasis_extension/master/extension.json"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "publicationPolicy": "http://www.oncae.gob.hn/datos_abiertos/Politica_de_publicacion_EDCA_ONCAE.pdf",
+    "releases": [
+      {
+        "id": "ocds-lcuori-kR27gr-CM-36-AMLE-2024-1/1",
+        "tag": [
+          "tender"
+        ],
+        "date": "2024-02-25T20:40:10.133000-06:00",
+        "ocid": "ocds-lcuori-kR27gr-CM-36-AMLE-2024-1",
+        "buyer": {
+          "id": "kR27gr-gRNeYG",
+          "name": "Alcaldía Municipal de La Esperanza"
+        },
+        "tender": {
+          "id": "kR27gr-CM-36-AMLE-2024-1",
+          "items": [
+            {
+              "id": "kR27grCM-36-AMLE-20241861631",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 1.0,
+              "description": "3 POLLO ENTEROS,11 LIBRAS DE CAFE,22 LIBRAS DE AZUCAR,4 FRECOS DE 3 LITROS,10 PAQUETES DE VASO TERMICO #6 5 PAQUETES DE PLATO # 8,4 CAJITAS DE CANDELAS,1 PAQUTE DE FOSFORO,14 LIBRAS DE MASECA,7 LIBRAS DE MANTECA,4 LIBRAS DE FRIJO,14 LIBRAS DE SPAGUETI,6 CAJITAS DE MARGARINA,7 BOLSITAS DE AVENA, 1 PAQUETE JABON PARA ROPA, 1 PANA DE JABON PARA TRASTES,1 LITRO DECLORO,10 LIBRAS DE ARROZ BLANCO,5 RISTRAS DE CONSOME,5 PAILAS PARA PROVISION,5 PLIEGOS DE PAPEL CELOFAN,5 CHONGOS\r\ntesoreriamunilaeza@gmail.com 27831818 ",
+              "classification": {
+                "id": "50101635",
+                "scheme": "UNSPSC",
+                "description": "Fruta congelada"
+              }
+            }
+          ],
+          "title": "CM-36-AMLE-2024",
+          "status": "active",
+          "tenderPeriod": {
+            "endDate": "2024-02-27T20:39:00-06:00",
+            "startDate": "2024-02-26T20:39:00-06:00"
+          },
+          "datePublished": "2024-02-25T20:40:10.133000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-02-27T20:39:00-06:00",
+            "startDate": "2024-02-26T20:39:00-06:00"
+          },
+          "statusDetails": "Recepción de Ofertas",
+          "procuringEntity": {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "identifier": {
+              "id": "gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "email": "783-9297"
+            }
+          },
+          {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Intibuca",
+              "locality": "LA ESPERANZA",
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "memberOf": [
+              {
+                "id": "gRNeYG",
+                "name": "Alcaldía Municipal de La Esperanza"
+              }
+            ],
+            "identifier": {
+              "id": "kR27gr-gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "MIGUEL ANTONIO FAJARDO MEJIA",
+              "email": "mesadeayuda@honducompras.gob.hn",
+              "telephone": "783-9297"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      },
+      {
+        "id": "ocds-lcuori-kR27gr-CM-35-AMLE-2024-1/1",
+        "tag": [
+          "tender"
+        ],
+        "date": "2024-02-25T20:24:19.883000-06:00",
+        "ocid": "ocds-lcuori-kR27gr-CM-35-AMLE-2024-1",
+        "buyer": {
+          "id": "kR27gr-gRNeYG",
+          "name": "Alcaldía Municipal de La Esperanza"
+        },
+        "tender": {
+          "id": "kR27gr-CM-35-AMLE-2024-1",
+          "items": [
+            {
+              "id": "kR27grCM-35-AMLE-20241861630",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 1.0,
+              "description": "CMPRA DE 3 POLLOS ENTEROS,4 LIBRAS DE CAFE,22 LIBRS DE AZUCAR,4 FRESCOS DE 3 LITROS,6 BOLSAS DE PAN DULCE,4 LITROS DE LECHE,10 PAQUETES DE VASO TERMICO #6, 5 PAQUETES DE PLATO #8 4 CAJITAS DE CANDELAS,1 PAQUETE DE FOSFORO, 14 LIBRAS DE MASECA,4 LIBRAS DE ARROSZ BLNCO,7 LIBRAS DE MANTECA,14 LIBRAS DE SPAGUETI,1 CAJITA DE MARGARINA,2 BOLSITS DE AVENA,1 PAQUTE DE JABON PARA LAVAR ROPA,1 PANA DE JABON PARA LAVAR TRASTES,LITRO DE CLORO,5 LIBRAS DE CAFEMOLIDO,5 LIBRAS DE CAFE MOLIDO,10 BOLSITAS DE SALSA ACIDA,5 BOLSITAS DE AVENA,5 CAJITAS DE MARGARINA,5 BOLSAS DE ARROZ BLANCO DE 2 LIBRAS,5 RISTRAS DE CONSOME,5 PAILAS PARA PROVISION,5 PLIEGOS DE PAPEL CELOFAN,5 CHONGOS tesoreriamunilaeza@gmail.com 27831818\r\n",
+              "classification": {
+                "id": "50161509",
+                "scheme": "UNSPSC",
+                "description": "Productos de edulcorantes o azúcares naturales"
+              }
+            }
+          ],
+          "title": "CM-35-AMLE-2024",
+          "status": "active",
+          "tenderPeriod": {
+            "endDate": "2024-02-27T20:24:00-06:00",
+            "startDate": "2024-02-26T20:24:00-06:00"
+          },
+          "datePublished": "2024-02-25T20:24:19.883000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-02-27T20:24:00-06:00",
+            "startDate": "2024-02-26T20:24:00-06:00"
+          },
+          "statusDetails": "Recepción de Ofertas",
+          "procuringEntity": {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "identifier": {
+              "id": "gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "email": "783-9297"
+            }
+          },
+          {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Intibuca",
+              "locality": "LA ESPERANZA",
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "memberOf": [
+              {
+                "id": "gRNeYG",
+                "name": "Alcaldía Municipal de La Esperanza"
+              }
+            ],
+            "identifier": {
+              "id": "kR27gr-gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "MIGUEL ANTONIO FAJARDO MEJIA",
+              "email": "mesadeayuda@honducompras.gob.hn",
+              "telephone": "783-9297"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      },
+      {
+        "id": "ocds-lcuori-gGyBAR-CDAH-FEHDME 003-2024-1/1",
+        "tag": [
+          "tender"
+        ],
+        "date": "2024-02-25T19:34:48.443000-06:00",
+        "ocid": "ocds-lcuori-gGyBAR-CDAH-FEHDME 003-2024-1",
+        "buyer": {
+          "id": "gGyBAR-7GXQMR",
+          "name": "Unidad Central"
+        },
+        "tender": {
+          "id": "gGyBAR-CDAH-FEHDME 003-2024-1",
+          "items": [
+            {
+              "id": "gGyBARCDAH-FEHDME 003-20241861629",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 1.0,
+              "description": "CDAH-FEHDME-2024 ADQUISICION DE ARCO INFLABLE PARA CAMPEONATO NACIONAL DE CARRERAS POR MONTAÑA HONDURAS",
+              "classification": {
+                "id": "49161706",
+                "scheme": "UNSPSC",
+                "description": "Vallas"
+              }
+            }
+          ],
+          "title": "CDAH-FEHDME 003-2024",
+          "status": "planned",
+          "tenderPeriod": {
+            "endDate": "2024-04-26T19:34:00-06:00",
+            "startDate": "2024-04-23T19:34:00-06:00"
+          },
+          "datePublished": "2024-02-25T19:34:48.443000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-04-26T19:34:00-06:00",
+            "startDate": "2024-04-23T19:34:00-06:00"
+          },
+          "statusDetails": "Elaboración",
+          "procuringEntity": {
+            "id": "gGyBAR-7GXQMR",
+            "name": "Unidad Central"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "7GXQMR",
+            "name": "Confederación Deportiva Autónoma de Honduras",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "Complejo deportivo José Simón Azcona, atras de la cancha no. 2 de Volleyball"
+            },
+            "identifier": {
+              "id": "7GXQMR",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "email": "239-3924",
+              "faxNumber": "239-3925"
+            }
+          },
+          {
+            "id": "gGyBAR-7GXQMR",
+            "name": "Unidad Central",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Francisco Morazan",
+              "locality": "DISTRITO CENTRAL",
+              "streetAddress": "Complejo Deportivo José Simón Azcona Atrás de la cancha nº 2 de Volleyball \r\n"
+            },
+            "memberOf": [
+              {
+                "id": "7GXQMR",
+                "name": "Confederación Deportiva Autónoma de Honduras"
+              }
+            ],
+            "identifier": {
+              "id": "gGyBAR-7GXQMR",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "Lic. Guillermo Sandoval Centeno",
+              "email": "noposee@noposee.com",
+              "faxNumber": "239-3925",
+              "telephone": "239-3924"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      },
+      {
+        "id": "ocds-lcuori-gGyBAR-CDAH-FEHDME 002-2024-1/1",
+        "tag": [
+          "tender"
+        ],
+        "date": "2024-02-25T19:16:04.860000-06:00",
+        "ocid": "ocds-lcuori-gGyBAR-CDAH-FEHDME 002-2024-1",
+        "buyer": {
+          "id": "gGyBAR-7GXQMR",
+          "name": "Unidad Central"
+        },
+        "tender": {
+          "id": "gGyBAR-CDAH-FEHDME 002-2024-1",
+          "items": [
+            {
+              "id": "gGyBARCDAH-FEHDME 002-20241861628",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 7.0,
+              "description": "CDAH-FEHDME-2024 ADQUISICION DE BOLETOS AEREOS PARA CAMPEONATO MUNDIAL DE SKYRUNNING 26120 ACTIVIDAD 009 (L.210,000.00) ",
+              "classification": {
+                "id": "90121502",
+                "scheme": "UNSPSC",
+                "description": "Agencias de viajes"
+              }
+            }
+          ],
+          "title": "CDAH-FEHDME 002-2024",
+          "status": "planned",
+          "tenderPeriod": {
+            "endDate": "2024-04-09T19:15:00-06:00",
+            "startDate": "2024-04-01T19:15:00-06:00"
+          },
+          "datePublished": "2024-02-25T19:16:04.860000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-04-09T19:15:00-06:00",
+            "startDate": "2024-04-01T19:15:00-06:00"
+          },
+          "statusDetails": "Elaboración",
+          "procuringEntity": {
+            "id": "gGyBAR-7GXQMR",
+            "name": "Unidad Central"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "7GXQMR",
+            "name": "Confederación Deportiva Autónoma de Honduras",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "Complejo deportivo José Simón Azcona, atras de la cancha no. 2 de Volleyball"
+            },
+            "identifier": {
+              "id": "7GXQMR",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "email": "239-3924",
+              "faxNumber": "239-3925"
+            }
+          },
+          {
+            "id": "gGyBAR-7GXQMR",
+            "name": "Unidad Central",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Francisco Morazan",
+              "locality": "DISTRITO CENTRAL",
+              "streetAddress": "Complejo Deportivo José Simón Azcona Atrás de la cancha nº 2 de Volleyball \r\n"
+            },
+            "memberOf": [
+              {
+                "id": "7GXQMR",
+                "name": "Confederación Deportiva Autónoma de Honduras"
+              }
+            ],
+            "identifier": {
+              "id": "gGyBAR-7GXQMR",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "Lic. Guillermo Sandoval Centeno",
+              "email": "noposee@noposee.com",
+              "faxNumber": "239-3925",
+              "telephone": "239-3924"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      },
+      {
+        "id": "ocds-lcuori-gGyBAR-CDAH-FEHDME 001-2024-1/1",
+        "tag": [
+          "tender"
+        ],
+        "date": "2024-02-25T19:07:00.093000-06:00",
+        "ocid": "ocds-lcuori-gGyBAR-CDAH-FEHDME 001-2024-1",
+        "buyer": {
+          "id": "gGyBAR-7GXQMR",
+          "name": "Unidad Central"
+        },
+        "tender": {
+          "id": "gGyBAR-CDAH-FEHDME 001-2024-1",
+          "items": [
+            {
+              "id": "gGyBARCDAH-FEHDME 001-20241861627",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 1.0,
+              "description": "CDAH-FEHDME-2024 ADQUISICION DE TERRENO PARA INSTALACIONES DEPORTIVAS DE LA FEDERACION HONDUREÑA DE DEPORTES DE MONTAÑA Y ESCALADA  41120 ACTIVIDAD 003 (L.4,500,000.00) APLICANDO EL ARTICULO NO. 2 (OTROS CONTRATOS) DE LA LEY DE CONTRATACION DEL ESTADO.",
+              "classification": {
+                "id": "98101503",
+                "scheme": "UNSPSC",
+                "description": "Tierras y Terrenos"
+              }
+            }
+          ],
+          "title": "CDAH-FEHDME 001-2024",
+          "status": "planned",
+          "tenderPeriod": {
+            "endDate": "2024-10-01T19:06:00-06:00",
+            "startDate": "2024-09-23T19:07:00-06:00"
+          },
+          "datePublished": "2024-02-25T19:07:00.093000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-10-01T19:06:00-06:00",
+            "startDate": "2024-09-23T19:07:00-06:00"
+          },
+          "statusDetails": "Elaboración",
+          "procuringEntity": {
+            "id": "gGyBAR-7GXQMR",
+            "name": "Unidad Central"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "7GXQMR",
+            "name": "Confederación Deportiva Autónoma de Honduras",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "Complejo deportivo José Simón Azcona, atras de la cancha no. 2 de Volleyball"
+            },
+            "identifier": {
+              "id": "7GXQMR",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "email": "239-3924",
+              "faxNumber": "239-3925"
+            }
+          },
+          {
+            "id": "gGyBAR-7GXQMR",
+            "name": "Unidad Central",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Francisco Morazan",
+              "locality": "DISTRITO CENTRAL",
+              "streetAddress": "Complejo Deportivo José Simón Azcona Atrás de la cancha nº 2 de Volleyball \r\n"
+            },
+            "memberOf": [
+              {
+                "id": "7GXQMR",
+                "name": "Confederación Deportiva Autónoma de Honduras"
+              }
+            ],
+            "identifier": {
+              "id": "gGyBAR-7GXQMR",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "Lic. Guillermo Sandoval Centeno",
+              "email": "noposee@noposee.com",
+              "faxNumber": "239-3925",
+              "telephone": "239-3924"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      },
+      {
+        "id": "ocds-lcuori-wrVggL-GC-CM-HBCBH-CHOLUTECA-002-2024-1/2",
+        "tag": [
+          "tender",
+          "award"
+        ],
+        "date": "2024-02-21T20:11:57.297000-06:00",
+        "ocid": "ocds-lcuori-wrVggL-GC-CM-HBCBH-CHOLUTECA-002-2024-1",
+        "buyer": {
+          "id": "wrVggL-MLQ77R",
+          "name": "Cuerpo de Bomberos Choluteca"
+        },
+        "awards": [
+          {
+            "id": "wrVggL-GC-CM-HBCBH-CHOLUTECA-002-2024-1",
+            "items": [
+              {
+                "id": "wrVggLGC-CM-HBCBH-CHOLUTECA-002-20241860930",
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 42407.45
+                  }
+                },
+                "quantity": 1.0,
+                "description": "ADQUISICION DE REPUESTOS PARA UNIDAD IVECO DAYLI SOLICITAR INFORMACION VIA TEL.98064158",
+                "classification": {
+                  "id": "25191513",
+                  "scheme": "UNSPSC",
+                  "description": "Kit de mantenimiento de vehículo de soporte en tierra"
+                }
+              }
+            ],
+            "suppliers": [
+              {
+                "id": "HN-RTN-08019006040909",
+                "name": "Recambios Internacionales S. de R.L de C.V"
+              }
+            ]
+          }
+        ],
+        "tender": {
+          "id": "wrVggL-GC-CM-HBCBH-CHOLUTECA-002-2024-1",
+          "items": [
+            {
+              "id": "wrVggLGC-CM-HBCBH-CHOLUTECA-002-20241860930",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 1.0,
+              "description": "ADQUISICION DE REPUESTOS PARA UNIDAD IVECO DAYLI SOLICITAR INFORMACION VIA TEL.98064158",
+              "classification": {
+                "id": "25191513",
+                "scheme": "UNSPSC",
+                "description": "Kit de mantenimiento de vehículo de soporte en tierra"
+              }
+            }
+          ],
+          "title": "GC-CM-HBCBH-CHOLUTECA-002-2024",
+          "status": "complete",
+          "tenderPeriod": {
+            "endDate": "2024-02-23T10:11:00-06:00",
+            "startDate": "2024-02-21T20:11:00-06:00"
+          },
+          "datePublished": "2024-02-21T20:11:57.297000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-02-23T10:11:00-06:00",
+            "startDate": "2024-02-21T20:11:00-06:00"
+          },
+          "statusDetails": "Adjudicado",
+          "procuringEntity": {
+            "id": "wrVggL-MLQ77R",
+            "name": "Cuerpo de Bomberos Choluteca"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "MLQ77R",
+            "name": "Heroico y Benemérito Cuerpo de Bomberos de Honduras",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "costado sur del estadio nacional, tegucigalpa MDC"
+            },
+            "identifier": {
+              "id": "MLQ77R",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "url": "http://bomberoshonduras.hn",
+              "email": "2232-4092",
+              "faxNumber": "2239-3813"
+            }
+          },
+          {
+            "id": "wrVggL-MLQ77R",
+            "name": "Cuerpo de Bomberos Choluteca",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Choluteca",
+              "locality": "CHOLUTECA",
+              "streetAddress": "Barrio Aterrizaje al sur del supermercado El Rápido."
+            },
+            "memberOf": [
+              {
+                "id": "MLQ77R",
+                "name": "Heroico y Benemérito Cuerpo de Bomberos de Honduras"
+              }
+            ],
+            "identifier": {
+              "id": "wrVggL-MLQ77R",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "Sixto Ciriaco Díaz Rubio",
+              "email": "choluteca@bomberoshonduras.hn",
+              "telephone": "2782-0504, 2782-0503"
+            }
+          },
+          {
+            "id": "HN-RTN-08019006040909",
+            "name": "Recambios Internacionales S. de R.L de C.V",
+            "roles": [
+              "supplier"
+            ],
+            "address": {
+              "streetAddress": "Col.El prado, Boulevar Jose Cecilio del Valle"
+            },
+            "identifier": {
+              "id": "08019006040909",
+              "scheme": "HN-RTN"
+            },
+            "contactPoint": {
+              "name": "Henry Omar Benitez Macoto",
+              "email": "rein@rein-hn.com",
+              "telephone": "2235-6868"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      },
+      {
+        "id": "ocds-lcuori-kR27gr-CM-16-AMLE-2024-1/1",
+        "tag": [
+          "tender"
+        ],
+        "date": "2024-02-18T20:39:26.257000-06:00",
+        "ocid": "ocds-lcuori-kR27gr-CM-16-AMLE-2024-1",
+        "buyer": {
+          "id": "kR27gr-gRNeYG",
+          "name": "Alcaldía Municipal de La Esperanza"
+        },
+        "tender": {
+          "id": "kR27gr-CM-16-AMLE-2024-1",
+          "items": [
+            {
+              "id": "kR27grCM-16-AMLE-20241860182",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 1.0,
+              "description": "COMPRA DE 18 CUBETAS DE PINTURA LATEX,12 PLIEGOS DE LIJA # 180, 2 CUBETA DE PINTURA DE ACEITE, 4 1/4 GALON DE PINTURA DE ACEITE,2 CUBETA PINTURA DE ACEITE,11 GALON PINTURA DE ACEITE,4 GALONES DE DISOLVENTE,2 GALONES DE BARNIZ,2 GALON DE TINER,8 GALONES LACA DORADA ,8 GALONES DE POLUREITANO TRANSPARENTE,5 BROCHAS DE 2.5 PULG,8 MINI FELPAS,3 GALONES DE PINTURA LATEX,2 GALON DE PINTURA ANTICORROSIVA, 1 GALON DE DILUYENTE,6 CEPILLOS DE ALMBRE,6 FELPAS. tesoreriamunilaeza@gmail,con 27831818",
+              "classification": {
+                "id": "31211506",
+                "scheme": "UNSPSC",
+                "description": "Pinturas de látex"
+              }
+            }
+          ],
+          "title": "CM-16-AMLE-2024",
+          "status": "active",
+          "tenderPeriod": {
+            "endDate": "2024-02-20T20:39:00-06:00",
+            "startDate": "2024-02-19T20:39:00-06:00"
+          },
+          "datePublished": "2024-02-18T20:39:26.257000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-02-20T20:39:00-06:00",
+            "startDate": "2024-02-19T20:39:00-06:00"
+          },
+          "statusDetails": "Recepción de Ofertas",
+          "procuringEntity": {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "identifier": {
+              "id": "gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "email": "783-9297"
+            }
+          },
+          {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Intibuca",
+              "locality": "LA ESPERANZA",
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "memberOf": [
+              {
+                "id": "gRNeYG",
+                "name": "Alcaldía Municipal de La Esperanza"
+              }
+            ],
+            "identifier": {
+              "id": "kR27gr-gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "MIGUEL ANTONIO FAJARDO MEJIA",
+              "email": "mesadeayuda@honducompras.gob.hn",
+              "telephone": "783-9297"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      },
+      {
+        "id": "ocds-lcuori-kR27gr-CM-15-AMLE-2024-1/1",
+        "tag": [
+          "tender"
+        ],
+        "date": "2024-02-18T20:33:55.780000-06:00",
+        "ocid": "ocds-lcuori-kR27gr-CM-15-AMLE-2024-1",
+        "buyer": {
+          "id": "kR27gr-gRNeYG",
+          "name": "Alcaldía Municipal de La Esperanza"
+        },
+        "tender": {
+          "id": "kR27gr-CM-15-AMLE-2024-1",
+          "items": [
+            {
+              "id": "kR27grCM-15-AMLE-20241860181",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 1.0,
+              "description": "COMPRA DE MANGUERA DE SUCCION tesoreriamunilaeza@gmail.com 27831818",
+              "classification": {
+                "id": "40142121",
+                "scheme": "UNSPSC",
+                "description": "Carretes de manguera"
+              }
+            }
+          ],
+          "title": "CM-15-AMLE-2024",
+          "status": "active",
+          "tenderPeriod": {
+            "endDate": "2024-02-20T20:33:00-06:00",
+            "startDate": "2024-02-19T20:33:00-06:00"
+          },
+          "datePublished": "2024-02-18T20:33:55.780000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-02-20T20:33:00-06:00",
+            "startDate": "2024-02-19T20:33:00-06:00"
+          },
+          "statusDetails": "Recepción de Ofertas",
+          "procuringEntity": {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "identifier": {
+              "id": "gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "email": "783-9297"
+            }
+          },
+          {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Intibuca",
+              "locality": "LA ESPERANZA",
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "memberOf": [
+              {
+                "id": "gRNeYG",
+                "name": "Alcaldía Municipal de La Esperanza"
+              }
+            ],
+            "identifier": {
+              "id": "kR27gr-gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "MIGUEL ANTONIO FAJARDO MEJIA",
+              "email": "mesadeayuda@honducompras.gob.hn",
+              "telephone": "783-9297"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      },
+      {
+        "id": "ocds-lcuori-kR27gr-CM-14-AMLE-2024-1/1",
+        "tag": [
+          "tender"
+        ],
+        "date": "2024-02-18T20:05:30.250000-06:00",
+        "ocid": "ocds-lcuori-kR27gr-CM-14-AMLE-2024-1",
+        "buyer": {
+          "id": "kR27gr-gRNeYG",
+          "name": "Alcaldía Municipal de La Esperanza"
+        },
+        "tender": {
+          "id": "kR27gr-CM-14-AMLE-2024-1",
+          "items": [
+            {
+              "id": "kR27grCM-14-AMLE-20241860180",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 1.0,
+              "description": "2 KITS ESCOLARES ECONOMICOS,16 LIBROS   PAQUITO 1,16 LIBROS PAQUITO TOMO 2,16 CAJITAS DE MADERA,16 LAPIZ DE CARBON,1 GALON DE RESISTOL,3 RESMAS DE PAPEL T/C,2 BOTES DE SILICON,16 MARCADORES PARA PIZARRA,1 IMPRESORA MULTIFUNCIONAL,5 CAJAS DE PAPEL CONTINUO QUIMICO DE 1 COPIA\r\n",
+              "classification": {
+                "id": "14111531",
+                "scheme": "UNSPSC",
+                "description": "Libros o cuadernos de registro"
+              }
+            }
+          ],
+          "title": "CM-14-AMLE-2024",
+          "status": "active",
+          "tenderPeriod": {
+            "endDate": "2024-02-20T20:05:00-06:00",
+            "startDate": "2024-02-19T20:05:00-06:00"
+          },
+          "datePublished": "2024-02-18T20:05:30.250000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-02-20T20:05:00-06:00",
+            "startDate": "2024-02-19T20:05:00-06:00"
+          },
+          "statusDetails": "Recepción de Ofertas",
+          "procuringEntity": {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "identifier": {
+              "id": "gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "email": "783-9297"
+            }
+          },
+          {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Intibuca",
+              "locality": "LA ESPERANZA",
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "memberOf": [
+              {
+                "id": "gRNeYG",
+                "name": "Alcaldía Municipal de La Esperanza"
+              }
+            ],
+            "identifier": {
+              "id": "kR27gr-gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "MIGUEL ANTONIO FAJARDO MEJIA",
+              "email": "mesadeayuda@honducompras.gob.hn",
+              "telephone": "783-9297"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      },
+      {
+        "id": "ocds-lcuori-kR27gr-CM-13-AMLE-2024-1/1",
+        "tag": [
+          "tender"
+        ],
+        "date": "2024-02-18T19:45:14.707000-06:00",
+        "ocid": "ocds-lcuori-kR27gr-CM-13-AMLE-2024-1",
+        "buyer": {
+          "id": "kR27gr-gRNeYG",
+          "name": "Alcaldía Municipal de La Esperanza"
+        },
+        "tender": {
+          "id": "kR27gr-CM-13-AMLE-2024-1",
+          "items": [
+            {
+              "id": "kR27grCM-13-AMLE-20241860179",
+              "unit": {
+                "name": "Unidad"
+              },
+              "quantity": 1.0,
+              "description": "COMPRA DE 55 BLOQUES DE 6\" 27 BOLSA DE CENTO GRIS, 3 VARILLAS CORUGADAS 3/8, 7 VARILLAS LISAS,5 METRO DE ARENA,1 LIBRA DE ALAMBRE DE AMARRE,2 LAMINAS DE 10 PIES,3 METROS DE GRAVA,15 BOLSAS DE PULIDO,6 LATAS DE PINTURA CAE tesoreriamunilaeza@gmail,com 27831818",
+              "classification": {
+                "id": "30111601",
+                "scheme": "UNSPSC",
+                "description": "Cemento"
+              }
+            }
+          ],
+          "title": "CM-13-AMLE-2024",
+          "status": "active",
+          "tenderPeriod": {
+            "endDate": "2024-02-20T19:45:00-06:00",
+            "startDate": "2024-02-19T19:44:00-06:00"
+          },
+          "datePublished": "2024-02-18T19:45:14.707000-06:00",
+          "enquiryPeriod": {
+            "endDate": "2024-02-20T19:45:00-06:00",
+            "startDate": "2024-02-19T19:44:00-06:00"
+          },
+          "statusDetails": "Recepción de Ofertas",
+          "procuringEntity": {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza"
+          },
+          "procurementMethod": "open",
+          "localProcurementCategory": "goodsOrServices",
+          "procurementMethodDetails": "Compra Menor"
+        },
+        "parties": [
+          {
+            "id": "gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "identifier": {
+              "id": "gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "email": "783-9297"
+            }
+          },
+          {
+            "id": "kR27gr-gRNeYG",
+            "name": "Alcaldía Municipal de La Esperanza",
+            "roles": [
+              "buyer"
+            ],
+            "address": {
+              "region": "Intibuca",
+              "locality": "LA ESPERANZA",
+              "streetAddress": "La Esperanza, Intibuca"
+            },
+            "memberOf": [
+              {
+                "id": "gRNeYG",
+                "name": "Alcaldía Municipal de La Esperanza"
+              }
+            ],
+            "identifier": {
+              "id": "kR27gr-gRNeYG",
+              "scheme": "X-HN-ONCAE-CE"
+            },
+            "contactPoint": {
+              "name": "MIGUEL ANTONIO FAJARDO MEJIA",
+              "email": "mesadeayuda@honducompras.gob.hn",
+              "telephone": "783-9297"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "honducompras-1",
+            "url": "http://h1.honducompras.gob.hn/",
+            "name": "HonduCompras 1.0 - Módulo de Difusión de Compras y Contrataciones"
+          }
+        ],
+        "language": "es",
+        "publisher": {
+          "name": "Oficina Normativa de Contratación y Adquisiciones del Estado (ONCAE) / Honduras"
+        },
+        "initiationType": "tender"
+      }
+    ]
+  }
+}

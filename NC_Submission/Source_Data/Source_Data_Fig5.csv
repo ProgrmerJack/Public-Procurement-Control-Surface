@@ -1,0 +1,4 @@
+pathway,effect_size,proportion_pct,description,ci_lower,ci_upper
+extensive_margin,14.8,89.2,Extensive margin: single to multi-bidder transition,,
+intensive_margin,1.8,10.8,Intensive margin: additional bidders in competitive contracts,,
+total_competition_effect,14.8,100.0,Total competition-carbon premium (single vs multi-bidder),14.2,15.4

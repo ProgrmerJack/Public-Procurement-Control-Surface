@@ -1,0 +1,19 @@
+{
+  "matching": {
+    "sbti_companies": 14366,
+    "unique_sbti_names_normalized": 14008,
+    "matched_supplier_names": 12362,
+    "total_sbti_contracts": 207454,
+    "eu_context_contracts": 34845671
+  },
+  "selection": {
+    "sbti_rate_competitive_pct": 0.5505578476309836,
+    "sbti_rate_sb_pct": 0.9845522968855183,
+    "ratio": 0.5591961436407084
+  },
+  "carbon": {
+    "ci_sbti": NaN,
+    "ci_non_sbti": NaN,
+    "diff_pct": NaN
+  }
+}

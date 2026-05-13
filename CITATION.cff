@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+title: >-
+  Replication Archive for: Governance Reform Unlocks
+  Decarbonization Dead Zones in Public Procurement
+message: >-
+  If you use this dataset or code, please cite the
+  associated article and Zenodo replication archive.
+type: dataset
+authors:
+  - given-names: Abduxoliq
+    family-names: Ashuraliyev
+    email: jack00040008@outlook.com
+    affiliation: Independent Researcher, Tashkent, Uzbekistan
+    orcid: 'https://orcid.org/0009-0003-5482-5526'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20098951
+    description: Zenodo replication archive with Data.zip (v4.0.0)
+repository-code: 'https://github.com/ProgrmerJack/Public-Procurement-Control-Surface'
+url: 'https://github.com/ProgrmerJack/Public-Procurement-Control-Surface'
+abstract: >-
+  Replication data and code for an analysis of 21.6 million
+  government contracts across 27 countries (2012-2023),
+  identifying Decarbonization Dead Zones in public procurement.
+  Implements staggered difference-in-differences (Callaway &
+  Sant'Anna 2021), regression discontinuity at the EUR 139,000
+  EU threshold, E-PRTR facility-level emissions matching,
+  Eurostat within-sector validation, Monte Carlo uncertainty
+  quantification, and cross-continental corroboration (US,
+  Canada, Australia, World Bank GPPD).
+keywords:
+  - green public procurement
+  - decarbonization dead zones
+  - single-bidding
+  - carbon intensity
+  - difference-in-differences
+  - regression discontinuity
+  - EXIOBASE
+  - supply chain emissions
+  - governance
+  - EU Directive 2014/24
+license: CC-BY-4.0
+version: 4.0.0
+date-released: '2026-05-10'
+preferred-citation:
+  type: article
+  authors:
+    - given-names: Abduxoliq
+      family-names: Ashuraliyev
+      email: jack00040008@outlook.com
+      affiliation: Independent Researcher, Tashkent, Uzbekistan
+      orcid: 'https://orcid.org/0009-0003-5482-5526'
+  title: >-
+    Governance Reform Unlocks Decarbonization Dead Zones
+    in Public Procurement
+  journal: Nature Sustainability
+  year: 2026
+  status: submitted

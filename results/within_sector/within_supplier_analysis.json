@@ -1,0 +1,18 @@
+{
+  "within_supplier_all": {
+    "n_suppliers": 39410,
+    "sb_mean_ci": 0.3643,
+    "mb_mean_ci": 0.3675,
+    "premium_pct": -0.87,
+    "pct_sb_lower": 23.0,
+    "cohens_d": -0.0304,
+    "paired_t": -6.04,
+    "p_value": 1.5663778197890546e-09
+  },
+  "within_supplier_robust": {
+    "n_suppliers": 11166,
+    "premium_pct": -0.87,
+    "pct_sb_lower": 32.4,
+    "cohens_d": -0.0442
+  }
+}

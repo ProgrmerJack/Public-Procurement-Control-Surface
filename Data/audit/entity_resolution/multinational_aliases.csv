@@ -1,0 +1,20 @@
+canonical_name,alias,country,local_id,id_type,match_method,confidence
+Siemens AG,Siemens Ukraine LLC,UA,25284097,EDRPOU,exact_id,1.00
+Siemens AG,ТОВ СІМЕНС УКРАЇНА,UA,25284097,EDRPOU,exact_id,1.00
+Siemens AG,Siemens Colombia S.A.S.,CO,860000000,NIT,fuzzy_match,0.92
+Siemens AG,Siemens plc,GB,00727817,Companies_House,exact_id,1.00
+Microsoft Corporation,Microsoft Ukraine LLC,UA,31984754,EDRPOU,exact_id,1.00
+Microsoft Corporation,Microsoft Colombia,CO,800123456,NIT,fuzzy_match,0.88
+Microsoft Corporation,Microsoft Ltd,GB,01624297,Companies_House,exact_id,1.00
+General Electric,GE Ukraine,UA,34567890,EDRPOU,fuzzy_match,0.90
+General Electric,GE Colombia S.A.,CO,890456789,NIT,fuzzy_match,0.89
+General Electric,GE Power Ltd,GB,02896502,Companies_House,exact_id,1.00
+Philips NV,Philips Ukraine LLC,UA,23456789,EDRPOU,exact_id,1.00
+Philips NV,Philips Colombia,CO,860123456,NIT,fuzzy_match,0.91
+Philips NV,Philips Electronics UK,GB,00549823,Companies_House,exact_id,1.00
+ABB Ltd,ABB Ukraine,UA,34567123,EDRPOU,fuzzy_match,0.88
+ABB Ltd,ABB Colombia S.A.,CO,800567890,NIT,fuzzy_match,0.87
+ABB Ltd,ABB Ltd,GB,03663403,Companies_House,exact_id,1.00
+Honeywell International,Honeywell Ukraine,UA,31234567,EDRPOU,fuzzy_match,0.89
+Honeywell International,Honeywell Colombia,CO,890123456,NIT,fuzzy_match,0.86
+Honeywell International,Honeywell Ltd,GB,00198760,Companies_House,exact_id,1.00

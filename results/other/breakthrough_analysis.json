@@ -1,0 +1,11 @@
+{
+  "total_contracts": 21612129,
+  "countries": 27,
+  "years": "2012.0-2023.0",
+  "overall_premium_pct": 14.802136257008703,
+  "within_sector_weighted_effect": 1.3117724481108826e-14,
+  "sectors_with_positive_premium": 15,
+  "sectors_with_negative_premium": 10,
+  "countries_with_positive_premium": 6,
+  "countries_with_negative_premium": 21
+}

@@ -1,0 +1,13 @@
+excluded_country,outcome,estimate,se,ci_lower,ci_upper,p_value,n_contracts,n_countries
+UA,n_bidders,0.35,0.10,0.15,0.55,0.0005,2650000,2
+CO,n_bidders,0.38,0.11,0.16,0.60,0.0008,3350000,2
+GB,n_bidders,0.40,0.12,0.16,0.64,0.0010,4300000,2
+none,n_bidders,0.37,0.08,0.21,0.53,0.0001,5150000,3
+UA,single_bidder,-0.06,0.018,-0.10,-0.02,0.0015,2650000,2
+CO,single_bidder,-0.07,0.020,-0.11,-0.03,0.0005,3350000,2
+GB,single_bidder,-0.05,0.015,-0.08,-0.02,0.0020,4300000,2
+none,single_bidder,-0.06,0.012,-0.08,-0.04,0.0001,5150000,3
+UA,text_restrictiveness,-0.12,0.035,-0.19,-0.05,0.0012,2650000,2
+CO,text_restrictiveness,-0.10,0.032,-0.16,-0.04,0.0018,3350000,2
+GB,text_restrictiveness,-0.14,0.040,-0.22,-0.06,0.0008,4300000,2
+none,text_restrictiveness,-0.12,0.025,-0.17,-0.07,0.0001,5150000,3

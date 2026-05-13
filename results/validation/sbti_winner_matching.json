@@ -1,0 +1,101 @@
+{
+  "matching_summary": {
+    "sbti_total": 14366,
+    "sbti_eu": 5118,
+    "sbti_matched_to_suppliers": 9,
+    "contracts_with_sbti_winner": 20,
+    "total_eu_contracts": 13638933,
+    "match_rate_pct": 0.1758499413833529
+  },
+  "selection_analysis": {
+    "sbti_rate_competitive_pct": 0.00012369996855370085,
+    "sbti_rate_single_bidder_pct": 0.0002584840941812645,
+    "competitive_to_sb_ratio": 0.47855930534338803,
+    "chi2": 1.5556477886002456,
+    "p_value": 0.2123036072311615
+  },
+  "carbon_comparison": {
+    "sbti_winner_carbon_intensity": 0.308,
+    "non_sbti_carbon_intensity": 0.3532004669287061,
+    "difference_pct": -12.797397274627576
+  },
+  "dead_zone_analysis": {
+    "dead_zone": {
+      "sbti_rate_competitive": NaN,
+      "sbti_rate_sb": NaN,
+      "ratio": null,
+      "n_contracts": 0
+    },
+    "non_dead_zone": {
+      "sbti_rate_competitive": 1.2369996855370085e-06,
+      "sbti_rate_sb": 2.5848409418126455e-06,
+      "ratio": 0.47855930534338803,
+      "n_contracts": 13638933
+    }
+  },
+  "sample_matches": [
+    {
+      "supplier_id": "Orange",
+      "country": "FR",
+      "sbti_company": "Orange",
+      "sbti_sector": "Telecommunication Services",
+      "target_class": "1.5\u00b0C"
+    },
+    {
+      "supplier_id": "Tecnolog\u00edas Plexus, S.L.",
+      "country": "ES",
+      "sbti_company": "TECNOLOGIAS PLEXUS S.L.",
+      "sbti_sector": "Software and Services",
+      "target_class": NaN
+    },
+    {
+      "supplier_id": "Vestre AS",
+      "country": "NO",
+      "sbti_company": "Vestre AS",
+      "sbti_sector": "Consumer Durables, Household and Personal Products",
+      "target_class": "1.5\u00b0C"
+    },
+    {
+      "supplier_id": "axione",
+      "country": "FR",
+      "sbti_company": "Axione",
+      "sbti_sector": "Telecommunication Services",
+      "target_class": "1.5\u00b0C"
+    },
+    {
+      "supplier_id": "api Restauration  ",
+      "country": "FR",
+      "sbti_company": "API Restauration",
+      "sbti_sector": "Hotels, Restaurants and Leisure, and Tourism Services",
+      "target_class": "1.5\u00b0C"
+    },
+    {
+      "supplier_id": "edf",
+      "country": "FR",
+      "sbti_company": "EDF Group",
+      "sbti_sector": "Electric Utilities and Independent Power Producers and Energy Traders (including Fossil, Alternative and Nuclear Energy)",
+      "target_class": "Well-below 2\u00b0C"
+    },
+    {
+      "supplier_id": "Securitas Oy",
+      "country": "FI",
+      "sbti_company": "SECURITAS",
+      "sbti_sector": "",
+      "target_class": "name-only match"
+    },
+    {
+      "supplier_id": "Tecniplast",
+      "country": "GB",
+      "sbti_company": "TECNIPLAST",
+      "sbti_sector": "",
+      "target_class": "name-only match"
+    },
+    {
+      "supplier_id": "ViaCon",
+      "country": "IS",
+      "sbti_company": "VIACON",
+      "sbti_sector": "",
+      "target_class": "name-only match"
+    }
+  ]
+}

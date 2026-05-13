@@ -1,0 +1,22 @@
+{
+  "core_statistics": {
+    "total_contracts": 21612129,
+    "countries": 27,
+    "years": "2012-2023",
+    "single_bidder_n": 2378511,
+    "multi_bidder_n": 19233618,
+    "sb_mean": 0.3370852773016395,
+    "mb_mean": 0.29362282644898113,
+    "premium_pct": 14.802136257008701,
+    "t_statistic": 331.5234350821765,
+    "cohens_d": 0.22861554558574246
+  },
+  "deterrence_effect": {
+    "competitive_buyer_mean": 0.34232748692856096,
+    "non_competitive_buyer_mean": 0.3359468816641518,
+    "deterrence_premium_pct": 1.8992899213119876,
+    "t_statistic": 21.894911164085453,
+    "p_value": 2.9769688563520065e-106
+  },
+  "extreme_value_ratio": 2.1763344394747195
+}

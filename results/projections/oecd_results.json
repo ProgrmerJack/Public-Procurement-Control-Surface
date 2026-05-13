@@ -1,0 +1,89 @@
+{
+  "countries": [
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "year": 2021,
+      "procurement_gdp_pct": 9.89,
+      "estimated_procurement_eur_bn": 2175.8,
+      "sb_rate_literature": 15.0,
+      "dead_zone_estimate_eur_bn": 326.4
+    },
+    {
+      "name": "Japan",
+      "iso3": "JPN",
+      "year": 2021,
+      "procurement_gdp_pct": 18.13,
+      "estimated_procurement_eur_bn": 761.5,
+      "sb_rate_literature": 7.5,
+      "dead_zone_estimate_eur_bn": 57.1
+    },
+    {
+      "name": "Korea",
+      "iso3": "KOR",
+      "year": 2021,
+      "procurement_gdp_pct": 14.49,
+      "estimated_procurement_eur_bn": 217.3,
+      "sb_rate_literature": 9.0,
+      "dead_zone_estimate_eur_bn": 19.6
+    },
+    {
+      "name": "Australia",
+      "iso3": "AUS",
+      "year": 2021,
+      "procurement_gdp_pct": 17.93,
+      "estimated_procurement_eur_bn": 251.0,
+      "sb_rate_literature": 50.0,
+      "dead_zone_estimate_eur_bn": 125.5
+    },
+    {
+      "name": "Brazil",
+      "iso3": "BRA",
+      "year": 2020,
+      "procurement_gdp_pct": 15.99,
+      "estimated_procurement_eur_bn": 255.8,
+      "sb_rate_literature": 15.0,
+      "dead_zone_estimate_eur_bn": 38.4
+    },
+    {
+      "name": "India",
+      "iso3": "IND",
+      "year": null,
+      "procurement_gdp_pct": null,
+      "estimated_procurement_eur_bn": null,
+      "sb_rate_literature": 20.0,
+      "dead_zone_estimate_eur_bn": null,
+      "note": "not in OECD dataset"
+    },
+    {
+      "name": "South Africa",
+      "iso3": "ZAF",
+      "year": 2022,
+      "procurement_gdp_pct": 9.45,
+      "estimated_procurement_eur_bn": 33.1,
+      "sb_rate_literature": 30.0,
+      "dead_zone_estimate_eur_bn": 9.9
+    },
+    {
+      "name": "Canada",
+      "iso3": "CAN",
+      "year": 2022,
+      "procurement_gdp_pct": 13.28,
+      "estimated_procurement_eur_bn": 225.8,
+      "sb_rate_literature": 10.0,
+      "dead_zone_estimate_eur_bn": 22.6
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "year": 2022,
+      "procurement_gdp_pct": 14.74,
+      "estimated_procurement_eur_bn": 398.0,
+      "sb_rate_literature": 20.0,
+      "dead_zone_estimate_eur_bn": 79.6
+    }
+  ],
+  "total_dead_zone_eur_bn": 679.1,
+  "total_procurement_eur_bn": 4318.3,
+  "data_source": "OECD Government at a Glance"
+}

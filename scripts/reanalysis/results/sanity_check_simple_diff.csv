@@ -1,0 +1,2 @@
+method,window,n_below,n_above,mean_below,mean_above,difference,pct_change,t_statistic,p_value,rdd_estimate,rdd_pct,signs_match,magnitudes_similar
+Simple difference-in-means,111200 to 166800,587235,590857,0.2032848178327244,0.20240135938137296,-0.0008834584513514321,-0.4345914568388465,-10.161073618706418,2.9650299389220815e-24,0.00373,1.74,False,False

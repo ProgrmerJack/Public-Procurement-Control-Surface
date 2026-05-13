@@ -1,0 +1,21 @@
+sector,cv_mean,cv_median,cv_std,cv_count,p90_p10_ratio_mean,gini_mean,n_facilities_mean
+Combustion of fuels,3.2963,3.2934,1.3653,527,544.9192,-0.8113,203.0076
+Aircraft operator activities,2.2893,1.9066,1.5089,319,2987.0133,-0.7274,21.2038
+Other activity opted-in pursuant to Article 24 of Directive 2003/87/EC,2.1976,0.8735,3.0772,120,214.9505,-0.5233,24.3417
+Combustion installations with a rated thermal input exceeding 20 MW,1.8435,1.593,1.1793,310,297.8789,-0.6052,49.2903
+Production of pig iron or steel,1.6677,1.6775,1.0732,356,112.0445,-0.5963,10.0871
+Production of bulk chemicals,1.3297,1.1971,0.5862,247,72.9632,-0.569,14.4737
+Production of paper or cardboard,1.0344,0.9806,0.4352,386,28.4849,-0.4835,23.1995
+Mineral oil refineries,0.9961,0.9417,0.2868,28,18.0482,-0.4806,4.6429
+Production of pulp,0.995,0.941,0.3963,202,43.0488,-0.4817,14.0297
+Production of nitric acid,0.9509,0.805,0.3201,63,12.0035,-0.4619,4.1587
+Industrial plants for the production of (a) pulp from timber or other fibrous materials (b) paper and board,0.9076,0.8977,0.3758,119,21.7387,-0.4438,10.3866
+Refining of mineral oil,0.861,0.8573,0.4171,319,317.1435,-0.4343,6.8025
+Production or processing of ferrous metals,0.8537,0.9009,0.46,217,11.5525,-0.39,13.2074
+Manufacture of ceramics,0.8495,0.7801,0.3123,423,23.4297,-0.4078,33.208
+Production or processing of non-ferrous metals,0.8418,0.876,0.2652,132,9.7387,-0.4191,6.9015
+Production of coke,0.7918,0.7465,0.4306,67,6.0336,-0.3727,4.4328
+"Production of lime, or calcination of dolomite/magnesite",0.7698,0.7169,0.4348,355,27.9436,-0.3719,11.9408
+Installations for the production of cement clinker in rotary kilns or lime in rotary kilns or in other furnaces,0.7611,0.793,0.3991,99,15.8889,-0.3808,5.0101
+Production of hydrogen and synthesis gas,0.7462,0.665,0.4854,66,8.1039,-0.3578,5.6515
+Production of carbon black,0.7443,0.7489,0.1555,35,14.4494,-0.3966,5.4286

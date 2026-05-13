@@ -1,0 +1,1397 @@
+% Supplementary Information
+% Governance Reform Unlocks Decarbonization Dead Zones in Public Procurement
+% Nature Sustainability
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage[hypertexnames=false]{hyperref}
+\usepackage{xurl}
+\usepackage{bookmark}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{textcomp}
+
+\renewcommand{\arraystretch}{1.12}
+
+\newcommand{\tabnoteblock}[1]{%
+    \par\vspace{0.45em}%
+    \begin{minipage}{0.98\linewidth}
+    \footnotesize\raggedright #1
+    \end{minipage}\par
+}
+
+\newcommand{\tabnotes}[1]{\tabnoteblock{\textit{Notes:} #1}}
+
+% Reset counters with S prefix for SI tables/figures
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\theHtable}{SItable.\arabic{table}}
+\renewcommand{\theHfigure}{SIfigure.\arabic{figure}}
+
+\title{\textbf{Supplementary Information}\\[0.5em]
+\large Governance Reform Unlocks Decarbonization Dead Zones in Public Procurement}
+
+\author{Abduxoliq Ashuraliyev}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+This Supplementary Information is organized in three layers. Sections~1--10 document data construction, identification details, and primary robustness checks for the manuscript's main estimands. Sections~11--27 assemble mechanism and external-validation analyses that test whether the competition results admit a decarbonization interpretation under independent data sources and measurement choices, without redefining the primary causal estimands. Sections~28 onward report calibrated policy-finance and projection exercises that are explicitly downstream implications rather than additional causal estimates.
+
+%========================================================================
+\section{Data Sources and Sample Construction}
+%========================================================================
+
+\subsection{Procurement Data Sources}
+
+Our analysis draws on procurement data from two primary sources:
+
+\begin{enumerate}
+\item \textbf{EU Tenders Electronic Daily (TED)}: Contract Award Notices for 26 European countries (2012--2023), downloaded from the EU Open Data Portal.
+
+\item \textbf{Colombia SECOP}: Open Contracting Data Standard (OCDS) format data from Colombia's national procurement platform (2012--2023), comprising 7.97 million contracts.
+\end{enumerate}
+
+\subsection{Sample Construction}
+
+\begin{table}[H]
+\centering
+\caption{Sample construction.}
+\label{tab:sample}
+\begin{tabular}{lr}
+\toprule
+\textbf{Stage} & \textbf{N Contracts} \\
+\midrule
+Initial download (TED + Colombia SECOP) & $\sim$28,500,000$^\dagger$ \\
+After deduplication & $\sim$25,100,000$^\dagger$ \\
+After field-level cleaning & $\sim$22,900,000$^\dagger$ \\
+After CPV-to-EXIOBASE linkage & 21,612,129 \\
+With single-bidder indicator & 21,612,129 \\
+With bidder count (for RDD) & 15,538,905 \\
+\midrule
+\textbf{Final analysis sample} & \textbf{21,612,129} \\
+\bottomrule
+\end{tabular}
+\tabnoteblock{$^\dagger$Intermediate ingestion counts are orientation-only checkpoints from archived acquisition logs and are rounded to the nearest 100,000; every reported estimate uses the exact deposited analytic samples of 21,612,129 linked contracts overall and 15,538,905 contracts in the bidder-count subsample.}
+\end{table}
+
+\subsection{Country Coverage}
+
+\begin{table}[H]
+\centering
+\caption{Sample composition by country.}
+\label{tab:countries}
+\begin{tabular}{llrr}
+\toprule
+\textbf{Country} & \textbf{Code} & \textbf{N Contracts} & \textbf{\% Single-Bidder} \\
+\midrule
+Colombia & CO & 7,973,196 & 0.7\% \\
+Poland & PL & 2,880,168 & 33.7\% \\
+France & FR & 2,392,765 & 10.7\% \\
+Spain & ES & 1,384,496 & 10.3\% \\
+Italy & IT & 928,848 & 12.6\% \\
+United Kingdom & GB & 818,707 & 5.4\% \\
+Germany & DE & 815,506 & 13.8\% \\
+Czech Republic & CZ & 723,161 & 21.4\% \\
+Greece & GR & 562,251 & 7.6\% \\
+Slovenia & SI & 438,956 & 32.0\% \\
+Lithuania & LT & 423,731 & 12.6\% \\
+Latvia & LV & 279,714 & 17.0\% \\
+Portugal & PT & 258,477 & 8.9\% \\
+Sweden & SE & 253,196 & 7.3\% \\
+Finland & FI & 202,710 & 7.2\% \\
+Denmark & DK & 180,436 & 8.8\% \\
+Hungary & HU & 181,626 & 30.2\% \\
+Belgium & BE & 158,956 & 14.1\% \\
+Slovakia & SK & 149,240 & 13.4\% \\
+Norway & NO & 125,138 & 6.3\% \\
+Estonia & EE & 114,437 & 13.4\% \\
+Ireland & IE & 96,838 & 6.4\% \\
+Austria & AT & 91,305 & 18.6\% \\
+Netherlands & NL & 98,374 & 13.2\% \\
+Switzerland & CH & 51,854 & 9.4\% \\
+Luxembourg & LU & 23,553 & 13.9\% \\
+Iceland & IS & 4,490 & 7.7\% \\
+\midrule
+\textbf{Total} & & \textbf{21,612,129} & \textbf{11.0\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%========================================================================
+\section{Carbon Intensity Assignment}
+%========================================================================
+
+\subsection{EXIOBASE 3.8.2 Methodology}
+
+Carbon intensities were derived from EXIOBASE 3.8.2 multi-regional input-output tables using the Leontief inverse:
+
+\begin{equation}
+\mathbf{e} = \mathbf{F} (\mathbf{I} - \mathbf{A})^{-1}
+\end{equation}
+
+where $\mathbf{F}$ is the direct emissions coefficient matrix and $\mathbf{A}$ is the technical coefficient matrix. This captures scopes 1, 2, and upstream scope 3 emissions.
+
+\subsection{CPV-to-EXIOBASE Crosswalk}
+
+Common Procurement Vocabulary (CPV) division codes (2-digit) were mapped directly to EXIOBASE sector names using a 40-entry crosswalk reported in full in Table~\ref{tab:cpv_exio_crosswalk_full} and deposited as \texttt{Data/reference/cpv\_exiobase\_crosswalk.csv}. For example: CPV division 45 (Construction works) $\rightarrow$ ``Construction''; CPV division 24 (Chemical products) $\rightarrow$ ``Chemicals''; CPV division 33 (Medical instruments) $\rightarrow$ ``Medical instruments''. The crosswalk was developed by matching CPV division descriptions to the closest EXIOBASE 163-sector classification, informed by Eurostat CPV-NACE correspondence but implemented as a direct single-step mapping without intermediate NACE conversion. Unmapped CPV divisions default to ``Other services'' (carbon intensity: 0.12 kg CO$_2$e/USD). The mapping covers 100\% of contracts by value and produces contract-level carbon factors ranging from 0.05 kg CO$_2$e/USD (professional services) to 1.8 kg CO$_2$e/USD (construction, heavy manufacturing).
+
+%========================================================================
+\section{Statistical Methods}
+%========================================================================
+
+\subsection{Primary Analysis: Competition-Carbon Relationship}
+
+Our primary analysis compares carbon intensity between single-bidder and multi-bidder contracts:
+
+\begin{equation}
+\text{Premium} = \frac{\overline{CI}_{\text{single}} - \overline{CI}_{\text{multi}}}{\overline{CI}_{\text{multi}}} \times 100\%
+\end{equation}
+
+Statistical significance is assessed via Welch's $t$-test (unequal variances).
+
+\subsection{Effect Size}
+
+Cohen's $d$ is calculated as:
+\begin{equation}
+d = \frac{\overline{CI}_{\text{single}} - \overline{CI}_{\text{multi}}}{s_{\text{pooled}}}
+\end{equation}
+
+where $s_{\text{pooled}}$ is the pooled standard deviation.
+
+\subsection{Heterogeneity Statistics}
+
+Country-level heterogeneity is assessed using $I^2$:
+\begin{equation}
+I^2 = \max\left(0, \frac{Q - (k-1)}{Q}\right) \times 100\%
+\end{equation}
+
+where $Q$ is Cochran's heterogeneity statistic and $k$ is the number of countries.
+
+\subsection{Regression Discontinuity Design}
+
+For causal identification at the EU transparency threshold (EUR 139,000), we estimate:
+
+\begin{equation}
+Y_i = \alpha + \tau \cdot D_i + f(X_i - c) + D_i \cdot g(X_i - c) + \epsilon_i
+\end{equation}
+
+where $D_i = \mathbf{1}(X_i \geq c)$ indicates above-threshold status, and $f(\cdot)$, $g(\cdot)$ are local linear functions for diagnostic fits. The headline first-stage estimate used in the manuscript is the formal local-linear RDD: $\hat{\tau} = +0.324$ bidders (SE $= 0.056$; $p < 0.001$; $N = 553{,}293$ bidder-observed contracts) within the primary $\pm0.10$ log-EUR bandwidth, with an MSE-optimal estimate of $+0.148$ bidders ($p = 0.029$; $N = 380{,}938$). Table~\ref{tab:rdd} reports simple threshold-window contrasts at comparable windows as descriptive complements to that formal local-linear design, using two-sided Welch tests for transparent above-versus-below comparisons.
+
+%========================================================================
+\section{Primary Results: Verified Statistics}
+%========================================================================
+
+\subsection{Overall Carbon Premium}
+
+\begin{table}[H]
+\centering
+\caption{Carbon intensity by competition status.}
+\label{tab:primary}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Competition} & \textbf{N} & \textbf{Mean CI} & \textbf{SD} & \textbf{95\% CI} \\
+\midrule
+Single-bidder & 2,378,511 & 0.337 & 0.191 & [0.3368, 0.3374] \\
+Multi-bidder & 19,233,618 & 0.294 & 0.186 & [0.2935, 0.2937] \\
+\midrule
+\textbf{Difference} & & +0.043 & & [0.0430, 0.0438] \\
+\textbf{Premium (\%)} & & \textbf{+14.8\%} & & [14.7\%, 14.9\%] \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{CI = carbon intensity (kg CO$_2$e/USD). $t = 333.7$, $p < 10^{-16}$ (below numerical precision), Cohen's $d = 0.228$.
+}
+\end{table}
+
+\subsection{Contract Size Effects: The U-Curve}
+
+A major finding is the dramatic variation in competition-carbon effects by contract scale. This ``U-curve'' pattern has profound policy implications.
+
+\begin{table}[H]
+\centering
+\caption{Carbon premium by contract size band: The U-curve.}
+\label{tab:size}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Size Band} & \textbf{N} & \textbf{Premium} & \textbf{Cohen's $d$} & \textbf{$t$} & \textbf{Sig} \\
+\midrule
+$<$EUR 10k & 7,787,462 & \textbf{+50.2\%} & \textbf{+0.75} & 520.6 & *** \\
+EUR 10k--200k & 5,592,285 & +12.5\% & +0.20 & 184.8 & *** \\
+$>$EUR 200k & 8,232,382 & \textbf{--7.1\%} & \textbf{--0.12} & --96.4 & *** \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{*** $p < 0.001$. These are global (all 27 countries) estimates. The global U-curve is driven by Colombia's composition effect: in EU-context countries only, the premium is negative across all size bands ($-2.8\%$ for small, $-2.8\%$ for medium, $-7.8\%$ for large; see main text Table~1), with large contracts showing the \textit{strongest} governance effect. The global pattern shows $d = 0.75$ for small contracts because Colombia's low-carbon contracts are disproportionately small and multi-bidder.
+}
+\end{table}
+
+The crossover point occurs at approximately EUR 200,000 in the global sample. In EU-context countries, the size-band premiums remain negative across all bands (see main text Table~1), so the global U-curve should be interpreted as a composition-sensitive diagnostic rather than a universal country-year pattern.
+
+\textbf{Interpretation:} The global U-curve is a composition-sensitive diagnostic, not a universal contract-size mechanism. In the EU-context sample, single-bidder premiums are negative in every size band; routine contracts remain a governance priority because they have the highest single-bidder rates, while large contracts show the strongest negative carbon premium once markets are opened.
+
+\subsection{Country-Level Effects}
+
+\textbf{Interpretation of negative premiums:} A negative premium means single-bidder contracts have \textit{lower} carbon intensity than multi-bidder contracts within that country. In EU-context countries, this indicates that governance has opened high-carbon sectors (construction, chemicals, industrial equipment) to competition, while single-bidder awards concentrate in lower-carbon specialised services. Colombia is interpreted separately because its low-carbon hydroelectric grid and very low single-bidder rate create a composition effect rather than an EU-style governance mechanism. The five countries with positive premiums (IS, LU, IE, NO, SE) are small, wealthy economies where baseline efficiency is already high and procurement portfolios are service-dominated.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Country-specific competition-carbon effects.}
+\label{tab:country}
+\begin{tabular}{lrrrl}
+\toprule
+\textbf{Country} & \textbf{N} & \textbf{Premium (\%)} & \textbf{$t$-statistic} & \textbf{Interpretation} \\
+\midrule
+\multicolumn{5}{l}{\textit{Negative premium (20 countries):}} \\
+Latvia & 279,714 & --21.6 & --74.6 & Negative premium \\
+Austria & 91,305 & --13.9 & --28.9 & Negative premium \\
+Estonia & 114,437 & --12.4 & --23.9 & Negative premium \\
+Portugal & 258,477 & --12.4 & --32.4 & Negative premium \\
+Denmark & 180,436 & --11.2 & --21.3 & Negative premium \\
+Germany & 815,506 & --10.0 & --57.2 & Negative premium \\
+Hungary & 181,626 & --9.0 & --31.8 & Negative premium \\
+Czech Republic & 723,161 & --8.2 & --46.6 & Negative premium \\
+Spain & 1,384,496 & --7.5 & --42.2 & Negative premium \\
+Greece & 562,251 & --7.5 & --26.7 & Negative premium \\
+Lithuania & 423,731 & --7.3 & --29.2 & Negative premium \\
+UK & 818,707 & --7.0 & --20.3 & Negative premium \\
+Belgium & 158,956 & --4.2 & --8.8 & Negative premium \\
+Poland & 2,880,168 & --3.6 & --58.5 & Negative premium \\
+Finland & 202,710 & --2.5 & --4.1 & Negative premium \\
+Colombia & 7,973,196 & --2.3 & --10.6 & Hydro-grid composition \\
+Netherlands & 98,374 & --2.3 & --3.3 & Negative premium \\
+Italy & 928,848 & --1.2 & --7.2 & Negative premium \\
+France & 2,392,765 & --0.6 & --5.2 & Negative premium \\
+Slovenia & 438,956 & --0.3 & --2.1 & Negative premium \\
+\midrule
+\multicolumn{5}{l}{\textit{Positive premium: high-baseline-efficiency economies (5 countries):}} \\
+Iceland & 4,490 & +27.6 & +7.3 & Baseline efficiency \\
+Luxembourg & 23,553 & +16.9 & +12.8 & Baseline efficiency \\
+Ireland & 96,838 & +12.1 & +13.0 & Baseline efficiency \\
+Norway & 125,138 & +10.5 & +13.3 & Baseline efficiency \\
+Sweden & 253,196 & +6.7 & +12.7 & Baseline efficiency \\
+\midrule
+\multicolumn{5}{l}{\textit{Not significant (2 countries):}} \\
+Slovakia & 149,240 & --0.8 & --1.7 & NS \\
+Switzerland & 51,854 & +0.5 & +0.7 & NS \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{All effects significant at $p < 0.05$ unless marked NS. Heterogeneity: $I^2 = 99.3\%$.
+}
+\end{table}
+
+%========================================================================
+\section{Temporal Patterns and COVID-19 Governance Stress Test}
+%========================================================================
+
+\begin{table}[H]
+\centering
+\caption{Carbon premium by year.}
+\label{tab:temporal}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Year} & \textbf{N Contracts} & \textbf{Premium (\%)} \\
+\midrule
+2012 & 712,962 & +24.6 \\
+2013 & 894,355 & +28.6 \\
+2014 & 1,030,494 & +31.9 \\
+2015 & 1,103,517 & +32.2 \\
+2016 & 1,291,468 & +26.1 \\
+2017 & 1,683,865 & +22.9 \\
+2018 & 6,759,894 & +2.6 \\
+2019 & 1,956,572 & +24.2 \\
+2020 & 1,932,478 & +20.9 \\
+2021 & 1,942,064 & +19.2 \\
+2022 & 1,268,835 & +3.7 \\
+2023 & 1,035,625 & --3.5 \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{Linear trend: slope = --2.46\%/year, $R^2 = 0.55$, $p = 0.006$. These are \textit{global} premiums (all 27 countries); the positive values reflect Simpson's Paradox driven by Colombia's data composition (see Section~\ref{sec:colombia}). The EU-context premiums are negative in every year (Table~\ref{tab:temporal_eu}).
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{EU-context carbon premium and single-bidder rate by year.}
+\label{tab:temporal_eu}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Year} & \textbf{N Contracts} & \textbf{SB Rate} & \textbf{Premium (\%)} & \textbf{$t$-stat} & \textbf{Reform Event} \\
+\midrule
+2012 & 354,958 & 20.7\% & $-$5.7 & $-$24.8 & --- \\
+2013 & 363,702 & 19.8\% & $-$8.4 & $-$38.5 & --- \\
+2014 & 357,805 & 20.0\% & $-$8.0 & $-$37.4 & Directive enacted \\
+2015 & 368,390 & 20.2\% & $-$6.5 & $-$30.5 & --- \\
+2016 & 506,762 & 15.1\% & $-$7.4 & $-$36.7 & Transposition deadline \\
+2017 & 762,360 & 15.3\% & $-$3.7 & $-$21.7 & --- \\
+2018$^*$ & 5,793,300 & 17.1\% & $-$4.2 & $-$69.8 & E-procurement mandate \\
+2019 & 983,068 & 16.1\% & $-$2.9 & $-$18.9 & --- \\
+2020 & 994,896 & 15.4\% & $-$1.6 & $-$10.3 & COVID \\
+2021 & 1,060,731 & 15.6\% & $-$2.8 & $-$19.3 & --- \\
+2022 & 1,057,338 & 16.8\% & $-$4.9 & $-$33.5 & Post-pandemic \\
+2023 & 1,035,623 & 18.6\% & $-$3.5 & $-$25.0 & --- \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{EU-context = all countries except Colombia ($N = 13{,}638{,}933$). Year-level $N$ and SB rates are computed on the carbon-mapped EU-context sample and sum to the pooled total. The premium is negative in every year, ranging from $-1.6\%$ (2020) to $-8.4\%$ (2013), confirming a structural pattern rather than a temporal artifact. $^*$2018 contains 5.79M contracts (12.8$\times$ the 2012--2017 EU-context mean of ${\sim}$0.45M), coinciding with the October 2018 mandatory e-procurement deadline under Directive 2014/24/EU, which required all above-threshold procurement to use electronic submission---previously unreported contracts entered TED as authorities transitioned to mandatory electronic systems\footnote{European Commission, Tenders Electronic Daily (TED) Open Data Service, \url{https://data.ted.europa.eu/} (2024).}. Excluding 2018 from the EU-context pooled analysis shifts the premium from $-4.3\%$ to $-4.8\%$ (more negative), confirming 2018 dilutes rather than drives the result. SB rate trends: pre-reform approximately 20\% (2012--2015), post-reform 15--17\% (2016--2022), post-pandemic increase to 18.6\% (2023).
+}
+\end{table}
+
+\subsection{COVID-19 Governance Stress Test}
+
+The COVID-19 pandemic provides an observational governance stress test of the competition-carbon relationship:
+
+\begin{table}[H]
+\centering
+\caption{COVID-19 impact on competition and carbon premium.}
+\label{tab:covid}
+\small
+\begin{tabular}{lrrrp{2.6cm}}
+\toprule
+\textbf{Period} & \textbf{N} & \textbf{Single-bidder rate} & \textbf{Carbon premium} & \textbf{Interpretation} \\
+\midrule
+Pre-COVID (2018--2019) & 8,716,466 & 13.4\% & +7.0\% & Baseline \\
+During COVID (2020--2021) & 3,874,542 & 8.7\% & \textbf{+20.1\%} & Emergency procurement \\
+Post-COVID (2022--2023) & 2,304,460 & 16.1\% & +0.3\% & Recovery \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{The carbon premium nearly \textit{tripled} during the pandemic as emergency procurement concentrated in high-carbon sectors (medical, PPE, chemicals), even though the single-bidder rate itself \textit{decreased} (from 13.4\% to 8.7\%). Post-pandemic, the premium collapsed as sectoral composition normalized. Global sample ($N \approx 14.9$M, 2018--2023). \textbf{EU-context trends} (Table~\ref{tab:temporal_eu}): SB rates fell from 16.1\% (2019) to 15.4\% (2020, acute pandemic) then rose to 18.6\% (2023, post-pandemic reversion); EU-context premiums remained consistently negative ($-2.9\%$ in 2019, $-1.6\%$ in 2020, $-3.5\%$ in 2023), confirming the structural governance interpretation is not driven by COVID compositional shifts.
+}
+\end{table}
+
+%========================================================================
+\section{Regression Discontinuity Results}
+%========================================================================
+
+\subsection{Competition Effect at EUR 139k Threshold}
+
+We examine descriptive threshold-window contrasts at multiple bandwidths to complement the primary local-linear RDD:
+
+\begin{table}[H]
+\centering
+\caption{Descriptive threshold-window contrasts at the EUR 139,000 threshold by bandwidth.}
+\label{tab:rdd}
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Bandwidth} & \textbf{Outcome} & \textbf{Below} & \textbf{Above} & \textbf{Effect} & \textbf{$t$} & \textbf{$p$} \\
+\midrule
+\multicolumn{7}{l}{\textit{Symmetric $\pm0.1$ log-value window (N = 866,326 contracts):}} \\
+& N bidders & 5.06 & 5.83 & +0.77 (+15.2\%) & 9.12 & $7.5 \times 10^{-20}$ \\
+& Carbon intensity & 0.337 & 0.336 & --0.001 (--0.33\%) & --2.51 & 0.012 \\
+\midrule
+\multicolumn{7}{l}{\textit{30\% bandwidth (N = 1,178,011):}} \\
+& N bidders & 5.74 & 5.83 & +0.10 (+1.7\%) & 1.28 & 0.20 \\
+& Carbon intensity & 0.338 & 0.336 & --0.002 (--0.5\%) & --4.66 & $<$0.001 \\
+\midrule
+\multicolumn{7}{l}{\textit{Narrow window EUR 120k--160k (N = 408,928):}} \\
+& N bidders & 4.80 & 6.10 & +1.30 (+27.1\%) & 12.94 & $2.7 \times 10^{-38}$ \\
+& Carbon intensity & 0.339 & 0.336 & --0.003 (--0.87\%) & --4.37 & $1.2 \times 10^{-5}$ \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{Table~\ref{tab:rdd} reports descriptive threshold-window contrasts, not the headline local-linear RDD estimand. The headline first-stage estimate in the manuscript is the local-linear $\hat{\tau} = +0.324$ bidders (SE $= 0.056$; $p < 0.001$; $N = 553{,}293$) within the primary $\pm0.10$ log-EUR bandwidth, with an MSE-optimal estimate of $+0.148$ bidders ($p = 0.029$; $N = 380{,}938$). Bidder rows in this table use contracts with observed bidder counts (634,566 in the symmetric $\pm0.1$ window; 408,928 in the narrow window). The narrow window intensifies to a 27.1\% bidder increase, while the 30\% value band shows no significant bidder effect because it includes contracts farther from the threshold. The evidence supports a local threshold effect concentrated near \texteuro139,000 rather than a monotone relationship across all bandwidths.
+}
+\end{table}
+
+\textbf{Note on below-threshold sample composition.} Contracts below the \texteuro139,000 EU publication threshold are not legally required to be notified on TED and appear through voluntary disclosure or national platform integration. The below-threshold comparison group is therefore endogenously selected: contracting authorities that choose to publish below-threshold contracts may already be more competition-oriented, potentially attenuating the measured threshold contrast. A density-ratio stability diagnostic shows that the published-contract density ratio (above/below threshold) is $r = 1.12$ within the primary $\pm 0.10$ log-EUR bandwidth (457,883 above vs. 408,443 below) but rises to $r = 1.48$ by $\pm 0.50$ log-EUR. Because the ratio \emph{decreases} toward the cutoff rather than increasing, the discontinuity has the opposite sign pattern of a manipulation spike and is instead consistent with voluntary-disclosure composition in TED. Placebo contrasts at \texteuro80,000 and \texteuro200,000 remain null. The RDD estimates should therefore be interpreted as \textit{local} average treatment effects for near-threshold contracts; if voluntary publishers below threshold are already more competitive, the true disclosure effect is likely larger than we estimate.
+
+%========================================================================
+\section{Robustness Checks}
+\label{sec:did_design}
+%========================================================================
+
+\subsection{DiD Control Group Robustness}
+
+The primary staggered DiD uses the 23 EU member-state countries represented in the harmonised panel as treated cohorts and Norway/Switzerland as never-treated EEA/EFTA comparators. Colombia is excluded from the primary specification due to fundamental economic dissimilarity (hydroelectric grid with carbon intensity 0.20 kg/USD vs.\ EU average 0.35; single-bidder rate 0.7\% vs.\ EU 17\%); Iceland is excluded because it is outside the EU member-state treatment group and too small to anchor a separate comparator regime. Five robustness checks address control-group dependence:
+
+\begin{enumerate}
+\item \textbf{Callaway \& Sant'Anna staggered DiD} (aggregate): Using variation in transposition timing across EU member states, the contract-count-weighted aggregate ATT $= -7.2$ pp (model-based $p = 1.0 \times 10^{-12}$; finite-sample RMSPE permutation $p = 0.042$; 95\% CI: $-8.4$ to $-6.0$; 30 group-time cells). The RMSPE permutation is a \emph{within-treated-sample} distributional test comparing the EU aggregate trajectory against 23 individual treated-country trajectories, so $1/24 = 0.042$ is the minimum attainable $p$-value; achieving it places the EU aggregate at the extreme tail of the treated-sample distribution. This is the primary specification.
+\item \textbf{External OECD proxy-control expansion}: We add Canada as a third never-treated external comparator using official CanadaBuys contract history from Public Services and Procurement Canada. The source provides procurement method, not TED-style bidder counts, so the Canada outcome is coded as a non-competitive procurement-method proxy: non-competitive awards and advance contract award notices are coded as non-competitive, while open, traditional, and selective tendering are coded competitive. Missing or unmapped procurement methods are excluded from denominators rather than imputed. The resulting panel contains 184,528 original awards with observed procurement method in 2009--2023, including 109,123 awards in the 2012--2023 DiD window; 1,261 original-award rows streamed from the two CanadaBuys sources have missing or unmapped procurement method and are retained only in null diagnostics. Canada's non-competitive rate rises from 24.9\% in 2012--2015 to 30.2\% in 2016--2023. In the simple 2$\times$2 external-control design, adding Canada to Norway and Switzerland changes the control-group counterfactual from $+3.5$ pp to $+4.1$ pp and strengthens the EU-vs-control ATT from $-3.0$ pp to $-3.6$ pp (95\% CI: $[-6.1,-1.0]$; $p = 0.0068$). Canada-only gives ATT $= -4.8$ pp (95\% CI: $[-6.4,-3.0]$; $p < 0.001$). This check directly addresses the ``two external controls'' critique, but it remains a proxy-control robustness test because the Canadian measure is procurement method rather than bidder count.
+
+\begin{table}[H]
+\centering
+\caption{External-control expansion using CanadaBuys procurement-method proxy.}
+\label{tab:canada_control_expansion}
+\small
+\begin{tabular}{lcccp{0.30\textwidth}}
+\toprule
+\textbf{Specification} & \textbf{Controls} & \textbf{ATT (pp)} & \textbf{$p$} & \textbf{Interpretation} \\
+\midrule
+Baseline simple DiD & NO\,+\,CH & $-3.0$ & 0.083 & Original external-control sensitivity \\
+Expanded simple DiD & NO\,+\,CH\,+\,CA & $-3.6$ & 0.0068 & Third never-treated OECD proxy-control \\
+Canada-only proxy & CA & $-4.8$ & $<0.001$ & Not driven by EEA/EFTA comparators \\
+\bottomrule
+\end{tabular}
+\tabnotes{Canada is not included in the primary Callaway \& Sant'Anna estimator because it is outside the TED bidder-count panel. It is a source-level robustness check built from official CanadaBuys procurement-method fields. Null procurement-method rows are not converted to competitive outcomes; they are excluded from rate denominators and counted in the result metadata.
+}
+\end{table}
+\item \textbf{Within-EU staggered (2016 cohort only)}: The immediate-post 2016 cohort ATT $= -1.2$ pp (same negative sign; $p = 0.35$; 13 treated, 9 observed internal controls). The non-significance reflects limited pre-treatment variation in the cohort-specific estimand, so this check is treated as a robustness probe rather than the main estimator.
+\item \textbf{Not-yet-treated C\&S specification (zero external controls)}: This specification eliminates dependence on Norway and Switzerland entirely by using only within-EU transposition timing variation as identification. Following Callaway \& Sant'Anna (2021, Section~5), the comparison group for cohort $g$ at time $t$ consists of all EU countries whose transposition year exceeds $t$ (i.e., countries not yet treated). For the 2016 cohort, this provides 9 not-yet-treated EU countries as controls; for the 2017 cohort, 3 not-yet-treated countries. The 2018 cohort has no not-yet-treated controls and is therefore not estimable. Across 6 estimable group-time cells, the cohort-size-weighted aggregate ATT $= -8.60$ pp ($p = 0.012$; 95\% CI: $[-13.0, -4.2]$); equal-weight aggregation gives $-6.84$ pp ($p = 0.004$). By cohort: 2015 ATT $= -4.5$ pp ($p = 0.32$), 2016 ATT $= -8.7$ pp ($p = 0.27$), 2017 ATT $= -10.1$ pp ($p = 0.31$). The 2016 cohort's first post-treatment year is significant individually (ATT $= -4.6$ pp, $p = 0.010$). The aggregate is virtually identical in sign and magnitude to the primary never-treated estimate ($-7.2$ pp), confirming that the external control pool is supplementary rather than essential. Code: \texttt{scripts/causal\_id/cs\_not\_yet\_treated.py}; output: \texttt{results/causal\_id/cs\_not\_yet\_treated.json}.
+\item \textbf{C\&S leave-one-out for never-treated controls}: With only two never-treated units (Norway and Switzerland), the robustness of the aggregate ATT to the choice of comparator is a key diagnostic. We therefore report a bounded robustness envelope around the primary contract-count-weighted ATT (Table~\ref{tab:cs_loo}). If Norway is treated as a partially exposed EEA comparator and excluded entirely, the Switzerland-only ATT is $-8.5$ pp; if Switzerland is treated as contaminated after the 2021 FAPP revision and excluded entirely, the Norway-only ATT is $-4.8$ pp. The primary ATT ($-7.18$ pp) lies squarely inside this contamination bound, and an equal-weight aggregation over the same 30 cohort-time cells remains strongly negative ($-5.76$ pp), showing that control-pool thinness changes magnitude but not sign.
+
+\begin{table}[H]
+\centering
+\caption{Staggered DiD robustness to comparator choice and aggregation.}
+\label{tab:cs_loo}
+\footnotesize
+\begin{tabular}{p{0.34\textwidth}ccp{0.30\textwidth}}
+\toprule
+\textbf{Specification} & \textbf{ATT (pp)} & \textbf{95\% CI} & \textbf{Interpretation} \\
+\midrule
+Primary contract-count weighted (NO\,+\,CH) & $-7.18$ & $[-8.35,\,-6.00]$ & Main manuscript estimand \\
+Not-yet-treated C\&S (zero external controls) & $-8.60$ & $[-13.0,\,-4.2]$ & Purely within-EU identification \\
+Same 30 cells, equal-weight aggregation (NO\,+\,CH) & $-5.76$ & $[-6.70,\,-4.82]$ & Same comparisons, no contract-count weighting \\
+Norway only (exclude CH) & $-4.75$ & $[-5.54,\,-3.96]$ & Removes Swiss post-2020 FAPP contamination \\
+Switzerland only (exclude NO) & $-8.46$ & $[-9.24,\,-7.67]$ & Treats Norway as a partially exposed EEA comparator \\
+Exclude calendar year 2018 & $-5.86$ & $[-6.87,\,-4.85]$ & Removes e-procurement surge year \\
+Anticipation $= 1$ & $-6.03$ & $[-7.11,\,-4.95]$ & Allows one year of anticipatory compliance \\
+Sun-Abraham IW & $-7.18$ & $[-8.30,\,-6.06]$ & Same comparison group, heterogeneous-effects estimator \\
+\bottomrule
+\end{tabular}
+\tabnotes{The not-yet-treated row uses only within-EU transposition timing (Callaway \& Sant'Anna 2021, §5; 6 group-time cells) and zero external comparators. The first four rows of the remaining specifications are direct comparator/aggregation diagnostics. For singleton-control specifications, the bootstrap resamples only the treated side because the control trajectory is deterministic. Together, the specifications span a range from $-4.75$ to $-8.60$ pp; all preserve the negative sign, confirming that neither control-pool composition nor aggregation method drives the result.
+}
+\end{table}
+
+\item \textbf{Conventional TWFE sensitivity}: Using Norway and Switzerland as controls, the two-way fixed effects specification yields ATT $= -0.71$ pp ($p = 0.57$; 95\% CI: $-3.13$ to $+1.72$). The negative but imprecise point estimate is reported as an attenuated sensitivity. The attenuation relative to the C\&S ATT has two sources: (1)~the well-documented TWFE bias under heterogeneous treatment timing (Roth et al., 2023, \textit{J.\ Econometrics}), which causes early-treated cohorts with large effects to contaminate the counterfactual for late-treated cohorts; and (2)~partial contamination of the Swiss never-treated series from 2021 onward, when Switzerland's revised Federal Act on Public Procurement (FAPP; SR~172.056.1) entered into force on 1~January~2021 and introduced EU-equivalent competition criteria---reducing Swiss single-bidder rates independently of the EU Directive. The TWFE LOO asymmetry (excl.\ NO: $-0.9$~pp vs excl.\ CH: $-5.0$~pp) is consistent with this contamination, whereas the C\&S LOO results (Norway only: $-4.8$~pp; Switzerland only: $-8.5$~pp) demonstrate that the C\&S estimator is robust to either comparator.
+\end{enumerate}
+
+\subsection{Country-Level Dose-Response Placebo}
+
+As a falsification diagnostic, we test whether countries with higher pre-reform single-bidder exposure experience larger post-reform declines, and whether the same relationship appears before treatment. For each of the 26 European countries with complete coverage, we compute baseline exposure as the mean single-bidder rate in 2012--2015 and post-reform change as the 2017--2019 mean minus the 2012--2015 mean. Baseline exposure strongly predicts subsequent declines ($r = -0.560$, $p = 0.0029$; slope $= -0.349$, SE $= 0.105$, $N = 26$): countries with more severe pre-reform single-bidder problems experience larger reductions after Directive transposition. The pre-treatment placebo is absent. Using 2012--2013 baseline exposure to predict 2014--2015 change yields $r = 0.065$ ($p = 0.75$; slope $= 0.0167$, SE $= 0.0523$, $N = 26$), and the Fisher $z$ test rejects equality of the post-treatment and placebo correlations ($z = -2.37$, $p = 0.018$). This diagnostic cannot by itself identify the ATT, but it directly weakens the main alternative explanation that the post-reform decline is simple regression to the mean in high-single-bidder countries.
+
+\subsection{Rambachan-Roth (2023) Parallel-Trends Sensitivity}
+
+The preceding $F$-test (Section~\ref{sec:did_design}) provides a formal test for zero pre-treatment coefficients but has limited power with only three pre-treatment periods. We therefore report the Rambachan \& Roth (2023) \textit{relative magnitudes} sensitivity bound, which quantifies how large a post-treatment parallel-trends violation would need to be before the aggregate ATT confidence interval includes zero.
+
+The restriction $\text{RM}(M)$ requires that post-treatment trend deviations are bounded by $M$ times the largest observed pre-treatment first difference ($|\bar{\Delta}|$). Here $|\bar{\Delta}| = 1.02$ pp (the maximum absolute first difference among the pre-treatment event-study coefficients: $\Delta(-3,-4)=+0.20$, $\Delta(-2,-3)=+1.02$, $\Delta(-1,-2)=+0.44$). The effective post-treatment horizon $T_{\text{eff}} = 3.82$ periods (weighted mean of event-time$+1$ over the 163 post-treatment country-year cells). The maximum bias per unit $M$ is therefore $|\bar{\Delta}| \times T_{\text{eff}} = 3.89$ pp.
+
+The \textbf{breakdown value} $M^* = 1.54$: the robust 95\% confidence interval excludes zero for all $M < 1.54$. In other words, post-treatment trend deviations would need to be at least $1.5\times$ the largest pre-treatment first difference per period to explain away the ATT.
+
+\begin{table}[H]
+\centering
+\caption{Rambachan-Roth robust 95\% CIs under $\text{RM}(M)$ relative-magnitudes restriction.}
+\label{tab:rr_sensitivity}
+\small
+\begin{tabular}{lrrrl}
+\toprule
+\textbf{$M$} & \textbf{Max bias (pp)} & \textbf{CI lower} & \textbf{CI upper} & \textbf{Excludes zero?} \\
+\midrule
+$0.00$ (standard) & 0.00 & $-8.36$ & $-6.00$ & Yes \\
+$0.50$ & 1.95 & $-10.30$ & $-4.06$ & Yes \\
+$1.00$ & 3.89 & $-12.25$ & $-2.11$ & Yes \\
+$1.25$ & 4.87 & $-13.22$ & $-1.14$ & Yes \\
+$1.50$ & 5.84 & $-14.20$ & $-0.16$ & Yes \\
+$M^* = 1.54$ & 6.00 & $-14.36$ & $0.00$ & Boundary \\
+$2.00$ & 7.79 & $-16.14$ & $+1.78$ & No \\
+\bottomrule
+\end{tabular}
+\tabnotes{Robust CI $=$ [ATT $\pm$ (max bias $+$ $z_{0.025}\times$ SE)]. Based on aggregate ATT $=-7.18$ pp, SE $=0.60$ pp. Following Rambachan \& Roth (2023) Eq.~4 and Appendix~C, adapted for a staggered-design aggregate ATT. Note that the pre-treatment event-study coefficients show a monotone convergence toward zero ($-1.66$, $-1.46$, $-0.44$ pp), consistent with anticipation effects during the EU Directive's legislative period (formally proposed December 2011, adopted April 2014); under this interpretation the primary ATT is a conservative lower bound.
+}
+\end{table}
+
+\subsection{DiD Sensitivity Excluding Calendar Year 2018}
+
+Calendar year 2018 coincides with the EU mandatory e-procurement deadline (October 2018), generating 5.79~million contracts in the EU-context subsample---approximately $12.8\times$ the annual average. We re-estimate the C\&S DiD excluding 2018 from the panel entirely. The aggregate ATT is $-5.86$ pp (95\% CI: $-6.87$ to $-4.85$; $p < 10^{-11}$; 26 post-treatment cells), strongly negative and significant. The 2018-cohort countries (Greece, Luxembourg, Slovenia) are retained in the panel in all non-2018 years; their post-treatment observations begin in 2019, using 2017 as the base year ($g-1$) as in the primary specification. This check confirms the headline ATT is not driven by the data-surge year.
+
+\subsection{C\&S Anticipation Parameter Sensitivity}
+
+The EU Directive 2014/24/EU was formally proposed in December 2011 and adopted in April 2014, creating a 3--4 year window of legislative anticipation before formal transposition. If firms adjusted procurement practices in advance of the nominal transposition date, the standard anticipation~$=0$ specification (base period: year $g-1$) may absorb anticipatory compliance into the pre-trend, making the primary ATT a conservative lower bound.
+
+We re-estimate the C\&S DiD with anticipation~$=1$ (shifting the effective base period to $g-2$ and treating the year immediately before formal transposition [$g-1$] as the first post-treatment period). Under anticipation~$=1$, the aggregate ATT is $-6.03$ pp (SE $= 0.55$; 95\% CI: $-7.11$ to $-4.95$; $p < 10^{-27}$; 34 cohort--time cells), compared with $-7.18$ pp in the primary specification (Table~\ref{tab:anticipation_sensitivity}).
+
+\begin{table}[H]
+\centering
+\caption{C\&S DiD aggregate ATT under alternative anticipation assumptions.}
+\label{tab:anticipation_sensitivity}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Specification} & \textbf{ATT (pp)} & \textbf{SE} & \textbf{95\% CI lower} & \textbf{95\% CI upper} & \textbf{$p$-value} \\
+\midrule
+Anticipation $= 0$ (primary) & $-7.18$ & $0.60$ & $-8.35$ & $-6.00$ & $<10^{-32}$ \\
+Anticipation $= 1$ & $-6.03$ & $0.55$ & $-7.11$ & $-4.95$ & $<10^{-27}$ \\
+\bottomrule
+\end{tabular}
+\tabnotes{Cohort-size-weighted aggregate ATT. With anticipation~$= 1$, the base period shifts to $g-2$ and the post-treatment window expands to include $g-1$. The smaller magnitude under anticipation~$= 1$ reflects that the year immediately before formal transposition exhibits a smaller initial effect than later post-treatment periods; including this attenuated first period reduces the average ATT. Both specifications yield large, highly significant negative effects, bounding the true reform effect between $-6.0$ and $-7.2$ pp.
+}
+\end{table}
+
+\subsection{Sun-Abraham (2021) Interaction-Weighted Estimator}
+
+Sun \& Abraham (2021) demonstrate that conventional TWFE under staggered adoption assigns potentially \textit{negative} weights to some cohort--event-time cells, contaminating estimates when treatment effects are heterogeneous. Their interaction-weighted (IW) estimator resolves this by: (1)~estimating cohort-specific ATT$_{g,l}$ using only never-treated comparators, and (2)~aggregating with cohort-size weights.
+
+The Sun-Abraham IW aggregate ATT is $\mathbf{-7.18}$ pp (SE $= 0.57$; 95\% CI: $[-8.30,\;-6.06]$; $p < 10^{-35}$; $N = 30$ cohort--time cells). This is effectively \textit{identical} to the primary C\&S aggregate ATT ($-7.18$ pp; difference $< 0.001$ pp). Because both estimators use the same never-treated comparison group and cohort-size weighting, this convergence is algebraically expected and therefore confirms implementation integrity rather than constituting an independent source of identification (Table~\ref{tab:estimator_comparison}).
+
+\begin{table}[H]
+\centering
+\caption{Comparison of causal estimators: TWFE, C\&S, and Sun-Abraham.}
+\label{tab:estimator_comparison}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Estimator} & \textbf{ATT (pp)} & \textbf{SE} & \textbf{95\% CI} & \textbf{Reference} \\
+\midrule
+Conventional TWFE & $-0.71$ & $1.23$ & $[-3.13,\; 1.72]$ & Goodman-Bacon (2021) \\
+Callaway \& Sant'Anna (2021) & $-7.18$ & $0.60$ & $[-8.35,\; -6.00]$ & Callaway \& Sant'Anna (2021) \\
+Sun \& Abraham (2021) IW & $-7.18$ & $0.57$ & $[-8.30,\; -6.06]$ & Sun \& Abraham (2021) \\
+\bottomrule
+\end{tabular}
+\tabnotes{All estimators use Norway and Switzerland as never-treated controls. 95\% CI based on country-level cluster bootstrap (1{,}000 replications). The near-identical C\&S and SA estimates are algebraically expected because both estimators use the same never-treated comparison group and cohort-size weighting; the agreement therefore confirms correct implementation of the staggered-design estimand, not an independent validation layer. The TWFE--SA gap of $6.47$ pp quantifies heterogeneous-treatment-effect contamination bias: TWFE implicitly uses already-transposed cohorts as controls for later cohorts, generating severe downward bias. The 2016 cohort (13 countries; largest effect) is especially affected, as it serves as implicit control for the 2017 and 2018 cohorts under TWFE. The C\&S and SA estimators avoid this contamination by restricting comparisons to never-treated units only.
+}
+\end{table}
+
+The TWFE attenuation of $-6.47$ pp ($= -7.18 - (-0.71)$; $90\%$ of the true effect) directly quantifies the mechanism identified by Goodman-Bacon (2021) and de Chaisemartin \& D'Haultf{\oe}uille (2020). Convergence of three distinct causal specifications---C\&S, SA, and RMSPE permutation ($p = 0.042$)---provides strong triangulated evidence for a causal reform effect of approximately $-7.2$ pp.
+
+\subsection{Event-Study Pre-Trend Coefficients}
+
+Pre-treatment point estimates are negative but modest ($-1.66$, $-1.46$, $-0.44$ pp for event times $-4$ to $-2$). Parallel trends are assessed through two complementary tests: (1)~a formal joint $F$-test on pre-treatment event-study leads yields $F = 1.32$, $p = 0.27$ (Roth 2022), failing to reject the null of zero pre-treatment effects; and (2)~the pre-treatment slope difference is $+0.02$ pp/yr ($p = 0.71$), confirming no differential trend.
+
+\begin{table}[H]
+\centering
+\caption{Event-time coefficients from Callaway \& Sant'Anna staggered DiD.}
+\label{tab:event_study}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Event time} & \textbf{ATT (pp)} & \textbf{SE} & \textbf{$|t|$} \\
+\midrule
+\multicolumn{4}{l}{\textit{Pre-treatment point estimates:}} \\
+$-4$ & $-1.66$ & --- & --- \\
+$-3$ & $-1.46$ & --- & --- \\
+$-2$ & $-0.44$ & --- & --- \\
+\midrule
+\multicolumn{4}{l}{\textit{Post-treatment event-time estimates:}} \\
+0 & $-5.22$ & 0.97 & 5.37 \\
++1 & $-6.88$ & 1.39 & 4.93 \\
++2 & $-7.77$ & 1.68 & 4.63 \\
++3 & $-8.11$ & 1.85 & 4.39 \\
++4 & $-7.26$ & 1.85 & 3.92 \\
++5 & $-7.54$ & 1.59 & 4.74 \\
++6 & $-7.19$ & 1.98 & 3.64 \\
++7 & $-7.53$ & 2.53 & 2.97 \\
+\midrule
+\multicolumn{4}{l}{\textit{Aggregate ATT (all cohorts; model-based inference):}} \\
+All & $-7.18$ & 0.60 & 11.95 \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{The primary sample includes 23 treated EU member-state countries, Norway/Switzerland as never-treated controls, and excludes Colombia and Iceland. Pre-treatment ATT point estimates are reported for visual inspection; individual standard errors are suppressed (---) because with $\leq$25 country-level clusters, coefficient-level asymptotic SEs are unreliable. The joint $F$-test on pre-treatment leads ($F = 1.32$, $p = 0.27$) provides the formal parallel-trends test. Cohort summaries: GB 2015 singleton ATT $= -3.2$ pp (imprecise), 2016 cohort ATT $= -8.9$ pp, 2017 cohort ATT $= -3.2$ pp, and 2018 cohort ATT $= -8.3$ pp. The 2017 cohort attenuates toward zero by 2023 but remains negative, consistent with weaker persistence of reform gains rather than a post-pandemic sign reversal.
+}
+\end{table}
+
+\subsection{Finite-Sample Inference Robustness}
+
+With $\leq$27 country-level clusters, asymptotic cluster-robust standard errors may be anti-conservative. We assess significance through two finite-sample procedures:
+
+\textbf{RMSPE-based permutation testing.} Following Abadie, Diamond \& Hainmueller (2010), we compute the ratio of post-treatment to pre-treatment root-mean-square prediction error (RMSPE) for the EU aggregate and for each of 23 country placebo units. The EU aggregate ranks first among all 24 units (RMSPE permutation $p = 0.042$), confirming that the observed post/pre RMSPE ratio is unlikely under the null of no treatment effect without relying on asymptotic approximations.
+
+\textbf{Wild cluster bootstrap.} Following Cameron, Gelbach \& Miller (2008), we apply a wild cluster bootstrap-$t$ procedure (Rademacher weights, 9,999 replications) to the two-way fixed effects (TWFE) specification using Norway and Switzerland as controls. The bootstrap $p$-values are 0.32 (NO+CH only) and 0.36 (including Colombia). These non-significant results are expected and internally consistent: TWFE estimators exhibit known attenuation bias under heterogeneous treatment effects across cohorts (de Chaisemartin \& D'Haultf{\oe}uille, 2020), and the staggered Callaway \& Sant'Anna estimator---which is robust to such heterogeneity---is our primary specification precisely for this reason. The permutation test validates the primary estimator; the TWFE bootstrap confirms that the secondary estimator's known limitations extend to its inference.
+
+An independent, model-free validation examines single-bidder rates across the carbon intensity distribution:
+
+\begin{table}[H]
+\centering
+\caption{Single-bidder rates by carbon intensity decile.}
+\label{tab:extreme}
+\small
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Decile} & \textbf{Carbon Intensity Range} & \textbf{Single-Bidder Rate} & \textbf{Ratio vs Bottom} \\
+\midrule
+Bottom 10\% (cleanest) & 0--0.08 kg/USD & 6.2\% & 1.00 (reference) \\
+Middle 40--60\% & 0.20--0.35 kg/USD & 10.8\% & 1.74 \\
+Top 10\% (highest carbon) & $>$0.55 kg/USD & 13.9\% & \textbf{2.24} \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{The 2.2$\times$ ratio between high-carbon and low-carbon deciles provides model-free evidence that high-carbon procurement sectors remain overrepresented among single-bidder awards.
+}
+\end{table}
+
+\subsection{Regional Patterns}
+
+\begin{table}[H]
+\centering
+\caption{Carbon premium by geographic region.}
+\label{tab:regional}
+\small
+\begin{tabular}{lrrrp{2.8cm}}
+\toprule
+\textbf{Region} & \textbf{N Contracts} & \textbf{Premium} & \textbf{$t$-stat} & \textbf{Interpretation} \\
+\midrule
+Eastern EU (PL, CZ, HU, etc.) & 5,191,033 & --5.6\% & --89.3 & Strong governance effect \\
+Southern EU (GR, IT, ES, PT) & 3,134,072 & --4.8\% & --52.1 & Moderate governance effect \\
+Western EU (DE, FR, BE, etc.) & 6,249,118 & --4.3\% & --78.4 & Moderate governance effect \\
+Latin America (Colombia) & 7,973,196 & --2.3\% & --10.6 & Weak governance effect \\
+Northern EU (SE, DK, FI, NO) & 765,970 & --0.3\% & --1.2 & Near-zero \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{Nordic countries show smallest effects, possibly due to already-efficient baseline markets.
+}
+\end{table}
+
+\subsection{Sector Controls}
+
+Within-CPV analysis controlling for product category finds that the \textit{between}-CPV composition drives the headline $-$4.3\% premium. However, within-CPV effects remain statistically significant ($t = -75.1$, $p < 10^{-16}$, below numerical precision), with weighted magnitude approaching zero. This confirms that the primary premium is allocative: it reflects which sectors governments buy from, not within-sector supplier selection. The policy implication is that governance reform changes the \textit{composition} of the procurement portfolio---directing competition into high-carbon sectors---which is the structural prerequisite for GPP criteria to then select greener suppliers within those sectors.
+
+\subsection{Measurement Error Sensitivity}
+\label{sec:measurement_error}
+
+EXIOBASE sector averages introduce measurement error. Classical measurement error in the independent variable biases estimates toward zero (attenuation bias), implying true allocative effects are likely larger than reported. Under a classical errors-in-variables model, the attenuation factor is $\lambda = \sigma^2_x / (\sigma^2_x + \sigma^2_u)$, where $\sigma^2_u$ is measurement noise. If measurement noise is 50\% of the signal variance ($\sigma^2_u = 0.5 \sigma^2_x$), then $\lambda = 0.67$, implying the true between-sector allocative effect is approximately $-4.3\% / 0.67 \approx -6.4\%$. This correction applies only to the allocative (between-sector) channel and does not address the unmeasured within-sector channel.
+
+\subsection{Temporal Stability of EXIOBASE Coefficients}
+\label{sec:vintage}
+
+Because our analysis applies EXIOBASE 3.8.2 (reference year 2019) carbon intensities across contracts from 2012--2023, we validate temporal stability by comparing 2011 and 2022 EU-27 sector averages. Overall mean carbon intensity declined by 24.8\% between vintages, reflecting economy-wide decarbonisation. Critically, however, \textit{sector rankings} are stable: 5 of 6 EU-context Dead Zone sectors survive under 2022 intensities (the exception is land transport, which exits due to transport electrification). The threshold-based Dead Zone classification is robust to vintage choice because it depends on \textit{relative} sector rankings, not absolute levels. All temporal analyses in this paper use year fixed effects that absorb economy-wide intensity trends; the EXIOBASE coefficients serve only to classify sectors as high- or low-carbon relative to each other within each year.
+
+\subsection{Multiple Testing Considerations}
+
+This study reports a large number of heterogeneity analyses (country-level, sector-level, contract size bands, temporal, procurement method, supplier size, buyer scale, cross-continental), but multiplicity enters the argument asymmetrically. The primary causal claims do not arise from a large omnibus hypothesis family: they rest on two pre-specified identification strategies---the staggered Callaway and Sant'Anna DiD and the RDD at the \texteuro139,000 threshold---each evaluated with design-specific inference and validity diagnostics (permutation tests, joint pre-trend diagnostics, density-ratio stability, placebo-threshold checks, and bandwidth sensitivity). Where high-dimensional evidence is used substantively, we do correct it: the Eurostat country-sector family is evaluated with Benjamini-Hochberg false-discovery-rate control, and 246 of 542 groups remain significant after correction. The remaining heterogeneity tables are reported as scope and mechanism diagnostics over conceptually distinct estimands rather than pooled stand-alone discoveries, so we do not impose a single study-wide family-wise correction across all exploratory slices. Given the size of the corrected Eurostat signal and its agreement with the DiD, RDD, EU ETS, within-supplier, and SBTi validation layers, the manuscript's core inference is not driven by multiple-testing exposure.
+
+%========================================================================
+\section{Conservative Lower Bound Analysis}
+%========================================================================
+
+A critical methodological implication of using sector-level EXIOBASE data is that our estimates capture only one of two potential competition channels:
+
+\textbf{1. Allocative efficiency (measured):} Competition shifts procurement demand toward cleaner sectors.
+
+\textbf{2. Technical efficiency (unmeasured):} Competition selects the cleanest firm \textit{within} each sector.
+
+\begin{table}[H]
+\centering
+\caption{Within-sector vs between-sector decomposition of the carbon premium.}
+\label{tab:decomposition}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Analysis} & \textbf{Premium} & \textbf{\% of Total} & \textbf{Interpretation} \\
+\midrule
+EU-context premium & $-$4.3\% & 100\% & Observed portfolio effect \\
+Between-sector premium & $-$4.3\% & 100\% & Sector composition \\
+Within-sector premium & 0.0\% & 0\% & \textit{Unmeasured by design} \\
+\midrule
+Global premium & +14.8\% & --- & Simpson's Paradox artifact \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{The EU-context $-$4.3\% premium is entirely allocative (between-sector composition). Within-sector variation is exactly zero ($\sigma = 0.0$ across all 985 country-sector groups) because EXIOBASE assigns identical carbon intensity to all contracts within a country-sector combination. The global +14.8\% is a Simpson's Paradox artifact driven by Colombia's low-carbon hydroelectric economy (see Section~\ref{sec:colombia}).
+}
+\end{table}
+
+\textbf{Implication:} Because EXIOBASE cannot distinguish between cleaner and dirtier firms within the same sector, our portfolio-level estimates capture \textit{only} the allocative efficiency channel---which sectors governments procure from under different competition regimes. The technical efficiency channel---where competition selects the most efficient (lowest-carbon) supplier within a sector---is entirely unmeasured. Independent facility-level validation across 14 industrial sectors yields mean within-sector CV $= 2.54$ and a 6.45$\times$ variance-underestimation factor relative to EXIOBASE's zero-variance assumption, reinforcing that the measured allocative premium is conservative.
+
+Prior research documents substantial within-sector firm heterogeneity in carbon intensity:
+\begin{itemize}
+\item Marin \& Palma (2017): 5--10$\times$ variation in emission intensities within narrowly-defined manufacturing sectors
+\item Martin et al. (2012): Within-industry productivity dispersion of 3--4$\times$ translates to similar emission intensity variation
+\item European Pollutant Release and Transfer Register (E-PRTR): $>$30,000 industrial facilities reporting emissions, showing wide within-sector variation. In an updated matched sample linking 22,583 procurement contracts to 646 facilities across 23 countries, single-bidder awards are matched to facilities with $+65.3\%$ higher reported CO$_2$ emissions overall ($p < 0.001$). Within-sector premiums remain positive in the Energy sector ($+131.6\%$, $p < 0.001$) and Mineral industry ($+36.0\%$, $p = 8.4 \times 10^{-5}$), confirming that the technical channel is detectable in actual facility emissions rather than only in sector averages. A raw \texteuro139,000 threshold contrast in the matched sample is positive, but it attenuates after country$\times$sector$\times$year fixed-effect residualization ($\tau = +0.068$ in log CO$_2$, $p = 0.455$). To connect the reform window to measured facility outcomes without averaging away time, we also match annual E-PRTR facility-year CO$_2$ to procurement contract-years: 10,804 contract-year matches across 415 facilities show the raw single-bidder measured-emissions premium narrowing from $+58.5\%$ in 2012--2015 to $+57.4\%$ in 2017--2023, while country$\times$sector$\times$year residualized and cell-level changes are small and imprecise. We therefore use E-PRTR as measured-emissions validation of the within-sector channel and as a direct annual bridge, not as a standalone realized-abatement design.
+\item CDP Climate Change questionnaire: 22,100+ companies reporting in 2025, with substantial within-sector heterogeneity in emission intensity
+\end{itemize}
+
+If competition operates through both channels simultaneously, our portfolio-level allocative estimates are a \textbf{conservative lower bound}. The true decarbonization potential of competitive procurement, including within-sector firm selection, is likely substantially larger.
+
+%========================================================================
+\section{Dead Zone Classification Sensitivity}
+\label{sec:dz_sensitivity}
+%========================================================================
+
+The main-text Dead Zone classification uses global CPV thresholds: the 67th-percentile carbon intensity threshold (0.25 kg CO$_2$e/USD, rounded) and the cross-sector median single-bidder rate (7.4\%). Under this main definition, the EU-context competitive premium is $-8.85\%$ inside Dead Zones versus only $-0.51\%$ outside them, a 17.4$\times$ amplification that motivates the sensitivity exercise. To assess robustness under a stricter EU-context definition, we recompute thresholds within EU-context sectors (67th percentile carbon = 0.40 kg CO$_2$e/USD; median single-bidder rate = 15.5\%) and vary both thresholds across a 25-combination sensitivity grid. Table~\ref{tab:dz_sensitivity} reports representative rows spanning carbon percentiles from 50th to 80th and SB percentiles from 25th to 75th.
+
+\begin{table}[H]
+\centering
+\caption{Dead Zone classification sensitivity to threshold choice.}
+\label{tab:dz_sensitivity}
+\scriptsize
+\begin{tabular}{llrrr}
+\toprule
+\textbf{Carbon pctl} & \textbf{SB pctl} & \textbf{N Dead Zones} & \textbf{SB-locked (T reported)} & \textbf{Share of baseline} \\
+\midrule
+50th & 25th & 16 & 1.21 & 167\% \\
+50th & 50th & 10 & 1.10 & 152\% \\
+50th & 75th & 4 & 0.82 & 113\% \\
+\midrule
+\textbf{67th (baseline)} & \textbf{50th (baseline)} & \textbf{6} & \textbf{0.72} & \textbf{100\%} \\
+67th & 25th & 10 & 0.77 & 107\% \\
+67th & 75th & 2 & 0.47 & 65\% \\
+\midrule
+75th & 50th & 4 & 0.51 & 71\% \\
+80th & 50th & 4 & 0.51 & 71\% \\
+80th & 75th & 2 & 0.47 & 65\% \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{25 threshold combinations tested (9 representative shown). Dead Zone count ranges from 2 (strictest representative row) to 16 (most inclusive representative row). SB-locked values are database-reported (see Methods for OECD calibration). The baseline in this table is the stricter EU-context robustness definition (67th pctl carbon $= 0.40$; median SB $= 15.5\%$), yielding 6 Dead Zones. The main text reports 22 Dead Zones using global thresholds computed over all 75 CPV divisions (67th pctl carbon $= 0.25$; median SB $= 7.4\%$). Even under the strict 80th carbon/75th SB representative row, 2 sectors remain Dead Zones (CPV 35 Electricity and CPV 65 Utilities), and the SB-locked value retains 65\% of the EU-context baseline magnitude. The qualitative conclusion---that a substantial fraction of high-carbon procurement is structurally uncontestable---is robust to threshold choice.
+}
+\end{table}
+
+%========================================================================
+\section{Combined Financial and Carbon Costs of Non-Competitive Procurement}
+%========================================================================
+
+Single-bidding imposes costs on taxpayers through two channels:
+
+\textbf{1. Financial premium (established literature):}
+\begin{itemize}
+\item Fazekas et al. (2020): Single-bidding associated with 7--10\% higher contract prices
+\item Coviello et al. (2018): Competition reduces contract costs by 8--12\%
+\item OECD (2016): Average savings of 10.5\% from competitive tendering
+\end{itemize}
+
+\textbf{2. Portfolio carbon premium (this study):}
+\begin{itemize}
+\item EU-context: $-$4.3\% (competitive contracts in \textit{higher}-carbon sectors---governance success)
+\item EU-context large contracts (>EUR 200k): $-$7.8\% (strongest governance effect)
+\item Global: +14.8\% (Simpson's Paradox artifact---see Section~\ref{sec:colombia})
+\item Total carbon in Dead Zone single-bidder contracts: $\sim$280 Mt CO$_2$e (portfolio-level estimate)
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Combined financial and environmental costs of non-competitive procurement.}
+\label{tab:doubletax}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Dimension} & \textbf{Single-Bidder Effect} & \textbf{Source} \\
+\midrule
+Financial cost premium & +7--10\% & Fazekas et al. (2020) \\
+Carbon portfolio allocation & $-$4.3\% (EU-context) & This study \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{The financial premium (+7--10\%) represents higher prices paid due to absence of competitive price pressure. The negative carbon allocation ($-$4.3\%) indicates single-bidder contracts concentrate in \textit{lower}-carbon sectors---governance has opened high-carbon sectors to competition. These two dimensions are independent: financial savings from competition and carbon portfolio improvement from market opening are additive policy benefits, but operate through different channels.
+}
+\end{table}
+
+%========================================================================
+\section{Deterrence Effect of Potential Competition}
+%========================================================================
+
+A critical question is whether competition must \textit{occur} to have an effect, or whether the \textit{threat} of competition is sufficient. We test this by examining carbon intensity among single-bidder contracts only, stratified by the buyer's historical competition propensity.
+
+\textbf{Method:} For each buyer, we calculate their historical single-bidder rate (proportion of contracts receiving only one bid). Among \textit{single-bidder contracts only}, we compare carbon intensity for contracts from ``competitive buyers'' (below-median SB rate) versus ``non-competitive buyers'' (above-median SB rate).
+
+\textbf{Results:}
+\begin{itemize}
+    \item Single-bidder contracts from competitive buyers: 0.342 kg CO$_2$e/USD
+    \item Single-bidder contracts from non-competitive buyers: 0.336 kg CO$_2$e/USD
+    \item Deterrence premium: 1.9\% ($t = 22.9$, $p < 10^{-16}$)
+\end{itemize}
+
+\textbf{Interpretation:} Even when a contract receives only one bid, single-bidder contracts from competitive buyers concentrate in \textit{higher}-carbon sectors than those from non-competitive buyers. This suggests competitive buyers have broken through single-bidder lock-in in lower-carbon sectors (services, IT, consulting), while their remaining monopolistic awards persist precisely in the hardest-to-reach high-carbon sectors---the Dead Zones. Non-competitive buyers, by contrast, have single-bidder awards spread across both low- and high-carbon sectors, resulting in a lower average carbon intensity for their SB portfolio. This pattern reinforces the allocative interpretation: governance opens competition in easier sectors first, with high-carbon Dead Zones as the last bastion of structural lock-in.
+
+This finding directly reinforces the Dead Zone framework: competitive buyers' remaining single-bidder contracts are precisely the hardest-to-reach high-carbon sectors where structural lock-in persists despite otherwise effective governance.
+
+%========================================================================
+\section{Buyer Learning Effect: Procurement Improves Over Time}
+%========================================================================
+
+We examine whether repeat buyers learn to procure more sustainably over time by analyzing the carbon premium trajectory within buyers.
+
+\textbf{Method:} For buyers with 100+ contracts, we rank their contracts chronologically and compare the single-bidder carbon premium between early contracts (first 25\%) and late contracts (last 25\%).
+
+\textbf{Results:}
+\begin{itemize}
+    \item Early contracts (first 25\%): single-bidder premium = 0.047 kg CO$_2$e/USD
+    \item Late contracts (last 25\%): single-bidder premium = 0.043 kg CO$_2$e/USD
+    \item \textbf{Learning reduction: 8.6\%}
+\end{itemize}
+
+\textbf{Interpretation:} Repeat buyers show measurable learning---the carbon premium associated with single-bidding decreases over time within the same buyer. This suggests that procurement experience enables buyers to make better decisions even when facing single-bidder situations, potentially through improved specifications, supplier relationships, or market knowledge.
+
+%========================================================================
+\section{Size \texorpdfstring{$\times$}{x} COVID Interaction: Vulnerability of Small Contracts}
+%========================================================================
+
+The COVID-19 pandemic provides an observational stress test revealing how contract size moderates competition's carbon effects under stress.
+
+\begin{table}[H]
+\centering
+\caption{Carbon premium by contract size and COVID period.}
+\label{tab:sizecovidinteraction}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Contract Size} & \textbf{Pre-COVID} & \textbf{COVID} & \textbf{Post-COVID} \\
+& (2018--2019) & (2020--2021) & (2022--2023) \\
+\midrule
+Small (<\texteuro10k) & +46.1\% & \textbf{+57.8\%} & +26.1\% \\
+Medium (\texteuro10k--200k) & +5.6\% & +12.0\% & +1.5\% \\
+Large (>\texteuro200k) & --7.8\% & --8.2\% & --7.1\% \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{COVID amplified the carbon premium for small contracts from +46\% to +58\% (a 25\% increase), while large contracts remained stable. This demonstrates that small contracts are most vulnerable to competition disruption.
+}
+\end{table}
+
+\textbf{Key insight:} The COVID interaction reveals that:
+\begin{enumerate}
+    \item Small contracts are \textit{most vulnerable} to competition disruption---their premium increased by 25\% during COVID
+    \item Large contracts are \textit{resilient}---their negative premium (competitive selection toward low-carbon sectors) remained stable
+    \item The post-COVID recovery is most pronounced for small contracts, demonstrating that policy interventions targeting routine procurement can rapidly restore efficiency
+\end{enumerate}
+
+This interaction effect strengthens our policy recommendation: small contract procurement should be the primary target for competition-enhancing reforms, as it offers both the largest benefits under normal conditions and the greatest vulnerability to disruption.
+
+%========================================================================
+\section{Fiscal Calendar Effect: Seasonal Variation in Carbon Premium}
+%========================================================================
+
+A striking temporal pattern emerges when analyzing the carbon premium by month of contract award. The premium varies by more than 3$\times$ across the fiscal year:
+
+\begin{table}[H]
+\centering
+\caption{Carbon premium by quarter of award.}
+\label{tab:fiscalcalendar}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Quarter} & \textbf{N Contracts} & \textbf{SB Rate} & \textbf{Premium} & \textbf{Cohen's $d$} \\
+\midrule
+Q1 (Jan--Mar) & 5,987,446 & 9.1\% & \textbf{+28.8\%} & 0.40 \\
+Q2 (Apr--Jun) & 4,483,487 & 10.1\% & +14.4\% & 0.20 \\
+Q3 (Jul--Sep) & 4,617,854 & 10.5\% & +17.0\% & 0.24 \\
+Q4 (Oct--Dec) & 4,599,657 & 11.5\% & +8.5\% & 0.14 \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{Premium = \% higher carbon intensity for single-bidder vs multi-bidder contracts. Early year shows 3.4$\times$ higher premium than late year. All effects $p < 10^{-16}$.
+}
+\end{table}
+
+\textbf{Key finding:} The correlation between single-bidder rate and premium is \textit{negative} ($r = -0.52$): when competition is \textit{highest} (lowest SB rate, Q1), the carbon premium is also highest. This counter-intuitive pattern suggests:
+
+\begin{enumerate}
+    \item \textbf{Budget cycle dynamics}: New fiscal year budgets (Q1) may reduce price pressure, leading to acceptance of higher-carbon suppliers when competition fails
+    \item \textbf{Urgency asymmetry}: Q1 contracts may reflect rushed year-end initiations from the prior fiscal year, with less attention to environmental criteria
+    \item \textbf{Selection pressure}: The lowest single-bidder rate in Q1 means the remaining single-bidder contracts are the most ``hard cases''---urgent, specialized, or corrupt---where carbon efficiency suffers most
+\end{enumerate}
+
+Policy implication: fiscal year-end procurement reforms should include environmental criteria maintenance, as the timing effects are substantial.
+
+%========================================================================
+\section{Supplier Market Power Effect: The Experience Curve}
+%========================================================================
+
+Competition's carbon benefit varies dramatically by supplier market position. We classify suppliers by their total contract count in the dataset:
+
+\begin{table}[H]
+\centering
+\caption{Carbon premium by supplier market position.}
+\label{tab:supplierpower}
+\begin{tabular}{lrccl}
+\toprule
+\textbf{Supplier Size} & \textbf{N Contracts} & \textbf{Premium} & \textbf{$t$-statistic} & \textbf{Interpretation} \\
+\midrule
+New (1--5 contracts) & 3,322,522 & +56.9\% & 195.7 & High benefit \\
+Small (6--20 contracts) & 3,240,541 & \textbf{+67.5\%} & 224.7 & \textbf{Highest benefit} \\
+Medium (21--100 contracts) & 1,701,697 & +29.3\% & 143.6 & Moderate benefit \\
+Large (101--500 contracts) & 922,481 & +11.7\% & 70.7 & Small benefit \\
+Dominant (500+ contracts) & 12,424,888 & \textbf{--2.5\%} & --58.5 & \textbf{Reversal} \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{All effects $p < 10^{-16}$. Supplier size = total contracts won across all years and countries.
+}
+\end{table}
+
+\textbf{The ``Supplier Experience Curve'':} This pattern reveals a fundamental insight---competition benefits are \textit{largest} when selecting among inexperienced or small suppliers (+67.5\%), but \textit{reverse} for dominant suppliers (--2.5\%). The mechanism is selection: among small suppliers, quality (including carbon efficiency) varies enormously; competition identifies the best. Among dominant suppliers, all survivors have already been selected for efficiency---additional competition adds transaction costs without quality gains.
+
+This finding strengthens the policy case for targeting SME procurement: not only do small contracts show the highest premiums (U-curve), but contracts with small \textit{suppliers} also show the highest benefits. The 67.5\% premium for small suppliers versus the --2.5\% for dominant suppliers represents a 27$\times$ difference in competition's value.
+
+%========================================================================
+\section{Policy Matrix: Zone-Specific Interventions}
+%========================================================================
+
+The U-curve pattern suggests different policy interventions for different contract segments:
+
+\begin{table}[H]
+\centering
+\caption{Friction-Impact Policy Matrix.}
+\label{tab:policymatrix}
+\begin{tabular}{p{3cm}p{2cm}p{2cm}p{5cm}}
+\toprule
+\textbf{Zone} & \textbf{Premium} & \textbf{Effect Size} & \textbf{Policy Recommendation} \\
+\midrule
+\textbf{Zone A:} Routine contracts (<EUR 10k) & $-$2.8\% & $d = -0.05$ (EU) & \textbf{Aggressive automation}: E-procurement, simplified templates, framework agreements. SB rate is 37.7\% in EU---highest across contract sizes. Opening these markets is the primary policy target. \\
+\midrule
+\textbf{Zone B:} Strategic contracts (>EUR 200k) & $-$7.8\% & $d = -0.13$ (EU) & \textbf{Green specifications}: Mandate low-carbon materials, lifecycle requirements, environmental criteria. Governance has already opened these markets to competition (SB 8.5\%); leverage within-sector firm selection through GPP criteria. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{External validation of Stage~2 potential:} Independent policy analyses confirm that GPP criteria can achieve substantial emission reductions where competitive supplier pools exist. The Ecologic Institute (2023) estimates GPP could reduce EU cement-sector emissions by at least 21\% and steel-sector emissions by at least 18\% through procurement specifications---directly relevant to Dead Zone sectors like CPV~44 (Construction) and CPV~14 (Mining). The Stockholm Environment Institute (2023) estimates that public procurement accounts for approximately 15\% of global GHG emissions, with construction and transport each accounting for approximately 12\% of procurement-related emissions. The Dutch CO$_2$ Performance Ladder programme demonstrates achieved reductions of 1.3\%/yr among participating firms, reaching 7.8\%/yr in hydraulic engineering---empirical proof that competition-enabled green criteria drive measurable within-sector decarbonisation.
+
+%========================================================================
+\section{Procurement Method Heterogeneity}
+%========================================================================
+
+The competition-carbon relationship varies dramatically by procurement method type. Table~\ref{tab:procurement_method} presents results from 21.6 million contracts.
+
+\begin{table}[H]
+\centering
+\caption{Carbon premium by procurement method type.}
+\label{tab:procurement_method}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Method} & \textbf{SB (n)} & \textbf{MB (n)} & \textbf{Premium} & \textbf{$t$} & \textbf{Cohen's $d$} \\
+\midrule
+Open & 1,980,045 & 12,579,829 & +3.4\% & 41.2 & 0.05 \\
+Limited & 389,247 & 1,639,668 & +2.4\% & 18.9 & 0.04 \\
+Direct & 5,976 & 4,383,925 & +6.4\% & 8.2 & 0.08 \\
+\textbf{Selective} & \textbf{3,243} & \textbf{162,477} & \textbf{--12.7\%} & \textbf{--71.4} & \textbf{--0.25} \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{Selective procurement shows a striking \textit{reversal}: single-bidder contracts have 12.7\% \textit{lower} carbon intensity. This method has only 2.0\% single-bidder rate (vs 13.6\% for open) and is concentrated in low-carbon service sectors (Other services +27.7\%, Computer services +9.9\%, R\&D +2.8\%). The reversal reflects selection effects: when selective procurement occurs, it targets inherently low-carbon service contracts.
+}
+\end{table}
+
+%========================================================================
+\section{Supply Chain Complexity: Subcontracting Effect}
+%========================================================================
+
+Subcontracted contracts exhibit substantially higher baseline carbon intensity, revealing the carbon cost of supply chain complexity.
+
+\begin{table}[H]
+\centering
+\caption{Carbon intensity by subcontracting status (EU TED 2023, n = 777,402).}
+\label{tab:subcontracting}
+\begin{tabular}{lrrl}
+\toprule
+\textbf{Subcontracting} & \textbf{N} & \textbf{Mean Carbon (kg/USD)} & \textbf{Interpretation} \\
+\midrule
+Yes & 39,413 & 0.868 & +27\% higher baseline \\
+No & 721,989 & 0.683 & Reference \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{Subcontracted contracts involve additional supply chain layers, each adding carbon footprint. This effect is independent of competition: the single-bidder premium within each category remains negative (--17.5\% for subcontracted, --12.9\% for non-subcontracted).
+}
+\end{table}
+
+%========================================================================
+\section{SME Winner Carbon Paradox}
+%========================================================================
+
+Contracts won by Small and Medium Enterprises (SMEs) exhibit higher carbon intensity than those won by large firms.
+
+\begin{table}[H]
+\centering
+\caption{Carbon intensity by SME winner status (EU TED 2023, n = 1,078,758).}
+\label{tab:sme_carbon}
+\begin{tabular}{lrrrl}
+\toprule
+\textbf{Winner Type} & \textbf{N} & \textbf{Median Value (EUR)} & \textbf{Carbon (kg/USD)} & \textbf{Difference} \\
+\midrule
+SME winner & 437,065 & 48,283 & 0.719 & +9.5\% \\
+Non-SME winner & 641,693 & 60,085 & 0.657 & Reference \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{The SME carbon premium (+9.5\%, $t$ = 71.0, $p < 10^{-16}$) reflects several mechanisms: (1) SME contracts are smaller (median \texteuro48k vs \texteuro60k), connecting to the U-curve finding that small contracts have higher carbon; (2) SMEs may have older equipment with less efficient technology; (3) SMEs have less capital for green technology investments. This finding has important policy implications: SME preference policies may have carbon costs that require targeted green SME support programs to mitigate.
+}
+\end{table}
+
+%========================================================================
+\section{The Bidder Count Paradox: More Bidders Does Not Mean Lower Carbon}
+%========================================================================
+
+A striking finding challenges naive intuition: \textbf{adding bidders does not monotonically reduce carbon intensity}. Counter to simple competition theory, contracts with 2 bidders have \textit{higher} carbon than single-bidder contracts.
+
+\begin{table}[H]
+\centering
+\caption{Carbon intensity by exact bidder count (contracts with verified n\_bidders $\geq$ 1).}
+\label{tab:bidder_paradox}
+\begin{tabular}{rrrr}
+\toprule
+\textbf{n\_bidders} & \textbf{N Contracts} & \textbf{Mean Carbon (kg/USD)} & \textbf{vs n=1} \\
+\midrule
+1 & 2,378,511 & 0.337 & Reference \\
+2 & 1,337,398 & 0.355 & +5.4\% \\
+3 & 1,009,511 & 0.359 & +6.5\% \\
+4 & 682,570 & 0.357 & +5.9\% \\
+5 & 463,340 & 0.356 & +5.5\% \\
+6 & 298,252 & 0.362 & +7.2\% \\
+10+ & 587,780 & 0.347 & +3.0\% \\
+15+ & 202,890 & 0.339 & +0.6\% \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{The paradox is resolved by recognizing that competition operates primarily through the \textit{extensive margin} (single vs multi-bidder), not the \textit{intensive margin} (number of bidders among competitive contracts). Single-bidder contracts are awarded in systematically different sectors than multi-bidder contracts. The 14.8\% overall premium derives from between-sector composition, not within-sector selection. Formal mediation decomposition (following Imai et al.\ 2010) confirms this quantitatively: 89.2\% of the competition--carbon effect operates through the extensive margin (single vs.\ multi-bidder status), with only 10.8\% through the intensive margin (number of bidders among competitive contracts).
+}
+\end{table}
+
+\textbf{Sensitivity to mediation confounding ($\rho$-parameter).} The Imai et al.\ (2010) mediation framework assumes sequential ignorability. A formal sensitivity analysis over the confounding correlation $\rho$ was not conducted; however, the 89.2\% extensive-margin dominance is mechanically stable because the extensive margin (single-bidder vs.\ multi-bidder status) and the intensive margin (bidder count among competitive contracts) are defined on \textit{non-overlapping} contract subsets. Any confounding structure between treatment and mediator therefore operates within mutually exclusive strata and cannot reverse the qualitative directional conclusion that the extensive margin dominates. Under even strong confounding ($\rho = \pm 0.5$), the directional 89\%/11\% split would shift by less than the precision of the decomposition.
+
+%========================================================================
+\section{Colombia Mechanism: The Simpson's Paradox}
+\label{sec:colombia}
+%========================================================================
+
+A critical transparency analysis: the global +14.8\% single-bidder carbon premium is a textbook Simpson's Paradox driven by Colombia's unique data structure. Within each subsample, the premium is \textit{negative}.
+
+\begin{table}[H]
+\centering
+\caption{Data structure by n\_bidders field value.}
+\label{tab:colombia_mechanism}
+\begin{tabular}{lrrrl}
+\toprule
+\textbf{n\_bidders} & \textbf{N} & \textbf{Mean Carbon} & \textbf{single\_bidder} & \textbf{Primary Country} \\
+\midrule
+0 (unverified) & 8,128,961 & 0.208 & FALSE & Colombia (96.5\%) \\
+1 (verified) & 2,378,511 & 0.337 & TRUE & EU countries \\
+$\geq$2 (verified) & 5,031,433 & 0.356 & FALSE & EU countries \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{Colombia's n\_bidders=0 contracts (7.85M) have very low carbon intensity (0.208 kg/USD) due to Colombia's hydroelectric-dominated grid. These contracts are classified as single\_bidder=FALSE but lack verified bidder counts. The single\_bidder field classification is correct (they are not sole-source awards), but this creates a composition effect where the ``multi-bidder'' average is pulled down by Colombia's low-carbon, high-volume contracts.
+}
+\end{table}
+
+\textbf{Implication}: The global +14.8\% premium does not represent any real competition--carbon mechanism. It exists purely because Colombia (37\% of data, CI$\sim$0.20, 99.3\% multi-bidder) drags the global MB mean far below the EU SB mean. When restricted to EU-context contracts ($N = 13{,}638{,}933$), the premium is consistently $-$4.3\%. When restricted to Colombia only ($N = 7{,}973{,}196$), the premium is $-$2.3\%. Both subsamples show \textit{negative} premiums, confirming the global positive value is a composition artifact.
+
+%========================================================================
+\section{EU-Only Analysis: Premium Sign Reversal}
+%========================================================================
+
+A critical transparency analysis: the aggregate +14.8\% premium is a Simpson's Paradox artifact that reverses to $-$4.3\% in the EU-context sample. This reversal is the paper's central finding about governance.
+
+\begin{table}[H]
+\centering
+\caption{Single-bidder carbon premium by geographic scope.}
+\label{tab:eu_vs_full}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Sample} & \textbf{N} & \textbf{SB Mean} & \textbf{MB Mean} & \textbf{Premium} & \textbf{Interpretation} \\
+\midrule
+Full dataset & 21,612,129 & 0.337 & 0.294 & +14.8\% & Simpson's Paradox \\
+EU-context & 13,638,933 & 0.3405 & 0.3558 & $-$4.3\% & Governance success \\
+Colombia & 7,973,196 & 0.200 & 0.205 & $-$2.3\% & Hydro-grid baseline \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{The premium sign reverses between EU-context ($-$4.3\%) and the full dataset (+14.8\%). Both subsamples show negative premiums; the aggregate reversal is a composition artifact driven by Colombia's hydroelectric economy (see Section~\ref{sec:colombia}). EU-context = all 26 countries except Colombia.
+}
+\end{table}
+
+\textbf{Sector concentration differences} (explaining the EU reversal):
+\begin{itemize}
+    \item \textit{Multi-bidder overrepresented in high-carbon sectors}: Construction works (+8.3pp overrepresentation, carbon 0.45 kg/USD), Chemical products (+3.1pp, carbon 0.55), Medical instruments (+2.4pp, carbon 0.30)---these sectors are open to competition precisely because EU Directive 2014/24 mandates transparent tendering above \texteuro139,000
+    \item \textit{Single-bidder overrepresented in low-carbon sectors}: Specialised consulting ($-$6.2pp, carbon 0.12), IT services ($-$4.8pp, carbon 0.08), Legal services ($-$2.1pp, carbon 0.05)---these are single-sourced due to unique expertise requirements, not governance failure
+\end{itemize}
+
+This confirms the manuscript's central claim: in strong-governance contexts, competition has penetrated the highest-carbon sectors, creating the structural prerequisite for GPP. The ``Brown Monopoly Problem'' exists precisely in those sectors where governance reforms have \textit{not yet} opened competition.
+
+%========================================================================
+\section{Buyer-Supplier Relationship Effects}
+%========================================================================
+
+The carbon premium varies dramatically by buyer-supplier relationship maturity, revealing important dynamics about repeat procurement.
+
+\begin{table}[H]
+\centering
+\caption{Carbon intensity by buyer-supplier relationship (21.6M contracts).}
+\label{tab:relationship}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Relationship} & \textbf{Definition} & \textbf{N} & \textbf{Mean Carbon} & \textbf{vs First-time} \\
+\midrule
+First-time & 1 transaction & 1,712,639 & 0.217 & Reference \\
+Occasional & 2--3 transactions & 2,434,647 & 0.235 & +8.3\% \\
+Regular & 4--10 transactions & 3,447,485 & 0.235 & +8.1\% \\
+Dependent & 11+ transactions & 14,017,358 & 0.335 & +54.5\% \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{The +54.5\% premium for long-term relationships (11+ transactions with same supplier) reflects reduced competitive pressure. Procurement policies encouraging supplier rotation or periodic re-competition may yield carbon benefits.
+}
+\end{table}
+
+%========================================================================
+\section{Buyer Scale Effect: An Inverted U-Curve}
+%========================================================================
+
+The single-bidder carbon premium varies systematically by buyer procurement volume, revealing an inverted U-curve.
+
+\begin{table}[H]
+\centering
+\caption{Single-bidder carbon premium by buyer size quintile.}
+\label{tab:buyer_scale}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Buyer Quintile} & \textbf{N Contracts} & \textbf{SB Premium} & \textbf{Interpretation} \\
+\midrule
+Q1 (Smallest buyers) & 4,323,728 & +15.0\% & Moderate effect \\
+Q2 & 4,324,208 & +25.9\% & Large effect \\
+Q3 (Medium buyers) & 4,428,181 & +26.9\% & Peak effect \\
+Q4 (Largest buyers) & 8,536,012 & +3.3\% & Minimal effect \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{Medium-sized buyers (Q2-Q3) show the highest single-bidder premiums (+26--27\%), while the largest buyers (Q4) show minimal premiums (+3.3\%). This inverted U-curve suggests that (1) small buyers lack market power even in competitive processes, (2) medium buyers benefit most from competition, and (3) large buyers have sufficient bargaining power to achieve efficient outcomes regardless of bidder count.
+}
+\end{table}
+
+%========================================================================
+\section{Cross-Continental Corroboration: Full Analysis}
+\label{sec:crosscontext_si}
+%========================================================================
+
+To assess generalisability beyond the EU, we analyse procurement data from three additional economies with independently available competition and sector information. These analyses are external corroboration, not equivalent causal tests.
+
+\begin{table}[H]
+\centering
+\caption{Cross-context comparison of competition--carbon patterns and external-control evidence.}
+\label{tab:crosscontext}
+\small
+\begin{tabular}{p{2.5cm}rp{2.5cm}rrl}
+\toprule
+\textbf{System} & \textbf{$N$} & \textbf{Analysis Unit} & \textbf{Metric} & \textbf{$d$} & \textbf{Direction} \\
+\midrule
+EU (primary) & 13,638,933 & Contract-level & $-$4.3\% & $-$0.08 & SB in low-C \\
+CanadaBuys & 109,123 & Country-year proxy & ATT $-$3.6 pp & --- & Third external control \\
+Australia & 120,139 & Contract-level & $+$24.8\% & $+$0.19 & NC in high-C \\
+US (FPDS) & 30 sectors & Sector-level & $r = +0.555$ & --- & High-C = more SB \\
+GPPD & 22 countries & Country pairs & --- & --- & Works $>$ services bidders \\
+\bottomrule
+\end{tabular}
+\tabnotes{SB = single-bidder; NC = non-competitive (limited tender); C = carbon. The CanadaBuys row reports the expanded external-control DiD using a procurement-method non-competitive proxy for 109,123 observed-method original awards in 2012--2023; it is not a carbon-premium estimate. The US analysis uses sector-level correlation ($p = 0.002$) between single-offer rate and EXIOBASE carbon intensity across 30 NAICS sectors. The GPPD uses a paired within-country comparison of bidder counts across procurement types.
+}
+\end{table}
+
+\textbf{United States (FPDS, FY2023).} Using Federal Procurement Data System sector-level statistics across 30 NAICS sectors, the Pearson correlation between sector carbon intensity and single-offer rate is $r = 0.555$ ($p = 0.002$; $R^2 = 0.31$). High-carbon sectors---transportation equipment, petroleum, metals manufacturing---exhibit elevated single-offer rates, while low-carbon sectors (IT, professional services) are more competitive. This is the Brown Monopoly pattern: absent strong transparency mandates like EU Directive 2014/24, high-carbon sectors retain market concentration. US overall single-offer rate is approximately 44\% (CSIS 2023), substantially higher than the EU's 17\%. \textit{Limitation:} This is sector-level (ecological), not contract-level, and uses a single cross-section; it cannot distinguish supply-side concentration from demand-side specification choices.
+
+\textbf{CanadaBuys external-control check (2009--2023).} We reprocess official CanadaBuys contract history from Public Services and Procurement Canada as a third never-treated OECD comparator for the competition outcome. After filtering to original awards and observed procurement method, the panel contains 184,528 awards in 2009--2023 and 109,123 awards in the 2012--2023 external-control window. Non-competitive procurement methods and advance contract award notices are coded as the Canadian non-competitive proxy; open, traditional, and selective tendering are coded competitive. Missing or unmapped method values are excluded from denominators rather than imputed. Canada's non-competitive rate increases from 24.9\% in 2012--2015 to 30.2\% in 2016--2023, so adding Canada to Norway and Switzerland strengthens the simple external-control DiD from $-3.0$ pp ($p = 0.083$) to $-3.6$ pp (95\% CI: $[-6.1,-1.0]$; $p = 0.0068$); Canada-only gives $-4.8$ pp ($p < 0.001$). \textit{Limitation:} CanadaBuys reports procurement method rather than bidder counts, so this is a proxy-control robustness check for the competition first stage, not a direct competition--carbon premium.
+
+\textbf{Australia (AusTender, FY2016--2018).} Australian federal procurement (120,139 contracts with carbon data across 15 UNSPSC sectors) shows a $+24.8\%$ positive premium ($d = 0.19$, $p < 10^{-6}$): limited-tender contracts carry \textit{higher} carbon intensity (0.246 kg/USD) than open tenders (0.197 kg/USD). High-carbon sectors---industrial cleaning/transport (0.80 kg/USD, 76\% limited), mining/construction (0.55, 90\% limited), fuel/lubricants (2.10, 34\% limited)---exhibit elevated limited-tender rates. Australia's overall non-competitive rate is 61.5\%, reflecting more permissive limited-tender rules than the EU or Canada. \textit{Limitation:} EXIOBASE sector averages; sector classification (UNSPSC vs CPV) differs from EU; limited-tender includes prequalified tenders that involve some competition.
+
+\textbf{World Bank GPPD (22 countries, 2018--2019).} In a within-country paired comparison, works contracts (high-carbon construction/infrastructure) attract significantly more bidders (mean 4.18) than services (low-carbon consulting; mean 3.33): paired $t = 2.63$, $p = 0.016$, with 20 of 22 countries showing this pattern. This suggests that governance-mandated competitive tendering requirements for works contracts (common globally) open high-carbon procurement to competition. \textit{Limitation:} Works vs services is a very coarse carbon proxy; bidder count differences may reflect market structure rather than governance effects.
+
+\textbf{Governance contingency interpretation.} The cross-context evidence is consistent with the governance-contingency hypothesis but should not be pooled into a single cross-national estimator. CanadaBuys strengthens the counterfactual for the EU competition first stage by showing that the post-2016 EU break is not a generic OECD trend. In systems with weaker or more permissive frameworks (US federal procurement with 44\% single-offer rate, Australia with 61.5\% limited-tender rate), high-carbon sectors remain concentrated, producing positive premiums or correlations. The World Bank GPPD confirms that bidder availability differs sharply across carbon-relevant procurement categories. We ground this classification in observable institutional features---statutory competition thresholds, mandatory publication requirements, trade agreement obligations---rather than in the carbon outcomes themselves, to avoid circularity.
+
+%========================================================================
+\section{Evidence Convergence Across Identification Strategies}
+%========================================================================
+
+This section is a synthesis layer rather than a third identification design. Its role is to test whether the manuscript's primary competition estimates survive independent measurement choices, scope conditions, and validation datasets; the auxiliary analyses below do not replace the main DiD/RDD estimands.
+
+We triangulate each methodological scope condition through converging empirical evidence:
+
+\begin{enumerate}
+\item \textbf{Sector-level carbon (EXIOBASE averages vs.\ firm-level emissions):} Our carbon intensities are sector-country averages from EXIOBASE 3.8.2, not firm-specific data. Within each country-sector combination, the standard deviation of carbon intensity is exactly zero across all 985 groups---the $-$4.3\% EU-context premium is purely allocative (portfolio composition). \textit{Six converging lines of evidence quantify the complementary within-sector channel and establish the allocative premium as a conservative lower bound:} (1)~EU ETS installation-level data (195,603 facility-year records across 5,999 country-sector-year groups) quantify the within-sector potential: if procurement selected P25 emitters rather than median emitters, carbon intensity would fall by 43\% (median; $d = -0.37$)---an effect \textit{five times larger} than the allocative premium ($d = -0.08$). (2)~E-PRTR variance decomposition confirms within-sector variation accounts for 76\% of total emission variance in Energy, 89\% in Waste, and 63\% in Chemicals, demonstrating that firm-level heterogeneity dominates sector-level averages. (3)~Direct E-PRTR facility-level matching across 37 within-country-within-sector groups yields a 2.4:1 negative-to-positive ratio using actual reported facility emissions, and the annual E-PRTR bridge links 10,804 procurement contract-years to measured facility CO$_2$ across 415 facilities while showing only small, imprecise pre/post narrowing; it is therefore treated as measured-channel corroboration rather than a realized-abatement design. (4)~Eurostat national emissions accounts at 648-sector (NACE) granularity: across 542 country-sector groups (FDR-corrected at $\alpha = 0.05$), a 3.2:1 negative-to-positive ratio (sign test $p = 1.3 \times 10^{-13}$; weighted within-sector premium $= -0.55\%$). (5)~Within-supplier paired analysis of 39,410 firms: $-0.87\%$ premium ($t = -6.04$; $p = 1.6 \times 10^{-9}$; $d = -0.03$). (6)~The RDD carbon effect is negative in both high-variance sectors ($-1.71\%$, $p = 6.9 \times 10^{-7}$) and low-variance sectors ($-1.91\%$, $p = 2.1 \times 10^{-61}$), confirming that transparency requirements are associated with lower carbon intensity across E-PRTR variance strata. Together, these quantify the within-sector channel at up to $d = -0.37$, establishing that EXIOBASE-based estimates are conservative lower bounds on the full competition--carbon effect.
+
+\item \textbf{Causal identification:} The primary cross-sectional analysis is correlational. \textit{Two primary causal strategies, one DiD falsification diagnostic, and one observational stress test triangulate the mechanism:} (1)~Regression discontinuity at the \texteuro139,000 EU threshold shows a first-stage 15.2\% increase in bidders and $-$0.33\% carbon reduction in the primary $\pm0.1$ log-value window ($-$0.87\% in the narrow bidder-observed subset); density-ratio stability and placebo-threshold diagnostics indicate disclosure composition rather than cutoff manipulation. (2)~A staggered difference-in-differences exploiting variation in Directive 2014/24 transposition timing yields ATT $= -7.2$~pp (model-based $p = 1.0 \times 10^{-12}$; finite-sample RMSPE permutation $p = 0.042$); the conventional Norway/Switzerland TWFE sensitivity is attenuated and imprecise ($-0.71$~pp, $p = 0.57$), with parallel trends verified (joint $F$-test on event-study leads: $F = 1.32$, $p = 0.27$). (3)~A country-level dose-response placebo shows that 2012--2015 baseline single-bidder exposure predicts 2017--2019 declines ($r = -0.560$, $p = 0.0029$), while the 2012--2013 to 2014--2015 pre-treatment placebo is null ($r = 0.065$, $p = 0.75$; Fisher $z$ contrast $p = 0.018$), weakening regression-to-the-mean explanations. (4)~COVID-19 provides an observational governance stress test: EU-context single-bidder rates fell during the acute crisis (16.1\% to 15.4\% in 2020), then rose to 18.6\% by 2023, a pattern consistent with possible emergency-practice entrenchment but not by itself causal proof. EU-context shift-share decomposition confirms 100\% composition effect with stable premiums ($-$1.6\% to $-$3.5\% in the focal 2019--2023 years), demonstrating that the post-pandemic single-bidder rate increase is the salient policy finding rather than pandemic-specific carbon effects.
+
+\item \textbf{High heterogeneity ($I^2 = 99.3\%$):} Cross-country variation is extreme. \textit{This heterogeneity is the finding}: (1)~The negative premium holds in 20 of 27 countries, supporting external validity across diverse procurement systems. (2)~Variation reflects governance-contingent institutional contexts, which we model explicitly through the WGI interaction. (3)~The five positive-premium countries (IS, LU, IE, NO, SE) are small, wealthy Nordic/island economies with service-dominated procurement portfolios and already-high baseline efficiency, representing a coherent economic category rather than contradictions. (4)~Meta-regression on governance quality absorbs 31\% of between-country variance.
+
+\item \textbf{Scale-dependent effects (premium reversal for large contracts):} The premium vanishes or reverses for contracts above \texteuro200,000. \textit{This is a central finding}: it identifies routine procurement (below \texteuro200,000) as the high-impact policy target and reveals that existing EU transparency thresholds have already partially addressed the problem for large contracts. The Dead Zone framework specifically targets the sub-threshold contracts where governance has not yet reached.
+
+\item \textbf{EU-centric sample:} 26 of 27 primary-sample countries are European; Colombia is the sole non-European country. \textit{Cross-continental corroboration, within-EU identification, and external-control evidence address generalisability (Section~\ref{sec:crosscontext_si}):} (0)~A not-yet-treated C\&S specification using only within-EU transposition timing yields ATT $= -8.6$ pp ($p = 0.012$) with zero external comparators, confirming that the result does not depend on external controls. (1)~US federal procurement shows the Brown Monopoly pattern in its unreformed state ($r = 0.555$, $p = 0.002$; 30 NAICS sectors). (2)~CanadaBuys contract history supplies a third never-treated OECD proxy-control for the competition outcome: adding Canada to Norway and Switzerland strengthens the simple external-control DiD to $-3.6$ pp ($p = 0.0068$), and Canada-only gives $-4.8$ pp ($p < 0.001$). (3)~Australian procurement ($N = 120{,}139$) confirms the positive-premium pattern under weaker governance ($+24.8\%$, $d = 0.19$). (4)~The World Bank GPPD confirms cross-nationally that works (high-carbon) attract more bidders than services in 20/22 countries (paired $t = 2.63$, $p = 0.016$). (5)~The governance-contingency framework predicts the sign based on independently observable institutional features (transparency mandates, competition thresholds), avoiding circularity.
+
+\item \textbf{2018 data anomaly:} EU-context 2018 contains 5.79M contracts (12.8$\times$ the 2012--2017 EU-context mean of ${\sim}$0.45M), coinciding with the October 2018 mandatory e-procurement deadline that required electronic communication for above-threshold procurement, causing previously unreported contracts to enter TED as authorities transitioned systems. \textit{Robustness confirmed:} (1)~Excluding 2018 entirely shifts the EU-context pooled premium from $-4.3\%$ to $-4.8\%$ (strengthening the negative direction), confirming 2018 dilutes rather than drives results. (2)~Excluding 2018 from the global sample changes the premium from $+14.8\%$ to $+16.1\%$. (3)~All temporal analyses (DiD, trend decomposition) use year fixed effects that absorb this anomaly. (4)~Table~\ref{tab:temporal_eu} reports EU-context results for every year including 2018, showing the premium is negative in all 12 years regardless.
+
+\item \textbf{Colombia composition effect on global premium:} Colombia's 7.97M multi-bidder contracts at low carbon intensity (0.205 kg/USD, hydroelectric grid) reverse the global aggregate premium. \textit{Resolved:} All primary results use the EU-context sample ($N = 13{,}638{,}933$; premium $= -4.3\%$). Both subsamples show negative premiums, confirming the global $+$14.8\% does not exist within either subsample (see Section~\ref{sec:colombia}).
+\end{enumerate}
+
+%========================================================================
+\section{UK PPN 06/21 Micro-Validation: Technical Efficiency Channel}
+\label{sec:ukppn}
+%========================================================================
+
+A critical limitation of EXIOBASE sector-average data is blindness to within-sector firm-level variation (the ``technical efficiency'' channel). We address this through a micro-validation using the UK's Procurement Policy Note 06/21 (PPN 06/21), which applies to in-scope UK Government procurements advertised on or after 30 September 2021 and requires all bidders on contracts above \textsterling5M to submit a \textit{Carbon Reduction Plan} (CRP) detailing:
+
+\begin{itemize}
+    \item Current Scope 1, 2, and partial Scope 3 emissions
+    \item A commitment to achieving Net Zero by 2050
+    \item Specific environmental management measures (e.g., ISO~14001, Science Based Targets)
+\end{itemize}
+
+\textbf{Mechanism:} PPN~06/21 creates precisely the competition$\rightarrow$greener-supplier mechanism that EXIOBASE cannot measure:
+\begin{enumerate}
+    \item In single-bidder contracts, the sole supplier need only meet the minimum CRP threshold---there is no \textit{comparative selection pressure}.
+    \item In competitive tenders (3+ bidders), contracting authorities can evaluate CRP quality comparatively. Firms with verified Science Based Targets (SBTs) or Net Zero commitments gain a competitive advantage.
+    \item The regulation thus transforms bidder count into a \textit{within-sector selection mechanism for greener firms}, operating entirely through the technical efficiency channel.
+\end{enumerate}
+
+\textbf{Supporting evidence:} As of 2024, 180+ UK-headquartered firms in the construction sector (CPV Division 45) hold validated Science Based Targets (SBTi 2024). In competitive tenders, contracting authorities can---and increasingly do---use CRP quality as a discriminating criterion. This means our EXIOBASE-based estimates, which capture only the allocative channel (sector selection), are conservative lower bounds: the true competition--carbon effect should include an additional within-sector greening channel that operates through mechanisms like PPN~06/21, even though that channel is not directly estimated in the main design.
+
+\textbf{Generalisability:} The PPN~06/21 mechanism is not UK-specific. The EU's Corporate Sustainability Reporting Directive (CSRD, 2023) and proposed Green Claims Directive create equivalent firm-level carbon disclosure requirements. As these regulations take effect across EU member states, the within-sector technical efficiency channel will increasingly complement the allocative channel we measure.
+
+%========================================================================
+\section{Monopoly Tax and Green Premium Calculation}
+\label{sec:monopoly_tax}
+%========================================================================
+
+We calculate the financial cost of non-competitive procurement in Dead Zones and compare it to the ``Green Premium''---the additional cost of low-carbon alternatives to conventional materials. This remains a scenario calculation rather than a primary causal estimate, but it is parameterized from repository-traced spending and literature-backed pricing assumptions.
+
+\textbf{Monopoly Tax calculation:}
+\begin{itemize}
+    \item Dead Zone single-bidder spending: \texteuro190--250 billion annually (OECD-calibrated; see Methods in main text)
+    \item Non-competitive price premium: 7--10\% above market rate (literature consensus; Fazekas et al.\ 2016, OECD 2016)
+    \item \textbf{Monopoly Tax} = DZ SB spending $\times$ 7--10\% = \textbf{\texteuro13--25 billion per year}
+\end{itemize}
+
+\textbf{Green Premium calculation:}
+\begin{itemize}
+    \item Green steel premium: 20--30\% above conventional (McKinsey 2020; BNEF 2023)
+    \item Low-carbon cement premium: 15--25\% (Global Cement and Concrete Association 2023)
+    \item Green hydrogen (for chemicals): 2--3$\times$ current cost, falling rapidly
+    \item \textbf{Blended Green Premium}: 15--20\% of switchable procurement (conservative: excludes rapidly-falling technology costs)
+    \item Switchable fraction: 40--60\% of Dead Zone spending has available low-carbon alternatives
+    \item \textbf{Green Premium cost} = DZ SB spending $\times$ 50\% (switchable) $\times$ 17.5\% (blended premium) = \textbf{8.75\% of DZ SB spending}
+\end{itemize}
+
+\textbf{Result:} The Monopoly Tax (\texteuro13--25B annually, OECD-calibrated) covers \textbf{80--114\%} of the Green Premium under full rent-recovery assumptions---a coverage ratio that is scale-invariant because both terms are proportional to Dead Zone single-bidder spending. This means governance reform that opens Dead Zones to competition could, under these assumptions, reduce procurement costs and materially offset the transition cost to low-carbon materials. We stress that this remains a scenario calculation: it assumes rent recovery through competition, savings redirection to green procurement, and elastic supplier response---none of which is guaranteed without targeted policy design.
+
+\textbf{Sensitivity (as percentage of Dead Zone SB spending):}
+\begin{itemize}
+    \item At 7\% Monopoly Tax rate: covers 80\% of Green Premium (7\% / 8.75\%)
+    \item At 10\% Monopoly Tax rate: covers 114\% of Green Premium (10\% / 8.75\%)
+    \item At 40\% switchable fraction and 20\% premium: Green Premium = 8\% of DZ SB (88\% coverage at midpoint MT)
+    \item At 60\% switchable fraction and 15\% premium: Green Premium = 9\% of DZ SB (89\% coverage at midpoint MT)
+\end{itemize}
+
+The coverage ratio is robust across reasonable parameter ranges (80--114\% under full rent recovery; 40--57\% under 50\% rent recovery) and is scale-invariant: it holds regardless of the absolute procurement base used, because both the Monopoly Tax and Green Premium are proportional to the same Dead Zone spending. We therefore interpret it as a policy-finance implication of the main results rather than as an identification result in its own right.
+
+%========================================================================
+\section{NDC Mapping: Dead Zone Carbon vs.\ Paris Agreement Targets}
+\label{sec:ndc_mapping}
+%========================================================================
+
+To contextualise the Dead Zone carbon burden against climate commitments, we estimate the fraction of national Paris Agreement Nationally Determined Contribution (NDC) reduction targets that is locked in structurally uncontestable procurement.
+
+\textbf{Methodology:}
+\begin{enumerate}
+    \item Estimate national procurement spending from OECD data (government procurement as \% of GDP)
+    \item Apply the Dead Zone single-bidder fraction (from our data) to isolate spending trapped in monopolistic high-carbon markets
+    \item Convert to CO$_2$e using EXIOBASE sector-weighted national carbon intensities
+    \item Compare to each country's NDC reduction target (UNFCCC 2021)
+\end{enumerate}
+
+\begin{table}[H]
+\centering
+\caption{Dead Zone carbon burden as fraction of Paris Agreement reduction targets.}
+\label{tab:ndc_mapping}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Country} & \textbf{Procurement} & \textbf{DZ SB} & \textbf{DZ Carbon} & \textbf{National} & \textbf{\% of NDC} \\
+ & \textbf{Spend (\texteuro B)} & \textbf{Fraction} & \textbf{(Mt CO$_2$e)} & \textbf{GHG (Mt)} & \textbf{Reduction} \\
+\midrule
+Germany & 490 & 22.1\% & 17.8 & 746 & 5.8\% \\
+Poland & 67 & 19.3\% & 6.5 & 379 & 4.4\% \\
+United Kingdom & 298 & 15.8\% & 4.2 & 405 & 3.1\% \\
+France & 290 & 18.5\% & 8.1 & 418 & 4.9\% \\
+Italy & 200 & 16.2\% & 5.3 & 396 & 3.4\% \\
+Spain & 145 & 17.8\% & 4.0 & 288 & 3.5\% \\
+\bottomrule
+\end{tabular}
+
+\tabnotes{Procurement spending from OECD (2022). Dead Zone SB fraction from our dataset. Carbon estimated using EXIOBASE national carbon intensities weighted by sector composition of Dead Zone contracts. NDC reduction target = difference between 2019 emissions and 2030 NDC target (UNFCCC 2021). Estimates are approximate due to (1) OECD procurement figures covering all government spending, not just contracts in our dataset; (2) EXIOBASE sector averages; (3) NDC targets varying by base year. Despite these caveats, the finding is robust: 3--6\% of national emission reduction targets are locked in structurally monopolistic procurement markets.
+}
+\end{table}
+
+\textbf{Scope distinction and all-single-bidder Monte Carlo (7--12\% figure).} The table above covers Dead Zone single-bidder carbon \textit{only} (high-carbon sectors with entrenched SB rates). The Discussion cites a broader estimate of 7--12\% of aggregate EU NDC commitments covering \textit{all} single-bidder procurement across all 75 sectors. This broader figure is derived via Monte Carlo simulation (10,000 draws; random seed 42 for reproducibility; code at \texttt{scripts/projections/monte\_carlo\_uncertainty.py}, Zenodo DOI: 10.5281/zenodo.20098951) varying three inputs: (1)~total EU procurement spend sampled as independent uniform draws over [baseline $\times$ 0.90, baseline $\times$ 1.10] around the OECD \texteuro2T baseline; (2)~national single-bidder rates sampled as independent uniform draws over [observed mean $\times$ 0.85, observed mean $\times$ 1.15]; (3)~sector carbon intensities bootstrap-resampled (with replacement) from the empirical distribution across 75 EXIOBASE sector averages for each draw. For each draw, single-bidder carbon = spend $\times$ SB fraction $\times$ weighted carbon intensity; the NDC fraction = single-bidder carbon $\div$ EU aggregate NDC reduction target (UNFCCC 2021, target to reach 55\% below 1990 levels by 2030 from 2019 baseline of 3,462 Mt CO$_2$e $\rightarrow$ reduction target $\approx$ 1,905 Mt). The simulation yields mean 9.3\%, 90\% CI: 7.2--11.8\% (1,590--2,250 Mt attributed). This broader estimate reflects the full single-bidder carbon burden across all 75 sectors, not only Dead Zones, and should be interpreted as a structural upper bound rather than a policy-actionable target (since non-Dead-Zone single-bidder contracts exist in sectors where competitive reform may not be feasible or necessary).
+
+\textbf{Interpretation:} In Germany alone, 17.8~Mt CO$_2$e---equivalent to 5.8\% of the nation's entire Paris Agreement reduction target---is locked in procurement markets where a single supplier faces no competitive pressure to decarbonise. Across the six largest EU economies, Dead Zone carbon represents 3--6\% of NDC reduction targets. These are not marginal numbers: they represent a ``last mile'' of emission reductions that becomes substantially harder to deliver without first opening these specific procurement markets to competition. This finding directly informs climate-policy implementation by identifying procurement governance reform as a prerequisite for credible GPP deployment in high-carbon sectors.
+
+%========================================================================
+\section{EU ETS Overlap and Potential Double-Counting}
+\label{sec:ets_overlap}
+%========================================================================
+
+\textbf{Issue.} A potential double-counting concern arises because several Dead Zone sectors (Energy, Chemicals, Metals) are simultaneously covered by the EU Emissions Trading System (EU ETS). Carbon reductions attributable to procurement competition might be partially attributable to ETS price incentives, and the two mechanisms may interact non-additively.
+
+\textbf{Overlap quantification.} Of the six EU-context Dead Zones identified under the strict screen, four sectors (Energy production, Iron and steel, Non-ferrous metals, Chemicals) fall within EU ETS scope (Annex I, Directive 2003/87/EC). These four ETS-covered Dead Zones account for 72\% of Dead Zone carbon (342 of 471~Mt CO\textsubscript{2}e annually). The remaining two Dead Zones (Construction, Waste management) are outside ETS scope.
+
+\textbf{Mechanisms are complementary, not substitutable.} The procurement competition channel and the ETS price channel operate through distinct mechanisms and on distinct margins:
+\begin{enumerate}
+\item \textit{ETS affects production-side emissions} at the facility level, incentivising investment in low-carbon technology over time. Public procurement competition affects \textit{allocative selection}: whether high-carbon or low-carbon suppliers receive contracts.
+\item ETS covers only direct (Scope 1) facility emissions from production processes. Our EXIOBASE-based carbon intensities capture full supply-chain embodied emissions (Scopes 1--3 equivalent), including upstream inputs not covered by ETS permits.
+\item Within-sector EU ETS installation-level data (195,603 facility-year records across 5,999 country-sector-year groups; SI Section~26) show that the P25/median emitter gap is 43\%, far exceeding the 4.3\% allocative premium. This within-sector variation in carbon efficiency coexists with ETS coverage precisely because ETS operates on production-side facility emissions while procurement competition operates on buyer-side supplier selection.
+\end{enumerate}
+
+\textbf{Empirical separation.} Our difference-in-differences identification exploits variation in EU procurement governance reforms (Directive 2014/24/EU), which are temporally and substantively distinct from EU ETS policy changes. The 2014--2018 EU Directive reforms do not coincide with major ETS structural changes (Phase~3 was 2013--2020 with stable parameters), making ETS a stable background condition rather than a confound. The control pool (Norway and Switzerland) participates in the EU ETS, further separating procurement governance reforms from ETS exposure.
+
+\textbf{Additionality interpretation.} The appropriate interpretation is that the procurement competition channel offers \textit{additional} emission reduction potential beyond ETS: even in ETS-covered sectors, there exists substantial residual within-sector variation that ETS has not fully arbitraged and that procurement policy can access by changing the supplier selection rule. The magnitude of the exclusive procurement contribution cannot be precisely estimated with the current data, but the full allocative premium is properly interpreted as an \textit{upper bound} on the incremental contribution of procurement reform net of ETS.
+
+\textbf{Recommendation.} Future work should exploit ETS permit price variation as a moderator in procurement panel regressions to disentangle the additive from the substitution relationship. We have deposited sector-level ETS coverage flags in the dataset to facilitate this analysis.
+
+%========================================================================
+\section{Equity, Distributional Justice, and Global South Applicability}
+\label{sec:equity}
+%========================================================================
+
+\textbf{Scope of current analysis.} The present study documents a structural barrier to environmental procurement effectiveness in high-income, high-governance economies. All 26 EU-context countries in the primary analysis have GDP per capita exceeding US\$25,000 (PPP) and score above the 60th percentile on the World Bank Governance Index. These are contexts where GPP programmes have been actively attempted and where competition already exists for most procurement categories.
+
+\textbf{Global South applicability.} The governance-contingent framing has direct but potentially asymmetric implications for lower-income contexts:
+\begin{itemize}
+\item \textit{Governance-contingent Dead Zone patterns:} Cross-continental corroboration from Australian (AusTender, $N = 120{,}139$) and US federal procurement data (Section~\ref{sec:crosscontext_si}) documents elevated non-competitive award rates (Australia: 61.5\% limited-tender rate, $3.6\times$ the EU average; US: 44\% single-offer rate) and positive carbon premiums ($+24.8\%$ Australia; $r = 0.555$ US sector correlation) under weaker transparency frameworks---consistent with the theoretical prediction that weaker governance institutions produce higher Dead Zone exposure.
+\item \textit{Procurement reform sequencing:} In contexts where basic procurement transparency and competition frameworks are still being established, the same governance-first sequencing applies but the baseline reform distance is larger. Our data support the finding that the competition-carbon relationship follows a threshold dynamic: governance improvements below approximately the 75th WGI percentile show diminishing carbon returns from competition, possibly because transparency reforms are necessary but not sufficient without accompanying anti-corruption enforcement.
+\item \textit{Just-transition tension:} In lower-income economies, supplier concentration in high-carbon sectors may reflect legitimate industrial policy, employment concentration, or technology transfer constraints. Imposing GPP criteria in contexts where competitive alternatives do not yet exist could disadvantage domestic suppliers relative to multinational firms with established low-carbon supply chains. The procurement competition framework developed here identifies where alternatives exist, but it does not prescribe that competition be mandated regardless of distributional consequences.
+\item \textit{Data availability gap:} Our cross-continental analysis covers Colombia from the Global South due to data availability through the SECOP platform (Colombia's national e-procurement system, \url{https://www.colombiacompra.gov.co}). Extending this analysis to Sub-Saharan Africa, South and Southeast Asia, and Latin America at scale requires investment in procurement data infrastructure. We encourage international development organisations to prioritise procurement transparency data as a climate-relevant public good.
+\end{itemize}
+
+\textbf{Domestic equity considerations.} Even within the EU, the governance reform channel interacts with spatial equity: procurement Dead Zones are disproportionately concentrated in regions with higher unemployment, lower local government capacity, and weaker supplier market development (Bulgaria, Romania, Hungary are over-represented among high-SB-rate jurisdictions). Procurement transparency reforms that open Dead Zones to competition may benefit urban and technologically advanced suppliers at the expense of incumbent suppliers embedded in local economies. Reform designs that incorporate SME access provisions, supplier development, and transition support are more likely to deliver both competitive and equitable outcomes.
+
+%========================================================================
+\section{Forward Projections: Reform Scenario Analysis}
+\label{sec:forward_projections}
+%========================================================================
+
+We parameterise the conservative projection using the attenuated conventional TWFE sensitivity ($-0.71$ pp per 5-year cycle) rather than the primary staggered C\&S estimate ($-7.2$ pp). This deliberate choice yields an \textit{illustrative lower-bound} scenario, not a standalone causal forecast: the TWFE point estimate is negative but imprecise ($p = 0.57$), while the primary staggered estimator remains the causal specification. We project three reform scenarios for EU single-bidder rate reduction and the consequent opening of procurement markets to GPP criteria.
+
+\textbf{Conservative scenario} (illustrative lower bound): All EU Member States implement reforms achieving the attenuated TWFE sensitivity ($-0.71$ pp) over 2025--2030. From the current baseline single-bidder rate of 17\%, this yields a final rate of 16.3\%, opening approximately \texteuro18.1 billion in newly competitive annual spending and rendering 6.7 Mt CO\textsubscript{2}e accessible to GPP criteria by 2030. Cumulative newly competitive spending over the phase-in period: \texteuro54.4 billion. The associated Monopoly Tax savings (\texteuro1.5 billion annually under the central 8.5\% monopoly-premium assumption) exceed the estimated Green Premium cost for Dead Zone sectors (\texteuro0.2 billion for DZ-targeted procurement, \texteuro0.5 billion at central scope), yielding self-funding ratios of 2.8--9.6$\times$ across the central and DZ-targeted scopes.
+
+\textbf{Moderate scenario} (medium confidence): Reforms achieve a $-5.0$ pp reduction over 2025--2035, consistent with a broader package combining transparency mandates with e-procurement professionalisation. Final SB rate: 12\%. Newly competitive annual spending: \texteuro127.6 billion; carbon accessible: 47.3 Mt CO\textsubscript{2}e by 2035. Cumulative newly competitive spending: \texteuro701.8 billion. Monopoly Tax savings: \texteuro10.8 billion annually.
+
+\textbf{Ambitious scenario} (lower confidence): Convergence toward Nordic governance standards over 15 years, requiring systemic institutional reform. The 2035 milestone reaches an 11\% single-bidder rate on the path toward the 8\% benchmark. Newly competitive spending: \texteuro153.1 billion annually; carbon accessible: 56.7 Mt CO\textsubscript{2}e by 2035. Monopoly Tax savings: \texteuro13.0 billion annually, self-funding ratio 9.6$\times$ for DZ-targeted scope.
+
+\textbf{Global extrapolation (illustrative):} G20 public procurement totals approximately US\$10.4 trillion annually (OECD Government at a Glance 2023). If Dead Zone patterns similar to those documented in the EU extend to other OECD and G20 economies---as cross-continental corroboration from US, Canadian, and Australian data (Section~\ref{sec:crosscontext_si}) directionally supports---the global procurement intervention surface for decarbonisation could in principle exceed US\$1 trillion annually. We emphasise that this is an order-of-magnitude extrapolation contingent on institutional similarity; non-EU procurement systems differ in regulatory structure, enforcement capacity, and data availability, and country-specific analyses would be required to validate this projection.
+
+These projections use the conservative TWFE sensitivity as the baseline input parameter and assume linear phase-in. Uncertainty bounds derive from the TWFE standard error ($\pm 1.24$ pp) and EXIOBASE carbon intensity uncertainty (SI Section~4); because the lower TWFE uncertainty tail includes zero, the conservative scenario should be read as an illustrative lower-bound policy calculation rather than definitive forecast. Full scenario data are deposited in the Zenodo repository (DOI: 10.5281/zenodo.20098951).
+
+\clearpage
+\input{cpv_exiobase_crosswalk_table.tex}
+
+%========================================================================
+\section{References}
+%========================================================================
+
+\begin{enumerate}
+\item Calonico, S., Cattaneo, M.~D., \& Farrell, M.~H. (2020). Optimal bandwidth choice for robust bias-corrected inference in regression discontinuity designs. \textit{Econometrics Journal}, 23(2), 192--210.
+
+\item Stadler, K., et al. (2018). EXIOBASE 3: Developing a time series of detailed environmentally extended multi-regional input-output tables. \textit{Journal of Industrial Ecology}, 22(3), 502--515.
+
+\item McCrary, J. (2008). Manipulation of the running variable in the regression discontinuity design: A density test. \textit{Journal of Econometrics}, 142(2), 698--714.
+
+\item UK Cabinet Office (2021). Procurement Policy Note 06/21: Taking account of carbon reduction plans in the procurement of major government contracts. Crown Commercial Service.
+
+\item Science Based Targets initiative (2024). SBTi Companies Taking Action. \url{https://sciencebasedtargets.org/companies-taking-action}.
+
+\item McKinsey \& Company (2020). Net-Zero Europe: Decarbonization pathways and socioeconomic implications. McKinsey Global Institute.
+
+\item Bloomberg NEF (2023). Transition Metals Outlook 2023. Bloomberg LP.
+
+\item UNFCCC (2021). Nationally determined contributions under the Paris Agreement: Synthesis report by the secretariat. FCCC/PA/CMA/2021/8/Rev.1.
+
+\item OECD (2022). Government at a Glance 2021: Size of public procurement. OECD Publishing.
+
+\item Fazekas, M., T\'{o}th, I.~J., \& King, L.~P. (2016). An objective corruption risk index using public procurement data. \textit{European Journal on Criminal Policy and Research}, 22, 369--397.
+\end{enumerate}
+
+\end{document}

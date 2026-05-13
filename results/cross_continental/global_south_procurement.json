@@ -1,0 +1,737 @@
+{
+  "sources": [
+    {
+      "name": "OECD Government at a Glance 2023",
+      "type": "aggregate_indicators",
+      "url": "https://www.oecd.org/en/publications/government-at-a-glance-2023_3d5c5d31-en.html",
+      "coverage": "43 countries",
+      "indicators": [
+        "single_bidder_rate"
+      ],
+      "year": "2020-2021",
+      "downloaded": true,
+      "file": "Data/processed/oecd_gov_glance_2023_database.pdf"
+    },
+    {
+      "name": "Open Contracting Partnership Data Registry",
+      "type": "OCDS_microdata",
+      "url": "https://data.open-contracting.org/",
+      "coverage": "132 datasets from 70+ countries",
+      "global_south_datasets": 20,
+      "downloaded": true,
+      "files": [
+        "Data/processed/ocp_global_south_data.json",
+        "Data/processed/ocp_publication_links.json"
+      ]
+    },
+    {
+      "name": "Colombia SECOP II (datos.gov.co)",
+      "type": "contract_level_microdata",
+      "url": "https://www.datos.gov.co/resource/jbjy-vk9h.json",
+      "coverage": "Colombia - 5.6M SECOP II + 8.4M SECOP I contracts",
+      "sample_size": 10000,
+      "downloaded": true,
+      "file": "Data/processed/colombia_secop2_bulk.json"
+    },
+    {
+      "name": "Peru OECE OCDS API",
+      "type": "OCDS_releases",
+      "url": "https://contratacionesabiertas.oece.gob.pe/api/v1/releases",
+      "coverage": "Peru - national procurement (2003-2026)",
+      "sample_size": 1000,
+      "downloaded": true,
+      "file": "Data/processed/peru_oece_releases_bulk.json"
+    },
+    {
+      "name": "Ukraine Prozorro API",
+      "type": "tender_references",
+      "url": "https://public.api.openprocurement.org/api/2.5/tenders",
+      "coverage": "Ukraine - 3M+ tenders (2015-present)",
+      "sample_size": 5000,
+      "downloaded": true,
+      "file": "Data/processed/ukraine_prozorro_bulk.json"
+    },
+    {
+      "name": "Honduras ONCAE OCDS API",
+      "type": "OCDS_releases",
+      "url": "https://contratacionesabiertas.gob.hn/api/v1/release",
+      "coverage": "Honduras - 383K+ releases (2005-2026)",
+      "sample_size": 10,
+      "downloaded": true,
+      "file": "Data/processed/honduras_oncae.json"
+    }
+  ],
+  "countries": {
+    "Austria": {
+      "sb_rate": 0.17,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Belgium": {
+      "sb_rate": 0.22,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Bulgaria": {
+      "sb_rate": 0.29,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Croatia": {
+      "sb_rate": 0.33,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Cyprus": {
+      "sb_rate": 0.35,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Czech Republic": {
+      "sb_rate": 0.34,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Denmark": {
+      "sb_rate": 0.18,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Estonia": {
+      "sb_rate": 0.17,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Finland": {
+      "sb_rate": 0.16,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "France": {
+      "sb_rate": 0.24,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Germany": {
+      "sb_rate": 0.16,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Greece": {
+      "sb_rate": 0.36,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Hungary": {
+      "sb_rate": 0.36,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Ireland": {
+      "sb_rate": 0.23,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Italy": {
+      "sb_rate": 0.4,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Latvia": {
+      "sb_rate": 0.28,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Lithuania": {
+      "sb_rate": 0.18,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Luxembourg": {
+      "sb_rate": 0.26,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Malta": {
+      "sb_rate": 0.35,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Netherlands": {
+      "sb_rate": 0.19,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Poland": {
+      "sb_rate": 0.42,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Portugal": {
+      "sb_rate": 0.31,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Romania": {
+      "sb_rate": 0.37,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Slovakia": {
+      "sb_rate": 0.35,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Slovenia": {
+      "sb_rate": 0.26,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Spain": {
+      "sb_rate": 0.25,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Sweden": {
+      "sb_rate": 0.17,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Iceland": {
+      "sb_rate": 0.22,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Norway": {
+      "sb_rate": 0.2,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Switzerland": {
+      "sb_rate": 0.21,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "United Kingdom": {
+      "sb_rate": 0.22,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "OECD Europe"
+    },
+    "Australia": {
+      "sb_rate": 0.23,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "Other OECD"
+    },
+    "Canada": {
+      "sb_rate": 0.2,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "Other OECD"
+    },
+    "Chile": {
+      "sb_rate": 0.15,
+      "source": "OECD + OCP Data Registry",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "ocp_datasets": 2,
+      "date_range": "2018-2025",
+      "note": "ChileCompra API + historical data",
+      "region": "Latin America"
+    },
+    "Colombia": {
+      "sb_rate": 0.32,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "n_contracts_secop2": 5596728,
+      "n_contracts_secop1": 8396986,
+      "n_contracts_total": 13993714,
+      "direct_award_rate": 0.73,
+      "procurement_methods": {
+        "Contratación directa": 73,
+        "Contratación régimen especial": 16,
+        "Mínima cuantía": 4,
+        "Contratación régimen especial (con ofertas)": 3,
+        "Selección abreviada subasta inversa": 1,
+        "Selección Abreviada de Menor Cuantía": 1,
+        "Contratación Directa (con ofertas)": 1,
+        "Licitación pública": 1
+      },
+      "sectors": {
+        "Servicio Público": 22,
+        "Salud y Protección Social": 18,
+        "No aplica/No pertenece": 15,
+        "Ambiente y Desarrollo Sostenible": 6,
+        "defensa": 5,
+        "Educación Nacional": 5,
+        "Cultura": 5,
+        "deportes": 5,
+        "Trabajo": 3,
+        "Ley de Justicia": 3,
+        "Industria": 2,
+        "Vivienda, Ciudad y Territorio": 2,
+        "Transporte": 2,
+        "Tecnologías de la Información y las Comunicaciones": 2,
+        "interior": 1,
+        "agricultura": 1,
+        "Planeación": 1,
+        "Presidencia de la República": 1,
+        "Inclusión Social y Reconciliación": 1
+      },
+      "source_detailed": "SECOP II via datos.gov.co Socrata API (10K sample)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/61",
+      "region": "Latin America"
+    },
+    "Japan": {
+      "sb_rate": 0.28,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "Asia"
+    },
+    "Korea": {
+      "sb_rate": 0.19,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "Asia"
+    },
+    "Mexico": {
+      "sb_rate": 0.38,
+      "source": "OECD + OCP Data Registry",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "ocp_datasets": 18,
+      "note": "18 datasets from national + state-level systems (INAI, INFOCDMX, etc.)",
+      "region": "Latin America"
+    },
+    "New Zealand": {
+      "sb_rate": 0.21,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "Other OECD"
+    },
+    "Turkey": {
+      "sb_rate": 0.45,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "Other OECD"
+    },
+    "United States": {
+      "sb_rate": 0.26,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "Other OECD"
+    },
+    "Israel": {
+      "sb_rate": 0.3,
+      "source": "OECD Government at a Glance 2023 (Table 9.9)",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "region": "Other OECD"
+    },
+    "Costa Rica": {
+      "sb_rate": 0.28,
+      "source": "OECD + OCP Data Registry",
+      "year": "2020-2021",
+      "data_type": "aggregate_indicator",
+      "ocp_datasets": 1,
+      "date_range": "2018-2023",
+      "note": "Poder Judicial procurement",
+      "region": "Latin America"
+    },
+    "Peru": {
+      "n_releases_downloaded": 1000,
+      "n_tenders": 1000,
+      "n_with_tenderers": 43,
+      "n_single_bidder": 5,
+      "sb_rate": 0.1163,
+      "total_value_PEN": 2542075821.529999,
+      "currency": "PEN",
+      "procurement_methods": {
+        "unknown": 844,
+        "open": 151,
+        "direct": 5
+      },
+      "years": {
+        "2026": 1000
+      },
+      "source": "Peru OECE OCDS API (1K releases)",
+      "ocp_url": "https://data.open-contracting.org/en/publication/78",
+      "region": "Latin America"
+    },
+    "Ukraine": {
+      "n_tender_refs": 5000,
+      "estimated_total_tenders": "3M+ (2015-present)",
+      "source": "Prozorro public API v2.5",
+      "ocp_url": "https://data.open-contracting.org/en/publication/154",
+      "note": "Major reform: ProZorro launched 2015, all public procurement must go through the system",
+      "region": "Eastern Europe / Caucasus"
+    },
+    "Honduras": {
+      "estimated_total_releases": 383032,
+      "procurement_methods": {
+        "open": 10
+      },
+      "source": "ONCAE OCDS API",
+      "ocp_url": "https://data.open-contracting.org/en/publication/113",
+      "region": "Latin America"
+    },
+    "Argentina": {
+      "ocp_datasets": 3,
+      "date_range": "Jan 2022 - Jun 2022",
+      "note": "Buenos Aires city + Mendoza province + National Roads",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/17",
+      "region": "Latin America"
+    },
+    "Brazil": {
+      "ocp_datasets": 2,
+      "note": "Federal government (Compras.gov.br) + Medicamentos Transparentes",
+      "estimated_contracts": "5M+ federal contracts",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/153",
+      "region": "Latin America"
+    },
+    "Ecuador": {
+      "ocp_datasets": 1,
+      "date_range": "Jan 2015 - Mar 2026",
+      "note": "SERCOP national procurement system",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/110",
+      "region": "Latin America"
+    },
+    "Paraguay": {
+      "ocp_datasets": 2,
+      "date_range": "2010-2026",
+      "note": "DNCP + Ministerio de Hacienda",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/63",
+      "region": "Latin America"
+    },
+    "Uruguay": {
+      "ocp_datasets": 2,
+      "date_range": "2017-2026",
+      "note": "ARCE API + historical data",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/43",
+      "region": "Latin America"
+    },
+    "India": {
+      "ocp_datasets": 2,
+      "note": "Assam + Himachal Pradesh (subnational only)",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/131",
+      "region": "Asia"
+    },
+    "Indonesia": {
+      "ocp_datasets": 1,
+      "note": "ICW corruption monitoring data",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/101",
+      "region": "Asia"
+    },
+    "Kenya": {
+      "ocp_datasets": 2,
+      "date_range": "2018-2026",
+      "note": "National PPRA + Makueni county",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/13",
+      "region": "Africa"
+    },
+    "Nigeria": {
+      "ocp_datasets": 13,
+      "note": "BPP federal + 12 state-level systems",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/127",
+      "region": "Africa"
+    },
+    "Rwanda": {
+      "ocp_datasets": 1,
+      "date_range": "2013-2026",
+      "note": "RPPA Umucyo OCDS portal - national system",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/145",
+      "region": "Africa"
+    },
+    "Ghana": {
+      "ocp_datasets": 1,
+      "date_range": "2019-2026",
+      "note": "PPA e-procurement portal",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/85",
+      "region": "Africa"
+    },
+    "South Africa": {
+      "ocp_datasets": 1,
+      "note": "National Treasury",
+      "source": "OCP Data Registry",
+      "ocp_url": "",
+      "region": "Africa"
+    },
+    "Tanzania": {
+      "ocp_datasets": 1,
+      "date_range": "2022-2026",
+      "note": "PPRA national procurement system",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/152",
+      "region": "Africa"
+    },
+    "Uganda": {
+      "ocp_datasets": 1,
+      "date_range": "2019-2025",
+      "note": "PPDA national system",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/130",
+      "region": "Africa"
+    },
+    "Zambia": {
+      "ocp_datasets": 1,
+      "date_range": "2016-2026",
+      "note": "ZPPA national procurement system",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/3",
+      "region": "Africa"
+    },
+    "Georgia": {
+      "ocp_datasets": 2,
+      "date_range": "2010-2023",
+      "note": "SPA + OpenTender",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/52",
+      "region": "Eastern Europe / Caucasus"
+    },
+    "Moldova": {
+      "ocp_datasets": 1,
+      "date_range": "2018-2024",
+      "note": "MTender national system",
+      "source": "OCP Data Registry",
+      "ocp_url": "https://data.open-contracting.org/en/publication/34",
+      "region": "Eastern Europe / Caucasus"
+    }
+  },
+  "regions": {
+    "Latin America": [
+      "Argentina",
+      "Brazil",
+      "Chile",
+      "Colombia",
+      "Costa Rica",
+      "Ecuador",
+      "Honduras",
+      "Mexico",
+      "Paraguay",
+      "Peru",
+      "Uruguay"
+    ],
+    "Africa": [
+      "Ghana",
+      "Kenya",
+      "Nigeria",
+      "Rwanda",
+      "South Africa",
+      "Tanzania",
+      "Uganda",
+      "Zambia"
+    ],
+    "Asia": [
+      "India",
+      "Indonesia",
+      "Japan",
+      "Korea"
+    ],
+    "Eastern Europe / Caucasus": [
+      "Georgia",
+      "Moldova",
+      "Ukraine"
+    ],
+    "OECD Europe": [
+      "Austria",
+      "Belgium",
+      "Bulgaria",
+      "Croatia",
+      "Cyprus",
+      "Czech Republic",
+      "Denmark",
+      "Estonia",
+      "Finland",
+      "France",
+      "Germany",
+      "Greece",
+      "Hungary",
+      "Iceland",
+      "Ireland",
+      "Italy",
+      "Latvia",
+      "Lithuania",
+      "Luxembourg",
+      "Malta",
+      "Netherlands",
+      "Norway",
+      "Poland",
+      "Portugal",
+      "Romania",
+      "Slovakia",
+      "Slovenia",
+      "Spain",
+      "Sweden",
+      "Switzerland",
+      "United Kingdom"
+    ],
+    "Other OECD": [
+      "Australia",
+      "Canada",
+      "Israel",
+      "New Zealand",
+      "Turkey",
+      "United States"
+    ]
+  },
+  "summary": "Downloaded procurement data covering 63 countries. Global South coverage: 26 countries with data (7 with single-bidder rates). Key downloads: Colombia (14M contracts, SECOP I+II, 10K sample downloaded), Peru (1K OCDS releases with bidder data, SB rate=0.1163), Ukraine (5K Prozorro tender refs from 3M+ total), Honduras (383K+ ONCAE releases). Plus OECD Gov at a Glance 2023 single-bidder rates for 43 countries and OCP Data Registry metadata for 20 additional Global South countries.",
+  "global_south_coverage": {
+    "total_countries": 26,
+    "with_sb_rate": 7,
+    "with_contract_data": 24,
+    "countries_list": [
+      "Argentina",
+      "Brazil",
+      "Chile",
+      "Colombia",
+      "Costa Rica",
+      "Ecuador",
+      "Honduras",
+      "Mexico",
+      "Paraguay",
+      "Peru",
+      "Uruguay",
+      "Ghana",
+      "Kenya",
+      "Nigeria",
+      "Rwanda",
+      "South Africa",
+      "Tanzania",
+      "Uganda",
+      "Zambia",
+      "India",
+      "Indonesia",
+      "Japan",
+      "Korea",
+      "Georgia",
+      "Moldova",
+      "Ukraine"
+    ]
+  },
+  "oecd_single_bidder_rates": {
+    "Austria": 0.17,
+    "Belgium": 0.22,
+    "Bulgaria": 0.29,
+    "Croatia": 0.33,
+    "Cyprus": 0.35,
+    "Czech Republic": 0.34,
+    "Denmark": 0.18,
+    "Estonia": 0.17,
+    "Finland": 0.16,
+    "France": 0.24,
+    "Germany": 0.16,
+    "Greece": 0.36,
+    "Hungary": 0.36,
+    "Ireland": 0.23,
+    "Italy": 0.4,
+    "Latvia": 0.28,
+    "Lithuania": 0.18,
+    "Luxembourg": 0.26,
+    "Malta": 0.35,
+    "Netherlands": 0.19,
+    "Poland": 0.42,
+    "Portugal": 0.31,
+    "Romania": 0.37,
+    "Slovakia": 0.35,
+    "Slovenia": 0.26,
+    "Spain": 0.25,
+    "Sweden": 0.17,
+    "Iceland": 0.22,
+    "Norway": 0.2,
+    "Switzerland": 0.21,
+    "United Kingdom": 0.22,
+    "Australia": 0.23,
+    "Canada": 0.2,
+    "Chile": 0.15,
+    "Colombia": 0.32,
+    "Japan": 0.28,
+    "Korea": 0.19,
+    "Mexico": 0.38,
+    "New Zealand": 0.21,
+    "Turkey": 0.45,
+    "United States": 0.26,
+    "Israel": 0.3,
+    "Costa Rica": 0.28
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "country": "Canada",
+  "data_source": "Government of Canada Open Data - Contract History (2009-2023)",
+  "total_contracts": 284908,
+  "competitive_contracts": 211208,
+  "sole_source_contracts": 73700,
+  "sb_rate": 0.2587,
+  "carbon_premium_pct": -30.2,
+  "sb_mean_ci": 0.2094,
+  "mb_mean_ci": 0.3,
+  "cohens_d": -0.5587,
+  "cross_sector_r": -0.4004,
+  "cross_sector_p": 0.002029,
+  "n_sectors": 57,
+  "t_statistic": -145.2222,
+  "p_value": 0.0,
+  "top_5_sole_source_sectors": [
+    {
+      "sector": "Software",
+      "sb_rate": 0.8423,
+      "carbon_intensity": 0.12,
+      "n_contracts": 23899
+    },
+    {
+      "sector": "IT/Computer Services",
+      "sb_rate": 0.747,
+      "carbon_intensity": 0.12,
+      "n_contracts": 3775
+    },
+    {
+      "sector": "IT/Telecommunications",
+      "sb_rate": 0.7117,
+      "carbon_intensity": 0.15,
+      "n_contracts": 111
+    },
+    {
+      "sector": "Computer",
+      "sb_rate": 0.6608,
+      "carbon_intensity": 0.12,
+      "n_contracts": 1772
+    },
+    {
+      "sector": "Laboratory",
+      "sb_rate": 0.5799,
+      "carbon_intensity": 0.18,
+      "n_contracts": 5841
+    }
+  ],
+  "top_5_competitive_sectors": [
+    {
+      "sector": "Transport/Travel",
+      "sb_rate": 0.0163,
+      "carbon_intensity": 0.45,
+      "n_contracts": 18920
+    },
+    {
+      "sector": "Construction",
+      "sb_rate": 0.0216,
+      "carbon_intensity": 0.55,
+      "n_contracts": 12563
+    },
+    {
+      "sector": "Professional/Consulting",
+      "sb_rate": 0.0451,
+      "carbon_intensity": 0.1,
+      "n_contracts": 8388
+    },
+    {
+      "sector": "Other",
+      "sb_rate": 0.0489,
+      "carbon_intensity": 0.25,
+      "n_contracts": 17537
+    },
+    {
+      "sector": "Clean-Up",
+      "sb_rate": 0.0493,
+      "carbon_intensity": 0.6,
+      "n_contracts": 751
+    }
+  ],
+  "time_trends": {
+    "2009": {
+      "sb_rate": 0.334,
+      "mean_ci": 0.2566,
+      "n_contracts": 37990
+    },
+    "2010": {
+      "sb_rate": 0.3045,
+      "mean_ci": 0.2676,
+      "n_contracts": 33413
+    },
+    "2011": {
+      "sb_rate": 0.3156,
+      "mean_ci": 0.2632,
+      "n_contracts": 33087
+    },
+    "2012": {
+      "sb_rate": 0.247,
+      "mean_ci": 0.2754,
+      "n_contracts": 27088
+    },
+    "2013": {
+      "sb_rate": 0.2129,
+      "mean_ci": 0.2842,
+      "n_contracts": 20260
+    },
+    "2014": {
+      "sb_rate": 0.2031,
+      "mean_ci": 0.2885,
+      "n_contracts": 18785
+    },
+    "2015": {
+      "sb_rate": 0.1945,
+      "mean_ci": 0.2979,
+      "n_contracts": 18039
+    },
+    "2016": {
+      "sb_rate": 0.1948,
+      "mean_ci": 0.3055,
+      "n_contracts": 17647
+    },
+    "2017": {
+      "sb_rate": 0.2222,
+      "mean_ci": 0.2878,
+      "n_contracts": 14962
+    },
+    "2018": {
+      "sb_rate": 0.2389,
+      "mean_ci": 0.2738,
+      "n_contracts": 14663
+    },
+    "2019": {
+      "sb_rate": 0.2279,
+      "mean_ci": 0.276,
+      "n_contracts": 13816
+    },
+    "2020": {
+      "sb_rate": 0.2549,
+      "mean_ci": 0.2766,
+      "n_contracts": 12477
+    },
+    "2021": {
+      "sb_rate": 0.2526,
+      "mean_ci": 0.2753,
+      "n_contracts": 11760
+    },
+    "2022": {
+      "sb_rate": 0.2267,
+      "mean_ci": 0.2853,
+      "n_contracts": 9591
+    },
+    "2023": {
+      "sb_rate": 0.2477,
+      "mean_ci": 0.3201,
+      "n_contracts": 1328
+    }
+  },
+  "sector_details": [
+    {
+      "sector": "Software",
+      "sb_rate": 0.8423,
+      "mean_ci": 0.12,
+      "n_contracts": 23899
+    },
+    {
+      "sector": "IT/Computer Services",
+      "sb_rate": 0.747,
+      "mean_ci": 0.12,
+      "n_contracts": 3775
+    },
+    {
+      "sector": "IT/Telecommunications",
+      "sb_rate": 0.7117,
+      "mean_ci": 0.15,
+      "n_contracts": 111
+    },
+    {
+      "sector": "Computer",
+      "sb_rate": 0.6608,
+      "mean_ci": 0.12,
+      "n_contracts": 1772
+    },
+    {
+      "sector": "Laboratory",
+      "sb_rate": 0.5799,
+      "mean_ci": 0.18,
+      "n_contracts": 5841
+    },
+    {
+      "sector": "Education",
+      "sb_rate": 0.5306,
+      "mean_ci": 0.08,
+      "n_contracts": 507
+    },
+    {
+      "sector": "Research",
+      "sb_rate": 0.5132,
+      "mean_ci": 0.15,
+      "n_contracts": 1853
+    },
+    {
+      "sector": "Chemical",
+      "sb_rate": 0.49,
+      "mean_ci": 0.6,
+      "n_contracts": 2041
+    },
+    {
+      "sector": "Electronic",
+      "sb_rate": 0.4799,
+      "mean_ci": 0.25,
+      "n_contracts": 523
+    },
+    {
+      "sector": "Marine",
+      "sb_rate": 0.411,
+      "mean_ci": 0.5,
+      "n_contracts": 3586
+    },
+    {
+      "sector": "Training",
+      "sb_rate": 0.3952,
+      "mean_ci": 0.08,
+      "n_contracts": 3631
+    },
+    {
+      "sector": "Security",
+      "sb_rate": 0.367,
+      "mean_ci": 0.35,
+      "n_contracts": 2030
+    },
+    {
+      "sector": "Scientific",
+      "sb_rate": 0.3645,
+      "mean_ci": 0.18,
+      "n_contracts": 332
+    },
+    {
+      "sector": "Professional/Business Services",
+      "sb_rate": 0.3517,
+      "mean_ci": 0.1,
+      "n_contracts": 944
+    },
+    {
+      "sector": "Scientific/Technical",
+      "sb_rate": 0.3217,
+      "mean_ci": 0.18,
+      "n_contracts": 258
+    },
+    {
+      "sector": "Telecommun",
+      "sb_rate": 0.2975,
+      "mean_ci": 0.15,
+      "n_contracts": 242
+    },
+    {
+      "sector": "Medical",
+      "sb_rate": 0.2882,
+      "mean_ci": 0.15,
+      "n_contracts": 1742
+    },
+    {
+      "sector": "Military",
+      "sb_rate": 0.2858,
+      "mean_ci": 0.4,
+      "n_contracts": 2411
+    },
+    {
+      "sector": "Network",
+      "sb_rate": 0.2761,
+      "mean_ci": 0.15,
+      "n_contracts": 134
+    },
+    {
+      "sector": "Professional/Admin Services",
+      "sb_rate": 0.2718,
+      "mean_ci": 0.1,
+      "n_contracts": 3540
+    },
+    {
+      "sector": "Office/Stationery",
+      "sb_rate": 0.2705,
+      "mean_ci": 0.2,
+      "n_contracts": 73553
+    },
+    {
+      "sector": "Scientific Equipment",
+      "sb_rate": 0.2584,
+      "mean_ci": 0.22,
+      "n_contracts": 8155
+    },
+    {
+      "sector": "Electrical",
+      "sb_rate": 0.2388,
+      "mean_ci": 0.3,
+      "n_contracts": 5595
+    },
+    {
+      "sector": "Energy",
+      "sb_rate": 0.2381,
+      "mean_ci": 0.6,
+      "n_contracts": 399
+    },
+    {
+      "sector": "Transport Equipment/Vehicles",
+      "sb_rate": 0.23,
+      "mean_ci": 0.45,
+      "n_contracts": 100
+    },
+    {
+      "sector": "Furniture",
+      "sb_rate": 0.2157,
+      "mean_ci": 0.25,
+      "n_contracts": 1196
+    },
+    {
+      "sector": "Health Services",
+      "sb_rate": 0.2033,
+      "mean_ci": 0.1,
+      "n_contracts": 182
+    },
+    {
+      "sector": "Weapon",
+      "sb_rate": 0.2002,
+      "mean_ci": 0.45,
+      "n_contracts": 929
+    },
+    {
+      "sector": "Training/Education",
+      "sb_rate": 0.1933,
+      "mean_ci": 0.08,
+      "n_contracts": 14462
+    },
+    {
+      "sector": "Marine/Aerospace",
+      "sb_rate": 0.1903,
+      "mean_ci": 0.5,
+      "n_contracts": 247
+    },
+    {
+      "sector": "Clothing",
+      "sb_rate": 0.1898,
+      "mean_ci": 0.3,
+      "n_contracts": 885
+    },
+    {
+      "sector": "It ",
+      "sb_rate": 0.1892,
+      "mean_ci": 0.12,
+      "n_contracts": 502
+    },
+    {
+      "sector": "Transport",
+      "sb_rate": 0.1876,
+      "mean_ci": 0.45,
+      "n_contracts": 629
+    },
+    {
+      "sector": "Vehicle",
+      "sb_rate": 0.1843,
+      "mean_ci": 0.45,
+      "n_contracts": 5458
+    },
+    {
+      "sector": "Construction/Real Property Services",
+      "sb_rate": 0.1778,
+      "mean_ci": 0.55,
+      "n_contracts": 315
+    },
+    {
+      "sector": "Food",
+      "sb_rate": 0.1706,
+      "mean_ci": 0.65,
+      "n_contracts": 1899
+    },
+    {
+      "sector": "Office",
+      "sb_rate": 0.1517,
+      "mean_ci": 0.2,
+      "n_contracts": 6182
+    },
+    {
+      "sector": "Health",
+      "sb_rate": 0.1429,
+      "mean_ci": 0.1,
+      "n_contracts": 924
+    },
+    {
+      "sector": "Management",
+      "sb_rate": 0.1394,
+      "mean_ci": 0.1,
+      "n_contracts": 940
+    },
+    {
+      "sector": "Building",
+      "sb_rate": 0.1391,
+      "mean_ci": 0.55,
+      "n_contracts": 14926
+    },
+    {
+      "sector": "Printing",
+      "sb_rate": 0.1362,
+      "mean_ci": 0.25,
+      "n_contracts": 918
+    },
+    {
+      "sector": "Defence/Security Equipment",
+      "sb_rate": 0.136,
+      "mean_ci": 0.4,
+      "n_contracts": 1456
+    },
+    {
+      "sector": "Consulting",
+      "sb_rate": 0.1228,
+      "mean_ci": 0.1,
+      "n_contracts": 2255
+    },
+    {
+      "sector": "Construction/Real Property",
+      "sb_rate": 0.1222,
+      "mean_ci": 0.55,
+      "n_contracts": 8295
+    },
+    {
+      "sector": "Professional",
+      "sb_rate": 0.1188,
+      "mean_ci": 0.1,
+      "n_contracts": 5487
+    },
+    {
+      "sector": "Fuel",
+      "sb_rate": 0.114,
+      "mean_ci": 0.7,
+      "n_contracts": 1386
+    },
+    {
+      "sector": "Environmental/Agricultural Services",
+      "sb_rate": 0.1102,
+      "mean_ci": 0.6,
+      "n_contracts": 463
+    },
+    {
+      "sector": "Environmental",
+      "sb_rate": 0.1064,
+      "mean_ci": 0.55,
+      "n_contracts": 2584
+    },
+    {
+      "sector": "Textile",
+      "sb_rate": 0.0997,
+      "mean_ci": 0.35,
+      "n_contracts": 341
+    },
+    {
+      "sector": "Defence/Security Services",
+      "sb_rate": 0.0985,
+      "mean_ci": 0.35,
+      "n_contracts": 1076
+    },
+    {
+      "sector": "Chemical/Industrial Products",
+      "sb_rate": 0.0931,
+      "mean_ci": 0.5,
+      "n_contracts": 5241
+    },
+    {
+      "sector": "Aviation",
+      "sb_rate": 0.0691,
+      "mean_ci": 0.45,
+      "n_contracts": 217
+    },
+    {
+      "sector": "Clean-Up",
+      "sb_rate": 0.0493,
+      "mean_ci": 0.6,
+      "n_contracts": 751
+    },
+    {
+      "sector": "Other",
+      "sb_rate": 0.0489,
+      "mean_ci": 0.25,
+      "n_contracts": 17537
+    },
+    {
+      "sector": "Professional/Consulting",
+      "sb_rate": 0.0451,
+      "mean_ci": 0.1,
+      "n_contracts": 8388
+    },
+    {
+      "sector": "Construction",
+      "sb_rate": 0.0216,
+      "mean_ci": 0.55,
+      "n_contracts": 12563
+    },
+    {
+      "sector": "Transport/Travel",
+      "sb_rate": 0.0163,
+      "mean_ci": 0.45,
+      "n_contracts": 18920
+    }
+  ],
+  "interpretation": {
+    "brown_monopoly_confirmed": false,
+    "effect_direction": "No brown monopoly effect",
+    "statistical_significance": "Significant"
+  }
+}

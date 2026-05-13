@@ -1,0 +1,91 @@
+{
+  "n_contracts_2016_17": 64092,
+  "n_contracts_2017_18": 73458,
+  "n_contracts_total": 137550,
+  "sb_rate_overall": 53.3,
+  "sb_rate_by_year": {
+    "2016-17": 56.75,
+    "2017-18": 50.29
+  },
+  "sb_rate_by_method": {
+    "Limited tender": 100.0,
+    "Open tender": 0.0,
+    "Prequalified tender": 0.0
+  },
+  "total_value_aud": 90632611264.85,
+  "total_value_eur": 54379566758.91,
+  "procurement_method_breakdown": {
+    "Limited tender": {
+      "count": 73315,
+      "pct": 53.3,
+      "single_bidder_proxy": true
+    },
+    "Open tender": {
+      "count": 55225,
+      "pct": 40.15,
+      "single_bidder_proxy": false
+    },
+    "Prequalified tender": {
+      "count": 9010,
+      "pct": 6.55,
+      "single_bidder_proxy": false
+    }
+  },
+  "top_sectors": {
+    "Professional Services": {
+      "count": 73955,
+      "pct": 53.77
+    },
+    "Components / Supplies": {
+      "count": 20711,
+      "pct": 15.06
+    },
+    "Industrial / Manufacturing": {
+      "count": 15172,
+      "pct": 11.03
+    },
+    "Travel / Facilities": {
+      "count": 10948,
+      "pct": 7.96
+    },
+    "Defence / Security": {
+      "count": 6962,
+      "pct": 5.06
+    },
+    "Food / Clothing / Services": {
+      "count": 4671,
+      "pct": 3.4
+    },
+    "IT / Electronics": {
+      "count": 2907,
+      "pct": 2.11
+    },
+    "Raw Materials / Mining": {
+      "count": 2040,
+      "pct": 1.48
+    },
+    "Lab / Measurement": {
+      "count": 184,
+      "pct": 0.13
+    }
+  },
+  "sb_rate_by_sector": {
+    "Professional Services": 39.99,
+    "Components / Supplies": 62.27,
+    "Industrial / Manufacturing": 91.41,
+    "Travel / Facilities": 58.12,
+    "Defence / Security": 76.03,
+    "Food / Clothing / Services": 41.68,
+    "IT / Electronics": 79.05,
+    "Raw Materials / Mining": 44.46,
+    "Lab / Measurement": 91.85
+  },
+  "value_distribution_aud": {
+    "min": 10000.0,
+    "q1": 20000.0,
+    "median": 46555.43,
+    "mean": 726910.15,
+    "q3": 142994.23,
+    "max": 3351400190.0
+  }
+}

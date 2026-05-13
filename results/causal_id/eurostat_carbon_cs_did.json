@@ -1,0 +1,236 @@
+{
+  "specification": "Callaway_SantAnna_Eurostat_Carbon_DiD",
+  "outcome": "SB_minus_MB_Eurostat_carbon_intensity_gap_pct",
+  "treatment": "EU_Directive_2014_24_EU_transposition",
+  "control_group": "Not_yet_treated_cohorts_C&S_2021_staggered",
+  "data_source": "Eurostat air emissions accounts (env_ac_ainah_r2)",
+  "panel_summary": {
+    "n_cells": 251,
+    "n_treated_countries": 21,
+    "n_control_countries": 0,
+    "control_strategy": "not_yet_treated",
+    "note_on_control": "Eurostat covers EU27 only; NO/CH absent. Not-yet-treated cohorts serve as control per C&S 2021 \u00a75",
+    "cohorts": [
+      2016,
+      2017,
+      2018
+    ],
+    "years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  "aggregate_att": {
+    "att": 13.7752,
+    "se": 10.8345,
+    "t_stat": 1.2714,
+    "p_value": 0.203577,
+    "ci_lower_95": -7.4603,
+    "ci_upper_95": 35.0108,
+    "n_cells": 3
+  },
+  "bootstrap_inference": {
+    "bootstrap_p": 0.296,
+    "ci_lower_95_boot": -9.3925,
+    "ci_upper_95_boot": 41.6063,
+    "n_bootstrap": 500
+  },
+  "pre_trend_test": {
+    "n_pre": 6,
+    "slope_pp_per_yr": -8.268,
+    "p_value": 0.1349,
+    "r_squared": 0.4663,
+    "interpretation": "Parallel trends supported"
+  },
+  "group_time_atts": [
+    {
+      "cohort": 2016,
+      "year": 2014,
+      "event_time": -2,
+      "att": 0.9881,
+      "se": 17.0748,
+      "t_stat": 0.0579,
+      "p_value": 0.954214,
+      "delta_treat": -7.3938,
+      "delta_ctrl": -8.3819,
+      "n_treated": 13,
+      "n_control": 21,
+      "pre_period": true,
+      "control_type": "not_yet_treated"
+    },
+    {
+      "cohort": 2016,
+      "year": 2015,
+      "event_time": -1,
+      "att": 0.0,
+      "se": 17.8139,
+      "t_stat": 0.0,
+      "p_value": 1.0,
+      "delta_treat": 0.0,
+      "delta_ctrl": 0.0,
+      "n_treated": 13,
+      "n_control": 21,
+      "pre_period": true,
+      "control_type": "not_yet_treated"
+    },
+    {
+      "cohort": 2016,
+      "year": 2016,
+      "event_time": 0,
+      "att": 7.1382,
+      "se": 16.8091,
+      "t_stat": 0.4247,
+      "p_value": 0.675854,
+      "delta_treat": 5.4951,
+      "delta_ctrl": -1.6431,
+      "n_treated": 13,
+      "n_control": 8,
+      "pre_period": false,
+      "control_type": "not_yet_treated"
+    },
+    {
+      "cohort": 2016,
+      "year": 2017,
+      "event_time": 1,
+      "att": 16.765,
+      "se": 18.5279,
+      "t_stat": 0.9049,
+      "p_value": 0.382005,
+      "delta_treat": -1.6169,
+      "delta_ctrl": -18.382,
+      "n_treated": 13,
+      "n_control": 2,
+      "pre_period": false,
+      "control_type": "not_yet_treated"
+    },
+    {
+      "cohort": 2017,
+      "year": 2015,
+      "event_time": -2,
+      "att": 7.5577,
+      "se": 14.0995,
+      "t_stat": 0.536,
+      "p_value": 0.596677,
+      "delta_treat": 4.782,
+      "delta_ctrl": -2.7758,
+      "n_treated": 6,
+      "n_control": 21,
+      "pre_period": true,
+      "control_type": "not_yet_treated"
+    },
+    {
+      "cohort": 2017,
+      "year": 2016,
+      "event_time": -1,
+      "att": 0.0,
+      "se": 8.4225,
+      "t_stat": 0.0,
+      "p_value": 1.0,
+      "delta_treat": 0.0,
+      "delta_ctrl": 0.0,
+      "n_treated": 6,
+      "n_control": 8,
+      "pre_period": true,
+      "control_type": "not_yet_treated"
+    },
+    {
+      "cohort": 2017,
+      "year": 2017,
+      "event_time": 0,
+      "att": 21.6777,
+      "se": 20.0264,
+      "t_stat": 1.0825,
+      "p_value": 0.320623,
+      "delta_treat": -4.4778,
+      "delta_ctrl": -26.1556,
+      "n_treated": 6,
+      "n_control": 2,
+      "pre_period": false,
+      "control_type": "not_yet_treated"
+    },
+    {
+      "cohort": 2018,
+      "year": 2016,
+      "event_time": -2,
+      "att": 16.2583,
+      "se": 20.3297,
+      "t_stat": 0.7997,
+      "p_value": 0.44696,
+      "delta_treat": 26.1556,
+      "delta_ctrl": 9.8973,
+      "n_treated": 2,
+      "n_control": 8,
+      "pre_period": true,
+      "control_type": "not_yet_treated"
+    },
+    {
+      "cohort": 2018,
+      "year": 2017,
+      "event_time": -1,
+      "att": 0.0,
+      "se": 15.8707,
+      "t_stat": 0.0,
+      "p_value": 1.0,
+      "delta_treat": 0.0,
+      "delta_ctrl": 0.0,
+      "n_treated": 2,
+      "n_control": 2,
+      "pre_period": true,
+      "control_type": "not_yet_treated"
+    }
+  ],
+  "event_study": {
+    "-2": {
+      "mean_att": 8.268,
+      "se": 4.4224,
+      "n_cohorts": 3,
+      "pre_period": true
+    },
+    "-1": {
+      "mean_att": 0.0,
+      "se": 0.0,
+      "n_cohorts": 3,
+      "pre_period": true
+    },
+    "0": {
+      "mean_att": 14.408,
+      "se": 7.2698,
+      "n_cohorts": 2,
+      "pre_period": false
+    },
+    "1": {
+      "mean_att": 16.765,
+      "se": null,
+      "n_cohorts": 1,
+      "pre_period": false
+    }
+  },
+  "its_comparison": {
+    "pre_reform_mean_gap_pct": 0.4012,
+    "post_reform_mean_gap_pct": 2.5723,
+    "pct_change": 541.11,
+    "t_stat": 0.487,
+    "p_value": 0.626727
+  },
+  "methodology_notes": [
+    "Outcome is Eurostat-measured SB minus MB carbon intensity gap (%) per country-year",
+    "Carbon intensities from Eurostat env_ac_ainah_r2 (GHG per GVA, kg/EUR)",
+    "CPV procurement sectors mapped to NACE broad sectors (single letter)",
+    "Minimum 20 SB and 20 MB contracts required per country-year cell",
+    "Control group: not-yet-treated countries (C&S 2021 \u00a75 staggered adoption)",
+    "Parallel trends assumption: tested via pre-treatment event-study coefficients",
+    "Wild cluster bootstrap at country level (B=500) for robust inference",
+    "This is a carbon-outcome DiD, NOT a competition-outcome DiD",
+    "Supplementary EXOBASE-based DiD (NO+CH controls) in panel_carbon_did.json"
+  ]
+}

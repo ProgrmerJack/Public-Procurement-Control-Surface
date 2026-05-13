@@ -1,0 +1,597 @@
+{
+  "total_rows_processed": 1494100,
+  "valid_contract_actions": 1401829,
+  "n_new_awards": 1230979,
+  "n_modifications": 263120,
+  "n_competitive": 1176374,
+  "n_noncompetitive": 225455,
+  "skipped_no_naics_match": 88289,
+  "skipped_unknown_competition": 3981,
+  "parse_errors": 1,
+  "three_way_split": {
+    "multi_offer": 1078069,
+    "single_offer": 98305,
+    "noncompetitive": 225455
+  },
+  "noncompetitive_rate": 0.1608,
+  "single_offer_rate_among_competitive": 0.0836,
+  "unweighted_analysis": {
+    "description": "Unweighted mean CI per action (composition effect \u2014 sectors differ)",
+    "mean_ci_competitive": 0.464772,
+    "mean_ci_noncompetitive": 0.269734,
+    "carbon_premium_pct": -41.96,
+    "cohens_d": -0.4178,
+    "t_statistic": -295.8086,
+    "degrees_of_freedom": 734538.5
+  },
+  "obligation_weighted_analysis": {
+    "description": "Weighted by federal_action_obligation (actual spend, not ceiling)",
+    "total_obligations_competitive_usd": 162423700417.81,
+    "total_obligations_noncompetitive_usd": 75188480657.2,
+    "obligation_weighted_ci_competitive": 0.285112,
+    "obligation_weighted_ci_noncompetitive": 0.348913,
+    "carbon_premium_pct": 22.38
+  },
+  "three_way_analysis": {
+    "multi_offer": {
+      "n_actions": 1078069,
+      "unweighted_mean_ci": 0.480174,
+      "obligation_weighted_ci": 0.302607,
+      "total_obligations_usd": 135327198236.84
+    },
+    "single_offer": {
+      "n_actions": 98305,
+      "unweighted_mean_ci": 0.295864,
+      "obligation_weighted_ci": 0.197739,
+      "total_obligations_usd": 27096502180.98
+    },
+    "noncompetitive": {
+      "n_actions": 225455,
+      "unweighted_mean_ci": 0.269734,
+      "obligation_weighted_ci": 0.348913,
+      "total_obligations_usd": 75188480657.2
+    }
+  },
+  "sector_standardized_analysis": {
+    "description": "Since CI is assigned at NAICS-3, within-sector CI is identical by construction. The observed premium is entirely a between-sector composition effect: competitive procurement is concentrated in higher-carbon sectors (petroleum, construction, manufacturing) while noncompetitive procurement concentrates in lower-carbon services (IT, professional, education).",
+    "sectors_with_both_types": 74,
+    "implication": "The US result reflects WHAT the government buys competitively vs not, not HOW competition affects carbon within sectors."
+  },
+  "new_award_only_sensitivity": {
+    "description": "New awards only (modification_number = 0 or blank)",
+    "n_competitive": 977450,
+    "n_noncompetitive": 170811,
+    "unweighted_ci_competitive": 0.503218,
+    "unweighted_ci_noncompetitive": 0.271696,
+    "unweighted_premium_pct": -46.01,
+    "obligation_weighted_ci_competitive": 0.372866,
+    "obligation_weighted_ci_noncompetitive": 0.35974,
+    "obligation_weighted_premium_pct": -3.52
+  },
+  "cross_sector_correlation": {
+    "r": -0.2663,
+    "n_sectors": 70,
+    "t_statistic": -2.2779,
+    "note": "Correlation between noncompetitive rate and CI across 70 NAICS-3 sectors (unweighted)"
+  },
+  "cross_sector_correlation_obligation_weighted": {
+    "r": -0.0086,
+    "n_sectors": 70,
+    "note": "Obligation-weighted correlation between noncompetitive rate and CI"
+  },
+  "sector_details": [
+    {
+      "naics_3digit": "324",
+      "n_actions": 82009,
+      "noncompetitive_rate": 0.0084,
+      "mean_carbon_intensity": 2.1,
+      "total_obligations_usd": 2412865401.18
+    },
+    {
+      "naics_3digit": "211",
+      "n_actions": 74,
+      "noncompetitive_rate": 0.1081,
+      "mean_carbon_intensity": 1.85,
+      "total_obligations_usd": 8344865.07
+    },
+    {
+      "naics_3digit": "221",
+      "n_actions": 2444,
+      "noncompetitive_rate": 0.5143,
+      "mean_carbon_intensity": 1.6,
+      "total_obligations_usd": 713504981.8
+    },
+    {
+      "naics_3digit": "331",
+      "n_actions": 2698,
+      "noncompetitive_rate": 0.0271,
+      "mean_carbon_intensity": 1.4,
+      "total_obligations_usd": 515052109.75
+    },
+    {
+      "naics_3digit": "327",
+      "n_actions": 997,
+      "noncompetitive_rate": 0.0822,
+      "mean_carbon_intensity": 1.15,
+      "total_obligations_usd": 40155343.89
+    },
+    {
+      "naics_3digit": "212",
+      "n_actions": 226,
+      "noncompetitive_rate": 0.1018,
+      "mean_carbon_intensity": 1.15,
+      "total_obligations_usd": 29561110.72
+    },
+    {
+      "naics_3digit": "481",
+      "n_actions": 3269,
+      "noncompetitive_rate": 0.0153,
+      "mean_carbon_intensity": 0.8,
+      "total_obligations_usd": 1957621281.56
+    },
+    {
+      "naics_3digit": "485",
+      "n_actions": 1217,
+      "noncompetitive_rate": 0.1898,
+      "mean_carbon_intensity": 0.8,
+      "total_obligations_usd": 97255085.78
+    },
+    {
+      "naics_3digit": "483",
+      "n_actions": 1528,
+      "noncompetitive_rate": 0.2487,
+      "mean_carbon_intensity": 0.8,
+      "total_obligations_usd": 1223393258.94
+    },
+    {
+      "naics_3digit": "488",
+      "n_actions": 4619,
+      "noncompetitive_rate": 0.1682,
+      "mean_carbon_intensity": 0.8,
+      "total_obligations_usd": 2087908324.23
+    },
+    {
+      "naics_3digit": "484",
+      "n_actions": 1037,
+      "noncompetitive_rate": 0.108,
+      "mean_carbon_intensity": 0.8,
+      "total_obligations_usd": 68668005.02
+    },
+    {
+      "naics_3digit": "311",
+      "n_actions": 200745,
+      "noncompetitive_rate": 0.0366,
+      "mean_carbon_intensity": 0.65,
+      "total_obligations_usd": 2155457085.34
+    },
+    {
+      "naics_3digit": "312",
+      "n_actions": 1054,
+      "noncompetitive_rate": 0.055,
+      "mean_carbon_intensity": 0.65,
+      "total_obligations_usd": 9466843.01
+    },
+    {
+      "naics_3digit": "325",
+      "n_actions": 84691,
+      "noncompetitive_rate": 0.0183,
+      "mean_carbon_intensity": 0.6,
+      "total_obligations_usd": 6909433072.97
+    },
+    {
+      "naics_3digit": "236",
+      "n_actions": 16199,
+      "noncompetitive_rate": 0.1843,
+      "mean_carbon_intensity": 0.55,
+      "total_obligations_usd": 16448899227.83
+    },
+    {
+      "naics_3digit": "332",
+      "n_actions": 100990,
+      "noncompetitive_rate": 0.1644,
+      "mean_carbon_intensity": 0.55,
+      "total_obligations_usd": 7755445374.48
+    },
+    {
+      "naics_3digit": "237",
+      "n_actions": 4940,
+      "noncompetitive_rate": 0.1318,
+      "mean_carbon_intensity": 0.55,
+      "total_obligations_usd": 7606911287.48
+    },
+    {
+      "naics_3digit": "238",
+      "n_actions": 8821,
+      "noncompetitive_rate": 0.2564,
+      "mean_carbon_intensity": 0.55,
+      "total_obligations_usd": 2048609339.52
+    },
+    {
+      "naics_3digit": "326",
+      "n_actions": 7436,
+      "noncompetitive_rate": 0.0647,
+      "mean_carbon_intensity": 0.5,
+      "total_obligations_usd": 97141936.25
+    },
+    {
+      "naics_3digit": "336",
+      "n_actions": 50479,
+      "noncompetitive_rate": 0.3817,
+      "mean_carbon_intensity": 0.45,
+      "total_obligations_usd": 44258467720.76
+    },
+    {
+      "naics_3digit": "492",
+      "n_actions": 1190,
+      "noncompetitive_rate": 0.3765,
+      "mean_carbon_intensity": 0.4,
+      "total_obligations_usd": 361975025.07
+    },
+    {
+      "naics_3digit": "491",
+      "n_actions": 79,
+      "noncompetitive_rate": 0.8228,
+      "mean_carbon_intensity": 0.4,
+      "total_obligations_usd": 9096315.52
+    },
+    {
+      "naics_3digit": "333",
+      "n_actions": 41937,
+      "noncompetitive_rate": 0.1321,
+      "mean_carbon_intensity": 0.35,
+      "total_obligations_usd": 2064148813.94
+    },
+    {
+      "naics_3digit": "335",
+      "n_actions": 20704,
+      "noncompetitive_rate": 0.4401,
+      "mean_carbon_intensity": 0.3,
+      "total_obligations_usd": 625688733.78
+    },
+    {
+      "naics_3digit": "337",
+      "n_actions": 18685,
+      "noncompetitive_rate": 0.5345,
+      "mean_carbon_intensity": 0.25,
+      "total_obligations_usd": 535720007.88
+    },
+    {
+      "naics_3digit": "722",
+      "n_actions": 1054,
+      "noncompetitive_rate": 0.2979,
+      "mean_carbon_intensity": 0.25,
+      "total_obligations_usd": 392540125.55
+    },
+    {
+      "naics_3digit": "339",
+      "n_actions": 59061,
+      "noncompetitive_rate": 0.1607,
+      "mean_carbon_intensity": 0.25,
+      "total_obligations_usd": 3333346463.11
+    },
+    {
+      "naics_3digit": "721",
+      "n_actions": 2097,
+      "noncompetitive_rate": 0.3247,
+      "mean_carbon_intensity": 0.25,
+      "total_obligations_usd": 66963468.59
+    },
+    {
+      "naics_3digit": "334",
+      "n_actions": 45431,
+      "noncompetitive_rate": 0.2233,
+      "mean_carbon_intensity": 0.2,
+      "total_obligations_usd": 13076482006.28
+    },
+    {
+      "naics_3digit": "811",
+      "n_actions": 9507,
+      "noncompetitive_rate": 0.4233,
+      "mean_carbon_intensity": 0.2,
+      "total_obligations_usd": 1277488085.39
+    },
+    {
+      "naics_3digit": "812",
+      "n_actions": 1796,
+      "noncompetitive_rate": 0.206,
+      "mean_carbon_intensity": 0.2,
+      "total_obligations_usd": 101104909.53
+    },
+    {
+      "naics_3digit": "813",
+      "n_actions": 757,
+      "noncompetitive_rate": 0.5192,
+      "mean_carbon_intensity": 0.2,
+      "total_obligations_usd": 74921397.16
+    },
+    {
+      "naics_3digit": "444",
+      "n_actions": 52941,
+      "noncompetitive_rate": 0.0076,
+      "mean_carbon_intensity": 0.15,
+      "total_obligations_usd": 152521745.22
+    },
+    {
+      "naics_3digit": "423",
+      "n_actions": 247643,
+      "noncompetitive_rate": 0.1928,
+      "mean_carbon_intensity": 0.15,
+      "total_obligations_usd": 2692034299.65
+    },
+    {
+      "naics_3digit": "453",
+      "n_actions": 27909,
+      "noncompetitive_rate": 0.9983,
+      "mean_carbon_intensity": 0.15,
+      "total_obligations_usd": 22107218.31
+    },
+    {
+      "naics_3digit": "424",
+      "n_actions": 78822,
+      "noncompetitive_rate": 0.0026,
+      "mean_carbon_intensity": 0.15,
+      "total_obligations_usd": 568950591.3
+    },
+    {
+      "naics_3digit": "449",
+      "n_actions": 92,
+      "noncompetitive_rate": 0.1087,
+      "mean_carbon_intensity": 0.15,
+      "total_obligations_usd": 2611432.07
+    },
+    {
+      "naics_3digit": "443",
+      "n_actions": 2351,
+      "noncompetitive_rate": 0.0004,
+      "mean_carbon_intensity": 0.15,
+      "total_obligations_usd": 66136991.9
+    },
+    {
+      "naics_3digit": "425",
+      "n_actions": 119,
+      "noncompetitive_rate": 0.0252,
+      "mean_carbon_intensity": 0.15,
+      "total_obligations_usd": 21307389.41
+    },
+    {
+      "naics_3digit": "441",
+      "n_actions": 203,
+      "noncompetitive_rate": 0.2463,
+      "mean_carbon_intensity": 0.15,
+      "total_obligations_usd": 15069849.49
+    },
+    {
+      "naics_3digit": "454",
+      "n_actions": 149,
+      "noncompetitive_rate": 0.047,
+      "mean_carbon_intensity": 0.15,
+      "total_obligations_usd": 2866157.22
+    },
+    {
+      "naics_3digit": "517",
+      "n_actions": 11007,
+      "noncompetitive_rate": 0.1405,
+      "mean_carbon_intensity": 0.12,
+      "total_obligations_usd": 2017070751.04
+    },
+    {
+      "naics_3digit": "512",
+      "n_actions": 445,
+      "noncompetitive_rate": 0.2112,
+      "mean_carbon_intensity": 0.12,
+      "total_obligations_usd": 42273547.93
+    },
+    {
+      "naics_3digit": "511",
+      "n_actions": 4366,
+      "noncompetitive_rate": 0.1296,
+      "mean_carbon_intensity": 0.12,
+      "total_obligations_usd": 1412037204.21
+    },
+    {
+      "naics_3digit": "513",
+      "n_actions": 2391,
+      "noncompetitive_rate": 0.5989,
+      "mean_carbon_intensity": 0.12,
+      "total_obligations_usd": 433930819.15
+    },
+    {
+      "naics_3digit": "518",
+      "n_actions": 1717,
+      "noncompetitive_rate": 0.3308,
+      "mean_carbon_intensity": 0.12,
+      "total_obligations_usd": 1096225036.38
+    },
+    {
+      "naics_3digit": "519",
+      "n_actions": 1305,
+      "noncompetitive_rate": 0.3877,
+      "mean_carbon_intensity": 0.12,
+      "total_obligations_usd": 182046242.11
+    },
+    {
+      "naics_3digit": "515",
+      "n_actions": 127,
+      "noncompetitive_rate": 0.5669,
+      "mean_carbon_intensity": 0.12,
+      "total_obligations_usd": 2591811.07
+    },
+    {
+      "naics_3digit": "541",
+      "n_actions": 123874,
+      "noncompetitive_rate": 0.1747,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 78441882945.88
+    },
+    {
+      "naics_3digit": "561",
+      "n_actions": 29489,
+      "noncompetitive_rate": 0.2294,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 13349007682.53
+    },
+    {
+      "naics_3digit": "562",
+      "n_actions": 9914,
+      "noncompetitive_rate": 0.1469,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 3220209461.75
+    },
+    {
+      "naics_3digit": "532",
+      "n_actions": 5280,
+      "noncompetitive_rate": 0.3312,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 263299750.7
+    },
+    {
+      "naics_3digit": "621",
+      "n_actions": 5937,
+      "noncompetitive_rate": 0.2633,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 2507589616.68
+    },
+    {
+      "naics_3digit": "711",
+      "n_actions": 790,
+      "noncompetitive_rate": 0.1456,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 19450267.88
+    },
+    {
+      "naics_3digit": "623",
+      "n_actions": 1538,
+      "noncompetitive_rate": 0.4337,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 302284529.01
+    },
+    {
+      "naics_3digit": "923",
+      "n_actions": 276,
+      "noncompetitive_rate": 0.8804,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 56476121.87
+    },
+    {
+      "naics_3digit": "624",
+      "n_actions": 555,
+      "noncompetitive_rate": 0.2577,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 403234340.09
+    },
+    {
+      "naics_3digit": "713",
+      "n_actions": 171,
+      "noncompetitive_rate": 0.3333,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 13191463.64
+    },
+    {
+      "naics_3digit": "922",
+      "n_actions": 298,
+      "noncompetitive_rate": 0.5,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 22755163.63
+    },
+    {
+      "naics_3digit": "926",
+      "n_actions": 92,
+      "noncompetitive_rate": 0.8043,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 30773546.18
+    },
+    {
+      "naics_3digit": "531",
+      "n_actions": 1714,
+      "noncompetitive_rate": 0.2917,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 203586302.36
+    },
+    {
+      "naics_3digit": "927",
+      "n_actions": 57,
+      "noncompetitive_rate": 0.2456,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 26357519.75
+    },
+    {
+      "naics_3digit": "622",
+      "n_actions": 3897,
+      "noncompetitive_rate": 0.2148,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 395039752.34
+    },
+    {
+      "naics_3digit": "921",
+      "n_actions": 214,
+      "noncompetitive_rate": 0.4673,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 28436973.33
+    },
+    {
+      "naics_3digit": "712",
+      "n_actions": 153,
+      "noncompetitive_rate": 0.3137,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 22311892.54
+    },
+    {
+      "naics_3digit": "928",
+      "n_actions": 145,
+      "noncompetitive_rate": 0.1793,
+      "mean_carbon_intensity": 0.1,
+      "total_obligations_usd": 29045274.47
+    },
+    {
+      "naics_3digit": "611",
+      "n_actions": 6603,
+      "noncompetitive_rate": 0.3885,
+      "mean_carbon_intensity": 0.08,
+      "total_obligations_usd": 1739547786.22
+    },
+    {
+      "naics_3digit": "524",
+      "n_actions": 851,
+      "noncompetitive_rate": 0.1081,
+      "mean_carbon_intensity": 0.08,
+      "total_obligations_usd": 8710214214.62
+    },
+    {
+      "naics_3digit": "523",
+      "n_actions": 173,
+      "noncompetitive_rate": 0.1618,
+      "mean_carbon_intensity": 0.08,
+      "total_obligations_usd": 565016365.18
+    },
+    {
+      "naics_3digit": "522",
+      "n_actions": 263,
+      "noncompetitive_rate": 0.0837,
+      "mean_carbon_intensity": 0.08,
+      "total_obligations_usd": 155614164.03
+    }
+  ],
+  "extent_competed_distribution": {
+    "FULL AND OPEN COMPETITION": 827623,
+    "COMPETED UNDER SAP": 185365,
+    "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 163358,
+    "NOT AVAILABLE FOR COMPETITION": 91593,
+    "NOT COMPETED": 75084,
+    "NOT COMPETED UNDER SAP": 58778,
+    "FOLLOW ON TO COMPETED ACTION": 28
+  },
+  "metadata": {
+    "source": "USASpending.gov FPDS FY2024 All Contracts Full",
+    "files_processed": [
+      "FY2024_All_Contracts_Full_20260307_1.csv",
+      "FY2024_All_Contracts_Full_20260307_2.csv"
+    ],
+    "unit_of_analysis": "Contract actions (includes modifications \u2014 see new_award_only_sensitivity)",
+    "carbon_intensity_source": "EPA/BEA NAICS-sector carbon intensities (kg CO2e/USD)",
+    "key_methodological_note": "Carbon intensity is assigned at NAICS 3-digit level. Within any sector, competitive and noncompetitive actions have identical CI by construction. All premium estimates reflect between-sector procurement composition effects.",
+    "competition_classification": {
+      "competitive_codes": "A (Full & Open), D (After Exclusion), E (Follow-on), F (SAP)",
+      "noncompetitive_codes": "B (Not Competed), C (Not Available), G (Not Competed SAP)"
+    }
+  }
+}

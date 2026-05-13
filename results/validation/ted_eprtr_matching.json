@@ -1,0 +1,131 @@
+{
+  "overall": {
+    "n_sb": 3579,
+    "n_mb": 9400,
+    "premium_pct": 216.8,
+    "t": 21.628,
+    "p": 0.0,
+    "d": 0.4832
+  },
+  "within_sector": {
+    "Energy": {
+      "premium_pct": 288.5,
+      "t": 23.263,
+      "p": 0.0,
+      "n_sb": 2671,
+      "n_mb": 7886
+    },
+    "Metals": {
+      "premium_pct": 73.1,
+      "t": 0.976,
+      "p": 0.342157,
+      "n_sb": 16,
+      "n_mb": 21
+    },
+    "Minerals": {
+      "premium_pct": 18.9,
+      "t": 1.225,
+      "p": 0.221443,
+      "n_sb": 142,
+      "n_mb": 187
+    },
+    "Chemicals": {
+      "premium_pct": -15.5,
+      "t": -0.974,
+      "p": 0.330496,
+      "n_sb": 244,
+      "n_mb": 234
+    },
+    "Waste": {
+      "premium_pct": -29.8,
+      "t": -1.379,
+      "p": 0.168373,
+      "n_sb": 374,
+      "n_mb": 576
+    },
+    "Paper": {
+      "premium_pct": -50.8,
+      "t": -3.601,
+      "p": 0.002157,
+      "n_sb": 24,
+      "n_mb": 18
+    },
+    "Other": {
+      "premium_pct": -5.6,
+      "t": -3.241,
+      "p": 0.002703,
+      "n_sb": 23,
+      "n_mb": 117
+    }
+  },
+  "within_country": {
+    "AT": {
+      "premium_pct": 134.1,
+      "t": 3.14,
+      "p": 0.002421,
+      "n_sb": 63,
+      "n_mb": 129
+    },
+    "CZ": {
+      "premium_pct": -50.6,
+      "t": -5.877,
+      "p": 0.0,
+      "n_sb": 144,
+      "n_mb": 160
+    },
+    "DE": {
+      "premium_pct": 41.3,
+      "t": 3.179,
+      "p": 0.001587,
+      "n_sb": 341,
+      "n_mb": 550
+    },
+    "FR": {
+      "premium_pct": -3.6,
+      "t": -0.64,
+      "p": 0.522003,
+      "n_sb": 2087,
+      "n_mb": 7951
+    },
+    "IT": {
+      "premium_pct": 35.9,
+      "t": 2.88,
+      "p": 0.005692,
+      "n_sb": 55,
+      "n_mb": 49
+    },
+    "LT": {
+      "premium_pct": -21.4,
+      "t": -1.235,
+      "p": 0.223087,
+      "n_sb": 37,
+      "n_mb": 25
+    },
+    "NL": {
+      "premium_pct": 18.9,
+      "t": 1.98,
+      "p": 0.051049,
+      "n_sb": 50,
+      "n_mb": 60
+    },
+    "PL": {
+      "premium_pct": 36.4,
+      "t": 7.356,
+      "p": 0.0,
+      "n_sb": 660,
+      "n_mb": 341
+    },
+    "SK": {
+      "premium_pct": 0.0,
+      "t": NaN,
+      "p": NaN,
+      "n_sb": 58,
+      "n_mb": 26
+    }
+  },
+  "within_country_sector": {
+    "n_groups": 25,
+    "n_positive": 13,
+    "weighted_mean": 252.9
+  }
+}

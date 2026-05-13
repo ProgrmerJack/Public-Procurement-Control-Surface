@@ -1,0 +1,3 @@
+country	total_contracts	contracts_with_value	contracts_with_awards	single_award_rate	single_supplier_rate	mean_awards_per_contract	mean_suppliers_per_award	currencies	year_range	processing_time_min
+CO	11490405	11405939	10280834	98.93	99.62	1.03	1.01	COP,EUR,USD	1938-2099	5.87
+UK	570599	497549	397737	97.01	95.28	1.05	1.29	GBP	24-2038	0.20

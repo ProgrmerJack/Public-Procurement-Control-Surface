@@ -1,0 +1,95 @@
+{
+  "validations": [
+    {
+      "claim_id": "sample_size",
+      "description": "Total number of contracts analyzed",
+      "reported_value": 21612129,
+      "computed_value": 21612129,
+      "unit": "contracts",
+      "deviation_percent": 0.0,
+      "status": "VERIFIED",
+      "reason": "Reported and computed values match"
+    },
+    {
+      "claim_id": "n_countries",
+      "description": "Number of countries included",
+      "reported_value": 27,
+      "computed_value": 27,
+      "unit": "countries",
+      "deviation_percent": 0.0,
+      "status": "VERIFIED",
+      "reason": "Reported and computed values match"
+    },
+    {
+      "claim_id": "carbon_reduction",
+      "description": "Pooled carbon effect near transparency threshold",
+      "reported_value": -0.6353693838487535,
+      "computed_value": -0.6353693838487535,
+      "unit": "percent",
+      "deviation_percent": 0.0,
+      "status": "VERIFIED",
+      "reason": "Pooled estimate verified against analysis (DerSimonian-Laird meta-analysis)"
+    },
+    {
+      "claim_id": "hhi_reduction",
+      "description": "Reduction in HHI (supplier concentration)",
+      "reported_value": null,
+      "computed_value": null,
+      "unit": "percent",
+      "status": "CANNOT_VALIDATE",
+      "reason": "Computed value not available in processed data"
+    },
+    {
+      "claim_id": "single_bid_reduction",
+      "description": "Transparency threshold effect on bidders (absolute / percent)",
+      "reported_value": {
+        "absolute_increase": 0.7686966932899937,
+        "percent_increase": 15.192993741724631
+      },
+      "computed_value": {
+        "absolute_increase": 0.7686966932899937,
+        "percent_increase": 15.192993741724631
+      },
+      "unit": "(absolute / percent)",
+      "deviation_percent": 0.0,
+      "status": "VERIFIED",
+      "reason": "RDD bidder increase verified"
+    },
+    {
+      "claim_id": "mediation_proportion",
+      "description": "Proportion mediated through competition",
+      "reported_value": 2.08981967836639,
+      "computed_value": 2.08981967836639,
+      "unit": "percent",
+      "deviation_percent": 0.0,
+      "status": "VERIFIED",
+      "reason": "Mediation analysis reproduced"
+    },
+    {
+      "claim_id": "heterogeneity",
+      "description": "Cross-country heterogeneity (I2)",
+      "reported_value": 93.30697300624163,
+      "computed_value": 93.30697300624163,
+      "unit": "percent",
+      "deviation_percent": 0.0,
+      "status": "VERIFIED",
+      "reason": "Meta-analysis heterogeneity verified"
+    }
+  ],
+  "sample_statistics": {
+    "n_contracts": 21612129,
+    "n_countries": 27,
+    "n_oecd_countries": 27,
+    "n_oecd_contracts": "21612129",
+    "year_min": 2012,
+    "year_max": 2023,
+    "single_bidder_rate": 0.1100544513684885,
+    "mean_bidders": 3.310728329956326,
+    "median_bidders": 0.0,
+    "mean_carbon_intensity": 0.2984060626327048,
+    "median_carbon_intensity": 0.25,
+    "total_value_usd": 191829096446440.25,
+    "mean_value_usd": 8875992.570951259
+  },
+  "timestamp": "2026-01-27T22:58:00.000000"
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "Dataset": "Contracting overview",
+    "URL": "https://open.canada.ca/data/dataset/74ca048c-0ac9-4400-8e6c-82dee15f469f/resource/e368f7f9-7b76-40db-94e9-39e23c1e8319/download/contracts-dataset-english.csv",
+    "Size": 691,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Contracting overview",
+    "URL": "https://open.canada.ca/data/dataset/74ca048c-0ac9-4400-8e6c-82dee15f469f/resource/25f0208f-016d-4d38-8331-1d4593367e19/download/contracts-dataset-french.csv",
+    "Size": 755,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Proactive Publication - Contracts",
+    "URL": "/data/dataset/d8f85d91-7dec-4fd1-8055-483b77225d8b/resource/7f9b18ca-f627-4852-93d5-69adeb9437d6/download/load-contracts-2020-10-01.csv",
+    "Size": 957109,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Proactive Publication - Contracts",
+    "URL": "/data/dataset/d8f85d91-7dec-4fd1-8055-483b77225d8b/resource/fa4ff6c4-e9af-4491-9d4e-2b468e415a68/download/contracts-nil.csv",
+    "Size": 10528,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Proactive Publication - Contracts",
+    "URL": "/data/dataset/d8f85d91-7dec-4fd1-8055-483b77225d8b/resource/2e9a82e2-bb18-4bff-a61e-59af3b429672/download/contractsa.csv",
+    "Size": 93631,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Proactive Publication - Contracts",
+    "URL": "/data/dataset/d8f85d91-7dec-4fd1-8055-483b77225d8b/resource/fac950c0-00d5-4ec1-a4d3-9cbebf98a305/download/contracts.csv",
+    "Size": 610141065,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2009-2023-05.zip",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2023-avr-mai-apr-may.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2022-2023.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2021-2022.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2020-2021.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2019-2020.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2018-2019.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2017-2018.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2016-2017.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2015-2016.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2014-2015.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2013-2014.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2012-2013.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2011-2012.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2010-2011.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2009-2010.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "Archived, contract history",
+    "URL": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/contratsoctroyes-contracthistory-2009-jan-mar.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/contractHistoryComplete-contratsOctroyesComplet.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2009-2023-contractHistoryHistorical-contratsOctroyesHistorique.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2026-2027-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2025-2026-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2024-2025-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2023-2024-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2022-2023-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2021-2022-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2020-2021-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2019-2020-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2018-2019-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2017-2018-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2016-2017-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2015-2016-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2014-2015-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2013-2014-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2012-2013-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2011-2012-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2010-2011-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2009-2010-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  },
+  {
+    "Dataset": "CanadaBuys contract history ",
+    "URL": "https://canadabuys.canada.ca/opendata/pub/2009-jan-Mar-contractHistory-contratsOctroyes.csv",
+    "Size": null,
+    "Format": "CSV"
+  }
+]

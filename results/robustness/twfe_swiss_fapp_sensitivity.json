@@ -1,0 +1,33 @@
+{
+  "twfe_full_2012_2023": {
+    "att_pp": -1.321294087238896,
+    "se_pp": 1.2646685209500055,
+    "t_stat": -1.0447750263020337,
+    "p_value": 0.2970826496793025,
+    "ci_lower": -3.8000443883009067,
+    "ci_upper": 1.1574562138231146,
+    "n_obs": 300,
+    "years": "2012.0-2023.0"
+  },
+  "twfe_pre_fapp_2012_2020": {
+    "att_pp": -1.9561764740480614,
+    "se_pp": 1.330207546672372,
+    "t_stat": -1.4705798948003297,
+    "p_value": 0.14304167014990932,
+    "ci_lower": -4.563383265525911,
+    "ci_upper": 0.6510303174297878,
+    "n_obs": 225,
+    "years": "2012.0-2020.0"
+  },
+  "twfe_clean_window_2015_2020": {
+    "att_pp": -1.253195715462014,
+    "se_pp": 1.5792035294233695,
+    "t_stat": -0.7935618760424161,
+    "p_value": 0.42901689599025106,
+    "ci_lower": -4.348434633131818,
+    "ci_upper": 1.8420432022077904,
+    "n_obs": 150,
+    "years": "2015.0-2020.0"
+  },
+  "swiss_fapp_context": "Switzerland Federal Act on Public Procurement (FAPP) entered into force 2021-01-01 (SR 172.056.1). Post-2020 data contaminates never-treated CH as partially treated."
+}

@@ -1,0 +1,222 @@
+{
+  "most_recent_year": 2024,
+  "country_coverage": 27,
+  "countries_included": [
+    "AT",
+    "BE",
+    "BG",
+    "CY",
+    "CZ",
+    "DE",
+    "DK",
+    "EE",
+    "EL",
+    "ES",
+    "FI",
+    "FR",
+    "HR",
+    "HU",
+    "IE",
+    "IT",
+    "LT",
+    "LU",
+    "LV",
+    "MT",
+    "NL",
+    "PL",
+    "PT",
+    "RO",
+    "SE",
+    "SI",
+    "SK"
+  ],
+  "top_sectors": [
+    {
+      "nace_code": "C",
+      "nace_label": "Manufacturing",
+      "total_emissions": 688442.03,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "Manufacturing (aggregate)"
+    },
+    {
+      "nace_code": "D",
+      "nace_label": "Electricity, gas, steam and AC supply",
+      "total_emissions": 530501.39,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "Electricity, gas & steam"
+    },
+    {
+      "nace_code": "H",
+      "nace_label": "Transportation and storage",
+      "total_emissions": 474758.36,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "Transport services"
+    },
+    {
+      "nace_code": "A",
+      "nace_label": "Agriculture, forestry and fishing",
+      "total_emissions": 458633.53,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "Agriculture"
+    },
+    {
+      "nace_code": "A01",
+      "nace_label": "Crop and animal production",
+      "total_emissions": 448096.03,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "Agriculture – crops & livestock"
+    },
+    {
+      "nace_code": "HH_HEAT",
+      "nace_label": "HH_HEAT",
+      "total_emissions": 262919.14,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "No direct EXIOBASE match"
+    },
+    {
+      "nace_code": "G-U_X_H",
+      "nace_label": "G-U_X_H",
+      "total_emissions": 225464.77,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "No direct EXIOBASE match"
+    },
+    {
+      "nace_code": "H49",
+      "nace_label": "Land transport and pipelines",
+      "total_emissions": 171766.77,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "Land transport"
+    },
+    {
+      "nace_code": "C23",
+      "nace_label": "Other non-metallic mineral products",
+      "total_emissions": 153674.67,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "Other non-metallic minerals (cement, glass)"
+    },
+    {
+      "nace_code": "E",
+      "nace_label": "Water supply; sewerage, waste",
+      "total_emissions": 148196.89,
+      "unit": "thousand tonnes CO2-eq",
+      "exiobase_equivalent": "Water & waste management"
+    }
+  ],
+  "high_emission_procurement_sectors": [
+    {
+      "nace_code": "C",
+      "nace_label": "Manufacturing",
+      "total_emissions": 688442.03,
+      "procurement_relevance": "Manufacturing — public equipment procurement"
+    },
+    {
+      "nace_code": "D",
+      "nace_label": "Electricity, gas, steam and AC supply",
+      "total_emissions": 530501.39,
+      "procurement_relevance": "Energy supply — public utilities procurement"
+    },
+    {
+      "nace_code": "H",
+      "nace_label": "Transportation and storage",
+      "total_emissions": 474758.36,
+      "procurement_relevance": "Transport — public transport procurement"
+    },
+    {
+      "nace_code": "H49",
+      "nace_label": "Land transport and pipelines",
+      "total_emissions": 171766.77,
+      "procurement_relevance": "Land transport — public transport / rail"
+    },
+    {
+      "nace_code": "C23",
+      "nace_label": "Other non-metallic mineral products",
+      "total_emissions": 153674.67,
+      "procurement_relevance": "Non-metallic minerals — cement/glass for infrastructure"
+    },
+    {
+      "nace_code": "E",
+      "nace_label": "Water supply; sewerage, waste",
+      "total_emissions": 148196.89,
+      "procurement_relevance": "Water & waste — municipal services"
+    },
+    {
+      "nace_code": "E37-E39",
+      "nace_label": "Sewerage; waste management",
+      "total_emissions": 143589.73,
+      "procurement_relevance": "Waste management — municipal contracts"
+    },
+    {
+      "nace_code": "C24",
+      "nace_label": "Basic metals",
+      "total_emissions": 141858.54,
+      "procurement_relevance": "Basic metals — infrastructure materials"
+    },
+    {
+      "nace_code": "H50",
+      "nace_label": "Water transport",
+      "total_emissions": 138487.72,
+      "procurement_relevance": "Water transport — public maritime / ports"
+    },
+    {
+      "nace_code": "H51",
+      "nace_label": "Air transport",
+      "total_emissions": 137310.82,
+      "procurement_relevance": "Air transport — government air-travel contracts"
+    },
+    {
+      "nace_code": "C20",
+      "nace_label": "Chemicals and chemical products",
+      "total_emissions": 128018.91,
+      "procurement_relevance": "Chemicals — government supplies (cleaning, etc.)"
+    },
+    {
+      "nace_code": "C19",
+      "nace_label": "Coke and refined petroleum",
+      "total_emissions": 118599.55,
+      "procurement_relevance": "Petroleum — government fuel procurement"
+    },
+    {
+      "nace_code": "F",
+      "nace_label": "Construction",
+      "total_emissions": 56059.81,
+      "procurement_relevance": "Construction — largest single public-procurement sector"
+    },
+    {
+      "nace_code": "C10-C12",
+      "nace_label": "Food products, beverages and tobacco",
+      "total_emissions": 55002.49,
+      "procurement_relevance": "Food — public catering / school meals"
+    },
+    {
+      "nace_code": "B",
+      "nace_label": "Mining and quarrying",
+      "total_emissions": 43647.6,
+      "procurement_relevance": "Mining — raw material extraction for public works"
+    },
+    {
+      "nace_code": "Q",
+      "nace_label": "Human health and social work",
+      "total_emissions": 26490.27,
+      "procurement_relevance": "Health — public health procurement"
+    },
+    {
+      "nace_code": "O",
+      "nace_label": "Public administration and defence",
+      "total_emissions": 23984.92,
+      "procurement_relevance": "Public admin — in-house government operations"
+    },
+    {
+      "nace_code": "P",
+      "nace_label": "Education",
+      "total_emissions": 12952.85,
+      "procurement_relevance": "Education — public education procurement"
+    },
+    {
+      "nace_code": "J",
+      "nace_label": "Information and communication",
+      "total_emissions": 6588.12,
+      "procurement_relevance": "ICT — government IT procurement"
+    }
+  ],
+  "notes": "Eurostat ENV_AC_AINAH_R2 — air emissions accounts by NACE Rev.2 industry. GHG = greenhouse gases (CO2-equivalent). Unit: thousand tonnes. Year 2024 selected as most recent with ≥15 EU27 countries reporting. Sectors ranked by sum across all reporting EU27 countries. EXIOBASE equivalences are approximate conceptual mappings. Procurement-relevant sectors identified based on EU public-procurement spending patterns (construction, energy, transport, health, ICT, waste/water are dominant categories)."
+}

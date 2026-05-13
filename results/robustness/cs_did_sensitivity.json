@@ -1,0 +1,1016 @@
+{
+  "sensitivity_1_exclude_2017_cohort": {
+    "description": "CS-DiD excluding 2017 cohort countries to confirm aggregate ATT is not an artifact of averaging with the null 2017 cohort",
+    "excluded_countries": [
+      "AT",
+      "BE",
+      "BG",
+      "CZ",
+      "ES",
+      "HR",
+      "IT",
+      "LV"
+    ],
+    "group_time_atts": [
+      {
+        "cohort": 2015,
+        "year": 2015,
+        "event_time": 0,
+        "att": 0.14973371555869613,
+        "se": 0.25913970967860755,
+        "t_stat": 0.5778107714344518,
+        "p_value": 0.6664468368844875,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2016,
+        "event_time": 1,
+        "att": -1.471855264844187,
+        "se": 0.6256544723490165,
+        "t_stat": -2.3525049846093387,
+        "p_value": 0.2558812905870975,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2017,
+        "event_time": 2,
+        "att": -3.0165788451359705,
+        "se": 1.2430063439787051,
+        "t_stat": -2.426841069435161,
+        "p_value": 0.24882796121918474,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2018,
+        "event_time": 3,
+        "att": 0.369024190215133,
+        "se": 1.8527514260269125,
+        "t_stat": 0.19917630882976994,
+        "p_value": 0.8748383730944701,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2019,
+        "event_time": 4,
+        "att": -2.314960038123961,
+        "se": 2.1392791411271,
+        "t_stat": -1.08212153973712,
+        "p_value": 0.4749039088580152,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2020,
+        "event_time": 5,
+        "att": -0.41476780449425865,
+        "se": 2.3689551465511447,
+        "t_stat": -0.17508470141281504,
+        "p_value": 0.889656063726613,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2021,
+        "event_time": 6,
+        "att": -4.674250819838697,
+        "se": 1.32078944481237,
+        "t_stat": -3.53898256697737,
+        "p_value": 0.1753171742663625,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2022,
+        "event_time": 7,
+        "att": -8.997683790059408,
+        "se": 2.0532488374181397,
+        "t_stat": -4.382169187721814,
+        "p_value": 0.14282931625750026,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2023,
+        "event_time": 8,
+        "att": -8.488783855704503,
+        "se": 2.268645302328977,
+        "t_stat": -3.74178539368405,
+        "p_value": 0.16625253887265815,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2016,
+        "event_time": 0,
+        "att": -5.46974768362964,
+        "se": 1.335411829013759,
+        "t_stat": -4.095925739754162,
+        "p_value": 0.0014831340552902091,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2017,
+        "event_time": 1,
+        "att": -9.041334764864784,
+        "se": 2.140435758663037,
+        "t_stat": -4.224062660265123,
+        "p_value": 0.0011803619540044883,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2018,
+        "event_time": 2,
+        "att": -9.498486675653359,
+        "se": 2.358933828173064,
+        "t_stat": -4.026601578311208,
+        "p_value": 0.0016794188011552051,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2019,
+        "event_time": 3,
+        "att": -10.274922705771983,
+        "se": 2.6552713400888406,
+        "t_stat": -3.8696319094184184,
+        "p_value": 0.0022293683185705053,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2020,
+        "event_time": 4,
+        "att": -9.065694006925346,
+        "se": 2.912396139223724,
+        "t_stat": -3.112795640960345,
+        "p_value": 0.008974115239101329,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2021,
+        "event_time": 5,
+        "att": -10.26581039088347,
+        "se": 2.130353601534121,
+        "t_stat": -4.818829317109987,
+        "p_value": 0.00041987538098828633,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2022,
+        "event_time": 6,
+        "att": -10.286271493268206,
+        "se": 2.7012091775094986,
+        "t_stat": -3.8080247834609007,
+        "p_value": 0.002493161690073994,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2023,
+        "event_time": 7,
+        "att": -7.419207883913631,
+        "se": 2.410803327871099,
+        "t_stat": -3.0774836744834295,
+        "p_value": 0.009582613944343775,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2018,
+        "event_time": 0,
+        "att": -8.19977501740492,
+        "se": 3.7950341476067524,
+        "t_stat": -2.1606590872379665,
+        "p_value": 0.1632920911684469,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2019,
+        "event_time": 1,
+        "att": -6.802691872492117,
+        "se": 2.9159664487124997,
+        "t_stat": -2.332911572249311,
+        "p_value": 0.14485542641556343,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2020,
+        "event_time": 2,
+        "att": -8.188606374628652,
+        "se": 4.432041134342258,
+        "t_stat": -1.8475925936648354,
+        "p_value": 0.20592194262209212,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2021,
+        "event_time": 3,
+        "att": -9.436336557091172,
+        "se": 3.6717310139130097,
+        "t_stat": -2.569996691297588,
+        "p_value": 0.12388709078058537,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2022,
+        "event_time": 4,
+        "att": -11.028362806942939,
+        "se": 4.2786351152096636,
+        "t_stat": -2.5775422558795418,
+        "p_value": 0.12329123963402684,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2023,
+        "event_time": 5,
+        "att": -6.411251812654885,
+        "se": 5.866632840299858,
+        "t_stat": -1.0928333146424056,
+        "p_value": 0.38854131446773177,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      }
+    ],
+    "aggregate": {
+      "att": -6.532548806893575,
+      "se": 0.5842845908118952,
+      "t_stat": -11.180422878885516,
+      "p_value": 1.5274380156578952e-10,
+      "ci_lower": -7.67774660488489,
+      "ci_upper": -5.387351008902261,
+      "n_cells": 23,
+      "unit": "pp",
+      "by_cohort": {
+        "2015": {
+          "att": -3.2066802791585736,
+          "se": 0.5744764692278624,
+          "t_stat": -5.5819175387089075,
+          "p_value": 0.0005211316463585969,
+          "n_cells": 9
+        },
+        "2016": {
+          "att": -8.915184450613802,
+          "se": 0.8395384346742658,
+          "t_stat": -10.619149859497288,
+          "p_value": 1.4378882579966006e-05,
+          "n_cells": 8
+        },
+        "2018": {
+          "att": -8.34450407353578,
+          "se": 1.7380851620432818,
+          "t_stat": -4.800975381278806,
+          "p_value": 0.004879455988478029,
+          "n_cells": 6
+        }
+      }
+    }
+  },
+  "sensitivity_2_exclude_year_2018": {
+    "description": "CS-DiD excluding calendar year 2018 from the panel (data anomaly year with ~5.79M contracts)",
+    "group_time_atts": [
+      {
+        "cohort": 2015,
+        "year": 2015,
+        "event_time": 0,
+        "att": 0.14973371555869613,
+        "se": 0.25913970967860755,
+        "t_stat": 0.5778107714344518,
+        "p_value": 0.6664468368844875,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2016,
+        "event_time": 1,
+        "att": -1.471855264844187,
+        "se": 0.6256544723490165,
+        "t_stat": -2.3525049846093387,
+        "p_value": 0.2558812905870975,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2017,
+        "event_time": 2,
+        "att": -3.0165788451359705,
+        "se": 1.2430063439787051,
+        "t_stat": -2.426841069435161,
+        "p_value": 0.24882796121918474,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2019,
+        "event_time": 4,
+        "att": -2.314960038123961,
+        "se": 2.0364545817752306,
+        "t_stat": -1.136759964519292,
+        "p_value": 0.45930965292234593,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2020,
+        "event_time": 5,
+        "att": -0.41476780449425865,
+        "se": 2.4011192540767343,
+        "t_stat": -0.17273936052532426,
+        "p_value": 0.8911053201887721,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2021,
+        "event_time": 6,
+        "att": -4.674250819838697,
+        "se": 1.3474807291654016,
+        "t_stat": -3.468881386328857,
+        "p_value": 0.1786786037899696,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2022,
+        "event_time": 7,
+        "att": -8.997683790059408,
+        "se": 2.0322301752391985,
+        "t_stat": -4.427492466004918,
+        "p_value": 0.1414150618780591,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2023,
+        "event_time": 8,
+        "att": -8.488783855704503,
+        "se": 2.3013071665021796,
+        "t_stat": -3.6886791903606855,
+        "p_value": 0.16853653781482375,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2016,
+        "event_time": 0,
+        "att": -5.46974768362964,
+        "se": 1.3533216356484246,
+        "t_stat": -4.041720415567648,
+        "p_value": 0.0016344355247747695,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2017,
+        "event_time": 1,
+        "att": -9.041334764864784,
+        "se": 2.092069464683998,
+        "t_stat": -4.3217182399966125,
+        "p_value": 0.0009930993036630393,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2019,
+        "event_time": 3,
+        "att": -10.274922705771983,
+        "se": 2.802111234595402,
+        "t_stat": -3.666850401552879,
+        "p_value": 0.0032255037057552544,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2020,
+        "event_time": 4,
+        "att": -9.065694006925346,
+        "se": 2.798510764476825,
+        "t_stat": -3.2394708364182963,
+        "p_value": 0.007093596025090773,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2021,
+        "event_time": 5,
+        "att": -10.26581039088347,
+        "se": 2.0949629020554186,
+        "t_stat": -4.900234930561985,
+        "p_value": 0.00036579891597464685,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2022,
+        "event_time": 6,
+        "att": -10.286271493268206,
+        "se": 2.779793359575975,
+        "t_stat": -3.7003727121778787,
+        "p_value": 0.0030337039851856557,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2023,
+        "event_time": 7,
+        "att": -7.419207883913631,
+        "se": 2.5099757239240392,
+        "t_stat": -2.955888303299846,
+        "p_value": 0.012012075943816819,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2017,
+        "event_time": 0,
+        "att": -4.084327791583414,
+        "se": 1.3327893474217753,
+        "t_stat": -3.0644961257263748,
+        "p_value": 0.027958440223784926,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2019,
+        "event_time": 2,
+        "att": -4.600570195043217,
+        "se": 1.9117430688943757,
+        "t_stat": -2.4064793380963474,
+        "p_value": 0.061129333385916695,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2020,
+        "event_time": 3,
+        "att": -4.179816365172528,
+        "se": 2.4940066137648675,
+        "t_stat": -1.6759443788574482,
+        "p_value": 0.1545976474590517,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2021,
+        "event_time": 4,
+        "att": -2.273842412503893,
+        "se": 1.575630423790631,
+        "t_stat": -1.443131827217142,
+        "p_value": 0.20857509385628198,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2022,
+        "event_time": 5,
+        "att": -3.395355608120365,
+        "se": 1.8953447217837913,
+        "t_stat": -1.7914185050858973,
+        "p_value": 0.13322144149277526,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2023,
+        "event_time": 6,
+        "att": -0.8957219929671412,
+        "se": 2.206121235880484,
+        "t_stat": -0.406016667805498,
+        "p_value": 0.7015229016356848,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2019,
+        "event_time": 1,
+        "att": -6.802691872492117,
+        "se": 2.8837343235846125,
+        "t_stat": -2.3589870317998165,
+        "p_value": 0.142318071865906,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2020,
+        "event_time": 2,
+        "att": -8.188606374628652,
+        "se": 4.433550485000153,
+        "t_stat": -1.8469636022715479,
+        "p_value": 0.206021847225786,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2021,
+        "event_time": 3,
+        "att": -9.436336557091172,
+        "se": 3.6043347651052287,
+        "t_stat": -2.6180521988266756,
+        "p_value": 0.1201599980914087,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2022,
+        "event_time": 4,
+        "att": -11.028362806942939,
+        "se": 4.15674425194235,
+        "t_stat": -2.653125171650779,
+        "p_value": 0.117538455705342,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2023,
+        "event_time": 5,
+        "att": -6.411251812654885,
+        "se": 6.024464542208493,
+        "t_stat": -1.064202763206006,
+        "p_value": 0.39871975605012755,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      }
+    ],
+    "aggregate": {
+      "att": -5.859577670042295,
+      "se": 0.5168678056381238,
+      "t_stat": -11.33670467791677,
+      "p_value": 2.4060446386947527e-11,
+      "ci_lower": -6.872638569093018,
+      "ci_upper": -4.846516770991572,
+      "n_cells": 26,
+      "unit": "pp",
+      "by_cohort": {
+        "2015": {
+          "att": -3.653643337830286,
+          "se": 0.6015326919916797,
+          "t_stat": -6.0738898923897935,
+          "p_value": 0.0005039012820466956,
+          "n_cells": 8
+        },
+        "2016": {
+          "att": -8.831855561322437,
+          "se": 0.9069777440526501,
+          "t_stat": -9.737676165965267,
+          "p_value": 6.738633942494524e-05,
+          "n_cells": 7
+        },
+        "2017": {
+          "att": -3.238272394231759,
+          "se": 0.7922028315915605,
+          "t_stat": -4.087680913391798,
+          "p_value": 0.009468301009839383,
+          "n_cells": 6
+        },
+        "2018": {
+          "att": -8.373449884761952,
+          "se": 1.94459474901476,
+          "t_stat": -4.30601280241264,
+          "p_value": 0.012585630529505658,
+          "n_cells": 5
+        }
+      }
+    }
+  },
+  "sensitivity_3_carbon_intensity": {
+    "description": "CS-DiD with portfolio carbon intensity (kg CO2/USD) as outcome variable instead of single-bidder rate",
+    "group_time_atts": [
+      {
+        "cohort": 2015,
+        "year": 2015,
+        "event_time": 0,
+        "att": -0.02252972616215615,
+        "se": 0.012664477313634081,
+        "t_stat": -1.778970075448872,
+        "p_value": 0.3260149145449475,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2016,
+        "event_time": 1,
+        "att": -0.040658547518415855,
+        "se": 0.017069884495902462,
+        "t_stat": -2.3818876764031844,
+        "p_value": 0.2530485874861912,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2017,
+        "event_time": 2,
+        "att": -0.06514862986843095,
+        "se": 0.01856804552668177,
+        "t_stat": -3.50864229489389,
+        "p_value": 0.1767567769909195,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2018,
+        "event_time": 3,
+        "att": -0.01137567738814843,
+        "se": 0.01998995827997526,
+        "t_stat": -0.5690695912829343,
+        "p_value": 0.6706345754192314,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2019,
+        "event_time": 4,
+        "att": -0.037895919147301005,
+        "se": 0.021176601950031633,
+        "t_stat": -1.7895184145558536,
+        "p_value": 0.3244097352746015,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2020,
+        "event_time": 5,
+        "att": -0.052162513891171824,
+        "se": 0.024430700250727536,
+        "t_stat": -2.135121521521613,
+        "p_value": 0.2788487864655113,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2021,
+        "event_time": 6,
+        "att": -0.08344376656452496,
+        "se": 0.022801202675805165,
+        "t_stat": -3.659621281866368,
+        "p_value": 0.16981239124437475,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2022,
+        "event_time": 7,
+        "att": -0.07618366816003214,
+        "se": 0.021601865305030905,
+        "t_stat": -3.526717118372623,
+        "p_value": 0.17589639172087604,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2015,
+        "year": 2023,
+        "event_time": 8,
+        "att": -0.07769067606670987,
+        "se": 0.020977037308384204,
+        "t_stat": -3.7036057534997133,
+        "p_value": 0.16788840508446476,
+        "n_treated_countries": 1,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2016,
+        "event_time": 0,
+        "att": 0.010957219258697415,
+        "se": 0.00591399365294896,
+        "t_stat": 1.8527614166839181,
+        "p_value": 0.0886588017129415,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2017,
+        "event_time": 1,
+        "att": -0.006134529947742384,
+        "se": 0.012478582594040406,
+        "t_stat": -0.49160470762698233,
+        "p_value": 0.631867828698277,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2018,
+        "event_time": 2,
+        "att": 0.007690387458239634,
+        "se": 0.008825899650540054,
+        "t_stat": 0.8713431789097059,
+        "p_value": 0.4006636635009878,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2019,
+        "event_time": 3,
+        "att": 0.004115743316499332,
+        "se": 0.009864739900880054,
+        "t_stat": 0.4172176213315222,
+        "p_value": 0.6838864256536942,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2020,
+        "event_time": 4,
+        "att": 0.011739515496093755,
+        "se": 0.011829860234649374,
+        "t_stat": 0.9923629918897097,
+        "p_value": 0.3406096977025668,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2021,
+        "event_time": 5,
+        "att": 0.005454876683149479,
+        "se": 0.010485744903935676,
+        "t_stat": 0.5202183281325171,
+        "p_value": 0.6123744011890416,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2022,
+        "event_time": 6,
+        "att": 0.012418848370124969,
+        "se": 0.009899362221240814,
+        "t_stat": 1.2545099464567684,
+        "p_value": 0.23354163702864467,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2016,
+        "year": 2023,
+        "event_time": 7,
+        "att": 0.012137484589620384,
+        "se": 0.010148976632203086,
+        "t_stat": 1.1959318687470113,
+        "p_value": 0.2548202059840384,
+        "n_treated_countries": 13,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2017,
+        "event_time": 0,
+        "att": -0.01762275016560494,
+        "se": 0.009563413779520573,
+        "t_stat": -1.842725889717635,
+        "p_value": 0.1247096753987151,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2018,
+        "event_time": 1,
+        "att": 0.007547056617922321,
+        "se": 0.013343038283670923,
+        "t_stat": 0.5656175495770205,
+        "p_value": 0.5960919859534984,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2019,
+        "event_time": 2,
+        "att": -0.0022912031571534763,
+        "se": 0.010993143536390327,
+        "t_stat": -0.20842110808150227,
+        "p_value": 0.843124455541391,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2020,
+        "event_time": 3,
+        "att": 0.009275247736611869,
+        "se": 0.017228399012081515,
+        "t_stat": 0.5383696842699979,
+        "p_value": 0.6134147185284808,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2021,
+        "event_time": 4,
+        "att": 0.01205713058138791,
+        "se": 0.016249690403422022,
+        "t_stat": 0.7419914030392111,
+        "p_value": 0.49145445334629234,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2022,
+        "event_time": 5,
+        "att": 0.01767070111267638,
+        "se": 0.01680590576331054,
+        "t_stat": 1.0514578245020152,
+        "p_value": 0.3411871229741322,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2017,
+        "year": 2023,
+        "event_time": 6,
+        "att": 0.011984577155122356,
+        "se": 0.013365248413106875,
+        "t_stat": 0.8966969250919019,
+        "p_value": 0.4109719746758515,
+        "n_treated_countries": 6,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2018,
+        "event_time": 0,
+        "att": -0.12036946585722441,
+        "se": 0.05957086963678202,
+        "t_stat": -2.0206095125209034,
+        "p_value": 0.18072749014946815,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2019,
+        "event_time": 1,
+        "att": -0.07247727223711126,
+        "se": 0.03651719541415235,
+        "t_stat": -1.9847436643237524,
+        "p_value": 0.1855954748057434,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2020,
+        "event_time": 2,
+        "att": -0.11029616502759709,
+        "se": 0.05276215687202102,
+        "t_stat": -2.0904407925386668,
+        "p_value": 0.17173347676315492,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2021,
+        "event_time": 3,
+        "att": -0.1652663147334968,
+        "se": 0.07472571386876907,
+        "t_stat": -2.211639155749415,
+        "p_value": 0.15751498063056946,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2022,
+        "event_time": 4,
+        "att": -0.118727312922628,
+        "se": 0.06015582357468803,
+        "t_stat": -1.9736628287570366,
+        "p_value": 0.1871351379961598,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      },
+      {
+        "cohort": 2018,
+        "year": 2023,
+        "event_time": 5,
+        "att": -0.17427182984885026,
+        "se": 0.07856832585167023,
+        "t_stat": -2.2180926977858664,
+        "p_value": 0.15680372795173955,
+        "n_treated_countries": 3,
+        "n_control_countries": 2
+      }
+    ],
+    "aggregate": {
+      "att": -0.037716572676271806,
+      "se": 0.005670466868726611,
+      "t_stat": -6.651405175168871,
+      "p_value": 2.713377859750987e-07,
+      "ci_lower": -0.04883068773897596,
+      "ci_upper": -0.026602457613567648,
+      "n_cells": 30,
+      "unit": "kg CO2/USD",
+      "by_cohort": {
+        "2015": {
+          "att": -0.05189879164076569,
+          "se": 0.0067293532390557955,
+          "t_stat": -7.7123000973638405,
+          "p_value": 5.678584362623251e-05,
+          "n_cells": 9
+        },
+        "2016": {
+          "att": 0.007297443153085323,
+          "se": 0.0035724542528275303,
+          "t_stat": 2.042697438969172,
+          "p_value": 0.08039220332254492,
+          "n_cells": 8
+        },
+        "2017": {
+          "att": 0.00551725141156606,
+          "se": 0.005368622486956699,
+          "t_stat": 1.0276847412852108,
+          "p_value": 0.3437329661073081,
+          "n_cells": 7
+        },
+        "2018": {
+          "att": -0.12690139343781798,
+          "se": 0.025299141684093418,
+          "t_stat": -5.01603552493664,
+          "p_value": 0.00404880226658956,
+          "n_cells": 6
+        }
+      }
+    }
+  },
+  "metadata": {
+    "bootstrap_reps": 500,
+    "clustering": "country-level",
+    "aggregation": "equal-weight across (g,t) cells",
+    "base_period": "g-1 (one period before treatment)",
+    "comparison_group": "never-treated"
+  }
+}

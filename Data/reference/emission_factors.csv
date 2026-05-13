@@ -1,0 +1,16 @@
+sector,sector_name,carbon_intensity_kg_co2_per_usd,emission_factor_scope1,emission_factor_scope2,emission_factor_scope3,exiobase_code,data_quality_score
+ENERGY,Energy and Fuels,2.45,0.85,0.42,1.18,i40.11,0.92
+MINING,Mining and Extraction,1.92,0.68,0.35,0.89,i10,0.88
+CONSTRUCTION,Construction,1.85,0.52,0.28,1.05,i45,0.90
+UTILITIES,Utilities,1.85,0.72,0.65,0.48,i40,0.91
+CHEMICALS,Chemicals,1.68,0.58,0.32,0.78,i24,0.87
+TRANSPORT,Transport,1.25,0.48,0.22,0.55,i60,0.89
+MANUFACTURING,Manufacturing,0.82,0.28,0.18,0.36,i29,0.86
+AGRICULTURE,Agriculture and Food,0.82,0.35,0.12,0.35,i01,0.84
+DEFENSE,Defense and Security,0.88,0.32,0.20,0.36,i35.30,0.82
+TEXTILES,Textiles and Apparel,0.62,0.22,0.15,0.25,i17,0.85
+HEALTH,Healthcare,0.55,0.18,0.15,0.22,i85,0.88
+TECH,Technology and IT,0.42,0.12,0.18,0.12,i72,0.90
+OFFICE,Office and Printing,0.35,0.10,0.12,0.13,i22,0.86
+SERVICES,Professional Services,0.25,0.08,0.10,0.07,i74,0.88
+OTHER,Other,0.35,0.12,0.10,0.13,i93,0.80

@@ -1,0 +1,4 @@
+country,country_name,iso_alpha2,iso_alpha3,region,subregion,eprocurement_system,eprocurement_launch_date,currency_code,currency_name,gdp_per_capita_2023,population_2023,govt_effectiveness_2022,control_corruption_2022,rule_of_law_2022,regulatory_quality_2022,voice_accountability_2022,political_stability_2022,energy_intensity_mj_per_usd,renewable_share_pct,co2_per_capita_tonnes
+UA,Ukraine,UA,UKR,Europe,Eastern Europe,ProZorro,2016-01-01,UAH,Ukrainian Hryvnia,4533,37000000,-0.42,-0.85,-0.72,-0.48,-0.15,-2.45,4.82,8.2,4.12
+CO,Colombia,CO,COL,Americas,South America,SECOP II,2012-01-01,COP,Colombian Peso,6630,52000000,-0.12,-0.35,-0.28,-0.15,0.05,-0.82,2.15,78.5,1.58
+GB,United Kingdom,GB,GBR,Europe,Northern Europe,Contracts Finder,2011-01-01,GBP,British Pound,46125,67000000,1.42,1.68,1.55,1.62,1.25,0.42,2.85,42.8,4.72

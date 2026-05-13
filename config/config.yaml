@@ -1,0 +1,161 @@
+# Snakemake Workflow Configuration
+# Global Procurement Research Dataset (GPRD)
+
+# ==============================================================================
+# DATA SOURCES
+# ==============================================================================
+
+data_sources:
+  ukraine:
+    name: "ProZorro"
+    url: "https://prozorro.gov.ua/api/public/v1/"
+    format: "ocds"
+    start_date: "2016-01-01"
+    end_date: "2024-12-01"
+    thresholds:
+      goods_services: 200000  # UAH
+      works: 1500000  # UAH
+    
+  colombia:
+    name: "SECOP II"
+    url: "https://www.colombiacompra.gov.co/sites/cce_public/files/cce_documents/"
+    format: "ocds"
+    start_date: "2015-01-01"
+    end_date: "2024-12-01"
+    thresholds:
+      goods_services: 88600000  # COP (SMLMV-based)
+      works: 886000000  # COP
+    
+  uk:
+    name: "Contracts Finder"
+    url: "https://www.contractsfinder.service.gov.uk/Published/"
+    format: "ocds"
+    start_date: "2016-01-01"
+    end_date: "2024-12-01"
+    thresholds:
+      goods_services: 139000  # EUR (EU threshold)
+      works: 5350000  # EUR
+
+# ==============================================================================
+# ANALYSIS PARAMETERS
+# ==============================================================================
+
+rdd:
+  # Bandwidth selection
+  bandwidth_method: "ik"  # Imbens-Kalyanaraman optimal
+  bandwidth_multipliers: [0.5, 0.75, 1.0, 1.25, 1.5, 2.0]
+  
+  # Polynomial order
+  polynomial_order: 1  # Local linear
+  
+  # Kernel
+  kernel: "triangular"
+  
+  # Clustering
+  cluster_var: "buyer_id"
+  
+  # Covariates
+  covariates:
+    - "year"
+    - "sector"
+    - "buyer_region"
+
+did:
+  # Callaway-Sant'Anna estimator
+  estimator: "callaway_santanna"
+  
+  # Treatment dates
+  treatment_dates:
+    ukraine: "2016-04-01"  # ProZorro launch
+    colombia: "2019-01-01"  # SECOP II mandate
+    uk: "2015-10-01"  # Digital marketplace
+  
+  # Event study leads/lags
+  event_leads: 4
+  event_lags: 8
+  
+  # Control group
+  control_group: "nevertreated"
+
+mechanism_index:
+  # Text features
+  features:
+    restrictiveness:
+      keywords: ["only", "must be", "exactly", "proprietary", "specific brand"]
+      weight: 0.4
+    complexity:
+      metrics: ["flesch_kincaid", "syllable_count", "sentence_length"]
+      weight: 0.3
+    innovation:
+      keywords: ["innovative", "novel", "R&D", "prototype", "cutting-edge"]
+      weight: 0.3
+  
+  # PCA components
+  n_components: 1
+
+innovation:
+  # PatentsView API
+  patentsview_url: "https://api.patentsview.org/patents/query"
+  
+  # Matching parameters
+  fuzzy_threshold: 0.85  # Name matching score
+  
+  # Patent metrics
+  metrics:
+    - "patent_count"
+    - "citation_count"
+    - "cpc_class"
+    - "grant_date"
+
+robustness:
+  # Bootstrap
+  n_bootstrap: 1000
+  ci_level: 0.95
+  
+  # Multiple hypothesis
+  correction_method: "benjamini_hochberg"
+  
+  # Placebo cutoffs (relative to true threshold)
+  placebo_cutoffs: [-0.5, -0.25, 0.25, 0.5]
+  
+  # Leave-one-out
+  loo_variable: "country"
+
+# ==============================================================================
+# OUTPUT SETTINGS
+# ==============================================================================
+
+outputs:
+  figures:
+    format: "pdf"
+    dpi: 300
+    width: 8
+    height: 6
+  
+  tables:
+    format: "latex"
+    decimal_places: 3
+  
+  data:
+    format: "parquet"
+    compression: "snappy"
+
+# ==============================================================================
+# COMPUTATION
+# ==============================================================================
+
+resources:
+  max_threads: 8
+  max_memory_gb: 32
+  chunk_size: 100000
+
+# ==============================================================================
+# PATHS
+# ==============================================================================
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  results: "results"
+  figures: "results/figures"
+  tables: "results/tables"

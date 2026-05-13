@@ -1,0 +1,475 @@
+{
+  "within_country_sector": [
+    {
+      "country": "AT",
+      "eprtr_sector": "Chemical industry",
+      "n_sb": 4,
+      "n_mb": 6,
+      "sb_mean": 474988888.88888896,
+      "mb_mean": 446585185.1851852,
+      "premium_pct": 6.3601983778135445,
+      "t_stat": 0.09759384493621578,
+      "p_value": 0.9249970839380142
+    },
+    {
+      "country": "AT",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 47,
+      "n_mb": 41,
+      "sb_mean": 2021675844.8060076,
+      "mb_mean": 1539659971.3055952,
+      "premium_pct": 31.30664448538429,
+      "t_stat": 1.818069130883504,
+      "p_value": 0.0727483946956007
+    },
+    {
+      "country": "AT",
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 18,
+      "n_mb": 5,
+      "sb_mean": 281086964.4153958,
+      "mb_mean": 282370457.5163399,
+      "premium_pct": -0.4545422747950997,
+      "t_stat": -0.01924085365110748,
+      "p_value": 0.9853944722242971
+    },
+    {
+      "country": "AT",
+      "eprtr_sector": "Waste and wastewater management",
+      "n_sb": 15,
+      "n_mb": 76,
+      "sb_mean": 313270370.3703703,
+      "mb_mean": 316060672.5146199,
+      "premium_pct": -0.8828375014358956,
+      "t_stat": -0.38650482344741355,
+      "p_value": 0.7038289054073587
+    },
+    {
+      "country": "BE",
+      "eprtr_sector": "Chemical industry",
+      "n_sb": 3,
+      "n_mb": 6,
+      "sb_mean": 1313375000.0,
+      "mb_mean": 162888888.88888887,
+      "premium_pct": 706.3011596180083,
+      "t_stat": 1.3764882806982561,
+      "p_value": 0.3025157606435579
+    },
+    {
+      "country": "BE",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 12,
+      "n_mb": 79,
+      "sb_mean": 625777777.7777778,
+      "mb_mean": 628322784.8101267,
+      "premium_pct": -0.4050477069867758,
+      "t_stat": -1.0000000000000264,
+      "p_value": 0.3204027325541027
+    },
+    {
+      "country": "CZ",
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 48,
+      "n_mb": 21,
+      "sb_mean": 319089311.3515625,
+      "mb_mean": 370190875.0,
+      "premium_pct": -13.804112175492575,
+      "t_stat": -10.168579055108928,
+      "p_value": 1.8619893159216678e-13
+    },
+    {
+      "country": "CZ",
+      "eprtr_sector": "Production and processing of metals",
+      "n_sb": 16,
+      "n_mb": 15,
+      "sb_mean": 117000000.0,
+      "mb_mean": 2314873041.6666665,
+      "premium_pct": -94.94572713517964,
+      "t_stat": -5.291502622129181,
+      "p_value": 0.00011391365709553264
+    },
+    {
+      "country": "DE",
+      "eprtr_sector": "Chemical industry",
+      "n_sb": 98,
+      "n_mb": 170,
+      "sb_mean": 318314085.6342537,
+      "mb_mean": 893751255.8107022,
+      "premium_pct": -64.3844880144512,
+      "t_stat": -2.94231423716592,
+      "p_value": 0.0035462645418428917
+    },
+    {
+      "country": "DE",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 195,
+      "n_mb": 444,
+      "sb_mean": 459473080.99308103,
+      "mb_mean": 439380038.54695034,
+      "premium_pct": 4.573043990022691,
+      "t_stat": 0.33175326706277103,
+      "p_value": 0.7401913426942281
+    },
+    {
+      "country": "DE",
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 40,
+      "n_mb": 92,
+      "sb_mean": 300717500.0,
+      "mb_mean": 270008188.00764453,
+      "premium_pct": 11.373474344965425,
+      "t_stat": 0.6959062410180907,
+      "p_value": 0.4885474677433169
+    },
+    {
+      "country": "DE",
+      "eprtr_sector": "Other activities",
+      "n_sb": 53,
+      "n_mb": 233,
+      "sb_mean": 138870101.5965167,
+      "mb_mean": 177777938.26345327,
+      "premium_pct": -21.885638368287378,
+      "t_stat": -4.775319362576493,
+      "p_value": 6.298972231850365e-06
+    },
+    {
+      "country": "DE",
+      "eprtr_sector": "Production and processing of metals",
+      "n_sb": 7,
+      "n_mb": 9,
+      "sb_mean": 2300952380.9523807,
+      "mb_mean": 148044444.44444445,
+      "premium_pct": 1454.2308187159579,
+      "t_stat": 1.5578781525880239,
+      "p_value": 0.17027031881144533
+    },
+    {
+      "country": "DE",
+      "eprtr_sector": "Waste and wastewater management",
+      "n_sb": 72,
+      "n_mb": 233,
+      "sb_mean": 277133376.3651472,
+      "mb_mean": 358241694.6909721,
+      "premium_pct": -22.640669561311366,
+      "t_stat": -4.668477533278535,
+      "p_value": 7.5247164136484396e-06
+    },
+    {
+      "country": "DK",
+      "eprtr_sector": "Waste and wastewater management",
+      "n_sb": 9,
+      "n_mb": 59,
+      "sb_mean": 135328361.2777778,
+      "mb_mean": 158102043.10047808,
+      "premium_pct": -14.404419687497022,
+      "t_stat": -1.9348561472102483,
+      "p_value": 0.08075995224785892
+    },
+    {
+      "country": "ES",
+      "eprtr_sector": "Chemical industry",
+      "n_sb": 6,
+      "n_mb": 19,
+      "sb_mean": 138000000.0,
+      "mb_mean": 138000000.0,
+      "premium_pct": 0.0,
+      "t_stat": NaN,
+      "p_value": NaN
+    },
+    {
+      "country": "ES",
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 12,
+      "n_mb": 21,
+      "sb_mean": 403288258.038258,
+      "mb_mean": 457299843.0141288,
+      "premium_pct": -11.810978245667588,
+      "t_stat": -1.133544012095486,
+      "p_value": 0.271591667019166
+    },
+    {
+      "country": "FR",
+      "eprtr_sector": "Chemical industry",
+      "n_sb": 244,
+      "n_mb": 205,
+      "sb_mean": 227194899.81785065,
+      "mb_mean": 303292547.4254742,
+      "premium_pct": -25.090510219781276,
+      "t_stat": -5.401825663655077,
+      "p_value": 1.3404580328905522e-07
+    },
+    {
+      "country": "FR",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 636,
+      "n_mb": 3016,
+      "sb_mean": 357634345.029739,
+      "mb_mean": 366049353.48578316,
+      "premium_pct": -2.2988726454262034,
+      "t_stat": -4.163508203102787,
+      "p_value": 3.504090996784984e-05
+    },
+    {
+      "country": "FR",
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 28,
+      "n_mb": 45,
+      "sb_mean": 172099376.11408204,
+      "mb_mean": 179784816.41814977,
+      "premium_pct": -4.274799428107803,
+      "t_stat": -0.3990839899089236,
+      "p_value": 0.6910338576158304
+    },
+    {
+      "country": "FR",
+      "eprtr_sector": "Waste and wastewater management",
+      "n_sb": 119,
+      "n_mb": 312,
+      "sb_mean": 159174733.61893776,
+      "mb_mean": 1012666393.9001751,
+      "premium_pct": -84.28162180776104,
+      "t_stat": -4.269578053884474,
+      "p_value": 2.6025758948091485e-05
+    },
+    {
+      "country": "HU",
+      "eprtr_sector": "Chemical industry",
+      "n_sb": 6,
+      "n_mb": 26,
+      "sb_mean": 120000000.0,
+      "mb_mean": 163943899.03846154,
+      "premium_pct": -26.80422955425271,
+      "t_stat": -1.4433756729740648,
+      "p_value": 0.16132937688956278
+    },
+    {
+      "country": "HU",
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 33,
+      "n_mb": 5,
+      "sb_mean": 118709696.63299663,
+      "mb_mean": 116644222.22222224,
+      "premium_pct": 1.770747295857827,
+      "t_stat": 3.0848502210530935,
+      "p_value": 0.004177775273368622
+    },
+    {
+      "country": "HU",
+      "eprtr_sector": "Paper and wood production and processing",
+      "n_sb": 38,
+      "n_mb": 12,
+      "sb_mean": 107236842.10526316,
+      "mb_mean": 117500000.0,
+      "premium_pct": -8.734602463605823,
+      "t_stat": -2.108673970782567,
+      "p_value": 0.05262725615365627
+    },
+    {
+      "country": "IE",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 5,
+      "n_mb": 15,
+      "sb_mean": 768677134.8214285,
+      "mb_mean": 747223234.2232773,
+      "premium_pct": 2.8711500948511164,
+      "t_stat": 1.4675987714106822,
+      "p_value": 0.16431789846960082
+    },
+    {
+      "country": "IT",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 29,
+      "n_mb": 44,
+      "sb_mean": 151418142.85714287,
+      "mb_mean": 151418142.85714284,
+      "premium_pct": 1.9682134403017114e-14,
+      "t_stat": 6.557438524302,
+      "p_value": 5.647604459481506e-08
+    },
+    {
+      "country": "LT",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 33,
+      "n_mb": 7,
+      "sb_mean": 1740714285.7142856,
+      "mb_mean": 1740714285.7142854,
+      "premium_pct": 1.3696594613959276e-14,
+      "t_stat": 2.449489742783178,
+      "p_value": 0.04982526278057675
+    },
+    {
+      "country": "LT",
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 8,
+      "n_mb": 4,
+      "sb_mean": 762624666.6666666,
+      "mb_mean": 762624666.6666666,
+      "premium_pct": 0.0,
+      "t_stat": NaN,
+      "p_value": NaN
+    },
+    {
+      "country": "LT",
+      "eprtr_sector": "Waste and wastewater management",
+      "n_sb": 22,
+      "n_mb": 12,
+      "sb_mean": 150018181.8181818,
+      "mb_mean": 197833333.33333334,
+      "premium_pct": -24.169411043884512,
+      "t_stat": -3.0545207623093096,
+      "p_value": 0.004955317392194387
+    },
+    {
+      "country": "NL",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 4,
+      "n_mb": 21,
+      "sb_mean": 1264583333.3333333,
+      "mb_mean": 1755698879.5518208,
+      "premium_pct": -27.972652482631595,
+      "t_stat": -0.7062136658737465,
+      "p_value": 0.5213215727864783
+    },
+    {
+      "country": "NL",
+      "eprtr_sector": "Waste and wastewater management",
+      "n_sb": 44,
+      "n_mb": 27,
+      "sb_mean": 541153817.5876411,
+      "mb_mean": 767543088.8404745,
+      "premium_pct": -29.495317532575154,
+      "t_stat": -2.179156992301065,
+      "p_value": 0.0384249205691484
+    },
+    {
+      "country": "PL",
+      "eprtr_sector": "Chemical industry",
+      "n_sb": 58,
+      "n_mb": 69,
+      "sb_mean": 1494409271.4672074,
+      "mb_mean": 334424043.2888131,
+      "premium_pct": 346.86059553936303,
+      "t_stat": 11.047379723332929,
+      "p_value": 7.453306216383446e-19
+    },
+    {
+      "country": "PL",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 1093,
+      "n_mb": 384,
+      "sb_mean": 6281669364.93414,
+      "mb_mean": 5961652517.361111,
+      "premium_pct": 5.367921841152242,
+      "t_stat": 3.0453799842795566,
+      "p_value": 0.0024343928310723594
+    },
+    {
+      "country": "PL",
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 20,
+      "n_mb": 60,
+      "sb_mean": 472055555.5555555,
+      "mb_mean": 519907407.4074075,
+      "premium_pct": -9.203918076580614,
+      "t_stat": -2.315952582337643,
+      "p_value": 0.02405494062540986
+    },
+    {
+      "country": "PL",
+      "eprtr_sector": "Waste and wastewater management",
+      "n_sb": 10,
+      "n_mb": 7,
+      "sb_mean": 152500000.0,
+      "mb_mean": 130728571.42857143,
+      "premium_pct": 16.65391760463337,
+      "t_stat": 0.9999999999999998,
+      "p_value": 0.35591768374958205
+    },
+    {
+      "country": "SE",
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 3,
+      "n_mb": 18,
+      "sb_mean": 109666666.66666667,
+      "mb_mean": 109666666.66666669,
+      "premium_pct": -1.3587684979192388e-14,
+      "t_stat": -4.123105625617661,
+      "p_value": 0.0007103270462445616
+    },
+    {
+      "country": "SK",
+      "eprtr_sector": "Energy sector",
+      "n_sb": 204,
+      "n_mb": 108,
+      "sb_mean": 1700600000.0,
+      "mb_mean": 1700600000.0,
+      "premium_pct": 0.0,
+      "t_stat": NaN,
+      "p_value": NaN
+    }
+  ],
+  "within_sector_pooled": [
+    {
+      "eprtr_sector": "Chemical industry",
+      "n_sb": 427,
+      "n_mb": 528,
+      "premium_pct": -7.3731844901880255,
+      "t_stat": -0.5423027381482541,
+      "p_value": 0.587746150864783
+    },
+    {
+      "eprtr_sector": "Energy sector",
+      "n_sb": 2260,
+      "n_mb": 4175,
+      "premium_pct": 259.9405695048207,
+      "t_stat": 35.841275634047506,
+      "p_value": 5.896120124246662e-236
+    },
+    {
+      "eprtr_sector": "Mineral industry",
+      "n_sb": 211,
+      "n_mb": 277,
+      "premium_pct": -9.750403653248336,
+      "t_stat": -1.5820521842328001,
+      "p_value": 0.11429868518006303
+    },
+    {
+      "eprtr_sector": "Other activities",
+      "n_sb": 53,
+      "n_mb": 233,
+      "premium_pct": -21.885638368287378,
+      "t_stat": -4.775319362576493,
+      "p_value": 6.298972231850365e-06
+    },
+    {
+      "eprtr_sector": "Paper and wood production and processing",
+      "n_sb": 40,
+      "n_mb": 41,
+      "premium_pct": -53.506419536573176,
+      "t_stat": -4.7849017838568315,
+      "p_value": 2.304198619252487e-05
+    },
+    {
+      "eprtr_sector": "Production and processing of metals",
+      "n_sb": 27,
+      "n_mb": 28,
+      "premium_pct": -45.89667427761701,
+      "t_stat": -1.256268128147629,
+      "p_value": 0.21491789578658113
+    },
+    {
+      "eprtr_sector": "Waste and wastewater management",
+      "n_sb": 318,
+      "n_mb": 730,
+      "premium_pct": -60.5833689332661,
+      "t_stat": -4.37483366289862,
+      "p_value": 1.3889153170739056e-05
+    }
+  ],
+  "summary": {
+    "n_matched_contracts": 9353,
+    "n_sb": 3338,
+    "n_mb": 6015,
+    "n_groups_tested": 37
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "estimator": "Sun-Abraham (2021) Interaction-Weighted",
+  "aggregate": {
+    "att_pp": -7.177,
+    "se_pp": 0.571,
+    "ci_lower": -8.295,
+    "ci_upper": -6.058,
+    "p_value": 2.8559440696522727e-36,
+    "n_cohort_event_cells": 30
+  },
+  "by_cohort": [
+    {
+      "cohort": 2015,
+      "n_countries": 1,
+      "att_pp": -3.207,
+      "n_event_times": 9
+    },
+    {
+      "cohort": 2016,
+      "n_countries": 13,
+      "att_pp": -8.915,
+      "n_event_times": 8
+    },
+    {
+      "cohort": 2017,
+      "n_countries": 6,
+      "att_pp": -3.222,
+      "n_event_times": 7
+    },
+    {
+      "cohort": 2018,
+      "n_countries": 3,
+      "att_pp": -8.345,
+      "n_event_times": 6
+    }
+  ],
+  "event_study": [
+    {
+      "event_time": 0,
+      "att_pp": -4.401,
+      "n_cohorts": 4
+    },
+    {
+      "event_time": 1,
+      "att_pp": -5.109,
+      "n_cohorts": 4
+    },
+    {
+      "event_time": 2,
+      "att_pp": -6.326,
+      "n_cohorts": 4
+    },
+    {
+      "event_time": 3,
+      "att_pp": -5.881,
+      "n_cohorts": 4
+    },
+    {
+      "event_time": 4,
+      "att_pp": -6.171,
+      "n_cohorts": 4
+    },
+    {
+      "event_time": 5,
+      "att_pp": -5.122,
+      "n_cohorts": 4
+    },
+    {
+      "event_time": 6,
+      "att_pp": -5.285,
+      "n_cohorts": 3
+    },
+    {
+      "event_time": 7,
+      "att_pp": -8.208,
+      "n_cohorts": 2
+    },
+    {
+      "event_time": 8,
+      "att_pp": -8.489,
+      "n_cohorts": 1
+    }
+  ],
+  "weighting_scheme": "cohort-size (n_g / N_total), equal weight over event times within cohort",
+  "controls": [
+    "NO",
+    "CH"
+  ],
+  "total_treated_countries": 23
+}

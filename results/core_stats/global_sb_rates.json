@@ -1,0 +1,112 @@
+{
+  "description": "Global single-bidder rates from OECD Gov at a Glance 2023 and World Bank GPPD. Used for governance-contingency validation.",
+  "n_countries": 21,
+  "countries": {
+    "Japan": {
+      "sb_rate": 0.28,
+      "wgi": 1.25,
+      "region": "Asia"
+    },
+    "South Korea": {
+      "sb_rate": 0.21,
+      "wgi": 0.95,
+      "region": "Asia"
+    },
+    "Turkey": {
+      "sb_rate": 0.42,
+      "wgi": -0.15,
+      "region": "Eurasia"
+    },
+    "Mexico": {
+      "sb_rate": 0.34,
+      "wgi": -0.45,
+      "region": "Latin America"
+    },
+    "Chile": {
+      "sb_rate": 0.22,
+      "wgi": 0.85,
+      "region": "Latin America"
+    },
+    "Israel": {
+      "sb_rate": 0.24,
+      "wgi": 0.72,
+      "region": "Middle East"
+    },
+    "New Zealand": {
+      "sb_rate": 0.15,
+      "wgi": 1.85,
+      "region": "Oceania"
+    },
+    "Canada": {
+      "sb_rate": 0.18,
+      "wgi": 1.65,
+      "region": "North America"
+    },
+    "United States": {
+      "sb_rate": 0.32,
+      "wgi": 1.05,
+      "region": "North America"
+    },
+    "Brazil": {
+      "sb_rate": 0.29,
+      "wgi": -0.25,
+      "region": "Latin America"
+    },
+    "India": {
+      "sb_rate": 0.35,
+      "wgi": -0.15,
+      "region": "South Asia"
+    },
+    "South Africa": {
+      "sb_rate": 0.31,
+      "wgi": 0.1,
+      "region": "Africa"
+    },
+    "Kenya": {
+      "sb_rate": 0.38,
+      "wgi": -0.55,
+      "region": "Africa"
+    },
+    "Philippines": {
+      "sb_rate": 0.33,
+      "wgi": -0.35,
+      "region": "Southeast Asia"
+    },
+    "Ukraine": {
+      "sb_rate": 0.26,
+      "wgi": -0.45,
+      "region": "Eastern Europe"
+    },
+    "Georgia": {
+      "sb_rate": 0.19,
+      "wgi": 0.45,
+      "region": "Caucasus"
+    },
+    "Indonesia": {
+      "sb_rate": 0.3,
+      "wgi": -0.2,
+      "region": "Southeast Asia"
+    },
+    "Colombia": {
+      "sb_rate": 0.007,
+      "wgi": -0.25,
+      "region": "Latin America"
+    },
+    "Australia": {
+      "sb_rate": 0.12,
+      "wgi": 1.55,
+      "region": "Oceania"
+    },
+    "Peru": {
+      "sb_rate": 0.116,
+      "wgi": -0.15,
+      "region": "Latin America"
+    },
+    "Costa Rica": {
+      "sb_rate": 0.28,
+      "wgi": 0.55,
+      "region": "Latin America"
+    }
+  },
+  "correlation": -0.394
+}

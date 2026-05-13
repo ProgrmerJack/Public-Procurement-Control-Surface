@@ -1,0 +1,211 @@
+{
+  "sample": {
+    "total_contracts": 124682,
+    "by_procurement_method": {
+      "Limited tender": 68895,
+      "Open tender": 48066,
+      "Prequalified tender": 7721
+    },
+    "by_competition_class": {
+      "limited": 76616,
+      "competitive": 48066
+    },
+    "analysis_sample_with_CI": 120139
+  },
+  "non_competitive_rate": {
+    "overall": 0.6145,
+    "by_year": {
+      "2016-17": 0.6301,
+      "2017-18": 0.598
+    }
+  },
+  "carbon_intensity_by_competition": {
+    "competitive": {
+      "mean_CI": 0.1969,
+      "std_CI": 0.2983,
+      "n": 46561
+    },
+    "limited": {
+      "mean_CI": 0.2458,
+      "std_CI": 0.2316,
+      "n": 73578
+    }
+  },
+  "carbon_premium": {
+    "competitive_mean_CI": 0.1969,
+    "non_competitive_mean_CI": 0.2458,
+    "premium": 0.0489,
+    "cohens_d": 0.1885,
+    "welch_t_stat": 30.0968,
+    "welch_p_value": 6.55e-198,
+    "n_competitive": 46561,
+    "n_non_competitive": 73578
+  },
+  "cross_sector_correlation": {
+    "n_sectors": 15,
+    "pearson_r": -0.286,
+    "pearson_p": 0.3014,
+    "spearman_rho": 0.1503,
+    "spearman_p": 0.593,
+    "sectors": [
+      {
+        "sector_label": "Defense/Medical/Lab",
+        "mean_CI": 0.25,
+        "nc_rate": 0.8401037165082109,
+        "n": 4628
+      },
+      {
+        "sector_label": "Distribution/HVAC",
+        "mean_CI": 0.3,
+        "nc_rate": 0.8165548098434005,
+        "n": 2682
+      },
+      {
+        "sector_label": "Financial services",
+        "mean_CI": 0.08,
+        "nc_rate": 0.6105234109097599,
+        "n": 10871
+      },
+      {
+        "sector_label": "Financial/legal/marketing",
+        "mean_CI": 0.1,
+        "nc_rate": 0.5342733188720173,
+        "n": 4610
+      },
+      {
+        "sector_label": "Food/beverage/personal care",
+        "mean_CI": 0.65,
+        "nc_rate": 0.39868287740628167,
+        "n": 1974
+      },
+      {
+        "sector_label": "Fuel/lubricants",
+        "mean_CI": 2.1,
+        "nc_rate": 0.3354380426203631,
+        "n": 1267
+      },
+      {
+        "sector_label": "IT/Communications",
+        "mean_CI": 0.2,
+        "nc_rate": 0.5603770518446286,
+        "n": 12306
+      },
+      {
+        "sector_label": "Industrial cleaning/transport",
+        "mean_CI": 0.8,
+        "nc_rate": 0.7632367632367633,
+        "n": 5005
+      },
+      {
+        "sector_label": "Live plants/animals/mining",
+        "mean_CI": 0.85,
+        "nc_rate": 0.8305555555555556,
+        "n": 360
+      },
+      {
+        "sector_label": "Management/HR/training",
+        "mean_CI": 0.1,
+        "nc_rate": 0.4805991272555726,
+        "n": 50874
+      },
+      {
+        "sector_label": "Manufacturing components",
+        "mean_CI": 0.4,
+        "nc_rate": 0.8362774666092202,
+        "n": 2321
+      },
+      {
+        "sector_label": "Manufacturing/commercial equip",
+        "mean_CI": 0.3499999999999999,
+        "nc_rate": 0.9364035087719298,
+        "n": 12768
+      },
+      {
+        "sector_label": "Mining/construction/building",
+        "mean_CI": 0.55,
+        "nc_rate": 0.8961334344200151,
+        "n": 1319
+      },
+      {
+        "sector_label": "Real estate/cleaning",
+        "mean_CI": 0.15,
+        "nc_rate": 0.5216881594372802,
+        "n": 2559
+      },
+      {
+        "sector_label": "Travel/food/recreation",
+        "mean_CI": 0.25,
+        "nc_rate": 0.8050037907505686,
+        "n": 6595
+      }
+    ]
+  },
+  "value_weighted_carbon": {
+    "competitive_vw_CI": 0.207,
+    "non_competitive_vw_CI": 0.2653,
+    "vw_premium": 0.0583,
+    "total_value_AUD": 88563753324.74
+  },
+  "top_agencies_by_nc_rate": [
+    {
+      "Agency Name": "Australian Sports Anti-Doping Authority (ASADA)",
+      "n": 179,
+      "nc_rate": 0.9888268156424581,
+      "mean_CI": 0.14413407821229052
+    },
+    {
+      "Agency Name": "Australian Building and Construction Commission",
+      "n": 162,
+      "nc_rate": 0.9629629629629629,
+      "mean_CI": 0.10820987654320989
+    },
+    {
+      "Agency Name": "Great Barrier Reef Marine Park Authority",
+      "n": 334,
+      "nc_rate": 0.9491017964071856,
+      "mean_CI": 0.310748502994012
+    },
+    {
+      "Agency Name": "Australian Radiation Protection and Nuclear Safety Agency (ARPANSA)",
+      "n": 175,
+      "nc_rate": 0.9314285714285714,
+      "mean_CI": 0.17965714285714288
+    },
+    {
+      "Agency Name": "Australian Aged Care Quality Agency",
+      "n": 100,
+      "nc_rate": 0.93,
+      "mean_CI": 0.187
+    },
+    {
+      "Agency Name": "Fair Work Commission",
+      "n": 467,
+      "nc_rate": 0.8972162740899358,
+      "mean_CI": 0.14055674518201286
+    },
+    {
+      "Agency Name": "Royal Australian Mint",
+      "n": 426,
+      "nc_rate": 0.8943661971830986,
+      "mean_CI": 0.3309389671361503
+    },
+    {
+      "Agency Name": "Australian Centre for International Agricultural Research",
+      "n": 443,
+      "nc_rate": 0.8871331828442438,
+      "mean_CI": 0.20997742663656885
+    },
+    {
+      "Agency Name": "Future Fund Management Agency",
+      "n": 205,
+      "nc_rate": 0.8780487804878049,
+      "mean_CI": 0.15121951219512195
+    },
+    {
+      "Agency Name": "Old Parliament House",
+      "n": 168,
+      "nc_rate": 0.8630952380952381,
+      "mean_CI": 0.2519642857142857
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "09": {
+    "name": "Energy\u2192CPV09/31",
+    "n": 18803,
+    "cv": 2.46,
+    "p25": 168000000,
+    "p50": 401000000,
+    "p75": 1143630250,
+    "iqr_variation_pct": 85.3,
+    "p10_90_variation_pct": 96.3,
+    "max_min_ratio": 1242835
+  },
+  "45": {
+    "name": "Mineral/Construction\u2192CPV45",
+    "n": 7703,
+    "cv": 1.01,
+    "p25": 147000000,
+    "p50": 317000000,
+    "p75": 613600000,
+    "iqr_variation_pct": 76.0,
+    "p10_90_variation_pct": 92.5,
+    "max_min_ratio": 23584430
+  },
+  "24": {
+    "name": "Chemical\u2192CPV24",
+    "n": 4035,
+    "cv": 1.87,
+    "p25": 135000000,
+    "p50": 240000000,
+    "p75": 623961000,
+    "iqr_variation_pct": 78.4,
+    "p10_90_variation_pct": 97.0,
+    "max_min_ratio": 27389753
+  },
+  "65": {
+    "name": "Waste/Water\u2192CPV65",
+    "n": 22017,
+    "cv": 3.91,
+    "p25": 7112000,
+    "p50": 18844000,
+    "p75": 84000000,
+    "iqr_variation_pct": 91.5,
+    "p10_90_variation_pct": 98.2,
+    "max_min_ratio": 4915185000
+  },
+  "77": {
+    "name": "Livestock\u2192CPV77",
+    "n": 4109,
+    "cv": 11.55,
+    "p25": 3218320,
+    "p50": 3920000,
+    "p75": 5432000,
+    "iqr_variation_pct": 40.8,
+    "p10_90_variation_pct": 64.2,
+    "max_min_ratio": 456903
+  },
+  "15": {
+    "name": "Food\u2192CPV15",
+    "n": 895,
+    "cv": 1.0,
+    "p25": 116000000,
+    "p50": 152000000,
+    "p75": 223089000,
+    "iqr_variation_pct": 48.0,
+    "p10_90_variation_pct": 95.2,
+    "max_min_ratio": 29974
+  }
+}

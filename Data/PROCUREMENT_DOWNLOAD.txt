@@ -1,0 +1,60 @@
+Procurement Data Download Instructions
+=======================================
+
+UKRAINE - ProZorro
+------------------
+Portal: https://prozorro.gov.ua
+API: https://api.prozorro.gov.ua/
+OCDS Endpoint: http://ocds.prozorro.openprocurement.io
+Records: ~10M+ contracts (2016-present)
+
+Download options:
+1. API (requires pagination):
+   curl "https://api.prozorro.gov.ua/api/0/contracts" > ukraine_contracts.json
+
+2. Open Contracting Data Registry:
+   https://data.open-contracting.org/en/publications/ukraine-prozorro/
+   
+3. Kaggle dataset:
+   https://www.kaggle.com/datasets/oleksastepaniuk/prozorro-public-procurement-dataset
+
+
+COLOMBIA - SECOP
+----------------
+Portal: https://www.colombiacompra.gov.co
+OCDS: https://data.open-contracting.org/en/publications/colombia/
+Records: ~5M+ contracts (2012-present)
+
+Download options:
+1. Open Contracting Data Registry (RECOMMENDED):
+   https://data.open-contracting.org/en/publications/colombia/
+   
+2. Direct API (complex):
+   https://www.colombiacompra.gov.co/sites/cce_public/files/cce_documents/
+
+
+UNITED KINGDOM - Contracts Finder
+----------------------------------
+Portal: https://www.contractsfinder.service.gov.uk
+API Docs: https://www.contractsfinder.service.gov.uk/apidocumentation/home
+Records: ~1M+ contracts (2015-present)
+
+Download options:
+1. API (requires authentication):
+   https://www.contractsfinder.service.gov.uk/Published/
+   
+2. Bulk download:
+   Contact: https://www.gov.uk/guidance/open-data-from-contracts-finder
+
+
+RECOMMENDED APPROACH
+--------------------
+For fastest setup, use the Open Contracting Data Registry:
+https://data.open-contracting.org/en/search/
+
+This provides pre-processed OCDS-compliant bulk downloads.
+
+After download, place files in:
+- Data/Ukraine/
+- Data/Colombia/
+- Data/UK/

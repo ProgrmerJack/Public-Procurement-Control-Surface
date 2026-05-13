@@ -1,0 +1,13 @@
+country,country_name,threshold_type,threshold_category,threshold_local,currency_local,threshold_usd,threshold_eur,effective_date,end_date,legal_basis
+UA,Ukraine,national,goods_services,200000,UAH,5400,4950,2016-01-01,,ProZorro Law 2015
+UA,Ukraine,national,works,1500000,UAH,40500,37125,2016-01-01,,ProZorro Law 2015
+UA,Ukraine,eu_gpa,goods_services,133000,EUR,143000,133000,2016-01-01,,EU Association Agreement
+UA,Ukraine,eu_gpa,works,5150000,EUR,5550000,5150000,2016-01-01,,EU Association Agreement
+CO,Colombia,direct,direct_purchase,28,SMMLV,7000,6420,2012-01-01,,Law 1150/2007
+CO,Colombia,minor,minor_contract,280,SMMLV,70000,64200,2012-01-01,,Law 1150/2007
+CO,Colombia,open,open_tender,1000,SMMLV,250000,229200,2012-01-01,,Law 1150/2007
+GB,United Kingdom,publication,below_threshold,12000,GBP,15000,13750,2015-02-26,,PCR 2015
+GB,United Kingdom,pcr2015,goods_services,213477,GBP,270000,247500,2022-01-01,,PCR 2015 (as amended)
+GB,United Kingdom,pcr2015,works,5336937,GBP,6800000,6233000,2022-01-01,,PCR 2015 (as amended)
+GB,United Kingdom,pcr2015,utilities_goods,426955,GBP,543000,498000,2022-01-01,,Utilities Contracts Regulations
+GB,United Kingdom,pcr2015,utilities_works,5336937,GBP,6800000,6233000,2022-01-01,,Utilities Contracts Regulations

@@ -1,0 +1,45 @@
+# Virtual environment and caches
+.venv/
+.mypy_cache/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+
+# IDE and tool configs
+.idea/
+.vscode/
+
+# Large data files (download from Zenodo)
+Data/processed/*.parquet
+Data/processed/eu_ted/yearly/
+Data/processed/eu_ted/*.parquet
+Data/processed/ocds/*.parquet
+Data/processed/exiobase/*.parquet
+Data/raw/
+Data/**/*.zip
+Data/**/*.accdb
+Data/**/*.xlsx
+Data/**/*.pdf
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+texput.log
+NC_Submission/**/*.log
+NC_Submission/**/*.out
+
+# Archives
+archive/
+
+# Legacy/obsolete
+research_paper/
+zenodo.json
+upload_procurement_to_zenodo.py
+_zenodo_upload/
+
+_zenodo_upload/
+zenodo_metadata.json
+.zenodo.json

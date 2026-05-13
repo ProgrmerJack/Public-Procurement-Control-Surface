@@ -1,0 +1,11 @@
+{
+  "pearson_r": 0.6528,
+  "pearson_p": 6.890133210287519e-05,
+  "spearman_r": 0.9107,
+  "spearman_p": 1.1684768914912635e-12,
+  "n_matched": 31,
+  "mean_exiobase": 0.4613,
+  "mean_eurostat": 0.5185,
+  "top5_overlap": 3,
+  "bottom5_overlap": 5
+}

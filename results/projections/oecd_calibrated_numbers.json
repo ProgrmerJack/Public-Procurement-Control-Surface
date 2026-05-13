@@ -1,0 +1,63 @@
+{
+  "eu_oecd": {
+    "annual_procurement_eurB": 2552,
+    "sb_rate": 0.17,
+    "sb_spending_eurB": 434,
+    "monopoly_tax_eurB": 35,
+    "total_carbon_mt": 983,
+    "sb_carbon_mt": 161,
+    "sb_pct_national_ghg": 4.5,
+    "sb_pct_ndc": 11.5
+  },
+  "dead_zones_oecd": {
+    "n_sectors": 6,
+    "val_share_pct": 5.9,
+    "procurement_eurB": 151,
+    "sb_spending_eurB": 27,
+    "monopoly_tax_eurB": 2.2,
+    "carbon_mt": 92,
+    "sb_carbon_mt": 16
+  },
+  "g20": {
+    "procurement_usdT": 11.0,
+    "sb_rate": 0.17,
+    "sb_spending_usdT": 1.9,
+    "monopoly_tax_usdB": 150,
+    "dz_procurement_usdB": 649,
+    "dz_carbon_mt": 365,
+    "green_premium_cost_usdB": 97,
+    "self_funding_ratio": 1.5
+  },
+  "country_ndc": {
+    "DE": {
+      "sb_pct_national": 3.6,
+      "sb_pct_ndc": 8.9,
+      "sb_carbon_mt": 28.9
+    },
+    "ES": {
+      "sb_pct_national": 2.0,
+      "sb_pct_ndc": 5.8,
+      "sb_carbon_mt": 5.5
+    },
+    "FR": {
+      "sb_pct_national": 4.6,
+      "sb_pct_ndc": 13.1,
+      "sb_carbon_mt": 17.3
+    },
+    "GB": {
+      "sb_pct_national": 1.8,
+      "sb_pct_ndc": 4.0,
+      "sb_carbon_mt": 7.2
+    },
+    "IT": {
+      "sb_pct_national": 2.8,
+      "sb_pct_ndc": 7.1,
+      "sb_carbon_mt": 10.0
+    },
+    "PL": {
+      "sb_pct_national": 2.4,
+      "sb_pct_ndc": 5.4,
+      "sb_carbon_mt": 8.7
+    }
+  }
+}

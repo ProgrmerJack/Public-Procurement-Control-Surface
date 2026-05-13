@@ -1,0 +1,23 @@
+{
+  "eu_covid": {
+    "finding": "EU-only premium is consistently negative across all years including COVID",
+    "pre_2019": -2.8,
+    "covid_2020": -2.32,
+    "covid_2021": -3.89,
+    "post_2022": -6.1,
+    "post_2023": -4.78,
+    "eu_sb_rate_2019": 17.1,
+    "eu_sb_rate_2020": 16.2,
+    "eu_sb_rate_2021": 16.5,
+    "eu_sb_rate_2022": 17.8,
+    "eu_sb_rate_2023": 19.9
+  },
+  "eu_covid_sb": {
+    "finding": "EU SB rate dropped during COVID (17.1->16.2%) then rose post-COVID (19.9%)",
+    "pre_covid_2019": 17.1,
+    "covid_low_2020": 16.2,
+    "post_covid_2023": 19.9,
+    "net_change": 2.8,
+    "interpretation": "COVID emergency procurement initially lowered SB rates (more competition for urgent goods), but the institutional erosion persisted, raising SB rates 2.8pp above pre-COVID levels by 2023"
+  }
+}

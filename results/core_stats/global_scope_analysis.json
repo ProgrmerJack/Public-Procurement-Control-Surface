@@ -1,0 +1,379 @@
+{
+  "austender": {
+    "n_contracts": 137550,
+    "sb_rate": 53.3,
+    "total_value_aud": 90632611264.85,
+    "total_value_eur": 54379566758.91,
+    "procurement_method_breakdown": {
+      "Limited tender": {
+        "count": 73315,
+        "pct": 53.3,
+        "single_bidder_proxy": true
+      },
+      "Open tender": {
+        "count": 55225,
+        "pct": 40.15,
+        "single_bidder_proxy": false
+      },
+      "Prequalified tender": {
+        "count": 9010,
+        "pct": 6.55,
+        "single_bidder_proxy": false
+      }
+    },
+    "top_sectors": {
+      "Professional Services": {
+        "count": 73955,
+        "pct": 53.77
+      },
+      "Components / Supplies": {
+        "count": 20711,
+        "pct": 15.06
+      },
+      "Industrial / Manufacturing": {
+        "count": 15172,
+        "pct": 11.03
+      },
+      "Travel / Facilities": {
+        "count": 10948,
+        "pct": 7.96
+      },
+      "Defence / Security": {
+        "count": 6962,
+        "pct": 5.06
+      },
+      "Food / Clothing / Services": {
+        "count": 4671,
+        "pct": 3.4
+      },
+      "IT / Electronics": {
+        "count": 2907,
+        "pct": 2.11
+      },
+      "Raw Materials / Mining": {
+        "count": 2040,
+        "pct": 1.48
+      },
+      "Lab / Measurement": {
+        "count": 184,
+        "pct": 0.13
+      }
+    },
+    "sb_rate_by_sector": {
+      "Professional Services": 39.99,
+      "Components / Supplies": 62.27,
+      "Industrial / Manufacturing": 91.41,
+      "Travel / Facilities": 58.12,
+      "Defence / Security": 76.03,
+      "Food / Clothing / Services": 41.68,
+      "IT / Electronics": 79.05,
+      "Raw Materials / Mining": 44.46,
+      "Lab / Measurement": 91.85
+    },
+    "value_distribution_aud": {
+      "min": 10000.0,
+      "q1": 20000.0,
+      "median": 46555.43,
+      "mean": 726910.15,
+      "q3": 142994.23,
+      "max": 3351400190.0
+    },
+    "sb_rate_by_year": {
+      "2016-17": 56.75,
+      "2017-18": 50.29
+    },
+    "notes": "Single-bidder proxy = Limited Tender method. 137,550 contracts from 2016-18 AusTender data."
+  },
+  "oecd": {
+    "countries": [
+      {
+        "name": "United States",
+        "iso3": "USA",
+        "year": 2021,
+        "procurement_gdp_pct": 9.89,
+        "estimated_procurement_eur_bn": 2175.8,
+        "sb_rate_literature": 15.0,
+        "dead_zone_estimate_eur_bn": 326.4
+      },
+      {
+        "name": "Japan",
+        "iso3": "JPN",
+        "year": 2021,
+        "procurement_gdp_pct": 18.13,
+        "estimated_procurement_eur_bn": 761.5,
+        "sb_rate_literature": 7.5,
+        "dead_zone_estimate_eur_bn": 57.1
+      },
+      {
+        "name": "Korea",
+        "iso3": "KOR",
+        "year": 2021,
+        "procurement_gdp_pct": 14.49,
+        "estimated_procurement_eur_bn": 217.3,
+        "sb_rate_literature": 9.0,
+        "dead_zone_estimate_eur_bn": 19.6
+      },
+      {
+        "name": "Australia",
+        "iso3": "AUS",
+        "year": 2021,
+        "procurement_gdp_pct": 17.93,
+        "estimated_procurement_eur_bn": 251.0,
+        "sb_rate_literature": 50.0,
+        "dead_zone_estimate_eur_bn": 125.5
+      },
+      {
+        "name": "Brazil",
+        "iso3": "BRA",
+        "year": 2020,
+        "procurement_gdp_pct": 15.99,
+        "estimated_procurement_eur_bn": 255.8,
+        "sb_rate_literature": 15.0,
+        "dead_zone_estimate_eur_bn": 38.4
+      },
+      {
+        "name": "India",
+        "iso3": "IND",
+        "year": null,
+        "procurement_gdp_pct": null,
+        "estimated_procurement_eur_bn": null,
+        "sb_rate_literature": 20.0,
+        "dead_zone_estimate_eur_bn": null,
+        "note": "not in OECD dataset"
+      },
+      {
+        "name": "South Africa",
+        "iso3": "ZAF",
+        "year": 2022,
+        "procurement_gdp_pct": 9.45,
+        "estimated_procurement_eur_bn": 33.1,
+        "sb_rate_literature": 30.0,
+        "dead_zone_estimate_eur_bn": 9.9
+      },
+      {
+        "name": "Canada",
+        "iso3": "CAN",
+        "year": 2022,
+        "procurement_gdp_pct": 13.28,
+        "estimated_procurement_eur_bn": 225.8,
+        "sb_rate_literature": 10.0,
+        "dead_zone_estimate_eur_bn": 22.6
+      },
+      {
+        "name": "United Kingdom",
+        "iso3": "GBR",
+        "year": 2022,
+        "procurement_gdp_pct": 14.74,
+        "estimated_procurement_eur_bn": 398.0,
+        "sb_rate_literature": 20.0,
+        "dead_zone_estimate_eur_bn": 79.6
+      }
+    ],
+    "total_dead_zone_eur_bn": 679.1,
+    "total_procurement_eur_bn": 4318.3,
+    "data_source": "OECD Government at a Glance"
+  },
+  "eurostat_ghg": {
+    "most_recent_year": 2024,
+    "country_coverage": 27,
+    "top_sectors": [
+      {
+        "nace_code": "C",
+        "nace_label": "Manufacturing",
+        "total_emissions": 688442.03,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "Manufacturing (aggregate)"
+      },
+      {
+        "nace_code": "D",
+        "nace_label": "Electricity, gas, steam and AC supply",
+        "total_emissions": 530501.39,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "Electricity, gas & steam"
+      },
+      {
+        "nace_code": "H",
+        "nace_label": "Transportation and storage",
+        "total_emissions": 474758.36,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "Transport services"
+      },
+      {
+        "nace_code": "A",
+        "nace_label": "Agriculture, forestry and fishing",
+        "total_emissions": 458633.53,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "Agriculture"
+      },
+      {
+        "nace_code": "A01",
+        "nace_label": "Crop and animal production",
+        "total_emissions": 448096.03,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "Agriculture \u00e2\u20ac\u201c crops & livestock"
+      },
+      {
+        "nace_code": "HH_HEAT",
+        "nace_label": "HH_HEAT",
+        "total_emissions": 262919.14,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "No direct EXIOBASE match"
+      },
+      {
+        "nace_code": "G-U_X_H",
+        "nace_label": "G-U_X_H",
+        "total_emissions": 225464.77,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "No direct EXIOBASE match"
+      },
+      {
+        "nace_code": "H49",
+        "nace_label": "Land transport and pipelines",
+        "total_emissions": 171766.77,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "Land transport"
+      },
+      {
+        "nace_code": "C23",
+        "nace_label": "Other non-metallic mineral products",
+        "total_emissions": 153674.67,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "Other non-metallic minerals (cement, glass)"
+      },
+      {
+        "nace_code": "E",
+        "nace_label": "Water supply; sewerage, waste",
+        "total_emissions": 148196.89,
+        "unit": "thousand tonnes CO2-eq",
+        "exiobase_equivalent": "Water & waste management"
+      }
+    ],
+    "high_emission_procurement_sectors": [
+      {
+        "nace_code": "C",
+        "nace_label": "Manufacturing",
+        "total_emissions": 688442.03,
+        "procurement_relevance": "Manufacturing \u00e2\u20ac\u201d public equipment procurement"
+      },
+      {
+        "nace_code": "D",
+        "nace_label": "Electricity, gas, steam and AC supply",
+        "total_emissions": 530501.39,
+        "procurement_relevance": "Energy supply \u00e2\u20ac\u201d public utilities procurement"
+      },
+      {
+        "nace_code": "H",
+        "nace_label": "Transportation and storage",
+        "total_emissions": 474758.36,
+        "procurement_relevance": "Transport \u00e2\u20ac\u201d public transport procurement"
+      },
+      {
+        "nace_code": "H49",
+        "nace_label": "Land transport and pipelines",
+        "total_emissions": 171766.77,
+        "procurement_relevance": "Land transport \u00e2\u20ac\u201d public transport / rail"
+      },
+      {
+        "nace_code": "C23",
+        "nace_label": "Other non-metallic mineral products",
+        "total_emissions": 153674.67,
+        "procurement_relevance": "Non-metallic minerals \u00e2\u20ac\u201d cement/glass for infrastructure"
+      },
+      {
+        "nace_code": "E",
+        "nace_label": "Water supply; sewerage, waste",
+        "total_emissions": 148196.89,
+        "procurement_relevance": "Water & waste \u00e2\u20ac\u201d municipal services"
+      },
+      {
+        "nace_code": "E37-E39",
+        "nace_label": "Sewerage; waste management",
+        "total_emissions": 143589.73,
+        "procurement_relevance": "Waste management \u00e2\u20ac\u201d municipal contracts"
+      },
+      {
+        "nace_code": "C24",
+        "nace_label": "Basic metals",
+        "total_emissions": 141858.54,
+        "procurement_relevance": "Basic metals \u00e2\u20ac\u201d infrastructure materials"
+      },
+      {
+        "nace_code": "H50",
+        "nace_label": "Water transport",
+        "total_emissions": 138487.72,
+        "procurement_relevance": "Water transport \u00e2\u20ac\u201d public maritime / ports"
+      },
+      {
+        "nace_code": "H51",
+        "nace_label": "Air transport",
+        "total_emissions": 137310.82,
+        "procurement_relevance": "Air transport \u00e2\u20ac\u201d government air-travel contracts"
+      },
+      {
+        "nace_code": "C20",
+        "nace_label": "Chemicals and chemical products",
+        "total_emissions": 128018.91,
+        "procurement_relevance": "Chemicals \u00e2\u20ac\u201d government supplies (cleaning, etc.)"
+      },
+      {
+        "nace_code": "C19",
+        "nace_label": "Coke and refined petroleum",
+        "total_emissions": 118599.55,
+        "procurement_relevance": "Petroleum \u00e2\u20ac\u201d government fuel procurement"
+      },
+      {
+        "nace_code": "F",
+        "nace_label": "Construction",
+        "total_emissions": 56059.81,
+        "procurement_relevance": "Construction \u00e2\u20ac\u201d largest single public-procurement sector"
+      },
+      {
+        "nace_code": "C10-C12",
+        "nace_label": "Food products, beverages and tobacco",
+        "total_emissions": 55002.49,
+        "procurement_relevance": "Food \u00e2\u20ac\u201d public catering / school meals"
+      },
+      {
+        "nace_code": "B",
+        "nace_label": "Mining and quarrying",
+        "total_emissions": 43647.6,
+        "procurement_relevance": "Mining \u00e2\u20ac\u201d raw material extraction for public works"
+      },
+      {
+        "nace_code": "Q",
+        "nace_label": "Human health and social work",
+        "total_emissions": 26490.27,
+        "procurement_relevance": "Health \u00e2\u20ac\u201d public health procurement"
+      },
+      {
+        "nace_code": "O",
+        "nace_label": "Public administration and defence",
+        "total_emissions": 23984.92,
+        "procurement_relevance": "Public admin \u00e2\u20ac\u201d in-house government operations"
+      },
+      {
+        "nace_code": "P",
+        "nace_label": "Education",
+        "total_emissions": 12952.85,
+        "procurement_relevance": "Education \u00e2\u20ac\u201d public education procurement"
+      },
+      {
+        "nace_code": "J",
+        "nace_label": "Information and communication",
+        "total_emissions": 6588.12,
+        "procurement_relevance": "ICT \u00e2\u20ac\u201d government IT procurement"
+      }
+    ],
+    "notes": "Eurostat ENV_AC_AINAH_R2 air emissions accounts by NACE sector."
+  },
+  "summary": {
+    "key_findings": [
+      "Australia non-competitive rate (53.3%) is 1.8x the EU average (~30%), confirming dead-zone vulnerability extends beyond Europe.",
+      "Across 8 major non-EU economies, estimated EUR 679bn in annual procurement occurs in competitive dead zones.",
+      "Combined with EU dead-zone exposure (~EUR 260bn from paper), global dead-zone procurement exceeds EUR 900bn annually.",
+      "High-emission sectors (Manufacturing, Energy, Transport) are also major procurement sectors, amplifying carbon intensity risks.",
+      "Sector variation is dramatic: Industrial/Manufacturing SB rate (91.4%) vs Professional Services (40.0%) in Australia.",
+      "Construction has low direct emissions but high scope-3 exposure, making procurement competition in this sector critical for embodied carbon."
+    ]
+  }
+}

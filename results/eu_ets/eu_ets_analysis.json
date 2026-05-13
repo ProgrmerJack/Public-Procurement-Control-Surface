@@ -1,0 +1,10 @@
+{
+  "total_records": 8351,
+  "total_installations": 8351,
+  "n_sectors": 30,
+  "n_countries": 32,
+  "mean_within_sector_cv": 1.17,
+  "country_sector_groups": 526,
+  "groups_with_variation": 526,
+  "mean_within_group_cv": 0.31
+}

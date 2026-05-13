@@ -1,0 +1,187 @@
+# Country-Threshold Mappings for GPRD
+# Maps procurement thresholds to applicable regulations
+
+countries:
+  # ===========================================================================
+  # UKRAINE
+  # ===========================================================================
+  UA:
+    name: "Ukraine"
+    currency: "UAH"
+    data_source: "prozorro"
+    ocds_publisher: "Transparency International Ukraine"
+    
+    thresholds:
+      # National thresholds (Law on Public Procurement)
+      national:
+        goods_services:
+          amount: 200000
+          currency: "UAH"
+          effective_date: "2020-04-19"
+        works:
+          amount: 1500000
+          currency: "UAH"
+          effective_date: "2020-04-19"
+      
+      # EU thresholds (Association Agreement)
+      eu_association:
+        goods_services:
+          amount: 133000
+          currency: "EUR"
+          effective_date: "2022-01-01"
+        works:
+          amount: 5150000
+          currency: "EUR"
+          effective_date: "2022-01-01"
+    
+    procedures:
+      below_threshold: ["direct_award", "simplified"]
+      above_threshold: ["open", "selective", "competitive_dialogue"]
+    
+    reforms:
+      - name: "ProZorro Launch"
+        date: "2016-04-01"
+        type: "e_procurement"
+        mandatory: true
+      - name: "EU Integration"
+        date: "2022-01-01"
+        type: "threshold_harmonization"
+
+  # ===========================================================================
+  # COLOMBIA
+  # ===========================================================================
+  CO:
+    name: "Colombia"
+    currency: "COP"
+    data_source: "secop"
+    ocds_publisher: "Colombia Compra Eficiente"
+    
+    thresholds:
+      # Based on SMLMV (Salario Mínimo Legal Mensual Vigente)
+      national:
+        goods_services:
+          amount: 88600000  # ~60 SMLMV
+          currency: "COP"
+          effective_date: "2024-01-01"
+        works:
+          amount: 886000000  # ~600 SMLMV
+          currency: "COP"
+          effective_date: "2024-01-01"
+      
+      # Lower thresholds for direct contracting
+      direct:
+        goods_services:
+          amount: 36866667  # ~25 SMLMV
+          currency: "COP"
+    
+    procedures:
+      below_threshold: ["minima_cuantia", "seleccion_abreviada"]
+      above_threshold: ["licitacion_publica", "concurso_meritos"]
+    
+    reforms:
+      - name: "SECOP I"
+        date: "2007-01-01"
+        type: "e_procurement"
+        mandatory: true
+      - name: "SECOP II"
+        date: "2019-01-01"
+        type: "e_procurement_upgrade"
+        mandatory: true
+
+  # ===========================================================================
+  # UNITED KINGDOM
+  # ===========================================================================
+  GB:
+    name: "United Kingdom"
+    currency: "GBP"
+    data_source: "contracts_finder"
+    ocds_publisher: "Crown Commercial Service"
+    
+    thresholds:
+      # Post-Brexit national thresholds
+      national:
+        goods_services:
+          amount: 139688
+          currency: "GBP"
+          effective_date: "2024-01-01"
+        works:
+          amount: 5372609
+          currency: "GBP"
+          effective_date: "2024-01-01"
+      
+      # Lower threshold for publication
+      publication:
+        goods_services:
+          amount: 10000
+          currency: "GBP"
+    
+    procedures:
+      below_threshold: ["single_supplier", "request_for_quotation"]
+      above_threshold: ["open", "restricted", "competitive_procedure"]
+    
+    reforms:
+      - name: "Contracts Finder"
+        date: "2015-02-26"
+        type: "e_procurement"
+        mandatory: true
+      - name: "Procurement Act 2023"
+        date: "2024-10-28"
+        type: "regulatory_reform"
+
+# ===========================================================================
+# CURRENCY CONVERSION
+# ===========================================================================
+currency_conversion:
+  base_year: 2020
+  method: "ppp"  # Purchasing Power Parity
+  source: "world_bank"
+  
+  # Fixed rates for reproducibility (2020 PPP)
+  rates_to_usd:
+    UAH: 0.086
+    COP: 0.00032
+    GBP: 1.44
+    EUR: 1.18
+
+# ===========================================================================
+# SECTOR MAPPINGS
+# ===========================================================================
+sector_harmonization:
+  # Map CPV codes to broad sectors
+  cpv_to_sector:
+    "03": "agriculture"
+    "09": "energy"
+    "14": "mining"
+    "15": "food"
+    "18": "textiles"
+    "22": "printing"
+    "30": "office_equipment"
+    "31": "electrical"
+    "32": "telecom"
+    "33": "medical"
+    "34": "transport_equipment"
+    "35": "security"
+    "38": "laboratory"
+    "39": "furniture"
+    "42": "industrial_machinery"
+    "44": "construction_materials"
+    "45": "construction_works"
+    "48": "software"
+    "50": "repair_maintenance"
+    "55": "hospitality"
+    "60": "transport_services"
+    "63": "logistics"
+    "64": "postal_telecom"
+    "66": "financial_services"
+    "70": "real_estate"
+    "71": "architectural"
+    "72": "it_services"
+    "73": "research"
+    "75": "public_admin"
+    "77": "agriculture_services"
+    "79": "business_services"
+    "80": "education"
+    "85": "health_social"
+    "90": "environmental"
+    "92": "recreation"
+    "98": "other_services"

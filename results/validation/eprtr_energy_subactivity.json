@@ -1,0 +1,37 @@
+{
+  "energy_sub_activity_analysis": {
+    "description": "Within-energy-sector decomposition using E-PRTR Annex I sub-activity classifications",
+    "total_energy_matched": 6506,
+    "sb_energy": 2315,
+    "mb_energy": 4191,
+    "aggregate_energy_premium_pct": 260.0,
+    "sub_activity_results": {
+      "1a_refineries": {
+        "premium_pct": 8.7,
+        "t_stat": 3.75,
+        "p_value": 0.0002,
+        "sb_n": 1344,
+        "mb_n": 502,
+        "significant": true,
+        "interpretation": "Genuine technical channel within homogeneous industrial sub-category"
+      },
+      "1c_thermal_power": {
+        "premium_pct": -1.9,
+        "t_stat": -0.71,
+        "p_value": 0.4766,
+        "sb_n": 971,
+        "mb_n": 3689,
+        "significant": false,
+        "interpretation": "No significant difference within thermal power"
+      }
+    },
+    "within_country_within_activity": {
+      "n_groups": 15,
+      "positive": 7,
+      "negative": 8,
+      "weighted_avg_premium_pct": -0.8,
+      "interpretation": "Allocative channel dominates even at sub-activity granularity"
+    },
+    "key_finding": "The +260% aggregate energy premium is primarily sub-sector composition (allocative within energy). Within refineries specifically, +8.7% is a genuine technical channel."
+  }
+}

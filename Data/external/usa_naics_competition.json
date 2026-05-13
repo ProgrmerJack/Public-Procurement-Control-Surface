@@ -1,0 +1,196 @@
+{
+  "2digit": {
+    "21": {
+      "name": "Mining, Quarrying, Oil & Gas",
+      "carbon": "high",
+      "contracts": 1685
+    },
+    "22": {
+      "name": "Utilities",
+      "carbon": "high",
+      "contracts": 6938
+    },
+    "23": {
+      "name": "Construction",
+      "carbon": "high",
+      "contracts": 61367
+    },
+    "31": {
+      "name": "Manufacturing - Food/Textiles",
+      "carbon": "medium",
+      "contracts": 1124579
+    },
+    "32": {
+      "name": "Manufacturing - Chemical/Petroleum/Plastics",
+      "carbon": "high",
+      "contracts": 852009
+    },
+    "33": {
+      "name": "Manufacturing - Metals/Machinery/Electronics",
+      "carbon": "medium",
+      "contracts": 1474053
+    },
+    "42": {
+      "name": "Wholesale Trade",
+      "carbon": "medium",
+      "contracts": 1393105
+    },
+    "48": {
+      "name": "Transportation",
+      "carbon": "high",
+      "contracts": 28987
+    },
+    "49": {
+      "name": "Warehousing",
+      "carbon": "medium",
+      "contracts": 78345
+    },
+    "51": {
+      "name": "Information/IT",
+      "carbon": "low",
+      "contracts": 63318
+    },
+    "54": {
+      "name": "Professional/Scientific/Technical",
+      "carbon": "low",
+      "contracts": 310837
+    },
+    "56": {
+      "name": "Admin/Support/Waste Management",
+      "carbon": "medium",
+      "contracts": 97542
+    },
+    "61": {
+      "name": "Educational Services",
+      "carbon": "low",
+      "contracts": 16311
+    },
+    "62": {
+      "name": "Health Care",
+      "carbon": "low",
+      "contracts": 28362
+    },
+    "81": {
+      "name": "Other Services",
+      "carbon": "low",
+      "contracts": 35042
+    }
+  },
+  "4digit": {
+    "2361": {
+      "name": "Residential Building Construction",
+      "carbon": "high",
+      "contracts": 558
+    },
+    "2362": {
+      "name": "Nonresidential Building Construction",
+      "carbon": "high",
+      "contracts": 29443
+    },
+    "2371": {
+      "name": "Utility System Construction",
+      "carbon": "high",
+      "contracts": 3194
+    },
+    "2379": {
+      "name": "Other Heavy Construction",
+      "carbon": "high",
+      "contracts": 2856
+    },
+    "2111": {
+      "name": "Oil and Gas Extraction",
+      "carbon": "high",
+      "contracts": 389
+    },
+    "2211": {
+      "name": "Electric Power Generation",
+      "carbon": "high",
+      "contracts": 3178
+    },
+    "3241": {
+      "name": "Petroleum and Coal Products",
+      "carbon": "high",
+      "contracts": 373841
+    },
+    "3361": {
+      "name": "Motor Vehicle Manufacturing",
+      "carbon": "high",
+      "contracts": 26762
+    },
+    "4841": {
+      "name": "General Freight Trucking",
+      "carbon": "high",
+      "contracts": 401
+    },
+    "4811": {
+      "name": "Scheduled Air Transportation",
+      "carbon": "high",
+      "contracts": 496
+    },
+    "5621": {
+      "name": "Waste Collection",
+      "carbon": "high",
+      "contracts": 4695
+    },
+    "5622": {
+      "name": "Waste Treatment and Disposal",
+      "carbon": "high",
+      "contracts": 12218
+    },
+    "5411": {
+      "name": "Legal Services",
+      "carbon": "low",
+      "contracts": 6933
+    },
+    "5412": {
+      "name": "Accounting/Tax/Bookkeeping",
+      "carbon": "low",
+      "contracts": 2525
+    },
+    "5413": {
+      "name": "Architecture/Engineering Services",
+      "carbon": "low",
+      "contracts": 55488
+    },
+    "5415": {
+      "name": "Computer Systems Design",
+      "carbon": "low",
+      "contracts": 88735
+    },
+    "5416": {
+      "name": "Management/Scientific Consulting",
+      "carbon": "low",
+      "contracts": 90050
+    },
+    "5417": {
+      "name": "Scientific R&D",
+      "carbon": "low",
+      "contracts": 36761
+    },
+    "5182": {
+      "name": "Data Processing/Hosting",
+      "carbon": "low",
+      "contracts": 4127
+    },
+    "5112": {
+      "name": "Software Publishers",
+      "carbon": "low",
+      "contracts": 10164
+    },
+    "6111": {
+      "name": "Elementary and Secondary Schools",
+      "carbon": "low",
+      "contracts": 47
+    },
+    "6113": {
+      "name": "Colleges and Universities",
+      "carbon": "low",
+      "contracts": 3414
+    },
+    "6211": {
+      "name": "Offices of Physicians",
+      "carbon": "low",
+      "contracts": 4138
+    }
+  }
+}

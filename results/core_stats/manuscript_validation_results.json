@@ -1,0 +1,21 @@
+{
+  "validation_timestamp": "2026-02-02T10:04:46.727697",
+  "all_pass": true,
+  "claims": [
+    {
+      "claim": "Total contracts",
+      "expected": "21612129",
+      "actual": "21612129",
+      "passed": true
+    },
+    {
+      "claim": "Countries",
+      "expected": "27",
+      "actual": "27",
+      "passed": true
+    },
+    {
+      "claim": "Single-bidder count",
+      "expected": "2378511",
+      "actual": "2378511",
+      "passed": 

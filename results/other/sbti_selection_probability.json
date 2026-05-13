@@ -1,0 +1,52 @@
+{
+  "Construction": {
+    "cpv": 45,
+    "contracts": 99976,
+    "sb_rate": 0.021,
+    "unique_suppliers": 22884,
+    "sbti_firms": 188,
+    "p_sbti_1bidder": 0.0082,
+    "p_sbti_5bidder": 0.0404,
+    "competition_multiplier": 4.9
+  },
+  "Medical/Pharma": {
+    "cpv": 33,
+    "contracts": 36534,
+    "sb_rate": 0.074,
+    "unique_suppliers": 4390,
+    "sbti_firms": 51,
+    "p_sbti_1bidder": 0.0116,
+    "p_sbti_5bidder": 0.0568,
+    "competition_multiplier": 4.9
+  },
+  "Electrical Equipment": {
+    "cpv": 31,
+    "contracts": 8419,
+    "sb_rate": 0.044,
+    "unique_suppliers": 2895,
+    "sbti_firms": 44,
+    "p_sbti_1bidder": 0.0152,
+    "p_sbti_5bidder": 0.0737,
+    "competition_multiplier": 4.9
+  },
+  "IT Services": {
+    "cpv": 72,
+    "contracts": 33174,
+    "sb_rate": 0.03,
+    "unique_suppliers": 15682,
+    "sbti_firms": 126,
+    "p_sbti_1bidder": 0.008,
+    "p_sbti_5bidder": 0.0395,
+    "competition_multiplier": 4.9
+  },
+  "Business Services": {
+    "cpv": 79,
+    "contracts": 83652,
+    "sb_rate": 0.061,
+    "unique_suppliers": 21225,
+    "sbti_firms": 391,
+    "p_sbti_1bidder": 0.0184,
+    "p_sbti_5bidder": 0.0888,
+    "competition_multiplier": 4.8
+  }
+}

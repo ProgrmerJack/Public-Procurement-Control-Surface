@@ -1,0 +1,116 @@
+{
+  "analysis": "UK Brexit Withdrawal-of-Treatment Test",
+  "panel": [
+    {
+      "year": 2012,
+      "uk_sb_rate": 0.044071,
+      "eu_sb_rate": 0.221701,
+      "eu_control_sb_rate": 0.050266,
+      "uk_vs_eu_diff": -0.17763
+    },
+    {
+      "year": 2013,
+      "uk_sb_rate": 0.040363,
+      "eu_sb_rate": 0.211873,
+      "eu_control_sb_rate": 0.044141,
+      "uk_vs_eu_diff": -0.17151
+    },
+    {
+      "year": 2014,
+      "uk_sb_rate": 0.050139,
+      "eu_sb_rate": 0.214258,
+      "eu_control_sb_rate": 0.040557,
+      "uk_vs_eu_diff": -0.164118
+    },
+    {
+      "year": 2015,
+      "uk_sb_rate": 0.055108,
+      "eu_sb_rate": 0.222125,
+      "eu_control_sb_rate": 0.045559,
+      "uk_vs_eu_diff": -0.167017
+    },
+    {
+      "year": 2016,
+      "uk_sb_rate": 0.030942,
+      "eu_sb_rate": 0.174314,
+      "eu_control_sb_rate": 0.038267,
+      "uk_vs_eu_diff": -0.143372
+    },
+    {
+      "year": 2017,
+      "uk_sb_rate": 0.038198,
+      "eu_sb_rate": 0.167507,
+      "eu_control_sb_rate": 0.06543,
+      "uk_vs_eu_diff": -0.129309
+    },
+    {
+      "year": 2018,
+      "uk_sb_rate": 0.090771,
+      "eu_sb_rate": 0.175147,
+      "eu_control_sb_rate": 0.088948,
+      "uk_vs_eu_diff": -0.084376
+    },
+    {
+      "year": 2019,
+      "uk_sb_rate": 0.067806,
+      "eu_sb_rate": 0.171263,
+      "eu_control_sb_rate": 0.090678,
+      "uk_vs_eu_diff": -0.103457
+    },
+    {
+      "year": 2020,
+      "uk_sb_rate": 0.071045,
+      "eu_sb_rate": 0.162077,
+      "eu_control_sb_rate": 0.080208,
+      "uk_vs_eu_diff": -0.091032
+    },
+    {
+      "year": 2021,
+      "uk_sb_rate": 0.03355,
+      "eu_sb_rate": 0.164648,
+      "eu_control_sb_rate": 0.078808,
+      "uk_vs_eu_diff": -0.131097
+    },
+    {
+      "year": 2022,
+      "uk_sb_rate": 0.008228,
+      "eu_sb_rate": 0.178201,
+      "eu_control_sb_rate": 0.102115,
+      "uk_vs_eu_diff": -0.169973
+    },
+    {
+      "year": 2023,
+      "uk_sb_rate": 0.004577,
+      "eu_sb_rate": 0.198624,
+      "eu_control_sb_rate": 0.096588,
+      "uk_vs_eu_diff": -0.194046
+    }
+  ],
+  "did_uk_vs_eu_pp": -2.81698210626965,
+  "uk_change_pp": -5.150281738601854,
+  "eu_change_pp": 1.1492560227815307,
+  "relative_divergence_pp": -6.299537761383385,
+  "inflection": {
+    "uk_2020": 7.104521410093054,
+    "uk_2021": 3.355024810700366,
+    "eu_2020": 16.207717602489037,
+    "eu_2021": 16.464769797105028,
+    "dd_at_boundary": -4.00654879400868
+  },
+  "its": {
+    "uk_level_shift_pp": -4.554770691821191,
+    "uk_level_shift_t": -2.524860786958459,
+    "uk_level_shift_p": 0.035538717943041455,
+    "uk_slope_change_pp_yr": -1.8729308489975254,
+    "uk_slope_change_t": -1.6851331838242967,
+    "uk_slope_change_p": 0.1304531352396435,
+    "eu_level_shift_pp": 1.345960662816568,
+    "eu_slope_change_pp_yr": 2.520758365006084,
+    "differential_level_pp": -5.900731354637759,
+    "differential_slope_pp_yr": -4.39368921400361
+  },
+  "interpretation": {
+    "positive_divergence": false,
+    "reversal_direction": "No reversal detected"
+  }
+}

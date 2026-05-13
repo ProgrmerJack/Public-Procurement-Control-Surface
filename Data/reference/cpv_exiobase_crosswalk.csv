@@ -1,0 +1,41 @@
+cpv_division,cpv_description,exiobase_sector
+03,Agricultural products,Agriculture
+09,Petroleum and fuel products,Mining
+14,Mining and quarrying products,Mining
+15,Food and beverages,Food products
+18,Clothing and accessories,Textiles
+19,Leather and leather products,Leather
+22,Printed matter and publications,Paper
+24,Chemical products,Chemicals
+30,Office and computing machinery,Computer equipment
+31,Electrical machinery and apparatus,Electrical equipment
+32,Radio television and telecommunications equipment,Telecommunications
+33,Medical and laboratory instruments,Medical instruments
+34,Transport equipment,Motor vehicles
+35,Security and defence equipment,Weapons
+38,Laboratory and precision instruments,Precision instruments
+39,Furniture and furnishings,Furniture
+42,Industrial machinery,Machinery
+43,Mining and quarrying machinery,Mining machinery
+44,Metal structures and fabricated metal products,Metal products
+45,Construction work,Construction
+48,Software packages and information systems,Computer services
+50,Repair and maintenance services,Repair services
+55,Hotel catering and retail trade services,Hotels
+60,Transport services by road,Land transport
+63,Supporting and auxiliary transport services,Transport support
+64,Postal and telecommunications services,Post
+65,Public utilities,Utilities
+66,Financial intermediation services,Financial services
+70,Real estate services,Real estate
+71,Architectural construction engineering and inspection services,Architectural services
+72,IT services,Computer services
+73,Research and development services,R&D
+75,Administration defence and social security services,Public administration
+77,Agricultural forestry horticultural aquaculture and apicultural services,Agriculture
+79,Business services,Other business services
+80,Education and training services,Education
+85,Health and social work services,Health services
+90,Sewage refuse refuse-treatment and similar services,Water supply
+92,Recreational cultural and sporting services,Recreation
+98,Other community social and personal services,Other services

@@ -1,0 +1,15 @@
+{
+  "n_sb": 1342,
+  "n_mb": 499,
+  "premium_pct": 8.4,
+  "welch_t": 3.63,
+  "welch_p": 0.0003,
+  "bootstrap_ci_95": [
+    3.7,
+    13.4
+  ],
+  "country_matched_n": 495,
+  "country_matched_premium": 1.2,
+  "country_matched_p": 0.6774,
+  "mann_whitney_p": 0.0
+}

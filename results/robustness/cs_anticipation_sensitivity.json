@@ -1,0 +1,76 @@
+{
+  "anticipation_0": {
+    "anticipation": 0,
+    "label": "Primary specification \u2014 no anticipation (base: g-1)",
+    "aggregate": {
+      "att_pp": -7.177,
+      "se_pp": 0.601,
+      "ci_lower": -8.354,
+      "ci_upper": -5.999,
+      "p_value": 6.645625981937775e-33,
+      "n_cells": 30
+    },
+    "by_cohort": [
+      {
+        "cohort": 2015,
+        "att_pp": -3.207,
+        "n_periods": 9
+      },
+      {
+        "cohort": 2016,
+        "att_pp": -8.915,
+        "n_periods": 8
+      },
+      {
+        "cohort": 2017,
+        "att_pp": -3.222,
+        "n_periods": 7
+      },
+      {
+        "cohort": 2018,
+        "att_pp": -8.345,
+        "n_periods": 6
+      }
+    ]
+  },
+  "anticipation_1": {
+    "anticipation": 1,
+    "label": "Anticipation=1 \u2014 base period g-2, post from g-1",
+    "aggregate": {
+      "att_pp": -6.027,
+      "se_pp": 0.55,
+      "ci_lower": -7.105,
+      "ci_upper": -4.95,
+      "p_value": 5.656454477285523e-28,
+      "n_cells": 34
+    },
+    "by_cohort": [
+      {
+        "cohort": 2015,
+        "att_pp": -1.736,
+        "n_periods": 10
+      },
+      {
+        "cohort": 2016,
+        "att_pp": -8.292,
+        "n_periods": 9
+      },
+      {
+        "cohort": 2017,
+        "att_pp": -3.547,
+        "n_periods": 8
+      },
+      {
+        "cohort": 2018,
+        "att_pp": -1.126,
+        "n_periods": 7
+      }
+    ]
+  },
+  "comparison": {
+    "att_anticipation_0": -7.177,
+    "att_anticipation_1": -6.027,
+    "difference_pp": 1.15,
+    "interpretation": "less negative (primary ATT unchanged or more extreme)"
+  }
+}

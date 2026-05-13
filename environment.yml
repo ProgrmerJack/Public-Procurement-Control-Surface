@@ -1,0 +1,79 @@
+name: procurement-rdd
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python
+  - python=3.11
+  - pip>=23.0
+  
+  # Workflow
+  - snakemake>=7.32
+  
+  # Data manipulation
+  - pandas>=2.0
+  - numpy>=1.24
+  - pyarrow>=12.0
+  - fastparquet>=2023.4
+  
+  # Statistics & Econometrics
+  - scipy>=1.10
+  - statsmodels>=0.14
+  - scikit-learn>=1.2
+  
+  # NLP
+  - nltk>=3.8
+  - textstat>=0.7.3
+  
+  # Visualization
+  - matplotlib>=3.7
+  - seaborn>=0.12
+  - plotly>=5.14
+  
+  # Web & API
+  - requests>=2.31
+  - aiohttp>=3.8
+  - beautifulsoup4>=4.12
+  
+  # Progress & CLI
+  - tqdm>=4.65
+  - click>=8.1
+  - rich>=13.0
+  
+  # Testing
+  - pytest>=7.3
+  - pytest-cov>=4.1
+  - hypothesis>=6.75
+  
+  # Documentation
+  - sphinx>=6.0
+  - sphinx-rtd-theme>=1.2
+  
+  # Utilities
+  - pyyaml>=6.0
+  - python-dotenv>=1.0
+  - joblib>=1.2
+  
+  # Jupyter (optional)
+  - jupyterlab>=4.0
+  - ipykernel>=6.22
+  
+  - pip:
+    # Currency conversion
+    - forex-python>=1.8
+    - pycountry>=22.3
+    
+    # Additional NLP
+    - textblob>=0.17
+    
+    # Bootstrap & inference
+    - arch>=5.3
+    
+    # Causal inference
+    - linearmodels>=4.27
+    - doubleml>=0.6
+
+# Environment variables
+variables:
+  GPRD_DATA_DIR: "${CONDA_PREFIX}/share/gprd/data"
+  GPRD_CACHE_DIR: "${CONDA_PREFIX}/share/gprd/cache"

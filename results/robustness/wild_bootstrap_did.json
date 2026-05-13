@@ -1,0 +1,26 @@
+{
+  "staggered_twfe": {
+    "att_pp": -0.323,
+    "wild_bootstrap_p": 0.8935,
+    "boot_ci": [
+      -4.526,
+      4.488
+    ],
+    "n_clusters": 23,
+    "specification": "2016 cohort vs 2017 cohort (not-yet-treated controls)"
+  },
+  "twfe_with_colombia": {
+    "att_pp": -2.179,
+    "wild_bootstrap_p": 0.3631,
+    "boot_ci": [
+      -3.808,
+      3.839
+    ],
+    "n_clusters": 26,
+    "specification": "EU vs NO+CH+CO, 2016 omitted"
+  },
+  "permutation_inference": {
+    "rmspe_p": 0.042,
+    "source": "results/sc_permutation_inference.json"
+  }
+}

@@ -1,0 +1,876 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-27T23:43:45.087515",
+    "total_records": 46321142,
+    "n_variables": 55
+  },
+  "sample_composition": {
+    "total_records": 46321142,
+    "countries": {
+      "DE": {
+        "n_contracts": 3702530,
+        "pct_total": 7.99317512508651,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 1982085011.8157997,
+        "median_bidders": 3.0
+      },
+      "AT": {
+        "n_contracts": 230575,
+        "pct_total": 0.49777486055935327,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 4.31500747088124e+19,
+        "median_bidders": 3.0
+      },
+      "ES": {
+        "n_contracts": 1804998,
+        "pct_total": 3.8967044465354506,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 457789225609.86176,
+        "median_bidders": 3.0
+      },
+      "FR": {
+        "n_contracts": 5185269,
+        "pct_total": 11.194173494254525,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 91834652619455.75,
+        "median_bidders": 3.0
+      },
+      "CZ": {
+        "n_contracts": 907580,
+        "pct_total": 1.959321296525893,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 5056007.286112358,
+        "median_bidders": 2.0
+      },
+      "PL": {
+        "n_contracts": 6087443,
+        "pct_total": 13.141824094060548,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 1291908.9438399114,
+        "median_bidders": 2.0
+      },
+      "PT": {
+        "n_contracts": 326852,
+        "pct_total": 0.7056216360123418,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 2207628.6775621963,
+        "median_bidders": 3.0
+      },
+      "IT": {
+        "n_contracts": 1174748,
+        "pct_total": 2.536094641189978,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 1.344283582697342e+19,
+        "median_bidders": 2.0
+      },
+      "BE": {
+        "n_contracts": 422105,
+        "pct_total": 0.911257757850616,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 5.111018979770179e+24,
+        "median_bidders": 3.0
+      },
+      "NL": {
+        "n_contracts": 355472,
+        "pct_total": 0.7674076774704734,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 5.810495169061935e+19,
+        "median_bidders": 4.0
+      },
+      "GR": {
+        "n_contracts": 641664,
+        "pct_total": 1.3852508213204242,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 5562044.979088183,
+        "median_bidders": 2.0
+      },
+      "GB": {
+        "n_contracts": 1568310,
+        "pct_total": 3.3857325883718494,
+        "date_range": {
+          "start": "2016-11-18 20:15:35",
+          "end": "2025-12-05 19:45:05"
+        },
+        "mean_value_usd": 297482477.6433917,
+        "median_bidders": 0.0
+      },
+      "FI": {
+        "n_contracts": 371593,
+        "pct_total": 0.8022103600122812,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 3123093990.6966453,
+        "median_bidders": 4.0
+      },
+      "HU": {
+        "n_contracts": 371059,
+        "pct_total": 0.8010575386936704,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 1.0021389115187679e+18,
+        "median_bidders": 2.0
+      },
+      "LV": {
+        "n_contracts": 513103,
+        "pct_total": 1.107708009444154,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 1380698.224907605,
+        "median_bidders": 3.0
+      },
+      "MT": {
+        "n_contracts": 32206,
+        "pct_total": 0.0695276467924733,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 3201608.485791601,
+        "median_bidders": 3.0
+      },
+      "DK": {
+        "n_contracts": 312427,
+        "pct_total": 0.6744803485199048,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 27050162.646993034,
+        "median_bidders": 3.0
+      },
+      "SE": {
+        "n_contracts": 559818,
+        "pct_total": 1.2085582864083964,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 249715843029.3546,
+        "median_bidders": 7.0
+      },
+      "LT": {
+        "n_contracts": 899015,
+        "pct_total": 1.9408308197582866,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 7658439.37205429,
+        "median_bidders": 3.0
+      },
+      "SI": {
+        "n_contracts": 756325,
+        "pct_total": 1.6327857374500827,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 1094008.2305904417,
+        "median_bidders": 1.0
+      },
+      "CY": {
+        "n_contracts": 35155,
+        "pct_total": 0.07589407014188035,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 27996542.61554566,
+        "median_bidders": 3.0
+      },
+      "SK": {
+        "n_contracts": 184334,
+        "pct_total": 0.39794787442848456,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 9251610.476095565,
+        "median_bidders": 2.0
+      },
+      "IE": {
+        "n_contracts": 154467,
+        "pct_total": 0.33346975771884035,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 7434148629.92065,
+        "median_bidders": 8.0
+      },
+      "NO": {
+        "n_contracts": 243138,
+        "pct_total": 0.5248963853265967,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 13771741.713931972,
+        "median_bidders": 4.0
+      },
+      "LU": {
+        "n_contracts": 57899,
+        "pct_total": 0.12499475941245144,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 512612124.66631263,
+        "median_bidders": 3.0
+      },
+      "CH": {
+        "n_contracts": 152534,
+        "pct_total": 0.32929671725278276,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 4131997.101398531,
+        "median_bidders": 4.0
+      },
+      "EE": {
+        "n_contracts": 200282,
+        "pct_total": 0.4323770774045252,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 2471448.5985465744,
+        "median_bidders": 3.0
+      },
+      "IS": {
+        "n_contracts": 12143,
+        "pct_total": 0.02621481137058322,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 6723481.266676017,
+        "median_bidders": 8.0
+      },
+      "LI": {
+        "n_contracts": 1917,
+        "pct_total": 0.004138499003327681,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 2376723.9794759876,
+        "median_bidders": 3.0
+      },
+      "RO": {
+        "n_contracts": 5703525,
+        "pct_total": 12.31300601353913,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 6598034.364541622,
+        "median_bidders": 3.0
+      },
+      "BG": {
+        "n_contracts": 1292453,
+        "pct_total": 2.790201070604002,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 3527797.430574764,
+        "median_bidders": 3.0
+      },
+      "HR": {
+        "n_contracts": 374386,
+        "pct_total": 0.8082400041000717,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 4411108.663179642,
+        "median_bidders": 2.0
+      },
+      "MK": {
+        "n_contracts": 210346,
+        "pct_total": 0.45410365746164033,
+        "date_range": {
+          "start": "NaT",
+          "end": "NaT"
+        },
+        "mean_value_usd": 2009079.1728554307,
+        "median_bidders": 4.0
+      },
+      "CO": {
+        "n_contracts": 11475471,
+        "pct_total": 24.773722115918474,
+        "date_range": {
+          "start": "1938-02-08 09:00:00",
+          "end": "2099-10-22 00:00:00"
+        },
+        "mean_value_usd": 11725891523.52782,
+        "median_bidders": 0.0
+      }
+    },
+    "temporal_coverage": {
+      "by_year": {
+        "1938.0": 1,
+        "1972.0": 1,
+        "1989.0": 1,
+        "1990.0": 1,
+        "1994.0": 4,
+        "1996.0": 2,
+        "1997.0": 3,
+        "1998.0": 4,
+        "1999.0": 3,
+        "2000.0": 2,
+        "2001.0": 4,
+        "2002.0": 9,
+        "2003.0": 5,
+        "2004.0": 6,
+        "2005.0": 10,
+        "2006.0": 145121,
+        "2007.0": 470346,
+        "2008.0": 531240,
+        "2009.0": 572493,
+        "2010.0": 628869,
+        "2011.0": 929215,
+        "2012.0": 1151383,
+        "2013.0": 1347772,
+        "2014.0": 1559512,
+        "2015.0": 1797826,
+        "2016.0": 2185857,
+        "2017.0": 2778542,
+        "2018.0": 15297960,
+        "2019.0": 3763065,
+        "2020.0": 3802821,
+        "2021.0": 3878038,
+        "2022.0": 3166054,
+        "2023.0": 2192361,
+        "2024.0": 73529,
+        "2025.0": 49073,
+        "2027.0": 1,
+        "2093.0": 2,
+        "2095.0": 1,
+        "2096.0": 1,
+        "2097.0": 1,
+        "2098.0": 2,
+        "2099.0": 1
+      },
+      "start_year": 1938,
+      "end_year": 2099
+    }
+  },
+  "variable_completeness": {
+    "record_id": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "ocid": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "contract_id": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "data_source": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "country": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "country_name": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "buyer_region": {
+      "non_null": 12046070,
+      "null": 34275072,
+      "coverage_pct": 26.00555487168257,
+      "dtype": "object"
+    },
+    "is_oecd": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "boolean"
+    },
+    "tender_date": {
+      "non_null": 12046070,
+      "null": 34275072,
+      "coverage_pct": 26.00555487168257,
+      "dtype": "datetime64[ns]"
+    },
+    "award_date": {
+      "non_null": 242015,
+      "null": 46079127,
+      "coverage_pct": 0.5224720064112409,
+      "dtype": "datetime64[ns]"
+    },
+    "contract_date": {
+      "non_null": 0,
+      "null": 46321142,
+      "coverage_pct": 0.0,
+      "dtype": "datetime64[ns]"
+    },
+    "year": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "float64"
+    },
+    "month": {
+      "non_null": 39482198,
+      "null": 6838944,
+      "coverage_pct": 85.23580441950244,
+      "dtype": "float64"
+    },
+    "quarter": {
+      "non_null": 39482198,
+      "null": 6838944,
+      "coverage_pct": 85.23580441950244,
+      "dtype": "float64"
+    },
+    "year_month": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "time_to_award_days": {
+      "non_null": 243640,
+      "null": 46077502,
+      "coverage_pct": 0.5259801237197477,
+      "dtype": "float64"
+    },
+    "value_local": {
+      "non_null": 33946071,
+      "null": 12375071,
+      "coverage_pct": 73.28418414209217,
+      "dtype": "float64"
+    },
+    "currency_local": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "value_usd": {
+      "non_null": 33946071,
+      "null": 12375071,
+      "coverage_pct": 73.28418414209217,
+      "dtype": "float64"
+    },
+    "value_eur": {
+      "non_null": 33946071,
+      "null": 12375071,
+      "coverage_pct": 73.28418414209217,
+      "dtype": "float64"
+    },
+    "value_usd_2020": {
+      "non_null": 33946071,
+      "null": 12375071,
+      "coverage_pct": 73.28418414209217,
+      "dtype": "float64"
+    },
+    "log_value_usd": {
+      "non_null": 33946071,
+      "null": 12375071,
+      "coverage_pct": 73.28418414209217,
+      "dtype": "float64"
+    },
+    "estimated_value_usd": {
+      "non_null": 11699295,
+      "null": 34621847,
+      "coverage_pct": 25.256922638047225,
+      "dtype": "float64"
+    },
+    "procurement_method": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "procurement_method_category": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "is_framework": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "boolean"
+    },
+    "is_emergency": {
+      "non_null": 12046070,
+      "null": 34275072,
+      "coverage_pct": 26.00555487168257,
+      "dtype": "boolean"
+    },
+    "is_above_threshold": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "boolean"
+    },
+    "n_bidders": {
+      "non_null": 24263672,
+      "null": 22057470,
+      "coverage_pct": 52.381420129926845,
+      "dtype": "float64"
+    },
+    "single_bidder": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "boolean"
+    },
+    "competitive": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "boolean"
+    },
+    "hhi_buyer": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "float64"
+    },
+    "hhi_sector": {
+      "non_null": 12046070,
+      "null": 34275072,
+      "coverage_pct": 26.00555487168257,
+      "dtype": "float64"
+    },
+    "buyer_id": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "buyer_name": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "buyer_type": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "buyer_type_category": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "supplier_id": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "supplier_name": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "supplier_country": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "supplier_is_sme": {
+      "non_null": 45528916,
+      "null": 792226,
+      "coverage_pct": 98.28970969670824,
+      "dtype": "boolean"
+    },
+    "supplier_is_foreign": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "boolean"
+    },
+    "cpv_code": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "cpv_division": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "cpv_group": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "cpv_class": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "object"
+    },
+    "cpv_description": {
+      "non_null": 12046070,
+      "null": 34275072,
+      "coverage_pct": 26.00555487168257,
+      "dtype": "object"
+    },
+    "sector": {
+      "non_null": 12046070,
+      "null": 34275072,
+      "coverage_pct": 26.00555487168257,
+      "dtype": "object"
+    },
+    "gprd_sector": {
+      "non_null": 0,
+      "null": 46321142,
+      "coverage_pct": 0.0,
+      "dtype": "object"
+    },
+    "carbon_intensity_kg_usd": {
+      "non_null": 0,
+      "null": 46321142,
+      "coverage_pct": 0.0,
+      "dtype": "float64"
+    },
+    "carbon_footprint_kg": {
+      "non_null": 0,
+      "null": 46321142,
+      "coverage_pct": 0.0,
+      "dtype": "float64"
+    },
+    "flag_missing_value": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "bool"
+    },
+    "flag_missing_dates": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "bool"
+    },
+    "flag_outlier_value": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "bool"
+    },
+    "quality_score": {
+      "non_null": 46321142,
+      "null": 0,
+      "coverage_pct": 100.0,
+      "dtype": "float64"
+    }
+  },
+  "distributions": {
+    "value_usd": {
+      "count": 33946071,
+      "mean": 2.8663958104316177e+22,
+      "median": 70389.3798,
+      "std": 1.670006197021986e+26,
+      "min": 0.0,
+      "max": 9.729999999999999e+29,
+      "q25": 3821.4162711864406,
+      "q50": 70389.3798,
+      "q75": 813587.9049499999,
+      "q90": 5023490.5366,
+      "q95": 13655763.686199998,
+      "q99": 118394964.59399998
+    },
+    "value_eur": {
+      "count": 33946071,
+      "mean": 2.0621552974331394e+22,
+      "median": 60092.44992295839,
+      "std": 1.2014433072100666e+26,
+      "min": 0.0,
+      "max": 7e+29,
+      "q25": 3407.459351441242,
+      "q50": 60092.44992295839,
+      "q75": 698650.0,
+      "q90": 4315399.17,
+      "q95": 11774957.02,
+      "q99": 103182634.81
+    },
+    "value_local": {
+      "count": 33946071,
+      "mean": 2.062155298747821e+22,
+      "median": 939523.03,
+      "std": 1.2014433072100666e+26,
+      "min": 0.0,
+      "max": 7e+29,
+      "q25": 104400.0,
+      "q50": 939523.03,
+      "q75": 7037336.76,
+      "q90": 23943212.0,
+      "q95": 50000000.0,
+      "q99": 418172319.7999979
+    },
+    "n_bidders": {
+      "count": 24263672,
+      "mean": 3.736523309414997,
+      "median": 1.0,
+      "std": 36.84316443127264,
+      "min": 0.0,
+      "max": 93040.0,
+      "q25": 0.0,
+      "q50": 1.0,
+      "q75": 3.0,
+      "q90": 6.0,
+      "q95": 12.0,
+      "q99": 47.0
+    }
+  },
+  "outliers": {
+    "value_usd": {
+      "count": 4319955,
+      "percentage": 12.725935204695707,
+      "lower_bound": -2425478.049765254,
+      "upper_bound": 3242887.37098644,
+      "min_outlier": 3242888.4320000005,
+      "max_outlier": 9.729999999999999e+29
+    },
+    "n_bidders": {
+      "count": 1110338,
+      "percentage": 4.576133406353334,
+      "lower_bound": -9.0,
+      "upper_bound": 12.0,
+      "min_outlier": 13.0,
+      "max_outlier": 93040.0
+    }
+  },
+  "consistency_checks": {
+    "award_after_tender": {
+      "valid": 241272,
+      "invalid": 46079870,
+      "pass_rate": 0.5208679872357206
+    },
+    "positive_value": {
+      "valid": 33935154,
+      "invalid": 12385988,
+      "pass_rate": 73.26061607030327
+    },
+    "at_least_one_bidder": {
+      "valid": 12380590,
+      "invalid": 33940552,
+      "pass_rate": 26.72773050370822
+    },
+    "single_bidder_consistency": {
+      "consistent": 46321142,
+      "inconsistent": 0,
+      "pass_rate": 100.0
+    },
+    "valid_year_range": {
+      "valid": 44601877,
+      "invalid": 1719265,
+      "pass_rate": 96.28837950497852
+    }
+  },
+  "manuscript_validation": {
+    "validations": [
+      {
+        "claim": "Sample size approximately 2.3M contracts",
+        "manuscript_value": 2300000,
+        "actual_value": 46321142,
+        "difference_pct": 1913.9626956521738,
+        "within_tolerance": false
+      },
+      {
+        "claim": "Three countries (Ukraine, Colombia, UK)",
+        "manuscript_value": 3,
+        "actual_value": 34,
+        "match": false
+      },
+      {
+        "claim": "Date range 2012-2023",
+        "manuscript_value": "2012-2023",
+        "actual_value": "1938-2099",
+        "covers_period": true
+      },
+      {
+        "claim": "Average 3.2 bidders per contract",
+        "manuscript_value": 3.2,
+        "actual_value": 3.736523309414997,
+        "difference": 0.536523309414997,
+        "within_tolerance": true
+      },
+      {
+        "claim": "Single-bidder rate approximately 38%",
+        "manuscript_value": 38.0,
+        "actual_value": 7.9353894167807875,
+        "difference_pp": 30.064610583219213,
+        "within_tolerance": false
+      }
+    ],
+    "all_passed": false
+  },
+  "rdd_sample": {
+    "error": "distance_to_threshold variable not found"
+  }
+}

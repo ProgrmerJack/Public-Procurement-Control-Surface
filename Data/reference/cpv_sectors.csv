@@ -1,0 +1,44 @@
+cpv_division,cpv_description,sector,sector_name,emission_intensity_kg_co2_per_usd
+03,Agricultural and forestry products,AGRICULTURE,Agriculture and Food,0.85
+09,Petroleum products and fuels,ENERGY,Energy and Fuels,2.45
+14,Mining products,MINING,Mining and Extraction,1.92
+15,Food and beverages,AGRICULTURE,Agriculture and Food,0.78
+18,Clothing and textiles,TEXTILES,Textiles and Apparel,0.62
+22,Printed matter,OFFICE,Office and Printing,0.35
+24,Chemical products,CHEMICALS,Chemicals,1.68
+30,IT equipment,TECH,Technology and IT,0.48
+31,Electrical machinery,ENERGY,Energy and Fuels,0.72
+32,Radio and communications,TECH,Technology and IT,0.45
+33,Medical equipment,HEALTH,Healthcare,0.55
+34,Transport equipment,TRANSPORT,Transport,1.15
+35,Security equipment,DEFENSE,Defense and Security,0.88
+37,Musical instruments,OTHER,Other,0.42
+38,Laboratory equipment,TECH,Technology and IT,0.52
+39,Furniture,CONSTRUCTION,Construction,0.68
+41,Water treatment,UTILITIES,Utilities,0.95
+42,Industrial machinery,MANUFACTURING,Manufacturing,0.82
+43,Mining machinery,MINING,Mining and Extraction,0.98
+44,Construction materials,CONSTRUCTION,Construction,1.45
+45,Construction works,CONSTRUCTION,Construction,1.85
+48,Software packages,TECH,Technology and IT,0.22
+50,Repair services,SERVICES,Professional Services,0.28
+51,Installation services,SERVICES,Professional Services,0.32
+55,Hotel services,SERVICES,Professional Services,0.45
+60,Transport services,TRANSPORT,Transport,1.25
+63,Support transport services,TRANSPORT,Transport,0.95
+64,Postal services,SERVICES,Professional Services,0.38
+65,Utilities services,UTILITIES,Utilities,1.85
+66,Financial services,SERVICES,Professional Services,0.15
+70,Real estate services,CONSTRUCTION,Construction,0.42
+71,Architectural services,SERVICES,Professional Services,0.25
+72,IT services,TECH,Technology and IT,0.18
+73,R&D services,TECH,Technology and IT,0.22
+75,Public administration,SERVICES,Professional Services,0.28
+76,Oil and gas services,ENERGY,Energy and Fuels,2.15
+77,Agricultural services,AGRICULTURE,Agriculture and Food,0.72
+79,Business services,SERVICES,Professional Services,0.22
+80,Education services,SERVICES,Professional Services,0.18
+85,Health services,HEALTH,Healthcare,0.35
+90,Sewage services,UTILITIES,Utilities,0.88
+92,Recreation services,SERVICES,Professional Services,0.32
+98,Other services,OTHER,Other,0.35

@@ -1,0 +1,1094 @@
+{
+  "metadata": {
+    "analysis": "Dead Zone Threshold Sensitivity Analysis",
+    "dataset": "gprd_with_carbon.parquet",
+    "filtering": "EU context (country != \"CO\")",
+    "grouping_level": "CPV division (2-digit)",
+    "n_sectors": 48,
+    "n_tenders": 13638933,
+    "n_threshold_combinations": 25
+  },
+  "baseline_thresholds": {
+    "carbon_intensity_kg_usd": 0.39999999999999997,
+    "single_bidder_rate": 0.15450791580768336
+  },
+  "percentile_thresholds": {
+    "carbon_intensity": {
+      "50": 0.265,
+      "60": 0.30999999999999994,
+      "67": 0.39999999999999997,
+      "75": 0.4625000000000001,
+      "80": 0.5799999999999998
+    },
+    "single_bidder_rate": {
+      "25.0": 0.12195178625420164,
+      "33.3": 0.13794519596187707,
+      "50": 0.15450791580768336,
+      "67.0": 0.1696773098553498,
+      "75.0": 0.1804654363981267
+    }
+  },
+  "sector_metrics": [
+    {
+      "cpv_division": "03",
+      "mean_carbon_intensity": 0.8499999999999998,
+      "single_bidder_rate": 0.0,
+      "total_value_eur": 9803760040.322456,
+      "sb_locked_value_eur": 0.0,
+      "n_tenders": 865,
+      "n_sb_tenders": 0
+    },
+    {
+      "cpv_division": "09",
+      "mean_carbon_intensity": 1.1999999999999995,
+      "single_bidder_rate": 0.0,
+      "total_value_eur": 71767027400.19254,
+      "sb_locked_value_eur": 0.0,
+      "n_tenders": 1884,
+      "n_sb_tenders": 0
+    },
+    {
+      "cpv_division": "14",
+      "mean_carbon_intensity": 1.1999999999999997,
+      "single_bidder_rate": 0.12356222229225097,
+      "total_value_eur": 84632333520.47673,
+      "sb_locked_value_eur": 3321748711.37,
+      "n_tenders": 31733,
+      "n_sb_tenders": 3921
+    },
+    {
+      "cpv_division": "15",
+      "mean_carbon_intensity": 0.6500000000000001,
+      "single_bidder_rate": 0.1687717230433356,
+      "total_value_eur": 1514078463958.9392,
+      "sb_locked_value_eur": 21120038821.36,
+      "n_tenders": 597292,
+      "n_sb_tenders": 100806
+    },
+    {
+      "cpv_division": "16",
+      "mean_carbon_intensity": 0.19999999999999996,
+      "single_bidder_rate": 0.15785901728350377,
+      "total_value_eur": 23806365625.76782,
+      "sb_locked_value_eur": 1728355843.26,
+      "n_tenders": 22102,
+      "n_sb_tenders": 3489
+    },
+    {
+      "cpv_division": "18",
+      "mean_carbon_intensity": 0.4500000000000001,
+      "single_bidder_rate": 0.13288567322463948,
+      "total_value_eur": 323880626114.1191,
+      "sb_locked_value_eur": 13202103307.380001,
+      "n_tenders": 121074,
+      "n_sb_tenders": 16089
+    },
+    {
+      "cpv_division": "19",
+      "mean_carbon_intensity": 0.3999999999999999,
+      "single_bidder_rate": 0.11818312628903065,
+      "total_value_eur": 54022799260.536354,
+      "sb_locked_value_eur": 943546929.3399999,
+      "n_tenders": 20849,
+      "n_sb_tenders": 2464
+    },
+    {
+      "cpv_division": "22",
+      "mean_carbon_intensity": 0.5499999999999999,
+      "single_bidder_rate": 0.11675943713774363,
+      "total_value_eur": 310661677790.9371,
+      "sb_locked_value_eur": 8320238889.59,
+      "n_tenders": 60903,
+      "n_sb_tenders": 7111
+    },
+    {
+      "cpv_division": "24",
+      "mean_carbon_intensity": 0.9,
+      "single_bidder_rate": 0.14966667880951515,
+      "total_value_eur": 362689700270.82654,
+      "sb_locked_value_eur": 11402481272.34,
+      "n_tenders": 109804,
+      "n_sb_tenders": 16434
+    },
+    {
+      "cpv_division": "30",
+      "mean_carbon_intensity": 0.29999999999999993,
+      "single_bidder_rate": 0.14924041070978933,
+      "total_value_eur": 2883468987091.3984,
+      "sb_locked_value_eur": 29976041888.29,
+      "n_tenders": 357430,
+      "n_sb_tenders": 53343
+    },
+    {
+      "cpv_division": "31",
+      "mean_carbon_intensity": 0.4,
+      "single_bidder_rate": 0.1452509699691443,
+      "total_value_eur": 673355529363.2188,
+      "sb_locked_value_eur": 21830524328.06,
+      "n_tenders": 130932,
+      "n_sb_tenders": 19018
+    },
+    {
+      "cpv_division": "32",
+      "mean_carbon_intensity": 0.14999999999999997,
+      "single_bidder_rate": 0.17061985939438495,
+      "total_value_eur": 1015980060654.2411,
+      "sb_locked_value_eur": 34233788677.36,
+      "n_tenders": 108815,
+      "n_sb_tenders": 18566
+    },
+    {
+      "cpv_division": "33",
+      "mean_carbon_intensity": 0.2999999999999999,
+      "single_bidder_rate": 0.23996298842745797,
+      "total_value_eur": 54388745858778.375,
+      "sb_locked_value_eur": 328398401365.5,
+      "n_tenders": 3890675,
+      "n_sb_tenders": 933618
+    },
+    {
+      "cpv_division": "34",
+      "mean_carbon_intensity": 0.4500000000000001,
+      "single_bidder_rate": 0.18015289922624214,
+      "total_value_eur": 3972801023792.6836,
+      "sb_locked_value_eur": 181081834470.67,
+      "n_tenders": 496667,
+      "n_sb_tenders": 89476
+    },
+    {
+      "cpv_division": "35",
+      "mean_carbon_intensity": 0.5999999999999998,
+      "single_bidder_rate": 0.20446478721751496,
+      "total_value_eur": 664595423644.0826,
+      "sb_locked_value_eur": 63097004045.97,
+      "n_tenders": 83677,
+      "n_sb_tenders": 17109
+    },
+    {
+      "cpv_division": "37",
+      "mean_carbon_intensity": 0.2,
+      "single_bidder_rate": 0.12298418419662555,
+      "total_value_eur": 57409783560.84027,
+      "sb_locked_value_eur": 5969956682.2300005,
+      "n_tenders": 32183,
+      "n_sb_tenders": 3958
+    },
+    {
+      "cpv_division": "38",
+      "mean_carbon_intensity": 0.2800000000000001,
+      "single_bidder_rate": 0.23856582608664106,
+      "total_value_eur": 743064461683.5902,
+      "sb_locked_value_eur": 28130122651.489998,
+      "n_tenders": 275643,
+      "n_sb_tenders": 65759
+    },
+    {
+      "cpv_division": "39",
+      "mean_carbon_intensity": 0.29999999999999993,
+      "single_bidder_rate": 0.10557394422426433,
+      "total_value_eur": 791256775065.8982,
+      "sb_locked_value_eur": 15124053773.8,
+      "n_tenders": 275532,
+      "n_sb_tenders": 29089
+    },
+    {
+      "cpv_division": "41",
+      "mean_carbon_intensity": 0.2,
+      "single_bidder_rate": 0.33125325013000523,
+      "total_value_eur": 6684014562.418,
+      "sb_locked_value_eur": 1267574479.0299997,
+      "n_tenders": 1923,
+      "n_sb_tenders": 637
+    },
+    {
+      "cpv_division": "42",
+      "mean_carbon_intensity": 0.35,
+      "single_bidder_rate": 0.17262788166617196,
+      "total_value_eur": 199032838073.64334,
+      "sb_locked_value_eur": 13907674028.56,
+      "n_tenders": 121284,
+      "n_sb_tenders": 20937
+    },
+    {
+      "cpv_division": "43",
+      "mean_carbon_intensity": 0.3,
+      "single_bidder_rate": 0.16659311049685258,
+      "total_value_eur": 113579490794.98274,
+      "sb_locked_value_eur": 7338505580.209999,
+      "n_tenders": 43051,
+      "n_sb_tenders": 7172
+    },
+    {
+      "cpv_division": "44",
+      "mean_carbon_intensity": 0.75,
+      "single_bidder_rate": 0.1188545924269299,
+      "total_value_eur": 1391012023365.1475,
+      "sb_locked_value_eur": 41465557900.57,
+      "n_tenders": 207472,
+      "n_sb_tenders": 24659
+    },
+    {
+      "cpv_division": "45",
+      "mean_carbon_intensity": 0.5,
+      "single_bidder_rate": 0.07319580295833146,
+      "total_value_eur": 27440928152210.29,
+      "sb_locked_value_eur": 356770834178.76,
+      "n_tenders": 1152812,
+      "n_sb_tenders": 84381
+    },
+    {
+      "cpv_division": "48",
+      "mean_carbon_intensity": 0.09999999999999999,
+      "single_bidder_rate": 0.21981736763543772,
+      "total_value_eur": 1799358939362.7107,
+      "sb_locked_value_eur": 53732925140.45,
+      "n_tenders": 136668,
+      "n_sb_tenders": 30042
+    },
+    {
+      "cpv_division": "50",
+      "mean_carbon_intensity": 0.2,
+      "single_bidder_rate": 0.17915486198909203,
+      "total_value_eur": 2710109938576.878,
+      "sb_locked_value_eur": 168928839769.05002,
+      "n_tenders": 541805,
+      "n_sb_tenders": 97067
+    },
+    {
+      "cpv_division": "51",
+      "mean_carbon_intensity": 0.19999999999999998,
+      "single_bidder_rate": 0.1522105026929982,
+      "total_value_eur": 377829674207.9862,
+      "sb_locked_value_eur": 2781187768.47,
+      "n_tenders": 17824,
+      "n_sb_tenders": 2713
+    },
+    {
+      "cpv_division": "55",
+      "mean_carbon_intensity": 0.35,
+      "single_bidder_rate": 0.1329779182993895,
+      "total_value_eur": 2716637738799.2217,
+      "sb_locked_value_eur": 27986703337.59,
+      "n_tenders": 118922,
+      "n_sb_tenders": 15814
+    },
+    {
+      "cpv_division": "60",
+      "mean_carbon_intensity": 0.8499999999999999,
+      "single_bidder_rate": 0.11828373917089491,
+      "total_value_eur": 6631315843194.541,
+      "sb_locked_value_eur": 149219147392.94,
+      "n_tenders": 451330,
+      "n_sb_tenders": 53385
+    },
+    {
+      "cpv_division": "63",
+      "mean_carbon_intensity": 0.4500000000000001,
+      "single_bidder_rate": 0.1568053289223685,
+      "total_value_eur": 1217306622506.5996,
+      "sb_locked_value_eur": 35535664679.99,
+      "n_tenders": 44737,
+      "n_sb_tenders": 7015
+    },
+    {
+      "cpv_division": "64",
+      "mean_carbon_intensity": 0.19999999999999998,
+      "single_bidder_rate": 0.18866321267982958,
+      "total_value_eur": 1482206797517.251,
+      "sb_locked_value_eur": 56256826038.85,
+      "n_tenders": 84733,
+      "n_sb_tenders": 15986
+    },
+    {
+      "cpv_division": "65",
+      "mean_carbon_intensity": 0.6,
+      "single_bidder_rate": 0.21224574512245745,
+      "total_value_eur": 971968936768.9309,
+      "sb_locked_value_eur": 402617062768.56,
+      "n_tenders": 24090,
+      "n_sb_tenders": 5113
+    },
+    {
+      "cpv_division": "66",
+      "mean_carbon_intensity": 0.08,
+      "single_bidder_rate": 0.1430374486293463,
+      "total_value_eur": 1452556288776.0894,
+      "sb_locked_value_eur": 69714209596.78,
+      "n_tenders": 259876,
+      "n_sb_tenders": 37172
+    },
+    {
+      "cpv_division": "70",
+      "mean_carbon_intensity": 0.12000000000000001,
+      "single_bidder_rate": 0.10487734764277501,
+      "total_value_eur": 448809841054.78687,
+      "sb_locked_value_eur": 11156856720.62,
+      "n_tenders": 20872,
+      "n_sb_tenders": 2189
+    },
+    {
+      "cpv_division": "71",
+      "mean_carbon_intensity": 0.12000000000000002,
+      "single_bidder_rate": 0.07402591961985355,
+      "total_value_eur": 3705548031425.993,
+      "sb_locked_value_eur": 66637344545.33,
+      "n_tenders": 668374,
+      "n_sb_tenders": 49477
+    },
+    {
+      "cpv_division": "72",
+      "mean_carbon_intensity": 0.09999999999999999,
+      "single_bidder_rate": 0.19749307773552352,
+      "total_value_eur": 6475338659413.596,
+      "sb_locked_value_eur": 113509071562.39001,
+      "n_tenders": 315287,
+      "n_sb_tenders": 62267
+    },
+    {
+      "cpv_division": "73",
+      "mean_carbon_intensity": 0.12000000000000004,
+      "single_bidder_rate": 0.14195083267248215,
+      "total_value_eur": 122589249333.91827,
+      "sb_locked_value_eur": 10572890656.82,
+      "n_tenders": 60528,
+      "n_sb_tenders": 8592
+    },
+    {
+      "cpv_division": "75",
+      "mean_carbon_intensity": 0.2,
+      "single_bidder_rate": 0.16229550766034795,
+      "total_value_eur": 1436427907487.9937,
+      "sb_locked_value_eur": 26076376122.059998,
+      "n_tenders": 38510,
+      "n_sb_tenders": 6250
+    },
+    {
+      "cpv_division": "76",
+      "mean_carbon_intensity": 0.19999999999999998,
+      "single_bidder_rate": 0.3755176412125228,
+      "total_value_eur": 30104966641.66636,
+      "sb_locked_value_eur": 3691895223.5700006,
+      "n_tenders": 6037,
+      "n_sb_tenders": 2267
+    },
+    {
+      "cpv_division": "77",
+      "mean_carbon_intensity": 0.8499999999999996,
+      "single_bidder_rate": 0.1668111236796874,
+      "total_value_eur": 1320172398643.9395,
+      "sb_locked_value_eur": 20794635856.260002,
+      "n_tenders": 476497,
+      "n_sb_tenders": 79485
+    },
+    {
+      "cpv_division": "79",
+      "mean_carbon_intensity": 0.14999999999999997,
+      "single_bidder_rate": 0.10961167037060432,
+      "total_value_eur": 6889108868202.768,
+      "sb_locked_value_eur": 93826939952.72,
+      "n_tenders": 522417,
+      "n_sb_tenders": 57263
+    },
+    {
+      "cpv_division": "80",
+      "mean_carbon_intensity": 0.15,
+      "single_bidder_rate": 0.1814030479137804,
+      "total_value_eur": 1570943946295.4534,
+      "sb_locked_value_eur": 35821003969.3,
+      "n_tenders": 277895,
+      "n_sb_tenders": 50411
+    },
+    {
+      "cpv_division": "85",
+      "mean_carbon_intensity": 0.25,
+      "single_bidder_rate": 0.16548953160649577,
+      "total_value_eur": 16837758674873.24,
+      "sb_locked_value_eur": 237871693189.09003,
+      "n_tenders": 357648,
+      "n_sb_tenders": 59187
+    },
+    {
+      "cpv_division": "90",
+      "mean_carbon_intensity": 0.25,
+      "single_bidder_rate": 0.14060814512348713,
+      "total_value_eur": 3951675061169.4565,
+      "sb_locked_value_eur": 157462346128.65997,
+      "n_tenders": 708252,
+      "n_sb_tenders": 99586
+    },
+    {
+      "cpv_division": "91",
+      "mean_carbon_intensity": 0.2,
+      "single_bidder_rate": 0.16371800367644387,
+      "total_value_eur": 1292012651284.15,
+      "sb_locked_value_eur": 58205449419.02,
+      "n_tenders": 137633,
+      "n_sb_tenders": 22533
+    },
+    {
+      "cpv_division": "92",
+      "mean_carbon_intensity": 0.19999999999999998,
+      "single_bidder_rate": 0.19261984169016505,
+      "total_value_eur": 276800647198.29895,
+      "sb_locked_value_eur": 54266461077.84999,
+      "n_tenders": 69863,
+      "n_sb_tenders": 13457
+    },
+    {
+      "cpv_division": "93",
+      "mean_carbon_intensity": 0.19999999999999998,
+      "single_bidder_rate": 0.18338667549571425,
+      "total_value_eur": 2312471942146.61,
+      "sb_locked_value_eur": 81111345200.84,
+      "n_tenders": 81549,
+      "n_sb_tenders": 14955
+    },
+    {
+      "cpv_division": "98",
+      "mean_carbon_intensity": 0.19999999999999998,
+      "single_bidder_rate": 0.15086338313146153,
+      "total_value_eur": 510547595595.6092,
+      "sb_locked_value_eur": 24688626540.82,
+      "n_tenders": 72158,
+      "n_sb_tenders": 10886
+    },
+    {
+      "cpv_division": "na",
+      "mean_carbon_intensity": 0.19999999999999998,
+      "single_bidder_rate": 0.09443099273607748,
+      "total_value_eur": 3854995620.25,
+      "sb_locked_value_eur": 85089196.21000001,
+      "n_tenders": 826,
+      "n_sb_tenders": 78
+    }
+  ],
+  "sensitivity_analysis": [
+    {
+      "combination": "C50_SB25.0",
+      "carbon_pct": 0.5,
+      "carbon_threshold": 0.265,
+      "sb_pct": 0.25,
+      "sb_threshold": 0.12195178625420164,
+      "n_dead_zones": 16,
+      "dead_zone_value_eur": 72150010433805.03,
+      "sb_locked_value_eur": 1209740547113.6,
+      "dead_zone_sectors": [
+        "14",
+        "15",
+        "18",
+        "24",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35",
+        "38",
+        "42",
+        "43",
+        "55",
+        "63",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C50_SB33.3",
+      "carbon_pct": 0.5,
+      "carbon_threshold": 0.265,
+      "sb_pct": 0.333,
+      "sb_threshold": 0.13794519596187707,
+      "n_dead_zones": 13,
+      "dead_zone_value_eur": 69024859735371.21,
+      "sb_locked_value_eur": 1165229991757.26,
+      "dead_zone_sectors": [
+        "15",
+        "24",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35",
+        "38",
+        "42",
+        "43",
+        "63",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C50_SB50.0",
+      "carbon_pct": 0.5,
+      "carbon_threshold": 0.265,
+      "sb_pct": 0.5,
+      "sb_threshold": 0.15450791580768336,
+      "n_dead_zones": 10,
+      "dead_zone_value_eur": 65105345518645.76,
+      "sb_locked_value_eur": 1102020944268.57,
+      "dead_zone_sectors": [
+        "15",
+        "33",
+        "34",
+        "35",
+        "38",
+        "42",
+        "43",
+        "63",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C50_SB67.0",
+      "carbon_pct": 0.5,
+      "carbon_threshold": 0.265,
+      "sb_pct": 0.67,
+      "sb_threshold": 0.1696773098553498,
+      "n_dead_zones": 6,
+      "dead_zone_value_eur": 60940208542741.31,
+      "sb_locked_value_eur": 1017232099330.75,
+      "dead_zone_sectors": [
+        "33",
+        "34",
+        "35",
+        "38",
+        "42",
+        "65"
+      ]
+    },
+    {
+      "combination": "C50_SB75.0",
+      "carbon_pct": 0.5,
+      "carbon_threshold": 0.265,
+      "sb_pct": 0.75,
+      "sb_threshold": 0.1804654363981267,
+      "n_dead_zones": 4,
+      "dead_zone_value_eur": 56768374680874.984,
+      "sb_locked_value_eur": 822242590831.52,
+      "dead_zone_sectors": [
+        "33",
+        "35",
+        "38",
+        "65"
+      ]
+    },
+    {
+      "combination": "C60_SB25.0",
+      "carbon_pct": 0.6,
+      "carbon_threshold": 0.30999999999999994,
+      "sb_pct": 0.25,
+      "sb_threshold": 0.12195178625420164,
+      "n_dead_zones": 12,
+      "dead_zone_value_eur": 14021151635456.682,
+      "sb_locked_value_eur": 815897475628.1101,
+      "dead_zone_sectors": [
+        "14",
+        "15",
+        "18",
+        "24",
+        "31",
+        "34",
+        "35",
+        "42",
+        "55",
+        "63",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C60_SB33.3",
+      "carbon_pct": 0.6,
+      "carbon_threshold": 0.30999999999999994,
+      "sb_pct": 0.333,
+      "sb_threshold": 0.13794519596187707,
+      "n_dead_zones": 9,
+      "dead_zone_value_eur": 10896000937022.863,
+      "sb_locked_value_eur": 771386920271.77,
+      "dead_zone_sectors": [
+        "15",
+        "24",
+        "31",
+        "34",
+        "35",
+        "42",
+        "63",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C60_SB50.0",
+      "carbon_pct": 0.6,
+      "carbon_threshold": 0.30999999999999994,
+      "sb_pct": 0.5,
+      "sb_threshold": 0.15450791580768336,
+      "n_dead_zones": 7,
+      "dead_zone_value_eur": 9859955707388.82,
+      "sb_locked_value_eur": 738153914671.3701,
+      "dead_zone_sectors": [
+        "15",
+        "34",
+        "35",
+        "42",
+        "63",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C60_SB67.0",
+      "carbon_pct": 0.6,
+      "carbon_threshold": 0.30999999999999994,
+      "sb_pct": 0.67,
+      "sb_threshold": 0.1696773098553498,
+      "n_dead_zones": 4,
+      "dead_zone_value_eur": 5808398222279.341,
+      "sb_locked_value_eur": 660703575313.76,
+      "dead_zone_sectors": [
+        "34",
+        "35",
+        "42",
+        "65"
+      ]
+    },
+    {
+      "combination": "C60_SB75.0",
+      "carbon_pct": 0.6,
+      "carbon_threshold": 0.30999999999999994,
+      "sb_pct": 0.75,
+      "sb_threshold": 0.1804654363981267,
+      "n_dead_zones": 2,
+      "dead_zone_value_eur": 1636564360413.0137,
+      "sb_locked_value_eur": 465714066814.53,
+      "dead_zone_sectors": [
+        "35",
+        "65"
+      ]
+    },
+    {
+      "combination": "C67_SB25.0",
+      "carbon_pct": 0.67,
+      "carbon_threshold": 0.39999999999999997,
+      "sb_pct": 0.25,
+      "sb_threshold": 0.12195178625420164,
+      "n_dead_zones": 10,
+      "dead_zone_value_eur": 11105481058583.816,
+      "sb_locked_value_eur": 774003098261.96,
+      "dead_zone_sectors": [
+        "14",
+        "15",
+        "18",
+        "24",
+        "31",
+        "34",
+        "35",
+        "63",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C67_SB33.3",
+      "carbon_pct": 0.67,
+      "carbon_threshold": 0.39999999999999997,
+      "sb_pct": 0.333,
+      "sb_threshold": 0.13794519596187707,
+      "n_dead_zones": 8,
+      "dead_zone_value_eur": 10696968098949.22,
+      "sb_locked_value_eur": 757479246243.2101,
+      "dead_zone_sectors": [
+        "15",
+        "24",
+        "31",
+        "34",
+        "35",
+        "63",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C67_SB50.0",
+      "carbon_pct": 0.67,
+      "carbon_threshold": 0.39999999999999997,
+      "sb_pct": 0.5,
+      "sb_threshold": 0.15450791580768336,
+      "n_dead_zones": 6,
+      "dead_zone_value_eur": 9660922869315.176,
+      "sb_locked_value_eur": 724246240642.81,
+      "dead_zone_sectors": [
+        "15",
+        "34",
+        "35",
+        "63",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C67_SB67.0",
+      "carbon_pct": 0.67,
+      "carbon_threshold": 0.39999999999999997,
+      "sb_pct": 0.67,
+      "sb_threshold": 0.1696773098553498,
+      "n_dead_zones": 3,
+      "dead_zone_value_eur": 5609365384205.697,
+      "sb_locked_value_eur": 646795901285.2,
+      "dead_zone_sectors": [
+        "34",
+        "35",
+        "65"
+      ]
+    },
+    {
+      "combination": "C67_SB75.0",
+      "carbon_pct": 0.67,
+      "carbon_threshold": 0.39999999999999997,
+      "sb_pct": 0.75,
+      "sb_threshold": 0.1804654363981267,
+      "n_dead_zones": 2,
+      "dead_zone_value_eur": 1636564360413.0137,
+      "sb_locked_value_eur": 465714066814.53,
+      "dead_zone_sectors": [
+        "35",
+        "65"
+      ]
+    },
+    {
+      "combination": "C75_SB25.0",
+      "carbon_pct": 0.75,
+      "carbon_threshold": 0.4625000000000001,
+      "sb_pct": 0.25,
+      "sb_threshold": 0.12195178625420164,
+      "n_dead_zones": 6,
+      "dead_zone_value_eur": 4918137256807.195,
+      "sb_locked_value_eur": 522352971475.86,
+      "dead_zone_sectors": [
+        "14",
+        "15",
+        "24",
+        "35",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C75_SB33.3",
+      "carbon_pct": 0.75,
+      "carbon_threshold": 0.4625000000000001,
+      "sb_pct": 0.333,
+      "sb_threshold": 0.13794519596187707,
+      "n_dead_zones": 5,
+      "dead_zone_value_eur": 4833504923286.719,
+      "sb_locked_value_eur": 519031222764.49,
+      "dead_zone_sectors": [
+        "15",
+        "24",
+        "35",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C75_SB50.0",
+      "carbon_pct": 0.75,
+      "carbon_threshold": 0.4625000000000001,
+      "sb_pct": 0.5,
+      "sb_threshold": 0.15450791580768336,
+      "n_dead_zones": 4,
+      "dead_zone_value_eur": 4470815223015.893,
+      "sb_locked_value_eur": 507628741492.15,
+      "dead_zone_sectors": [
+        "15",
+        "35",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C75_SB67.0",
+      "carbon_pct": 0.75,
+      "carbon_threshold": 0.4625000000000001,
+      "sb_pct": 0.67,
+      "sb_threshold": 0.1696773098553498,
+      "n_dead_zones": 2,
+      "dead_zone_value_eur": 1636564360413.0137,
+      "sb_locked_value_eur": 465714066814.53,
+      "dead_zone_sectors": [
+        "35",
+        "65"
+      ]
+    },
+    {
+      "combination": "C75_SB75.0",
+      "carbon_pct": 0.75,
+      "carbon_threshold": 0.4625000000000001,
+      "sb_pct": 0.75,
+      "sb_threshold": 0.1804654363981267,
+      "n_dead_zones": 2,
+      "dead_zone_value_eur": 1636564360413.0137,
+      "sb_locked_value_eur": 465714066814.53,
+      "dead_zone_sectors": [
+        "35",
+        "65"
+      ]
+    },
+    {
+      "combination": "C80_SB25.0",
+      "carbon_pct": 0.8,
+      "carbon_threshold": 0.5799999999999998,
+      "sb_pct": 0.25,
+      "sb_threshold": 0.12195178625420164,
+      "n_dead_zones": 6,
+      "dead_zone_value_eur": 4918137256807.195,
+      "sb_locked_value_eur": 522352971475.86,
+      "dead_zone_sectors": [
+        "14",
+        "15",
+        "24",
+        "35",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C80_SB33.3",
+      "carbon_pct": 0.8,
+      "carbon_threshold": 0.5799999999999998,
+      "sb_pct": 0.333,
+      "sb_threshold": 0.13794519596187707,
+      "n_dead_zones": 5,
+      "dead_zone_value_eur": 4833504923286.719,
+      "sb_locked_value_eur": 519031222764.49,
+      "dead_zone_sectors": [
+        "15",
+        "24",
+        "35",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C80_SB50.0",
+      "carbon_pct": 0.8,
+      "carbon_threshold": 0.5799999999999998,
+      "sb_pct": 0.5,
+      "sb_threshold": 0.15450791580768336,
+      "n_dead_zones": 4,
+      "dead_zone_value_eur": 4470815223015.893,
+      "sb_locked_value_eur": 507628741492.15,
+      "dead_zone_sectors": [
+        "15",
+        "35",
+        "65",
+        "77"
+      ]
+    },
+    {
+      "combination": "C80_SB67.0",
+      "carbon_pct": 0.8,
+      "carbon_threshold": 0.5799999999999998,
+      "sb_pct": 0.67,
+      "sb_threshold": 0.1696773098553498,
+      "n_dead_zones": 2,
+      "dead_zone_value_eur": 1636564360413.0137,
+      "sb_locked_value_eur": 465714066814.53,
+      "dead_zone_sectors": [
+        "35",
+        "65"
+      ]
+    },
+    {
+      "combination": "C80_SB75.0",
+      "carbon_pct": 0.8,
+      "carbon_threshold": 0.5799999999999998,
+      "sb_pct": 0.75,
+      "sb_threshold": 0.1804654363981267,
+      "n_dead_zones": 2,
+      "dead_zone_value_eur": 1636564360413.0137,
+      "sb_locked_value_eur": 465714066814.53,
+      "dead_zone_sectors": [
+        "35",
+        "65"
+      ]
+    }
+  ],
+  "sector_robustness": {
+    "always_dead_zones": {
+      "count": 2,
+      "sectors": [
+        "35",
+        "65"
+      ],
+      "details": [
+        {
+          "cpv_division": "35",
+          "mean_carbon_intensity": 0.5999999999999998,
+          "single_bidder_rate": 0.20446478721751496
+        },
+        {
+          "cpv_division": "65",
+          "mean_carbon_intensity": 0.6,
+          "single_bidder_rate": 0.21224574512245745
+        }
+      ]
+    },
+    "marginal_dead_zones": {
+      "count": 14,
+      "sectors": [
+        {
+          "cpv_division": "15",
+          "appearances_out_of": [
+            15,
+            25
+          ],
+          "robustness_pct": 60.0,
+          "mean_carbon_intensity": 0.6500000000000001,
+          "single_bidder_rate": 0.1687717230433356
+        },
+        {
+          "cpv_division": "77",
+          "appearances_out_of": [
+            15,
+            25
+          ],
+          "robustness_pct": 60.0,
+          "mean_carbon_intensity": 0.8499999999999996,
+          "single_bidder_rate": 0.1668111236796874
+        },
+        {
+          "cpv_division": "34",
+          "appearances_out_of": [
+            12,
+            25
+          ],
+          "robustness_pct": 48.0,
+          "mean_carbon_intensity": 0.4500000000000001,
+          "single_bidder_rate": 0.18015289922624214
+        },
+        {
+          "cpv_division": "24",
+          "appearances_out_of": [
+            10,
+            25
+          ],
+          "robustness_pct": 40.0,
+          "mean_carbon_intensity": 0.9,
+          "single_bidder_rate": 0.14966667880951515
+        },
+        {
+          "cpv_division": "63",
+          "appearances_out_of": [
+            9,
+            25
+          ],
+          "robustness_pct": 36.0,
+          "mean_carbon_intensity": 0.4500000000000001,
+          "single_bidder_rate": 0.1568053289223685
+        },
+        {
+          "cpv_division": "42",
+          "appearances_out_of": [
+            8,
+            25
+          ],
+          "robustness_pct": 32.0,
+          "mean_carbon_intensity": 0.35,
+          "single_bidder_rate": 0.17262788166617196
+        },
+        {
+          "cpv_division": "31",
+          "appearances_out_of": [
+            6,
+            25
+          ],
+          "robustness_pct": 24.0,
+          "mean_carbon_intensity": 0.4,
+          "single_bidder_rate": 0.1452509699691443
+        },
+        {
+          "cpv_division": "14",
+          "appearances_out_of": [
+            5,
+            25
+          ],
+          "robustness_pct": 20.0,
+          "mean_carbon_intensity": 1.1999999999999997,
+          "single_bidder_rate": 0.12356222229225097
+        },
+        {
+          "cpv_division": "33",
+          "appearances_out_of": [
+            5,
+            25
+          ],
+          "robustness_pct": 20.0,
+          "mean_carbon_intensity": 0.2999999999999999,
+          "single_bidder_rate": 0.23996298842745797
+        },
+        {
+          "cpv_division": "38",
+          "appearances_out_of": [
+            5,
+            25
+          ],
+          "robustness_pct": 20.0,
+          "mean_carbon_intensity": 0.2800000000000001,
+          "single_bidder_rate": 0.23856582608664106
+        },
+        {
+          "cpv_division": "18",
+          "appearances_out_of": [
+            3,
+            25
+          ],
+          "robustness_pct": 12.0,
+          "mean_carbon_intensity": 0.4500000000000001,
+          "single_bidder_rate": 0.13288567322463948
+        },
+        {
+          "cpv_division": "43",
+          "appearances_out_of": [
+            3,
+            25
+          ],
+          "robustness_pct": 12.0,
+          "mean_carbon_intensity": 0.3,
+          "single_bidder_rate": 0.16659311049685258
+        },
+        {
+          "cpv_division": "30",
+          "appearances_out_of": [
+            2,
+            25
+          ],
+          "robustness_pct": 8.0,
+          "mean_carbon_intensity": 0.29999999999999993,
+          "single_bidder_rate": 0.14924041070978933
+        },
+        {
+          "cpv_division": "55",
+          "appearances_out_of": [
+            2,
+            25
+          ],
+          "robustness_pct": 8.0,
+          "mean_carbon_intensity": 0.35,
+          "single_bidder_rate": 0.1329779182993895
+        }
+      ]
+    },
+    "never_dead_zones": {
+      "count": 32,
+      "note": "32 sectors never qualify as dead zones"
+    }
+  },
+  "composition_effect": {
+    "spearman_rho": -0.21843264682869534,
+    "p_value": 0.13582197759855705,
+    "n_sectors": 48,
+    "interpretation": "Negative",
+    "statistical_significance": "NS"
+  }
+}

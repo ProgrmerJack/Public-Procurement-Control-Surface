@@ -1,0 +1,30 @@
+{
+  "eu_context": {
+    "total_contracts": 13638933,
+    "total_value_eur": 163640713392720.88,
+    "dead_zone_sectors": 6,
+    "dead_zone_total_value_eur": 9660922869315.176,
+    "dead_zone_sb_locked_eur": 724246240642.81,
+    "dead_zone_total_carbon_mt": 6251.244609211336,
+    "dead_zone_sb_carbon_mt": 470.99948215087386,
+    "ci_67th_threshold": 0.4,
+    "sb_median_threshold": 0.1568053289223685
+  },
+  "annualized_2019_2023": {
+    "annual_procurement_eur": 13020373584272.145,
+    "annual_sb_value_eur": 240839903995.93805,
+    "annual_carbon_mt": 4811.625705806439,
+    "annual_dz_procurement_eur": 705660018873.156,
+    "annual_dz_sb_locked_eur": 64133741482.666016,
+    "annual_dz_carbon_mt": 446.39003345948925,
+    "annual_dz_sb_carbon_mt": 40.60082980897848,
+    "dz_sectors": 6,
+    "monopoly_tax_8pct_eur": 5130699318.613281
+  },
+  "robustness_no_2018": {
+    "contracts": 7845633,
+    "value_eur": 86527770438485.81,
+    "dz_sectors": 7,
+    "dz_sb_locked_eur": 382705547038.30005
+  }
+}

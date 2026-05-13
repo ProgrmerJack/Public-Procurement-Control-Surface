@@ -1,0 +1,100 @@
+{
+  "description": "Rambachan-Roth (2023) relative-magnitudes sensitivity for the Callaway-Sant'Anna aggregate ATT. RM(M) restricts post-treatment parallel-trend violations to \u2264M \u00d7 |\u0394\u0304| per period.",
+  "reference": "Rambachan A, Roth J. A more credible approach to parallel trends. Review of Economic Studies. 2023;90(5):2555-2591.",
+  "inputs": {
+    "pre_trends_pp": {
+      "-4": -1.66,
+      "-3": -1.46,
+      "-2": -0.44,
+      "-1": 0.0
+    },
+    "first_diffs_pp": {
+      "\u0394(-3,-4)": 0.19999999999999996,
+      "\u0394(-2,-3)": 1.02,
+      "\u0394(-1,-2)": 0.44
+    },
+    "delta_bar_pp": 1.02,
+    "delta_bar_source": "max abs first difference of C&S pre-treatment event-study coefficients",
+    "agg_att_pp": -7.18,
+    "agg_se_pp": 0.601,
+    "T_eff": 3.815950920245399,
+    "T_eff_note": "Weighted mean (event_time+1) over all country-year post-treatment cells",
+    "max_bias_per_M": 3.892269938650307
+  },
+  "breakdown": {
+    "M_star": 1.542,
+    "interpretation": "The robust 95% CI excludes zero for all M < 1.54. Pre/post trend violations would need to be 1.5\u00d7 larger than the largest pre-treatment first difference (1.02 pp) to explain away the ATT."
+  },
+  "robust_cis": [
+    {
+      "M": 0.0,
+      "max_bias_pp": 0.0,
+      "ci_lower_pp": -8.3579,
+      "ci_upper_pp": -6.0021,
+      "excludes_zero": true
+    },
+    {
+      "M": 0.25,
+      "max_bias_pp": 0.9731,
+      "ci_lower_pp": -9.331,
+      "ci_upper_pp": -5.029,
+      "excludes_zero": true
+    },
+    {
+      "M": 0.5,
+      "max_bias_pp": 1.9461,
+      "ci_lower_pp": -10.3041,
+      "ci_upper_pp": -4.0559,
+      "excludes_zero": true
+    },
+    {
+      "M": 0.75,
+      "max_bias_pp": 2.9192,
+      "ci_lower_pp": -11.2771,
+      "ci_upper_pp": -3.0829,
+      "excludes_zero": true
+    },
+    {
+      "M": 1.0,
+      "max_bias_pp": 3.8923,
+      "ci_lower_pp": -12.2502,
+      "ci_upper_pp": -2.1098,
+      "excludes_zero": true
+    },
+    {
+      "M": 1.25,
+      "max_bias_pp": 4.8653,
+      "ci_lower_pp": -13.2233,
+      "ci_upper_pp": -1.1367,
+      "excludes_zero": true
+    },
+    {
+      "M": 1.5,
+      "max_bias_pp": 5.8384,
+      "ci_lower_pp": -14.1963,
+      "ci_upper_pp": -0.1637,
+      "excludes_zero": true
+    },
+    {
+      "M": 1.542,
+      "max_bias_pp": 6.0021,
+      "ci_lower_pp": -14.36,
+      "ci_upper_pp": -0.0,
+      "excludes_zero": true
+    },
+    {
+      "M": 2.0,
+      "max_bias_pp": 7.7845,
+      "ci_lower_pp": -16.1425,
+      "ci_upper_pp": 1.7825,
+      "excludes_zero": false
+    }
+  ],
+  "methodology": {
+    "restriction": "Relative Magnitudes RM(M): |\u0394_\u03c4|_post \u2264 M \u00d7 |\u0394\u0304|_pre",
+    "bias_bound": "max_bias = M \u00d7 |\u0394\u0304| \u00d7 T_eff",
+    "robust_ci": "[ATT - max_bias - z\u00d7SE, ATT + max_bias + z\u00d7SE]",
+    "breakdown_formula": "M* = -(ATT + z\u00d7SE) / (|\u0394\u0304| \u00d7 T_eff)",
+    "note": "This implements the conservative analytical bound from Rambachan & Roth (2023) Eq. 4 and Supplementary Appendix C, adapted for a staggered design aggregate ATT. The full QP solution (HonestDiD R package) would produce identical M* for monotone violations."
+  }
+}

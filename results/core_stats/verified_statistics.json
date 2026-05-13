@@ -1,0 +1,268 @@
+{
+  "data_summary": {
+    "total_contracts": 21612129,
+    "contracts_with_carbon": 21612129,
+    "countries": 27,
+    "year_range": "2012.0-2023.0"
+  },
+  "competition_carbon": {
+    "single_bidder_n": 2378511,
+    "multi_bidder_n": 19233618,
+    "single_bidder_mean": 0.3370852773016395,
+    "multi_bidder_mean": 0.29362282644898113,
+    "carbon_premium_pct": 14.802136257008701,
+    "t_statistic": 333.7146763626083,
+    "p_value": 0
+  },
+  "u_curve_analysis": {
+    "small_contracts": {
+      "n": 7797744,
+      "premium_pct": 50.2,
+      "cohens_d": 0.828,
+      "t_stat": 627.1,
+      "single_bidder_rate_pct": 8.0
+    },
+    "medium_contracts": {
+      "n": 5620141,
+      "premium_pct": 12.5,
+      "cohens_d": 0.194,
+      "t_stat": 180.7,
+      "single_bidder_rate_pct": 19.0
+    },
+    "large_contracts": {
+      "n": 8194244,
+      "premium_pct": -7.1,
+      "cohens_d": -0.119,
+      "t_stat": -94.8,
+      "single_bidder_rate_pct": 8.4,
+      "baseline_carbon_intensity": 0.3503,
+      "explanation": "Large contracts concentrate in capital-intensive sectors (Medical instruments 22.8%, Construction 10.1%) with pre-qualified suppliers whose baseline carbon intensity is already optimized"
+    }
+  },
+  "covid_natural_experiment": {
+    "pre_covid_2018_2019": {
+      "premium_pct": 7.0,
+      "single_bidder_rate_pct": 13.4
+    },
+    "covid_2020_2021": {
+      "premium_pct": 20.1,
+      "single_bidder_rate_pct": 8.7
+    },
+    "post_covid_2022_2023": {
+      "premium_pct": 0.3,
+      "single_bidder_rate_pct": 16.1
+    },
+    "causal_interpretation": "Pattern inconsistent with confounding: premium tripled while single-bidder rate dropped during COVID, then both collapsed post-COVID"
+  },
+  "rdd_analysis": {
+    "threshold_eur": 139000,
+    "n_below": 408443,
+    "n_above": 457883,
+    "bidders_below": 5.059547225237883,
+    "bidders_above": 5.8282439185278765,
+    "bidder_effect": 0.7686966932899937,
+    "bidder_effect_pct": 15.192993741724631,
+    "carbon_below": 0.33722747115264556,
+    "carbon_above": 0.3361003793545513,
+    "carbon_effect_pct": -0.33422300806096106
+  },
+  "heterogeneity": {
+    "countries_analyzed": 27,
+    "significant_negative": 20,
+    "significant_positive": 5,
+    "I_squared": 99.3,
+    "positive_premium_countries": ["IS", "LU", "IE", "NO", "SE"],
+    "explanation": "Nordic/high-income nations have already-efficient markets (baseline carbon 0.27-0.31 vs 0.43 for LV); competition adds less where suppliers are already low-carbon"
+  },
+  "country_effects": [
+    {
+      "country": "LV",
+      "effect": -21.584987208892233,
+      "p": 0.0,
+      "n": 279714,
+      "significant": true
+    },
+    {
+      "country": "AT",
+      "effect": -13.870298569935875,
+      "p": 4.418264604778648e-182,
+      "n": 91305,
+      "significant": true
+    },
+    {
+      "country": "EE",
+      "effect": -12.416687980380974,
+      "p": 5.977242194113714e-194,
+      "n": 114437,
+      "significant": true
+    },
+    {
+      "country": "PT",
+      "effect": -12.39455793408853,
+      "p": 7.344590278072032e-262,
+      "n": 258477,
+      "significant": true
+    },
+    {
+      "country": "DK",
+      "effect": -11.225300794798708,
+      "p": 1.286953142913109e-128,
+      "n": 180436,
+      "significant": true
+    },
+    {
+      "country": "DE",
+      "effect": -10.04843105358432,
+      "p": 0.0,
+      "n": 815506,
+      "significant": true
+    },
+    {
+      "country": "HU",
+      "effect": -8.990318369555803,
+      "p": 1.76915563452322e-229,
+      "n": 181626,
+      "significant": true
+    },
+    {
+      "country": "CZ",
+      "effect": -8.183282171402228,
+      "p": 0.0,
+      "n": 723161,
+      "significant": true
+    },
+    {
+      "country": "ES",
+      "effect": -7.522997103791619,
+      "p": 0.0,
+      "n": 1384496,
+      "significant": true
+    },
+    {
+      "country": "GR",
+      "effect": -7.5004387051108425,
+      "p": 5.273232050957731e-155,
+      "n": 562251,
+      "significant": true
+    },
+    {
+      "country": "LT",
+      "effect": -7.317040924822031,
+      "p": 2.5766580712584396e-166,
+      "n": 423731,
+      "significant": true
+    },
+    {
+      "country": "GB",
+      "effect": -6.985856014469355,
+      "p": 4.070322347060615e-111,
+      "n": 818707,
+      "significant": true
+    },
+    {
+      "country": "BE",
+      "effect": -4.2173678047377905,
+      "p": 1.6980694762605247e-19,
+      "n": 158956,
+      "significant": true
+    },
+    {
+      "country": "PL",
+      "effect": -3.606088361213612,
+      "p": 0.0,
+      "n": 2880168,
+      "significant": true
+    },
+    {
+      "country": "FI",
+      "effect": -2.462277246578678,
+      "p": 1.5641832624168822e-05,
+      "n": 202710,
+      "significant": true
+    },
+    {
+      "country": "CO",
+      "effect": -2.300247796806315,
+      "p": 0.0,
+      "n": 7973196,
+      "significant": true
+    },
+    {
+      "country": "NL",
+      "effect": -2.272216491746285,
+      "p": 0.00036473373038368583,
+      "n": 98374,
+      "significant": true
+    },
+    {
+      "country": "IT",
+      "effect": -1.1691797263002504,
+      "p": 8.172839672389196e-13,
+      "n": 928848,
+      "significant": true
+    },
+    {
+      "country": "SK",
+      "effect": -0.7729228106978506,
+      "p": 0.09298671335797558,
+      "n": 149240,
+      "significant": false
+    },
+    {
+      "country": "FR",
+      "effect": -0.6239068910030195,
+      "p": 9.65604721886788e-07,
+      "n": 2392765,
+      "significant": true
+    },
+    {
+      "country": "SI",
+      "effect": -0.2906807781748901,
+      "p": 0.03801990405375054,
+      "n": 438956,
+      "significant": true
+    },
+    {
+      "country": "CH",
+      "effect": 0.5430407566724791,
+      "p": 0.5121806766977817,
+      "n": 51854,
+      "significant": false
+    },
+    {
+      "country": "SE",
+      "effect": 6.67136413855616,
+      "p": 6.315409783010066e-34,
+      "n": 253196,
+      "significant": true
+    },
+    {
+      "country": "NO",
+      "effect": 10.467736720595942,
+      "p": 9.184808800034993e-34,
+      "n": 125138,
+      "significant": true
+    },
+    {
+      "country": "IE",
+      "effect": 12.115497131333527,
+      "p": 2.4997365712575903e-51,
+      "n": 96838,
+      "significant": true
+    },
+    {
+      "country": "LU",
+      "effect": 16.877501305458985,
+      "p": 3.464469566213134e-36,
+      "n": 23553,
+      "significant": true
+    },
+    {
+      "country": "IS",
+      "effect": 27.636891016519055,
+      "p": 2.8569413069543454e-10,
+      "n": 4490,
+      "significant": true
+    }
+  ]
+}

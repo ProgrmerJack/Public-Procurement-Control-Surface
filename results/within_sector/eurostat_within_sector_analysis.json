@@ -1,0 +1,19 @@
+{
+  "within_sector": {
+    "groups_tested": 627,
+    "significant_p05": 321,
+    "pct_significant": 51.2,
+    "negative_significant": 247,
+    "positive_significant": 74,
+    "weighted_avg_premium_pct": -0.2
+  },
+  "carbon_did_eurostat": {
+    "pre_premium_kg_eur": -0.1406,
+    "post_premium_kg_eur": -0.0843,
+    "did_effect_kg_eur": 0.0563,
+    "bootstrap_ci_lo": -0.0192,
+    "bootstrap_ci_hi": 0.1299,
+    "bootstrap_p": 0.17,
+    "n_total": 12192762
+  }
+}

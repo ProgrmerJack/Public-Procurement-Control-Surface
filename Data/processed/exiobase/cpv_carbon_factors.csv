@@ -1,0 +1,98 @@
+cpv_division,cpv_description,sector,sector_name,emission_intensity_kg_co2_per_usd,year,gprd_sector,co2_kg,carbon_intensity_kg_per_usd
+3,Agricultural and forestry products,AGRICULTURE,Agriculture and Food,0.85,,,,0.10000000000000002
+9,Petroleum products and fuels,ENERGY,Energy and Fuels,2.45,,,,0.10000000000000002
+14,Mining products,MINING,Mining and Extraction,1.92,,,,0.10000000000000002
+15,Food and beverages,AGRICULTURE,Agriculture and Food,0.78,,,,0.10000000000000002
+18,Clothing and textiles,TEXTILES,Textiles and Apparel,0.62,,,,0.10000000000000002
+22,Printed matter,OFFICE,Office and Printing,0.35,,,,0.10000000000000002
+24,Chemical products,CHEMICALS,Chemicals,1.68,,,,0.10000000000000002
+30,IT equipment,TECH,Technology and IT,0.48,,,,0.10000000000000002
+31,Electrical machinery,ENERGY,Energy and Fuels,0.72,,,,0.10000000000000002
+32,Radio and communications,TECH,Technology and IT,0.45,,,,0.10000000000000002
+33,Medical equipment,HEALTH,Healthcare,0.55,,,,0.10000000000000002
+34,Transport equipment,TRANSPORT,Transport,1.15,,,,0.10000000000000002
+35,Security equipment,DEFENSE,Defense and Security,0.88,,,,0.10000000000000002
+37,Musical instruments,OTHER,Other,0.42,1995.0,OTHER,3.9414708934777284e+21,0.1
+37,Musical instruments,OTHER,Other,0.42,1996.0,OTHER,1.0614877722921925e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,1997.0,OTHER,6.994343843093111e+21,0.1
+37,Musical instruments,OTHER,Other,0.42,1998.0,OTHER,2.5174472204431424e+21,0.1
+37,Musical instruments,OTHER,Other,0.42,1999.0,OTHER,4.4206210503134576e+41,0.1
+37,Musical instruments,OTHER,Other,0.42,2000.0,OTHER,5.103933064187718e+21,0.1
+37,Musical instruments,OTHER,Other,0.42,2001.0,OTHER,2.78567392120904e+21,0.1
+37,Musical instruments,OTHER,Other,0.42,2002.0,OTHER,3.8590895943350763e+21,0.1
+37,Musical instruments,OTHER,Other,0.42,2003.0,OTHER,4.1779393139975216e+21,0.1
+37,Musical instruments,OTHER,Other,0.42,2004.0,OTHER,6.901160742223411e+19,0.1
+37,Musical instruments,OTHER,Other,0.42,2005.0,OTHER,5.977978407744635e+21,0.1
+37,Musical instruments,OTHER,Other,0.42,2006.0,OTHER,3.000392154625043e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2007.0,OTHER,3.3101122868013215e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2008.0,OTHER,3.193969258217401e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2009.0,OTHER,2.851848302177373e+27,0.1
+37,Musical instruments,OTHER,Other,0.42,2010.0,OTHER,1.7887413698589427e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2011.0,OTHER,4.730143879589353e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2012.0,OTHER,1.9416194647806167e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2013.0,OTHER,3.309808985924407e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2014.0,OTHER,2.3454515394372807e+40,0.1
+37,Musical instruments,OTHER,Other,0.42,2015.0,OTHER,3.749831252511469e+41,0.1
+37,Musical instruments,OTHER,Other,0.42,2016.0,OTHER,2.6665306908230095e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2017.0,OTHER,5.646264701665217e+41,0.1
+37,Musical instruments,OTHER,Other,0.42,2018.0,OTHER,3.302121279678372e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2019.0,OTHER,1.2861304353358426e+41,0.1
+37,Musical instruments,OTHER,Other,0.42,2020.0,OTHER,4.814792534142026e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2021.0,OTHER,5.1951693932967355e+22,0.1
+37,Musical instruments,OTHER,Other,0.42,2022.0,OTHER,5.240729544443989e+44,0.1
+38,Laboratory equipment,TECH,Technology and IT,0.52,,,,0.10000000000000002
+39,Furniture,CONSTRUCTION,Construction,0.68,,,,0.10000000000000002
+41,Water treatment,UTILITIES,Utilities,0.95,,,,0.10000000000000002
+42,Industrial machinery,MANUFACTURING,Manufacturing,0.82,,,,0.10000000000000002
+43,Mining machinery,MINING,Mining and Extraction,0.98,,,,0.10000000000000002
+44,Construction materials,CONSTRUCTION,Construction,1.45,,,,0.10000000000000002
+45,Construction works,CONSTRUCTION,Construction,1.85,,,,0.10000000000000002
+48,Software packages,TECH,Technology and IT,0.22,,,,0.10000000000000002
+50,Repair services,SERVICES,Professional Services,0.28,,,,0.10000000000000002
+51,Installation services,SERVICES,Professional Services,0.32,,,,0.10000000000000002
+55,Hotel services,SERVICES,Professional Services,0.45,,,,0.10000000000000002
+60,Transport services,TRANSPORT,Transport,1.25,,,,0.10000000000000002
+63,Support transport services,TRANSPORT,Transport,0.95,,,,0.10000000000000002
+64,Postal services,SERVICES,Professional Services,0.38,,,,0.10000000000000002
+65,Utilities services,UTILITIES,Utilities,1.85,,,,0.10000000000000002
+66,Financial services,SERVICES,Professional Services,0.15,,,,0.10000000000000002
+70,Real estate services,CONSTRUCTION,Construction,0.42,,,,0.10000000000000002
+71,Architectural services,SERVICES,Professional Services,0.25,,,,0.10000000000000002
+72,IT services,TECH,Technology and IT,0.18,,,,0.10000000000000002
+73,R&D services,TECH,Technology and IT,0.22,,,,0.10000000000000002
+75,Public administration,SERVICES,Professional Services,0.28,,,,0.10000000000000002
+76,Oil and gas services,ENERGY,Energy and Fuels,2.15,,,,0.10000000000000002
+77,Agricultural services,AGRICULTURE,Agriculture and Food,0.72,,,,0.10000000000000002
+79,Business services,SERVICES,Professional Services,0.22,,,,0.10000000000000002
+80,Education services,SERVICES,Professional Services,0.18,,,,0.10000000000000002
+85,Health services,HEALTH,Healthcare,0.35,,,,0.10000000000000002
+90,Sewage services,UTILITIES,Utilities,0.88,,,,0.10000000000000002
+92,Recreation services,SERVICES,Professional Services,0.32,,,,0.10000000000000002
+98,Other services,OTHER,Other,0.35,1995.0,OTHER,3.9414708934777284e+21,0.1
+98,Other services,OTHER,Other,0.35,1996.0,OTHER,1.0614877722921925e+22,0.1
+98,Other services,OTHER,Other,0.35,1997.0,OTHER,6.994343843093111e+21,0.1
+98,Other services,OTHER,Other,0.35,1998.0,OTHER,2.5174472204431424e+21,0.1
+98,Other services,OTHER,Other,0.35,1999.0,OTHER,4.4206210503134576e+41,0.1
+98,Other services,OTHER,Other,0.35,2000.0,OTHER,5.103933064187718e+21,0.1
+98,Other services,OTHER,Other,0.35,2001.0,OTHER,2.78567392120904e+21,0.1
+98,Other services,OTHER,Other,0.35,2002.0,OTHER,3.8590895943350763e+21,0.1
+98,Other services,OTHER,Other,0.35,2003.0,OTHER,4.1779393139975216e+21,0.1
+98,Other services,OTHER,Other,0.35,2004.0,OTHER,6.901160742223411e+19,0.1
+98,Other services,OTHER,Other,0.35,2005.0,OTHER,5.977978407744635e+21,0.1
+98,Other services,OTHER,Other,0.35,2006.0,OTHER,3.000392154625043e+22,0.1
+98,Other services,OTHER,Other,0.35,2007.0,OTHER,3.3101122868013215e+22,0.1
+98,Other services,OTHER,Other,0.35,2008.0,OTHER,3.193969258217401e+22,0.1
+98,Other services,OTHER,Other,0.35,2009.0,OTHER,2.851848302177373e+27,0.1
+98,Other services,OTHER,Other,0.35,2010.0,OTHER,1.7887413698589427e+22,0.1
+98,Other services,OTHER,Other,0.35,2011.0,OTHER,4.730143879589353e+22,0.1
+98,Other services,OTHER,Other,0.35,2012.0,OTHER,1.9416194647806167e+22,0.1
+98,Other services,OTHER,Other,0.35,2013.0,OTHER,3.309808985924407e+22,0.1
+98,Other services,OTHER,Other,0.35,2014.0,OTHER,2.3454515394372807e+40,0.1
+98,Other services,OTHER,Other,0.35,2015.0,OTHER,3.749831252511469e+41,0.1
+98,Other services,OTHER,Other,0.35,2016.0,OTHER,2.6665306908230095e+22,0.1
+98,Other services,OTHER,Other,0.35,2017.0,OTHER,5.646264701665217e+41,0.1
+98,Other services,OTHER,Other,0.35,2018.0,OTHER,3.302121279678372e+22,0.1
+98,Other services,OTHER,Other,0.35,2019.0,OTHER,1.2861304353358426e+41,0.1
+98,Other services,OTHER,Other,0.35,2020.0,OTHER,4.814792534142026e+22,0.1
+98,Other services,OTHER,Other,0.35,2021.0,OTHER,5.1951693932967355e+22,0.1
+98,Other services,OTHER,Other,0.35,2022.0,OTHER,5.240729544443989e+44,0.1

@@ -1,0 +1,43 @@
+{
+  "colombia_bidder_quality": {
+    "total": 7973196,
+    "n_bidders_null": 0,
+    "pct_null": 0.0,
+    "single_bidder_count": 57285,
+    "single_bidder_rate": 0.71846973283988,
+    "multi_bidder_null_n": 0,
+    "multi_bidder_null_pct": 0.0,
+    "sb_mean_ci": 0.2,
+    "mb_mean_ci": 0.20470880988934817
+  },
+  "verified_only_premium": 27.621740363102916,
+  "within_sector_premium": 3.2652115965204097e-16,
+  "decomposition": {
+    "total_global": 14.802136257008701,
+    "total_eu": -4.312203945022834,
+    "within_sector": 3.2652115965204097e-16,
+    "allocative": 14.802136257008701
+  },
+  "covid_shift_share": {
+    "total_change": -0.012394747677123796,
+    "composition_effect": -0.012394747677123796,
+    "within_sector_effect": 1.9136752648111094e-19,
+    "interaction": -1.0338691000183824e-19,
+    "composition_pct": -100.0
+  },
+  "eu_dead_zones": {
+    "n_sectors": 6,
+    "n_total_sectors": 48,
+    "ci_threshold": 0.4,
+    "sb_threshold": 0.15450791580768336,
+    "total_value_eur": 9660922869315.176,
+    "sb_locked_eur": 1724527493382.147
+  },
+  "within_sector_variation": {
+    "n_country_sectors": 985,
+    "n_with_variation": 0,
+    "max_std": 0.0,
+    "mean_std": 0.0,
+    "interpretation": "EXIOBASE assigns identical CI within country-sector, confirming sector-level measurement"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "cross_country_variation": {
+    "n_sectors": 37,
+    "mean_cv": 0.0,
+    "mean_max_min_ratio": 1.0,
+    "sectors_cv_gt_20pct": 0,
+    "sectors_cv_gt_50pct": 0
+  },
+  "owid_validation": {
+    "sectors_tested": 37,
+    "mean_r": NaN,
+    "median_r": NaN,
+    "significant_positive": 0,
+    "pct_significant_positive": 0.0
+  },
+  "pooled_validation": {
+    "n_pairs": 960,
+    "pearson_r": -0.0001,
+    "spearman_rho": -0.0009
+  },
+  "variance_decomposition": {
+    "between_sector_std": 0.2642,
+    "within_sector_cross_country_std": 0.0,
+    "ratio": 5394892432862681.0,
+    "pct_explained_by_sector": 102.5
+  }
+}

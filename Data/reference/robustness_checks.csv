@@ -1,0 +1,13 @@
+country,threshold_type,outcome,bandwidth_half,estimate_half,se_half,bandwidth_double,estimate_double,se_double,polynomial_2,estimate_p2,se_p2,polynomial_3,estimate_p3,se_p3
+UA,national_goods,n_bidders,0.0425,0.45,0.18,0.17,0.38,0.08,2,0.40,0.14,3,0.43,0.16
+UA,national_goods,single_bidder,0.0425,-0.09,0.035,0.17,-0.07,0.018,2,-0.08,0.028,3,-0.08,0.032
+UA,national_works,n_bidders,0.036,0.38,0.22,0.144,0.32,0.10,2,0.34,0.17,3,0.36,0.19
+UA,national_works,single_bidder,0.036,-0.07,0.042,0.144,-0.05,0.019,2,-0.06,0.032,3,-0.06,0.036
+CO,direct,n_bidders,0.0475,0.42,0.21,0.19,0.35,0.09,2,0.37,0.16,3,0.39,0.18
+CO,direct,single_bidder,0.0475,-0.08,0.032,0.19,-0.06,0.015,2,-0.07,0.024,3,-0.07,0.028
+CO,minor,n_bidders,0.041,0.35,0.16,0.164,0.29,0.07,2,0.31,0.12,3,0.33,0.14
+CO,minor,single_bidder,0.041,-0.06,0.026,0.164,-0.04,0.012,2,-0.05,0.020,3,-0.05,0.022
+GB,publication,n_bidders,0.039,0.32,0.19,0.156,0.25,0.09,2,0.27,0.14,3,0.29,0.16
+GB,publication,single_bidder,0.039,-0.05,0.028,0.156,-0.03,0.014,2,-0.04,0.022,3,-0.04,0.024
+GB,pcr2015,n_bidders,0.034,0.26,0.15,0.136,0.19,0.07,2,0.21,0.11,3,0.23,0.13
+GB,pcr2015,single_bidder,0.034,-0.04,0.022,0.136,-0.02,0.010,2,-0.03,0.016,3,-0.03,0.018

@@ -1,0 +1,46 @@
+{
+  "data_source": "CanadaBuys contract history, Public Services and Procurement Canada",
+  "source_dataset_url": "https://open.canada.ca/data/en/dataset/4fe645a1-ffcd-40c1-9385-2c771be956a4",
+  "official_supporting_documentation": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/ac-cb/COsoutien-CHsupport-eng.html",
+  "definition": "Non-competitive proxy equals procurement method Non-competitive, Advance Contract Award Notice, Advanced Contract Award Notice, or ACAN among original-award rows. Open, traditional, and selective tendering are coded competitive. Missing/unmapped procurement methods are excluded from denominators.",
+  "null_handling": "Rows missing procurement method or award/start year are not coerced to competitive or non-competitive; they are excluded from yearly rates and counted in diagnostics.",
+  "sources": [
+    {
+      "name": "Legacy CanadaBuys contract history, 2009-01 to 2023-05",
+      "url": "https://canadabuys.canada.ca/opendata/pub/2009-2023-contractHistoryHistorical-contratsOctroyesHistorique.csv",
+      "rows_streamed": 484662,
+      "original_award_rows": 182941,
+      "observed_method_rows": 182442,
+      "missing_or_unmapped_method_rows": 499,
+      "missing_year_rows": 0
+    },
+    {
+      "name": "All CanadaBuys contract history, 2023-06-01 onwards",
+      "url": "https://canadabuys.canada.ca/opendata/pub/contractHistoryComplete-contratsOctroyesComplet.csv",
+      "rows_streamed": 19387,
+      "original_award_rows": 10317,
+      "observed_method_rows": 9555,
+      "missing_or_unmapped_method_rows": 762,
+      "missing_year_rows": 0
+    }
+  ],
+  "years_in_panel": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "contracts_with_observed_method_2009_2023": 184528,
+  "contracts_with_observed_method_2012_2023": 109123
+}

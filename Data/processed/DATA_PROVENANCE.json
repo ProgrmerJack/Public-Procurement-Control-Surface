@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated_at": "2025-12-27T23:36:09.274128",
+    "description": "Data provenance for GPRD processed dataset"
+  },
+  "sources": {
+    "ukraine": {
+      "name": "ProZorro",
+      "api_endpoint": "https://api.prozorro.gov.ua",
+      "ocds_version": "1.1",
+      "coverage_period": "2016-01-01 to 2024-12-31",
+      "data_license": "Ukrainian Open Data License",
+      "download_method": "API streaming (releases endpoint)",
+      "estimated_raw_records": "2,500,000+",
+      "description": "Ukrainian government e-procurement system"
+    },
+    "colombia": {
+      "name": "SECOP II",
+      "api_endpoint": "https://api.colombiacompra.gov.co",
+      "ocds_version": "1.1",
+      "coverage_period": "2012-01-01 to 2024-12-31",
+      "data_license": "Open Government License Colombia",
+      "download_method": "API batch download",
+      "estimated_raw_records": "1,800,000+",
+      "description": "Colombian government procurement system"
+    },
+    "uk": {
+      "name": "Contracts Finder",
+      "api_endpoint": "https://www.contractsfinder.service.gov.uk",
+      "ocds_version": "1.1 (subset)",
+      "coverage_period": "2015-01-01 to 2024-12-31",
+      "data_license": "Open Government Licence v3.0",
+      "download_method": "API bulk download",
+      "estimated_raw_records": "850,000+",
+      "description": "UK government contracts portal"
+    }
+  },
+  "processed_files": {
+    "gprd_master.parquet": {
+      "size_bytes": 2606890427,
+      "size_mb": 2486.12,
+      "modified": "2025-12-13T00:47:54.781764",
+      "checksum_sha256": "ed3c960f17a4f849baa17c230852472daf4c95bb5b3cb263fa478dd0d3c0a32f",
+      "records": 46321142,
+      "columns": 55
+    },
+    "gprd_analysis.parquet": {
+      "size_bytes": 1554947090,
+      "size_mb": 1482.91,
+      "modified": "2025-12-13T00:50:22.745115",
+      "checksum_sha256": "0720b26339c2983ee569b4003a013f8732126e35139977aca4b1a35448671844",
+      "records": 21612129,
+      "columns": 55
+    },
+    "gprd_with_carbon.parquet": {
+      "size_bytes": 832410385,
+      "size_mb": 793.85,
+      "modified": "2025-12-13T00:56:16.131950",
+      "checksum_sha256": "9c8bc40fb11c65702d8759724b03d44dc3836e581188dc412aa2a19dcff1f06f",
+      "records": 21612129,
+      "columns": 21
+    },
+    "gprd_sample_10000.csv": {
+      "size_bytes": 4053897,
+      "size_mb": 3.87,
+      "modified": "2025-12-13T00:50:44.157835",
+      "checksum_sha256": "ed64713cc52e46452a13dd626062d12b50dc48a0a9c4e7f5bdc3a84c7c66bf30",
+      "records": 10000,
+      "columns": 55
+    },
+    "gprd_summary_stats.json": {
+      "size_bytes": 3575,
+      "size_mb": 0.0,
+      "modified": "2025-12-13T00:51:15.891469",
+      "checksum_sha256": "6d40a2f310930e4512f2c5680d456922fbb7abe0cb0cfce4343fc0d2563865de"
+    },
+    "carbon_analysis_summary.json": {
+      "size_bytes": 9916,
+      "size_mb": 0.01,
+      "modified": "2025-12-13T00:56:34.644221",
+      "checksum_sha256": "ecc987dc52d89125b4433527f7966cb8227ac578988221670ec349d45ba38040"
+    }
+  },
+  "processing_pipeline": {
+    "harmonization": {
+      "script": "scripts/harmonize_data.py",
+      "description": "Harmonize OCDS data from multiple sources to GPRD schema",
+      "steps": [
+        "Parse OCDS JSONL files",
+        "Extract core contract fields",
+        "Normalize country-specific formats",
+        "Convert currencies to USD/EUR",
+        "Map CPV codes to sectors",
+        "Calculate distance to threshold",
+        "Apply quality filters"
+      ]
+    },
+    "filters_applied": {
+      "missing_value": {
+        "description": "Remove contracts with missing contract value",
+        "rationale": "Cannot analyze value-based effects without value data"
+      },
+      "missing_dates": {
+        "description": "Remove contracts with missing tender/award dates",
+        "rationale": "Need dates for temporal analysis and RDD identification"
+      },
+      "duplicates": {
+        "description": "Remove duplicate records based on OCID",
+        "rationale": "Prevent double-counting in analysis"
+      },
+      "invalid_cpv": {
+        "description": "Flag contracts with unmappable CPV codes",
+        "rationale": "Some analyses require sector classification"
+      },
+      "outlier_values": {
+        "description": "Flag but retain extreme values (>99.9th percentile)",
+        "rationale": "Preserve data but allow filtering in sensitivity tests"
+      }
+    },
+    "derived_variables": {
+      "distance_to_threshold": "Normalized distance from contract value to relevant threshold",
+      "above_threshold": "Boolean indicator for threshold crossing",
+      "single_bidder": "Derived from n_bidders field",
+      "competitive": "Boolean for n_bidders > 1",
+      "value_usd": "Converted from local currency using World Bank rates",
+      "carbon_intensity": "Linked via CPV-EXIOBASE sector mapping"
+    }
+  },
+  "processing_scripts": {
+    "harmonize_data.py": {
+      "modified": "2025-12-13T12:26:39.605575",
+      "size_bytes": 29544,
+      "checksum": "6bfae188af76d10606373486d02862073c6614ba6ffd3d116f8707107c2374da"
+    },
+    "parse_ocds_jsonl.py": {
+      "modified": "2025-12-12T17:44:23.327359",
+      "size_bytes": 21588,
+      "checksum": "ef09aca212ccd14118d801c9dfe4e34b66dd86a56bcd1d99a1c055cd2efdf8bf"
+    },
+    "analyze_all_procurement_data.py": {
+      "modified": "2025-12-10T19:50:46.450619",
+      "size_bytes": 23343,
+      "checksum": "60b452dae3fbc9a68252756707b262cccf220edcee0f944f942a2de102427446"
+    },
+    "link_carbon_intensity.py": {
+      "modified": "2025-12-13T00:32:55.874303",
+      "size_bytes": 21375,
+      "checksum": "69d091d51485c7e4acee5e9044e57023f06770415991f88e35d6b44d53582827"
+    }
+  },
+  "data_quality": {
+    "quality_report": "See DATA_QUALITY_REPORT.json",
+    "audit_documentation": "See Data/audit/ directory",
+    "codebook": "See DATA_CODEBOOK.md"
+  },
+  "reproducibility": {
+    "from_processed_data": [
+      "All RDD estimates",
+      "All robustness checks",
+      "All figures and tables",
+      "Summary statistics",
+      "Descriptive analysis"
+    ],
+    "requires_raw_data": [
+      "Alternative preprocessing choices",
+      "Different filter thresholds",
+      "Source data verification",
+      "Download date validation"
+    ]
+  },
+  "citation": {
+    "dataset": "Global Procurement Research Dataset (GPRD) v1.0",
+    "author": "Abduxoliq Ashuraliyev",
+    "year": 2025,
+    "doi": "10.5281/zenodo.XXXXXXX",
+    "license": "CC-BY-4.0 (data) + MIT (code)"
+  }
+}

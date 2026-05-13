@@ -1,0 +1,312 @@
+{
+  "summary": {
+    "total_co2_records": 37637,
+    "unique_facilities": 3593,
+    "unique_countries": 32,
+    "year_range": "2007-2024",
+    "data_source": "EEA E-PRTR v15.0, Dec 2025"
+  },
+  "sector_variation": {
+    "Energy sector": {
+      "n_observations": 17120,
+      "n_unique_facilities": 1577,
+      "mean_co2_kg": 1178047558.1,
+      "median_co2_kg": 432000000.0,
+      "std_co2_kg": 2507310876.8,
+      "cv": 2.128,
+      "p10_co2_kg": 128000000.0,
+      "p25_co2_kg": 190000000.0,
+      "p75_co2_kg": 1150000000.0,
+      "p90_co2_kg": 2540000000.0,
+      "min_co2_kg": 51817.0,
+      "max_co2_kg": 43200000000.0,
+      "p90_p10_ratio": 19.8,
+      "iqr_ratio": 6.1,
+      "exiobase_mapped": "Electricity, gas and water supply"
+    },
+    "Paper and wood production and processing": {
+      "n_observations": 2701,
+      "n_unique_facilities": 254,
+      "mean_co2_kg": 517245036.1,
+      "median_co2_kg": 269000000.0,
+      "std_co2_kg": 514290141.3,
+      "cv": 0.994,
+      "p10_co2_kg": 124000000.0,
+      "p25_co2_kg": 169000000.0,
+      "p75_co2_kg": 742160000.0,
+      "p90_co2_kg": 1320000000.0,
+      "min_co2_kg": 140000.0,
+      "max_co2_kg": 3110000000.0,
+      "p90_p10_ratio": 10.6,
+      "iqr_ratio": 4.4,
+      "exiobase_mapped": "Pulp, paper and paper products"
+    },
+    "Chemical industry": {
+      "n_observations": 3443,
+      "n_unique_facilities": 337,
+      "mean_co2_kg": 555214182.9,
+      "median_co2_kg": 271000000.0,
+      "std_co2_kg": 798443107.4,
+      "cv": 1.438,
+      "p10_co2_kg": 116000000.0,
+      "p25_co2_kg": 155000000.0,
+      "p75_co2_kg": 613000000.0,
+      "p90_co2_kg": 1150000000.0,
+      "min_co2_kg": 728.0,
+      "max_co2_kg": 7390000000.0,
+      "p90_p10_ratio": 9.9,
+      "iqr_ratio": 4.0,
+      "exiobase_mapped": "Chemicals and chemical products"
+    },
+    "Waste and wastewater management": {
+      "n_observations": 4523,
+      "n_unique_facilities": 477,
+      "mean_co2_kg": 300392449.8,
+      "median_co2_kg": 197000000.0,
+      "std_co2_kg": 631095195.3,
+      "cv": 2.101,
+      "p10_co2_kg": 111000000.0,
+      "p25_co2_kg": 134000000.0,
+      "p75_co2_kg": 318000000.0,
+      "p90_co2_kg": 493000000.0,
+      "min_co2_kg": 4.0,
+      "max_co2_kg": 17300000000.0,
+      "p90_p10_ratio": 4.4,
+      "iqr_ratio": 2.4,
+      "exiobase_mapped": "Other business activities"
+    },
+    "Production and processing of metals": {
+      "n_observations": 2266,
+      "n_unique_facilities": 231,
+      "mean_co2_kg": 1082290694.8,
+      "median_co2_kg": 238000000.0,
+      "std_co2_kg": 2026865287.0,
+      "cv": 1.873,
+      "p10_co2_kg": 111000000.0,
+      "p25_co2_kg": 153000000.0,
+      "p75_co2_kg": 609000000.0,
+      "p90_co2_kg": 4100000000.0,
+      "min_co2_kg": 332.0,
+      "max_co2_kg": 13500000000.0,
+      "p90_p10_ratio": 36.9,
+      "iqr_ratio": 4.0,
+      "exiobase_mapped": "Basic metals and fabricated metal products"
+    },
+    "Mineral industry": {
+      "n_observations": 6436,
+      "n_unique_facilities": 567,
+      "mean_co2_kg": 441201975.4,
+      "median_co2_kg": 332000000.0,
+      "std_co2_kg": 379449455.3,
+      "cv": 0.86,
+      "p10_co2_kg": 120000000.0,
+      "p25_co2_kg": 172000000.0,
+      "p75_co2_kg": 586000000.0,
+      "p90_co2_kg": 889000000.0,
+      "min_co2_kg": 53262.0,
+      "max_co2_kg": 8830000000.0,
+      "p90_p10_ratio": 7.4,
+      "iqr_ratio": 3.4,
+      "exiobase_mapped": "Other non-metallic mineral products"
+    },
+    "Animal and vegetable products from the food and beverage sector": {
+      "n_observations": 829,
+      "n_unique_facilities": 101,
+      "mean_co2_kg": 185876037.6,
+      "median_co2_kg": 147000000.0,
+      "std_co2_kg": 161656122.2,
+      "cv": 0.87,
+      "p10_co2_kg": 103000000.0,
+      "p25_co2_kg": 120000000.0,
+      "p75_co2_kg": 203000000.0,
+      "p90_co2_kg": 289000000.0,
+      "min_co2_kg": 52520.0,
+      "max_co2_kg": 2200000000.0,
+      "p90_p10_ratio": 2.8,
+      "iqr_ratio": 1.7,
+      "exiobase_mapped": "Food products, beverages and tobacco"
+    },
+    "Other activities": {
+      "n_observations": 99,
+      "n_unique_facilities": 17,
+      "mean_co2_kg": 159792973.8,
+      "median_co2_kg": 157000000.0,
+      "std_co2_kg": 124282086.7,
+      "cv": 0.778,
+      "p10_co2_kg": 7101428.0,
+      "p25_co2_kg": 103000000.0,
+      "p75_co2_kg": 216000000.0,
+      "p90_co2_kg": 269000000.0,
+      "min_co2_kg": 1250000.0,
+      "max_co2_kg": 788000000.0,
+      "p90_p10_ratio": 37.9,
+      "iqr_ratio": 2.1,
+      "exiobase_mapped": null
+    },
+    "": {
+      "n_observations": 194,
+      "n_unique_facilities": 28,
+      "mean_co2_kg": 462952925.7,
+      "median_co2_kg": 258000000.0,
+      "std_co2_kg": 698168578.3,
+      "cv": 1.508,
+      "p10_co2_kg": 4870272.0,
+      "p25_co2_kg": 125000000.0,
+      "p75_co2_kg": 508000000.0,
+      "p90_co2_kg": 752000000.0,
+      "min_co2_kg": 106713.0,
+      "max_co2_kg": 3750000000.0,
+      "p90_p10_ratio": 154.4,
+      "iqr_ratio": 4.1,
+      "exiobase_mapped": "Unknown"
+    },
+    "Intensive livestock production and aquaculture": {
+      "n_observations": 26,
+      "n_unique_facilities": 4,
+      "mean_co2_kg": 1818846153.8,
+      "median_co2_kg": 324000000.0,
+      "std_co2_kg": 1858288560.8,
+      "cv": 1.022,
+      "p10_co2_kg": 128000000.0,
+      "p25_co2_kg": 191000000.0,
+      "p75_co2_kg": 3910000000.0,
+      "p90_co2_kg": 4130000000.0,
+      "min_co2_kg": 110000000.0,
+      "max_co2_kg": 4580000000.0,
+      "p90_p10_ratio": 32.3,
+      "iqr_ratio": 20.5,
+      "exiobase_mapped": "Food products, beverages and tobacco"
+    }
+  },
+  "overall_within_sector_cv": {
+    "mean_cv": 0.849,
+    "n_country_sector_groups": 177,
+    "groups_cv_gt_1": 54,
+    "groups_cv_gt_2": 9,
+    "interpretation": "Non-zero CV confirms massive within-sector heterogeneity that EXIOBASE cannot capture"
+  },
+  "dead_zone_coverage": {
+    "Chemicals and chemical products": {
+      "total_facilities": 337,
+      "n_countries": 25,
+      "top_countries": {
+        "Germany": 67,
+        "France": 37,
+        "Spain": 32,
+        "Belgium": 27,
+        "Italy": 26
+      }
+    },
+    "Electricity, gas and water supply": {
+      "total_facilities": 1577,
+      "n_countries": 31,
+      "top_countries": {
+        "Germany": 233,
+        "United Kingdom": 217,
+        "Italy": 165,
+        "Spain": 132,
+        "Poland": 122
+      }
+    },
+    "Basic metals and fabricated metal products": {
+      "total_facilities": 231,
+      "n_countries": 25,
+      "top_countries": {
+        "Germany": 43,
+        "Spain": 24,
+        "France": 20,
+        "Norway": 20,
+        "Italy": 18
+      }
+    },
+    "Other non-metallic mineral products": {
+      "total_facilities": 567,
+      "n_countries": 29,
+      "top_countries": {
+        "Italy": 87,
+        "Germany": 78,
+        "Spain": 68,
+        "France": 57,
+        "United Kingdom": 48
+      }
+    },
+    "Food products, beverages and tobacco": {
+      "total_facilities": 105,
+      "n_countries": 16,
+      "top_countries": {
+        "France": 21,
+        "Germany": 14,
+        "United Kingdom": 11,
+        "Denmark": 9,
+        "Spain": 9
+      }
+    },
+    "Pulp, paper and paper products": {
+      "total_facilities": 254,
+      "n_countries": 25,
+      "top_countries": {
+        "Germany": 41,
+        "Sweden": 30,
+        "Finland": 26,
+        "France": 22,
+        "Spain": 21
+      }
+    }
+  },
+  "rank_correlation": {
+    "spearman_rho": 0.036,
+    "n_sectors_matched": 7,
+    "sector_rankings": [
+      {
+        "exiobase_sector": "Electricity, gas and water supply",
+        "eprtr_mean_co2_kg": 1178047558.1,
+        "exiobase_ci_kg_usd": 2.847,
+        "eprtr_rank": 2,
+        "exiobase_rank": 1
+      },
+      {
+        "exiobase_sector": "Pulp, paper and paper products",
+        "eprtr_mean_co2_kg": 517245036.1,
+        "exiobase_ci_kg_usd": 0.398,
+        "eprtr_rank": 5,
+        "exiobase_rank": 5
+      },
+      {
+        "exiobase_sector": "Chemicals and chemical products",
+        "eprtr_mean_co2_kg": 555214182.9,
+        "exiobase_ci_kg_usd": 0.516,
+        "eprtr_rank": 4,
+        "exiobase_rank": 4
+      },
+      {
+        "exiobase_sector": "Basic metals and fabricated metal products",
+        "eprtr_mean_co2_kg": 1082290694.8,
+        "exiobase_ci_kg_usd": 0.832,
+        "eprtr_rank": 3,
+        "exiobase_rank": 3
+      },
+      {
+        "exiobase_sector": "Other non-metallic mineral products",
+        "eprtr_mean_co2_kg": 441201975.4,
+        "exiobase_ci_kg_usd": 1.523,
+        "eprtr_rank": 6,
+        "exiobase_rank": 2
+      },
+      {
+        "exiobase_sector": "Food products, beverages and tobacco",
+        "eprtr_mean_co2_kg": 185876037.6,
+        "exiobase_ci_kg_usd": 0.313,
+        "eprtr_rank": 7,
+        "exiobase_rank": 6
+      },
+      {
+        "exiobase_sector": "Food products, beverages and tobacco",
+        "eprtr_mean_co2_kg": 1818846153.8,
+        "exiobase_ci_kg_usd": 0.313,
+        "eprtr_rank": 1,
+        "exiobase_rank": 7
+      }
+    ]
+  },
+  "key_finding": "E-PRTR data from 3,593 facilities across 32 countries confirms massive within-sector CO2 variation (mean CV=0.85). EXIOBASE assigns \u03c3=0 within sectors \u2014 this is validated as a conservative lower bound. Rank correlation between E-PRTR facility means and EXIOBASE sector averages: \u03c1=0.036."
+}

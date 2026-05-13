@@ -1,0 +1,55 @@
+{
+  "bridge_analysis": {
+    "exiobase_full": {
+      "n": 13638933,
+      "n_sb": 2321226,
+      "n_mb": 11317707,
+      "sb_mean": 0.3405,
+      "mb_mean": 0.3558,
+      "premium_pct": -4.31,
+      "cohens_d": -0.0738
+    },
+    "exiobase_matchable": {
+      "n": 11578261,
+      "n_sb": 2153351,
+      "n_mb": 9424910,
+      "sb_mean": 0.3431,
+      "mb_mean": 0.3583,
+      "premium_pct": -4.24,
+      "cohens_d": -0.0736
+    },
+    "exiobase_non_matchable": {
+      "n": 2060672,
+      "n_sb": 167875,
+      "n_mb": 1892797,
+      "sb_mean": 0.3069,
+      "mb_mean": 0.3435,
+      "premium_pct": -10.66,
+      "cohens_d": -0.169
+    },
+    "eurostat_matchable": {
+      "n": 11578261,
+      "sb_mean": 0.4146,
+      "mb_mean": 0.4023,
+      "premium_pct": 3.06,
+      "cohens_d": 0.0121
+    },
+    "premium_difference_full_vs_matchable": 0.07,
+    "conclusion": "measurement_granularity"
+  },
+  "within_sector_fdr": {
+    "n_groups": 542,
+    "n_sig_raw": 280,
+    "n_sig_fdr": 246,
+    "n_neg_raw": 212,
+    "n_pos_raw": 68,
+    "neg_pos_ratio_raw": 3.1,
+    "n_neg_fdr": 188,
+    "n_pos_fdr": 58,
+    "neg_pos_ratio_fdr": 3.2,
+    "sign_test_n_neg": 357,
+    "sign_test_n_pos": 185,
+    "sign_test_p": 1.2905476192827662e-13,
+    "weighted_within_premium_pct": -0.55
+  }
+}

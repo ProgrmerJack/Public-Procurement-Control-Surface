@@ -1,0 +1,288 @@
+{
+  "23": {
+    "name": "Construction",
+    "carbon_intensity": "high",
+    "naics_code": "23",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 23,
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 2
+    },
+    "non_competed_count": 0,
+    "competed_count": 25,
+    "non_competed_rate": 0.0
+  },
+  "21": {
+    "name": "Mining/Oil/Gas",
+    "carbon_intensity": "high",
+    "naics_code": "21",
+    "sample_size": 25,
+    "competition_types": {
+      "NOT COMPETED": 2,
+      "FULL AND OPEN COMPETITION": 16,
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 6,
+      "NOT AVAILABLE FOR COMPETITION": 1
+    },
+    "non_competed_count": 3,
+    "competed_count": 22,
+    "non_competed_rate": 0.12
+  },
+  "22": {
+    "name": "Utilities",
+    "carbon_intensity": "high",
+    "naics_code": "22",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 22,
+      "NOT AVAILABLE FOR COMPETITION": 3
+    },
+    "non_competed_count": 3,
+    "competed_count": 22,
+    "non_competed_rate": 0.12
+  },
+  "48": {
+    "name": "Transportation",
+    "carbon_intensity": "high",
+    "naics_code": "48",
+    "sample_size": 25,
+    "competition_types": {
+      "NOT COMPETED": 9,
+      "FULL AND OPEN COMPETITION": 16
+    },
+    "non_competed_count": 9,
+    "competed_count": 16,
+    "non_competed_rate": 0.36
+  },
+  "3241": {
+    "name": "Petroleum & Coal Products",
+    "carbon_intensity": "high",
+    "naics_code": "3241",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 25
+    },
+    "non_competed_count": 0,
+    "competed_count": 25,
+    "non_competed_rate": 0.0
+  },
+  "5621": {
+    "name": "Waste Collection",
+    "carbon_intensity": "high",
+    "naics_code": "5621",
+    "sample_size": 25,
+    "competition_types": {
+      "NOT AVAILABLE FOR COMPETITION": 2,
+      "FULL AND OPEN COMPETITION": 5,
+      "COMPETED UNDER SAP": 7,
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 10,
+      "NOT COMPETED": 1
+    },
+    "non_competed_count": 3,
+    "competed_count": 22,
+    "non_competed_rate": 0.12
+  },
+  "5622": {
+    "name": "Waste Treatment/Disposal",
+    "carbon_intensity": "high",
+    "naics_code": "5622",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 15,
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 4,
+      "NOT COMPETED": 4,
+      "NOT AVAILABLE FOR COMPETITION": 1,
+      "COMPETED UNDER SAP": 1
+    },
+    "non_competed_count": 5,
+    "competed_count": 20,
+    "non_competed_rate": 0.2
+  },
+  "2211": {
+    "name": "Electric Power Generation",
+    "carbon_intensity": "high",
+    "naics_code": "2211",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 21,
+      "NOT AVAILABLE FOR COMPETITION": 4
+    },
+    "non_competed_count": 4,
+    "competed_count": 21,
+    "non_competed_rate": 0.16
+  },
+  "54": {
+    "name": "Professional/Technical Services",
+    "carbon_intensity": "low",
+    "naics_code": "54",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 18,
+      "NOT COMPETED": 6,
+      "NOT AVAILABLE FOR COMPETITION": 1
+    },
+    "non_competed_count": 7,
+    "competed_count": 18,
+    "non_competed_rate": 0.28
+  },
+  "51": {
+    "name": "Information/IT",
+    "carbon_intensity": "low",
+    "naics_code": "51",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 22,
+      "NOT COMPETED": 3
+    },
+    "non_competed_count": 3,
+    "competed_count": 22,
+    "non_competed_rate": 0.12
+  },
+  "61": {
+    "name": "Educational Services",
+    "carbon_intensity": "low",
+    "naics_code": "61",
+    "sample_size": 25,
+    "competition_types": {
+      "NOT COMPETED": 3,
+      "FULL AND OPEN COMPETITION": 17,
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 2,
+      "NOT AVAILABLE FOR COMPETITION": 3
+    },
+    "non_competed_count": 6,
+    "competed_count": 19,
+    "non_competed_rate": 0.24
+  },
+  "62": {
+    "name": "Health Care",
+    "carbon_intensity": "low",
+    "naics_code": "62",
+    "sample_size": 25,
+    "competition_types": {
+      "NOT COMPETED": 7,
+      "FULL AND OPEN COMPETITION": 17,
+      "NOT COMPETED UNDER SAP": 1
+    },
+    "non_competed_count": 8,
+    "competed_count": 17,
+    "non_competed_rate": 0.32
+  },
+  "81": {
+    "name": "Other Services",
+    "carbon_intensity": "low",
+    "naics_code": "81",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 15,
+      "NOT AVAILABLE FOR COMPETITION": 1,
+      "NOT COMPETED": 9
+    },
+    "non_competed_count": 10,
+    "competed_count": 15,
+    "non_competed_rate": 0.4
+  },
+  "5415": {
+    "name": "Computer Systems Design",
+    "carbon_intensity": "low",
+    "naics_code": "5415",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 19,
+      "COMPETED UNDER SAP": 1,
+      "NOT COMPETED": 3,
+      "NON-COMPETITIVE DELIVERY ORDER": 1,
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 1
+    },
+    "non_competed_count": 3,
+    "competed_count": 21,
+    "non_competed_rate": 0.12
+  },
+  "5416": {
+    "name": "Management Consulting",
+    "carbon_intensity": "low",
+    "naics_code": "5416",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 17,
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 2,
+      "NOT COMPETED": 3,
+      "NOT AVAILABLE FOR COMPETITION": 2,
+      "COMPETITIVE DELIVERY ORDER": 1
+    },
+    "non_competed_count": 5,
+    "competed_count": 20,
+    "non_competed_rate": 0.2
+  },
+  "5417": {
+    "name": "Scientific R&D",
+    "carbon_intensity": "low",
+    "naics_code": "5417",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 16,
+      "NOT COMPETED": 8,
+      "NOT AVAILABLE FOR COMPETITION": 1
+    },
+    "non_competed_count": 9,
+    "competed_count": 16,
+    "non_competed_rate": 0.36
+  },
+  "33": {
+    "name": "Manufacturing-Metals/Electronics",
+    "carbon_intensity": "medium",
+    "naics_code": "33",
+    "sample_size": 25,
+    "competition_types": {
+      "NOT COMPETED": 21,
+      "FULL AND OPEN COMPETITION": 3,
+      "NOT AVAILABLE FOR COMPETITION": 1
+    },
+    "non_competed_count": 22,
+    "competed_count": 3,
+    "non_competed_rate": 0.88
+  },
+  "31": {
+    "name": "Manufacturing-Food/Textiles",
+    "carbon_intensity": "medium",
+    "naics_code": "31",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 7,
+      "FULL AND OPEN COMPETITION": 12,
+      "NOT AVAILABLE FOR COMPETITION": 4,
+      "NOT COMPETED": 2
+    },
+    "non_competed_count": 6,
+    "competed_count": 19,
+    "non_competed_rate": 0.24
+  },
+  "42": {
+    "name": "Wholesale Trade",
+    "carbon_intensity": "medium",
+    "naics_code": "42",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 14,
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 8,
+      "NOT COMPETED": 1,
+      "COMPETITIVE DELIVERY ORDER": 1,
+      "NOT AVAILABLE FOR COMPETITION": 1
+    },
+    "non_competed_count": 2,
+    "competed_count": 23,
+    "non_competed_rate": 0.08
+  },
+  "32": {
+    "name": "Manufacturing-Chemical/Plastics",
+    "carbon_intensity": "high",
+    "naics_code": "32",
+    "sample_size": 25,
+    "competition_types": {
+      "FULL AND OPEN COMPETITION": 16,
+      "NOT COMPETED": 7,
+      "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES": 2
+    },
+    "non_competed_count": 7,
+    "competed_count": 18,
+    "non_competed_rate": 0.28
+  }
+}

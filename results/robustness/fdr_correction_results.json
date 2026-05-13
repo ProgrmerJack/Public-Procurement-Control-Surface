@@ -1,0 +1,12 @@
+{
+  "n_groups": 377,
+  "sig_raw": 183,
+  "sig_pct": 48.5,
+  "neg_sig": 139,
+  "pos_sig": 44,
+  "fdr_sig": 160,
+  "fdr_neg": 124,
+  "fdr_pos": 36,
+  "ratio": "139:44",
+  "fdr_ratio": "124:36"
+}

@@ -1,0 +1,43 @@
+{
+  "exact_match_only": {
+    "n_contracts": 15833,
+    "n_facilities": 278,
+    "n_sb": 4645,
+    "n_mb": 11188
+  },
+  "overall": {
+    "premium_pct": 206.1,
+    "t_stat": 31.01,
+    "p_value": 0.0,
+    "n_sb": 4645,
+    "n_mb": 11188
+  },
+  "energy": {
+    "premium_pct": 274.8,
+    "t_stat": 34.84,
+    "p_value": 0.0,
+    "n_sb": 3411,
+    "n_mb": 9008
+  },
+  "refineries_1a": {
+    "premium_pct": 8.4,
+    "t_stat": 3.63,
+    "p_value": 0.0003,
+    "n_sb": 1342,
+    "n_mb": 499
+  },
+  "thermal_power_1c": {
+    "premium_pct": 2.1,
+    "t_stat": 0.76,
+    "p_value": 0.449,
+    "n_sb": 2069,
+    "n_mb": 8509
+  },
+  "refinery_below_median": {
+    "premium_pct": 8.4,
+    "t_stat": 3.63,
+    "p_value": 0.0003,
+    "n_sb": 1342,
+    "n_mb": 499
+  }
+}

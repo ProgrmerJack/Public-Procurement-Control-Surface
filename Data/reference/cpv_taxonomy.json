@@ -1,0 +1,170 @@
+{
+  "03": {
+    "name": "Agricultural products",
+    "category": "goods"
+  },
+  "09": {
+    "name": "Petroleum products, fuel, electricity",
+    "category": "goods"
+  },
+  "14": {
+    "name": "Mining, basic metals",
+    "category": "goods"
+  },
+  "15": {
+    "name": "Food, beverages, tobacco",
+    "category": "goods"
+  },
+  "18": {
+    "name": "Clothing, footwear, luggage",
+    "category": "goods"
+  },
+  "22": {
+    "name": "Printed matter",
+    "category": "goods"
+  },
+  "24": {
+    "name": "Chemical products",
+    "category": "goods"
+  },
+  "30": {
+    "name": "Office machinery, computers",
+    "category": "goods"
+  },
+  "31": {
+    "name": "Electrical machinery",
+    "category": "goods"
+  },
+  "32": {
+    "name": "Radio, TV, communication",
+    "category": "goods"
+  },
+  "33": {
+    "name": "Medical equipment",
+    "category": "goods"
+  },
+  "34": {
+    "name": "Transport equipment",
+    "category": "goods"
+  },
+  "35": {
+    "name": "Security, fire-fighting",
+    "category": "goods"
+  },
+  "37": {
+    "name": "Musical instruments, sports",
+    "category": "goods"
+  },
+  "38": {
+    "name": "Laboratory, optical",
+    "category": "goods"
+  },
+  "39": {
+    "name": "Furniture, furnishings",
+    "category": "goods"
+  },
+  "42": {
+    "name": "Industrial machinery",
+    "category": "goods"
+  },
+  "43": {
+    "name": "Mining machinery",
+    "category": "goods"
+  },
+  "44": {
+    "name": "Construction structures",
+    "category": "goods"
+  },
+  "45": {
+    "name": "Construction work",
+    "category": "works"
+  },
+  "48": {
+    "name": "Software packages",
+    "category": "goods"
+  },
+  "50": {
+    "name": "Repair, maintenance",
+    "category": "services"
+  },
+  "51": {
+    "name": "Installation services",
+    "category": "services"
+  },
+  "55": {
+    "name": "Hotel, restaurant services",
+    "category": "services"
+  },
+  "60": {
+    "name": "Transport services",
+    "category": "services"
+  },
+  "63": {
+    "name": "Supporting transport services",
+    "category": "services"
+  },
+  "64": {
+    "name": "Postal, telecommunications",
+    "category": "services"
+  },
+  "65": {
+    "name": "Public utilities",
+    "category": "services"
+  },
+  "66": {
+    "name": "Financial, insurance services",
+    "category": "services"
+  },
+  "70": {
+    "name": "Real estate services",
+    "category": "services"
+  },
+  "71": {
+    "name": "Architectural, engineering",
+    "category": "services"
+  },
+  "72": {
+    "name": "IT services",
+    "category": "services"
+  },
+  "73": {
+    "name": "Research, development",
+    "category": "services"
+  },
+  "75": {
+    "name": "Administration, defence",
+    "category": "services"
+  },
+  "76": {
+    "name": "Oil, gas industry services",
+    "category": "services"
+  },
+  "77": {
+    "name": "Agriculture, forestry services",
+    "category": "services"
+  },
+  "79": {
+    "name": "Business services",
+    "category": "services"
+  },
+  "80": {
+    "name": "Education, training",
+    "category": "services"
+  },
+  "85": {
+    "name": "Health, social services",
+    "category": "services"
+  },
+  "90": {
+    "name": "Sewage, refuse",
+    "category": "services"
+  },
+  "92": {
+    "name": "Recreational, cultural",
+    "category": "services"
+  },
+  "98": {
+    "name": "Other community services",
+    "category": "services"
+  }
+}

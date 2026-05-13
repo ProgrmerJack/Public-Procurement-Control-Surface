@@ -1,0 +1,486 @@
+{
+  "match_summary": {
+    "n_eprtr_facilities": 3593,
+    "n_matches_tier1": 228,
+    "n_matches_tier2": 551,
+    "n_matches_total": 779,
+    "total_contracts_matched": 27902,
+    "sectors_represented": [
+      "Waste and wastewater management",
+      "",
+      "Energy sector",
+      "Chemical industry",
+      "Paper and wood production and processing",
+      "Mineral industry",
+      "Production and processing of metals",
+      "Other activities",
+      "Animal and vegetable products from the food and beverage sector"
+    ],
+    "countries_represented": [
+      "CZ",
+      "SK",
+      "DE",
+      "HU",
+      "EE",
+      "IE",
+      "DK",
+      "PL",
+      "CH",
+      "PT",
+      "AT",
+      "SI",
+      "RO",
+      "SE",
+      "LT",
+      "NO",
+      "LU",
+      "LV",
+      "ES",
+      "BE",
+      "FR",
+      "NL",
+      "FI",
+      "IT"
+    ]
+  },
+  "technical_channel_analysis": {
+    "overall": {
+      "n_contracts": 17057,
+      "n_sb": 5814,
+      "n_mb": 11243,
+      "sb_mean_co2": 1781742892.7151635,
+      "mb_mean_co2": 712968554.9912152,
+      "premium_pct": 149.90483524720344,
+      "t_stat": 30.400181186287867,
+      "p_value": 3.8827745662458e-192
+    },
+    "within_sector": [],
+    "within_country": [
+      {
+        "country": "AT",
+        "n_sb": 87,
+        "n_mb": 138,
+        "sb_mean_co2": 1573154507.8916276,
+        "mb_mean_co2": 732852389.8711877,
+        "premium_pct": 114.66185136793214,
+        "t_stat": 4.028513612752939,
+        "p_value": 0.00010009745225181971
+      },
+      {
+        "country": "RO",
+        "n_sb": 457,
+        "n_mb": 511,
+        "sb_mean_co2": 762597293.7590003,
+        "mb_mean_co2": 408835348.06137544,
+        "premium_pct": 86.52919748135798,
+        "t_stat": 12.345412269649835,
+        "p_value": 1.8094446999949613e-32
+      },
+      {
+        "country": "HU",
+        "n_sb": 86,
+        "n_mb": 51,
+        "sb_mean_co2": 597916092.248062,
+        "mb_mean_co2": 344316708.87799567,
+        "premium_pct": 73.65294126923307,
+        "t_stat": 3.1225664226322896,
+        "p_value": 0.0022243433333218147
+      },
+      {
+        "country": "FI",
+        "n_sb": 14,
+        "n_mb": 91,
+        "sb_mean_co2": 575901360.5442175,
+        "mb_mean_co2": 343461096.2190147,
+        "premium_pct": 67.67586398693105,
+        "t_stat": 3.7007269180791007,
+        "p_value": 0.0014190961953907035
+      },
+      {
+        "country": "IE",
+        "n_sb": 5,
+        "n_mb": 45,
+        "sb_mean_co2": 768677134.8214285,
+        "mb_mean_co2": 468577256.2911084,
+        "premium_pct": 64.04490924413967,
+        "t_stat": 8.896676395640318,
+        "p_value": 2.1625573597180075e-11
+      },
+      {
+        "country": "NL",
+        "n_sb": 59,
+        "n_mb": 120,
+        "sb_mean_co2": 515289049.5181123,
+        "mb_mean_co2": 1348897877.1621149,
+        "premium_pct": -61.79925417317688,
+        "t_stat": -5.702249871946886,
+        "p_value": 6.134468420474434e-08
+      },
+      {
+        "country": "ES",
+        "n_sb": 87,
+        "n_mb": 362,
+        "sb_mean_co2": 508224563.01680434,
+        "mb_mean_co2": 353759791.06474715,
+        "premium_pct": 43.66374468029527,
+        "t_stat": 1.7232197640159186,
+        "p_value": 0.08712471334596998
+      },
+      {
+        "country": "PL",
+        "n_sb": 1557,
+        "n_mb": 893,
+        "sb_mean_co2": 4976768881.072018,
+        "mb_mean_co2": 3588606964.2059884,
+        "premium_pct": 38.68247291252673,
+        "t_stat": 11.720009807876608,
+        "p_value": 1.3466251688702975e-30
+      },
+      {
+        "country": "FR",
+        "n_sb": 1262,
+        "n_mb": 4599,
+        "sb_mean_co2": 226123608.1045686,
+        "mb_mean_co2": 311239544.3610474,
+        "premium_pct": -27.347404209582603,
+        "t_stat": -5.714307251086466,
+        "p_value": 1.1634768911904742e-08
+      },
+      {
+        "country": "EE",
+        "n_sb": 32,
+        "n_mb": 5,
+        "sb_mean_co2": 150803125.0,
+        "mb_mean_co2": 203800000.0,
+        "premium_pct": -26.004354759568205,
+        "t_stat": -8.846011394203915,
+        "p_value": 7.593568572990333e-05
+      },
+      {
+        "country": "DE",
+        "n_sb": 855,
+        "n_mb": 2353,
+        "sb_mean_co2": 742432224.162815,
+        "mb_mean_co2": 600588727.383984,
+        "premium_pct": 23.61740910400803,
+        "t_stat": 3.783592005918604,
+        "p_value": 0.00016060109605870804
+      },
+      {
+        "country": "SK",
+        "n_sb": 247,
+        "n_mb": 161,
+        "sb_mean_co2": 1470395900.8097167,
+        "mb_mean_co2": 1198926264.418811,
+        "premium_pct": 22.64272995324718,
+        "t_stat": 4.086493727281203,
+        "p_value": 5.8084868926524885e-05
+      },
+      {
+        "country": "NO",
+        "n_sb": 19,
+        "n_mb": 45,
+        "sb_mean_co2": 519297846.8899521,
+        "mb_mean_co2": 458059595.9595958,
+        "premium_pct": 13.369057535421216,
+        "t_stat": 1.0868730590705387,
+        "p_value": 0.2862128439287697
+      },
+      {
+        "country": "DK",
+        "n_sb": 29,
+        "n_mb": 103,
+        "sb_mean_co2": 179507975.39909148,
+        "mb_mean_co2": 199207361.03582728,
+        "premium_pct": -9.888884393781453,
+        "t_stat": -0.27350725844882473,
+        "p_value": 0.7857391920225028
+      },
+      {
+        "country": "CZ",
+        "n_sb": 320,
+        "n_mb": 320,
+        "sb_mean_co2": 926228318.1391178,
+        "mb_mean_co2": 850508888.3107643,
+        "premium_pct": 8.90283815595901,
+        "t_stat": 0.7914886259711674,
+        "p_value": 0.4289530896930289
+      },
+      {
+        "country": "LT",
+        "n_sb": 107,
+        "n_mb": 25,
+        "sb_mean_co2": 784531519.7014823,
+        "mb_mean_co2": 728027946.6666667,
+        "premium_pct": 7.761181874064259,
+        "t_stat": 0.37715368382746406,
+        "p_value": 0.7082807963992637
+      },
+      {
+        "country": "LV",
+        "n_sb": 191,
+        "n_mb": 274,
+        "sb_mean_co2": 629925681.6481947,
+        "mb_mean_co2": 680344345.4355863,
+        "premium_pct": -7.410756644873915,
+        "t_stat": -4.338041573577246,
+        "p_value": 2.275148369173408e-05
+      },
+      {
+        "country": "SE",
+        "n_sb": 9,
+        "n_mb": 63,
+        "sb_mean_co2": 187972915.4070443,
+        "mb_mean_co2": 175378540.17158157,
+        "premium_pct": 7.18125217779839,
+        "t_stat": 0.5428446780698365,
+        "p_value": 0.5984789171345857
+      },
+      {
+        "country": "PT",
+        "n_sb": 75,
+        "n_mb": 250,
+        "sb_mean_co2": 828838013.0718955,
+        "mb_mean_co2": 877426886.2745098,
+        "premium_pct": -5.537654927457158,
+        "t_stat": -2.2238941969275183,
+        "p_value": 0.02880471268109502
+      },
+      {
+        "country": "BE",
+        "n_sb": 107,
+        "n_mb": 483,
+        "sb_mean_co2": 520976027.6998962,
+        "mb_mean_co2": 517585393.86619806,
+        "premium_pct": 0.6550868463213767,
+        "t_stat": 0.1290055942954847,
+        "p_value": 0.8975552615074955
+      },
+      {
+        "country": "IT",
+        "n_sb": 203,
+        "n_mb": 324,
+        "sb_mean_co2": 291990696.23148155,
+        "mb_mean_co2": 290476350.0212895,
+        "premium_pct": 0.5213320155258889,
+        "t_stat": 0.07029579639555814,
+        "p_value": 0.9439881997116272
+      },
+      {
+        "country": "SI",
+        "n_sb": 6,
+        "n_mb": 10,
+        "sb_mean_co2": 691321555.5555555,
+        "mb_mean_co2": 691321555.5555556,
+        "premium_pct": -1.7243681842812353e-14,
+        "t_stat": -2.23606797749979,
+        "p_value": 0.0755868184216124
+      }
+    ],
+    "n_sectors_tested": 0,
+    "n_countries_tested": 22,
+    "interpretation": "Positive premium = SB contracts go to higher-CO2 facilities (technical channel exists). Negative premium = MB contracts go to higher-CO2 facilities. Within-sector analysis controls for the allocative channel."
+  },
+  "sample_matches": [
+    {
+      "procurement_name_norm": "baumit",
+      "eprtr_name": "Baumit GmbH",
+      "country": "AT",
+      "eprtr_sector": "Mineral industry",
+      "exio_sector": "Other non-metallic mineral products",
+      "co2_mean_kg": 431055555.5555556,
+      "n_contracts": 6,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "borealis agrolinz melamine",
+      "eprtr_name": "Borealis Agrolinz Melamine GmbH",
+      "country": "AT",
+      "eprtr_sector": "Chemical industry",
+      "exio_sector": "Chemicals and chemical products",
+      "co2_mean_kg": 560200000.0,
+      "n_contracts": 1,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "energie obero sterreich umwelt service",
+      "eprtr_name": "Energie AG Ober\u00f6sterreich Umwelt Service GmbH",
+      "country": "AT",
+      "eprtr_sector": "Waste and wastewater management",
+      "exio_sector": "Other business activities",
+      "co2_mean_kg": 320111111.1111111,
+      "n_contracts": 87,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "lenzing",
+      "eprtr_name": "Lenzing Aktiengesellschaft",
+      "country": "AT",
+      "eprtr_sector": "Chemical industry",
+      "exio_sector": "Chemicals and chemical products",
+      "co2_mean_kg": 1057222222.2222222,
+      "n_contracts": 3,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "omv downstream",
+      "eprtr_name": "OMV Downstream GmbH",
+      "country": "AT",
+      "eprtr_sector": "Energy sector",
+      "exio_sector": "Electricity, gas and water supply",
+      "co2_mean_kg": 2735000000.0,
+      "n_contracts": 56,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "salzburg fu r energie verkehr und telekommunikation",
+      "eprtr_name": "Salzburg AG f\u00fcr Energie, Verkehr und Telekommunikation",
+      "country": "AT",
+      "eprtr_sector": "Energy sector",
+      "exio_sector": "Electricity, gas and water supply",
+      "co2_mean_kg": 156058823.52941176,
+      "n_contracts": 31,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "sandoz",
+      "eprtr_name": "Sandoz GmbH",
+      "country": "AT",
+      "eprtr_sector": "Chemical industry",
+      "exio_sector": "Chemicals and chemical products",
+      "co2_mean_kg": 141266666.66666666,
+      "n_contracts": 6,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "schretter cie kg",
+      "eprtr_name": "Schretter & Cie GmbH & Co KG",
+      "country": "AT",
+      "eprtr_sector": "Mineral industry",
+      "exio_sector": "Other non-metallic mineral products",
+      "co2_mean_kg": 214470588.2352941,
+      "n_contracts": 13,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "stadtwerke klagenfurt",
+      "eprtr_name": "Stadtwerke Klagenfurt AG",
+      "country": "AT",
+      "eprtr_sector": "Energy sector",
+      "exio_sector": "Electricity, gas and water supply",
+      "co2_mean_kg": 147000000.0,
+      "n_contracts": 1,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "voestalpine stahl",
+      "eprtr_name": "voestalpine Stahl GmbH",
+      "country": "AT",
+      "eprtr_sector": "Production and processing of metals",
+      "exio_sector": "Basic metals and fabricated metal products",
+      "co2_mean_kg": 8511176470.588235,
+      "n_contracts": 3,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "w p zement",
+      "eprtr_name": "w&p Zement GmbH",
+      "country": "AT",
+      "eprtr_sector": "Mineral industry",
+      "exio_sector": "Other non-metallic mineral products",
+      "co2_mean_kg": 449285714.28571427,
+      "n_contracts": 1,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "wien energie",
+      "eprtr_name": "WIEN ENERGIE GmbH",
+      "country": "AT",
+      "eprtr_sector": "Waste and wastewater management",
+      "exio_sector": "Other business activities",
+      "co2_mean_kg": 185470588.2352941,
+      "n_contracts": 4,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "zementwerk leube",
+      "eprtr_name": "Zementwerk Leube GmbH",
+      "country": "AT",
+      "eprtr_sector": "Mineral industry",
+      "exio_sector": "Other non-metallic mineral products",
+      "co2_mean_kg": 120800000.0,
+      "n_contracts": 1,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "aperam stainless belgium",
+      "eprtr_name": "APERAM STAINLESS BELGIUM",
+      "country": "BE",
+      "eprtr_sector": "Production and processing of metals",
+      "exio_sector": "Basic metals and fabricated metal products",
+      "co2_mean_kg": 169333333.33333334,
+      "n_contracts": 1,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "basf antwerpen",
+      "eprtr_name": "BASF ANTWERPEN",
+      "country": "BE",
+      "eprtr_sector": "Chemical industry",
+      "exio_sector": "Chemicals and chemical products",
+      "co2_mean_kg": 2985000000.0,
+      "n_contracts": 1,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "biowanze",
+      "eprtr_name": "BIOWANZE",
+      "country": "BE",
+      "eprtr_sector": "Chemical industry",
+      "exio_sector": "Chemicals and chemical products",
+      "co2_mean_kg": 477562500.0,
+      "n_contracts": 2,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "carrieres et fours a chaux dumont wautier",
+      "eprtr_name": "CARRIERES ET FOURS A CHAUX DUMONT WAUTIER",
+      "country": "BE",
+      "eprtr_sector": "Mineral industry",
+      "exio_sector": "Other non-metallic mineral products",
+      "co2_mean_kg": 933388888.8888888,
+      "n_contracts": 2,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "dc environment",
+      "eprtr_name": "DC ENVIRONMENT",
+      "country": "BE",
+      "eprtr_sector": "",
+      "exio_sector": "",
+      "co2_mean_kg": 124000000.0,
+      "n_contracts": 2,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "luminus",
+      "eprtr_name": "LUMINUS",
+      "country": "BE",
+      "eprtr_sector": "Energy sector",
+      "exio_sector": "Electricity, gas and water supply",
+      "co2_mean_kg": 625777777.7777778,
+      "n_contracts": 98,
+      "match_tier": 1
+    },
+    {
+      "procurement_name_norm": "stora enso langerbrugge",
+      "eprtr_name": "STORA ENSO LANGERBRUGGE",
+      "country": "BE",
+      "eprtr_sector": "Paper and wood production and processing",
+      "exio_sector": "Pulp, paper and paper products",
+      "co2_mean_kg": 545166666.6666666,
+      "n_contracts": 2,
+      "match_tier": 1
+    }
+  ]
+}

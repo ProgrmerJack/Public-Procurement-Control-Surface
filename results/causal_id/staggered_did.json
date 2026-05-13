@@ -1,0 +1,77 @@
+{
+  "dose_response": {
+    "pearson_r": -0.554,
+    "pearson_p": 0.0061,
+    "spearman_rho": -0.526,
+    "spearman_p": 0.01,
+    "slope": -35.21,
+    "slope_se": 11.54,
+    "slope_p": 0.0061,
+    "R2": 0.307,
+    "high_mean_change_pp": -3.37,
+    "low_mean_change_pp": 3.07
+  },
+  "twfe_staggered": {
+    "att_pp": -0.71,
+    "att_se_pp": 1.24,
+    "att_t": -0.571,
+    "att_p": 0.5685,
+    "ci_lower_pp": -3.13,
+    "ci_upper_pp": 1.72,
+    "n_obs": 200,
+    "n_countries": 25,
+    "r2": 0.8548
+  },
+  "event_study": {
+    "-4": {
+      "coef": -0.06,
+      "se": 1.29,
+      "p": 0.965
+    },
+    "-3": {
+      "coef": 1.88,
+      "se": 1.37,
+      "p": 0.172
+    },
+    "-2": {
+      "coef": 1.77,
+      "se": 1.23,
+      "p": 0.151
+    },
+    "-1": {
+      "coef": 0,
+      "se": 0,
+      "p": 1
+    },
+    "0": {
+      "coef": 0.06,
+      "se": 1.32,
+      "p": 0.965
+    },
+    "1": {
+      "coef": -0.84,
+      "se": 1.67,
+      "p": 0.615
+    },
+    "2": {
+      "coef": -1.85,
+      "se": 1.98,
+      "p": 0.351
+    },
+    "3": {
+      "coef": -1.71,
+      "se": 2.45,
+      "p": 0.487
+    },
+    "4": {
+      "coef": -1.02,
+      "se": 4.65,
+      "p": 0.826
+    }
+  },
+  "pre_trend_test": {
+    "f_stat": 1.323,
+    "p_value": 0.2689,
+    "pass_result": true
+  }
+}

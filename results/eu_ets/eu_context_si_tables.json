@@ -1,0 +1,122 @@
+{
+  "eu_primary": {
+    "N": 13638933,
+    "SB_n": 2321226,
+    "MB_n": 11317707,
+    "SB_mean": 0.3405,
+    "MB_mean": 0.3558,
+    "SB_sd": 0.1904,
+    "MB_sd": 0.2114,
+    "premium_pct": -4.3,
+    "t": -109.7,
+    "d": -0.076,
+    "SB_rate": 17.0
+  },
+  "temporal_eu": [
+    {
+      "year": 2012,
+      "N": 354958,
+      "SB_rate": 20.7,
+      "premium_pct": -5.7,
+      "t": -24.8
+    },
+    {
+      "year": 2013,
+      "N": 363702,
+      "SB_rate": 19.8,
+      "premium_pct": -8.4,
+      "t": -38.5
+    },
+    {
+      "year": 2014,
+      "N": 357805,
+      "SB_rate": 20.0,
+      "premium_pct": -8.0,
+      "t": -37.4
+    },
+    {
+      "year": 2015,
+      "N": 368390,
+      "SB_rate": 20.2,
+      "premium_pct": -6.5,
+      "t": -30.5
+    },
+    {
+      "year": 2016,
+      "N": 506762,
+      "SB_rate": 15.1,
+      "premium_pct": -7.4,
+      "t": -36.7
+    },
+    {
+      "year": 2017,
+      "N": 762360,
+      "SB_rate": 15.3,
+      "premium_pct": -3.7,
+      "t": -21.7
+    },
+    {
+      "year": 2018,
+      "N": 5793300,
+      "SB_rate": 17.1,
+      "premium_pct": -4.2,
+      "t": -69.8
+    },
+    {
+      "year": 2019,
+      "N": 983068,
+      "SB_rate": 16.1,
+      "premium_pct": -2.9,
+      "t": -18.9
+    },
+    {
+      "year": 2020,
+      "N": 994896,
+      "SB_rate": 15.4,
+      "premium_pct": -1.6,
+      "t": -10.3
+    },
+    {
+      "year": 2021,
+      "N": 1060731,
+      "SB_rate": 15.6,
+      "premium_pct": -2.8,
+      "t": -19.3
+    },
+    {
+      "year": 2022,
+      "N": 1057338,
+      "SB_rate": 16.8,
+      "premium_pct": -4.9,
+      "t": -33.5
+    },
+    {
+      "year": 2023,
+      "N": 1035623,
+      "SB_rate": 18.6,
+      "premium_pct": -3.5,
+      "t": -25.0
+    }
+  ],
+  "covid_eu_pre": {
+    "label": "Pre-COVID",
+    "N": 6776368,
+    "SB_rate": 16.9,
+    "premium_pct": -4.0,
+    "t": -71.9
+  },
+  "covid_eu_during": {
+    "label": "During COVID",
+    "N": 2055627,
+    "SB_rate": 15.5,
+    "premium_pct": -2.2,
+    "t": -21.1
+  },
+  "covid_eu_post": {
+    "label": "Post-COVID",
+    "N": 2092961,
+    "SB_rate": 17.7,
+    "premium_pct": -4.3,
+    "t": -42.2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "dateModified": "2015-02-04T16:00:00.692460+02:00",
+      "id": "7db315413cd84059bbd2b60248644684"
+    },
+    {
+      "dateModified": "2015-02-05T14:17:10.043804+02:00",
+      "id": "85e7af4f1aff463ca120bf7c5577a8c2"
+    },
+    {
+      "dateModified": "2015-02-06T10:56:16.331974+02:00",
+      "id": "09382ec0302a43e39ba69c0ff3862d80"
+    },
+    {
+      "dateModified": "2015-02-06T12:52:00.614092+02:00",
+      "id": "11abd9671d674091a671642425aca2cc"
+    },
+    {
+      "dateModified": "2015-02-06T13:40:00.425672+02:00",
+      "id": "0b188e48025149bbb87602fb44de6dd2"
+    },
+    {
+      "dateModified": "2015-02-06T14:00:00.565895+02:00",
+      "id": "b3448f9600174753ae1e5206e62c708d"
+    },
+    {
+      "dateModified": "2015-02-06T18:15:00.748295+02:00",
+      "id": "66d5e2ad38fd4125b2bc3b44184e3e55"
+    },
+    {
+      "dateModified": "2015-02-08T15:18:00.547349+02:00",
+      "id": "5eec583ebc8b41e9b54c0326a498db05"
+    },
+    {
+      "dateModified": "2015-02-08T18:29:00.365059+02:00",
+      "id": "2b25b62085ba4316992bc935b44f7d37"
+    },
+    {
+      "dateModified": "2015-02-10T13:57:00.359894+02:00",
+      "id": "d45235c1b03b42bd8aba384e6ea6aa1d"
+    }
+  ],
+  "next_page": {
+    "offset": "1423569420.359894.1.3eb01f68d4e326785277562abaf43adb",
+    "path": "/api/2.5/tenders?mode=_all_&limit=10&offset=1423569420.359894.1.3eb01f68d4e326785277562abaf43adb",
+    "uri": "https://public.api.openprocurement.org/api/2.5/tenders?mode=_all_&limit=10&offset=1423569420.359894.1.3eb01f68d4e326785277562abaf43adb"
+  }
+}

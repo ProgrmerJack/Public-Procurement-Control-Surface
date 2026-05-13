@@ -1,0 +1,419 @@
+{
+  "bidder_data": {
+    "goods": {
+      "n_countries": 24,
+      "mean_bidders": 4.81,
+      "median_bidders": 3.1,
+      "std_bidders": 4.11,
+      "min_bidders": 1.0,
+      "max_bidders": 18.0,
+      "countries": [
+        "Albania",
+        "Angola",
+        "Bosnia and Herzegovina",
+        "Chile",
+        "Estonia",
+        "Fiji",
+        "Georgia",
+        "Georgia",
+        "Greece",
+        "Guyana",
+        "Honduras",
+        "Kosovo",
+        "Mauritius",
+        "Mexico",
+        "Moldova",
+        "Netherlands",
+        "Paraguay",
+        "Peru",
+        "Philippines",
+        "Portugal",
+        "Romania",
+        "Serbia",
+        "Slovenia",
+        "Tajikistan"
+      ],
+      "values": [
+        2.0,
+        18.0,
+        2.21,
+        6.0,
+        1.0,
+        6.0,
+        2.0,
+        1.93,
+        3.0,
+        5.0,
+        4.0,
+        5.0,
+        8.0,
+        12.79,
+        3.74,
+        3.2,
+        3.0,
+        3.0,
+        1.0,
+        12.0,
+        4.0,
+        2.5,
+        3.0,
+        3.0
+      ]
+    },
+    "works": {
+      "n_countries": 23,
+      "mean_bidders": 4.11,
+      "median_bidders": 3.88,
+      "std_bidders": 1.95,
+      "min_bidders": 1.0,
+      "max_bidders": 8.0,
+      "countries": [
+        "Albania",
+        "Bosnia and Herzegovina",
+        "Chile",
+        "Estonia",
+        "Fiji",
+        "Georgia",
+        "Georgia",
+        "Greece",
+        "Guyana",
+        "Honduras",
+        "Kosovo",
+        "Mauritius",
+        "Mexico",
+        "Moldova",
+        "Netherlands",
+        "Paraguay",
+        "Peru",
+        "Philippines",
+        "Portugal",
+        "Romania",
+        "Serbia",
+        "Slovenia",
+        "Tajikistan"
+      ],
+      "values": [
+        5.0,
+        2.92,
+        3.0,
+        5.0,
+        4.0,
+        3.0,
+        2.61,
+        7.0,
+        8.0,
+        4.0,
+        6.0,
+        8.0,
+        3.877,
+        4.37,
+        4.2,
+        2.0,
+        3.0,
+        1.0,
+        7.0,
+        3.0,
+        2.5,
+        3.0,
+        2.0
+      ]
+    },
+    "services": {
+      "n_countries": 23,
+      "mean_bidders": 3.27,
+      "median_bidders": 3.0,
+      "std_bidders": 1.91,
+      "min_bidders": 1.0,
+      "max_bidders": 9.0,
+      "countries": [
+        "Albania",
+        "Bosnia and Herzegovina",
+        "Chile",
+        "Estonia",
+        "Fiji",
+        "Georgia",
+        "Georgia",
+        "Greece",
+        "Guyana",
+        "Honduras",
+        "Kosovo",
+        "Mauritius",
+        "Mexico",
+        "Moldova",
+        "Netherlands",
+        "Paraguay",
+        "Peru",
+        "Philippines",
+        "Portugal",
+        "Romania",
+        "Serbia",
+        "Slovenia",
+        "Tajikistan"
+      ],
+      "values": [
+        3.0,
+        2.35,
+        3.0,
+        2.0,
+        4.0,
+        2.0,
+        1.76,
+        3.0,
+        4.0,
+        4.0,
+        4.0,
+        8.0,
+        4.594,
+        1.93,
+        4.0,
+        2.0,
+        3.0,
+        1.0,
+        9.0,
+        2.0,
+        2.5,
+        2.0,
+        2.0
+      ]
+    }
+  },
+  "direct_rate_data": [
+    {
+      "country": "Afghanistan",
+      "iso3": "AFG",
+      "region": "South Asia",
+      "n_open": 56,
+      "n_direct": 203,
+      "direct_rate": 0.7838
+    },
+    {
+      "country": "Austria",
+      "iso3": "AUT",
+      "region": "Europe and Central Asia",
+      "n_open": 4096,
+      "n_direct": 2191,
+      "direct_rate": 0.3485
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "iso3": "BIH",
+      "region": "Europe and Central Asia",
+      "n_open": 73515,
+      "n_direct": 112066,
+      "direct_rate": 0.6039
+    },
+    {
+      "country": "Chile",
+      "iso3": "CHL",
+      "region": "Latin America and the Caribbean",
+      "n_open": 1995153,
+      "n_direct": 386707,
+      "direct_rate": 0.1624
+    },
+    {
+      "country": "Estonia",
+      "iso3": "EST",
+      "region": "Europe and Central Asia",
+      "n_open": 11825,
+      "n_direct": 321,
+      "direct_rate": 0.0264
+    },
+    {
+      "country": "Georgia",
+      "iso3": "GEO",
+      "region": "Europe and Central Asia",
+      "n_open": 23032,
+      "n_direct": 196444,
+      "direct_rate": 0.8951
+    },
+    {
+      "country": "Greece",
+      "iso3": "GRC",
+      "region": "Europe and Central Asia",
+      "n_open": 20720,
+      "n_direct": 169848,
+      "direct_rate": 0.8913
+    },
+    {
+      "country": "Guyana",
+      "iso3": "GUY",
+      "region": "Latin America and the Caribbean",
+      "n_open": 1222,
+      "n_direct": 2318,
+      "direct_rate": 0.6548
+    },
+    {
+      "country": "Honduras",
+      "iso3": "HND",
+      "region": "Latin America and the Caribbean",
+      "n_open": 64217,
+      "n_direct": 117,
+      "direct_rate": 0.0018
+    },
+    {
+      "country": "Hungary",
+      "iso3": "HUN",
+      "region": "Europe and Central Asia",
+      "n_open": 2412,
+      "n_direct": 122,
+      "direct_rate": 0.0481
+    },
+    {
+      "country": "Kosovo",
+      "iso3": "XKX",
+      "region": "Europe and Central Asia",
+      "n_open": 6584,
+      "n_direct": 385,
+      "direct_rate": 0.0552
+    },
+    {
+      "country": "Liberia",
+      "iso3": "LBR",
+      "region": "Sub-Saharan Africa",
+      "n_open": 17,
+      "n_direct": 7,
+      "direct_rate": 0.2917
+    },
+    {
+      "country": "Mauritius",
+      "iso3": "MUS",
+      "region": "Sub-Saharan Africa",
+      "n_open": 6593,
+      "n_direct": 884,
+      "direct_rate": 0.1182
+    },
+    {
+      "country": "Mexico",
+      "iso3": "MEX",
+      "region": "Latin America and the Caribbean",
+      "n_open": 46297,
+      "n_direct": 148821,
+      "direct_rate": 0.7627
+    },
+    {
+      "country": "Moldova",
+      "iso3": "MDA",
+      "region": "Europe and Central Asia",
+      "n_open": 24068,
+      "n_direct": 1259,
+      "direct_rate": 0.0497
+    },
+    {
+      "country": "Moldova",
+      "iso3": "MDA",
+      "region": "Europe and Central Asia",
+      "n_open": 13342,
+      "n_direct": 458,
+      "direct_rate": 0.0332
+    },
+    {
+      "country": "Mongolia",
+      "iso3": "MNG",
+      "region": "East Asia and Pacific",
+      "n_open": 7,
+      "n_direct": 12,
+      "direct_rate": 0.6316
+    },
+    {
+      "country": "Mozambique",
+      "iso3": "MOZ",
+      "region": "Sub-Saharan Africa",
+      "n_open": 125594,
+      "n_direct": 99348,
+      "direct_rate": 0.4417
+    },
+    {
+      "country": "North Macedonia",
+      "iso3": "MKD",
+      "region": "Europe and Central Asia",
+      "n_open": 29529,
+      "n_direct": 639,
+      "direct_rate": 0.0212
+    },
+    {
+      "country": "Paraguay",
+      "iso3": "PRY",
+      "region": "Latin America and the Caribbean",
+      "n_open": 14481,
+      "n_direct": 326,
+      "direct_rate": 0.022
+    },
+    {
+      "country": "Peru",
+      "iso3": "PER",
+      "region": "Latin America and the Caribbean",
+      "n_open": 40513,
+      "n_direct": 2236,
+      "direct_rate": 0.0523
+    },
+    {
+      "country": "Philippines",
+      "iso3": "PHL",
+      "region": "East Asia and Pacific",
+      "n_open": 361423,
+      "n_direct": 2280,
+      "direct_rate": 0.0063
+    },
+    {
+      "country": "Romania",
+      "iso3": "ROU",
+      "region": "Europe and Central Asia",
+      "n_open": 66125,
+      "n_direct": 7380,
+      "direct_rate": 0.1004
+    },
+    {
+      "country": "Serbia",
+      "iso3": "SRB",
+      "region": "Europe and Central Asia",
+      "n_open": 113251,
+      "n_direct": 4883,
+      "direct_rate": 0.0413
+    },
+    {
+      "country": "Serbia",
+      "iso3": "SRB",
+      "region": "Europe and Central Asia",
+      "n_open": 73864,
+      "n_direct": 2123,
+      "direct_rate": 0.0279
+    },
+    {
+      "country": "Tajikistan",
+      "iso3": "TJK",
+      "region": "Europe and Central Asia",
+      "n_open": 6141,
+      "n_direct": 69,
+      "direct_rate": 0.0111
+    },
+    {
+      "country": "Uganda",
+      "iso3": "UGA",
+      "region": "Sub-Saharan Africa",
+      "n_open": 5982,
+      "n_direct": 1549,
+      "direct_rate": 0.2057
+    },
+    {
+      "country": "Uruguay",
+      "iso3": "URY",
+      "region": "Latin America and the Caribbean",
+      "n_open": 4266,
+      "n_direct": 71208,
+      "direct_rate": 0.9435
+    },
+    {
+      "country": "Vietnam",
+      "iso3": "VNM",
+      "region": "East Asia and Pacific",
+      "n_open": 95000,
+      "n_direct": 127000,
+      "direct_rate": 0.5721
+    }
+  ],
+  "carbon_map": {
+    "works": "high",
+    "goods": "medium",
+    "services": "low"
+  }
+}

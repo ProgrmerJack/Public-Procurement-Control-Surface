@@ -1,0 +1,46 @@
+{
+  "source": "EXIOBASE 3.8.2 (Ignite Analytics v1.1)",
+  "comparison": "2011 vs 2022 EU-27 average",
+  "overall_change": "-24.8% mean, -26.8% median",
+  "dead_zone_sectors": {
+    "Mining": {
+      "ci_2011": 1.942,
+      "ci_2022": 1.72,
+      "change": "-11.4%",
+      "survives": true
+    },
+    "Chemicals": {
+      "ci_2011": 1.547,
+      "ci_2022": 1.051,
+      "change": "-32.1%",
+      "survives": true
+    },
+    "Agriculture": {
+      "ci_2011": 1.644,
+      "ci_2022": 1.095,
+      "change": "-33.4%",
+      "survives": true
+    },
+    "Land_transport": {
+      "ci_2011": 0.412,
+      "ci_2022": 0.322,
+      "change": "-21.8%",
+      "survives": false,
+      "note": "exits due to transport electrification"
+    },
+    "Metal_products": {
+      "ci_2011": 1.214,
+      "ci_2022": 0.945,
+      "change": "-22.2%",
+      "survives": true
+    },
+    "Food_products": {
+      "ci_2011": 0.878,
+      "ci_2022": 0.606,
+      "change": "-22.9%",
+      "survives": true
+    }
+  },
+  "summary": "5 of 6 Dead Zone sectors survive under 2022 intensities. Land transport exits (transport electrification). Core Dead Zones (Mining, Chemicals, Agriculture, Metal products, Food) remain robustly above threshold.",
+  "threshold": "0.40 kg CO2e/USD (approx 0.43 kg CO2e/EUR)"
+}

@@ -1,0 +1,34 @@
+{
+  "exiobase_did": {
+    "eu_pre_gap": -0.030502637795739324,
+    "eu_post_gap": -0.01376317289620606,
+    "eu_change": 0.016739464899533263,
+    "ctrl_change": -0.051353316418888316,
+    "did_effect": 0.06809278131842159,
+    "bootstrap_p": 0.0,
+    "ci_lower": 0.03551108294637837,
+    "ci_upper": 0.0996395941368152
+  },
+  "within_eu_its": {
+    "pre_gap": -0.030502637795739324,
+    "post_gap": -0.01376317289620606,
+    "change": 0.016739464899533263,
+    "t_stat": -2.74701818686894,
+    "p_value": 0.0064039953397109365
+  },
+  "dead_zone_its": {
+    "pre_gap": -0.023294827450979244,
+    "post_gap": -0.01655497076429851,
+    "change": 0.0067398566866807355,
+    "t_stat": -0.8981988462906068,
+    "p_value": 0.3698540157940713
+  },
+  "eurostat_its": {
+    "pre_gap": 0.12423,
+    "post_gap": 0.04255,
+    "change": -0.08169,
+    "t_stat": 4.172,
+    "p_value": 4.1e-05,
+    "interpretation": "Eurostat carbon gap narrowed 66% post-reform (p<0.001). SB-MB convergence."
+  }
+}

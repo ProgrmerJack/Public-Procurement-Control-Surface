@@ -1,0 +1,13 @@
+{
+  "total_contracts": 21612129,
+  "countries": 27,
+  "premium_pct": 14.802136257008703,
+  "t_statistic": 331.5234350821765,
+  "cohens_d": 0.22786621264654883,
+  "pre_covid_premium": 6.984505766739108,
+  "covid_premium": 20.068002365699535,
+  "post_covid_premium": 0.34853377258279833,
+  "extreme_value_ratio": 2.1763344394747195,
+  "within_sector_effect": 1.3117724481108829e-14,
+  "all_verifications_passed": true
+}

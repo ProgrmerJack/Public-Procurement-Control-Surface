@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "analysis_type": "EU ETS facility-level within-sector carbon intensity",
+    "data_sources": [
+      "EUTL facility-level compliance data",
+      "EU ETS aggregated data"
+    ],
+    "date_generated": "2026-04-05T23:38:56.399586",
+    "description": "Estimates within-sector carbon heterogeneity and competitive procurement premium"
+  },
+  "data_summary": {
+    "total_facility_records": 195603,
+    "sector_country_year_groups": 5999,
+    "countries": 33,
+    "sectors": 37,
+    "years": "2005-2023",
+    "avg_facilities_per_group": 32.23937322887148
+  },
+  "within_sector_variation": {
+    "coefficient_of_variation": {
+      "mean": 1.2228702847672854,
+      "median": 0.8635720270004966,
+      "std": 1.1740747464914343,
+      "p25": 0.5704715790611468,
+      "p75": 1.3830468712279171,
+      "min": 0.0002352387673488591,
+      "max": 10.426620808440097
+    },
+    "p90_p10_ratio": {
+      "mean": 263.60211421682567,
+      "median": 8.507076950640508,
+      "std": 1915.8745677007396,
+      "p25": 3.5938185250116885,
+      "p75": 39.75377507704292
+    },
+    "gini_coefficient": {
+      "mean": -0.46526484974054716,
+      "median": -0.44347282948157396,
+      "std": 0.23481267615944712,
+      "p25": -0.6188272847991194,
+      "p75": -0.30567731205153886
+    }
+  },
+  "procurement_premium": {
+    "p25_vs_p50_pct": {
+      "mean": 43.61837434853288,
+      "median": 43.17842121728249,
+      "p25": 25.48567418389253,
+      "p75": 61.053759051976854,
+      "min": 0.0,
+      "max": 99.75525232835174
+    },
+    "p10_vs_p50_pct": {
+      "mean": 62.45703727585114,
+      "median": 68.39560267595164,
+      "p25": 43.80650939751605,
+      "p75": 83.68159280406704
+    },
+    "p10_vs_p90_pct": {
+      "mean": 79.89221467322088,
+      "median": 88.24508105660537
+    }
+  },
+  "effect_sizes": {
+    "exiobase_200_sectors": {
+      "allocative_d": -0.08,
+      "within_sector_d": 0.0,
+      "note": "Zero within-sector variation by construction"
+    },
+    "eurostat_648_sectors": {
+      "between_sector_effect": -0.178,
+      "within_sector_effect": -0.002,
+      "ratio_within_to_between": 0.011235955056179777
+    },
+    "eutl_facility_level": {
+      "mean_cv": 1.2228702847672854,
+      "median_procurement_premium_pct": 43.17842121728249,
+      "effect_size_d_p25_vs_p50": {
+        "mean": 0.37323978695705295,
+        "median": 0.3717678364813218,
+        "std": 0.30066616103155663
+      },
+      "effect_size_d_p10_vs_p50": {
+        "mean": 0.5727451276935225,
+        "median": 0.5833195066407572
+      },
+      "amplification_vs_exiobase": 4.647097956016522,
+      "amplification_vs_eurostat_within": 185.88391824066088
+    }
+  },
+  "key_findings": {
+    "within_sector_heterogeneity": "Facility-level CV of 1.2229 indicates substantial variation",
+    "competitive_premium": "43.18% reduction when selecting P25 vs median",
+    "effect_size": "Estimated d=-0.3718, 5x larger than EXIOBASE",
+    "exiobase_limitation": "Zero within-sector variation severely underestimates procurement leverage",
+    "policy_implication": "Procurement can access significant low-emission suppliers within each country-sector group"
+  }
+}

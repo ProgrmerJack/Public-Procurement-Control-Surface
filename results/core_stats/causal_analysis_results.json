@@ -1,0 +1,1403 @@
+{
+  "timestamp": "2025-12-13T00:56:51.660532",
+  "n_total": 21612129,
+  "headline": {
+    "sample": { "total_contracts": 21612129, "countries": 27, "years": "2012-2023" },
+    "single_bidder_premium_pct": 14.802136257008701,
+    "single_bidder_t": 333.7146763626083,
+    "single_bidder_pvalue": 0,
+    "cohens_d": 0.22899999999999998,
+    "u_curve": { "small_lt_10k_pct": 50.2, "mid_pct": 12.5, "large_gt_200k_pct": -7.1 },
+    "covid": { "pre_pct": 7.0, "during_pct": 20.1, "post_pct": 0.3 },
+    "rdd_bidders": { "absolute_increase": 0.7686966932899937, "percent_increase": 15.192993741724631 },
+    "mediation_pct": 2.08981967836639,
+    "heterogeneity_I2": 93.30697300624163
+  },
+  "rdd": {
+    "carbon_intensity_kg_usd_overall": {
+      "estimate": 0.0068150635096645385,
+      "se": 0.0008850806453023232,
+      "ci_low": 0.005080334232540393,
+      "ci_high": 0.008549792786788683,
+      "pvalue": 1.3631738261220311e-14,
+      "n_obs": 679742,
+      "n_left": "320550",
+      "n_right": "359192",
+      "bandwidth": 0.07703446578547102,
+      "outcome": "carbon_intensity_kg_usd",
+      "cutoff": 139000,
+      "cutoff_log": 5.143014800254095,
+      "country": null
+    },
+    "carbon_intensity_kg_usd_meta": {
+      "pooled_estimate": -0.006353693838487535,
+      "se": 0.0027495464414136073,
+      "ci_low": -0.011742804863658206,
+      "ci_high": -0.0009645828133168647,
+      "tau2": 0.0001527842210080387,
+      "I2": 0.9330697300624163,
+      "Q": 388.4639943070078,
+      "df": 26,
+      "p_heterogeneity": 0.0,
+      "n_studies": 27,
+      "countries": [
+        "DE",
+        "PL",
+        "DK",
+        "NL",
+        "IT",
+        "FR",
+        "SE",
+        "AT",
+        "BE",
+        "LT",
+        "SK",
+        "ES",
+        "SI",
+        "FI",
+        "HU",
+        "LV",
+        "EE",
+        "GR",
+        "PT",
+        "CZ",
+        "GB",
+        "LU",
+        "NO",
+        "IS",
+        "CH",
+        "IE",
+        "CO"
+      ],
+      "outcome": "carbon_intensity_kg_usd",
+      "method": "DerSimonian-Laird"
+    },
+    "carbon_intensity_kg_usd_by_country": [
+      {
+        "estimate": -0.0015269787144899906,
+        "se": 0.002671052234733187,
+        "ci_low": -0.006762239115315126,
+        "ci_high": 0.003708281686335145,
+        "pvalue": 0.5675428346946276,
+        "n_obs": 67257,
+        "n_left": "31476",
+        "n_right": "35781",
+        "bandwidth": 0.0999857945218259,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "DE"
+      },
+      {
+        "estimate": 0.00292509276292874,
+        "se": 0.0013428128793757,
+        "ci_low": 0.0002932163887355518,
+        "ci_high": 0.0055569691371219285,
+        "pvalue": 0.029382140606530386,
+        "n_obs": 277184,
+        "n_left": "133335",
+        "n_right": "143849",
+        "bandwidth": 0.16705460001012062,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "PL"
+      },
+      {
+        "estimate": -0.03328293768011847,
+        "se": 0.00814458371026445,
+        "ci_low": -0.04924858893647638,
+        "ci_high": -0.01731728642376056,
+        "pvalue": 4.42444177573476e-05,
+        "n_obs": 7551,
+        "n_left": "3592",
+        "n_right": "3959",
+        "bandwidth": 0.10694710215205515,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "DK"
+      },
+      {
+        "estimate": -0.010392251893002274,
+        "se": 0.00827444952499574,
+        "ci_low": -0.026612270571793547,
+        "ci_high": 0.005827766785788998,
+        "pvalue": 0.20917178730351604,
+        "n_obs": 8199,
+        "n_left": "3650",
+        "n_right": "4549",
+        "bandwidth": 0.14364818369504914,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "NL"
+      },
+      {
+        "estimate": -0.003957097158572966,
+        "se": 0.003188013924184445,
+        "ci_low": -0.010205718532826945,
+        "ci_high": 0.0022915242156810135,
+        "pvalue": 0.21452513170338453,
+        "n_obs": 33045,
+        "n_left": "15242",
+        "n_right": "17803",
+        "bandwidth": 0.11182037636650752,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "IT"
+      },
+      {
+        "estimate": -0.0019667735297636073,
+        "se": 0.0011331768711516322,
+        "ci_low": -0.004187765134876313,
+        "ci_high": 0.00025421807534909855,
+        "pvalue": 0.08263028697549646,
+        "n_obs": 467556,
+        "n_left": "200389",
+        "n_right": "267167",
+        "bandwidth": 0.26321146182210325,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "FR"
+      },
+      {
+        "estimate": -0.0036509027170032455,
+        "se": 0.006353725247305752,
+        "ci_low": -0.016105129767690476,
+        "ci_high": 0.008803324333683986,
+        "pvalue": 0.5655661943335633,
+        "n_obs": 13062,
+        "n_left": "4933",
+        "n_right": "8129",
+        "bandwidth": 0.09086968164438786,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "SE"
+      },
+      {
+        "estimate": -0.011383745656291131,
+        "se": 0.006877182390678773,
+        "ci_low": -0.024864180936858268,
+        "ci_high": 0.0020966896242760047,
+        "pvalue": 0.0978922913787026,
+        "n_obs": 11613,
+        "n_left": "4369",
+        "n_right": "7244",
+        "bandwidth": 0.20920631909344778,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "AT"
+      },
+      {
+        "estimate": 0.0005178432567468753,
+        "se": 0.008681893365328026,
+        "ci_low": -0.016500792485120507,
+        "ci_high": 0.017536478998614255,
+        "pvalue": 0.9524387118330766,
+        "n_obs": 8455,
+        "n_left": "3843",
+        "n_right": "4612",
+        "bandwidth": 0.0836285740089083,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "BE"
+      },
+      {
+        "estimate": -0.002585452283816115,
+        "se": 0.0032235570724426167,
+        "ci_low": -0.008903707812538112,
+        "ci_high": 0.003732803244905882,
+        "pvalue": 0.4225293136380762,
+        "n_obs": 38286,
+        "n_left": "18002",
+        "n_right": "20284",
+        "bandwidth": 0.11405979141627123,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "LT"
+      },
+      {
+        "estimate": -0.022644807272267142,
+        "se": 0.00906356672927955,
+        "ci_low": -0.04041141411957615,
+        "ci_high": -0.004878200424958141,
+        "pvalue": 0.012491357264953129,
+        "n_obs": 9184,
+        "n_left": "4099",
+        "n_right": "5085",
+        "bandwidth": 0.1111719302314831,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "SK"
+      },
+      {
+        "estimate": 0.005334889543844174,
+        "se": 0.0029042263068887416,
+        "ci_low": -0.0003574038549574686,
+        "ci_high": 0.011027182942645817,
+        "pvalue": 0.06622367596851862,
+        "n_obs": 60211,
+        "n_left": "27950",
+        "n_right": "32261",
+        "bandwidth": 0.09043661381002148,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "ES"
+      },
+      {
+        "estimate": 0.05140629217155653,
+        "se": 0.005996565028232623,
+        "ci_low": 0.039652365637919226,
+        "ci_high": 0.06316021870519384,
+        "pvalue": 1.1013253468215531e-17,
+        "n_obs": 16262,
+        "n_left": "7794",
+        "n_right": "8468",
+        "bandwidth": 0.10006869198273617,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "SI"
+      },
+      {
+        "estimate": -0.053359053265488336,
+        "se": 0.010018438889282425,
+        "ci_low": -0.07299691949483386,
+        "ci_high": -0.03372118703614281,
+        "pvalue": 1.0226297386186586e-07,
+        "n_obs": 11394,
+        "n_left": "4571",
+        "n_right": "6823",
+        "bandwidth": 0.13453469610769475,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "FI"
+      },
+      {
+        "estimate": 0.03243028436862358,
+        "se": 0.004679646272857204,
+        "ci_low": 0.02325785787125121,
+        "ci_high": 0.04160271086599595,
+        "pvalue": 4.318684381606343e-12,
+        "n_obs": 22738,
+        "n_left": "11072",
+        "n_right": "11666",
+        "bandwidth": 0.1682137414719694,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "HU"
+      },
+      {
+        "estimate": -0.00015751267224442707,
+        "se": 0.006420318366500362,
+        "ci_low": -0.012742001428252527,
+        "ci_high": 0.012426976083763672,
+        "pvalue": 0.9804273764564015,
+        "n_obs": 17004,
+        "n_left": "6683",
+        "n_right": "10321",
+        "bandwidth": 0.09266505359389707,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "LV"
+      },
+      {
+        "estimate": -0.028190049169653175,
+        "se": 0.007585426087071414,
+        "ci_low": -0.0430591015422861,
+        "ci_high": -0.013320996797020248,
+        "pvalue": 0.0002032847397657703,
+        "n_obs": 9524,
+        "n_left": "3875",
+        "n_right": "5649",
+        "bandwidth": 0.11286305066692691,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "EE"
+      },
+      {
+        "estimate": 0.003692279939643859,
+        "se": 0.005030706758907669,
+        "ci_low": -0.006168438798322401,
+        "ci_high": 0.01355299867761012,
+        "pvalue": 0.46299039861293034,
+        "n_obs": 16704,
+        "n_left": "5872",
+        "n_right": "10832",
+        "bandwidth": 0.06928445294454405,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "GR"
+      },
+      {
+        "estimate": -0.07766140624481539,
+        "se": 0.007441548572864164,
+        "ci_low": -0.0922486720780376,
+        "ci_high": -0.06307414041159319,
+        "pvalue": 2.4192237576732204e-25,
+        "n_obs": 8417,
+        "n_left": "3442",
+        "n_right": "4975",
+        "bandwidth": 0.06161845887490972,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "PT"
+      },
+      {
+        "estimate": 0.018598557338205025,
+        "se": 0.003579119887227378,
+        "ci_low": 0.011583413095480697,
+        "ci_high": 0.025613701580929352,
+        "pvalue": 2.041083324873605e-07,
+        "n_obs": 42851,
+        "n_left": "19627",
+        "n_right": "23224",
+        "bandwidth": 0.08934947694234904,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "CZ"
+      },
+      {
+        "estimate": -0.0029184760148727265,
+        "se": 0.0035683087251966628,
+        "ci_low": -0.009912370969077326,
+        "ci_high": 0.004075418939331872,
+        "pvalue": 0.4134244678446799,
+        "n_obs": 61183,
+        "n_left": "31645",
+        "n_right": "29538",
+        "bandwidth": 0.12837274279989433,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "GB"
+      },
+      {
+        "estimate": -0.08544360565778912,
+        "se": 0.015830286343491675,
+        "ci_low": -0.11649106690015419,
+        "ci_high": -0.05439614441542405,
+        "pvalue": 7.64547401454193e-08,
+        "n_obs": 1822,
+        "n_left": "706",
+        "n_right": "1116",
+        "bandwidth": 0.11770875585566266,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "LU"
+      },
+      {
+        "estimate": -0.03192548646167394,
+        "se": 0.010115313976057728,
+        "ci_low": -0.05175638399735766,
+        "ci_high": -0.012094588925990218,
+        "pvalue": 0.0016090264939352778,
+        "n_obs": 4579,
+        "n_left": "1862",
+        "n_right": "2717",
+        "bandwidth": 0.07914608170240199,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "NO"
+      },
+      {
+        "estimate": 0.11917357144689665,
+        "se": 0.05524053544463336,
+        "ci_low": 0.010459605096255972,
+        "ci_high": 0.22788753779753734,
+        "pvalue": 0.03178241378004748,
+        "n_obs": 300,
+        "n_left": "148",
+        "n_right": "152",
+        "bandwidth": 0.0956317722356348,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "IS"
+      },
+      {
+        "estimate": 0.00738074617121044,
+        "se": 0.011425451462533206,
+        "ci_low": -0.015021059772507863,
+        "ci_high": 0.02978255211492874,
+        "pvalue": 0.5183303195930863,
+        "n_obs": 3258,
+        "n_left": "1360",
+        "n_right": "1898",
+        "bandwidth": 0.10739351136642579,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "CH"
+      },
+      {
+        "estimate": -0.011335084317158739,
+        "se": 0.015222708121358638,
+        "ci_low": -0.041180823090657244,
+        "ci_high": 0.018510654456339766,
+        "pvalue": 0.4565507711828791,
+        "n_obs": 3698,
+        "n_left": "1396",
+        "n_right": "2302",
+        "bandwidth": 0.08710032536437762,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "IE"
+      },
+      {
+        "estimate": -0.0019686185613302463,
+        "se": 0.0013036035440304552,
+        "ci_low": -0.004523682118731295,
+        "ci_high": 0.000586444996070802,
+        "pvalue": 0.1310136000574195,
+        "n_obs": 65027,
+        "n_left": "34861",
+        "n_right": "30166",
+        "bandwidth": 0.07942971841384804,
+        "outcome": "carbon_intensity_kg_usd",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "CO"
+      }
+    ],
+    "n_bidders_overall": {
+      "estimate": 1.0617541106224448,
+      "se": 0.12963205725374533,
+      "ci_low": 0.807679545822071,
+      "ci_high": 1.3158286754228188,
+      "pvalue": 2.604908838699423e-16,
+      "n_obs": 766242,
+      "n_left": "377304",
+      "n_right": "388938",
+      "bandwidth": 0.12110483689335595,
+      "outcome": "n_bidders",
+      "cutoff": 139000,
+      "cutoff_log": 5.143014800254095,
+      "country": null
+    },
+    "n_bidders_meta": {
+      "pooled_estimate": 0.19092950009200058,
+      "se": 0.1146139849118862,
+      "ci_low": -0.03371391033529636,
+      "ci_high": 0.4155729105192975,
+      "tau2": 0.23664726717770795,
+      "I2": 0.9420809368305817,
+      "Q": 448.90228842182313,
+      "df": 26,
+      "p_heterogeneity": 0.0,
+      "n_studies": 27,
+      "countries": [
+        "DE",
+        "PL",
+        "DK",
+        "NL",
+        "IT",
+        "FR",
+        "SE",
+        "AT",
+        "BE",
+        "LT",
+        "SK",
+        "ES",
+        "SI",
+        "FI",
+        "HU",
+        "LV",
+        "EE",
+        "GR",
+        "PT",
+        "CZ",
+        "GB",
+        "LU",
+        "NO",
+        "IS",
+        "CH",
+        "IE",
+        "CO"
+      ],
+      "outcome": "n_bidders",
+      "method": "DerSimonian-Laird"
+    },
+    "n_bidders_by_country": [
+      {
+        "estimate": 0.27295749160447685,
+        "se": 0.13131457304350205,
+        "ci_low": 0.015580303650067628,
+        "ci_high": 0.5303346795588861,
+        "pvalue": 0.037653584677438026,
+        "n_obs": 58187,
+        "n_left": "27618",
+        "n_right": "30569",
+        "bandwidth": 0.10144479715671942,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "DE"
+      },
+      {
+        "estimate": -0.16457688309876142,
+        "se": 0.0503205980817832,
+        "ci_low": -0.2632040683265349,
+        "ci_high": -0.06594969787098791,
+        "pvalue": 0.0010735115879056077,
+        "n_obs": 190910,
+        "n_left": "100265",
+        "n_right": "90645",
+        "bandwidth": 0.18152387173925352,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "PL"
+      },
+      {
+        "estimate": 4.501507503970363,
+        "se": 0.48389618455522915,
+        "ci_low": 3.5529147126104044,
+        "ci_high": 5.450100295330322,
+        "pvalue": 1.8260778602603368e-20,
+        "n_obs": 6614,
+        "n_left": "3148",
+        "n_right": "3466",
+        "bandwidth": 0.11661182650384072,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "DK"
+      },
+      {
+        "estimate": -0.06419245077108263,
+        "se": 0.1449903852497004,
+        "ci_low": -0.3484024835972964,
+        "ci_high": 0.22001758205513114,
+        "pvalue": 0.6579662546492415,
+        "n_obs": 10092,
+        "n_left": "3923",
+        "n_right": "6169",
+        "bandwidth": 0.182388546281763,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "NL"
+      },
+      {
+        "estimate": 0.01622983483559436,
+        "se": 0.1052416344303936,
+        "ci_low": -0.19004443905122823,
+        "ci_high": 0.22250410872241697,
+        "pvalue": 0.8774408000104689,
+        "n_obs": 55974,
+        "n_left": "25093",
+        "n_right": "30881",
+        "bandwidth": 0.22505026718106103,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "IT"
+      },
+      {
+        "estimate": -0.447334346173921,
+        "se": 0.13239275807343306,
+        "ci_low": -0.70682202842846,
+        "ci_high": -0.18784666391938198,
+        "pvalue": 0.0007281494602893724,
+        "n_obs": 118764,
+        "n_left": "55939",
+        "n_right": "62825",
+        "bandwidth": 0.08975398694104324,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "FR"
+      },
+      {
+        "estimate": -3.628478573275394,
+        "se": 1.6285970970466739,
+        "ci_low": -6.821105270648789,
+        "ci_high": -0.43585187590199936,
+        "pvalue": 0.025918391561983282,
+        "n_obs": 6089,
+        "n_left": "2359",
+        "n_right": "3730",
+        "bandwidth": 0.05109380176542593,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "SE"
+      },
+      {
+        "estimate": -0.20907345610085576,
+        "se": 0.1338933079810888,
+        "ci_low": -0.4715483477233705,
+        "ci_high": 0.05340143552165899,
+        "pvalue": 0.11845612426095985,
+        "n_obs": 6510,
+        "n_left": "2760",
+        "n_right": "3750",
+        "bandwidth": 0.1428324843665856,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "AT"
+      },
+      {
+        "estimate": -0.05074232740845112,
+        "se": 0.07165007796764226,
+        "ci_low": -0.1911807082348729,
+        "ci_high": 0.08969605341797068,
+        "pvalue": 0.47882991197273317,
+        "n_obs": 24970,
+        "n_left": "10046",
+        "n_right": "14924",
+        "bandwidth": 0.27225793727764136,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "BE"
+      },
+      {
+        "estimate": 9.85706195102697,
+        "se": 0.8289806637732945,
+        "ci_low": 8.23208435938874,
+        "ci_high": 11.482039542665202,
+        "pvalue": 2.2372855606122382e-32,
+        "n_obs": 9582,
+        "n_left": "4946",
+        "n_right": "4636",
+        "bandwidth": 0.06567283757137435,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "LT"
+      },
+      {
+        "estimate": -0.4187105275017197,
+        "se": 0.13520799142602868,
+        "ci_low": -0.6837673211648012,
+        "ci_high": -0.15365373383863828,
+        "pvalue": 0.001965413837136352,
+        "n_obs": 5945,
+        "n_left": "2901",
+        "n_right": "3044",
+        "bandwidth": 0.11750674784855189,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "SK"
+      },
+      {
+        "estimate": 0.39040829994914217,
+        "se": 0.14651887497561972,
+        "ci_low": 0.10322988204793815,
+        "ci_high": 0.6775867178503462,
+        "pvalue": 0.007711300493333937,
+        "n_obs": 51884,
+        "n_left": "24929",
+        "n_right": "26955",
+        "bandwidth": 0.11414345175783237,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "ES"
+      },
+      {
+        "estimate": 0.39486301510163974,
+        "se": 0.7728875263392971,
+        "ci_low": -1.1201303875305413,
+        "ci_high": 1.9098564177338206,
+        "pvalue": 0.6094357573468772,
+        "n_obs": 11345,
+        "n_left": "5822",
+        "n_right": "5523",
+        "bandwidth": 0.10856301442086987,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "SI"
+      },
+      {
+        "estimate": 0.7020737452744569,
+        "se": 0.46040967005605815,
+        "ci_low": -0.20047675055027858,
+        "ci_high": 1.6046242410991924,
+        "pvalue": 0.12733424049549558,
+        "n_obs": 6660,
+        "n_left": "2837",
+        "n_right": "3823",
+        "bandwidth": 0.08925241988136007,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "FI"
+      },
+      {
+        "estimate": -0.02093014779320243,
+        "se": 0.1735612741052657,
+        "ci_low": -0.36112568400624323,
+        "ci_high": 0.3192653884198383,
+        "pvalue": 0.9040152690855474,
+        "n_obs": 18988,
+        "n_left": "9552",
+        "n_right": "9436",
+        "bandwidth": 0.17216523861424535,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "HU"
+      },
+      {
+        "estimate": -2.2396179250763524,
+        "se": 0.4161521620200393,
+        "ci_low": -3.055381073746671,
+        "ci_high": -1.4238547764060336,
+        "pvalue": 7.580352130446556e-08,
+        "n_obs": 8239,
+        "n_left": "3818",
+        "n_right": "4421",
+        "bandwidth": 0.07761531290311988,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "LV"
+      },
+      {
+        "estimate": -2.537031814074445,
+        "se": 0.44165936467070055,
+        "ci_low": -3.4028769408926065,
+        "ci_high": -1.6711866872562835,
+        "pvalue": 9.772529889889717e-09,
+        "n_obs": 5026,
+        "n_left": "2366",
+        "n_right": "2660",
+        "bandwidth": 0.10519464096195572,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "EE"
+      },
+      {
+        "estimate": 16.92254514263305,
+        "se": 8.64205335941772,
+        "ci_low": -0.017746909279907186,
+        "ci_high": 33.86283719454601,
+        "pvalue": 0.05024044347516757,
+        "n_obs": 9415,
+        "n_left": "4671",
+        "n_right": "4744",
+        "bandwidth": 0.11860741130501336,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "GR"
+      },
+      {
+        "estimate": 0.8413758157141641,
+        "se": 0.22147182054031828,
+        "ci_low": 0.4072239122878108,
+        "ci_high": 1.2755277191405174,
+        "pvalue": 0.0001465009454394011,
+        "n_obs": 7000,
+        "n_left": "3232",
+        "n_right": "3768",
+        "bandwidth": 0.12084651800920536,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "PT"
+      },
+      {
+        "estimate": 0.131433836273411,
+        "se": 0.14377833781402635,
+        "ci_low": -0.15037365710241402,
+        "ci_high": 0.413241329649236,
+        "pvalue": 0.3606467733945722,
+        "n_obs": 47846,
+        "n_left": "23585",
+        "n_right": "24261",
+        "bandwidth": 0.19294406421256063,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "CZ"
+      },
+      {
+        "estimate": -0.21613269843499278,
+        "se": 0.13554751532679785,
+        "ci_low": -0.48180579530088763,
+        "ci_high": 0.04954039843090208,
+        "pvalue": 0.11082524794901008,
+        "n_obs": 66324,
+        "n_left": "35231",
+        "n_right": "31093",
+        "bandwidth": 0.15144781403175478,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "GB"
+      },
+      {
+        "estimate": -0.37964028880494494,
+        "se": 0.18313179521630565,
+        "ci_low": -0.738746078880835,
+        "ci_high": -0.020534498729054884,
+        "pvalue": 0.03827051943533571,
+        "n_obs": 2501,
+        "n_left": "981",
+        "n_right": "1520",
+        "bandwidth": 0.20116039390476018,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "LU"
+      },
+      {
+        "estimate": 3.422390398808821,
+        "se": 0.40065234517462056,
+        "ci_low": 2.63684105038887,
+        "ci_high": 4.207939747228773,
+        "pvalue": 1.975612199550143e-17,
+        "n_obs": 3338,
+        "n_left": "1329",
+        "n_right": "2009",
+        "bandwidth": 0.08292135847764179,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "NO"
+      },
+      {
+        "estimate": -5.949980741501575,
+        "se": 2.5648222459867043,
+        "ci_low": -11.027302547926642,
+        "ci_high": -0.8726589350765073,
+        "pvalue": 0.022011398867965687,
+        "n_obs": 126,
+        "n_left": "90",
+        "n_right": "36",
+        "bandwidth": 0.044034676519275937,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "IS"
+      },
+      {
+        "estimate": -0.43403805226101866,
+        "se": 0.3329709233549955,
+        "ci_low": -1.0869475036127934,
+        "ci_high": 0.21887139909075604,
+        "pvalue": 0.1925067233536056,
+        "n_obs": 2652,
+        "n_left": "1112",
+        "n_right": "1540",
+        "bandwidth": 0.09994785746231485,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "CH"
+      },
+      {
+        "estimate": -8.102840939067514,
+        "se": 5.838321538305591,
+        "ci_low": -19.551529091552872,
+        "ci_high": 3.3458472134178443,
+        "pvalue": 0.16530528306428335,
+        "n_obs": 2398,
+        "n_left": "951",
+        "n_right": "1447",
+        "bandwidth": 0.08118105614362249,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "IE"
+      },
+      {
+        "estimate": -0.006919845016336663,
+        "se": 0.02689292391982303,
+        "ci_low": -0.05963029552704361,
+        "ci_high": 0.045790605494370286,
+        "pvalue": 0.7969397742258537,
+        "n_obs": 49530,
+        "n_left": "26553",
+        "n_right": "22977",
+        "bandwidth": 0.05973945740057265,
+        "outcome": "n_bidders",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "CO"
+      }
+    ],
+    "single_bidder_overall": {
+      "estimate": NaN,
+      "se": NaN,
+      "ci_low": NaN,
+      "ci_high": NaN,
+      "outcome": "single_bidder",
+      "cutoff": 139000,
+      "cutoff_log": 5.143014800254095,
+      "country": null
+    },
+    "single_bidder_meta": {
+      "error": "Insufficient studies for meta-analysis"
+    },
+    "single_bidder_by_country": [
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "DE"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "PL"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "DK"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "NL"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "IT"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "FR"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "SE"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "AT"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "BE"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "LT"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "SK"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "ES"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "SI"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "FI"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "HU"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "LV"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "EE"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "GR"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "PT"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "CZ"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "GB"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "LU"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "NO"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "IS"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "CH"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "IE"
+      },
+      {
+        "estimate": NaN,
+        "se": NaN,
+        "ci_low": NaN,
+        "ci_high": NaN,
+        "outcome": "single_bidder",
+        "cutoff": 139000,
+        "cutoff_log": 5.143014800254095,
+        "country": "CO"
+      }
+    ]
+  },
+  "did": {
+    "PL": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "PT": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "SK": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "HU": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "CZ": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "ES": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "IT": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "FR": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "DE": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "CO": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    },
+    "GB": {
+      "carbon_intensity_kg_usd": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "n_bidders": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      },
+      "single_bidder": {
+        "error": "Pandas data cast to numpy dtype of object. Check input data with np.asarray(data)."
+      }
+    }
+  },
+  "mediation": {
+    "bidders": {
+      "path_a": 0.22331807810903245,
+      "path_b": 0.037849087130589536,
+      "path_c_total": 0.4044552495931989,
+      "path_c_prime_direct": 0.3960028641970187,
+      "indirect_effect": 0.00845238539618457,
+      "se_indirect": 0.0005329548568609447,
+      "ci_indirect_low": 0.007035546616583206,
+      "ci_indirect_high": 0.010113023352979,
+      "proportion_mediated": 0.020898196783663902,
+      "sobel_z": 15.85947719093573,
+      "sobel_p": 0.0,
+      "n_obs": 200000,
+      "treatment": "is_above_threshold",
+      "mediator": "n_bidders",
+      "outcome": "carbon_intensity_kg_usd"
+    },
+    "competitive": {
+      "path_a": 0.15834267409585645,
+      "path_b": 0.1488125509656891,
+      "path_c_total": 0.4507989645941186,
+      "path_c_prime_direct": 0.4272355873351837,
+      "indirect_effect": 0.02356337725893314,
+      "se_indirect": 0.0007551684258564546,
+      "ci_indirect_low": 0.022102792229720895,
+      "ci_indirect_high": 0.02501175585735827,
+      "proportion_mediated": 0.05227025594468404,
+      "sobel_z": 31.20281046206262,
+      "sobel_p": 0.0,
+      "n_obs": 200000,
+      "treatment": "is_above_threshold",
+      "mediator": "competitive",
+      "outcome": "carbon_intensity_kg_usd"
+    }
+  },
+  "summary": {
+    "n_contracts": 21612129,
+    "n_countries": 27,
+    "years": [
+      2012,
+      2023
+    ],
+    "single_bidder_rate": 0.1100544513684885,
+    "mean_bidders": 3.310728329956326,
+    "mean_carbon_intensity": 0.2984060626327048
+  }
+}

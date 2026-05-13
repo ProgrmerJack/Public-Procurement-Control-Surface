@@ -1,0 +1,245 @@
+{
+  "overall": {
+    "original": {
+      "sb_mean": 0.3405,
+      "mb_mean": 0.3558,
+      "premium_pct": -4.31,
+      "t_stat": -109.7,
+      "d": -0.0763,
+      "n_sb": 2321226,
+      "n_mb": 11317707
+    },
+    "adjusted": {
+      "sb_mean": 0.41,
+      "mb_mean": 0.3602,
+      "premium_pct": 13.84,
+      "t_stat": 268.2,
+      "d": 0.192,
+      "n_sb": 2321226,
+      "n_mb": 11317707
+    }
+  },
+  "size_bands": {
+    "Small <10k": {
+      "original": {
+        "sb_mean": 0.345,
+        "mb_mean": 0.3545,
+        "premium_pct": -2.69,
+        "t_stat": -32.4,
+        "d": -0.0534,
+        "n_sb": 574932,
+        "n_mb": 940129
+      },
+      "adjusted": {
+        "sb_mean": 0.4542,
+        "mb_mean": 0.4132,
+        "premium_pct": 9.91,
+        "t_stat": 107.8,
+        "d": 0.1789,
+        "n_sb": 574932,
+        "n_mb": 940129
+      }
+    },
+    "Medium 10k-200k": {
+      "original": {
+        "sb_mean": 0.3463,
+        "mb_mean": 0.3574,
+        "premium_pct": -3.1,
+        "t_stat": -49.1,
+        "d": -0.0544,
+        "n_sb": 1039456,
+        "n_mb": 2918312
+      },
+      "adjusted": {
+        "sb_mean": 0.4262,
+        "mb_mean": 0.3664,
+        "premium_pct": 16.34,
+        "t_stat": 199.6,
+        "d": 0.2271,
+        "n_sb": 1039456,
+        "n_mb": 2918312
+      }
+    },
+    "Large >200k": {
+      "original": {
+        "sb_mean": 0.3282,
+        "mb_mean": 0.3553,
+        "premium_pct": -7.64,
+        "t_stat": -105.6,
+        "d": -0.1298,
+        "n_sb": 706838,
+        "n_mb": 7459266
+      },
+      "adjusted": {
+        "sb_mean": 0.3502,
+        "mb_mean": 0.351,
+        "premium_pct": -0.23,
+        "t_stat": -2.4,
+        "d": -0.003,
+        "n_sb": 706838,
+        "n_mb": 7459266
+      }
+    }
+  },
+  "country_comparison": {
+    "AT": {
+      "original": -13.87,
+      "adjusted": -13.87
+    },
+    "BE": {
+      "original": -4.22,
+      "adjusted": -4.22
+    },
+    "CH": {
+      "original": 0.54,
+      "adjusted": 0.54
+    },
+    "CZ": {
+      "original": -8.18,
+      "adjusted": -8.18
+    },
+    "DE": {
+      "original": -10.05,
+      "adjusted": -10.05
+    },
+    "DK": {
+      "original": -11.23,
+      "adjusted": -11.23
+    },
+    "EE": {
+      "original": -12.42,
+      "adjusted": -12.42
+    },
+    "ES": {
+      "original": -7.52,
+      "adjusted": -7.52
+    },
+    "FI": {
+      "original": -2.46,
+      "adjusted": -2.46
+    },
+    "FR": {
+      "original": -0.62,
+      "adjusted": -0.62
+    },
+    "GB": {
+      "original": -6.99,
+      "adjusted": -6.99
+    },
+    "GR": {
+      "original": -7.5,
+      "adjusted": -7.5
+    },
+    "HU": {
+      "original": -8.99,
+      "adjusted": -8.99
+    },
+    "IE": {
+      "original": 12.12,
+      "adjusted": 12.12
+    },
+    "IS": {
+      "original": 27.64,
+      "adjusted": 27.64
+    },
+    "IT": {
+      "original": -1.17,
+      "adjusted": -1.17
+    },
+    "LT": {
+      "original": -7.32,
+      "adjusted": -7.32
+    },
+    "LU": {
+      "original": 16.88,
+      "adjusted": 16.88
+    },
+    "LV": {
+      "original": -21.58,
+      "adjusted": -21.58
+    },
+    "NL": {
+      "original": -2.27,
+      "adjusted": -2.27
+    },
+    "NO": {
+      "original": 10.47,
+      "adjusted": 10.47
+    },
+    "PL": {
+      "original": -3.61,
+      "adjusted": -3.61
+    },
+    "PT": {
+      "original": -12.39,
+      "adjusted": -12.39
+    },
+    "SE": {
+      "original": 6.67,
+      "adjusted": 6.67
+    },
+    "SI": {
+      "original": -0.29,
+      "adjusted": -0.29
+    },
+    "SK": {
+      "original": -0.77,
+      "adjusted": -0.77
+    }
+  },
+  "temporal_comparison": {
+    "2012": {
+      "original": -5.7,
+      "adjusted": 23.07
+    },
+    "2013": {
+      "original": -8.36,
+      "adjusted": 16.15
+    },
+    "2014": {
+      "original": -8.05,
+      "adjusted": 17.02
+    },
+    "2015": {
+      "original": -6.46,
+      "adjusted": 19.15
+    },
+    "2016": {
+      "original": -7.39,
+      "adjusted": 18.74
+    },
+    "2017": {
+      "original": -3.69,
+      "adjusted": 13.86
+    },
+    "2018": {
+      "original": -4.21,
+      "adjusted": 12.05
+    },
+    "2019": {
+      "original": -2.87,
+      "adjusted": 13.04
+    },
+    "2020": {
+      "original": -1.58,
+      "adjusted": 12.77
+    },
+    "2021": {
+      "original": -2.82,
+      "adjusted": 14.32
+    },
+    "2022": {
+      "original": -4.9,
+      "adjusted": 11.31
+    },
+    "2023": {
+      "original": -3.51,
+      "adjusted": 17.92
+    }
+  },
+  "cross_country_cv": {
+    "mean_cv_original": 0.0,
+    "mean_cv_adjusted": 0.412
+  },
+  "conclusion": {
+    "premium_direction_same": 

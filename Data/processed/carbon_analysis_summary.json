@@ -1,0 +1,359 @@
+{
+  "total_contracts": 21612129,
+  "contracts_with_carbon": 21612129,
+  "carbon_coverage_rate": 1.0,
+  "carbon_intensity": {
+    "mean_kg_usd": 0.2984060626327048,
+    "median_kg_usd": 0.25,
+    "std_kg_usd": 0.19122107946922623,
+    "min_kg_usd": 0.08,
+    "max_kg_usd": 1.2
+  },
+  "carbon_footprint": {
+    "total_tonnes": 65064528026.939186,
+    "total_megatonnes": 65064.52802693919,
+    "mean_per_contract_tonnes": 3010.5561570051327,
+    "median_per_contract_tonnes": 14.9521871
+  },
+  "by_sector": {
+    "Medical instruments": {
+      "total_tonnes": 18943211268.63,
+      "mean_tonnes": 4868.88,
+      "n_contracts": 3890675,
+      "mean_intensity": 0.3
+    },
+    "Construction": {
+      "total_tonnes": 15887261926.26,
+      "mean_tonnes": 13664.16,
+      "n_contracts": 1162696,
+      "mean_intensity": 0.5
+    },
+    "Land transport": {
+      "total_tonnes": 6493273689.59,
+      "mean_tonnes": 13722.95,
+      "n_contracts": 473169,
+      "mean_intensity": 0.85
+    },
+    "Health services": {
+      "total_tonnes": 4857695921.07,
+      "mean_tonnes": 4775.24,
+      "n_contracts": 1017267,
+      "mean_intensity": 0.25
+    },
+    "Motor vehicles": {
+      "total_tonnes": 2059078539.16,
+      "mean_tonnes": 4145.79,
+      "n_contracts": 496667,
+      "mean_intensity": 0.45
+    },
+    "Other services": {
+      "total_tonnes": 1458234158.48,
+      "mean_tonnes": 331.42,
+      "n_contracts": 4400002,
+      "mean_intensity": 0.2
+    },
+    "Agriculture": {
+      "total_tonnes": 1299691318.81,
+      "mean_tonnes": 2452.3,
+      "n_contracts": 529988,
+      "mean_intensity": 0.85
+    },
+    "Metal products": {
+      "total_tonnes": 1213398861.42,
+      "mean_tonnes": 4617.32,
+      "n_contracts": 262793,
+      "mean_intensity": 0.75
+    },
+    "Other business services": {
+      "total_tonnes": 1194370821.56,
+      "mean_tonnes": 2286.24,
+      "n_contracts": 522417,
+      "mean_intensity": 0.15
+    },
+    "Water supply": {
+      "total_tonnes": 1143280293.73,
+      "mean_tonnes": 1445.3,
+      "n_contracts": 791032,
+      "mean_intensity": 0.25
+    },
+    "Food products": {
+      "total_tonnes": 1134529469.75,
+      "mean_tonnes": 1787.71,
+      "n_contracts": 634627,
+      "mean_intensity": 0.65
+    },
+    "Hotels": {
+      "total_tonnes": 1095048933.23,
+      "mean_tonnes": 8006.5,
+      "n_contracts": 136770,
+      "mean_intensity": 0.35
+    },
+    "Computer equipment": {
+      "total_tonnes": 997665484.03,
+      "mean_tonnes": 2561.41,
+      "n_contracts": 389499,
+      "mean_intensity": 0.3
+    },
+    "Computer services": {
+      "total_tonnes": 959939688.86,
+      "mean_tonnes": 1471.58,
+      "n_contracts": 652319,
+      "mean_intensity": 0.1
+    },
+    "Utilities": {
+      "total_tonnes": 673055480.69,
+      "mean_tonnes": 27939.21,
+      "n_contracts": 24090,
+      "mean_intensity": 0.6
+    }
+  },
+  "by_year": {
+    "2012.0": {
+      "carbon_footprint_tonnes": 779340468.21,
+      "carbon_intensity_kg_usd": 0.27,
+      "value_usd": 2345662836906.69,
+      "weighted_intensity": 0.3322474381005858
+    },
+    "2013.0": {
+      "carbon_footprint_tonnes": 786285446.57,
+      "carbon_intensity_kg_usd": 0.26,
+      "value_usd": 2193413685596.46,
+      "weighted_intensity": 0.35847567275307834
+    },
+    "2014.0": {
+      "carbon_footprint_tonnes": 946119307.54,
+      "carbon_intensity_kg_usd": 0.25,
+      "value_usd": 2840343392474.04,
+      "weighted_intensity": 0.3331003251391714
+    },
+    "2015.0": {
+      "carbon_footprint_tonnes": 1547971560.26,
+      "carbon_intensity_kg_usd": 0.25,
+      "value_usd": 4462130826933.95,
+      "weighted_intensity": 0.3469130826277572
+    },
+    "2016.0": {
+      "carbon_footprint_tonnes": 2005666454.76,
+      "carbon_intensity_kg_usd": 0.26,
+      "value_usd": 5485462196920.06,
+      "weighted_intensity": 0.3656330830036762
+    },
+    "2017.0": {
+      "carbon_footprint_tonnes": 3274803311.03,
+      "carbon_intensity_kg_usd": 0.28,
+      "value_usd": 9090062768549.68,
+      "weighted_intensity": 0.36026190296070915
+    },
+    "2018.0": {
+      "carbon_footprint_tonnes": 31535672690.75,
+      "carbon_intensity_kg_usd": 0.33,
+      "value_usd": 91360277137158.45,
+      "weighted_intensity": 0.34517925819561324
+    },
+    "2019.0": {
+      "carbon_footprint_tonnes": 3768181654.81,
+      "carbon_intensity_kg_usd": 0.28,
+      "value_usd": 10314342186999.22,
+      "weighted_intensity": 0.3653341712435747
+    },
+    "2020.0": {
+      "carbon_footprint_tonnes": 5611946719.67,
+      "carbon_intensity_kg_usd": 0.28,
+      "value_usd": 19024708028792.49,
+      "weighted_intensity": 0.294982015554548
+    },
+    "2021.0": {
+      "carbon_footprint_tonnes": 7601178712.93,
+      "carbon_intensity_kg_usd": 0.28,
+      "value_usd": 24117084905246.08,
+      "weighted_intensity": 0.3151781711095834
+    },
+    "2022.0": {
+      "carbon_footprint_tonnes": 3575295553.48,
+      "carbon_intensity_kg_usd": 0.33,
+      "value_usd": 9910970308989.94,
+      "weighted_intensity": 0.3607412233126113
+    },
+    "2023.0": {
+      "carbon_footprint_tonnes": 3632066146.92,
+      "carbon_intensity_kg_usd": 0.35,
+      "value_usd": 10684638171873.05,
+      "weighted_intensity": 0.3399334716341908
+    }
+  },
+  "by_country": {
+    "GB": {
+      "total_tonnes": 18981511609.58,
+      "mean_tonnes": 23184.74,
+      "mean_intensity": 0.34
+    },
+    "FR": {
+      "total_tonnes": 17679250495.69,
+      "mean_tonnes": 7388.63,
+      "mean_intensity": 0.37
+    },
+    "IT": {
+      "total_tonnes": 7889338177.76,
+      "mean_tonnes": 8493.68,
+      "mean_intensity": 0.31
+    },
+    "ES": {
+      "total_tonnes": 6149944599.99,
+      "mean_tonnes": 4442.01,
+      "mean_intensity": 0.34
+    },
+    "GR": {
+      "total_tonnes": 1632282355.32,
+      "mean_tonnes": 2903.12,
+      "mean_intensity": 0.42
+    },
+    "DK": {
+      "total_tonnes": 1587217743.06,
+      "mean_tonnes": 8796.57,
+      "mean_intensity": 0.34
+    },
+    "PL": {
+      "total_tonnes": 1586491096.96,
+      "mean_tonnes": 550.83,
+      "mean_intensity": 0.33
+    },
+    "CZ": {
+      "total_tonnes": 1420644788.3,
+      "mean_tonnes": 1964.49,
+      "mean_intensity": 0.36
+    },
+    "LT": {
+      "total_tonnes": 1258307705.73,
+      "mean_tonnes": 2969.59,
+      "mean_intensity": 0.33
+    },
+    "DE": {
+      "total_tonnes": 1036189814.09,
+      "mean_tonnes": 1270.61,
+      "mean_intensity": 0.38
+    },
+    "SE": {
+      "total_tonnes": 616689466.88,
+      "mean_tonnes": 2435.62,
+      "mean_intensity": 0.3
+    },
+    "IE": {
+      "total_tonnes": 580576484.53,
+      "mean_tonnes": 5995.34,
+      "mean_intensity": 0.27
+    },
+    "NL": {
+      "total_tonnes": 566290410.09,
+      "mean_tonnes": 5756.5,
+      "mean_intensity": 0.29
+    },
+    "HU": {
+      "total_tonnes": 562447218.0,
+      "mean_tonnes": 3096.73,
+      "mean_intensity": 0.36
+    },
+    "FI": {
+      "total_tonnes": 560056453.04,
+      "mean_tonnes": 2762.85,
+      "mean_intensity": 0.38
+    },
+    "AT": {
+      "total_tonnes": 533094209.72,
+      "mean_tonnes": 5838.61,
+      "mean_intensity": 0.36
+    },
+    "CO": {
+      "total_tonnes": 499525169.98,
+      "mean_tonnes": 62.65,
+      "mean_intensity": 0.2
+    },
+    "NO": {
+      "total_tonnes": 419450353.03,
+      "mean_tonnes": 3351.9,
+      "mean_intensity": 0.31
+    },
+    "BE": {
+      "total_tonnes": 329817471.21,
+      "mean_tonnes": 2074.9,
+      "mean_intensity": 0.32
+    },
+    "SK": {
+      "total_tonnes": 242192331.79,
+      "mean_tonnes": 1622.84,
+      "mean_intensity": 0.43
+    },
+    "LV": {
+      "total_tonnes": 233032210.84,
+      "mean_tonnes": 833.11,
+      "mean_intensity": 0.41
+    },
+    "PT": {
+      "total_tonnes": 195029033.14,
+      "mean_tonnes": 754.53,
+      "mean_intensity": 0.35
+    },
+    "SI": {
+      "total_tonnes": 193564826.29,
+      "mean_tonnes": 440.97,
+      "mean_intensity": 0.48
+    },
+    "LU": {
+      "total_tonnes": 127921436.36,
+      "mean_tonnes": 5431.22,
+      "mean_intensity": 0.28
+    },
+    "EE": {
+      "total_tonnes": 112165940.14,
+      "mean_tonnes": 980.15,
+      "mean_intensity": 0.33
+    },
+    "CH": {
+      "total_tonnes": 62487380.32,
+      "mean_tonnes": 1205.06,
+      "mean_intensity": 0.35
+    },
+    "IS": {
+      "total_tonnes": 9009245.08,
+      "mean_tonnes": 2006.51,
+      "mean_intensity": 0.31
+    }
+  },
+  "trends": {
+    "intensity_trend": {
+      "slope_per_year": 0.006527860881907628,
+      "intercept": -12.883588749090137,
+      "annual_change_percent": 2.279515192620155,
+      "start_value": 0.27439919659112266,
+      "end_value": 0.3454726372963186,
+      "total_change_percent": 25.901475510185694
+    },
+    "yearly_intensity": {
+      "2012.0": 0.27439919659112266,
+      "2013.0": 0.2629886119046687,
+      "2014.0": 0.2508031196688191,
+      "2015.0": 0.25358334307491415,
+      "2016.0": 0.26234807985950875,
+      "2017.0": 0.2771588399307546,
+      "2018.0": 0.3332956374759723,
+      "2019.0": 0.28185919557266487,
+      "2020.0": 0.280634666992328,
+      "2021.0": 0.2836898783974164,
+      "2022.0": 0.33021375513758683,
+      "2023.0": 0.3454726372963186
+    },
+    "yearly_weighted_intensity": {
+      "2012.0": 0.3322474381010637,
+      "2013.0": 0.35847567275465775,
+      "2014.0": 0.33310032513956633,
+      "2015.0": 0.34691308262754444,
+      "2016.0": 0.36563308300388514,
+      "2017.0": 0.360261902961155,
+      "2018.0": 0.345179258195574,
+      "2019.0": 0.3653341712433857,
+      "2020.0": 0.29498201555471715,
+      "2021.0": 0.31517817110940005,
+      "2022.0": 0.36074122331288666,
+      "2023.0": 0.33993347163448034
+    }
+  }
+}

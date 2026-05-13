@@ -1,0 +1,49 @@
+{
+  "synthetic_control": {
+    "standard": {
+      "weights": {
+        "GB": 0.5631,
+        "CH": 0.0,
+        "NO": 0.4369
+      },
+      "pre_rmse": 0.1705
+    },
+    "demeaned": {
+      "weights": {
+        "GB": 0.3335,
+        "CH": 0.3331,
+        "NO": 0.3334
+      },
+      "intercept": 0.1716,
+      "pre_rmse": 0.0019
+    }
+  },
+  "true_did_effect_pp": -7.69,
+  "eu_countries_with_decrease": 6,
+  "eu_countries_total": 22,
+  "mean_eu_country_effect_pp": 0.89,
+  "country_effects": {
+    "BE": 3.35,
+    "EE": 1.3,
+    "DK": 5.6,
+    "NL": 5.59,
+    "DE": 6.13,
+    "PL": -8.69,
+    "CZ": 7.7,
+    "LT": -15.48,
+    "AT": 10.21,
+    "PT": 0.16,
+    "SE": 1.65,
+    "IT": -3.43,
+    "FR": 1.5,
+    "SK": -6.92,
+    "HU": 2.29,
+    "SI": 6.27,
+    "GR": -6.28,
+    "LV": -1.38,
+    "FI": 4.05,
+    "IE": 2.53,
+    "LU": 1.69,
+    "ES": 1.65
+  }
+}

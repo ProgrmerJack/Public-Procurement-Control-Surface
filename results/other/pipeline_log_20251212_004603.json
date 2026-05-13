@@ -1,0 +1,19 @@
+{
+  "start_time": "2025-12-12T00:45:11.692846",
+  "steps_requested": [
+    1
+  ],
+  "steps_completed": [
+    {
+      "step": 1,
+      "name": "Parse EXIOBASE",
+      "script": "parse_exiobase.py",
+      "success": true,
+      "error": null,
+      "duration_sec": 51.52796530723572
+    }
+  ],
+  "steps_failed": [],
+  "total_duration_sec": 51.52884125709534,
+  "end_time": "2025-12-12T00:46:03.221701"
+}

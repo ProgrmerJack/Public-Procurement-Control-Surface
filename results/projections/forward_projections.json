@@ -1,0 +1,1610 @@
+{
+  "metadata": {
+    "model": "Forward Projection Model v1.0",
+    "projection_window": "2025\u20132035",
+    "data_source": "OECD Government at a Glance 2023; authors' GPRD analysis",
+    "eu_procurement_eurB": 2552,
+    "eu_sb_rate": 0.17,
+    "did_att_pp": -0.71,
+    "did_att_se": 1.24,
+    "carbon_intensity_kg_usd": 0.34,
+    "eur_usd": 1.09,
+    "n_oecd_countries": 41
+  },
+  "scenarios": {
+    "conservative": {
+      "scenario": "conservative",
+      "label": "Conservative \u2014 attenuated TWFE sensitivity",
+      "description": "All EU Member States implement reforms achieving the attenuated conventional TWFE sensitivity (-0.71 pp) over 5 years. This is an illustrative lower-bound scenario; the primary staggered DiD estimate is -7.2 pp but is not used for this conservative input.",
+      "confidence": "illustrative lower-bound \u2014 TWFE is attenuated and imprecise",
+      "parameters": {
+        "baseline_sb_rate": 0.17,
+        "sb_reduction_pp": 0.71,
+        "phase_in_years": 5,
+        "reform_window": "2025\u20132030",
+        "final_sb_rate": 0.1629,
+        "final_sb_rate_pct": 16.29
+      },
+      "milestones": {
+        "2030": {
+          "sb_rate_pct": 16.29,
+          "newly_competitive_eurB": 18.1,
+          "carbon_accessible_mt": 6.7,
+          "savings_central_eurB": 1.5,
+          "cumulative_spending_eurB": 54.4,
+          "cumulative_carbon_mt": 20.1
+        },
+        "2035": {
+          "sb_rate_pct": 16.29,
+          "newly_competitive_eurB": 18.1,
+          "carbon_accessible_mt": 6.7,
+          "savings_central_eurB": 1.5,
+          "cumulative_spending_eurB": 145.0,
+          "cumulative_carbon_mt": 53.7
+        }
+      },
+      "g20_extrapolation_2035": {
+        "spending_newly_competitive_eurB": 72.0,
+        "carbon_accessible_mt": 26.0
+      },
+      "ndc_context": {
+        "eu_national_ghg_mt": 3577,
+        "final_carbon_pct_national": 0.19
+      },
+      "annual_trajectory": {
+        "2025": {
+          "sb_rate": 0.17,
+          "sb_rate_pct": 17.0,
+          "newly_competitive_eurB": 0.0,
+          "carbon_accessible_mt": 0.0,
+          "savings_central_eurB": 0.0,
+          "savings_range_eurB": [
+            0.0,
+            0.0
+          ],
+          "green_premium_cost_eurB": 0.0,
+          "self_funding_ratio": null,
+          "cumulative_spending_eurB": 0.0,
+          "cumulative_carbon_mt": 0.0
+        },
+        "2026": {
+          "sb_rate": 0.1686,
+          "sb_rate_pct": 16.86,
+          "newly_competitive_eurB": 3.6,
+          "carbon_accessible_mt": 1.3,
+          "savings_central_eurB": 0.3,
+          "savings_range_eurB": [
+            0.3,
+            0.4
+          ],
+          "green_premium_cost_eurB": 0.1,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 3.6,
+          "cumulative_carbon_mt": 1.3
+        },
+        "2027": {
+          "sb_rate": 0.1672,
+          "sb_rate_pct": 16.72,
+          "newly_competitive_eurB": 7.2,
+          "carbon_accessible_mt": 2.7,
+          "savings_central_eurB": 0.6,
+          "savings_range_eurB": [
+            0.5,
+            0.7
+          ],
+          "green_premium_cost_eurB": 0.2,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 10.9,
+          "cumulative_carbon_mt": 4.0
+        },
+        "2028": {
+          "sb_rate": 0.1657,
+          "sb_rate_pct": 16.57,
+          "newly_competitive_eurB": 10.9,
+          "carbon_accessible_mt": 4.0,
+          "savings_central_eurB": 0.9,
+          "savings_range_eurB": [
+            0.8,
+            1.1
+          ],
+          "green_premium_cost_eurB": 0.3,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 21.7,
+          "cumulative_carbon_mt": 8.1
+        },
+        "2029": {
+          "sb_rate": 0.1643,
+          "sb_rate_pct": 16.43,
+          "newly_competitive_eurB": 14.5,
+          "carbon_accessible_mt": 5.4,
+          "savings_central_eurB": 1.2,
+          "savings_range_eurB": [
+            1.0,
+            1.4
+          ],
+          "green_premium_cost_eurB": 0.4,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 36.2,
+          "cumulative_carbon_mt": 13.4
+        },
+        "2030": {
+          "sb_rate": 0.1629,
+          "sb_rate_pct": 16.29,
+          "newly_competitive_eurB": 18.1,
+          "carbon_accessible_mt": 6.7,
+          "savings_central_eurB": 1.5,
+          "savings_range_eurB": [
+            1.3,
+            1.8
+          ],
+          "green_premium_cost_eurB": 0.5,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 54.4,
+          "cumulative_carbon_mt": 20.1
+        },
+        "2031": {
+          "sb_rate": 0.1629,
+          "sb_rate_pct": 16.29,
+          "newly_competitive_eurB": 18.1,
+          "carbon_accessible_mt": 6.7,
+          "savings_central_eurB": 1.5,
+          "savings_range_eurB": [
+            1.3,
+            1.8
+          ],
+          "green_premium_cost_eurB": 0.5,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 72.5,
+          "cumulative_carbon_mt": 26.9
+        },
+        "2032": {
+          "sb_rate": 0.1629,
+          "sb_rate_pct": 16.29,
+          "newly_competitive_eurB": 18.1,
+          "carbon_accessible_mt": 6.7,
+          "savings_central_eurB": 1.5,
+          "savings_range_eurB": [
+            1.3,
+            1.8
+          ],
+          "green_premium_cost_eurB": 0.5,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 90.6,
+          "cumulative_carbon_mt": 33.6
+        },
+        "2033": {
+          "sb_rate": 0.1629,
+          "sb_rate_pct": 16.29,
+          "newly_competitive_eurB": 18.1,
+          "carbon_accessible_mt": 6.7,
+          "savings_central_eurB": 1.5,
+          "savings_range_eurB": [
+            1.3,
+            1.8
+          ],
+          "green_premium_cost_eurB": 0.5,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 108.7,
+          "cumulative_carbon_mt": 40.3
+        },
+        "2034": {
+          "sb_rate": 0.1629,
+          "sb_rate_pct": 16.29,
+          "newly_competitive_eurB": 18.1,
+          "carbon_accessible_mt": 6.7,
+          "savings_central_eurB": 1.5,
+          "savings_range_eurB": [
+            1.3,
+            1.8
+          ],
+          "green_premium_cost_eurB": 0.5,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 126.8,
+          "cumulative_carbon_mt": 47.0
+        },
+        "2035": {
+          "sb_rate": 0.1629,
+          "sb_rate_pct": 16.29,
+          "newly_competitive_eurB": 18.1,
+          "carbon_accessible_mt": 6.7,
+          "savings_central_eurB": 1.5,
+          "savings_range_eurB": [
+            1.3,
+            1.8
+          ],
+          "green_premium_cost_eurB": 0.5,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 145.0,
+          "cumulative_carbon_mt": 53.7
+        }
+      }
+    },
+    "moderate": {
+      "scenario": "moderate",
+      "label": "Moderate \u2014 Full e-procurement + transparency",
+      "description": "Comprehensive digital reform combining e-procurement mandates, open contracting data standards, and proactive market engagement. Assumes a 5 pp reduction over 10 years as a broader reform scenario rather than a direct extrapolation from the attenuated TWFE sensitivity.",
+      "confidence": "medium \u2014 extrapolated from multiple reform cases",
+      "parameters": {
+        "baseline_sb_rate": 0.17,
+        "sb_reduction_pp": 5.0,
+        "phase_in_years": 10,
+        "reform_window": "2025\u20132035",
+        "final_sb_rate": 0.12,
+        "final_sb_rate_pct": 12.0
+      },
+      "milestones": {
+        "2030": {
+          "sb_rate_pct": 14.5,
+          "newly_competitive_eurB": 63.8,
+          "carbon_accessible_mt": 23.6,
+          "savings_central_eurB": 5.4,
+          "cumulative_spending_eurB": 191.4,
+          "cumulative_carbon_mt": 70.9
+        },
+        "2035": {
+          "sb_rate_pct": 12.0,
+          "newly_competitive_eurB": 127.6,
+          "carbon_accessible_mt": 47.3,
+          "savings_central_eurB": 10.8,
+          "cumulative_spending_eurB": 701.8,
+          "cumulative_carbon_mt": 260.1
+        }
+      },
+      "g20_extrapolation_2035": {
+        "spending_newly_competitive_eurB": 505.0,
+        "carbon_accessible_mt": 187.0
+      },
+      "ndc_context": {
+        "eu_national_ghg_mt": 3577,
+        "final_carbon_pct_national": 1.32
+      },
+      "annual_trajectory": {
+        "2025": {
+          "sb_rate": 0.17,
+          "sb_rate_pct": 17.0,
+          "newly_competitive_eurB": 0.0,
+          "carbon_accessible_mt": 0.0,
+          "savings_central_eurB": 0.0,
+          "savings_range_eurB": [
+            0.0,
+            0.0
+          ],
+          "green_premium_cost_eurB": 0.0,
+          "self_funding_ratio": null,
+          "cumulative_spending_eurB": 0.0,
+          "cumulative_carbon_mt": 0.0
+        },
+        "2026": {
+          "sb_rate": 0.165,
+          "sb_rate_pct": 16.5,
+          "newly_competitive_eurB": 12.8,
+          "carbon_accessible_mt": 4.7,
+          "savings_central_eurB": 1.1,
+          "savings_range_eurB": [
+            0.9,
+            1.3
+          ],
+          "green_premium_cost_eurB": 0.4,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 12.8,
+          "cumulative_carbon_mt": 4.7
+        },
+        "2027": {
+          "sb_rate": 0.16,
+          "sb_rate_pct": 16.0,
+          "newly_competitive_eurB": 25.5,
+          "carbon_accessible_mt": 9.5,
+          "savings_central_eurB": 2.2,
+          "savings_range_eurB": [
+            1.8,
+            2.6
+          ],
+          "green_premium_cost_eurB": 0.8,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 38.3,
+          "cumulative_carbon_mt": 14.2
+        },
+        "2028": {
+          "sb_rate": 0.155,
+          "sb_rate_pct": 15.5,
+          "newly_competitive_eurB": 38.3,
+          "carbon_accessible_mt": 14.2,
+          "savings_central_eurB": 3.3,
+          "savings_range_eurB": [
+            2.7,
+            3.8
+          ],
+          "green_premium_cost_eurB": 1.1,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 76.6,
+          "cumulative_carbon_mt": 28.4
+        },
+        "2029": {
+          "sb_rate": 0.15,
+          "sb_rate_pct": 15.0,
+          "newly_competitive_eurB": 51.0,
+          "carbon_accessible_mt": 18.9,
+          "savings_central_eurB": 4.3,
+          "savings_range_eurB": [
+            3.6,
+            5.1
+          ],
+          "green_premium_cost_eurB": 1.5,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 127.6,
+          "cumulative_carbon_mt": 47.3
+        },
+        "2030": {
+          "sb_rate": 0.145,
+          "sb_rate_pct": 14.5,
+          "newly_competitive_eurB": 63.8,
+          "carbon_accessible_mt": 23.6,
+          "savings_central_eurB": 5.4,
+          "savings_range_eurB": [
+            4.5,
+            6.4
+          ],
+          "green_premium_cost_eurB": 1.9,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 191.4,
+          "cumulative_carbon_mt": 70.9
+        },
+        "2031": {
+          "sb_rate": 0.14,
+          "sb_rate_pct": 14.0,
+          "newly_competitive_eurB": 76.6,
+          "carbon_accessible_mt": 28.4,
+          "savings_central_eurB": 6.5,
+          "savings_range_eurB": [
+            5.4,
+            7.7
+          ],
+          "green_premium_cost_eurB": 2.3,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 268.0,
+          "cumulative_carbon_mt": 99.3
+        },
+        "2032": {
+          "sb_rate": 0.135,
+          "sb_rate_pct": 13.5,
+          "newly_competitive_eurB": 89.3,
+          "carbon_accessible_mt": 33.1,
+          "savings_central_eurB": 7.6,
+          "savings_range_eurB": [
+            6.3,
+            8.9
+          ],
+          "green_premium_cost_eurB": 2.7,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 357.3,
+          "cumulative_carbon_mt": 132.4
+        },
+        "2033": {
+          "sb_rate": 0.13,
+          "sb_rate_pct": 13.0,
+          "newly_competitive_eurB": 102.1,
+          "carbon_accessible_mt": 37.8,
+          "savings_central_eurB": 8.7,
+          "savings_range_eurB": [
+            7.1,
+            10.2
+          ],
+          "green_premium_cost_eurB": 3.1,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 459.4,
+          "cumulative_carbon_mt": 170.2
+        },
+        "2034": {
+          "sb_rate": 0.125,
+          "sb_rate_pct": 12.5,
+          "newly_competitive_eurB": 114.8,
+          "carbon_accessible_mt": 42.6,
+          "savings_central_eurB": 9.8,
+          "savings_range_eurB": [
+            8.0,
+            11.5
+          ],
+          "green_premium_cost_eurB": 3.4,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 574.2,
+          "cumulative_carbon_mt": 212.8
+        },
+        "2035": {
+          "sb_rate": 0.12,
+          "sb_rate_pct": 12.0,
+          "newly_competitive_eurB": 127.6,
+          "carbon_accessible_mt": 47.3,
+          "savings_central_eurB": 10.8,
+          "savings_range_eurB": [
+            8.9,
+            12.8
+          ],
+          "green_premium_cost_eurB": 3.8,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 701.8,
+          "cumulative_carbon_mt": 260.1
+        }
+      }
+    },
+    "ambitious": {
+      "scenario": "ambitious",
+      "label": "Ambitious \u2014 Nordic-level governance",
+      "description": "Convergence to Nordic governance standards (Denmark, Finland, Sweden average SB rate \u2248 8%).  Requires institutional reform, professionalised procurement, and sustained political commitment.",
+      "confidence": "lower \u2014 requires systemic governance change",
+      "parameters": {
+        "baseline_sb_rate": 0.17,
+        "sb_reduction_pp": 9.0,
+        "phase_in_years": 15,
+        "reform_window": "2025\u20132035",
+        "final_sb_rate": 0.11,
+        "final_sb_rate_pct": 11.0
+      },
+      "milestones": {
+        "2030": {
+          "sb_rate_pct": 14.0,
+          "newly_competitive_eurB": 76.6,
+          "carbon_accessible_mt": 28.4,
+          "savings_central_eurB": 6.5,
+          "cumulative_spending_eurB": 229.7,
+          "cumulative_carbon_mt": 85.1
+        },
+        "2035": {
+          "sb_rate_pct": 11.0,
+          "newly_competitive_eurB": 153.1,
+          "carbon_accessible_mt": 56.7,
+          "savings_central_eurB": 13.0,
+          "cumulative_spending_eurB": 842.2,
+          "cumulative_carbon_mt": 312.1
+        }
+      },
+      "g20_extrapolation_2035": {
+        "spending_newly_competitive_eurB": 605.0,
+        "carbon_accessible_mt": 224.0
+      },
+      "ndc_context": {
+        "eu_national_ghg_mt": 3577,
+        "final_carbon_pct_national": 1.59
+      },
+      "annual_trajectory": {
+        "2025": {
+          "sb_rate": 0.17,
+          "sb_rate_pct": 17.0,
+          "newly_competitive_eurB": 0.0,
+          "carbon_accessible_mt": 0.0,
+          "savings_central_eurB": 0.0,
+          "savings_range_eurB": [
+            0.0,
+            0.0
+          ],
+          "green_premium_cost_eurB": 0.0,
+          "self_funding_ratio": null,
+          "cumulative_spending_eurB": 0.0,
+          "cumulative_carbon_mt": 0.0
+        },
+        "2026": {
+          "sb_rate": 0.164,
+          "sb_rate_pct": 16.4,
+          "newly_competitive_eurB": 15.3,
+          "carbon_accessible_mt": 5.7,
+          "savings_central_eurB": 1.3,
+          "savings_range_eurB": [
+            1.1,
+            1.5
+          ],
+          "green_premium_cost_eurB": 0.5,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 15.3,
+          "cumulative_carbon_mt": 5.7
+        },
+        "2027": {
+          "sb_rate": 0.158,
+          "sb_rate_pct": 15.8,
+          "newly_competitive_eurB": 30.6,
+          "carbon_accessible_mt": 11.3,
+          "savings_central_eurB": 2.6,
+          "savings_range_eurB": [
+            2.1,
+            3.1
+          ],
+          "green_premium_cost_eurB": 0.9,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 45.9,
+          "cumulative_carbon_mt": 17.0
+        },
+        "2028": {
+          "sb_rate": 0.152,
+          "sb_rate_pct": 15.2,
+          "newly_competitive_eurB": 45.9,
+          "carbon_accessible_mt": 17.0,
+          "savings_central_eurB": 3.9,
+          "savings_range_eurB": [
+            3.2,
+            4.6
+          ],
+          "green_premium_cost_eurB": 1.4,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 91.9,
+          "cumulative_carbon_mt": 34.0
+        },
+        "2029": {
+          "sb_rate": 0.146,
+          "sb_rate_pct": 14.6,
+          "newly_competitive_eurB": 61.2,
+          "carbon_accessible_mt": 22.7,
+          "savings_central_eurB": 5.2,
+          "savings_range_eurB": [
+            4.3,
+            6.1
+          ],
+          "green_premium_cost_eurB": 1.8,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 153.1,
+          "cumulative_carbon_mt": 56.7
+        },
+        "2030": {
+          "sb_rate": 0.14,
+          "sb_rate_pct": 14.0,
+          "newly_competitive_eurB": 76.6,
+          "carbon_accessible_mt": 28.4,
+          "savings_central_eurB": 6.5,
+          "savings_range_eurB": [
+            5.4,
+            7.7
+          ],
+          "green_premium_cost_eurB": 2.3,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 229.7,
+          "cumulative_carbon_mt": 85.1
+        },
+        "2031": {
+          "sb_rate": 0.134,
+          "sb_rate_pct": 13.4,
+          "newly_competitive_eurB": 91.9,
+          "carbon_accessible_mt": 34.0,
+          "savings_central_eurB": 7.8,
+          "savings_range_eurB": [
+            6.4,
+            9.2
+          ],
+          "green_premium_cost_eurB": 2.8,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 321.6,
+          "cumulative_carbon_mt": 119.2
+        },
+        "2032": {
+          "sb_rate": 0.128,
+          "sb_rate_pct": 12.8,
+          "newly_competitive_eurB": 107.2,
+          "carbon_accessible_mt": 39.7,
+          "savings_central_eurB": 9.1,
+          "savings_range_eurB": [
+            7.5,
+            10.7
+          ],
+          "green_premium_cost_eurB": 3.2,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 428.7,
+          "cumulative_carbon_mt": 158.9
+        },
+        "2033": {
+          "sb_rate": 0.122,
+          "sb_rate_pct": 12.2,
+          "newly_competitive_eurB": 122.5,
+          "carbon_accessible_mt": 45.4,
+          "savings_central_eurB": 10.4,
+          "savings_range_eurB": [
+            8.6,
+            12.2
+          ],
+          "green_premium_cost_eurB": 3.7,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 551.2,
+          "cumulative_carbon_mt": 204.3
+        },
+        "2034": {
+          "sb_rate": 0.116,
+          "sb_rate_pct": 11.6,
+          "newly_competitive_eurB": 137.8,
+          "carbon_accessible_mt": 51.1,
+          "savings_central_eurB": 11.7,
+          "savings_range_eurB": [
+            9.6,
+            13.8
+          ],
+          "green_premium_cost_eurB": 4.1,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 689.0,
+          "cumulative_carbon_mt": 255.4
+        },
+        "2035": {
+          "sb_rate": 0.11,
+          "sb_rate_pct": 11.0,
+          "newly_competitive_eurB": 153.1,
+          "carbon_accessible_mt": 56.7,
+          "savings_central_eurB": 13.0,
+          "savings_range_eurB": [
+            10.7,
+            15.3
+          ],
+          "green_premium_cost_eurB": 4.6,
+          "self_funding_ratio": 2.83,
+          "cumulative_spending_eurB": 842.2,
+          "cumulative_carbon_mt": 312.1
+        }
+      }
+    }
+  },
+  "sensitivity": {
+    "note": "Sensitivity of conservative scenario to \u00b11 SE and \u00b12 SE of the attenuated TWFE sensitivity; negative reductions are clipped to zero for projection magnitudes",
+    "twfe_att_pp": -0.71,
+    "twfe_att_se": 1.24,
+    "base_sb_reduction_pp": 0.71,
+    "variants": {
+      "lower_2se": {
+        "sb_reduction_pp": -1.77,
+        "effective_sb_reduction_pp": 0,
+        "newly_competitive_eurB": 0.0,
+        "carbon_accessible_mt": 0.0,
+        "savings_eurB": 0.0
+      },
+      "lower_1se": {
+        "sb_reduction_pp": -0.53,
+        "effective_sb_reduction_pp": 0,
+        "newly_competitive_eurB": 0.0,
+        "carbon_accessible_mt": 0.0,
+        "savings_eurB": 0.0
+      },
+      "central": {
+        "sb_reduction_pp": 0.71,
+        "effective_sb_reduction_pp": 0.71,
+        "newly_competitive_eurB": 18.1,
+        "carbon_accessible_mt": 6.7,
+        "savings_eurB": 1.5
+      },
+      "upper_1se": {
+        "sb_reduction_pp": 1.95,
+        "effective_sb_reduction_pp": 1.95,
+        "newly_competitive_eurB": 49.8,
+        "carbon_accessible_mt": 18.4,
+        "savings_eurB": 4.2
+      },
+      "upper_2se": {
+        "sb_reduction_pp": 3.19,
+        "effective_sb_reduction_pp": 3.19,
+        "newly_competitive_eurB": 81.4,
+        "carbon_accessible_mt": 30.2,
+        "savings_eurB": 6.9
+      }
+    }
+  },
+  "self_funding": {
+    "detail": {
+      "conservative_5yr_mt7_gp10_gsdz_only": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 1.3,
+        "green_premium_cost_eurB": 0.1,
+        "self_funding_ratio": 11.86,
+        "net_fiscal_eurB": 1.2
+      },
+      "conservative_5yr_mt7_gp10_gscentral": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 1.3,
+        "green_premium_cost_eurB": 0.4,
+        "self_funding_ratio": 3.5,
+        "net_fiscal_eurB": 0.9
+      },
+      "conservative_5yr_mt7_gp10_gsbroad": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 1.3,
+        "green_premium_cost_eurB": 0.7,
+        "self_funding_ratio": 1.75,
+        "net_fiscal_eurB": 0.5
+      },
+      "conservative_5yr_mt7_gp15_gsdz_only": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 1.3,
+        "green_premium_cost_eurB": 0.2,
+        "self_funding_ratio": 7.91,
+        "net_fiscal_eurB": 1.1
+      },
+      "conservative_5yr_mt7_gp15_gscentral": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 1.3,
+        "green_premium_cost_eurB": 0.5,
+        "self_funding_ratio": 2.33,
+        "net_fiscal_eurB": 0.7
+      },
+      "conservative_5yr_mt7_gp15_gsbroad": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 1.3,
+        "green_premium_cost_eurB": 1.1,
+        "self_funding_ratio": 1.17,
+        "net_fiscal_eurB": 0.2
+      },
+      "conservative_5yr_mt7_gp20_gsdz_only": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 1.3,
+        "green_premium_cost_eurB": 0.2,
+        "self_funding_ratio": 5.93,
+        "net_fiscal_eurB": 1.1
+      },
+      "conservative_5yr_mt7_gp20_gscentral": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 1.3,
+        "green_premium_cost_eurB": 0.7,
+        "self_funding_ratio": 1.75,
+        "net_fiscal_eurB": 0.5
+      },
+      "conservative_5yr_mt7_gp20_gsbroad": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 1.3,
+        "green_premium_cost_eurB": 1.4,
+        "self_funding_ratio": 0.88,
+        "net_fiscal_eurB": -0.2
+      },
+      "conservative_5yr_mt8_gp10_gsdz_only": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 1.5,
+        "green_premium_cost_eurB": 0.1,
+        "self_funding_ratio": 14.41,
+        "net_fiscal_eurB": 1.4
+      },
+      "conservative_5yr_mt8_gp10_gscentral": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 1.5,
+        "green_premium_cost_eurB": 0.4,
+        "self_funding_ratio": 4.25,
+        "net_fiscal_eurB": 1.2
+      },
+      "conservative_5yr_mt8_gp10_gsbroad": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 1.5,
+        "green_premium_cost_eurB": 0.7,
+        "self_funding_ratio": 2.12,
+        "net_fiscal_eurB": 0.8
+      },
+      "conservative_5yr_mt8_gp15_gsdz_only": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 1.5,
+        "green_premium_cost_eurB": 0.2,
+        "self_funding_ratio": 9.6,
+        "net_fiscal_eurB": 1.4
+      },
+      "conservative_5yr_mt8_gp15_gscentral": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 1.5,
+        "green_premium_cost_eurB": 0.5,
+        "self_funding_ratio": 2.83,
+        "net_fiscal_eurB": 1.0
+      },
+      "conservative_5yr_mt8_gp15_gsbroad": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 1.5,
+        "green_premium_cost_eurB": 1.1,
+        "self_funding_ratio": 1.42,
+        "net_fiscal_eurB": 0.5
+      },
+      "conservative_5yr_mt8_gp20_gsdz_only": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 1.5,
+        "green_premium_cost_eurB": 0.2,
+        "self_funding_ratio": 7.2,
+        "net_fiscal_eurB": 1.3
+      },
+      "conservative_5yr_mt8_gp20_gscentral": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 1.5,
+        "green_premium_cost_eurB": 0.7,
+        "self_funding_ratio": 2.12,
+        "net_fiscal_eurB": 0.8
+      },
+      "conservative_5yr_mt8_gp20_gsbroad": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 1.5,
+        "green_premium_cost_eurB": 1.4,
+        "self_funding_ratio": 1.06,
+        "net_fiscal_eurB": 0.1
+      },
+      "conservative_5yr_mt10_gp10_gsdz_only": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 1.8,
+        "green_premium_cost_eurB": 0.1,
+        "self_funding_ratio": 16.95,
+        "net_fiscal_eurB": 1.7
+      },
+      "conservative_5yr_mt10_gp10_gscentral": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 1.8,
+        "green_premium_cost_eurB": 0.4,
+        "self_funding_ratio": 5.0,
+        "net_fiscal_eurB": 1.4
+      },
+      "conservative_5yr_mt10_gp10_gsbroad": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 1.8,
+        "green_premium_cost_eurB": 0.7,
+        "self_funding_ratio": 2.5,
+        "net_fiscal_eurB": 1.1
+      },
+      "conservative_5yr_mt10_gp15_gsdz_only": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 1.8,
+        "green_premium_cost_eurB": 0.2,
+        "self_funding_ratio": 11.3,
+        "net_fiscal_eurB": 1.7
+      },
+      "conservative_5yr_mt10_gp15_gscentral": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 1.8,
+        "green_premium_cost_eurB": 0.5,
+        "self_funding_ratio": 3.33,
+        "net_fiscal_eurB": 1.3
+      },
+      "conservative_5yr_mt10_gp15_gsbroad": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 1.8,
+        "green_premium_cost_eurB": 1.1,
+        "self_funding_ratio": 1.67,
+        "net_fiscal_eurB": 0.7
+      },
+      "conservative_5yr_mt10_gp20_gsdz_only": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 1.8,
+        "green_premium_cost_eurB": 0.2,
+        "self_funding_ratio": 8.47,
+        "net_fiscal_eurB": 1.6
+      },
+      "conservative_5yr_mt10_gp20_gscentral": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 1.8,
+        "green_premium_cost_eurB": 0.7,
+        "self_funding_ratio": 2.5,
+        "net_fiscal_eurB": 1.1
+      },
+      "conservative_5yr_mt10_gp20_gsbroad": {
+        "newly_competitive_eurB": 18.1,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 1.8,
+        "green_premium_cost_eurB": 1.4,
+        "self_funding_ratio": 1.25,
+        "net_fiscal_eurB": 0.4
+      },
+      "moderate_10yr_mt7_gp10_gsdz_only": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 8.9,
+        "green_premium_cost_eurB": 0.8,
+        "self_funding_ratio": 11.86,
+        "net_fiscal_eurB": 8.2
+      },
+      "moderate_10yr_mt7_gp10_gscentral": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 8.9,
+        "green_premium_cost_eurB": 2.6,
+        "self_funding_ratio": 3.5,
+        "net_fiscal_eurB": 6.4
+      },
+      "moderate_10yr_mt7_gp10_gsbroad": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 8.9,
+        "green_premium_cost_eurB": 5.1,
+        "self_funding_ratio": 1.75,
+        "net_fiscal_eurB": 3.8
+      },
+      "moderate_10yr_mt7_gp15_gsdz_only": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 8.9,
+        "green_premium_cost_eurB": 1.1,
+        "self_funding_ratio": 7.91,
+        "net_fiscal_eurB": 7.8
+      },
+      "moderate_10yr_mt7_gp15_gscentral": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 8.9,
+        "green_premium_cost_eurB": 3.8,
+        "self_funding_ratio": 2.33,
+        "net_fiscal_eurB": 5.1
+      },
+      "moderate_10yr_mt7_gp15_gsbroad": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 8.9,
+        "green_premium_cost_eurB": 7.7,
+        "self_funding_ratio": 1.17,
+        "net_fiscal_eurB": 1.3
+      },
+      "moderate_10yr_mt7_gp20_gsdz_only": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 8.9,
+        "green_premium_cost_eurB": 1.5,
+        "self_funding_ratio": 5.93,
+        "net_fiscal_eurB": 7.4
+      },
+      "moderate_10yr_mt7_gp20_gscentral": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 8.9,
+        "green_premium_cost_eurB": 5.1,
+        "self_funding_ratio": 1.75,
+        "net_fiscal_eurB": 3.8
+      },
+      "moderate_10yr_mt7_gp20_gsbroad": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 8.9,
+        "green_premium_cost_eurB": 10.2,
+        "self_funding_ratio": 0.88,
+        "net_fiscal_eurB": -1.3
+      },
+      "moderate_10yr_mt8_gp10_gsdz_only": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 10.8,
+        "green_premium_cost_eurB": 0.8,
+        "self_funding_ratio": 14.41,
+        "net_fiscal_eurB": 10.1
+      },
+      "moderate_10yr_mt8_gp10_gscentral": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 10.8,
+        "green_premium_cost_eurB": 2.6,
+        "self_funding_ratio": 4.25,
+        "net_fiscal_eurB": 8.3
+      },
+      "moderate_10yr_mt8_gp10_gsbroad": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 10.8,
+        "green_premium_cost_eurB": 5.1,
+        "self_funding_ratio": 2.12,
+        "net_fiscal_eurB": 5.7
+      },
+      "moderate_10yr_mt8_gp15_gsdz_only": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 10.8,
+        "green_premium_cost_eurB": 1.1,
+        "self_funding_ratio": 9.6,
+        "net_fiscal_eurB": 9.7
+      },
+      "moderate_10yr_mt8_gp15_gscentral": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 10.8,
+        "green_premium_cost_eurB": 3.8,
+        "self_funding_ratio": 2.83,
+        "net_fiscal_eurB": 7.0
+      },
+      "moderate_10yr_mt8_gp15_gsbroad": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 10.8,
+        "green_premium_cost_eurB": 7.7,
+        "self_funding_ratio": 1.42,
+        "net_fiscal_eurB": 3.2
+      },
+      "moderate_10yr_mt8_gp20_gsdz_only": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 10.8,
+        "green_premium_cost_eurB": 1.5,
+        "self_funding_ratio": 7.2,
+        "net_fiscal_eurB": 9.3
+      },
+      "moderate_10yr_mt8_gp20_gscentral": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 10.8,
+        "green_premium_cost_eurB": 5.1,
+        "self_funding_ratio": 2.12,
+        "net_fiscal_eurB": 5.7
+      },
+      "moderate_10yr_mt8_gp20_gsbroad": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 10.8,
+        "green_premium_cost_eurB": 10.2,
+        "self_funding_ratio": 1.06,
+        "net_fiscal_eurB": 0.6
+      },
+      "moderate_10yr_mt10_gp10_gsdz_only": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 12.8,
+        "green_premium_cost_eurB": 0.8,
+        "self_funding_ratio": 16.95,
+        "net_fiscal_eurB": 12.0
+      },
+      "moderate_10yr_mt10_gp10_gscentral": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 12.8,
+        "green_premium_cost_eurB": 2.6,
+        "self_funding_ratio": 5.0,
+        "net_fiscal_eurB": 10.2
+      },
+      "moderate_10yr_mt10_gp10_gsbroad": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 12.8,
+        "green_premium_cost_eurB": 5.1,
+        "self_funding_ratio": 2.5,
+        "net_fiscal_eurB": 7.7
+      },
+      "moderate_10yr_mt10_gp15_gsdz_only": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 12.8,
+        "green_premium_cost_eurB": 1.1,
+        "self_funding_ratio": 11.3,
+        "net_fiscal_eurB": 11.6
+      },
+      "moderate_10yr_mt10_gp15_gscentral": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 12.8,
+        "green_premium_cost_eurB": 3.8,
+        "self_funding_ratio": 3.33,
+        "net_fiscal_eurB": 8.9
+      },
+      "moderate_10yr_mt10_gp15_gsbroad": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 12.8,
+        "green_premium_cost_eurB": 7.7,
+        "self_funding_ratio": 1.67,
+        "net_fiscal_eurB": 5.1
+      },
+      "moderate_10yr_mt10_gp20_gsdz_only": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 12.8,
+        "green_premium_cost_eurB": 1.5,
+        "self_funding_ratio": 8.47,
+        "net_fiscal_eurB": 11.3
+      },
+      "moderate_10yr_mt10_gp20_gscentral": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 12.8,
+        "green_premium_cost_eurB": 5.1,
+        "self_funding_ratio": 2.5,
+        "net_fiscal_eurB": 7.7
+      },
+      "moderate_10yr_mt10_gp20_gsbroad": {
+        "newly_competitive_eurB": 127.6,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 12.8,
+        "green_premium_cost_eurB": 10.2,
+        "self_funding_ratio": 1.25,
+        "net_fiscal_eurB": 2.6
+      },
+      "ambitious_15yr_mt7_gp10_gsdz_only": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 16.1,
+        "green_premium_cost_eurB": 1.4,
+        "self_funding_ratio": 11.86,
+        "net_fiscal_eurB": 14.7
+      },
+      "ambitious_15yr_mt7_gp10_gscentral": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 16.1,
+        "green_premium_cost_eurB": 4.6,
+        "self_funding_ratio": 3.5,
+        "net_fiscal_eurB": 11.5
+      },
+      "ambitious_15yr_mt7_gp10_gsbroad": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 16.1,
+        "green_premium_cost_eurB": 9.2,
+        "self_funding_ratio": 1.75,
+        "net_fiscal_eurB": 6.9
+      },
+      "ambitious_15yr_mt7_gp15_gsdz_only": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 16.1,
+        "green_premium_cost_eurB": 2.0,
+        "self_funding_ratio": 7.91,
+        "net_fiscal_eurB": 14.0
+      },
+      "ambitious_15yr_mt7_gp15_gscentral": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 16.1,
+        "green_premium_cost_eurB": 6.9,
+        "self_funding_ratio": 2.33,
+        "net_fiscal_eurB": 9.2
+      },
+      "ambitious_15yr_mt7_gp15_gsbroad": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 16.1,
+        "green_premium_cost_eurB": 13.8,
+        "self_funding_ratio": 1.17,
+        "net_fiscal_eurB": 2.3
+      },
+      "ambitious_15yr_mt7_gp20_gsdz_only": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 16.1,
+        "green_premium_cost_eurB": 2.7,
+        "self_funding_ratio": 5.93,
+        "net_fiscal_eurB": 13.4
+      },
+      "ambitious_15yr_mt7_gp20_gscentral": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 16.1,
+        "green_premium_cost_eurB": 9.2,
+        "self_funding_ratio": 1.75,
+        "net_fiscal_eurB": 6.9
+      },
+      "ambitious_15yr_mt7_gp20_gsbroad": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.07,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 16.1,
+        "green_premium_cost_eurB": 18.4,
+        "self_funding_ratio": 0.88,
+        "net_fiscal_eurB": -2.3
+      },
+      "ambitious_15yr_mt8_gp10_gsdz_only": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 19.5,
+        "green_premium_cost_eurB": 1.4,
+        "self_funding_ratio": 14.41,
+        "net_fiscal_eurB": 18.2
+      },
+      "ambitious_15yr_mt8_gp10_gscentral": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 19.5,
+        "green_premium_cost_eurB": 4.6,
+        "self_funding_ratio": 4.25,
+        "net_fiscal_eurB": 14.9
+      },
+      "ambitious_15yr_mt8_gp10_gsbroad": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 19.5,
+        "green_premium_cost_eurB": 9.2,
+        "self_funding_ratio": 2.12,
+        "net_fiscal_eurB": 10.3
+      },
+      "ambitious_15yr_mt8_gp15_gsdz_only": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 19.5,
+        "green_premium_cost_eurB": 2.0,
+        "self_funding_ratio": 9.6,
+        "net_fiscal_eurB": 17.5
+      },
+      "ambitious_15yr_mt8_gp15_gscentral": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 19.5,
+        "green_premium_cost_eurB": 6.9,
+        "self_funding_ratio": 2.83,
+        "net_fiscal_eurB": 12.6
+      },
+      "ambitious_15yr_mt8_gp15_gsbroad": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 19.5,
+        "green_premium_cost_eurB": 13.8,
+        "self_funding_ratio": 1.42,
+        "net_fiscal_eurB": 5.7
+      },
+      "ambitious_15yr_mt8_gp20_gsdz_only": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 19.5,
+        "green_premium_cost_eurB": 2.7,
+        "self_funding_ratio": 7.2,
+        "net_fiscal_eurB": 16.8
+      },
+      "ambitious_15yr_mt8_gp20_gscentral": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 19.5,
+        "green_premium_cost_eurB": 9.2,
+        "self_funding_ratio": 2.12,
+        "net_fiscal_eurB": 10.3
+      },
+      "ambitious_15yr_mt8_gp20_gsbroad": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.085,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 19.5,
+        "green_premium_cost_eurB": 18.4,
+        "self_funding_ratio": 1.06,
+        "net_fiscal_eurB": 1.1
+      },
+      "ambitious_15yr_mt10_gp10_gsdz_only": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 23.0,
+        "green_premium_cost_eurB": 1.4,
+        "self_funding_ratio": 16.95,
+        "net_fiscal_eurB": 21.6
+      },
+      "ambitious_15yr_mt10_gp10_gscentral": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 23.0,
+        "green_premium_cost_eurB": 4.6,
+        "self_funding_ratio": 5.0,
+        "net_fiscal_eurB": 18.4
+      },
+      "ambitious_15yr_mt10_gp10_gsbroad": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.1,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 23.0,
+        "green_premium_cost_eurB": 9.2,
+        "self_funding_ratio": 2.5,
+        "net_fiscal_eurB": 13.8
+      },
+      "ambitious_15yr_mt10_gp15_gsdz_only": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 23.0,
+        "green_premium_cost_eurB": 2.0,
+        "self_funding_ratio": 11.3,
+        "net_fiscal_eurB": 20.9
+      },
+      "ambitious_15yr_mt10_gp15_gscentral": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 23.0,
+        "green_premium_cost_eurB": 6.9,
+        "self_funding_ratio": 3.33,
+        "net_fiscal_eurB": 16.1
+      },
+      "ambitious_15yr_mt10_gp15_gsbroad": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.15,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 23.0,
+        "green_premium_cost_eurB": 13.8,
+        "self_funding_ratio": 1.67,
+        "net_fiscal_eurB": 9.2
+      },
+      "ambitious_15yr_mt10_gp20_gsdz_only": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.059,
+        "green_sub_label": "dz_only",
+        "savings_eurB": 23.0,
+        "green_premium_cost_eurB": 2.7,
+        "self_funding_ratio": 8.47,
+        "net_fiscal_eurB": 20.3
+      },
+      "ambitious_15yr_mt10_gp20_gscentral": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.2,
+        "green_sub_label": "central",
+        "savings_eurB": 23.0,
+        "green_premium_cost_eurB": 9.2,
+        "self_funding_ratio": 2.5,
+        "net_fiscal_eurB": 13.8
+      },
+      "ambitious_15yr_mt10_gp20_gsbroad": {
+        "newly_competitive_eurB": 229.7,
+        "monopoly_tax_pct": 0.1,
+        "green_premium_pct": 0.2,
+        "green_sub_fraction": 0.4,
+        "green_sub_label": "broad",
+        "savings_eurB": 23.0,
+        "green_premium_cost_eurB": 18.4,
+        "self_funding_ratio": 1.25,
+        "net_fiscal_eurB": 4.6
+      }
+    },
+    "summary": {
+      "conservative": {
+        "monopoly_tax_eurB": 1.5,
+        "green_cost_dz_only_eurB": 0.2,
+        "green_cost_central_eurB": 0.5,
+        "green_cost_broad_eurB": 1.1,
+        "self_funding_dz_only": 9.6,
+        "self_funding_central": 2.83,
+        "self_funding_broad": 1.42
+      },
+      "moderate": {
+        "monopoly_tax_eurB": 10.8,
+        "green_cost_dz_only_eurB": 1.1,
+        "green_cost_central_eurB": 3.8,
+        "green_cost_broad_eurB": 7.7,
+        "self_funding_dz_only": 9.6,
+        "self_funding_central": 2.83,
+        "self_funding_broad": 1.42
+      },
+      "ambitious": {
+        "monopoly_tax_eurB": 13.0,
+        "green_cost_dz_only_eurB": 1.4,
+        "green_cost_central_eurB": 4.6,
+        "green_cost_broad_eurB": 9.2,
+        "self_funding_dz_only": 9.6,
+        "self_funding_central": 2.83,
+        "self_funding_broad": 1.42
+      }
+    }
+  },
+  "oecd_data_summary": {
+    "eu_total_procurement_eurB": 2594,
+    "g20_total_procurement_usdT": 10.4,
+    "n_eu_countries": 27,
+    "n_g20_countries": 19
+  }
+}

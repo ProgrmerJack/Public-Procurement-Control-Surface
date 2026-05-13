@@ -1,0 +1,18 @@
+{
+  "eu_context": {
+    "n_sb": 2258477,
+    "n_mb": 10357761,
+    "sb_mean_kg_eur": 0.4361,
+    "mb_mean_kg_eur": 0.5307,
+    "premium_pct": -17.8,
+    "cohens_d": -0.0408,
+    "t_stat": -57.93,
+    "p_value": 0.0
+  },
+  "match_rate_pct": 58.4,
+  "n_matched": 12616238,
+  "countries_negative_premium": 9,
+  "countries_positive_premium": 13,
+  "within_sector_variation_pct": 100.0,
+  "exiobase_within_sector_variation_pct": 0.0
+}

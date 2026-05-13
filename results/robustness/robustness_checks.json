@@ -1,0 +1,12 @@
+{
+  "robustness_2018": {
+    "with_2018": {
+      "n": 13638933,
+      "premium": -4.3
+    },
+    "without_2018": {
+      "n": 7845633,
+      "premium": -4.4
+    }
+  },
+  "countries_with_negative_premium": 

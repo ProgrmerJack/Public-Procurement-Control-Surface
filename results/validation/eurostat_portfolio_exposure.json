@@ -1,0 +1,11 @@
+{
+  "eurostat_matched_contracts": 9952624,
+  "eurostat_sb_mean": 0.4034,
+  "eurostat_mb_mean": 0.4556,
+  "eurostat_premium_pct": -11.5,
+  "eurostat_cohens_d": -0.051,
+  "eurostat_vw_sb": 0.3094,
+  "eurostat_vw_mb": 0.1907,
+  "eurostat_exposure_mt": 134.0,
+  "exiobase_exposure_mt": "129-161"
+}

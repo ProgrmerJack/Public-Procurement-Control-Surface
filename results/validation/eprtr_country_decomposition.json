@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "analysis": "E-PRTR Petroleum Refinery Country Decomposition",
+    "sector": "Petroleum Refineries (EPRTR Activity 1.a)",
+    "n_eprtr_refineries": 128,
+    "n_matched_contracts": 432,
+    "n_countries": 4,
+    "years_ted": [
+      2019,
+      2020,
+      2021,
+      2022
+    ]
+  },
+  "overall_effect": {
+    "unmatched_sample": {
+      "n_sb": 311,
+      "n_mb": 121,
+      "sb_mean_co2_kg": 6207652733.118971,
+      "mb_mean_co2_kg": 6092975206.61157,
+      "sb_premium_pct": 1.8821269186023009,
+      "t_stat": 0.5968958006376713,
+      "p_value": 0.5508910907829387
+    },
+    "country_balanced_matched": {
+      "n_sb": 121,
+      "n_mb": 121,
+      "sb_mean_co2_kg": 6092975206.61157,
+      "mb_mean_co2_kg": 6092975206.61157,
+      "sb_premium_pct": 0.0,
+      "t_stat": 0.0,
+      "p_value": 1.0
+    },
+    "attenuation": {
+      "percentage_points": 1.8821269186023009,
+      "from_pct": 1.8821269186023009,
+      "to_pct": 0.0,
+      "interpretation": "Attenuation driven by country-level confound in sample composition"
+    }
+  },
+  "country_level_premiums": {
+    "AT": {
+      "n_sb": 10,
+      "n_mb": 8,
+      "sb_mean_co2": 2620000000.0,
+      "mb_mean_co2": 2620000000.0,
+      "premium_pct": 0.0,
+      "t_stat": null,
+      "p_value": null
+    },
+    "LT": {
+      "n_sb": 9,
+      "n_mb": 2,
+      "sb_mean_co2": 1500000000.0,
+      "mb_mean_co2": 1500000000.0,
+      "premium_pct": 0.0,
+      "t_stat": null,
+      "p_value": null
+    },
+    "PL": {
+      "n_sb": 263,
+      "n_mb": 98,
+      "sb_mean_co2": 6941558935.361217,
+      "mb_mean_co2": 6980000000.0,
+      "premium_pct": -0.5507315850828576,
+      "t_stat": -0.8639491642554675,
+      "p_value": 0.3881926739043834
+    },
+    "SK": {
+      "n_sb": 29,
+      "n_mb": 13,
+      "sb_mean_co2": 2250000000.0,
+      "mb_mean_co2": 2250000000.0,
+      "premium_pct": 0.0,
+      "t_stat": null,
+      "p_value": null
+    }
+  },
+  "country_contributions": [
+    {
+      "country": "PL",
+      "sb_share_pct": 84.6,
+      "mb_share_pct": 81.0,
+      "sb_minus_mb_share_pp": 3.6,
+      "country_premium_pct": -0.6,
+      "contribution_to_overall_pp": -0.02,
+      "sample_size": 361
+    },
+    {
+      "country": "AT",
+      "sb_share_pct": 3.2,
+      "mb_share_pct": 6.6,
+      "sb_minus_mb_share_pp": -3.4,
+      "country_premium_pct": 0.0,
+      "contribution_to_overall_pp": -0.0,
+      "sample_size": 18
+    },
+    {
+      "country": "LT",
+      "sb_share_pct": 2.9,
+      "mb_share_pct": 1.7,
+      "sb_minus_mb_share_pp": 1.2,
+      "country_premium_pct": 0.0,
+      "contribution_to_overall_pp": 0.0,
+      "sample_size": 11
+    },
+    {
+      "country": "SK",
+      "sb_share_pct": 9.3,
+      "mb_share_pct": 10.7,
+      "sb_minus_mb_share_pp": -1.4,
+      "country_premium_pct": 0.0,
+      "contribution_to_overall_pp": -0.0,
+      "sample_size": 42
+    }
+  ],
+  "attenuation_by_country": [
+    {
+      "country": "PL",
+      "pre_match_premium_pct": -0.6,
+      "post_match_premium_pct": 0.0,
+      "attenuation_pp": -0.6,
+      "n_sb": 263,
+      "n_mb": 98
+    },
+    {
+      "country": "AT",
+      "pre_match_premium_pct": 0.0,
+      "post_match_premium_pct": 0.0,
+      "attenuation_pp": 0.0,
+      "n_sb": 10,
+      "n_mb": 8
+    },
+    {
+      "country": "LT",
+      "pre_match_premium_pct": 0.0,
+      "post_match_premium_pct": 0.0,
+      "attenuation_pp": 0.0,
+      "n_sb": 9,
+      "n_mb": 2
+    },
+    {
+      "country": "SK",
+      "pre_match_premium_pct": 0.0,
+      "post_match_premium_pct": 0.0,
+      "attenuation_pp": 0.0,
+      "n_sb": 29,
+      "n_mb": 13
+    }
+  ],
+  "key_findings": {
+    "pattern": "Systematic cross-country confound",
+    "largest_contributing_country": "PL",
+    "largest_contribution_pp": -0.02,
+    "country_with_max_attenuation": "PL",
+    "max_attenuation_pp": -0.6,
+    "n_countries_with_large_attenuation": 0,
+    "conclusion": "The +1.9% unmatched SB premium appears to be driven by country-level sample composition bias. After country-balancing, the premium drops to 0.0% (p=1.0000), indicating the effect is primarily a confound, "
+  }
+}

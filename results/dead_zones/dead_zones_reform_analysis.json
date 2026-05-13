@@ -1,0 +1,914 @@
+{
+  "dead_zones": {
+    "n_dead_zone_sectors": 22,
+    "n_total_sectors": 75,
+    "total_value_eur": 165886322572912.1,
+    "dead_zone_value_eur": 85409775547936.97,
+    "dead_zone_sb_locked_eur": 1582275438128.5,
+    "dead_zone_pct_of_total": 51.48693046130839,
+    "carbon_threshold": 0.25,
+    "sb_rate_threshold": 0.07373357733851546,
+    "dead_zone_premium_pct": -8.847273804955941,
+    "live_zone_premium_pct": -0.507171428357094,
+    "top_dead_zone_sectors": [
+      {
+        "sector": "24",
+        "n_contracts": 114356,
+        "mean_carbon": 0.9000000000000002,
+        "median_carbon": 0.9,
+        "sb_rate": 0.14370911889188148,
+        "sb_count": 16434,
+        "total_value_eur": 368233200171.16077,
+        "sb_value_eur": 11402481272.34,
+        "is_dead_zone": true,
+        "leverage_index": 0.4491602637358142
+      },
+      {
+        "sector": "77",
+        "n_contracts": 529123,
+        "mean_carbon": 0.8499999999999999,
+        "median_carbon": 0.85,
+        "sb_rate": 0.15022027014512693,
+        "sb_count": 79485,
+        "total_value_eur": 1322278492789.523,
+        "sb_value_eur": 20794635856.260002,
+        "is_dead_zone": true,
+        "leverage_index": 0.4434268192084075
+      },
+      {
+        "sector": "65",
+        "n_contracts": 24090,
+        "mean_carbon": 0.6,
+        "median_carbon": 0.6,
+        "sb_rate": 0.21224574512245745,
+        "sb_count": 5113,
+        "total_value_eur": 971968936768.9309,
+        "sb_value_eur": 402617062768.56,
+        "is_dead_zone": true,
+        "leverage_index": 0.4422468367171141
+      },
+      {
+        "sector": "35",
+        "n_contracts": 83677,
+        "mean_carbon": 0.5999999999999998,
+        "median_carbon": 0.6,
+        "sb_rate": 0.20446478721751496,
+        "sb_count": 17109,
+        "total_value_eur": 664595423644.0826,
+        "sb_value_eur": 63097004045.97,
+        "is_dead_zone": true,
+        "leverage_index": 0.42603400748887915
+      },
+      {
+        "sector": "15",
+        "n_contracts": 634627,
+        "mean_carbon": 0.65,
+        "median_carbon": 0.65,
+        "sb_rate": 0.15884291087520702,
+        "sb_count": 100806,
+        "total_value_eur": 1519782061810.103,
+        "sb_value_eur": 21120038821.36,
+        "is_dead_zone": true,
+        "leverage_index": 0.3585549197451095
+      },
+      {
+        "sector": "14",
+        "n_contracts": 47283,
+        "mean_carbon": 1.1999999999999997,
+        "median_carbon": 1.2,
+        "sb_rate": 0.08292621026584608,
+        "sb_count": 3921,
+        "total_value_eur": 84891104990.44135,
+        "sb_value_eur": 3321748711.37,
+        "is_dead_zone": true,
+        "leverage_index": 0.34557916955978857
+      },
+      {
+        "sector": "60",
+        "n_contracts": 473169,
+        "mean_carbon": 0.8499999999999995,
+        "median_carbon": 0.85,
+        "sb_rate": 0.11282438198614025,
+        "sb_count": 53385,
+        "total_value_eur": 6632669825688.039,
+        "sb_value_eur": 149219147392.94,
+        "is_dead_zone": true,
+        "leverage_index": 0.33303998711316013
+      },
+      {
+        "sector": "34",
+        "n_contracts": 496667,
+        "mean_carbon": 0.4500000000000001,
+        "median_carbon": 0.45,
+        "sb_rate": 0.18015289922624214,
+        "sb_count": 89476,
+        "total_value_eur": 3972801023792.6836,
+        "sb_value_eur": 181081834470.67,
+        "is_dead_zone": true,
+        "leverage_index": 0.2815323215157564
+      },
+      {
+        "sector": "33",
+        "n_contracts": 3890675,
+        "mean_carbon": 0.2999999999999999,
+        "median_carbon": 0.3,
+        "sb_rate": 0.23996298842745797,
+        "sb_count": 933618,
+        "total_value_eur": 54388745858778.375,
+        "sb_value_eur": 328398401365.5,
+        "is_dead_zone": true,
+        "leverage_index": 0.24999999999999994
+      },
+      {
+        "sector": "63",
+        "n_contracts": 44737,
+        "mean_carbon": 0.4500000000000001,
+        "median_carbon": 0.45,
+        "sb_rate": 0.1568053289223685,
+        "sb_count": 7015,
+        "total_value_eur": 1217306622506.5996,
+        "sb_value_eur": 35535664679.99,
+        "is_dead_zone": true,
+        "leverage_index": 0.24504611619997538
+      },
+      {
+        "sector": "44",
+        "n_contracts": 262793,
+        "mean_carbon": 0.75,
+        "median_carbon": 0.75,
+        "sb_rate": 0.09383431065515443,
+        "sb_count": 24659,
+        "total_value_eur": 1392405942198.8325,
+        "sb_value_eur": 41465557900.57,
+        "is_dead_zone": true,
+        "leverage_index": 0.24439787378794314
+      },
+      {
+        "sector": "38",
+        "n_contracts": 275643,
+        "mean_carbon": 0.2800000000000001,
+        "median_carbon": 0.28,
+        "sb_rate": 0.23856582608664106,
+        "sb_count": 65759,
+        "total_value_eur": 743064461683.5902,
+        "sb_value_eur": 28130122651.489998,
+        "is_dead_zone": true,
+        "leverage_index": 0.2319747715470888
+      },
+      {
+        "sector": "22",
+        "n_contracts": 64486,
+        "mean_carbon": 0.5499999999999998,
+        "median_carbon": 0.55,
+        "sb_rate": 0.11027199702260956,
+        "sb_count": 7111,
+        "total_value_eur": 312173608291.40576,
+        "sb_value_eur": 8320238889.59,
+        "is_dead_zone": true,
+        "leverage_index": 0.21062136415247615
+      },
+      {
+        "sector": "18",
+        "n_contracts": 121074,
+        "mean_carbon": 0.4500000000000001,
+        "median_carbon": 0.45,
+        "sb_rate": 0.13288567322463948,
+        "sb_count": 16089,
+        "total_value_eur": 323880626114.1191,
+        "sb_value_eur": 13202103307.380001,
+        "is_dead_zone": true,
+        "leverage_index": 0.20766588958490292
+      },
+      {
+        "sector": "31",
+        "n_contracts": 147285,
+        "mean_carbon": 0.39999999999999997,
+        "median_carbon": 0.4,
+        "sb_rate": 0.1291238075839359,
+        "sb_count": 19018,
+        "total_value_eur": 700945674121.8105,
+        "sb_value_eur": 21830524328.06,
+        "is_dead_zone": true,
+        "leverage_index": 0.17936628259510487
+      }
+    ]
+  },
+  "temporal": {
+    "data": [
+      {
+        "year": 2012.0,
+        "sample": "all",
+        "n": 712962,
+        "sb_rate": 0.1028736454397289,
+        "premium_pct": 24.610966963385078,
+        "t_stat": 105.05224811274408,
+        "sb_mean_carbon": 0.33348817233621925,
+        "mb_mean_carbon": 0.26762345278502603,
+        "reform_event": NaN
+      },
+      {
+        "year": 2012.0,
+        "sample": "eu_only",
+        "n": 324721,
+        "sb_rate": 0.2217010910905054,
+        "premium_pct": -5.592048027747085,
+        "t_stat": -23.532982967098494,
+        "sb_mean_carbon": 0.3310377686099651,
+        "mb_mean_carbon": 0.3506460649705219,
+        "reform_event": NaN
+      },
+      {
+        "year": 2012.0,
+        "sample": "non_eu",
+        "n": 388241,
+        "sb_rate": 0.003487524501533841,
+        "premium_pct": 117.33656276758747,
+        "t_stat": 106.30583651450192,
+        "sb_mean_carbon": 0.4637740029542098,
+        "mb_mean_carbon": 0.21338977530906955,
+        "reform_event": NaN
+      },
+      {
+        "year": 2013.0,
+        "sample": "all",
+        "n": 894355,
+        "sb_rate": 0.08039313248094995,
+        "premium_pct": 28.62838026477379,
+        "t_stat": 125.88547324355767,
+        "sb_mean_carbon": 0.3306675938803894,
+        "mb_mean_carbon": 0.25707203433622505,
+        "reform_event": NaN
+      },
+      {
+        "year": 2013.0,
+        "sample": "eu_only",
+        "n": 333539,
+        "sb_rate": 0.21187327418982488,
+        "premium_pct": -7.874345402139178,
+        "t_stat": -33.18867712212187,
+        "sb_mean_carbon": 0.3307995132167317,
+        "mb_mean_carbon": 0.3590742607590795,
+        "reform_event": NaN
+      },
+      {
+        "year": 2013.0,
+        "sample": "non_eu",
+        "n": 560816,
+        "sb_rate": 0.002196798950101281,
+        "premium_pct": 54.4788107569011,
+        "t_stat": 57.48723495225901,
+        "sb_mean_carbon": 0.32310064935064936,
+        "mb_mean_carbon": 0.20915531895122086,
+        "reform_event": NaN
+      },
+      {
+        "year": 2014.0,
+        "sample": "all",
+        "n": 1030494,
+        "sb_rate": 0.06946280133605824,
+        "premium_pct": 31.86261703262408,
+        "t_stat": 149.58458846467718,
+        "sb_mean_carbon": 0.32355443483605983,
+        "mb_mean_carbon": 0.2453723747618397,
+        "reform_event": "Directive 2014/24/EU enacted"
+      },
+      {
+        "year": 2014.0,
+        "sample": "eu_only",
+        "n": 327078,
+        "sb_rate": 0.21425776114565945,
+        "premium_pct": -7.946697722580305,
+        "t_stat": -33.88892584903472,
+        "sb_mean_carbon": 0.3225603961243739,
+        "mb_mean_carbon": 0.3504061105296129,
+        "reform_event": "Directive 2014/24/EU enacted"
+      },
+      {
+        "year": 2014.0,
+        "sample": "non_eu",
+        "n": 703416,
+        "sb_rate": 0.002135294050746642,
+        "premium_pct": 78.78496036375499,
+        "t_stat": 101.59425731389484,
+        "sb_mean_carbon": 0.3699334221038615,
+        "mb_mean_carbon": 0.20691529161692168,
+        "reform_event": "Directive 2014/24/EU enacted"
+      },
+      {
+        "year": 2015.0,
+        "sample": "all",
+        "n": 1103517,
+        "sb_rate": 0.06753045036913795,
+        "premium_pct": 32.222467873781184,
+        "t_stat": 137.82450043497772,
+        "sb_mean_carbon": 0.3281535406127132,
+        "mb_mean_carbon": 0.2481828889519493,
+        "reform_event": NaN
+      },
+      {
+        "year": 2015.0,
+        "sample": "eu_only",
+        "n": 325001,
+        "sb_rate": 0.22212547038316804,
+        "premium_pct": -6.812112121672759,
+        "t_stat": -29.076215618869867,
+        "sb_mean_carbon": 0.3263089581803826,
+        "mb_mean_carbon": 0.35016241446145324,
+        "reform_event": NaN
+      },
+      {
+        "year": 2015.0,
+        "sample": "non_eu",
+        "n": 778516,
+        "sb_rate": 0.0029928736210944927,
+        "premium_pct": 79.23872551427091,
+        "t_stat": 72.29289951686106,
+        "sb_mean_carbon": 0.38530472103004293,
+        "mb_mean_carbon": 0.2149673403024533,
+        "reform_event": NaN
+      },
+      {
+        "year": 2016.0,
+        "sample": "all",
+        "n": 1291468,
+        "sb_rate": 0.060353024620044785,
+        "premium_pct": 26.097484259899563,
+        "t_stat": 101.56724057471561,
+        "sb_mean_carbon": 0.32568459406753564,
+        "mb_mean_carbon": 0.2582800092952426,
+        "reform_event": "Transposition deadline (Apr)"
+      },
+      {
+        "year": 2016.0,
+        "sample": "eu_only",
+        "n": 424808,
+        "sb_rate": 0.17431404305003673,
+        "premium_pct": -8.289593787310494,
+        "t_stat": -36.130629984371204,
+        "sb_mean_carbon": 0.3279458474004051,
+        "mb_mean_carbon": 0.35758847980659025,
+        "reform_event": "Transposition deadline (Apr)"
+      },
+      {
+        "year": 2016.0,
+        "sample": "non_eu",
+        "n": 866660,
+        "sb_rate": 0.004493111485472965,
+        "premium_pct": 29.72726428657941,
+        "t_stat": 27.024889429416177,
+        "sb_mean_carbon": 0.28268361581920903,
+        "mb_mean_carbon": 0.21790609504778813,
+        "reform_event": "Transposition deadline (Apr)"
+      },
+      {
+        "year": 2017.0,
+        "sample": "all",
+        "n": 1683865,
+        "sb_rate": 0.07868861221059884,
+        "premium_pct": 22.905998447692593,
+        "t_stat": 115.28520851739988,
+        "sb_mean_carbon": 0.334613625557543,
+        "mb_mean_carbon": 0.2722516636972367,
+        "reform_event": NaN
+      },
+      {
+        "year": 2017.0,
+        "sample": "eu_only",
+        "n": 676819,
+        "sb_rate": 0.16750711785573397,
+        "premium_pct": -4.746981970046006,
+        "t_stat": -25.507338716876944,
+        "sb_mean_carbon": 0.3536639558268356,
+        "mb_mean_carbon": 0.37128897660294574,
+        "reform_event": NaN
+      },
+      {
+        "year": 2017.0,
+        "sample": "non_eu",
+        "n": 1007046,
+        "sb_rate": 0.018995160101921857,
+        "premium_pct": 2.753433164187111,
+        "t_stat": 5.678421939753447,
+        "sb_mean_carbon": 0.22170787809085682,
+        "mb_mean_carbon": 0.215766881225852,
+        "reform_event": NaN
+      },
+      {
+        "year": 2018.0,
+        "sample": "all",
+        "n": 6759894,
+        "sb_rate": 0.14805335704968156,
+        "premium_pct": 2.6247460549426784,
+        "t_stat": 39.34535811251755,
+        "sb_mean_carbon": 0.34071975620113404,
+        "mb_mean_carbon": 0.33200545609021176,
+        "reform_event": "E-procurement mandate (Oct)"
+      },
+      {
+        "year": 2018.0,
+        "sample": "eu_only",
+        "n": 5499710,
+        "sb_rate": 0.17514687138049098,
+        "premium_pct": -3.9681806987608885,
+        "t_stat": -61.33798014877615,
+        "sb_mean_carbon": 0.3432031638493154,
+        "mb_mean_carbon": 0.35738484009423216,
+        "reform_event": "E-procurement mandate (Oct)"
+      },
+      {
+        "year": 2018.0,
+        "sample": "non_eu",
+        "n": 1260184,
+        "sb_rate": 0.029811519587615777,
+        "premium_pct": 16.485151580228735,
+        "t_stat": 44.769181615351854,
+        "sb_mean_carbon": 0.2770442930153322,
+        "mb_mean_carbon": 0.23783657338035818,
+        "reform_event": "E-procurement mandate (Oct)"
+      },
+      {
+        "year": 2019.0,
+        "sample": "all",
+        "n": 1956572,
+        "sb_rate": 0.08553071392210458,
+        "premium_pct": 24.16623469396081,
+        "t_stat": 137.41576301623667,
+        "sb_mean_carbon": 0.3428866367487914,
+        "mb_mean_carbon": 0.27615127219885705,
+        "reform_event": NaN
+      },
+      {
+        "year": 2019.0,
+        "sample": "eu_only",
+        "n": 882166,
+        "sb_rate": 0.17126255149257621,
+        "premium_pct": -2.8043752389201755,
+        "t_stat": -17.145413841393474,
+        "sb_mean_carbon": 0.3533234270131452,
+        "mb_mean_carbon": 0.3635178310563491,
+        "reform_event": NaN
+      },
+      {
+        "year": 2019.0,
+        "sample": "non_eu",
+        "n": 1074406,
+        "sb_rate": 0.015138597513416716,
+        "premium_pct": 13.973431938273025,
+        "t_stat": 26.69088415606754,
+        "sb_mean_carbon": 0.24594159237626811,
+        "mb_mean_carbon": 0.21578852912797067,
+        "reform_event": NaN
+      },
+      {
+        "year": 2020.0,
+        "sample": "all",
+        "n": 1932478,
+        "sb_rate": 0.08555802446392663,
+        "premium_pct": 20.920893232171316,
+        "t_stat": 124.18725888068114,
+        "sb_mean_carbon": 0.3333786342000375,
+        "mb_mean_carbon": 0.27569977800274903,
+        "reform_event": "COVID emergency sourcing begins"
+      },
+      {
+        "year": 2020.0,
+        "sample": "eu_only",
+        "n": 903804,
+        "sb_rate": 0.16207717602489036,
+        "premium_pct": -2.3244186725849536,
+        "t_stat": -14.202179991417164,
+        "sb_mean_carbon": 0.34536419862648987,
+        "mb_mean_carbon": 0.3535829466617722,
+        "reform_event": "COVID emergency sourcing begins"
+      },
+      {
+        "year": 2020.0,
+        "sample": "non_eu",
+        "n": 1028674,
+        "sb_rate": 0.018327477898731764,
+        "premium_pct": 10.56686937177445,
+        "t_stat": 23.84532265051677,
+        "sb_mean_carbon": 0.24025194929188984,
+        "mb_mean_carbon": 0.21729108426146815,
+        "reform_event": "COVID emergency sourcing begins"
+      },
+      {
+        "year": 2021.0,
+        "sample": "all",
+        "n": 1942064,
+        "sb_rate": 0.08885906952603004,
+        "premium_pct": 19.232126048611114,
+        "t_stat": 118.16189112527994,
+        "sb_mean_carbon": 0.3325660891232543,
+        "mb_mean_carbon": 0.2789232232491322,
+        "reform_event": NaN
+      },
+      {
+        "year": 2021.0,
+        "sample": "eu_only",
+        "n": 988541,
+        "sb_rate": 0.16464769797105028,
+        "premium_pct": -3.8944311230182485,
+        "t_stat": -25.170413148667553,
+        "sb_mean_carbon": 0.33839058496814345,
+        "mb_mean_carbon": 0.3521029935333866,
+        "reform_event": NaN
+      },
+      {
+        "year": 2021.0,
+        "sample": "non_eu",
+        "n": 953523,
+        "sb_rate": 0.010287114206998677,
+        "premium_pct": 9.787162730808355,
+        "t_stat": 16.715162514285463,
+        "sb_mean_carbon": 0.23592007340197776,
+        "mb_mean_carbon": 0.21488857853120757,
+        "reform_event": NaN
+      },
+      {
+        "year": 2022.0,
+        "sample": "all",
+        "n": 1268835,
+        "sb_rate": 0.14036025172697789,
+        "premium_pct": 3.7413630468268018,
+        "t_stat": 22.849389801784042,
+        "sb_mean_carbon": 0.3407786899053309,
+        "mb_mean_carbon": 0.3284887338057339,
+        "reform_event": "Post-COVID compliance recovery"
+      },
+      {
+        "year": 2022.0,
+        "sample": "eu_only",
+        "n": 989813,
+        "sb_rate": 0.17820133702022503,
+        "premium_pct": -6.099532855675234,
+        "t_stat": -39.35916026808686,
+        "sb_mean_carbon": 0.34059641921694467,
+        "mb_mean_carbon": 0.3627206866750182,
+        "reform_event": "Post-COVID compliance recovery"
+      },
+      {
+        "year": 2022.0,
+        "sample": "non_eu",
+        "n": 279022,
+        "sb_rate": 0.006121381109733283,
+        "premium_pct": 57.665913548563196,
+        "t_stat": 33.93722443738623,
+        "sb_mean_carbon": 0.3596018735362998,
+        "mb_mean_carbon": 0.22807838767606395,
+        "reform_event": "Post-COVID compliance recovery"
+      },
+      {
+        "year": 2023.0,
+        "sample": "all",
+        "n": 1035625,
+        "sb_rate": 0.1859205793602897,
+        "premium_pct": -3.509217955341484,
+        "t_stat": -23.501753506733856,
+        "sb_mean_carbon": 0.3355384223865714,
+        "mb_mean_carbon": 0.3477414269803257,
+        "reform_event": NaN
+      },
+      {
+        "year": 2023.0,
+        "sample": "eu_only",
+        "n": 962744,
+        "sb_rate": 0.19862393325743916,
+        "premium_pct": -4.783745982515255,
+        "t_stat": -32.47702447087364,
+        "sb_mean_carbon": 0.33540538844496504,
+        "mb_mean_carbon": 0.3522564418291166,
+        "reform_event": NaN
+      },
+      {
+        "year": 2023.0,
+        "sample": "non_eu",
+        "n": 72881,
+        "sb_rate": 0.018111716359545012,
+        "premium_pct": 18.640464739539357,
+        "t_stat": 8.71901225934396,
+        "sb_mean_carbon": 0.3548106060606061,
+        "mb_mean_carbon": 0.29906373583376417,
+        "reform_event": NaN
+      }
+    ],
+    "break_at_2016": {
+      "intercept": -6.496419128202107,
+      "pre_slope": -0.3732544602218167,
+      "level_shift": 2.605555032194477,
+      "post_slope_change": 0.5932471447335276
+    },
+    "break_at_2018": {
+      "intercept": -7.1708325100516195,
+      "pre_slope": 0.11754773525425727,
+      "level_shift": 3.595954268956735,
+      "post_slope_change": -0.5613566415248382
+    }
+  },
+  "country_leverage": [
+    {
+      "country": "SI",
+      "n": 438956,
+      "sb_rate": 0.3204512525173366,
+      "mean_carbon": 0.47666565669452066,
+      "premium_pct": -0.2906807781748901,
+      "leverage_index": 0.15274810671975791,
+      "dead_zone_sb_frac": 0.3109254034273062,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "PL",
+      "n": 2880168,
+      "sb_rate": 0.33746225914599426,
+      "mean_carbon": 0.33373324750500666,
+      "premium_pct": -3.606088361213612,
+      "leverage_index": 0.1126223756551688,
+      "dead_zone_sb_frac": 0.34704059421769123,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "HU",
+      "n": 181626,
+      "sb_rate": 0.3022584872209926,
+      "mean_carbon": 0.3606093290608173,
+      "premium_pct": -8.990318369555803,
+      "leverage_index": 0.10899723027969975,
+      "dead_zone_sb_frac": 0.30358719551254304,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "CZ",
+      "n": 723161,
+      "sb_rate": 0.2135706986411048,
+      "mean_carbon": 0.3644704153017101,
+      "premium_pct": -8.183282171402228,
+      "leverage_index": 0.07784020122999984,
+      "dead_zone_sb_frac": 0.21335110584938644,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "LV",
+      "n": 279714,
+      "sb_rate": 0.16955533151719257,
+      "mean_carbon": 0.4139615821875201,
+      "premium_pct": -21.584987208892233,
+      "leverage_index": 0.07018939330318653,
+      "dead_zone_sb_frac": 0.14980069068526253,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "AT",
+      "n": 91305,
+      "sb_rate": 0.18630962159794096,
+      "mean_carbon": 0.3587076282788456,
+      "premium_pct": -13.870298569935875,
+      "leverage_index": 0.0668306824889266,
+      "dead_zone_sb_frac": 0.1980528108617399,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "SK",
+      "n": 149240,
+      "sb_rate": 0.13433395872420262,
+      "mean_carbon": 0.4264607343875636,
+      "premium_pct": -0.7729228106978506,
+      "leverage_index": 0.057288158690712104,
+      "dead_zone_sb_frac": 0.13672590774047785,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "DE",
+      "n": 815506,
+      "sb_rate": 0.13832148383948126,
+      "mean_carbon": 0.37715693078898255,
+      "premium_pct": -10.04843105358432,
+      "leverage_index": 0.0521689063070766,
+      "dead_zone_sb_frac": 0.160680459882673,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "BE",
+      "n": 158956,
+      "sb_rate": 0.14063011147738996,
+      "mean_carbon": 0.32226062558192203,
+      "premium_pct": -4.2173678047377905,
+      "leverage_index": 0.04531954770035913,
+      "dead_zone_sb_frac": 0.143769930867531,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "EE",
+      "n": 114437,
+      "sb_rate": 0.13433592282216417,
+      "mean_carbon": 0.3318258080865454,
+      "premium_pct": -12.416687980380974,
+      "leverage_index": 0.04457612614551642,
+      "dead_zone_sb_frac": 0.14749055956059046,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "LT",
+      "n": 423731,
+      "sb_rate": 0.12557731202106998,
+      "mean_carbon": 0.32738697428321273,
+      "premium_pct": -7.317040924822031,
+      "leverage_index": 0.04111237622119702,
+      "dead_zone_sb_frac": 0.10412137868002908,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "FR",
+      "n": 2392765,
+      "sb_rate": 0.10727213077757322,
+      "mean_carbon": 0.3658255240276417,
+      "premium_pct": -0.6239068910030195,
+      "leverage_index": 0.039242883455267434,
+      "dead_zone_sb_frac": 0.10757320389033699,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "LU",
+      "n": 23553,
+      "sb_rate": 0.13896318940262387,
+      "mean_carbon": 0.2815259202649344,
+      "premium_pct": 16.877501305458985,
+      "leverage_index": 0.03912173977952406,
+      "dead_zone_sb_frac": 0.2107148419249338,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "IT",
+      "n": 928848,
+      "sb_rate": 0.1256298124127952,
+      "mean_carbon": 0.3068258853978261,
+      "premium_pct": -1.1691797263002504,
+      "leverage_index": 0.03854647842591869,
+      "dead_zone_sb_frac": 0.12784975440983043,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "NL",
+      "n": 98374,
+      "sb_rate": 0.13243336653993942,
+      "mean_carbon": 0.2906947974058186,
+      "premium_pct": -2.272216491746285,
+      "leverage_index": 0.038497690656098205,
+      "dead_zone_sb_frac": 0.13645810544738568,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "ES",
+      "n": 1384496,
+      "sb_rate": 0.1034239174399926,
+      "mean_carbon": 0.33922908408547225,
+      "premium_pct": -7.522997103791619,
+      "leverage_index": 0.035084400785700194,
+      "dead_zone_sb_frac": 0.1043475217026043,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "CH",
+      "n": 51854,
+      "sb_rate": 0.09416824160141937,
+      "mean_carbon": 0.3531235777374937,
+      "premium_pct": 0.5430407566724791,
+      "leverage_index": 0.033253026383541905,
+      "dead_zone_sb_frac": 0.1353969754253308,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "GR",
+      "n": 562251,
+      "sb_rate": 0.07560146624905958,
+      "mean_carbon": 0.4211790641546213,
+      "premium_pct": -7.5004387051108425,
+      "leverage_index": 0.0318417548034961,
+      "dead_zone_sb_frac": 0.06674819954234992,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "PT",
+      "n": 258477,
+      "sb_rate": 0.08874290555832821,
+      "mean_carbon": 0.34757320767418376,
+      "premium_pct": -12.39455793408853,
+      "leverage_index": 0.03084465634323529,
+      "dead_zone_sb_frac": 0.0734195723693184,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "DK",
+      "n": 180436,
+      "sb_rate": 0.08840253607927465,
+      "mean_carbon": 0.33894355893502404,
+      "premium_pct": -11.225300794798708,
+      "leverage_index": 0.029963470197591213,
+      "dead_zone_sb_frac": 0.09927292556575479,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "FI",
+      "n": 202710,
+      "sb_rate": 0.07158995609491392,
+      "mean_carbon": 0.3840364560209166,
+      "premium_pct": -2.462277246578678,
+      "leverage_index": 0.027493153025383757,
+      "dead_zone_sb_frac": 0.07704807041299933,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "IS",
+      "n": 4490,
+      "sb_rate": 0.07728285077951003,
+      "mean_carbon": 0.3126570155902004,
+      "premium_pct": 27.636891016519055,
+      "leverage_index": 0.0241630254810244,
+      "dead_zone_sb_frac": 0.12376470588235294,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "SE",
+      "n": 253196,
+      "sb_rate": 0.07256828701875227,
+      "mean_carbon": 0.29926586517954473,
+      "premium_pct": 6.67136413855616,
+      "leverage_index": 0.021717211199264425,
+      "dead_zone_sb_frac": 0.09116172012425615,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "NO",
+      "n": 125138,
+      "sb_rate": 0.06310633061100546,
+      "mean_carbon": 0.30553556873211973,
+      "premium_pct": 10.467736720595942,
+      "leverage_index": 0.01928122861383073,
+      "dead_zone_sb_frac": 0.07640374565987444,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "GB",
+      "n": 818707,
+      "sb_rate": 0.05441751444656025,
+      "mean_carbon": 0.34094065398243817,
+      "premium_pct": -6.985856014469355,
+      "leverage_index": 0.018553142963509028,
+      "dead_zone_sb_frac": 0.0487176941189821,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "IE",
+      "n": 96838,
+      "sb_rate": 0.0642722898035895,
+      "mean_carbon": 0.2721965550713563,
+      "premium_pct": 12.115497131333527,
+      "leverage_index": 0.01749469587108492,
+      "dead_zone_sb_frac": 0.11274760287354595,
+      "wgi_cc_2019": NaN
+    },
+    {
+      "country": "CO",
+      "n": 7973196,
+      "sb_rate": 0.0071846973283988,
+      "mean_carbon": 0.20467497851551622,
+      "premium_pct": -2.300247796806315,
+      "leverage_index": 0.001470527771330511,
+      "dead_zone_sb_frac": 0.0,
+      "wgi_cc_2019": NaN
+    }
+  ],
+  "did": {
+    "eu_sb_pre": 0.13918710100567713,
+    "eu_sb_post": 0.13533009394921897,
+    "ne_sb_pre": 0.043795107263745664,
+    "ne_sb_post": 0.05724952650866425
+  },
+  "covid_dead_zones": {
+    "pre_covid": {
+      "n": 8716466,
+      "sb_rate": 0.13401899347740243,
+      "carbon_premium_pct": 6.984505766739107,
+      "dead_zone_sb_fraction": 0.18072598952160976
+    },
+    "covid": {
+      "n": 3874542,
+      "sb_rate": 0.08721263055091415,
+      "carbon_premium_pct": 20.068002365699535,
+      "dead_zone_sb_fraction": 0.1602902696516123
+    },
+    "post_covid": {
+      "n": 2304460,
+      "sb_rate": 0.16083507633024657,
+      "carbon_premium_pct": 0.34853377258279833,
+      "dead_zone_sb_fraction": 0.197746558203873
+    }
+  },
+  "core": {
+    "overall_premium_pct": 14.802136257008701,
+    "t_stat": 331.5234350821765,
+    "cohen_d": 0.22728901527644146,
+    "n_sb": 2378511,
+    "n_mb": 19233618,
+    "n_total": 21612129
+  }
+}

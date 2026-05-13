@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-02-02T09:32:22.196494",
+  "total_contracts": 21612129,
+  "breakthroughs": [
+    {
+      "name": "Sector Heterogeneity",
+      "positive_sectors": 0,
+      "reversed_sectors": 0,
+      "interpretation": "Premium varies by sector - not a uniform effect"
+    },
+    {
+      "name": "COVID Natural Experiment",
+      "pre_covid": 13.395490374451745,
+      "covid": 20.076509640391215,
+      "post_covid": 0.1160725457426588,
+      "trend_slope": -2.4625926582315425,
+      "interpretation": "Premium tripled during COVID, then collapsed"
+    },
+    {
+      "name": "Nordic Paradox Explained",
+      "nordic_premium": 6.217682766858754,
+      "non_nordic_premium": -4.660521250147675,
+      "baseline_correlation": -0.3936649556114748,
+      "interpretation": "Efficiency ceiling - Nordic markets already optimized"
+    },
+    {
+      "name": "DETERRENCE EFFECT (NEW)",
+      "competitive_buyer_sb_carbon": 0.34218217453349953,
+      "noncomp_buyer_sb_carbon": 0.33553913292684995,
+      "deterrence_premium": -1.9413757059981593,
+      "t_stat": 22.872403029368442,
+      "p_value": 9.004347929131344e-116,
+      "interpretation": "Competition threat reduces carbon even in single-bid contracts"
+    },
+    {
+      "name": "Extensive vs Intensive Margin",
+      "extensive_effect": -5.115061874881003,
+      "intensive_effect": -0.7773514762203939,
+      "interpretation": "1\u21922 bidders is the key mechanism"
+    },
+    {
+      "name": "U-Curve Confirmed",
+      "small_premium": 50.163921185005236,
+      "large_premium": -11.292534180111446,
+      "interpretation": "Competition benefits concentrated in routine procurement"
+    },
+    {
+      "name": "Conservative Lower Bound",
+      "within_sector_effect": -7.710371709324093e-06,
+      "within_sector_pct": -0.0026259442436992616,
+      "interpretation": "Within-sector effect \u2248 0, so 14.8% is lower bound"
+    },
+    {
+      "name": "Extreme Value Validation",
+      "cleanest_decile_sb": 6.2039032605838065,
+      "dirtiest_decile_sb": 13.501768325178043,
+      "ratio": 2.1763344394747195,
+      "interpretation": "Model-free validation: dirtiest contracts 2x more likely single-bidder"
+    },
+    {
+      "name": "Buyer Diversity Effect",
+      "diversity_carbon_corr": -0.34736745206085645,
+      "high_div_carbon": 0.23733112639058712,
+      "low_div_carbon": 0.365875478177618,
+      "interpretation": "Diverse buyers achieve lower carbon"
+    },
+    {
+      "name": "Procedure Type Effects",
+      "n_procedures": 4,
+      "interpretation": "Premium varies by procedure type"
+    }
+  ]
+}
