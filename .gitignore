@@ -9,6 +9,7 @@ __pycache__/
 # IDE and tool configs
 .idea/
 .vscode/
+.remember
 
 # Large data files (download from Zenodo)
 Data/processed/*.parquet
@@ -27,9 +28,15 @@ Data/**/*.pdf
 *.fdb_latexmk
 *.fls
 *.synctex.gz
+*.log
+*.out
+*.toc
 texput.log
-NC_Submission/**/*.log
-NC_Submission/**/*.out
+
+# Scientific Data submission: deposited files live on Zenodo (10.5281/zenodo.20813466)
+Scientific_Data_Descriptor/deposit/
+Scientific_Data_Descriptor/si_data.json
+.env
 
 # Archives
 archive/
@@ -43,3 +50,12 @@ _zenodo_upload/
 _zenodo_upload/
 zenodo_metadata.json
 .zenodo.json
+# eForms streaming cache
+_eforms_cache/
+
+# Zenodo deposit staging (large; published at 10.5281/zenodo.20823936)
+/deposit/
+results/descriptor/*.parquet
+
+archive/
+Scientific_Data_Descriptor
