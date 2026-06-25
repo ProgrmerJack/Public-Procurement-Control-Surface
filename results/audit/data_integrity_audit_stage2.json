@@ -1,0 +1,124 @@
+{
+  "total_rows": 21612129,
+  "date_null_by_year": {
+    "2012": {
+      "rows": 712962,
+      "date_null": 354958,
+      "date_null_frac": 0.49786384127064276
+    },
+    "2013": {
+      "rows": 894355,
+      "date_null": 363702,
+      "date_null_frac": 0.406664020439311
+    },
+    "2014": {
+      "rows": 1030494,
+      "date_null": 357805,
+      "date_null_frac": 0.3472169658435663
+    },
+    "2015": {
+      "rows": 1103517,
+      "date_null": 368390,
+      "date_null_frac": 0.3338326459855172
+    },
+    "2016": {
+      "rows": 1291468,
+      "date_null": 478830,
+      "date_null_frac": 0.3707641226882896
+    },
+    "2017": {
+      "rows": 1683865,
+      "date_null": 741616,
+      "date_null_frac": 0.44042485591184566
+    },
+    "2018": {
+      "rows": 6759894,
+      "date_null": 5767445,
+      "date_null_frac": 0.8531857156340026
+    },
+    "2019": {
+      "rows": 1956572,
+      "date_null": 953030,
+      "date_null_frac": 0.4870917093774213
+    },
+    "2020": {
+      "rows": 1932478,
+      "date_null": 965329,
+      "date_null_frac": 0.499529102013063
+    },
+    "2021": {
+      "rows": 1942064,
+      "date_null": 1016855,
+      "date_null_frac": 0.5235949999588068
+    },
+    "2022": {
+      "rows": 1268835,
+      "date_null": 1009952,
+      "date_null_frac": 0.7959679548562264
+    },
+    "2023": {
+      "rows": 1035625,
+      "date_null": 980162,
+      "date_null_frac": 0.9464449004224502
+    }
+  },
+  "2018_datenull_x_dupocid": {
+    "date_null=False": {
+      "dup_ocid=False": 992449,
+      "dup_ocid=True": 0
+    },
+    "date_null=True": {
+      "dup_ocid=False": 2849354,
+      "dup_ocid=True": 2918091
+    }
+  },
+  "2018_dated_rows": 992449,
+  "2018_dated_rows_eu_context": 25855,
+  "distinct_ocid_by_year": {
+    "2012": 515153,
+    "2013": 687204,
+    "2014": 831935,
+    "2015": 897392,
+    "2016": 1062532,
+    "2017": 1358959,
+    "2018": 4209206,
+    "2019": 1529982,
+    "2020": 1520016,
+    "2021": 1496624,
+    "2022": 839578,
+    "2023": 578464
+  },
+  "supplier_id_unusable": {
+    "n_unusable": 11841281,
+    "frac_unusable": 0.5478997927506355,
+    "n_pandas_na_only": 0,
+    "n_string_nan": 7307469
+  },
+  "concentration_valid_only": {
+    "n_valid_contracts": 9770848,
+    "n_distinct_suppliers": 2119888,
+    "n_suppliers_500plus": 512,
+    "contracts_to_500plus": 586035,
+    "frac_of_VALID_to_500plus": 0.05997790570480679,
+    "frac_of_FULL_to_500plus": 0.027116023599525987,
+    "top10_valid_suppliers": {
+      "860002400": 11654,
+      "860524654": 8935,
+      "234449420": 8461,
+      "5300231000": 7661,
+      "5000823000": 7490,
+      "5288991000": 6673,
+      "5601967000": 5040,
+      "5879612000": 4965,
+      "1121499000": 4597,
+      "890985122": 4553
+    }
+  },
+  "repeat_pairs_valid_only": {
+    "n_pairs": 3438657,
+    "n_pairs_11plus": 103931,
+    "contracts_in_11plus_pairs": 2388613,
+    "frac_of_VALID_in_11plus_pairs": 0.24446322366287962,
+    "frac_of_FULL_in_11plus_pairs": 0.11052187408283562
+  }
+}

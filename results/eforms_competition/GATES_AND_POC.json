@@ -1,0 +1,42 @@
+{
+  "project": "eForms full-bid-set: does competition select greener winners (NC-grade test)",
+  "G1_bidder_disclosure": {
+    "source": "eForms TED monthly 2025-6",
+    "award_notices": 32646,
+    "single_award_parsed": 15321,
+    "winner_named_pct": 95.7,
+    "with_ge2_named_bidders_pct": 7.9,
+    "with_ge2_named_bidders_n": 1218,
+    "verdict": "eForms DOES name losing bidders (refutes earlier winners-only claim) but disclosure partial (~8%)"
+  },
+  "G2_greenness_match": {
+    "registry_names": 35596,
+    "signals": "SBTi+EUTL+E-PRTR",
+    "eligible_notices": 1218,
+    "distinct_bidders": 5898,
+    "matched_bidders": 180,
+    "match_rate_pct": 3.1,
+    "signal_hits": {
+      "SBTi": 132,
+      "EUTL": 57,
+      "EPRTR": 1
+    },
+    "notices_ge2_matched": 37,
+    "projected_32mo": 1184,
+    "top_cpv": {
+      "09_energy": 8,
+      "90_waste": 4,
+      "71_engineering": 4
+    },
+    "verdict": "PASS - workable sample, concentrated in carbon sectors"
+  },
+  "proof_of_concept_1mo": {
+    "identified_tenders": 131,
+    "green_share_bidders": 0.031,
+    "green_share_winners": 0.038,
+    "clogit_green_OR": 0.81,
+    "clogit_green_p": 0.31,
+    "verdict": "within-tender greener bidder NOT more likely to win (noisy null, slightly negative); underpowered; scaling to 2024-2025 for power"
+  },
+  "status": "pipeline built+runs end-to-end; scaling extraction across eForms era (24 months) in background for powered result"
+}

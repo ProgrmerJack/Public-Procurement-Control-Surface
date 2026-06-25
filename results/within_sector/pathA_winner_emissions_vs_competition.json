@@ -1,0 +1,30 @@
+{
+  "n_contracts": 72546,
+  "n_winner_firms": 1432,
+  "n_sectors": 31,
+  "pre_registered_direction": "negative (more bidders -> lower-emitting winner)",
+  "winner_logemis_on_log_bidders": {
+    "beta": -0.10815199136618679,
+    "se": 0.08713435335639794,
+    "t": -1.2412095482458252,
+    "p": 0.21452834846293123,
+    "n": 72546,
+    "n_clusters": 1432,
+    "controls": "NACE FE + log(n_installations)"
+  },
+  "winner_emis_per_install_on_log_bidders": {
+    "beta": -0.10815199136618302,
+    "se": 0.08713435335639788,
+    "t": -1.2412095482457828,
+    "p": 0.21452834846294688,
+    "n": 72546
+  },
+  "winner_logemis_single_vs_multi": {
+    "beta": 0.11892498862550416,
+    "se": 0.1470692476989902,
+    "t": 0.808632603254424,
+    "p": 0.41872650547290935,
+    "n": 72546,
+    "note": "positive = single-bidder winners are higher-emitting than multi-bidder winners (within sector+size)"
+  }
+}

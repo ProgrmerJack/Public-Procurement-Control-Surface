@@ -1,0 +1,10 @@
+{
+  "year": 2019,
+  "source": "raw TED VAL_TOTAL CURRENCY=EUR (genuine awarded value)",
+  "scope_caveat": "EUR-denominated above-threshold TED award notices only; lower bound",
+  "total_awarded_eur_bn": 331227.41,
+  "dead_zone_awarded_eur_bn": 238932.58,
+  "dead_zone_sb_locked_eur_bn": 259.15,
+  "n_award_notices": 133430,
+  "vs_calibration": "manuscript's calibrated figure is EUR190-250B/yr across all DZ SB (OECD-deflated)"
+}

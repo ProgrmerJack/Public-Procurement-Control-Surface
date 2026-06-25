@@ -1,0 +1,217 @@
+{
+  "n_sectors_bridged": 34,
+  "spearman_exio_vs_eurostat": {
+    "rho": 0.23969718519813255,
+    "p": 0.17213190405451134
+  },
+  "pearson_log": {
+    "r": 0.3612899261085542,
+    "p": 0.035784710175546894
+  },
+  "bridge": [
+    {
+      "cpv": "92",
+      "nace2": "19",
+      "exio_weight": 0.2,
+      "eurostat_measured": 4.425
+    },
+    {
+      "cpv": "23",
+      "nace2": "19",
+      "exio_weight": 0.2,
+      "eurostat_measured": 4.425
+    },
+    {
+      "cpv": "63",
+      "nace2": "51",
+      "exio_weight": 0.45,
+      "eurostat_measured": 4.25
+    },
+    {
+      "cpv": "80",
+      "nace2": "51",
+      "exio_weight": 0.15,
+      "eurostat_measured": 4.25
+    },
+    {
+      "cpv": "43",
+      "nace2": "51",
+      "exio_weight": 0.3,
+      "eurostat_measured": 4.25
+    },
+    {
+      "cpv": "39",
+      "nace2": "51",
+      "exio_weight": 0.3,
+      "eurostat_measured": 4.25
+    },
+    {
+      "cpv": "38",
+      "nace2": "51",
+      "exio_weight": 0.28,
+      "eurostat_measured": 4.25
+    },
+    {
+      "cpv": "60",
+      "nace2": "51",
+      "exio_weight": 0.85,
+      "eurostat_measured": 4.25
+    },
+    {
+      "cpv": "66",
+      "nace2": "51",
+      "exio_weight": 0.08,
+      "eurostat_measured": 4.25
+    },
+    {
+      "cpv": "35",
+      "nace2": "51",
+      "exio_weight": 0.6,
+      "eurostat_measured": 4.25
+    },
+    {
+      "cpv": "55",
+      "nace2": "51",
+      "exio_weight": 0.35,
+      "eurostat_measured": 4.25
+    },
+    {
+      "cpv": "14",
+      "nace2": "23",
+      "exio_weight": 1.2,
+      "eurostat_measured": 3.068
+    },
+    {
+      "cpv": "44",
+      "nace2": "23",
+      "exio_weight": 0.75,
+      "eurostat_measured": 3.068
+    },
+    {
+      "cpv": "45",
+      "nace2": "23",
+      "exio_weight": 0.5,
+      "eurostat_measured": 3.068
+    },
+    {
+      "cpv": "24",
+      "nace2": "20",
+      "exio_weight": 0.9,
+      "eurostat_measured": 1.344
+    },
+    {
+      "cpv": "76",
+      "nace2": "49",
+      "exio_weight": 0.2,
+      "eurostat_measured": 0.772
+    },
+    {
+      "cpv": "30",
+      "nace2": "17",
+      "exio_weight": 0.3,
+      "eurostat_measured": 0.522
+    },
+    {
+      "cpv": "22",
+      "nace2": "17",
+      "exio_weight": 0.55,
+      "eurostat_measured": 0.522
+    },
+    {
+      "cpv": "37",
+      "nace2": "17",
+      "exio_weight": 0.2,
+      "eurostat_measured": 0.522
+    },
+    {
+      "cpv": "51",
+      "nace2": "17",
+      "exio_weight": 0.2,
+      "eurostat_measured": 0.522
+    },
+    {
+      "cpv": "15",
+      "nace2": "10",
+      "exio_weight": 0.65,
+      "eurostat_measured": 0.276
+    },
+    {
+      "cpv": "16",
+      "nace2": "10",
+      "exio_weight": 0.2,
+      "eurostat_measured": 0.276
+    },
+    {
+      "cpv": "19",
+      "nace2": "13",
+      "exio_weight": 0.4,
+      "eurostat_measured": 0.1
+    },
+    {
+      "cpv": "18",
+      "nace2": "13",
+      "exio_weight": 0.45,
+      "eurostat_measured": 0.1
+    },
+    {
+      "cpv": "25",
+      "nace2": "22",
+      "exio_weight": 0.2,
+      "eurostat_measured": 0.079
+    },
+    {
+      "cpv": "33",
+      "nace2": "21",
+      "exio_weight": 0.3,
+      "eurostat_measured": 0.066
+    },
+    {
+      "cpv": "42",
+      "nace2": "28",
+      "exio_weight": 0.35,
+      "eurostat_measured": 0.049
+    },
+    {
+      "cpv": "34",
+      "nace2": "29",
+      "exio_weight": 0.45,
+      "eurostat_measured": 0.046
+    },
+    {
+      "cpv": "70",
+      "nace2": "71",
+      "exio_weight": 0.12,
+      "eurostat_measured": 0.032
+    },
+    {
+      "cpv": "85",
+      "nace2": "86",
+      "exio_weight": 0.25,
+      "eurostat_measured": 0.023
+    },
+    {
+      "cpv": "98",
+      "nace2": "86",
+      "exio_weight": 0.2,
+      "eurostat_measured": 0.023
+    },
+    {
+      "cpv": "75",
+      "nace2": "86",
+      "exio_weight": 0.2,
+      "eurostat_measured": 0.023
+    },
+    {
+      "cpv": "48",
+      "nace2": "63",
+      "exio_weight": 0.1,
+      "eurostat_measured": 0.008
+    },
+    {
+      "cpv": "72",
+      "nace2": "63",
+      "exio_weight": 0.1,
+      "eurostat_measured": 0.008
+    }
+  ]
+}

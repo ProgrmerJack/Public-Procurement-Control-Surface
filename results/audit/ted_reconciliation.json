@@ -1,0 +1,121 @@
+{
+  "reconciliation_table": [
+    {
+      "year": 2012,
+      "harmonized_rows": 693163,
+      "harmonized_distinct_ocid": 341438,
+      "gprd_eu_rows": 354958,
+      "official_ted_can_benchmark": NaN
+    },
+    {
+      "year": 2013,
+      "harmonized_rows": 700929,
+      "harmonized_distinct_ocid": 348529,
+      "gprd_eu_rows": 363702,
+      "official_ted_can_benchmark": NaN
+    },
+    {
+      "year": 2014,
+      "harmonized_rows": 719890,
+      "harmonized_distinct_ocid": 351845,
+      "gprd_eu_rows": 357805,
+      "official_ted_can_benchmark": NaN
+    },
+    {
+      "year": 2015,
+      "harmonized_rows": 750350,
+      "harmonized_distinct_ocid": 369728,
+      "gprd_eu_rows": 368390,
+      "official_ted_can_benchmark": NaN
+    },
+    {
+      "year": 2016,
+      "harmonized_rows": 957665,
+      "harmonized_distinct_ocid": 579000,
+      "gprd_eu_rows": 506762,
+      "official_ted_can_benchmark": 104018.0
+    },
+    {
+      "year": 2017,
+      "harmonized_rows": 1424501,
+      "harmonized_distinct_ocid": 926595,
+      "gprd_eu_rows": 762360,
+      "official_ted_can_benchmark": 202671.0
+    },
+    {
+      "year": 2018,
+      "harmonized_rows": 13914886,
+      "harmonized_distinct_ocid": 9374336,
+      "gprd_eu_rows": 5793300,
+      "official_ted_can_benchmark": 232989.0
+    },
+    {
+      "year": 2019,
+      "harmonized_rows": 2320065,
+      "harmonized_distinct_ocid": 1594001,
+      "gprd_eu_rows": 983068,
+      "official_ted_can_benchmark": 260240.0
+    },
+    {
+      "year": 2020,
+      "harmonized_rows": 2361224,
+      "harmonized_distinct_ocid": 1558498,
+      "gprd_eu_rows": 994896,
+      "official_ted_can_benchmark": 263114.0
+    },
+    {
+      "year": 2021,
+      "harmonized_rows": 2507071,
+      "harmonized_distinct_ocid": 1629895,
+      "gprd_eu_rows": 1060731,
+      "official_ted_can_benchmark": 280761.0
+    },
+    {
+      "year": 2022,
+      "harmonized_rows": 2792234,
+      "harmonized_distinct_ocid": 2020969,
+      "gprd_eu_rows": 1057338,
+      "official_ted_can_benchmark": 295875.0
+    },
+    {
+      "year": 2023,
+      "harmonized_rows": 2116147,
+      "harmonized_distinct_ocid": 1323110,
+      "gprd_eu_rows": 1035623,
+      "official_ted_can_benchmark": 320204.0
+    }
+  ],
+  "surge_2018": {
+    "harmonized_rows_2018": 13914886,
+    "median_adjacent": 1872283.0,
+    "ratio": 7.432042057744476
+  },
+  "headline_full_panel": {
+    "premium_pooled_pct": -4.312203945022639,
+    "t_cluster_pooled": -1.3045271469563369,
+    "premium_countryFE_pct": -4.758976815504066,
+    "t_cluster_countryFE": -3.1224514052476176,
+    "n_contracts": 13638933
+  },
+  "headline_drop_2018": {
+    "premium_pooled_pct": -4.389589024927012,
+    "t_cluster_pooled": -1.2365908075868417,
+    "premium_countryFE_pct": -4.700469656211173,
+    "t_cluster_countryFE": -3.148642909686397,
+    "n_contracts": 7845633
+  },
+  "sb_rate_by_year_full": {
+    "2012": 0.2066,
+    "2013": 0.1977,
+    "2014": 0.2001,
+    "2015": 0.2023,
+    "2016": 0.1512,
+    "2017": 0.1533,
+    "2018": 0.1707,
+    "2019": 0.1608,
+    "2020": 0.1537,
+    "2021": 0.1562,
+    "2022": 0.1684,
+    "2023": 0.1859
+  }
+}

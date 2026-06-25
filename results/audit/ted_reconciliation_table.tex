@@ -1,0 +1,25 @@
+\begin{table}[H]
+\centering
+\caption{Annual-count reconciliation: deposited dataset vs official TED contract-award notices.}
+\label{tab:ted_reconciliation}
+\small
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Year} & \textbf{Dataset EU-context rows} & \textbf{Official TED CAN$^b$} & \textbf{Dataset/Official} \\
+\midrule
+2012 & 354,958 & n/a$^a$ & --- \\
+2013 & 363,702 & n/a$^a$ & --- \\
+2014 & 357,805 & n/a$^a$ & --- \\
+2015 & 368,390 & n/a$^a$ & --- \\
+2016 & 506,762 & 104,018 & 4.9$\times$ \\
+2017 & 762,360 & 202,671 & 3.8$\times$ \\
+2018 & 5,793,300 & 232,989 & 24.9$\times$ \textbf{(artifact)} \\
+2019 & 983,068 & 260,240 & 3.8$\times$ \\
+2020 & 994,896 & 263,114 & 3.8$\times$ \\
+2021 & 1,060,731 & 280,761 & 3.8$\times$ \\
+2022 & 1,057,338 & 295,875 & 3.6$\times$ \\
+2023 & 1,035,623 & 320,204 & 3.2$\times$ \\
+\bottomrule
+\end{tabular}
+\tabnotes{$^a$ The TED v3 search API indexes the eForms era; pre-2016 legacy F03 award notices are not exposed by it. $^b$ Official counts are notice-type \texttt{can-standard}, fetched live from the TED v3 API (\texttt{api.ted.europa.eu/v3/notices/search}, \texttt{totalNoticeCount}), EU-wide. The dataset exceeds official counts in normal years (lot-level rows, below-threshold and national-platform records, GB Contracts Finder), but 2018 is $\sim$25$\times$ the official total ($\sim$233k) --- a corrupted bulk-load vintage. Excluding 2018 moves the pooled EU premium only from $-4.31\%$ to $-4.39\%$.}
+\end{table}

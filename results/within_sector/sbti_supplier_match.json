@@ -1,0 +1,14 @@
+{
+  "n_sbti": 14002,
+  "n_suppliers": 517598,
+  "n_matched_sbti": 1990,
+  "sbti_supplier_mean_sb_rate": 0.15590153423336062,
+  "non_sbti_supplier_mean_sb_rate": 0.22241498327689802,
+  "welch_t": -13.304383518731846,
+  "welch_p": 8.86740103024004e-39,
+  "within_sector_spearman_sbti_vs_sb": {
+    "rho": -0.03803433525222355,
+    "p": 5.792752841141096e-165,
+    "n": 517574
+  }
+}

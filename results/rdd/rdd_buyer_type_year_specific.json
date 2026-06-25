@@ -1,0 +1,95 @@
+{
+  "design": "buyer_type x year_specific cutoff RDD; 2018 dropped",
+  "n_central": 1939156,
+  "n_subcentral": 2338222,
+  "estimates": {
+    "central_at_CENTRAL_cutoff (predicted: jump)": {
+      "label": "central_at_CENTRAL_cutoff (predicted: jump)",
+      "n": 908367,
+      "mse_bandwidth": 0.0557,
+      "primary_pm010": {
+        "tau": 0.28395,
+        "se": 0.144535,
+        "t_stat": 1.9646,
+        "p_value": 0.049467,
+        "n_obs": 59684
+      },
+      "mse_optimal": {
+        "tau": 0.028606,
+        "se": 0.182578,
+        "t_stat": 0.1567,
+        "p_value": 0.8755,
+        "n_obs": 34039
+      },
+      "grid_n": 26,
+      "grid_n_negative": 5,
+      "grid_n_significant": 23
+    },
+    "central_at_SUBCENTRAL_cutoff (placebo: null)": {
+      "label": "central_at_SUBCENTRAL_cutoff (placebo: null)",
+      "n": 908367,
+      "mse_bandwidth": 0.0657,
+      "primary_pm010": {
+        "tau": -0.632912,
+        "se": 0.154345,
+        "t_stat": -4.1006,
+        "p_value": 4.1e-05,
+        "n_obs": 64164
+      },
+      "mse_optimal": {
+        "tau": -1.031175,
+        "se": 0.17491,
+        "t_stat": -5.8954,
+        "p_value": 0.0,
+        "n_obs": 42936
+      },
+      "grid_n": 26,
+      "grid_n_negative": 26,
+      "grid_n_significant": 26
+    },
+    "subcentral_at_SUBCENTRAL_cutoff (predicted: jump)": {
+      "label": "subcentral_at_SUBCENTRAL_cutoff (predicted: jump)",
+      "n": 1192478,
+      "mse_bandwidth": 0.3,
+      "primary_pm010": {
+        "tau": -1.351717,
+        "se": 0.136052,
+        "t_stat": -9.9353,
+        "p_value": 0.0,
+        "n_obs": 102883
+      },
+      "mse_optimal": {
+        "tau": -0.979939,
+        "se": 0.076037,
+        "t_stat": -12.8877,
+        "p_value": 0.0,
+        "n_obs": 285141
+      },
+      "grid_n": 26,
+      "grid_n_negative": 26,
+      "grid_n_significant": 26
+    },
+    "subcentral_at_CENTRAL_cutoff (placebo: null)": {
+      "label": "subcentral_at_CENTRAL_cutoff (placebo: null)",
+      "n": 1192478,
+      "mse_bandwidth": 0.1172,
+      "primary_pm010": {
+        "tau": 0.564428,
+        "se": 0.143508,
+        "t_stat": 3.9331,
+        "p_value": 8.4e-05,
+        "n_obs": 84405
+      },
+      "mse_optimal": {
+        "tau": 0.70607,
+        "se": 0.135696,
+        "t_stat": 5.2033,
+        "p_value": 0.0,
+        "n_obs": 98851
+      },
+      "grid_n": 26,
+      "grid_n_negative": 0,
+      "grid_n_significant": 26
+    }
+  }
+}

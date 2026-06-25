@@ -1,0 +1,44 @@
+{
+  "tercile_cutoffs": [
+    0.2,
+    0.45
+  ],
+  "att_by_tercile": {
+    "low": 4.55199246606094,
+    "mid": -4.49129268018176,
+    "high": -17.18337381587866
+  },
+  "high_minus_low_contrast": {
+    "diff_pp": -21.7353662819396,
+    "boot_ci95": [
+      -29.24940807145114,
+      -0.22379029218711435
+    ],
+    "boot_n": 400
+  },
+  "R_did_canonical": {
+    "low": {
+      "att_pp": 6.75,
+      "ci": [
+        -4.31,
+        17.81
+      ]
+    },
+    "mid": {
+      "att_pp": -14.45,
+      "ci": [
+        -25.16,
+        -3.73
+      ]
+    },
+    "high": {
+      "att_pp": -16.19,
+      "ci": [
+        -22.74,
+        -9.63
+      ]
+    },
+    "verdict": "Significant heterogeneity: high & mid-carbon show significant single-bidding REDUCTION (-16/-14pp), low-carbon null/positive (+6.8). Aggregate null is offsetting terciles. Caveat: high-carbon sectors also most concentrated (Fix5) -> cannot cleanly separate carbon from market structure; descriptive heterogeneity, not clean causal carbon-targeting."
+  },
+  "HONESTDID_DOWNGRADE": "High-carbon -16pp is aggregation-sensitive (dynamic-avg only -1.6pp) and NOT robust to pre-trend violations (HonestDiD unbounded for Mbar>=0.5). Report as suggestive carbon GRADIENT, not a robust high-carbon effect."
+}

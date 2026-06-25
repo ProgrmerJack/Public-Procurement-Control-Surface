@@ -1,0 +1,170 @@
+{
+  "ex_ante_rule": "corr(premium, RuleOfLaw) < 0 (better governance -> more negative premium)",
+  "refuting_configuration": "rho >= 0 OR one-sided p > 0.05",
+  "n_countries": 26,
+  "spearman_rho": 0.32476944251160694,
+  "spearman_p_two_sided": 0.10549243142205258,
+  "spearman_p_one_sided_negative": 0.9472537842889737,
+  "pearson_r": 0.3539972496690773,
+  "pearson_p_one_sided_negative": 0.9619871906360803,
+  "rule_supported": false,
+  "verdict": "REFUTED / NOT SUPPORTED: no significant negative governance gradient",
+  "country_table": [
+    {
+      "country": "GR",
+      "premium_pct": -7.5004387051108425,
+      "n": 562251,
+      "rol": 0.28
+    },
+    {
+      "country": "IT",
+      "premium_pct": -1.1691797263002504,
+      "n": 928848,
+      "rol": 0.3
+    },
+    {
+      "country": "HU",
+      "premium_pct": -8.990318369555803,
+      "n": 181626,
+      "rol": 0.52
+    },
+    {
+      "country": "PL",
+      "premium_pct": -3.6060883612136125,
+      "n": 2880168,
+      "rol": 0.55
+    },
+    {
+      "country": "SK",
+      "premium_pct": -0.7729228106978506,
+      "n": 149240,
+      "rol": 0.55
+    },
+    {
+      "country": "LV",
+      "premium_pct": -21.584987208892237,
+      "n": 279714,
+      "rol": 0.82
+    },
+    {
+      "country": "LT",
+      "premium_pct": -7.317040924822032,
+      "n": 423731,
+      "rol": 0.95
+    },
+    {
+      "country": "CZ",
+      "premium_pct": -8.183282171402228,
+      "n": 723161,
+      "rol": 1.0
+    },
+    {
+      "country": "ES",
+      "premium_pct": -7.522997103791619,
+      "n": 1384496,
+      "rol": 1.0
+    },
+    {
+      "country": "SI",
+      "premium_pct": -0.2906807781748901,
+      "n": 438956,
+      "rol": 1.0
+    },
+    {
+      "country": "PT",
+      "premium_pct": -12.394557934088532,
+      "n": 258477,
+      "rol": 1.12
+    },
+    {
+      "country": "EE",
+      "premium_pct": -12.416687980380974,
+      "n": 114437,
+      "rol": 1.25
+    },
+    {
+      "country": "FR",
+      "premium_pct": -0.6239068910030195,
+      "n": 2392765,
+      "rol": 1.42
+    },
+    {
+      "country": "BE",
+      "premium_pct": -4.2173678047377905,
+      "n": 158956,
+      "rol": 1.42
+    },
+    {
+      "country": "IE",
+      "premium_pct": 12.115497131333527,
+      "n": 96838,
+      "rol": 1.55
+    },
+    {
+      "country": "GB",
+      "premium_pct": -6.985856014469355,
+      "n": 818707,
+      "rol": 1.55
+    },
+    {
+      "country": "DE",
+      "premium_pct": -10.04843105358432,
+      "n": 815506,
+      "rol": 1.62
+    },
+    {
+      "country": "IS",
+      "premium_pct": 27.63689101651905,
+      "n": 4490,
+      "rol": 1.7
+    },
+    {
+      "country": "AT",
+      "premium_pct": -13.870298569935875,
+      "n": 91305,
+      "rol": 1.8
+    },
+    {
+      "country": "NL",
+      "premium_pct": -2.272216491746285,
+      "n": 98374,
+      "rol": 1.85
+    },
+    {
+      "country": "LU",
+      "premium_pct": 16.87750130545898,
+      "n": 23553,
+      "rol": 1.85
+    },
+    {
+      "country": "SE",
+      "premium_pct": 6.67136413855616,
+      "n": 253196,
+      "rol": 1.95
+    },
+    {
+      "country": "CH",
+      "premium_pct": 0.5430407566724791,
+      "n": 51854,
+      "rol": 1.95
+    },
+    {
+      "country": "DK",
+      "premium_pct": -11.22530079479871,
+      "n": 180436,
+      "rol": 1.95
+    },
+    {
+      "country": "NO",
+      "premium_pct": 10.467736720595944,
+      "n": 125138,
+      "rol": 2.0
+    },
+    {
+      "country": "FI",
+      "premium_pct": -2.462277246578678,
+      "n": 202710,
+      "rol": 2.05
+    }
+  ]
+}

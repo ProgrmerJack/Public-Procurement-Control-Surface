@@ -1,0 +1,218 @@
+{
+  "n_sectors": 34,
+  "concordance": "hand CPV->NACE division by product/service meaning",
+  "spearman": {
+    "rho": 0.8202326766473429,
+    "p": 2.9068396026689145e-09
+  },
+  "pearson_loglog": {
+    "r": 0.7664568304239668,
+    "p": 1.991756035573192e-07
+  },
+  "table": [
+    {
+      "cpv": "09",
+      "nace": "19",
+      "paper_weight": 1.2,
+      "eurostat_measured": 4.425
+    },
+    {
+      "cpv": "03",
+      "nace": "01",
+      "paper_weight": 0.85,
+      "eurostat_measured": 2.909
+    },
+    {
+      "cpv": "77",
+      "nace": "01",
+      "paper_weight": 0.85,
+      "eurostat_measured": 2.909
+    },
+    {
+      "cpv": "90",
+      "nace": "38",
+      "paper_weight": 0.25,
+      "eurostat_measured": 2.487
+    },
+    {
+      "cpv": "24",
+      "nace": "20",
+      "paper_weight": 0.9,
+      "eurostat_measured": 1.344
+    },
+    {
+      "cpv": "60",
+      "nace": "49",
+      "paper_weight": 0.85,
+      "eurostat_measured": 0.772
+    },
+    {
+      "cpv": "15",
+      "nace": "10",
+      "paper_weight": 0.65,
+      "eurostat_measured": 0.276
+    },
+    {
+      "cpv": "19",
+      "nace": "15",
+      "paper_weight": 0.4,
+      "eurostat_measured": 0.1
+    },
+    {
+      "cpv": "18",
+      "nace": "14",
+      "paper_weight": 0.45,
+      "eurostat_measured": 0.1
+    },
+    {
+      "cpv": "64",
+      "nace": "53",
+      "paper_weight": 0.2,
+      "eurostat_measured": 0.086
+    },
+    {
+      "cpv": "22",
+      "nace": "18",
+      "paper_weight": 0.55,
+      "eurostat_measured": 0.074
+    },
+    {
+      "cpv": "63",
+      "nace": "52",
+      "paper_weight": 0.45,
+      "eurostat_measured": 0.065
+    },
+    {
+      "cpv": "44",
+      "nace": "25",
+      "paper_weight": 0.75,
+      "eurostat_measured": 0.057
+    },
+    {
+      "cpv": "35",
+      "nace": "25",
+      "paper_weight": 0.6,
+      "eurostat_measured": 0.057
+    },
+    {
+      "cpv": "50",
+      "nace": "33",
+      "paper_weight": 0.2,
+      "eurostat_measured": 0.055
+    },
+    {
+      "cpv": "42",
+      "nace": "28",
+      "paper_weight": 0.35,
+      "eurostat_measured": 0.049
+    },
+    {
+      "cpv": "43",
+      "nace": "28",
+      "paper_weight": 0.3,
+      "eurostat_measured": 0.049
+    },
+    {
+      "cpv": "98",
+      "nace": "96",
+      "paper_weight": 0.2,
+      "eurostat_measured": 0.046
+    },
+    {
+      "cpv": "34",
+      "nace": "29",
+      "paper_weight": 0.45,
+      "eurostat_measured": 0.046
+    },
+    {
+      "cpv": "31",
+      "nace": "27",
+      "paper_weight": 0.4,
+      "eurostat_measured": 0.042
+    },
+    {
+      "cpv": "39",
+      "nace": "31",
+      "paper_weight": 0.3,
+      "eurostat_measured": 0.042
+    },
+    {
+      "cpv": "71",
+      "nace": "71",
+      "paper_weight": 0.12,
+      "eurostat_measured": 0.032
+    },
+    {
+      "cpv": "33",
+      "nace": "26",
+      "paper_weight": 0.3,
+      "eurostat_measured": 0.027
+    },
+    {
+      "cpv": "38",
+      "nace": "26",
+      "paper_weight": 0.28,
+      "eurostat_measured": 0.027
+    },
+    {
+      "cpv": "30",
+      "nace": "26",
+      "paper_weight": 0.3,
+      "eurostat_measured": 0.027
+    },
+    {
+      "cpv": "32",
+      "nace": "26",
+      "paper_weight": 0.15,
+      "eurostat_measured": 0.027
+    },
+    {
+      "cpv": "92",
+      "nace": "90",
+      "paper_weight": 0.2,
+      "eurostat_measured": 0.024
+    },
+    {
+      "cpv": "85",
+      "nace": "86",
+      "paper_weight": 0.25,
+      "eurostat_measured": 0.023
+    },
+    {
+      "cpv": "79",
+      "nace": "70",
+      "paper_weight": 0.15,
+      "eurostat_measured": 0.017
+    },
+    {
+      "cpv": "73",
+      "nace": "72",
+      "paper_weight": 0.12,
+      "eurostat_measured": 0.013
+    },
+    {
+      "cpv": "48",
+      "nace": "62",
+      "paper_weight": 0.1,
+      "eurostat_measured": 0.008
+    },
+    {
+      "cpv": "72",
+      "nace": "62",
+      "paper_weight": 0.1,
+      "eurostat_measured": 0.008
+    },
+    {
+      "cpv": "66",
+      "nace": "64",
+      "paper_weight": 0.08,
+      "eurostat_measured": 0.007
+    },
+    {
+      "cpv": "70",
+      "nace": "68",
+      "paper_weight": 0.12,
+      "eurostat_measured": 0.0
+    }
+  ]
+}

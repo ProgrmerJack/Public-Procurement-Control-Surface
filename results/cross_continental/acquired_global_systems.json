@@ -1,0 +1,20 @@
+{
+  "UA": {
+    "country": "Ukraine",
+    "iso": "UA",
+    "n_records": 60001,
+    "seconds": 1306.6,
+    "competition_definition": "procurement-method proxy (reporting/negotiation = non-competitive)",
+    "overall_noncompetitive_rate": 0.7375,
+    "carbon_weighted_noncompetitive_exposure": 0.5999,
+    "n_cpv_divisions": 46,
+    "scaled": true
+  },
+  "PY": {
+    "country": "Paraguay",
+    "iso": "PY",
+    "n": 0,
+    "note": "no records",
+    "seconds": 3.0
+  }
+}

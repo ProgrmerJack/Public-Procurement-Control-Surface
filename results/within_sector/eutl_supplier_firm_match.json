@@ -1,0 +1,276 @@
+{
+  "n_eutl_firms": 9131,
+  "n_proc_suppliers": 1723685,
+  "n_matched_firms": 1105,
+  "matched_contracts": 88525,
+  "match_examples": [
+    {
+      "example_proc": "PGE G\u00f3rnictwo i Energetyka Konwencjonalna S.A.",
+      "example_eutl": "PGE G\u00f3rnictwo i Energetyka Konwencjonalna S.A.",
+      "emis_t": 60379565.8,
+      "sb_rate": 0.542,
+      "n_contracts": 24,
+      "cpv": "65",
+      "nace": "35"
+    },
+    {
+      "example_proc": "\u010cEZ; a.s.",
+      "example_eutl": "\u010cEZ, a. s.",
+      "emis_t": 15155851.487,
+      "sb_rate": 0.895,
+      "n_contracts": 19,
+      "cpv": "41",
+      "nace": "35"
+    },
+    {
+      "example_proc": "ENEA Wytwarzanie Sp. z o.o.",
+      "example_eutl": "ENEA WYTWARZANIE SP. Z O.O.",
+      "emis_t": 14256270.1,
+      "sb_rate": 0.357,
+      "n_contracts": 14,
+      "cpv": "65",
+      "nace": "35"
+    },
+    {
+      "example_proc": "TAURON Wytwarzanie S.A.",
+      "example_eutl": "TAURON WYTWARZANIE S.A.",
+      "emis_t": 13996187.9,
+      "sb_rate": 0.625,
+      "n_contracts": 16,
+      "cpv": "65",
+      "nace": "35"
+    },
+    {
+      "example_proc": "voestalpine Stahl GmbH",
+      "example_eutl": "voestalpine Stahl GmbH",
+      "emis_t": 13771099.9,
+      "sb_rate": 1.0,
+      "n_contracts": 3,
+      "cpv": "24",
+      "nace": "24"
+    },
+    {
+      "example_proc": "Drax Power Limited",
+      "example_eutl": "Drax Power Limited",
+      "emis_t": 10171750.0,
+      "sb_rate": 0.0,
+      "n_contracts": 7,
+      "cpv": "65",
+      "nace": "35"
+    },
+    {
+      "example_proc": "RWE Generation SE",
+      "example_eutl": "RWE Generation SE",
+      "emis_t": 9929472.689,
+      "sb_rate": 0.234,
+      "n_contracts": 47,
+      "cpv": "90",
+      "nace": "35"
+    },
+    {
+      "example_proc": "ORLEN S.A.",
+      "example_eutl": "ORLEN S.A.",
+      "emis_t": 8432112.439,
+      "sb_rate": 1.0,
+      "n_contracts": 18,
+      "cpv": "91",
+      "nace": "19"
+    },
+    {
+      "example_proc": "EnBW Energie Baden-W\u00fcrttemberg AG",
+      "example_eutl": "EnBW Energie Baden-W\u00fcrttemberg AG",
+      "emis_t": 8142346.525,
+      "sb_rate": 0.364,
+      "n_contracts": 11,
+      "cpv": "93",
+      "nace": "35"
+    },
+    {
+      "example_proc": "Electrabel SA",
+      "example_eutl": "Electrabel",
+      "emis_t": 7866286.306,
+      "sb_rate": 0.196,
+      "n_contracts": 409,
+      "cpv": "93",
+      "nace": "35"
+    },
+    {
+      "example_proc": "BASF SE",
+      "example_eutl": "BASF SE",
+      "emis_t": 7651164.49,
+      "sb_rate": 0.301,
+      "n_contracts": 73,
+      "cpv": "24",
+      "nace": "20"
+    },
+    {
+      "example_proc": "TATA STEEL UK Ltd",
+      "example_eutl": "Tata Steel UK Limited",
+      "emis_t": 7131913.208,
+      "sb_rate": 0.625,
+      "n_contracts": 8,
+      "cpv": "34",
+      "nace": "24"
+    },
+    {
+      "example_proc": "Ryanair - Designated Activity Company",
+      "example_eutl": "Ryanair Designated Activity Company",
+      "emis_t": 6838964.636,
+      "sb_rate": 0.667,
+      "n_contracts": 6,
+      "cpv": "79",
+      "nace": "51"
+    },
+    {
+      "example_proc": "ArcelorMittal Poland S.A.",
+      "example_eutl": "ArcelorMittal Poland S.A.",
+      "emis_t": 6791563.211,
+      "sb_rate": 0.017,
+      "n_contracts": 119,
+      "cpv": "44",
+      "nace": "24"
+    },
+    {
+      "example_proc": "PGE Energia Ciep\u0142a S.A.",
+      "example_eutl": "PGE Energia Ciep\u0142a S.A.",
+      "emis_t": 6594059.4,
+      "sb_rate": 0.65,
+      "n_contracts": 40,
+      "cpv": "65",
+      "nace": "35"
+    },
+    {
+      "example_proc": "Enea Elektrownia Po\u0142aniec S.A.",
+      "example_eutl": "Enea Elektrownia Po\u0142aniec S.A.",
+      "emis_t": 6473055.5,
+      "sb_rate": 0.0,
+      "n_contracts": 5,
+      "cpv": "65",
+      "nace": "35"
+    },
+    {
+      "example_proc": "E.ON UK Plc",
+      "example_eutl": "E.ON UK Plc",
+      "emis_t": 6463248.5,
+      "sb_rate": 0.0,
+      "n_contracts": 53,
+      "cpv": "93",
+      "nace": "35"
+    },
+    {
+      "example_proc": "PGNiG Termika S.A.",
+      "example_eutl": "PGNiG TERMIKA S.A.",
+      "emis_t": 5560107.4,
+      "sb_rate": 0.372,
+      "n_contracts": 43,
+      "cpv": "93",
+      "nace": "35"
+    },
+    {
+      "example_proc": "Eni S.p.A.",
+      "example_eutl": "ENI S.P.A.",
+      "emis_t": 5485660.706,
+      "sb_rate": 0.276,
+      "n_contracts": 29,
+      "cpv": "91",
+      "nace": "6."
+    },
+    {
+      "example_proc": "Edison",
+      "example_eutl": "EDISON SPA",
+      "emis_t": 5433412.893,
+      "sb_rate": 0.073,
+      "n_contracts": 55,
+      "cpv": "45",
+      "nace": "35"
+    },
+    {
+      "example_proc": "ENGIE Energie Nederland N.V.",
+      "example_eutl": "ENGIE Energie Nederland N.V.",
+      "emis_t": 5333419.0,
+      "sb_rate": 0.429,
+      "n_contracts": 28,
+      "cpv": "93",
+      "nace": "35"
+    },
+    {
+      "example_proc": "Arcelormittal Espa\u00f1a; S.A",
+      "example_eutl": "ARCELORMITTAL ESPA\u00d1A, S.A.",
+      "emis_t": 5257914.189,
+      "sb_rate": 0.739,
+      "n_contracts": 153,
+      "cpv": "34",
+      "nace": "24"
+    },
+    {
+      "example_proc": "British Steel Limited",
+      "example_eutl": "British Steel Limited",
+      "emis_t": 5220331.181,
+      "sb_rate": 0.0,
+      "n_contracts": 8,
+      "cpv": "34",
+      "nace": "24"
+    },
+    {
+      "example_proc": "TAMEH Polska Sp. z o.o.",
+      "example_eutl": "TAMEH Polska Sp. z o. o.",
+      "emis_t": 4861361.0,
+      "sb_rate": 0.25,
+      "n_contracts": 4,
+      "cpv": "50",
+      "nace": "35"
+    },
+    {
+      "example_proc": "Heidelberg Materials",
+      "example_eutl": "Heidelberg Materials AG",
+      "emis_t": 4711218.6,
+      "sb_rate": 0.0,
+      "n_contracts": 4,
+      "cpv": "45",
+      "nace": "23"
+    }
+  ],
+  "spearman_sbrate_vs_logemis": {
+    "rho": 0.1371285039923988,
+    "p": 4.766049744836739e-06
+  },
+  "emis_by_sb_propensity": {
+    "high_sb_median_emis_t": 25098.5,
+    "low_sb_median_emis_t": 14704.783333333333,
+    "logemis_ttest_t": 4.457601370363164,
+    "p": 9.135545056466761e-06
+  },
+  "within_nace_spearman_sb_vs_emis": {
+    "rho": 0.09893844010119283,
+    "p": 0.0014454313908673151,
+    "n_firms": 1034,
+    "n_sectors": 27
+  },
+  "within_nace_partial_corr_size_controlled": {
+    "partial_rho": 0.14563613023873478,
+    "p": 2.599005906254982e-06,
+    "control": "log(n_installations)",
+    "n_firms": 1034
+  },
+  "within_nace_sb_vs_emis_per_installation": {
+    "rho": 0.1432069006993842,
+    "p": 3.778262115328707e-06
+  },
+  "within_nace_by_size_tercile": {
+    "small": {
+      "rho": 0.12666851670957963,
+      "p": 0.018586972029429338,
+      "n": 345
+    },
+    "mid": {
+      "rho": 0.168872087942806,
+      "p": 0.0016704583105565055,
+      "n": 344
+    },
+    "large": {
+      "rho": 0.15504522168863386,
+      "p": 0.003891044079245612,
+      "n": 345
+    }
+  }
+}

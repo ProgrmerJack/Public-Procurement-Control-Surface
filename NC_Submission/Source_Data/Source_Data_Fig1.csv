@@ -1,8 +1,0 @@
-panel,category_type,category,single_bidder_carbon_premium_pct,ci_lower_pct,ci_upper_pct,n_contracts,note
-A,wgi_quartile,Q1 (Lowest WGI),32.1,28.3,35.9,,Countries with lowest governance quality
-A,wgi_quartile,Q2,18.6,15.4,21.8,,
-A,wgi_quartile,Q3,6.2,3.8,8.6,,
-A,wgi_quartile,Q4 (EU-context),-4.3,-5.8,-2.8,,EU-context: governance pushed competition into high-carbon sectors
-B,contract_scale,Small contracts,50.2,,,7797744,Single-bidder rate: 8.0%
-B,contract_scale,Medium contracts,12.5,,,5620141,Single-bidder rate: 19.0%
-B,contract_scale,Large contracts,-7.1,,,8194244,Single-bidder rate: 27.0%

@@ -1,6 +1,6 @@
 cpv_division,cpv_description,exiobase_sector
 03,Agricultural products,Agriculture
-09,Petroleum and fuel products,Mining
+09,Petroleum and fuel products,Coke and refined petroleum products
 14,Mining and quarrying products,Mining
 15,Food and beverages,Food products
 18,Clothing and accessories,Textiles
@@ -36,6 +36,6 @@ cpv_division,cpv_description,exiobase_sector
 79,Business services,Other business services
 80,Education and training services,Education
 85,Health and social work services,Health services
-90,Sewage refuse refuse-treatment and similar services,Water supply
+90,Sewage refuse refuse-treatment and similar services,Waste management and sewerage
 92,Recreational cultural and sporting services,Recreation
 98,Other community social and personal services,Other services

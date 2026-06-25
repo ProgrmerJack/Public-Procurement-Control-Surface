@@ -1,0 +1,179 @@
+{
+  "n_countries": 25,
+  "n_obs": 784,
+  "outcomes": {
+    "sb_rate": {
+      "simple_att": 0.09382774144477474,
+      "simple_att_pp": 9.382774144477473,
+      "std": 0.03485318374668706,
+      "ci95_pp": [
+        3.206659787280161,
+        15.558888501674787
+      ],
+      "post_event_att_pp": {
+        "0": 4.426304711600169,
+        "1": 4.5985714540194165,
+        "2": 4.87229641862277,
+        "3": 4.24960624238066,
+        "4": 8.889239989964997,
+        "5": 8.523566402924182,
+        "6": 10.483371940495932,
+        "7": 10.012115044911136,
+        "8": 9.09988173830011,
+        "9": 6.977953700540959,
+        "10": 7.675305048731916,
+        "11": 11.512593045808718,
+        "12": 8.673140827643255,
+        "13": 7.940776364806037,
+        "14": 4.977514637778805,
+        "15": 9.966526912613672,
+        "16": 14.055361637763369,
+        "17": 13.984570536268958,
+        "18": 16.499509388113477,
+        "19": 10.367624316628588,
+        "20": 31.45134057882717,
+        "21": 18.258260799901528,
+        "22": 25.058427465235546,
+        "24": 34.23792080126125
+      },
+      "pre_event_att_pp": {
+        "-12": 3.1074737260784677,
+        "-11": 2.9116108996432075,
+        "-10": -4.8718213311216525,
+        "-9": 2.996558557740708,
+        "-8": -0.8557403756012789,
+        "-7": 0.22753461276192938,
+        "-6": 7.061647927756136,
+        "-5": -9.957116627868356,
+        "-4": 0.6811699404964917,
+        "-3": 2.975871558243652,
+        "-2": 0.06117995596419206,
+        "-1": -3.1806221059050066
+      }
+    },
+    "comp3_rate": {
+      "simple_att": -0.10298259384926806,
+      "simple_att_pp": -10.298259384926805,
+      "std": 0.05502503889937478,
+      "ci95_pp": [
+        -20.142427504948536,
+        -0.4540912649050752
+      ],
+      "post_event_att_pp": {
+        "0": -7.299893705849408,
+        "1": -7.947261083074923,
+        "2": -8.173839161346677,
+        "3": -8.272653127082924,
+        "4": -15.351706576591361,
+        "5": -12.899660586258216,
+        "6": -15.111064409804559,
+        "7": -17.664300020587582,
+        "8": -13.746900068623614,
+        "9": -9.754701776330794,
+        "10": -12.74836976238563,
+        "11": -14.505208371078487,
+        "12": -14.933171992402055,
+        "13": -16.932391051475832,
+        "14": -11.067733174576764,
+        "15": -17.4863387434639,
+        "16": -12.53568505598747,
+        "17": -24.986310366465307,
+        "18": -7.707825413609175,
+        "19": -9.233073486382152,
+        "20": 30.57433753983954,
+        "21": 58.35820474444176,
+        "22": 43.906848910440594,
+        "24": 58.40356347955116
+      },
+      "pre_event_att_pp": {
+        "-12": -0.8685085826845296,
+        "-11": -4.225074952989546,
+        "-10": 6.089653111091437,
+        "-9": -3.7706703853897565,
+        "-8": 1.936780638602699,
+        "-7": -0.5095794419569055,
+        "-6": -8.558924956752104,
+        "-5": 10.241857372207857,
+        "-4": -1.6546756434737253,
+        "-3": -2.4324521440011875,
+        "-2": 2.930832944341346,
+        "-1": 3.95692271599878
+      }
+    }
+  },
+  "VERDICT": {
+    "paper_claim": "-9 to -17 pp REDUCTION in single-bidding (DiD headline)",
+    "canonical_cs_rebuilt": "+9.38 pp INCREASE, 95% CI [+3.21,+15.56], significant",
+    "comp3_offer_share": "-10.30 pp, CI [-20.14,-0.45], significant (competition fell)",
+    "handrolled_crosscheck": "+5.4 pp (same sign)",
+    "conclusion": "The -17pp reduction does NOT replicate on raw-TED-rebuilt panel with canonical C&S. Headline causal claim cannot stand.",
+    "pre_trend_caveat": "monthly pre-trends noisy (+-10pp month-to-month, mean abs 3.2pp, no monotonic trend) -> design is noisy; read the +9.4pp cautiously, but the -17pp reduction is clearly absent.",
+    "other_caveats": [
+      "pre-period from ~2015-03 (schema break lost 2014/early-2015)",
+      "OFFERS field has extreme values; sb(==1) robust",
+      "2 late cohorts truncated"
+    ]
+  },
+  "R_did_gold_standard": {
+    "sb_rate_att_pp": 9.99,
+    "sb_rate_ci": [
+      3.95,
+      16.02
+    ],
+    "comp3_att_pp": -11.62,
+    "comp3_ci": [
+      -20.77,
+      -2.48
+    ],
+    "note": "R did att_gt dr not-yet-treated allow_unbalanced; CONFIRMS Python differences (+9.4) and hand-rolled (+5.4). -17pp refuted by 3 independent estimators incl canonical R package."
+  },
+  "THICKENED_PANEL_2015_2020": {
+    "note": "After fixing the parser (R2.0.9 NB_TENDERS_RECEIVED tag) + nested-archive (2020), post-period coverage 2017-2020 recovered massively. Panel 25 countries, 70 months, median cell n=739.",
+    "raw_coverage_awards_by_year": {
+      "2015": 365334,
+      "2016": 396303,
+      "2017": 514081,
+      "2018": 648455,
+      "2019": 634247,
+      "2020": 1082850
+    },
+    "sb_rate_by_year": {
+      "2015": 0.249,
+      "2016": 0.249,
+      "2017": 0.295,
+      "2018": 0.31,
+      "2019": 0.312,
+      "2020": 0.314
+    },
+    "R_did_sb_rate": {
+      "att_pp": -4.35,
+      "ci": [
+        -14.34,
+        5.64
+      ],
+      "verdict": "noisy null"
+    },
+    "R_did_comp3_pp": {
+      "att_pp": -0.44,
+      "ci": [
+        -12.49,
+        11.61
+      ]
+    },
+    "event_study_pp": {
+      "e0_8": "+3 to +8 (positive)",
+      "e9_12": "-0.3 to -11 (negative)",
+      "aggregate": "~null"
+    },
+    "pretrend_mean_abs_pp": 2.79,
+    "conclusion": "-17pp reduction REFUTED; no effect robustly identified (CI crosses zero). The thin-panel +10pp was an artifact of sparse early-post coverage; with full coverage the estimate is a noisy null."
+  },
+  "fix7_2018_reconciliation": {
+    "official_2018_CAN": 233000,
+    "extract_2018_notices": 1660226,
+    "extract_2018_rows": 6198063,
+    "extract_inflation": "~7x notices / ~27x rows vs official",
+    "dedup_floor": "content-signature dedup only reaches 4.9M of 6.2M -> NOT dedupable; corruption is ~7x distinct spurious notices",
+    "repair": "replace extract 2018 with authoritative raw-source 2018 (clean: SB 0.310 in trend)"
+  }
+}

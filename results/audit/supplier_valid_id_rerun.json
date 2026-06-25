@@ -1,0 +1,22 @@
+{
+  "valid_id_contracts": 2585579,
+  "valid_id_frac": 0.18957340724527352,
+  "relationship_lockin": {
+    "first_time_mean": 0.2913312832937303,
+    "deep_11plus_mean": 0.39183693106124895,
+    "premium_pct": 34.498748857734356,
+    "n_first": 257556,
+    "n_deep": 1021617,
+    "t": 209.3269153864623,
+    "p": 0.0,
+    "published_value_pct": 54.5
+  },
+  "within_supplier": {
+    "n_suppliers_both_regimes": 39375,
+    "mean_sb_minus_mb": -0.0031341459803363165,
+    "premium_pct": -0.8528743729385535,
+    "t": -5.935389318676699,
+    "p": 2.955974146181857e-09,
+    "published_value_pct": -0.87
+  }
+}

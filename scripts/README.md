@@ -23,7 +23,7 @@ All ~130 analysis and processing scripts, organized in 20 subfolders. Each subfo
 | [`diagnostics/`](diagnostics/) | 10 | Data quality checks, validation, parquet inspection |
 | [`zenodo/`](zenodo/) | 1 | Zenodo archive upload |
 | [`exploratory/`](exploratory/) | 8 | Development/exploration scripts (not cited in manuscript) |
-| [`verification/`](verification/) | 6 | Legacy verification scripts (use `verify_all_claims.py` instead) |
+| [`verification/`](verification/) | 6 | Legacy verification scripts (descriptor uses `../scripts/descriptor/verify_claims.py`) |
 | [`reanalysis/`](reanalysis/) | 12 | Sequential numbered robustness checks (`01_simple_sanity_check.py` – `12_final_validation_report.py`) |
 | [`lib/`](lib/) | 4 | Reusable library modules (`causal_analysis`, `data_acquisition`, `mechanism_index`); imported by tests as `scripts.lib.*` |
 
@@ -37,25 +37,31 @@ python scripts/causal_id/staggered_did.py
 python scripts/projections/forward_projection_model.py
 ```
 
-## Quick Reference: Key Scripts by Manuscript Section
+## Current output: the *Scientific Data* Data Descriptor
 
-| Manuscript Section | Key Scripts | Result Files |
-|-------------------|-------------|-------------|
-| Simpson's Paradox | `core_stats/analyze_all_procurement_data.py` | `results/core_stats/` |
-| Causal DiD | `causal_id/staggered_did.py`, `causal_id/callaway_santanna.py` | `results/causal_id/` |
-| RDD | `rdd/eprtr_rdd_analysis.py` | `results/rdd/` |
-| Within-Sector | `within_sector/eprtr_within_sector.py`, `within_sector/within_supplier_analysis.py` | `results/within_sector/` |
-| Dead Zones | `dead_zones/eu_dead_zones_recompute.py` | `results/dead_zones/` |
-| Cross-Continental | `cross_continental/us_procurement_analysis.py` | `results/cross_continental/` |
-| Forward Projections | `projections/forward_projection_model.py`, `projections/monte_carlo_uncertainty.py` | `results/projections/` |
+The repository's current output is the Data Descriptor in
+[`../Scientific_Data_Descriptor/`](../Scientific_Data_Descriptor/). Scripts it relies on:
 
-## Unified Verification
+| Step | Script |
+|---|---|
+| Raw-TED parsing + schema handling | `pipeline/parse_eu_ted.py`, `pipeline/ted_bulk_stream_extract.py` |
+| Carbon linkage (CPV→EXIOBASE weights) | `pipeline/link_carbon_intensity.py` |
+| eForms full-bid-set extraction | `eforms_competition/extract_eforms_bids.py` |
+| eForms within-tender result + battery | `eforms_competition/within_tender_green_wins.py`, `robustness_battery.py` |
+| Carbon validation vs Eurostat | `within_sector/exiobase_eurostat_validation_v2.py` |
+| 2018 reconciliation | `reanalysis/ted_reconciliation.py` |
+| Descriptor panel + figures + verification | `scripts/descriptor/*.py` |
+| Zenodo deposit | `zenodo/zenodo_stage_deposit.py` |
 
-To verify all claims from the manuscript:
+## Earlier causal analysis (superseded)
 
-```bash
-python verify_all_claims.py
-# Expected: 36/36 PASS (100%)
-```
+The `causal_id/`, `rdd/`, `dead_zones/`, `projections/`, `mechanism/`, and parts of `cross_continental/`
+folders implement the earlier (withdrawn) competition–carbon causal study; the manuscript is in
+[`../archive/old_manuscript_NC/`](../archive/old_manuscript_NC/). They are retained for provenance.
 
-See [`CLAIMS_INDEX.md`](../CLAIMS_INDEX.md) for complete mapping of every claim to its source script and result file.
+## Verification
+
+Claims in the descriptor are verified against the deposited data by
+[`../scripts/descriptor/verify_claims.py`](../scripts/descriptor/verify_claims.py)
+and traced in
+[`../Scientific_Data_Descriptor/CLAIMS_INDEX.md`](../Scientific_Data_Descriptor/CLAIMS_INDEX.md).

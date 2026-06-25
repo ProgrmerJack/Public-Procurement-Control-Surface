@@ -1,0 +1,28 @@
+{
+  "n_contracts": 7558840,
+  "n_firms": 267101,
+  "firm_FE": {
+    "beta_carbon_per_single_bidder": -0.004206431651109599,
+    "se": 0.0003033926403353051,
+    "t": -13.864646309352501,
+    "ci95": [
+      -0.004801081226166797,
+      -0.0036117820760524005
+    ]
+  },
+  "firm_and_countryyear_FE": {
+    "beta_carbon_per_single_bidder": -0.0029092109172778238,
+    "se": 0.0002409588412395842,
+    "t": -12.073476541934436,
+    "ci95": [
+      -0.0033814902461074088,
+      -0.0024369315884482387
+    ]
+  },
+  "within_firm_descriptive": {
+    "n_firms_both": 267101,
+    "mean_carbon_SB_wins": 0.3562215012734902,
+    "mean_carbon_competitive_wins": 0.35990577823969705,
+    "share_firms_SB_dirtier": 0.18141826500087982
+  }
+}

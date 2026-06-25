@@ -1,0 +1,29 @@
+{
+  "n_country_sector_cells": 146,
+  "n_countries": 24,
+  "n_sectors": 7,
+  "hypothesis": "more single-bidding -> slower decarbonization (less negative slope -> positive coef)",
+  "bivariate": {
+    "sb_coef": 0.022607043844684323,
+    "se": 0.020206911567765978,
+    "p": 0.2632349495390196,
+    "r2": 0.00415198798649874
+  },
+  "sector_FE": {
+    "sb_coef": 0.03501853735965219,
+    "se": 0.02357107101006053,
+    "p": 0.13736974954741848,
+    "r2": 0.14702915046436438
+  },
+  "sector_country_FE": {
+    "sb_coef": 0.05264075312075894,
+    "se": 0.04744317614641207,
+    "p": 0.2671913785589911,
+    "r2": 0.285065292916972
+  },
+  "spearman_sb_vs_slope": {
+    "rho": 0.03590178631679409,
+    "p": 0.6670407797874351
+  },
+  "mean_decarb_slope": -0.036066335071593535
+}

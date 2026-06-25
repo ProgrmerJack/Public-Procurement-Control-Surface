@@ -1,0 +1,371 @@
+{
+ "per_country": [
+  {
+   "country": "CO",
+   "source": "SECOP",
+   "n": 7973196,
+   "n_obs": 128059,
+   "sb": 0.447,
+   "comp3": 0.394
+  },
+  {
+   "country": "PL",
+   "source": "TED",
+   "n": 2880168,
+   "n_obs": 1868631,
+   "sb": 0.52,
+   "comp3": 0.282
+  },
+  {
+   "country": "FR",
+   "source": "TED",
+   "n": 2392765,
+   "n_obs": 1376265,
+   "sb": 0.187,
+   "comp3": 0.614
+  },
+  {
+   "country": "ES",
+   "source": "TED",
+   "n": 1384496,
+   "n_obs": 498393,
+   "sb": 0.287,
+   "comp3": 0.558
+  },
+  {
+   "country": "IT",
+   "source": "TED",
+   "n": 928848,
+   "n_obs": 358647,
+   "sb": 0.325,
+   "comp3": 0.477
+  },
+  {
+   "country": "GB",
+   "source": "ContractsFinder",
+   "n": 818707,
+   "n_obs": 312693,
+   "sb": 0.142,
+   "comp3": 0.75
+  },
+  {
+   "country": "DE",
+   "source": "TED",
+   "n": 815506,
+   "n_obs": 566009,
+   "sb": 0.199,
+   "comp3": 0.622
+  },
+  {
+   "country": "CZ",
+   "source": "TED",
+   "n": 723161,
+   "n_obs": 345196,
+   "sb": 0.447,
+   "comp3": 0.36
+  },
+  {
+   "country": "GR",
+   "source": "TED",
+   "n": 562251,
+   "n_obs": 106687,
+   "sb": 0.398,
+   "comp3": 0.435
+  },
+  {
+   "country": "SI",
+   "source": "TED",
+   "n": 438956,
+   "n_obs": 278104,
+   "sb": 0.506,
+   "comp3": 0.297
+  },
+  {
+   "country": "LT",
+   "source": "TED",
+   "n": 423731,
+   "n_obs": 221325,
+   "sb": 0.24,
+   "comp3": 0.621
+  },
+  {
+   "country": "LV",
+   "source": "TED",
+   "n": 279714,
+   "n_obs": 188528,
+   "sb": 0.252,
+   "comp3": 0.613
+  },
+  {
+   "country": "PT",
+   "source": "TED",
+   "n": 258477,
+   "n_obs": 77407,
+   "sb": 0.296,
+   "comp3": 0.546
+  },
+  {
+   "country": "SE",
+   "source": "TED",
+   "n": 253196,
+   "n_obs": 188206,
+   "sb": 0.098,
+   "comp3": 0.788
+  },
+  {
+   "country": "FI",
+   "source": "TED",
+   "n": 202710,
+   "n_obs": 113399,
+   "sb": 0.128,
+   "comp3": 0.726
+  },
+  {
+   "country": "HU",
+   "source": "TED",
+   "n": 181626,
+   "n_obs": 141649,
+   "sb": 0.388,
+   "comp3": 0.402
+  },
+  {
+   "country": "DK",
+   "source": "TED",
+   "n": 180436,
+   "n_obs": 82676,
+   "sb": 0.193,
+   "comp3": 0.621
+  },
+  {
+   "country": "BE",
+   "source": "TED",
+   "n": 158956,
+   "n_obs": 103645,
+   "sb": 0.216,
+   "comp3": 0.562
+  },
+  {
+   "country": "SK",
+   "source": "TED",
+   "n": 149240,
+   "n_obs": 70822,
+   "sb": 0.283,
+   "comp3": 0.505
+  },
+  {
+   "country": "NO",
+   "source": "TED",
+   "n": 125138,
+   "n_obs": 65254,
+   "sb": 0.121,
+   "comp3": 0.701
+  },
+  {
+   "country": "EE",
+   "source": "TED",
+   "n": 114437,
+   "n_obs": 66251,
+   "sb": 0.232,
+   "comp3": 0.574
+  },
+  {
+   "country": "NL",
+   "source": "TED",
+   "n": 98374,
+   "n_obs": 70356,
+   "sb": 0.185,
+   "comp3": 0.636
+  },
+  {
+   "country": "IE",
+   "source": "TED",
+   "n": 96838,
+   "n_obs": 49467,
+   "sb": 0.126,
+   "comp3": 0.795
+  },
+  {
+   "country": "AT",
+   "source": "TED",
+   "n": 91305,
+   "n_obs": 66762,
+   "sb": 0.255,
+   "comp3": 0.58
+  },
+  {
+   "country": "CH",
+   "source": "TED",
+   "n": 51854,
+   "n_obs": 46104,
+   "sb": 0.106,
+   "comp3": 0.745
+  },
+  {
+   "country": "LU",
+   "source": "TED",
+   "n": 23553,
+   "n_obs": 15267,
+   "sb": 0.214,
+   "comp3": 0.594
+  },
+  {
+   "country": "IS",
+   "source": "TED",
+   "n": 4490,
+   "n_obs": 4142,
+   "sb": 0.084,
+   "comp3": 0.812
+  }
+ ],
+ "eforms_total": {
+  "n": 302555,
+  "pct_ge2": 7.7,
+  "mean_distinct": 1.24
+ },
+ "eforms_by_country": [
+  {
+   "country": "DEU",
+   "n": 58058,
+   "pct_ge2": 0.6,
+   "mean_distinct": 1.01
+  },
+  {
+   "country": "ESP",
+   "n": 43480,
+   "pct_ge2": 1.8,
+   "mean_distinct": 1.13
+  },
+  {
+   "country": "BGR",
+   "n": 30899,
+   "pct_ge2": 0.6,
+   "mean_distinct": 1.01
+  },
+  {
+   "country": "POL",
+   "n": 28157,
+   "pct_ge2": 3.8,
+   "mean_distinct": 1.1
+  },
+  {
+   "country": "FRA",
+   "n": 18278,
+   "pct_ge2": 5.1,
+   "mean_distinct": 1.11
+  },
+  {
+   "country": "NLD",
+   "n": 16592,
+   "pct_ge2": 7.4,
+   "mean_distinct": 1.22
+  },
+  {
+   "country": "SWE",
+   "n": 12748,
+   "pct_ge2": 75.5,
+   "mean_distinct": 4.16
+  },
+  {
+   "country": "LVA",
+   "n": 10547,
+   "pct_ge2": 0.0,
+   "mean_distinct": 0.0
+  },
+  {
+   "country": "CHE",
+   "n": 8398,
+   "pct_ge2": 5.8,
+   "mean_distinct": 1.15
+  },
+  {
+   "country": "HUN",
+   "n": 7985,
+   "pct_ge2": 42.0,
+   "mean_distinct": 2.27
+  },
+  {
+   "country": "HRV",
+   "n": 7538,
+   "pct_ge2": 0.8,
+   "mean_distinct": 1.02
+  },
+  {
+   "country": "FIN",
+   "n": 7477,
+   "pct_ge2": 14.6,
+   "mean_distinct": 1.58
+  },
+  {
+   "country": "ITA",
+   "n": 7399,
+   "pct_ge2": 1.8,
+   "mean_distinct": 1.03
+  },
+  {
+   "country": "SVN",
+   "n": 6665,
+   "pct_ge2": 0.0,
+   "mean_distinct": 0.95
+  },
+  {
+   "country": "BEL",
+   "n": 6421,
+   "pct_ge2": 11.1,
+   "mean_distinct": 1.27
+  },
+  {
+   "country": "NOR",
+   "n": 5897,
+   "pct_ge2": 29.6,
+   "mean_distinct": 1.98
+  },
+  {
+   "country": "EST",
+   "n": 5692,
+   "pct_ge2": 7.6,
+   "mean_distinct": 1.32
+  },
+  {
+   "country": "PRT",
+   "n": 5529,
+   "pct_ge2": 3.5,
+   "mean_distinct": 1.13
+  },
+  {
+   "country": "DNK",
+   "n": 5004,
+   "pct_ge2": 9.6,
+   "mean_distinct": 1.36
+  },
+  {
+   "country": "LTU",
+   "n": 3871,
+   "pct_ge2": 4.7,
+   "mean_distinct": 1.12
+  },
+  {
+   "country": "GRC",
+   "n": 3133,
+   "pct_ge2": 1.3,
+   "mean_distinct": 1.04
+  },
+  {
+   "country": "AUT",
+   "n": 1649,
+   "pct_ge2": 4.1,
+   "mean_distinct": 1.27
+  },
+  {
+   "country": "ISL",
+   "n": 288,
+   "pct_ge2": 54.9,
+   "mean_distinct": 2.43
+  },
+  {
+   "country": "ROU",
+   "n": 280,
+   "pct_ge2": 0.4,
+   "mean_distinct": 1.0
+  }
+ ]
+}

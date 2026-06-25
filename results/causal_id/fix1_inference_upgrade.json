@@ -1,0 +1,17 @@
+{
+  "sun_abraham": "NOT estimable on this design - no never-treated unit -> collinearity (SE blows up). The not-yet-treated C&S is the appropriate estimator (used).",
+  "wild_cluster_bootstrap": "fwildclusterboot not installed; the R did multiplier-bootstrap SIMULTANEOUS bands already provide valid small-cluster inference (aggregate CI [-14.3,+5.6] crosses zero).",
+  "honestdid_high_carbon": {
+    "averaged_post_effect_pp": -1.64,
+    "robust_ci_Mbar0_pp": [
+      -5.32,
+      2.03
+    ],
+    "robust_ci_Mbar0.5_pp": [
+      -38.2,
+      38.2
+    ],
+    "verdict": "NOT robust. The high-carbon simple-ATT (-16.2pp) is aggregation-sensitive: the event-study-averaged post-effect is only -1.6pp, and HonestDiD robust CIs include zero at Mbar=0 and are unbounded for any pre-trend violation. The high-carbon finding does not survive sensitivity analysis."
+  },
+  "overall": "Inference upgrade confirms: NO robustly-identified reform effect, in aggregate OR by carbon heterogeneity. Fix 3 carbon gradient is suggestive (ordering low>mid>high, contrast sig in simple ATT) but the magnitude is fragile and not robust to pre-trends; confounded with concentration (Fix 5). No causal reform claim is defensible."
+}

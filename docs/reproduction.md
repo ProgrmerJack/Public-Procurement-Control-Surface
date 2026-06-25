@@ -1,161 +1,54 @@
-# Reproduction Guide
+# Reproduction guide
 
-## Overview
+Step-by-step reproduction of the *Scientific Data* Data Descriptor
+(`Scientific_Data_Descriptor/`). All commands run from the repository root.
 
-This guide provides step-by-step instructions to reproduce all results in the paper:
-
-> **Governance Reform Unlocks Decarbonization Dead Zones in Public Procurement**
->
-> Ashuraliyev, A. (2026). *Nature Sustainability*.
-
----
-
-## Quick Start
+## 1. Environment
 
 ```bash
-# 1. Clone
-git clone https://github.com/ProgrmerJack/Public-Procurement-Control-Surface.git
-cd Public-Procurement-Control-Surface
-
-# 2. Setup environment
-python -m venv .venv
-.venv/Scripts/activate  # Windows
-# source .venv/bin/activate  # Linux/Mac
-pip install -r requirements.txt
-
-# 3. Download Data.zip from Zenodo and extract it at repository root
-# https://doi.org/10.5281/zenodo.20098951
-
-# 4. Verify all quantitative claims (~2 minutes)
-python verify_all_claims.py
+pip install -r requirements.txt          # pandas, pyarrow, numpy, scipy, statsmodels, matplotlib, requests
+# LaTeX (pdflatex) is required to build the manuscript PDFs.
 ```
 
----
+## 2. Data
 
-## System Requirements
+The deposited files are at Zenodo (DOI **10.5281/zenodo.20823936**). The descriptor's verification
+scripts read the copies in `deposit/`. The upstream source/processed data
+(large, gitignored) can be rebuilt with the `workflow/` Snakemake pipeline or downloaded from Zenodo.
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| **OS** | Windows 10, Linux, macOS | Any |
-| **RAM** | 16 GB | 32 GB |
-| **Storage** | 15 GB free | 50 GB (for raw data) |
-| **Python** | 3.10+ | 3.12 |
-| **CPU** | 4 cores | 8+ cores |
-
-### Python Dependencies
-
-```
-pandas>=2.0
-numpy>=1.24
-scipy>=1.10
-pyarrow>=14.0
-matplotlib>=3.8
-seaborn>=0.12
-```
-
-Install all with: `pip install -r requirements.txt`
-
----
-
-## Data Access
-
-### Processed Data (Recommended)
-
-The published replication archive is available on Zenodo:
-
-- **DOI:** [10.5281/zenodo.20098951](https://doi.org/10.5281/zenodo.20098951)
-- **Primary artifact:** `Data.zip` (12.73 GB)
-- **Contents:** Recreates the `Data/` directory, including `Data/processed/gprd_with_carbon.parquet`
-
-After downloading `Data.zip`, extract it at repository root so the archive restores the `Data/` tree expected by the scripts.
-
-### Raw Data Sources
-
-If you wish to rebuild from raw data:
-
-| Source | URL | Coverage |
-|--------|-----|----------|
-| EU TED | [ted.europa.eu](https://ted.europa.eu/en/) | 26 EU/EEA countries |
-| Colombia SECOP | [datos.gov.co](https://www.datos.gov.co) | Colombia |
-| UK Contracts Finder | [gov.uk](https://www.gov.uk/contracts-finder) | United Kingdom |
-| EXIOBASE 3.8.2 | [DOI: 10.5281/zenodo.5589597](https://doi.org/10.5281/zenodo.5589597) | Carbon intensities |
-
----
-
-## Step-by-Step Reproduction
-
-### Step 1: Verify Data Integrity
+## 3. Reproduce the descriptor
 
 ```bash
-python reproduce_data_comprehensive.py
+# Part A panel + every Part A statistic (single-bidder series, reconciliation, panel counts)
+python scripts/descriptor/build_partA_panel.py        # -> partA_validation.json, panel parquet
+
+# Supplementary Information tables (per-country, per-CPV, eForms coverage, crosswalk, validation)
+python scripts/descriptor/si_make_tables.py           # -> si_tables/*.tex, si_data.json
+
+# Figures
+python scripts/descriptor/make_figures.py             # -> figures/
+
+# Claim-by-claim verification against the deposited data (prints PASS/FAIL, 42 checks)
+python scripts/descriptor/verify_claims.py
+
+# Build the PDFs
+cd Scientific_Data_Descriptor
+pdflatex descriptor.tex && pdflatex descriptor.tex            # 12 pp
+pdflatex supplementary_information.tex && pdflatex supplementary_information.tex   # 16 pp
 ```
 
-This validates:
-- File exists and loads correctly
-- All required columns present
-- No missing critical values
-- Value ranges are plausible
+## 4. Reproduce the original analysis results (consumed by the descriptor)
 
-### Step 2: Verify Quantitative Claims
+These original pipeline scripts regenerate the result JSONs cited in the descriptor:
 
 ```bash
-python verify_all_claims.py
+python scripts/within_sector/exiobase_eurostat_validation_v2.py            # carbon ρ=0.82
+python scripts/eforms_competition/within_tender_green_wins.py results/eforms_competition/eforms_bids_2024_2025.jsonl   # OR 1.02, 2,601 tenders
+python scripts/eforms_competition/robustness_battery.py results/eforms_competition/eforms_bids_2024_2025.jsonl         # battery (reweight, placebo, permutation)
 ```
 
-**Expected output:**
-```
-VERIFICATION SUMMARY
-================================================================================
-Total claims verified: 36/36
-Pass rate: 100.0%
+## 5. Traceability
 
-✓ ALL CLAIMS VERIFIED - Results are reproducible
-```
-
-### Step 3: Generate Figures (Optional)
-
-```bash
-cd NC_Submission
-python -c "import generate_figures; generate_figures.main()"
-```
-
----
-
-## Verification Checklist
-
-- Run `python verify_all_claims.py` for the repository-wide 36-claim verification pass.
-- Inspect `VERIFICATION_RESULTS.json` for the machine-readable PASS/FAIL output.
-- Use `CLAIMS_INDEX.md` to trace any manuscript or SI claim back to the producing script and result file.
-
----
-
-## Troubleshooting
-
-### Memory Issues
-If you encounter memory errors:
-```python
-# Use chunked loading
-df = pd.read_parquet('Data/processed/gprd_with_carbon.parquet',
-                     columns=['is_single_bidder', 'carbon_intensity', 'value_eur', 'year'])
-```
-
-### Missing Data File
-Download `Data.zip` from Zenodo and extract it at repository root:
-```bash
-# https://doi.org/10.5281/zenodo.20098951
-```
-
-### Import Errors
-Ensure all dependencies are installed:
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Contact
-
-For reproduction issues:
-- **GitHub Issues:** https://github.com/ProgrmerJack/Public-Procurement-Control-Surface/issues
-- **Email:** jack00040008@outlook.com
-- **ORCID:** [0009-0003-5482-5526](https://orcid.org/0009-0003-5482-5526)
+`Scientific_Data_Descriptor/CLAIMS_INDEX.md` maps every quantitative claim in the manuscript and SI
+to (a) the original generating script, (b) the deposited data file, and (c) how it is recomputed,
+with a provenance tag per claim (`[DATA]` / `[ORIG]` / `[NEW]` / `[EXT]`).

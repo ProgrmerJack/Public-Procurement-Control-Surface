@@ -1,0 +1,44 @@
+{
+  "n_tenders": 2594,
+  "n_rows": 17331,
+  "n_distinct_firms": 8726,
+  "n_distinct_green_winning_firms": 369,
+  "country_concentration_top": {
+    "SWE": 0.532,
+    "NOR": 0.126,
+    "FIN": 0.093,
+    "FRA": 0.056,
+    "BEL": 0.037
+  },
+  "PRIMARY_green_x_carbon": {
+    "coef": 0.08272033051543674,
+    "se": 0.030649297139557,
+    "z": 2.6989307499869266,
+    "p_one_sided": 0.003478132485270708,
+    "controls": "firm size+incumbency, firm-clustered SE"
+  },
+  "PRIMARY_reweighted": {
+    "coef": -0.05557713465291045,
+    "se": 0.0823970353918243,
+    "p_one_sided": 0.7500045463311119
+  },
+  "placebo_green": {
+    "coef": 0.05837986564507502,
+    "p_two_sided": 0.022641785924923958
+  },
+  "leave_top_firm_out": {
+    "dropped_firm_green_wins": 25,
+    "coef": 0.08312403107429016,
+    "p_one_sided": 0.004035448900438044
+  },
+  "signal_green_sbti": {
+    "n_tenders": 2195,
+    "coef": 0.1540292555483403,
+    "p_one_sided": 0.0005146844062369956
+  },
+  "signal_green_eutl": {
+    "n_tenders": 656,
+    "coef": 0.07004875069935983,
+    "p_one_sided": 0.07301331217168636
+  }
+}

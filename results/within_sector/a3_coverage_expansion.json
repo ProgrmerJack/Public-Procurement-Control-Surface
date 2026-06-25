@@ -1,0 +1,20 @@
+{
+  "n_eutl_firms": 9131,
+  "n_proc_suppliers_distinct": 1723685,
+  "n_matched_firms_ge1": 1561,
+  "n_matched_firms_ge3": 1105,
+  "coverage": {
+    "matched_share_of_all_contracts": 0.006633578417738782,
+    "matched_share_of_all_value": 2.0947215563864357e-09,
+    "matched_share_of_highcarbon_contracts": 0.006112865920258884,
+    "matched_share_of_highcarbon_value": 2.9575978108154985e-09,
+    "n_highcarbon_contracts": 10027048
+  },
+  "wider_set_within_nace_partial_corr": {
+    "partial_rho": 0.10284714015641788,
+    "p": 8.30200252618882e-05,
+    "n_firms": 1460,
+    "vs_baseline_1105": "baseline partial rho was +0.15 on >=3-contract set"
+  },
+  "ceiling_statement": "Registry coverage is structurally capped: EUTL/E-PRTR list only installations above ETS/IED capacity thresholds, so most procurement winners (services, SMEs) are absent. No mid-cap/service emissions source (Orbis/Trucost/CDP) is available, so the firm-level result cannot be extended beyond large industrial emitters. The coverage figures above quantify this: matched emitters are few in COUNT but the high-carbon-value share they cover is the policy-relevant quantity."
+}

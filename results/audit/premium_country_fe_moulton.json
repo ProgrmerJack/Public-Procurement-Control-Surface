@@ -1,0 +1,62 @@
+{
+  "n_contracts": 13638933,
+  "n_cells": 25013,
+  "mb_mean_carbon": 0.35581169931329726,
+  "models": {
+    "M0_pooled_no_FE": {
+      "fe": [],
+      "beta_sb": -0.015343326134639805,
+      "premium_pct": -4.312203945022557,
+      "se_naive_contract": 0.00014982361922702593,
+      "t_naive_contract": -102.40926106177056,
+      "se_cluster_country_cpv": 0.011761599726336544,
+      "t_cluster": -1.3045271469562996,
+      "n_clusters": 1183
+    },
+    "M1_country_FE": {
+      "fe": [
+        "country"
+      ],
+      "beta_sb": -0.016932996277170854,
+      "premium_pct": -4.758976815504066,
+      "se_naive_contract": 0.00015316691337841106,
+      "t_naive_contract": -110.55257237792955,
+      "se_cluster_country_cpv": 0.0054229815230152295,
+      "t_cluster": -3.1224514052476335,
+      "n_clusters": 1183
+    },
+    "M2_country_year_FE": {
+      "fe": [
+        "country",
+        "year"
+      ],
+      "beta_sb": -0.016888405060101044,
+      "premium_pct": -4.746444563991293,
+      "se_naive_contract": 0.00015319575900141075,
+      "t_naive_contract": -110.24068270679426,
+      "se_cluster_country_cpv": 0.00544900090224873,
+      "t_cluster": -3.0993580957440154,
+      "n_clusters": 1183
+    },
+    "M3_country_cpv_FE_within_sector": {
+      "fe": [
+        "country",
+        "cpv_division"
+      ],
+      "beta_sb": 8.804805842754782e-16,
+      "premium_pct": 2.474568953114165e-13,
+      "se_naive_contract": 1.1740729499579228e-15,
+      "t_naive_contract": 0.7499368623619456,
+      "se_cluster_country_cpv": 3.561970740506835e-14,
+      "t_cluster": 0.024718916813735368,
+      "n_clusters": 1183
+    }
+  },
+  "within_country_premium_spread": {
+    "min": -21.584987208892237,
+    "max": 27.63689101651905,
+    "n_negative": 20,
+    "n_positive": 6,
+    "n_meta_weighted_mean": -4.621388252977476
+  }
+}

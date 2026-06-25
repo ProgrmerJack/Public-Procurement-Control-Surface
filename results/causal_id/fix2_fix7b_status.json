@@ -1,0 +1,18 @@
+{
+  "fix2_synthetic_did": {
+    "status": "NOT FEASIBLE with available data (documented, not skipped).",
+    "reason": "Synthetic DiD requires donor units with a single-bidding time series on the SAME (bidder-count) definition as TED, flat over the EU treatment window. No non-EU source provides this: US FPDS = single-OFFER, sector-level, FY2023 cross-section only (no time series); CanadaBuys = non-competitive METHOD proxy (annual, not bidder counts); ProZorro = method proxy 2018-2021 (bid counts not in public API); Brazil/Korea/Mexico/OpenTender not acquired. Mixing method-proxy donors with the bidder-count treated series violates donor commensurability, which the plan itself flags as fatal.",
+    "moot_note": "Fix 2 exists to anchor the EU competition effect on genuine non-adopters; since the EU effect is itself a noisy null (Fix 1), the anchoring purpose is moot.",
+    "closest_available": "The CanadaBuys non-competitive-method proxy comparison (already in the paper, -4.8pp) is the closest external check; it is descriptive, not a Synthetic DiD."
+  },
+  "fix7b_eproc_2018": {
+    "its_post_coef_pp": 0.19,
+    "se_pp": 0.75,
+    "p": 0.802,
+    "ci_pp": [
+      -1.27,
+      1.65
+    ],
+    "verdict": "precise null; no discontinuity at the Oct-2018 e-submission deadline. Near-common date -> ITS not staggered DiD; weak identification; consistent with overall null."
+  }
+}

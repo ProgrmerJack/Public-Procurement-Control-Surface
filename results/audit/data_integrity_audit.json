@@ -1,0 +1,304 @@
+{
+  "total_rows": 21612129,
+  "annual_counts_by_bucket": {
+    "2012": {
+      "Colombia": 358004,
+      "EU-context (ex GB, ex CO)": 328047,
+      "GB": 26911,
+      "EU-context total (ex CO)": 354958
+    },
+    "2013": {
+      "Colombia": 530653,
+      "EU-context (ex GB, ex CO)": 337366,
+      "GB": 26336,
+      "EU-context total (ex CO)": 363702
+    },
+    "2014": {
+      "Colombia": 672689,
+      "EU-context (ex GB, ex CO)": 332336,
+      "GB": 25469,
+      "EU-context total (ex CO)": 357805
+    },
+    "2015": {
+      "Colombia": 735127,
+      "EU-context (ex GB, ex CO)": 333005,
+      "GB": 35385,
+      "EU-context total (ex CO)": 368390
+    },
+    "2016": {
+      "Colombia": 784706,
+      "EU-context (ex GB, ex CO)": 433140,
+      "GB": 73622,
+      "EU-context total (ex CO)": 506762
+    },
+    "2017": {
+      "Colombia": 921505,
+      "EU-context (ex GB, ex CO)": 687225,
+      "GB": 75135,
+      "EU-context total (ex CO)": 762360
+    },
+    "2018": {
+      "Colombia": 966594,
+      "EU-context (ex GB, ex CO)": 5576137,
+      "GB": 217163,
+      "EU-context total (ex CO)": 5793300
+    },
+    "2019": {
+      "Colombia": 973504,
+      "EU-context (ex GB, ex CO)": 894211,
+      "GB": 88857,
+      "EU-context total (ex CO)": 983068
+    },
+    "2020": {
+      "Colombia": 937582,
+      "EU-context (ex GB, ex CO)": 917199,
+      "GB": 77697,
+      "EU-context total (ex CO)": 994896
+    },
+    "2021": {
+      "Colombia": 881333,
+      "EU-context (ex GB, ex CO)": 1002490,
+      "GB": 58241,
+      "EU-context total (ex CO)": 1060731
+    },
+    "2022": {
+      "Colombia": 211497,
+      "EU-context (ex GB, ex CO)": 1003742,
+      "GB": 53596,
+      "EU-context total (ex CO)": 1057338
+    },
+    "2023": {
+      "Colombia": 2,
+      "EU-context (ex GB, ex CO)": 975328,
+      "GB": 60295,
+      "EU-context total (ex CO)": 1035623
+    }
+  },
+  "eu_context_annual": {
+    "2012": 354958,
+    "2013": 363702,
+    "2014": 357805,
+    "2015": 368390,
+    "2016": 506762,
+    "2017": 762360,
+    "2018": 5793300,
+    "2019": 983068,
+    "2020": 994896,
+    "2021": 1060731,
+    "2022": 1057338,
+    "2023": 1035623
+  },
+  "2018_surge": {
+    "eu_context_2018": 5793300,
+    "eu_context_adjacent_mean_2016_17_19_20": 811771.5,
+    "ratio_2018_to_adjacent": 7.136614182685645,
+    "2018_share_of_full_dataset": 0.26805781142616725
+  },
+  "2018_by_country_top15": {
+    "PL": 1169856,
+    "FR": 1023176,
+    "CO": 966594,
+    "ES": 635517,
+    "IT": 405339,
+    "DE": 347376,
+    "CZ": 330857,
+    "GR": 265739,
+    "GB": 217163,
+    "SI": 206671,
+    "LT": 203976,
+    "SE": 125810,
+    "PT": 122799,
+    "LV": 118047,
+    "FI": 80225
+  },
+  "duplication_by_year": {
+    "2018": {
+      "rows": 6759894,
+      "record_id_unique": 6759894,
+      "record_id_dup_rows": 0,
+      "record_id_null": 0,
+      "ocid_unique": 4209206,
+      "ocid_dup_rows": 2550688,
+      "ocid_null": 0,
+      "frac_rows_with_dup_ocid": 0.37732662671929473
+    },
+    "2017": {
+      "rows": 1683865,
+      "record_id_unique": 1683865,
+      "record_id_dup_rows": 0,
+      "record_id_null": 0,
+      "ocid_unique": 1358959,
+      "ocid_dup_rows": 324906,
+      "ocid_null": 0,
+      "frac_rows_with_dup_ocid": 0.1929525229160295
+    },
+    "2019": {
+      "rows": 1956572,
+      "record_id_unique": 1956572,
+      "record_id_dup_rows": 0,
+      "record_id_null": 0,
+      "ocid_unique": 1529982,
+      "ocid_dup_rows": 426590,
+      "ocid_null": 0,
+      "frac_rows_with_dup_ocid": 0.218029287958736
+    },
+    "all": {
+      "rows": 21612129,
+      "record_id_unique": 21612129,
+      "record_id_dup_rows": 0,
+      "record_id_null": 0,
+      "ocid_unique": 12975105,
+      "ocid_dup_rows": 8637024,
+      "ocid_null": 0,
+      "frac_rows_with_dup_ocid": 0.39963781448833663
+    }
+  },
+  "2018_tender_date": {
+    "non_null": 992449,
+    "distinct_days": 365,
+    "max_single_day_count": 30349,
+    "top5_days": {
+      "2018-01-26": 30349,
+      "2018-01-25": 21910,
+      "2018-01-31": 19312,
+      "2018-01-24": 17931,
+      "2018-01-30": 17408
+    }
+  },
+  "supplier_id_null_or_empty": 4465315,
+  "supplier_id_null_frac": 0.20661152818401185,
+  "supplier_concentration": {
+    "n_distinct_suppliers": 2120071,
+    "n_suppliers_500plus": 518,
+    "contracts_to_500plus": 7960073,
+    "frac_dataset_to_500plus": 0.36831507900031507,
+    "top10_suppliers": {
+      "nan": 7307469,
+      "1": 55645,
+      "860002400": 11654,
+      "860524654": 8935,
+      "234449420": 8461,
+      "5300231000": 7661,
+      "5000823000": 7490,
+      "5288991000": 6673,
+      "PL": 5292,
+      "5601967000": 5040
+    }
+  },
+  "repeat_pairs": {
+    "n_pairs": 3487220,
+    "n_pairs_11plus": 119326,
+    "contracts_in_11plus_pairs": 9657221,
+    "frac_dataset_in_11plus_pairs": 0.4468426502544011
+  },
+  "country_sb_rates": {
+    "CO": {
+      "sb_rate": 0.0071846973283988,
+      "n": 7973196
+    },
+    "GB": {
+      "sb_rate": 0.05441751444656025,
+      "n": 818707
+    },
+    "NO": {
+      "sb_rate": 0.06310633061100546,
+      "n": 125138
+    },
+    "IE": {
+      "sb_rate": 0.0642722898035895,
+      "n": 96838
+    },
+    "FI": {
+      "sb_rate": 0.07158995609491392,
+      "n": 202710
+    },
+    "SE": {
+      "sb_rate": 0.07256828701875227,
+      "n": 253196
+    },
+    "GR": {
+      "sb_rate": 0.07560146624905958,
+      "n": 562251
+    },
+    "IS": {
+      "sb_rate": 0.07728285077951003,
+      "n": 4490
+    },
+    "DK": {
+      "sb_rate": 0.08840253607927465,
+      "n": 180436
+    },
+    "PT": {
+      "sb_rate": 0.08874290555832821,
+      "n": 258477
+    },
+    "CH": {
+      "sb_rate": 0.09416824160141937,
+      "n": 51854
+    },
+    "ES": {
+      "sb_rate": 0.1034239174399926,
+      "n": 1384496
+    },
+    "FR": {
+      "sb_rate": 0.10727213077757322,
+      "n": 2392765
+    },
+    "LT": {
+      "sb_rate": 0.12557731202106998,
+      "n": 423731
+    },
+    "IT": {
+      "sb_rate": 0.1256298124127952,
+      "n": 928848
+    },
+    "NL": {
+      "sb_rate": 0.13243336653993942,
+      "n": 98374
+    },
+    "SK": {
+      "sb_rate": 0.13433395872420262,
+      "n": 149240
+    },
+    "EE": {
+      "sb_rate": 0.13433592282216417,
+      "n": 114437
+    },
+    "DE": {
+      "sb_rate": 0.13832148383948126,
+      "n": 815506
+    },
+    "LU": {
+      "sb_rate": 0.13896318940262387,
+      "n": 23553
+    },
+    "BE": {
+      "sb_rate": 0.14063011147738996,
+      "n": 158956
+    },
+    "LV": {
+      "sb_rate": 0.16955533151719257,
+      "n": 279714
+    },
+    "AT": {
+      "sb_rate": 0.18630962159794096,
+      "n": 91305
+    },
+    "CZ": {
+      "sb_rate": 0.2135706986411048,
+      "n": 723161
+    },
+    "HU": {
+      "sb_rate": 0.3022584872209926,
+      "n": 181626
+    },
+    "SI": {
+      "sb_rate": 0.3204512525173366,
+      "n": 438956
+    },
+    "PL": {
+      "sb_rate": 0.33746225914599426,
+      "n": 2880168
+    }
+  }
+}

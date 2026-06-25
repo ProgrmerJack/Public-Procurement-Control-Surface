@@ -1,0 +1,142 @@
+{
+  "n_eprtr_firms": 2880,
+  "n_matched": 144,
+  "matched_contracts": 12096,
+  "overall_spearman_sb_vs_logco2": {
+    "rho": 0.16737461288194858,
+    "p": 0.044946108952853024
+  },
+  "within_sector_uncontrolled": {
+    "rho": 0.20243143306248362,
+    "p": 0.02040649615603787,
+    "n": 131
+  },
+  "within_sector_size_controlled": {
+    "partial_rho": 0.20773682594883314,
+    "p": 0.017710234867104508,
+    "control": "log(n_facilities)",
+    "n": 131
+  },
+  "top_matches": [
+    {
+      "example_proc": "voestalpine Stahl GmbH",
+      "example_eprtr": "voestalpine Stahl GmbH",
+      "co2_t": 8059500000.0,
+      "sb_rate": 1.0,
+      "n_contracts": 3,
+      "sector": "Mineral industry"
+    },
+    {
+      "example_proc": "Electricite de France",
+      "example_eprtr": "ELECTRICITE DE FRANCE",
+      "co2_t": 7415699987.2,
+      "sb_rate": 0.21,
+      "n_contracts": 150,
+      "sector": "Energy sector"
+    },
+    {
+      "example_proc": "BASF SE",
+      "example_eprtr": "BASF SE",
+      "co2_t": 7076000000.0,
+      "sb_rate": 0.3,
+      "n_contracts": 73,
+      "sector": "Chemical industry"
+    },
+    {
+      "example_proc": "Polski Koncern Naftowy ORLEN S.A.",
+      "example_eprtr": "Polski Koncern Naftowy ORLEN S.A.",
+      "co2_t": 6932500000.0,
+      "sb_rate": 0.76,
+      "n_contracts": 1471,
+      "sector": "Energy sector"
+    },
+    {
+      "example_proc": "Liberty Ostrava a.s.",
+      "example_eprtr": "Liberty Ostrava a.s.",
+      "co2_t": 4200438400.0,
+      "sb_rate": 0.0,
+      "n_contracts": 10,
+      "sector": "Production and processing of metals"
+    },
+    {
+      "example_proc": "Dyckerhoff AG",
+      "example_eprtr": "Dyckerhoff GmbH",
+      "co2_t": 3086300000.0,
+      "sb_rate": 0.33,
+      "n_contracts": 3,
+      "sector": "Mineral industry"
+    },
+    {
+      "example_proc": "Rheinkalk GmbH",
+      "example_eprtr": "Rheinkalk GmbH",
+      "co2_t": 3014200000.0,
+      "sb_rate": 0.37,
+      "n_contracts": 43,
+      "sector": "Mineral industry"
+    },
+    {
+      "example_proc": "ENGIE Energie Nederland NV",
+      "example_eprtr": "ENGIE Energie Nederland NV",
+      "co2_t": 2879000000.0,
+      "sb_rate": 0.12,
+      "n_contracts": 17,
+      "sector": "Energy sector"
+    },
+    {
+      "example_proc": "OMV Downstream GmbH",
+      "example_eprtr": "OMV Downstream GmbH",
+      "co2_t": 2779000000.0,
+      "sb_rate": 0.61,
+      "n_contracts": 56,
+      "sector": "Energy sector"
+    },
+    {
+      "example_proc": "Wien Energie GmbH",
+      "example_eprtr": "WIEN ENERGIE GmbH",
+      "co2_t": 2642400000.0,
+      "sb_rate": 0.25,
+      "n_contracts": 4,
+      "sector": "Waste and wastewater management"
+    },
+    {
+      "example_proc": "Infraserv GmbH & Co. H\u00f6chst KG",
+      "example_eprtr": "InfraServ GmbH & Co. H\u00f6chst KG ",
+      "co2_t": 2234500000.0,
+      "sb_rate": 0.4,
+      "n_contracts": 10,
+      "sector": "Energy sector"
+    },
+    {
+      "example_proc": "Sarl Vicat",
+      "example_eprtr": "VICAT",
+      "co2_t": 2060000000.0,
+      "sb_rate": 1.0,
+      "n_contracts": 4,
+      "sector": "Mineral industry"
+    },
+    {
+      "example_proc": "Grupa Lotos S.A.",
+      "example_eprtr": "Grupa LOTOS S.A.",
+      "co2_t": 1828888888.89,
+      "sb_rate": 0.55,
+      "n_contracts": 33,
+      "sector": "Energy sector"
+    },
+    {
+      "example_proc": "Grupa Azoty Zak\u0142ady Azotowe \u201ePu\u0142awy\u201d S.A.",
+      "example_eprtr": "Grupa Azoty Zak\u0142ady Azotowe \"Pu\u0142awy\" S.A.",
+      "co2_t": 1816000000.0,
+      "sb_rate": 0.88,
+      "n_contracts": 49,
+      "sector": "Chemical industry"
+    },
+    {
+      "example_proc": "SCHWENK Zement AG",
+      "example_eprtr": "Schwenk Zement ",
+      "co2_t": 1768300000.0,
+      "sb_rate": 0.78,
+      "n_contracts": 9,
+      "sector": "Mineral industry"
+    }
+  ]
+}

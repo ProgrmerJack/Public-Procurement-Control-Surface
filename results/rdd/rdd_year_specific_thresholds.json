@@ -1,0 +1,200 @@
+{
+  "designs": {
+    "year_specific_central": {
+      "label": "year_specific_central",
+      "n_total": 12486121,
+      "exclude_works": true,
+      "outcomes": {
+        "bidder_count": {
+          "n": 6805410,
+          "mse_bandwidth": 0.0534,
+          "primary_pm010": {
+            "tau": 0.248825,
+            "se": 0.062411,
+            "t_stat": 3.9869,
+            "p_value": 6.7e-05,
+            "n_obs": 491440
+          },
+          "mse_optimal": {
+            "tau": 0.046266,
+            "se": 0.087396,
+            "t_stat": 0.5294,
+            "p_value": 0.596539,
+            "n_obs": 263401
+          },
+          "grid_n": 26,
+          "grid_n_negative": 0,
+          "grid_n_significant": 22
+        },
+        "carbon_intensity": {
+          "n": 12486121,
+          "mse_bandwidth": 0.05,
+          "primary_pm010": {
+            "tau": -0.011609,
+            "se": 0.001249,
+            "t_stat": -9.2924,
+            "p_value": 0.0,
+            "n_obs": 718867
+          },
+          "mse_optimal": {
+            "tau": -0.014479,
+            "se": 0.001764,
+            "t_stat": -8.2083,
+            "p_value": 0.0,
+            "n_obs": 363510
+          },
+          "grid_n": 26,
+          "grid_n_negative": 26,
+          "grid_n_significant": 26
+        }
+      }
+    },
+    "year_specific_subcentral": {
+      "label": "year_specific_subcentral",
+      "n_total": 12486121,
+      "exclude_works": true,
+      "outcomes": {
+        "bidder_count": {
+          "n": 6805410,
+          "mse_bandwidth": 0.0669,
+          "primary_pm010": {
+            "tau": -0.409778,
+            "se": 0.053115,
+            "t_stat": -7.715,
+            "p_value": 0.0,
+            "n_obs": 539598
+          },
+          "mse_optimal": {
+            "tau": -0.501688,
+            "se": 0.061647,
+            "t_stat": -8.1381,
+            "p_value": 0.0,
+            "n_obs": 375367
+          },
+          "grid_n": 26,
+          "grid_n_negative": 26,
+          "grid_n_significant": 26
+        },
+        "carbon_intensity": {
+          "n": 12486121,
+          "mse_bandwidth": 0.0602,
+          "primary_pm010": {
+            "tau": -0.000337,
+            "se": 0.000976,
+            "t_stat": -0.3449,
+            "p_value": 0.730203,
+            "n_obs": 1020252
+          },
+          "mse_optimal": {
+            "tau": -0.001056,
+            "se": 0.001221,
+            "t_stat": -0.8647,
+            "p_value": 0.387218,
+            "n_obs": 643504
+          },
+          "grid_n": 26,
+          "grid_n_negative": 12,
+          "grid_n_significant": 3
+        }
+      }
+    },
+    "fixed_139k_placebo": {
+      "label": "fixed_139k_placebo",
+      "n_total": 12486121,
+      "exclude_works": true,
+      "outcomes": {
+        "bidder_count": {
+          "n": 6805410,
+          "mse_bandwidth": 0.057,
+          "primary_pm010": {
+            "tau": 0.332589,
+            "se": 0.061155,
+            "t_stat": 5.4385,
+            "p_value": 0.0,
+            "n_obs": 488777
+          },
+          "mse_optimal": {
+            "tau": 0.280176,
+            "se": 0.080011,
+            "t_stat": 3.5017,
+            "p_value": 0.000462,
+            "n_obs": 274066
+          },
+          "grid_n": 26,
+          "grid_n_negative": 0,
+          "grid_n_significant": 24
+        },
+        "carbon_intensity": {
+          "n": 12486121,
+          "mse_bandwidth": 0.05,
+          "primary_pm010": {
+            "tau": 0.002482,
+            "se": 0.001277,
+            "t_stat": 1.9445,
+            "p_value": 0.051837,
+            "n_obs": 708607
+          },
+          "mse_optimal": {
+            "tau": 0.008368,
+            "se": 0.001816,
+            "t_stat": 4.607,
+            "p_value": 4e-06,
+            "n_obs": 357507
+          },
+          "grid_n": 26,
+          "grid_n_negative": 8,
+          "grid_n_significant": 5
+        }
+      }
+    },
+    "fixed_139k_with_works": {
+      "label": "fixed_139k_with_works",
+      "n_total": 13638933,
+      "exclude_works": false,
+      "outcomes": {
+        "bidder_count": {
+          "n": 7565709,
+          "mse_bandwidth": 0.0672,
+          "primary_pm010": {
+            "tau": 0.324384,
+            "se": 0.055541,
+            "t_stat": 5.8405,
+            "p_value": 0.0,
+            "n_obs": 553293
+          },
+          "mse_optimal": {
+            "tau": 0.148128,
+            "se": 0.067698,
+            "t_stat": 2.1881,
+            "p_value": 0.028666,
+            "n_obs": 380938
+          },
+          "grid_n": 26,
+          "grid_n_negative": 0,
+          "grid_n_significant": 25
+        },
+        "carbon_intensity": {
+          "n": 13638933,
+          "mse_bandwidth": 0.05,
+          "primary_pm010": {
+            "tau": 0.000729,
+            "se": 0.001182,
+            "t_stat": 0.6164,
+            "p_value": 0.537658,
+            "n_obs": 785053
+          },
+          "mse_optimal": {
+            "tau": 0.006284,
+            "se": 0.001681,
+            "t_stat": 3.7387,
+            "p_value": 0.000185,
+            "n_obs": 396060
+          },
+          "grid_n": 26,
+          "grid_n_negative": 19,
+          "grid_n_significant": 4
+        }
+      }
+    }
+  }
+}

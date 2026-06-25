@@ -1,0 +1,58 @@
+{
+  "cohort_map": {
+    "DK": 2016,
+    "FR": 2016,
+    "DE": 2016,
+    "HU": 2016,
+    "IE": 2016,
+    "LT": 2016,
+    "NL": 2016,
+    "PL": 2016,
+    "PT": 2016,
+    "RO": 2016,
+    "SK": 2016,
+    "FI": 2016,
+    "SE": 2016,
+    "EE": 2016,
+    "AT": 2017,
+    "BE": 2017,
+    "BG": 2017,
+    "CZ": 2017,
+    "ES": 2017,
+    "HR": 2017,
+    "IT": 2017,
+    "LV": 2017,
+    "NO": 2017,
+    "GR": 2018,
+    "LU": 2018,
+    "SI": 2018
+  },
+  "panels": {
+    "full_universe": {
+      "observed_bidders_only": false,
+      "gb_excluded": true,
+      "norway_as_2017_treated": true,
+      "external_never_treated_controls": 0,
+      "aggregate_att_pp": -9.014438929578382,
+      "n_group_time_cells": 3,
+      "permutation_p": 0.0575,
+      "permutation_n": 2000,
+      "permutation_null_mean": -0.7135668082857285,
+      "permutation_null_sd": 4.705170988388618,
+      "n_countries": 23
+    },
+    "coverage_stable_observed_bidders": {
+      "observed_bidders_only": true,
+      "gb_excluded": true,
+      "norway_as_2017_treated": true,
+      "external_never_treated_controls": 0,
+      "aggregate_att_pp": -17.01501120081304,
+      "n_group_time_cells": 3,
+      "permutation_p": 0.0005,
+      "permutation_n": 2000,
+      "permutation_null_mean": -0.2354519176746308,
+      "permutation_null_sd": 4.634111254230129,
+      "n_countries": 23
+    }
+  }
+}

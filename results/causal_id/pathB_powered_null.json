@@ -1,0 +1,23 @@
+{
+  "design": "EU 2014/24 transposition = 25-country staggered C&S multi-cohort (already a multi-event design)",
+  "pooled_att_pp": -4.35,
+  "ci95_pp": [
+    -14.34,
+    5.64
+  ],
+  "se_pp": 5.1,
+  "mde_80pct_power_pp": 14.3,
+  "refutes_original_claim": "PARTIALLY - lower bound -14.34 excludes the -15 to -17 pp end of the original claim, but -9 pp is inside the CI; the point estimate -4.4 is a null.",
+  "refutes_field_belief": "NO - CI admits policy-meaningful small reductions (-3 to -5 pp) AND increases; does not exclude a meaningful effect",
+  "precision_gap": "to exclude a +-3pp effect\u9700 SE<1.53pp ~ 11.1x more effective data; capped at 25 country clusters, infeasible",
+  "second_event_2018_eproc": {
+    "its_pp": 0.19,
+    "ci": [
+      -1.27,
+      1.65
+    ],
+    "note": "PRECISE null but common-shock ITS (confounded, weakly identified) - precise where not credibly identified; credible staggered design where not precise"
+  },
+  "more_events": "assembling commensurable non-EU staggered reforms infeasible (Fix 2 donor-commensurability wall: no cross-system bidder-count series on the TED definition)",
+  "verdict": "Path B does NOT reach a field-refuting tight zero. The null refutes the original large claim but stays a LIMITATION, not a powered headline (exactly the plan section-B3 contingency: cannot get CI below +-3pp)."
+}

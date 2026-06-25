@@ -1,0 +1,39 @@
+{
+  "recipe": "CAN 2015-2020; EU/EEA ex GB/CH/UK; dedup(notice,award); observed n_bidders>=1; dispatch-dated monthly window 2017-2020",
+  "rebuild_annual_single_bidder_rate": {
+    "2017": 0.306,
+    "2018": 0.3243,
+    "2019": 0.3315,
+    "2020": 0.3334
+  },
+  "rebuild_annual_observed_awards": {
+    "2017": 514167,
+    "2018": 547561,
+    "2019": 617183,
+    "2020": 645137
+  },
+  "rebuild_overall_single_bidder_rate_2017_2020": 0.3247,
+  "panel_rows_country_cpv_month": 44998,
+  "panel_n_countries": 31,
+  "panel_n_cpv_divisions": 45,
+  "extract_full_field_single_bidder_by_year": {
+    "2015": 0.2179,
+    "2016": 0.1717,
+    "2017": 0.1659,
+    "2018": 0.1738,
+    "2019": 0.1701,
+    "2020": 0.1607
+  },
+  "extract_observed_single_bidder_by_year": {
+    "2015": 0.3035,
+    "2016": 0.2772,
+    "2017": 0.305,
+    "2018": 0.3352,
+    "2019": 0.3296,
+    "2020": 0.3253
+  },
+  "extract_overall_full_field_single_bidder": 0.1776,
+  "extract_2018_eu_context_rows_artifact": 5576137,
+  "official_2018_can_notices": 232989,
+  "extract_2018_inflation_x": 23.9
+}

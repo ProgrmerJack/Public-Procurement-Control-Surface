@@ -1,0 +1,46 @@
+{
+  "n_tenders_total": 23216,
+  "n_tenders_identified": 2601,
+  "n_bidder_rows": 17405,
+  "green_share_of_bidders": 0.029550418638514743,
+  "green_share_of_winners": 0.035897215168079886,
+  "P_winner_green_identified": 0.3018069973087274,
+  "baseline_green_share_identified": 0.29769759722082884,
+  "clogit_green_coef": 0.02242329985659508,
+  "clogit_green_se": 0.04568689512971824,
+  "clogit_green_p": 0.623565251284335,
+  "clogit_odds_ratio": 1.0226765917149694,
+  "clogit_OR_ci95": [
+    0.9350801657510306,
+    1.118478874377294
+  ],
+  "mechanism_green_x_logpool": {
+    "interaction_coef": -0.005786611801219032,
+    "interaction_se": 0.08192087771182405,
+    "interaction_p": 0.9436869851246303
+  },
+  "green_x_carbon_intensity": {
+    "interaction_coef": 0.31373549967132747,
+    "se": 0.1547366320622062,
+    "p": 0.04260669733380826,
+    "reading": "positive = greener bidder wins MORE in higher-carbon tenders (the thesis mechanism)"
+  },
+  "highcarbon_subset": {
+    "n_tenders": 717,
+    "green_OR": 1.2185098847829592,
+    "OR_ci95": [
+      1.0377311225077097,
+      1.4307813528091906
+    ],
+    "p": 0.01586409308650648
+  },
+  "lowcarbon_subset": {
+    "n_tenders": 1884,
+    "green_OR": 0.9465981256443275,
+    "OR_ci95": [
+      0.8493076042232653,
+      1.0550335438157714
+    ],
+    "p": 0.32128533222963995
+  }
+}

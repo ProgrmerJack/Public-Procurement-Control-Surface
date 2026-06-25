@@ -1,0 +1,80 @@
+{
+  "design": "not-yet-treated C&S, coverage-stable, within-EU timing only",
+  "outcomes": {
+    "sb_rate": {
+      "description": "single-bidder share (n>=1 universe)",
+      "expected_direction": "decrease",
+      "att": -17.112722065816236,
+      "unit": "pp",
+      "n_cells": 3,
+      "identifying_years": [
+        2015,
+        2016,
+        2017
+      ],
+      "permutation_p": 0.0005,
+      "permutation_n": 2000
+    },
+    "three_plus": {
+      "description": "competitive (>=3 bidders) share",
+      "expected_direction": "increase",
+      "att": 16.287015572962147,
+      "unit": "pp",
+      "n_cells": 3,
+      "identifying_years": [
+        2015,
+        2016,
+        2017
+      ],
+      "permutation_p": 0.001,
+      "permutation_n": 2000
+    },
+    "mean_bidders": {
+      "description": "mean bidders (winsorised p99)",
+      "expected_direction": "increase",
+      "att": 7.006130964994596,
+      "unit": "bidders",
+      "n_cells": 3,
+      "identifying_years": [
+        2015,
+        2016,
+        2017
+      ],
+      "permutation_p": 0.027,
+      "permutation_n": 2000
+    }
+  },
+  "leave_one_country_out_sb_pp": {
+    "DK": -17.17,
+    "FR": -15.56,
+    "DE": -17.57,
+    "HU": -17.28,
+    "IE": -17.11,
+    "LT": -17.05,
+    "NL": -17.16,
+    "PL": -15.16,
+    "PT": -17.17,
+    "RO": -17.11,
+    "SK": -17.14,
+    "FI": -17.11,
+    "SE": -16.99,
+    "EE": -17.2,
+    "AT": -16.93,
+    "BE": -17.15,
+    "BG": -17.11,
+    "CZ": -17.15,
+    "ES": -16.71,
+    "HR": -17.11,
+    "IT": -16.84,
+    "LV": -17.11,
+    "NO": -16.96,
+    "GR": -15.7,
+    "LU": -17.11,
+    "SI": -7.75
+  },
+  "loo_range_pp": [
+    -17.57,
+    -7.75
+  ],
+  "2018_excluded_from_identification": true
+}

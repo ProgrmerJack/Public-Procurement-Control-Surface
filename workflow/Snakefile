@@ -4,13 +4,19 @@
 #
 # Reproducible analysis pipeline for the GPRD (Global Procurement Research
 # Dataset). The processed dataset (gprd_with_carbon.parquet) is available
-# directly from Zenodo (DOI: 10.5281/zenodo.19497883); re-running the full
+# directly from Zenodo (DOI: 10.5281/zenodo.19456216 (concept) / 10.5281/zenodo.20823936 (version)); re-running the full
 # acquisition pipeline is only required if you wish to rebuild from raw EU TED
 # XML data (>90 GB) and Colombia SECOP OCDS exports.
 #
+# The current output of this repository is the Scientific Data Data Descriptor
+# (Scientific_Data_Descriptor/). The `descriptor` target below builds it. The
+# `all`/`verify` targets and the causal/projection rules below reproduce the
+# earlier (superseded) analysis whose manuscript is in archive/old_manuscript_NC/.
+#
 # Usage (from repository root):
-#   snakemake -j 8 all          # Full pipeline
-#   snakemake -j 1 verify       # Claim-verification only
+#   snakemake -j 1 descriptor   # Build + verify the Data Descriptor (current output)
+#   snakemake -j 8 all          # Legacy full analysis pipeline
+#   snakemake -j 1 verify       # Legacy claim-verification
 #   snakemake --dag | dot -Tpdf > dag.pdf
 #
 # Requirements: Python >=3.10, packages in requirements.txt
@@ -24,7 +30,7 @@ from pathlib import Path
 RAW_DIR       = Path("Data/raw")
 PROCESSED_DIR = Path("Data/processed")
 RESULTS_DIR   = Path("results")
-FIGURES_DIR   = Path("NC_Submission/Main_Figures")
+FIGURES_DIR   = Path("archive/old_manuscript_NC/NC_Submission/Main_Figures")
 
 # ---------------------------------------------------------------------------
 # Primary targets
@@ -47,10 +53,20 @@ rule all:
         FIGURES_DIR / "Fig3_country_forest.pdf",
         FIGURES_DIR / "Fig4_mediation.pdf",
 
-rule verify:
-    """Verify all headline quantitative claims against stored result files."""
+rule descriptor:
+    """Build and verify the Scientific Data Data Descriptor (current output)."""
+    input:
+        PROCESSED_DIR / "gprd_with_carbon.parquet"
     shell:
-        "python verify_all_claims.py"
+        "python Scientific_Data_Descriptor/build_partA_panel.py && "
+        "python Scientific_Data_Descriptor/si_make_tables.py && "
+        "python Scientific_Data_Descriptor/make_figures.py && "
+        "python Scientific_Data_Descriptor/verify_claims.py"
+
+rule verify:
+    """Verify all headline quantitative claims against stored result files (legacy)."""
+    shell:
+        "python archive/old_manuscript_NC/verify_all_claims.py"
 
 # ---------------------------------------------------------------------------
 # STAGE 1: Data processing (skip if using Zenodo dataset)
@@ -101,7 +117,7 @@ rule core_stats:
         RESULTS_DIR / "core_stats/verified_statistics.json",
         RESULTS_DIR / "eu_ets/eu_context_si_tables.json"
     shell:
-        "python reproduce_manuscript_claims.py"
+        "python archive/old_manuscript_NC/reproduce_manuscript_claims.py"
 
 # ---------------------------------------------------------------------------
 # STAGE 3: Causal identification

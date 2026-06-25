@@ -1,0 +1,51 @@
+{
+  "design": "monthly not-yet-treated C&S on raw-TED-rebuilt panel (2015-2019, 25 countries, 141 cells)",
+  "finding": "Paper headline (-9 to -17pp REDUCTION in single-bidding) does NOT replicate; rebuilt estimate is +4.7 to +5.4pp (no reduction / slight increase) across all specs incl paper own cohorts",
+  "specs": {
+    "eurlex_months_all": {
+      "att_pp": 5.41,
+      "ci": [
+        0.36,
+        9.81
+      ],
+      "z": 2.14,
+      "cells": 141
+    },
+    "exact_date_only": {
+      "att_pp": 4.72,
+      "ci": [
+        -0.88,
+        10.28
+      ],
+      "z": 1.55,
+      "cells": 138
+    },
+    "exclude_2018": {
+      "att_pp": 5.41,
+      "ci": [
+        0.36,
+        9.81
+      ],
+      "z": 2.14,
+      "cells": 141
+    },
+    "paper_cohort_years_apr_onset": {
+      "att_pp": 4.71,
+      "ci": [
+        -2.25,
+        17.98
+      ],
+      "z": 0.91,
+      "cells": 34
+    }
+  },
+  "comp3_share_att_pp": -5.4,
+  "caveats": [
+    "pre-period starts ~2015-03 (mid-2015 schema transition); late-2015 cohorts short pre",
+    "OFFERS field has extreme values -> mean-offers unreliable, but single-bidder(==1) robust",
+    "simplified not-yet-treated estimator + country block bootstrap, not full doubly-robust C&S",
+    "2019-10..12 sparse",
+    "monthly cells noisy"
+  ],
+  "implication": "Central causal claim of the paper is NOT robust to rebuilding the panel from raw TED. This is an author-level decision, not an autonomous edit."
+}

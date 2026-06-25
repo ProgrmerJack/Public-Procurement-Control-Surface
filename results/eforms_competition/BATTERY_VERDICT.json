@@ -1,0 +1,19 @@
+{
+  "decision": "FAIL the pre-registered rule -> HOLD headline, stay Path C",
+  "overall_result_robust": "Competition is GREEN-NEUTRAL on average: within-tender green OR=1.02 [0.94,1.12], p=0.62. Well-powered (2,594 tenders). This survives and is reportable.",
+  "high_carbon_green_selection": "NOT ROBUST. Apparent green x carbon interaction (+0.083, asymptotic p=0.0035) FAILS the battery:",
+  "failures": {
+    "1_reweighting": "reweighted to representative country x CPV population -> coef REVERSES to -0.056, p_1sided=0.75 (null).",
+    "2_country_concentration": "identified sample 53% Sweden, 75% Nordic (early-adopter eForms+SBTi countries) - not representative.",
+    "3_placebo_invalid_spec": "random green attribute (same 3% rate) is significant in 15/50 draws (~30% false-positive rate) -> the firm-clustered within-tender interaction with few green clusters manufactures significance; asymptotic p-values untrustworthy.",
+    "4_within_country": "Sweden +0.218 p=0.001, ex-Sweden +0.144 p=0.046 - both positive but inference invalid per placebo; ex-Sweden right at threshold a 30%-FPR spec routinely hits."
+  },
+  "verdict": "Per PREREGISTRATION.md decision rule (requires p<0.05 reweighted AND not >50%% one country AND placebo null): FAILS on all three. The high-carbon green-selection effect does NOT become the headline. The eForms first-look is reported HONESTLY as: competition green-neutral overall (robust null); a suggestive high-carbon signal that does not survive representativeness/placebo. Paper stays Path C; this strengthens it as a clean full-bid-set first-look, not an NC headline.",
+  "what_the_discipline_prevented": "Same fingerprint as -17pp and RDD: subset significance that collapses under proper scrutiny. Pre-registration + placebo caught it BEFORE headline integration.",
+  "INDEPENDENT_PERMUTATION_CHECK": {
+    "method": "firm-level green-label permutation (1000 draws), within-tender green x carbon coef - immune to cluster-SE inflation",
+    "ALL": "real +0.079, perm p_1sided=0.165 (null mean -0.001 sd 0.085) -> NOT significant",
+    "ex_Sweden": "real +0.045, perm p=0.293",
+    "conclusion": "CONFIRMS the kill: high-carbon green-selection is noise under valid inference; the asymptotic p=0.0035 was a spec artifact (placebo 30%% FPR corroborated). Conclusion held under a test built to overturn it -> genuine, not rushed confirmation."
+  }
+}

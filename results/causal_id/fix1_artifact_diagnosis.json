@@ -1,0 +1,40 @@
+{
+  "source_of_-17pp": {
+    "script": "scripts/causal_id/did_coverage_stable_nyt.py",
+    "data": "Data/processed/gprd_with_carbon.parquet",
+    "field": "n_bidders -> single_bidder:=(n_bidders==1), country x year, not-yet-treated",
+    "result_file": "results/causal_id/did_coverage_stable_nyt.json",
+    "values": {
+      "full_universe": "-9.01pp p=0.058",
+      "coverage_stable": "-17.02pp p=0.0005"
+    }
+  },
+  "artifact_evidence": {
+    "sb_rate_by_year_parquet_vs_rawTED": {
+      "2015": [
+        0.074,
+        0.248
+      ],
+      "2016": [
+        0.07,
+        0.25
+      ],
+      "2017": [
+        0.099,
+        0.297
+      ],
+      "2018": [
+        0.251,
+        0.321
+      ],
+      "2019": [
+        0.112,
+        0.338
+      ]
+    },
+    "note": "parquet n_bidders SB rate is ~0.07-0.10 pre-2018 vs true raw-TED ~0.25; spikes to 0.25 in 2018 (corrupted vintage) then reverts. Row counts confirm 2018 corruption (e.g. DE 2018 parquet n=238,367 vs raw award-with-offers=4,448).",
+    "country_year_corr_r": 0.826,
+    "means": "parquet 0.222 vs raw 0.226 (agree at cell level)",
+    "diagnosis": "The -17pp is driven by COMPOSITION/COVERAGE bias in which contracts have an observed n_bidders in the degraded extract (biased low-SB pre-2018, corrupted-inflated 2018). The not-yet-treated design on this broken field manufactures the -17pp. Rebuilding from authoritative raw-TED OFFERS_RECEIVED_NUMBER removes the bias and the effect reverses to +9.4pp (canonical C&S)."
+  }
+}
