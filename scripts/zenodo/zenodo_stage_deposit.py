@@ -20,29 +20,31 @@ import os, sys, json
 from pathlib import Path
 import requests
 
-ROOT = Path(__file__).resolve().parent
-DEPOSIT = ROOT / "Scientific_Data_Descriptor" / "deposit"
+ROOT = Path(__file__).resolve().parents[2]
+DEPOSIT = ROOT / "deposit"
 BASE = "https://zenodo.org/api"
-PARENT_RECID = "20668774"   # current published latest version (concept 19456216)
+PARENT_RECID = "20823936"   # current published latest version (concept 19456216)
 PUBLISH = ("--publish" in sys.argv) and (os.environ.get("ZENODO_PUBLISH") == "yes")
 
-TITLE = ("A harmonised EU public-procurement competition resource: a raw-TED "
-         "competition-carbon panel (2012-2023) with recovered bidder counts, and a "
-         "full-bid-set tender corpus from eForms (2024-2025)")
+TITLE = ("Recovered TED bidder counts and full-bid-set eForms tenderers for European public "
+         "procurement")
 DESCRIPTION = (
     "<p>Two-part open resource accompanying the <i>Scientific Data</i> Data Descriptor. "
     "<b>Part A</b>: a contract-level EU public-procurement competition-carbon dataset "
-    "(21.6M carbon-mapped contracts of a 25.1M de-duplicated total; 27 territories) rebuilt "
-    "from the harmonised TED contract-award-notice layer, with a deterministically rebuilt "
-    "country x CPV x month single-bidder/competition panel (2017-2020), a CPV-EXIOBASE carbon "
-    "weight validated against Eurostat (Spearman rho=0.82), Directive 2014/24 transposition dates, "
-    "and an EU-ETS emitter crosswalk. <b>Part B</b>: the first EU-wide full-bid-set corpus parsed "
-    "from eForms (302,555 single-award notices, 2024-2025) giving the complete ranked tenderer set "
-    "per award, plus a pre-registered worked example (protocol + verdict). Each file is an "
-    "individually downloadable object. See DEPOSIT_README.md for the full manifest and dictionary.</p>")
+    "(16.97M de-duplicated, carbon-mapped contracts; 33 territories) rebuilt directly from the raw "
+    "TED contract-award-notice files. Rebuilding from source eliminates a 2018 ingestion artifact "
+    "(~25x inflation) present in processed extracts and recovers the offers-received count across "
+    "a 2018 schema field-rename. Includes a deterministically rebuilt country x CPV x month "
+    "single-bidder/competition panel (2017-2020), a source-verified winner name, a CPV-EXIOBASE "
+    "carbon weight validated against Eurostat (Spearman rho=0.82), Directive 2014/24 transposition "
+    "dates, and an EU-ETS emitter crosswalk. <b>Part B</b>: among the first publicly released "
+    "EU-wide full-bid-set corpora parsed from eForms (302,555 single-award notices, 2024-2025) "
+    "giving the complete ranked tenderer set per award, plus a pre-registered worked example "
+    "(protocol + verdict). Each file is an individually downloadable object. See DEPOSIT_README.md "
+    "for the full manifest and dictionary.</p>")
 
 FILES = [
-    "ted_awards_2012_2023.parquet",
+    "procurement_awards_2012_2023.parquet",
     "competition_panel_country_cpv_month.parquet",
     "cpv_exiobase_crosswalk.csv",
     "transposition_dates.csv",

@@ -11,34 +11,26 @@
   {
    "country": "PL",
    "source": "TED",
-   "n": 2880168,
-   "n_obs": 1868631,
-   "sb": 0.52,
-   "comp3": 0.282
+   "n": 1792370,
+   "n_obs": 1528347,
+   "sb": 0.492,
+   "comp3": 0.298
   },
   {
    "country": "FR",
    "source": "TED",
-   "n": 2392765,
-   "n_obs": 1376265,
-   "sb": 0.187,
-   "comp3": 0.614
+   "n": 1443098,
+   "n_obs": 1097447,
+   "sb": 0.177,
+   "comp3": 0.632
   },
   {
-   "country": "ES",
+   "country": "RO",
    "source": "TED",
-   "n": 1384496,
-   "n_obs": 498393,
-   "sb": 0.287,
-   "comp3": 0.558
-  },
-  {
-   "country": "IT",
-   "source": "TED",
-   "n": 928848,
-   "n_obs": 358647,
-   "sb": 0.325,
-   "comp3": 0.477
+   "n": 984593,
+   "n_obs": 652759,
+   "sb": 0.254,
+   "comp3": 0.58
   },
   {
    "country": "GB",
@@ -51,170 +43,226 @@
   {
    "country": "DE",
    "source": "TED",
-   "n": 815506,
-   "n_obs": 566009,
-   "sb": 0.199,
-   "comp3": 0.622
+   "n": 750932,
+   "n_obs": 624097,
+   "sb": 0.213,
+   "comp3": 0.616
   },
   {
-   "country": "CZ",
+   "country": "ES",
    "source": "TED",
-   "n": 723161,
-   "n_obs": 345196,
-   "sb": 0.447,
-   "comp3": 0.36
-  },
-  {
-   "country": "GR",
-   "source": "TED",
-   "n": 562251,
-   "n_obs": 106687,
-   "sb": 0.398,
-   "comp3": 0.435
+   "n": 426811,
+   "n_obs": 320849,
+   "sb": 0.267,
+   "comp3": 0.581
   },
   {
    "country": "SI",
    "source": "TED",
-   "n": 438956,
-   "n_obs": 278104,
-   "sb": 0.506,
-   "comp3": 0.297
+   "n": 322045,
+   "n_obs": 243614,
+   "sb": 0.535,
+   "comp3": 0.284
   },
   {
-   "country": "LT",
+   "country": "IT",
    "source": "TED",
-   "n": 423731,
-   "n_obs": 221325,
-   "sb": 0.24,
-   "comp3": 0.621
+   "n": 308368,
+   "n_obs": 238098,
+   "sb": 0.319,
+   "comp3": 0.482
   },
   {
-   "country": "LV",
+   "country": "CZ",
    "source": "TED",
-   "n": 279714,
-   "n_obs": 188528,
-   "sb": 0.252,
-   "comp3": 0.613
+   "n": 282663,
+   "n_obs": 238766,
+   "sb": 0.448,
+   "comp3": 0.362
   },
   {
-   "country": "PT",
+   "country": "BG",
    "source": "TED",
-   "n": 258477,
-   "n_obs": 77407,
-   "sb": 0.296,
-   "comp3": 0.546
+   "n": 217137,
+   "n_obs": 168095,
+   "sb": 0.342,
+   "comp3": 0.506
   },
   {
    "country": "SE",
    "source": "TED",
-   "n": 253196,
-   "n_obs": 188206,
-   "sb": 0.098,
-   "comp3": 0.788
+   "n": 196055,
+   "n_obs": 167737,
+   "sb": 0.082,
+   "comp3": 0.814
   },
   {
-   "country": "FI",
+   "country": "LT",
    "source": "TED",
-   "n": 202710,
-   "n_obs": 113399,
-   "sb": 0.128,
-   "comp3": 0.726
+   "n": 167275,
+   "n_obs": 142373,
+   "sb": 0.253,
+   "comp3": 0.586
+  },
+  {
+   "country": "LV",
+   "source": "TED",
+   "n": 166116,
+   "n_obs": 150758,
+   "sb": 0.223,
+   "comp3": 0.634
   },
   {
    "country": "HU",
    "source": "TED",
-   "n": 181626,
-   "n_obs": 141649,
-   "sb": 0.388,
-   "comp3": 0.402
-  },
-  {
-   "country": "DK",
-   "source": "TED",
-   "n": 180436,
-   "n_obs": 82676,
-   "sb": 0.193,
-   "comp3": 0.621
-  },
-  {
-   "country": "BE",
-   "source": "TED",
-   "n": 158956,
-   "n_obs": 103645,
-   "sb": 0.216,
-   "comp3": 0.562
-  },
-  {
-   "country": "SK",
-   "source": "TED",
-   "n": 149240,
-   "n_obs": 70822,
-   "sb": 0.283,
-   "comp3": 0.505
-  },
-  {
-   "country": "NO",
-   "source": "TED",
-   "n": 125138,
-   "n_obs": 65254,
-   "sb": 0.121,
-   "comp3": 0.701
-  },
-  {
-   "country": "EE",
-   "source": "TED",
-   "n": 114437,
-   "n_obs": 66251,
-   "sb": 0.232,
-   "comp3": 0.574
+   "n": 116182,
+   "n_obs": 97215,
+   "sb": 0.379,
+   "comp3": 0.409
   },
   {
    "country": "NL",
    "source": "TED",
-   "n": 98374,
-   "n_obs": 70356,
-   "sb": 0.185,
-   "comp3": 0.636
+   "n": 111208,
+   "n_obs": 99350,
+   "sb": 0.154,
+   "comp3": 0.692
   },
   {
-   "country": "IE",
+   "country": "BE",
    "source": "TED",
-   "n": 96838,
-   "n_obs": 49467,
-   "sb": 0.126,
-   "comp3": 0.795
+   "n": 104096,
+   "n_obs": 83405,
+   "sb": 0.198,
+   "comp3": 0.591
+  },
+  {
+   "country": "FI",
+   "source": "TED",
+   "n": 102471,
+   "n_obs": 73472,
+   "sb": 0.123,
+   "comp3": 0.733
+  },
+  {
+   "country": "HR",
+   "source": "TED",
+   "n": 100620,
+   "n_obs": 87415,
+   "sb": 0.291,
+   "comp3": 0.408
+  },
+  {
+   "country": "DK",
+   "source": "TED",
+   "n": 93889,
+   "n_obs": 67363,
+   "sb": 0.166,
+   "comp3": 0.66
+  },
+  {
+   "country": "GR",
+   "source": "TED",
+   "n": 90429,
+   "n_obs": 69759,
+   "sb": 0.371,
+   "comp3": 0.461
+  },
+  {
+   "country": "PT",
+   "source": "TED",
+   "n": 70966,
+   "n_obs": 47574,
+   "sb": 0.286,
+   "comp3": 0.561
   },
   {
    "country": "AT",
    "source": "TED",
-   "n": 91305,
-   "n_obs": 66762,
-   "sb": 0.255,
-   "comp3": 0.58
+   "n": 60416,
+   "n_obs": 48645,
+   "sb": 0.225,
+   "comp3": 0.613
   },
   {
-   "country": "CH",
+   "country": "NO",
    "source": "TED",
-   "n": 51854,
-   "n_obs": 46104,
-   "sb": 0.106,
-   "comp3": 0.745
+   "n": 59405,
+   "n_obs": 50142,
+   "sb": 0.111,
+   "comp3": 0.716
+  },
+  {
+   "country": "EE",
+   "source": "TED",
+   "n": 55726,
+   "n_obs": 44226,
+   "sb": 0.223,
+   "comp3": 0.581
+  },
+  {
+   "country": "SK",
+   "source": "TED",
+   "n": 54963,
+   "n_obs": 45309,
+   "sb": 0.285,
+   "comp3": 0.508
+  },
+  {
+   "country": "IE",
+   "source": "TED",
+   "n": 45755,
+   "n_obs": 39950,
+   "sb": 0.097,
+   "comp3": 0.829
+  },
+  {
+   "country": "MK",
+   "source": "TED",
+   "n": 15303,
+   "n_obs": 9220,
+   "sb": 0.245,
+   "comp3": 0.594
   },
   {
    "country": "LU",
    "source": "TED",
-   "n": 23553,
-   "n_obs": 15267,
-   "sb": 0.214,
-   "comp3": 0.594
+   "n": 15136,
+   "n_obs": 13209,
+   "sb": 0.196,
+   "comp3": 0.609
+  },
+  {
+   "country": "CY",
+   "source": "TED",
+   "n": 10444,
+   "n_obs": 8554,
+   "sb": 0.343,
+   "comp3": 0.492
+  },
+  {
+   "country": "MT",
+   "source": "TED",
+   "n": 8583,
+   "n_obs": 6617,
+   "sb": 0.167,
+   "comp3": 0.656
   },
   {
    "country": "IS",
    "source": "TED",
-   "n": 4490,
-   "n_obs": 4142,
-   "sb": 0.084,
-   "comp3": 0.812
+   "n": 3484,
+   "n_obs": 3130,
+   "sb": 0.068,
+   "comp3": 0.835
+  },
+  {
+   "country": "LI",
+   "source": "TED",
+   "n": 480,
+   "n_obs": 461,
+   "sb": 0.156,
+   "comp3": 0.623
   }
  ],
  "eforms_total": {

@@ -17,20 +17,19 @@ ROOT = Path(__file__).resolve().parents[2]
 PAPER = ROOT / "Scientific_Data_Descriptor"
 RESD = ROOT / "results" / "descriptor"; RESD.mkdir(parents=True, exist_ok=True)
 OUT = PAPER / "si_tables"; OUT.mkdir(exist_ok=True)
-CONTRACTS = ROOT / "Data" / "processed" / "gprd_with_carbon.parquet"
-CROSSWALK = ROOT / "Data" / "reference" / "cpv_exiobase_crosswalk.csv"
+CONTRACTS = ROOT / "deposit" / "procurement_awards_2012_2023.parquet"   # rebuilt flagship file
+CROSSWALK = ROOT / "deposit" / "cpv_exiobase_crosswalk.csv"
 VALIDATION = ROOT / "results" / "within_sector" / "exiobase_eurostat_validation_v2.json"
 EFORMS = ROOT / "deposit" / "eforms_bids_2024_2025.jsonl"
 
 
 def compute_si_data():
     """Per-territory competition stats and eForms disclosure coverage."""
-    src = lambda c: "SECOP" if c == "CO" else ("ContractsFinder" if c == "GB" else "TED")
-    df = pq.read_table(CONTRACTS, columns=["country", "n_bidders", "single_bidder"]).to_pandas()
+    df = pq.read_table(CONTRACTS, columns=["country", "n_bidders", "source"]).to_pandas()
     per_country = []
     for c, g in df.groupby("country"):
         obs = g[g["n_bidders"] >= 1]
-        per_country.append(dict(country=c, source=src(c), n=len(g), n_obs=len(obs),
+        per_country.append(dict(country=c, source=g["source"].mode().iat[0], n=len(g), n_obs=len(obs),
             sb=round((obs["n_bidders"] == 1).mean(), 3) if len(obs) else None,
             comp3=round((obs["n_bidders"] >= 3).mean(), 3) if len(obs) else None))
     per_country.sort(key=lambda r: -r["n"])
@@ -82,15 +81,15 @@ def main():
 
     # S5 per-CPV-division statistics
     cw = {r["cpv_division"]: r["cpv_description"] for r in csv.DictReader(open(CROSSWALK, encoding="utf-8"))}
-    g = pq.read_table(CONTRACTS, columns=["cpv_division", "n_bidders", "carbon_intensity_kg_usd", "country"]).to_pandas()
-    g = g[~g["country"].isin(["CO", "GB"])]
+    g = pq.read_table(CONTRACTS, columns=["cpv_division", "n_bidders", "carbon_kg_per_usd", "source"]).to_pandas()
+    g = g[g["source"] == "TED"]
     cpv_rows = []
     for cpv, grp in g.groupby("cpv_division"):
         if len(grp) < 500:
             continue
         obs = grp[grp["n_bidders"] >= 1]
         sb = round((obs["n_bidders"] == 1).mean(), 3) if len(obs) else None
-        carb = grp["carbon_intensity_kg_usd"].dropna()
+        carb = grp["carbon_kg_per_usd"].dropna()
         cpv_rows.append((str(cpv), cw.get(str(cpv), ""), len(grp), sb,
                          round(carb.median(), 3) if len(carb) else None))
     cpv_rows.sort(key=lambda r: -r[2])

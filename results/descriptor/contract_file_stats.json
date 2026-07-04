@@ -1,0 +1,31 @@
+{
+  "total_contracts": 16968922,
+  "source_counts": {
+    "ContractsFinder": 818707,
+    "SECOP": 7973196,
+    "TED": 8177019
+  },
+  "ted_awards": 8177019,
+  "ted_bidder_count_populated": 6474567,
+  "ted_obs_ge1": 6467956,
+  "ted_zero_bidders": 6611,
+  "ted_single_bidder_ct": 1990377,
+  "ted_winner_name_present": 6919574,
+  "ted_is_framework": 1635075,
+  "id_award_unique": true,
+  "per_year_ted": {
+    "2012": 461707,
+    "2013": 465151,
+    "2014": 487841,
+    "2015": 497602,
+    "2016": 489181,
+    "2017": 612761,
+    "2018": 673762,
+    "2019": 770746,
+    "2020": 847156,
+    "2021": 947778,
+    "2022": 954651,
+    "2023": 968683
+  },
+  "ted_single_bidder_rate_obs": 0.3077
+}

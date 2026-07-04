@@ -1,132 +1,33 @@
-# Data Documentation for Reproduction
+# Processed data
 
-## Overview
+Intermediate parquet files for the *Scientific Data* Data Descriptor **"Recovered TED bidder counts
+and full-bid-set eForms tenderers for European public procurement."** These are local build inputs
+(large, gitignored); the published, citable dataset is on Zenodo (concept DOI
+[10.5281/zenodo.19456216](https://doi.org/10.5281/zenodo.19456216)).
 
-This folder contains all processed data necessary to reproduce the findings in:
+## Key files
 
-**"Governance Reform Unlocks Decarbonization Dead Zones in Public Procurement"**
+| File | Role |
+|------|------|
+| `eu_ted/yearly/ted_{YEAR}_CAN.parquet` | Per-year TED contract-award-notice (CAN) parquet — the raw input to the rebuild. Note: these are ingestion *batches*, not notice years (a file may contain notices dispatched in other years); the rebuild dates each award by its dispatch date. |
+| `eu_ted/eu_ted_harmonized.parquet` | Full harmonised TED layer (superseded as the flagship by the raw rebuild). |
 
-Total processed data: ~12 GB
-Total contracts: 21,612,129
-Countries: 27
-Years: 2012-2023
-
----
-
-## Quick Start: Reproduce All Claims
-
-Run the reproduction script to confirm all manuscript claims:
+## Building the deposited contract file
 
 ```bash
-python verify_all_claims.py
+python scripts/descriptor/build_contract_file.py   # -> deposit/procurement_awards_2012_2023.parquet
+python scripts/descriptor/build_partA_panel.py     # -> results/descriptor/ (panel + validation)
+python scripts/descriptor/verify_claims.py         # 41/41 claim checks vs the deposit
 ```
 
-This verifies all 36 quantitative claims against the current repository results.
+The rebuild unions the yearly CAN files, de-duplicates on `notice_id × award_id`, dates by dispatch
+date, attaches the CPV→EXIOBASE carbon weight, and merges the flagged non-TED sources — yielding
+16.97M de-duplicated, carbon-mapped contracts (8.18M TED + 7.97M SECOP + 0.82M UK). This eliminates a
+2018 ingestion vintage that inflated the earlier processed extract. See
+[`../../Scientific_Data_Descriptor/DEPOSIT_README.md`](../../Scientific_Data_Descriptor/DEPOSIT_README.md)
+for the full data dictionary and validation summary.
 
----
-
-## Primary Analysis File
-
-### `gprd_with_carbon.parquet` (794 MB)
-**The main dataset used for all manuscript analyses.**
-
-Contains 21,612,129 contracts with:
-- Contract metadata (ID, country, year, value_eur)
-- Competition variables (n_bidders, single_bidder)
-- Carbon intensity (carbon_intensity_kg_usd)
-- CPV product codes
-
-**Key Statistics (verified 2026-01-27):**
-| Metric | Value |
-|--------|-------|
-| Single-bidder mean | 0.3371 kg CO2/USD |
-| Multi-bidder mean | 0.2936 kg CO2/USD |
-| Carbon premium | +14.8% |
-| t-statistic | 333.7 |
-| p-value | < 10^-300 |
-| Cohen's d | 0.228 |
-
-**U-CURVE BREAKTHROUGH (verified 2026-01-27):**
-| Contract Size | N | Premium | Cohen's d |
-|--------------|---|---------|-----------|
-| <€10k | 7.8M | +50.2% | 0.75 (LARGE) |
-| €10k-200k | 5.6M | +12.5% | 0.20 |
-| >€200k | 8.2M | -7.1% | -0.12 |
-
----
-
-## Source Data
-
-### EU TED (Tenders Electronic Daily)
-- Source: https://ted.europa.eu/TED/browse/browseByMap.do
-- Files: `eu_ted/eu_ted_harmonized.parquet` + `eu_ted/yearly/*.parquet`
-- Total: 2.4 GB
-- Coverage: 27 EU/EEA countries, 2006-2023
-
-### OCDS (Open Contracting Data Standard)
-- Colombia SECOP: `ocds/colombia_harmonized.parquet` (1.9 GB)
-  - Source: https://www.datos.gov.co
-  - 7.9 million contracts
-- UK Contracts Finder: `ocds/uk_harmonized.parquet` (254 MB)
-  - Source: https://www.gov.uk/contracts-finder
-  - 819,000 contracts
-
-### EXIOBASE 3.8.2 Carbon Data
-- Source: https://doi.org/10.5281/zenodo.5589597
-- Files: `exiobase/carbon_factors_by_year.parquet`, `exiobase/cpv_carbon_factors.parquet`
-- Provides carbon intensity (kg CO2e/USD) by industry sector
-- Used to map CPV codes to carbon intensity
-
----
-
-## Data Provenance
-
-All data processing is documented in:
-- `DATA_PROVENANCE.json` - Full lineage of data transformations
-- `DATA_QUALITY_REPORT.json` - Quality checks and coverage statistics
-
----
-
-## Reproduction Commands
-
-```bash
-# Load main dataset
-import pandas as pd
-df = pd.read_parquet("Data/processed/gprd_with_carbon.parquet")
-
-# Verify key statistics
-from scipy import stats
-single = df[df['single_bidder'] == True]['carbon_intensity_kg_usd']
-multi = df[df['single_bidder'] == False]['carbon_intensity_kg_usd']
-print(f"Carbon premium: {(single.mean() - multi.mean()) / multi.mean() * 100:.1f}%")
-```
-
----
-
-## File Checksums (SHA-256)
-
-Run `python scripts/verify_checksums.py` to validate data integrity.
-
----
-
-## Citation
-
-If using this data, please cite:
-
-```bibtex
-@dataset{ashuraliyev2026replication_archive,
-  author = {Ashuraliyev, Abduxoliq},
-  title = {Replication Archive for: Governance Reform Unlocks Decarbonization Dead Zones in Public Procurement},
-  year = {2026},
-  publisher = {Zenodo},
-  doi = {10.5281/zenodo.20098951}
-}
-```
-
----
-
-## Data License
-
-- Procurement data: Open Government License / Public Domain
-- EXIOBASE data: CC-BY 4.0
-- Processed dataset: CC-BY 4.0
+> **Note.** Earlier processed extracts (e.g. `gprd_with_carbon.parquet`) and the causal analysis
+> scripts under `scripts/causal_id/` and `scripts/dead_zones/` are exploratory work that predates and
+> is superseded by this Data Descriptor. They are not part of the deposited resource; the descriptor
+> and `CLAIMS_INDEX.md` define the current, reproducible outputs.

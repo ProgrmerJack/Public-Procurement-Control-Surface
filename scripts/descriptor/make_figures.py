@@ -51,35 +51,19 @@ def fig1():
 
 
 def fig2():
-    fig, (a, b) = plt.subplots(1, 2, figsize=(8.4, 3.6))
-    # (A) carbon validation scatter
+    # Carbon-weight validation only. The eForms worked-example statistics live in SI S12,
+    # not the main text (Scientific Data: descriptors validate reuse, not test hypotheses).
+    fig, a = plt.subplots(1, 1, figsize=(5.2, 4.0))
     tab = json.loads((ROOT / "results" / "within_sector" / "exiobase_eurostat_validation_v2.json").read_text())["table"]
     pw = np.array([t["paper_weight"] for t in tab]); em = np.array([t["eurostat_measured"] for t in tab])
-    a.scatter(pw, em, s=22, color=GREEN, alpha=0.7, edgecolor="k", lw=0.3)
+    a.scatter(pw, em, s=26, color=GREEN, alpha=0.75, edgecolor="k", lw=0.3)
     a.set_xscale("log"); a.set_yscale("log")
     a.set_xlabel("EXIOBASE sector weight (kg CO$_2$e/USD)")
     a.set_ylabel("Eurostat measured intensity (kg/€ GVA)")
-    a.set_title("A  Carbon weights track measured Eurostat intensities\n(34 sectors, Spearman ρ = 0.82)",
+    a.set_title("Carbon weights track measured Eurostat intensities\n(34 sectors, Spearman ρ = 0.82)",
                 fontsize=8.5, loc="left")
-    # (B) eForms within-tender green-wins forest (overall null + caveated high-carbon)
-    rows = [("Overall (2,601 tenders)", 1.02, 0.94, 1.12, BLUE),
-            ("High-carbon subset", 1.22, 1.04, 1.43, GREY),
-            ("  → reweighted to pop.", 0.95, 0.75, 1.20, GREY),
-            ("  → placebo FPR ~30%", None, None, None, RED)]
-    y = np.arange(len(rows))[::-1]
-    for yi, (lab, orr, lo, hi, c) in zip(y, rows):
-        if orr is None:
-            continue
-        b.plot([lo, hi], [yi, yi], color=c, lw=2)
-        b.plot(orr, yi, "o", color=c, ms=6)
-    b.axvline(1.0, color="k", lw=0.8, ls=":")
-    b.set_yticks(y); b.set_yticklabels([r[0] for r in rows], fontsize=7.5)
-    b.set_xlabel("Within-tender odds ratio of winning (greener bidder)")
-    b.set_title("B  eForms full-bid-set: competition is green-neutral overall\n(high-carbon signal not robust)",
-                fontsize=8.5, loc="left")
-    b.set_xlim(0.6, 1.6)
-    fig.tight_layout(); fig.savefig(FIG / "fig2_carbon_and_eforms.pdf", bbox_inches="tight")
-    fig.savefig(FIG / "fig2_carbon_and_eforms.png", bbox_inches="tight", dpi=150); plt.close(fig)
+    fig.tight_layout(); fig.savefig(FIG / "fig2_carbon_validation.pdf", bbox_inches="tight")
+    fig.savefig(FIG / "fig2_carbon_validation.png", bbox_inches="tight", dpi=150); plt.close(fig)
     print("wrote fig2")
 
 

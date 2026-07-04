@@ -33,8 +33,8 @@ All scripts should be run from the **repository root**:
 
 ```bash
 cd Public-Procurement-Control-Surface
-python scripts/causal_id/staggered_did.py
-python scripts/projections/forward_projection_model.py
+python scripts/descriptor/build_contract_file.py   # rebuild the deposited contract file
+python scripts/descriptor/verify_claims.py         # verify claims vs the deposit
 ```
 
 ## Current output: the *Scientific Data* Data Descriptor
@@ -45,6 +45,7 @@ The repository's current output is the Data Descriptor in
 | Step | Script |
 |---|---|
 | Raw-TED parsing + schema handling | `pipeline/parse_eu_ted.py`, `pipeline/ted_bulk_stream_extract.py` |
+| Rebuild flagship contract file from raw CAN | `descriptor/build_contract_file.py` |
 | Carbon linkage (CPV→EXIOBASE weights) | `pipeline/link_carbon_intensity.py` |
 | eForms full-bid-set extraction | `eforms_competition/extract_eforms_bids.py` |
 | eForms within-tender result + battery | `eforms_competition/within_tender_green_wins.py`, `robustness_battery.py` |

@@ -1,25 +1,26 @@
-# A harmonised EU public-procurement competition resource
+# Recovered TED bidder counts and full-bid-set eForms tenderers for European public procurement
 
-[![DOI](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.20823936-blue.svg)](https://doi.org/10.5281/zenodo.20823936)
+[![DOI](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.21176249-blue.svg)](https://doi.org/10.5281/zenodo.21176249)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![License: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 
 Data and code for the *Scientific Data* Data Descriptor:
 
-> **A harmonised EU public-procurement competition resource: a raw-TED competition–carbon panel
-> (2012–2023) with recovered bidder counts, and a full-bid-set tender corpus from eForms (2024–2025).**
+> **Recovered TED bidder counts and full-bid-set eForms tenderers for European public procurement.**
 > Ashuraliyev, A. (2026).
 
 The resource addresses a single measurement problem — observing who competes for public contracts —
 across two generations of EU procurement reporting:
 
-- **Part A** — a contract-level competition + carbon panel rebuilt from the harmonised TED
-  contract-award-notice layer (21.6M carbon-mapped contracts, 27 territories), with a deterministically
-  rebuilt country×CPV×month single-bidding panel (2017–2020), a CPV→EXIOBASE carbon weight validated
-  against Eurostat (ρ=0.82), and Directive 2014/24 transposition dates.
-- **Part B** — an eForms full-bid-set corpus (302,555 single-award notices, 2024–2025) giving the
-  complete ranked tenderer set per award, with a pre-registered worked example.
+- **Part A** — a contract-level competition + carbon dataset rebuilt directly from the raw TED
+  contract-award-notice files (16.97M de-duplicated, carbon-mapped contracts across 33 territories;
+  8.18M TED awards plus flagged non-TED sources). Rebuilding from source eliminates a 2018 ingestion
+  artifact and recovers the bidder count across a schema field-rename; includes a deterministic
+  country×CPV×month single-bidding panel (2017–2020), a CPV→EXIOBASE carbon weight validated against
+  Eurostat (ρ=0.82), a source-verified winner name, and Directive 2014/24 transposition dates.
+- **Part B** — a full-bid-set eForms corpus (302,555 single-award notices, 2024–2025) giving the
+  complete ranked tenderer set per award.
 
 ## Repository layout
 
@@ -33,20 +34,35 @@ across two generations of EU procurement reporting:
 | [`workflow/`](workflow/) | Snakemake pipeline (`Snakefile`, `rules/`) |
 | [`config/`](config/) | Pipeline configuration |
 | [`tests/`](tests/) | Test suite |
-| [`archive/`](archive/) | Superseded work, including the earlier Nature Sustainability manuscript (`old_manuscript_NC/`) |
+| [`archive/`](archive/) | Superseded earlier analyses, retained for provenance only |
 
 ## Data and code availability
 
-- **Deposit (data + code):** Zenodo version DOI **[10.5281/zenodo.20823936](https://doi.org/10.5281/zenodo.20823936)**
-  (concept DOI 10.5281/zenodo.19456216). Data CC-BY 4.0; code MIT.
+- **Deposit (data + code):** Zenodo version DOI **[10.5281/zenodo.21176249](https://doi.org/10.5281/zenodo.21176249)**
+  (concept DOI 10.5281/zenodo.19456216, resolves to the latest version). Data CC-BY 4.0; code MIT.
 - **Repository:** https://github.com/ProgrmerJack/Public-Procurement-Control-Surface
+- **Reproduction:** see [`REPRODUCE_SCIENTIFIC_DATA.md`](REPRODUCE_SCIENTIFIC_DATA.md).
+
+### Deposited files (Zenodo 10.5281/zenodo.21176249)
+
+| File | Part | Rows | Description |
+|---|---|---|---|
+| `procurement_awards_2012_2023.parquet` | A | 16.97M | Contract-level competition + carbon records (TED 8.18M + SECOP 7.97M + Contracts Finder 0.82M), 33 territories |
+| `competition_panel_country_cpv_month.parquet` | A | 44,998 | Rebuilt single-bidder / ≥3-offer shares by country×CPV×month, 2017–2020 |
+| `cpv_exiobase_crosswalk.csv` | A | 40 | CPV→EXIOBASE carbon-weight map |
+| `transposition_dates.csv` | A | 25 | Directive 2014/24 national entry-into-force months |
+| `eutl_matched_firms.csv` | A | 1,105 | Procurement-winner ↔ EU-ETS emitter matched cells |
+| `eforms_bids_2024_2025.jsonl` | B | 302,555 | Full ranked bid set per single-award eForms notice |
+| `PREREGISTRATION.md`, `BATTERY_VERDICT.json` | B | — | Worked-example protocol + verdict |
+| `DEPOSIT_README.md` | — | — | Manifest, full data dictionary, provenance, validation |
 
 ## Quick start
 
 ```bash
 pip install -r requirements.txt
 
-# Build the descriptor's figures and verify every claim against the deposited data
+# Rebuild the deposit, build figures, and verify every claim against the deposited data
+python scripts/descriptor/build_contract_file.py # rebuild flagship contract file from raw CAN
 python scripts/descriptor/build_partA_panel.py   # Part A panel + validation stats
 python scripts/descriptor/si_make_tables.py      # SI tables from deposited data
 python scripts/descriptor/make_figures.py        # figures
@@ -62,9 +78,9 @@ See [`docs/reproduction.md`](docs/reproduction.md) for the full reproduction gui
 ```bibtex
 @misc{ashuraliyev2026procurement,
   author = {Ashuraliyev, Abduxoliq},
-  title  = {A harmonised EU public-procurement competition resource},
+  title  = {Recovered TED bidder counts and full-bid-set eForms tenderers for European public procurement},
   year   = {2026},
-  doi    = {10.5281/zenodo.20823936},
+  doi    = {10.5281/zenodo.21176249},
   note   = {Data CC-BY 4.0; code MIT}
 }
 ```

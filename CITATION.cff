@@ -1,8 +1,7 @@
 cff-version: 1.2.0
 title: >-
-  A harmonised EU public-procurement competition resource:
-  a raw-TED competition–carbon panel (2012–2023) and a
-  full-bid-set eForms tender corpus (2024–2025)
+  Recovered TED bidder counts and full-bid-set eForms
+  tenderers for European public procurement
 message: >-
   If you use this dataset or code, please cite the Zenodo
   deposit (and the Scientific Data Data Descriptor, when published).
@@ -15,7 +14,7 @@ authors:
     orcid: 'https://orcid.org/0009-0003-5482-5526'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20823936
+    value: 10.5281/zenodo.21176249
     description: Zenodo deposit (data + code), version DOI
   - type: doi
     value: 10.5281/zenodo.19456216
@@ -25,14 +24,16 @@ url: 'https://github.com/ProgrmerJack/Public-Procurement-Control-Surface'
 abstract: >-
   A two-part open resource for measuring competition in EU public
   procurement across two generations of reporting systems. Part A is a
-  contract-level competition–carbon panel (21.6M carbon-mapped contracts,
-  27 territories, 2012–2023) rebuilt from the harmonised TED
-  contract-award-notice layer, with a deterministically rebuilt
+  contract-level competition–carbon dataset (16.97M de-duplicated,
+  carbon-mapped contracts across 33 territories, 2012–2023): an 8.18M-award
+  TED portion rebuilt directly from the raw contract-award notices — which
+  eliminates a 2018 ingestion artifact and recovers the bidder count across
+  a schema field-rename — plus flagged non-TED sources, with a
   country×CPV×month single-bidding panel, a CPV→EXIOBASE carbon weight
-  validated against Eurostat, and Directive 2014/24 transposition dates.
-  Part B is a full-bid-set corpus parsed from EU eForms (302,555
-  single-award notices, 2024–2025) giving the complete ranked tenderer set
-  per award, with a pre-registered worked example.
+  validated against Eurostat, a source-verified winner name, and Directive
+  2014/24 transposition dates. Part B is a full-bid-set corpus parsed from
+  EU eForms (302,555 single-award notices, 2024–2025) giving the complete
+  ranked tenderer set per award.
 keywords:
   - public procurement
   - Tenders Electronic Daily
@@ -45,5 +46,5 @@ keywords:
   - full bid set
   - open contracting
 license: CC-BY-4.0
-version: '2026.06'
-date-released: '2026-06-24'
+version: '2026.07'
+date-released: '2026-07-03'

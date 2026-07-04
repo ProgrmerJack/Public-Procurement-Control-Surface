@@ -2,7 +2,12 @@
 
 ## Overview
 
-This folder contains the processed data required to reproduce all analyses in the manuscript "Governance Reform Unlocks Decarbonization Dead Zones in Public Procurement."
+This file documents the **legacy processed extract** (`processed/gprd_with_carbon.parquet`) that
+predates the current *Scientific Data* Data Descriptor. The current, deposited flagship file is
+`deposit/procurement_awards_2012_2023.parquet`, rebuilt from raw source
+(`scripts/descriptor/build_contract_file.py`); its authoritative data dictionary is in
+[`../Scientific_Data_Descriptor/DEPOSIT_README.md`](../Scientific_Data_Descriptor/DEPOSIT_README.md).
+The columns below describe the older extract and are retained for reference only.
 
 ## Data Files
 
@@ -112,10 +117,9 @@ python generate_verified_figures.py
 
 ## Zenodo Deposit
 
-The repository-aligned replication archive is published at:
-- DOI: 10.5281/zenodo.20098951
-- Primary artifact: `Data.zip`
-- Extraction target: repository root, recreating `Data/`
+The current dataset (the files described in the Data Descriptor) is published at:
+- Concept DOI: [10.5281/zenodo.19456216](https://doi.org/10.5281/zenodo.19456216) (resolves to the latest version)
+- Individually downloadable objects (no single archive); see `DEPOSIT_README.md`
 - License: CC-BY 4.0
 
 ## Contact

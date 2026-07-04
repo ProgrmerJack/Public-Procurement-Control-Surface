@@ -6,7 +6,7 @@ Thank you for your interest in contributing to this research project!
 
 **GitHub:** [ProgrmerJack/Public-Procurement-Control-Surface](https://github.com/ProgrmerJack/Public-Procurement-Control-Surface)
 
-**Citation:** Ashuraliyev, A. (2026). Governance Reform Unlocks Decarbonization Dead Zones in Public Procurement. *Nature Sustainability*.
+**Citation:** Ashuraliyev, A. (2026). Recovered TED bidder counts and full-bid-set eForms tenderers for European public procurement. Data Descriptor (Zenodo concept DOI [10.5281/zenodo.19456216](https://doi.org/10.5281/zenodo.19456216)).
 
 ## Ways to Contribute
 
@@ -32,10 +32,9 @@ We welcome contributions adding new OCDS-compliant procurement data sources:
 
 ### 3. Methodological Improvements
 
-- Alternative causal estimators
-- Additional robustness checks
-- Enhanced carbon intensity mappings
-- Cross-validation methods
+- Enhanced CPV→carbon intensity mappings
+- Additional validation checks against official benchmarks
+- Improved schema/version handling for TED and eForms
 
 ### 4. Documentation
 
@@ -58,6 +57,7 @@ python -m venv .venv
 pip install -r requirements.txt
 
 # Build and verify the Data Descriptor
+python scripts/descriptor/build_contract_file.py
 python scripts/descriptor/build_partA_panel.py
 python scripts/descriptor/verify_claims.py
 

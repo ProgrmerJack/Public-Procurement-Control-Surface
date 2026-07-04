@@ -1,42 +1,37 @@
 ======================================================================
-KEY FINDINGS
+KEY FINDINGS  (current resource)
 ======================================================================
 
-Headline:
-  Single-bidder contracts exhibit **+14.8%** higher supply-chain carbon intensity
-  (t = 333.7, p < 1e-300, Cohen's d = 0.229).
+This repository accompanies the Scientific Data Data Descriptor:
 
-Sample:
-  Contracts: 21,612,129
-  Countries: 27
-  Years: 2012–2023
+  "Recovered TED bidder counts and full-bid-set eForms tenderers for
+   European public procurement."  Ashuraliyev, A. (2026).
 
-RDD (Transparency Threshold):
-  - Threshold (EU): €139,000
-  - Transparency increases bidders by **+0.77** (absolute) → **+15.19%**
-  - Pooled carbon effect near threshold: **−0.635%** (pooled estimate −0.00635 kg CO₂e/USD)
-  - 95% CI (pooled): [−0.0117, −0.0010]
-  - I² (heterogeneity): **93.3%**
+It is a DATA RESOURCE, not a hypothesis test. The contribution is the
+data and its documentation, not a causal finding.
 
-U-Curve (Contract Size Heterogeneity):
-  - Small contracts (< €10k): **+50.2%** carbon premium (Cohen's d = 0.75)
-  - Mid-size (€10k–€200k): **+12.5%**
-  - Large contracts (> €200k): **−7.1%** (reversal)
+What the resource provides
+--------------------------
+Part A  Contract-level competition + carbon dataset, 16,968,922
+        de-duplicated contracts across 33 territories (2012-2023):
+        8,177,019 TED awards rebuilt directly from the raw contract-
+        award notices (eliminating a 2018 ingestion artifact and
+        recovering the offers-received count across a schema field-
+        rename), plus flagged SECOP (Colombia) and Contracts Finder
+        (UK) sources. Observed-bid single-bidder rate ~30.8%, matching
+        the official EU benchmark (~29%). Carbon weight validated
+        against Eurostat (Spearman rho = 0.82).
+Part B  Full-bid-set eForms corpus, 302,555 single-award notices
+        (2024-2025), with the complete ranked tenderer set per award.
 
-COVID Natural Experiment:
-  - Pre-COVID (2019): ~7% premium
-  - During COVID (2020–2021): **20.1%** premium
-  - Post-COVID (2022–2023): ~0.3% premium
+Deposit
+-------
+Zenodo concept DOI 10.5281/zenodo.19456216 (resolves to the latest
+version). Data CC-BY 4.0; code MIT. See DEPOSIT_README.md for the
+manifest and dictionary, and CLAIMS_INDEX.md for claim-by-claim
+provenance (verify_claims.py recomputes 41/41 from the deposit).
 
-Mediation through Competition:
-  - Proportion mediated: **2.1%** (Sobel p ≈ 0)
-
-Country-level:
-  - Significant negative effects: 20 countries
-  - Significant positive effects: 5 countries
-
-Notes:
-  - All claims reproduced with `python reproduce_manuscript_claims.py` (6/6 verified)
-  - Data archived at Zenodo: DOI 10.5281/zenodo.18391704
-
-======================================================================
+Note: earlier causal analyses in this repository (scripts/causal_id/,
+scripts/dead_zones/, results/dead_zones/, etc.) predate and are
+superseded by this Data Descriptor; they are not part of the
+deposited resource.
